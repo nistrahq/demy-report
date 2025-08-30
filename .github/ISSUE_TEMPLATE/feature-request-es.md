@@ -1,7 +1,7 @@
 ---
 name: Solicitud de Funcionalidad
 about: Sugiere una idea para este proyecto
-title: "[FEATURE] - "
+title: "[Feature] - "
 labels: enhancement
 assignees: ""
 ---
