@@ -102,17 +102,17 @@
 
 - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
     - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
-        - [4.1.1. EventStorming](#411-event-storming)
+        - [4.1.1. EventStorming](#411-eventstorming)
             - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
             - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
-            - [4.1.1.3. Candidate Context Discovery](#4113-candidate-context-discovery)
+            - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
         - [4.1.2. Context Mapping](#412-context-mapping)
         - [4.1.3. Software Architecture](#413-software-architecture)
             - [4.1.3.1. Software Architecture Context Level Diagrams](#4131-software-architecture-context-level-diagrams)
             - [4.1.3.2. Software Architecture Container Level Diagrams](#4132-software-architecture-container-level-diagrams)
             - [4.1.3.3. Software Architecture Deployment Diagrams](#4133-software-architecture-deployment-diagrams)
-    - [4.2. Tactical-Level Domain-Driven Design](#42-landing-page-ui-design)
-        - [4.2.X. Bounded Context: <Bounded Context Name>](#42X)
+    - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
+        - [4.2.X. Bounded Context: <Bounded Context Name>](#42x-bounded-context-bounded-context-name)
             - [4.2.X.1. Domain Layer](#42X1-domain-layer)
             - [4.2.X.2. Interface Layer](#42X2-interface-layer)
             - [4.2.X.3. Application Layer](#42X3-application-layer)
@@ -123,10 +123,226 @@
                 - [4.2.X.6.2. Bounded Context Database Design Diagram](#42X62-bounded-context-database-design-diagram)
 
 - [Conclusiones](#conclusiones)
-    - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)¿
+    - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
 # Student Outcome
 
 # Objetivos SMART
+
+# Capítulo I: Introducción
+
+## 1.1. Startup Profile
+
+### 1.1.1. Descripción de la Startup
+
+Write here...
+
+### 1.1.2. Perfiles de los integrantes del equipo
+
+Write here...
+
+## 1.2. Solution Profile
+
+### 1.2.1. Antecedentes y problemática
+
+Write here...
+
+### 1.2.2. Lean UX Process
+
+Write here...
+
+#### 1.2.2.1 Lean UX Problem Statements
+
+Write here...
+
+#### 1.2.2.2. Lean UX Assumptions
+
+Write here...
+
+#### 1.2.2.3. Lean UX Hypothesis
+
+Write here...
+
+#### 1.2.2.4. Lean UX Canvas
+
+Write here...
+
+## 1.3. Segmentos objetivo
+
+Write here...
+
+# Capítulo II: Requirements Elicitation & Analysis
+
+## 2.1. Competidores
+
+### 2.1.1. Análisis competitivo
+
+Write here...
+
+### 2.1.2. Estrategias y tácticas frente a competidores
+
+Write here...
+
+## 2.2. Entrevistas
+
+Write here...
+
+### 2.2.1. Diseño de entrevistas
+
+Write here...
+
+### 2.2.2. Registro de entrevistas
+
+Write here...
+
+### 2.2.3. Análisis de entrevistas
+
+Write here...
+
+## 2.3. Needfinding
+
+Write here...
+
+### 2.3.1. User Personas
+
+Write here...
+
+### 2.3.2. User Task Matrix
+
+Write here...
+
+### 2.3.3. User Journey Mapping
+
+Write here...
+
+### 2.3.4. Empathy Mapping
+
+Write here...
+
+### 2.3.5. As-Is Scenario Mapping
+
+Write here...
+
+## 2.4. Ubiquitous Language
+
+Write here...
+
+# Capítulo III: Requirements Specification
+
+## 3.1. To-Be Scenario Mapping.
+
+Write here...
+
+## 3.2. User Stories
+
+Write here...
+
+## 3.3. Impact Mapping
+
+Write here...
+
+## 3.4. Product Backlog
+
+Write here...
+
+# Capítulo IV: Solution Software Design
+
+## 4.1. Strategic-Level Domain-Driven Design
+
+Write here...
+
+### 4.1.1. EventStorming
+
+Write here...
+
+#### 4.1.1.1. Candidate Context Discovery
+
+Write here...
+
+#### 4.1.1.2. Domain Message Flows Modeling
+
+Write here...
+
+#### 4.1.1.3. Bounded Context Canvases
+
+Write here...
+
+### 4.1.2. Context Mapping
+
+Write here...
+
+### 4.1.3. Software Architecture
+
+#### 4.1.3.1. Software Architecture Context Level Diagrams
+
+Write here...
+
+#### 4.1.3.2. Software Architecture Container Level Diagrams
+
+Write here...
+
+#### 4.1.3.3. Software Architecture Deployment Diagrams
+
+Write here...
+
+## 4.2. Tactical-Level Domain-Driven Design
+
+Write here...
+
+### 4.2.X. Bounded Context: <Bounded Context Name>
+
+Write here...
+
+#### 4.2.X.1. Domain Layer
+
+Write here...
+
+#### 4.2.X.2. Interface Layer
+
+Write here...
+
+#### 4.2.X.3. Application Layer
+
+Write here...
+
+#### 4.2.X.4. Infrastructure Layer
+
+Write here...
+
+#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
+
+Write here...
+
+#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
+
+Write here...
+
+#### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
+
+Write here...
+
+#### 4.2.X.6.2. Bounded Context Database Design Diagram
+
+Write here...
+
+## Conclusiones y Recomendaciones
+
+Write here...
+
+### Conclusiones
+
+Write here...
+
+### Recomendaciones
+
+Write here...
+
+# Bibliografía
+
+Write here...
+
+# Anexos
+
+Write here...
