@@ -1,20 +1,20 @@
 ---
 name: Problema de Documentación
 about: Reporta un error, sección faltante o mejora en la documentación del proyecto
-title: "[DOCS] - "
+title: "[Docs] "
 labels: documentation
 assignees: ""
 ---
 
-## Describe el problema de la documentación
-Explica de forma clara cuál es el error, qué falta o qué se puede mejorar.
+## Descripción
+Explica de forma clara cuál es el error, qué falta o qué se puede mejorar en la documentación.
 
 ## Ubicación
-- Archivo: [ej. README.md, CONTRIBUTING.es.md, diagrams/C4/out/...]
-- Sección: [ej. Flujo de trabajo con Git, Estructura de carpetas]
+- Archivo: [ej. README.md, CONTRIBUTING.md, docs/TB1/capitulo1.md]
+- Sección/Capítulo: [ej. Flujo de trabajo con Git, Introducción, Referencias]
 
 ## Sugerencia de corrección
-Si es posible, sugiere una corrección o mejora.
+Si es posible, propone una corrección, redacción alternativa o mejora.
 
 ## Información adicional
-Agrega cualquier otro contexto, capturas o ejemplos relacionados con el problema de documentación.
+Agrega cualquier otro contexto, ejemplos o capturas que ayuden a entender mejor el problema.
