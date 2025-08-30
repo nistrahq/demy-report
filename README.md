@@ -55,16 +55,3 @@
 
 <h5 style="text-align: center"> Ciclo 2025-20 </h5>
 
-# Registro de Versiones del Informe
-
-
-
-# Project Report Collaboration Insights
-
-
-
-# Contenido
-
-
-
-# Student Outcome
