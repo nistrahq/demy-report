@@ -42,11 +42,11 @@ Esta sección explica cómo configurar el repositorio en local y comenzar a cont
 - **Trabajar y hacer commits (Conventional Commits + scope opcional)**
     Formato: `<type>(<scope>): <message>`
     Ejemplos:
-    - `docs(intro): agregar borrador de introducción para TB1`
-    - `fix(matrix): corregir typo en user-task-matrix v02`
+    - `docs(intro): add draft for TB1 introduction`
+    - `fix(matrix): resolve typo in user-task-matrix v02`
     ```bash
     git add .
-    git commit -m "docs(intro): agregar borrador de introducción para TB1"
+    git commit -m "docs(intro): add draft for TB1 introduction"
     ```
 
 - **Mantener tu rama actualizada (fetch + merge)**
