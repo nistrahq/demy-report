@@ -1,20 +1,20 @@
 ---
 name: Documentation Issue
-about: Report an error, missing section, or improvement in project documentation
-title: "[DOCS] - "
+about: Report an error, missing section, or improvement in the project documentation
+title: "[Docs] "
 labels: documentation
 assignees: ""
 ---
 
-## Describe the documentation issue
-A clear and concise description of the error, missing content, or improvement needed.
+## Description
+Clearly describe the documentation issue (error, missing content, unclear text, etc.).
 
 ## Location
-- File: [e.g., README.md, CONTRIBUTING.md, diagrams/C4/out/...]
-- Section: [e.g., Git Workflow, Folder Structure]
+- File: [e.g., README.md, CONTRIBUTING.md, docs/TB1/chapter1.md]
+- Section/Chapter: [e.g., Git Workflow, Introduction, References]
 
 ## Suggested Fix
-If possible, suggest a correction or improvement.
+If possible, suggest a correction, rewording, or improvement.
 
-## Additional context
-Add any other context, screenshots, or examples related to this documentation issue.
+## Additional Context
+Add any other details, examples, or screenshots to help understand the issue.

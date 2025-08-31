@@ -1,7 +1,7 @@
 ---
 name: Reporte de Bug
 about: Reporta un error para ayudarnos a mejorar
-title: "[BUG] - "
+title: "[Bug] - "
 labels: bug
 assignees: ""
 ---
