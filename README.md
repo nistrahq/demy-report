@@ -131,6 +131,18 @@
 
 # Objetivos SMART
 
+
+**Integrante 5: Diego Vilca** <br>
+Objetivo 1: <br>
+Al culminar mi carrera, conseguir un puesto como desarrollador web o móvil en un plazo máximo de 1 mes <br>
+después de graduarme, aplicando a un mínimo de 5 ofertas laborables por semana y actualizando constantement <br>
+mi portafolio con proyectos en GitHub.
+
+Objetivo 2: <br>
+Iniciar una maestría en Arquitectura de Software en un plazo máximo de 3 años después de graduarme, <br>
+complementado mi experiencia laboral. El objetivo es finalizar la maestría en 2 años y, posteriormente, <br>
+postularme como docente universitario dentro de los 5 años posteriores a la graduación.
+
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
