@@ -145,7 +145,14 @@ La startup **Nistra**, es un equipo conformado por estudiantes de la carrera de 
 
 ### 1.1.2. Perfiles de los integrantes del equipo
 
-Write here...
+| **Foto**                                                                     | **Nombres y Apellidos**             | **Código** | **Carrera**            | **Resumen de Conocimientos y Habilidades**                                                                                                                                                  |
+|------------------------------------------------------------------------------|-------------------------------------|------------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <img src="./assets/images/photos/Daniel.jpg" alt="Foto_Daniel" width="500">  | **Daniel Franco Crispin Ramos**     | 20221G120  | Ingeniería de Software | Tengo conocimientos en desarrollo web frontend y backend, programación orientada a objetos y uso de Git. Soy una persona responsable, comprometida y con facilidad para trabajar en equipo. |
+| <img src="./assets/images/photos/Paul.png" alt="Foto_Paul" width="500" >     | **Paul Fernando Sulca Gonzales**    | 20221C486  | Ingeniería de Software | Conocimiento en diseño de software orientado a objetos y modelado UML. Experiencia en implementación de interfaces web adaptativas.                                                         |
+| <img src="./assets/images/photos/Salim.jpg" alt="Foto_Salim" width="500" >   | **Salim Ignacio Ramirez Mestanza**  | 20201E843  | Ingeniería de Software | Conocimiento en arquitectura de software y control de versiones con Git. Experiencia en documentación técnica y colaboración en equipos ágiles.                                             |
+| <img src="./assets/images/photos/Diego.jpg" alt="Foto_Diego" width="500" >   | **Diego Alejandro Vilca Saboya**    | 20231A778  | Ingeniería de Software | Conocimiento en desarrollo web utilizando las últimas tecnologías en tendencia. Experiencia en elaboración de diagramas de arquitectura y prototipado UX/UI.                                |
+| <img src="./assets/images/photos/Andrea.png" alt="Foto_Andrea" width="500" > | **Andrea Marielena Aponte Cruzado** | 202224135  | Ingeniería de Software | [ACTUALIZAR]                                                                                                                                                                                |
+
 
 ## 1.2. Solution Profile
 
