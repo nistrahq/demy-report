@@ -164,7 +164,9 @@ La startup **Nistra**, es un equipo conformado por estudiantes de la carrera de 
 
 #### ¿Cuál es el problema?
 
-El principal desafío identificado es la ausencia de un sistema centralizado para la gestión administrativa en academias educativas presenciales del Perú. Actualmente, muchas de estas instituciones dependen de hojas de cálculo, documentos físicos o plataformas no integradas, lo que incrementa la carga operativa, favorece errores recurrentes, provoca pérdida de información y reduce la eficiencia en el uso del tiempo. Según Naranjo et al. (2025), “the lack of clarity in some procedures, duplication of tasks, and long response times represent obstacles that affect both student satisfaction and administrative staff productivity” (p. 3). De igual manera, Díaz-García et al. (2023) enfatizan que “digitalisation is necessary to implement a data-driven management model. It is necessary to develop systems that provide real-time information to facilitate control, management and decision-making processes” (p. 10), lo que evidencia la urgencia de implementar soluciones integradas y digitales que optimicen los procesos administrativos y mejoren la experiencia educativa.
+El principal desafío identificado es la ausencia de un sistema centralizado para la gestión administrativa en academias educativas presenciales del Perú. Actualmente, muchas de estas instituciones dependen de hojas de cálculo, documentos físicos o plataformas no integradas, lo que incrementa la carga operativa, favorece errores recurrentes, provoca pérdida de información y reduce la eficiencia en el uso del tiempo. 
+
+Según Naranjo et al. (2025), “the lack of clarity in some procedures, duplication of tasks, and long response times represent obstacles that affect both student satisfaction and administrative staff productivity” (p. 3), lo que evidencia que los procesos administrativos manuales no solo retrasan las operaciones internas, sino que también impactan negativamente en la experiencia del estudiante y en la productividad del personal. De igual manera, Díaz-García et al. (2023) enfatizan que “digitalisation is necessary to implement a data-driven management model. It is necessary to develop systems that provide real-time information to facilitate control, management and decision-making processes” (p. 10), resaltando la necesidad de adoptar soluciones tecnológicas que permitan centralizar la información y facilitar la toma de decisiones estratégicas. Ambos estudios coinciden en que la digitalización y optimización de los procesos administrativos son esenciales para mejorar la eficiencia institucional y la calidad del servicio educativo.
 
 #### When (Cuando)
 
@@ -222,11 +224,54 @@ Se estima que el sistema podría beneficiar directamente al 80% del personal de 
 
 ### 1.2.2. Lean UX Process
 
-Write here...
+El Lean UX Process es una metodología ágil enfocada en diseñar soluciones centradas en el usuario mediante ciclos cortos de validación, retroalimentación y mejora continua.
+Para este proyecto, utilizamos este enfoque para analizar los desafíos administrativos que enfrentan las academias presenciales y construir una aplicación móvil multiplataforma que responda a sus necesidades reales, mejorando la eficiencia y organización interna.
 
 #### 1.2.2.1 Lean UX Problem Statements
 
-Write here...
+El servicio de Demy tiene como objetivo proporcionar a las instituciones educativas una aplicación móvil integral que permita automatizar procesos administrativos esenciales, como matrículas, control de asistencia, asignación de horarios, docentes y salones y seguimiento de pagos.
+
+El problema se manifiesta en la manera tradicional y desorganizada con la que muchas academias manejan su administración interna. Actualmente, la mayoría utiliza herramientas básicas como hojas de Excel, documentos físicos o plataformas que no están integradas entre sí. Esto genera duplicidad de tareas, falta de trazabilidad, pérdida de información clave, complicaciones en la gestión de pagos y control de asistencia. Como consecuencia, el personal administrativo invierte un tiempo excesivo en tareas repetitivas, y los docentes enfrentan dificultades para coordinar sus horarios o registrar adecuadamente la asistencia de los alumnos.
+
+Hemos identificado que esta deficiencia en la administración limita seriamente la capacidad de crecimiento y profesionalización de muchas academias. Además, deteriora la experiencia de alumnos y profesores, y afecta negativamente la percepción del servicio ofrecido. La ausencia de un sistema unificado también impide tomar decisiones informadas sobre finanzas, rendimiento académico, generando un impacto directo en la sostenibilidad del negocio.
+
+¿Cómo podríamos centralizar y automatizar la gestión administrativa de academias presenciales de forma escalable y accesible, permitiendo al personal administrativo y docente ahorrar tiempo, reducir errores y mejorar el control sobre los procesos clave del día a día?
+
+**Domain:**
+
+La gestión administrativa de academias presenciales en Perú sigue siendo un proceso manual y fragmentado, que depende de documentos físicos, hojas de cálculo y plataformas no integradas.
+
+**Customer Segments:**
+
+- Administrativos: Encargados de matrículas, pagos, reportes y asignación de horarios.
+
+- Docentes: Necesitan herramientas para registrar asistencia, coordinar clases y acceder a sus horarios.
+
+- Estudiantes: Usuarios finales que requieren consultar sus horarios, pagos y actualizaciones de clases.
+
+**Pain Points:**
+
+- Falta de centralización de la información, lo que ocasiona duplicidad de tareas.
+
+- Procesos manuales lentos y propensos a errores, que incrementan la carga operativa.
+
+- Dificultad para generar reportes y analizar datos de manera ágil.
+
+- Falta de trazabilidad en pagos y asistencia.
+
+- Mala experiencia para estudiantes y docentes, afectando la percepción del servicio.
+
+**Gap:**
+
+Actualmente no existe una aplicación móvil enfocada específicamente en academias peruanas que ofrezca una experiencia simple y adaptada a sus flujos de trabajo, lo que limita su capacidad de crecimiento y profesionalización.
+
+**Vision/Strategy:**
+
+Crear una app móvil multiplataforma que centralice la administración académica y facilite tareas clave como matrícula, pagos, control de asistencia y horarios. Su diseño será simple, intuitivo y funcional, con soporte local y opciones escalables según el tamaño de la academia.
+
+**Initial Segment:**
+
+El lanzamiento se enfocará en academias educativas presenciales de tamaño mediano en Lima y otras ciudades principales del Perú. Estas instituciones presentan mayor necesidad de digitalización por su volumen de estudiantes (50-200) y procesos administrativos frecuentes.
 
 #### 1.2.2.2. Lean UX Assumptions
 
