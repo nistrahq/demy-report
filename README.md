@@ -448,7 +448,27 @@ Esta sección tiene como objetivo analizar a los competidores de **Nistra** para
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-Write here...
+Para competir eficazmente en el mercado de plataformas de gestión para academias presenciales, Nistra aplicará las siguientes estrategias y tácticas preliminares, basadas en sus fortalezas y en el entorno digital actual:
+
+* **Diferenciación por enfoque especializado**  
+  **Estrategia:** Posicionar a Demy como la app móvil dedicada exclusivamente a academias preuniversitarias presenciales, frente a soluciones más genéricas para colegios o empresas.  
+  **Tácticas:** Desarrollar módulos de simulacros de admisión y cronogramas personalizados de preparación.
+
+* **Modelo de precios escalables**  
+  **Estrategia:** Ofrecer esquemas de precios accesibles y diferenciados según el tamaño de la academia, con mayor relación costo-beneficio frente a QuickSchools o Playoff.  
+  **Tácticas:** Incluir prueba gratuita de X días, aplicar descuentos periódicos y ofrecer tarifas anuales con descuento.
+
+* **Mejora continua del producto**  
+  **Estrategia:** Aportar agilidad frente a plataformas consolidadas (como QuickSchools), implementando mejoras frecuentes basadas en la retroalimentación real.  
+  **Tácticas:** Actualizaciones mensuales en sprints y priorización del desarrollo móvil nativo.
+
+* **Seguridad y confiabilidad**  
+  **Estrategia:** Generar confianza desde etapas tempranas, mitigando la percepción de riesgo sobre ciberseguridad en startups.  
+  **Tácticas:** Contratar auditorías de seguridad externas periódicas.
+
+* **Aprovechamiento del impulso tecnológico en educación**  
+  **Estrategia:** Aprovechar la consolidación de la transformación digital en instituciones educativas para impulsar la adopción de Demy.  
+  **Tácticas:** Organizar webinars gratuitos como “Digitaliza tu academia en 3 pasos con Demy” y compartir casos de éxito que evidencian mejoras operativas.
 
 ## 2.2. Entrevistas
 
