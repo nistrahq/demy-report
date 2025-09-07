@@ -271,6 +271,24 @@ La sesión de Candidate Context Discovery se desarrolló en un espacio colaborat
 
 El equipo estuvo conformado por cinco participantes, con un facilitador encargado de guiar la dinámica y un relator responsable de documentar la evolución del mural mediante fotografías.
 
+**Técnica aplicada: *Start-with-Value***
+
+Para este trabajo se aplicó la técnica Start-with-Value, cuyo principio consiste en priorizar aquellas partes del dominio que representan el mayor valor para el negocio. Esta técnica permitió separar con claridad qué bounded contexts debían ser considerados como Core, y cuáles como Supporting o Generic.
+
+El proceso aplicado se organizó en tres pasos principales:
+
+1. **Identificación de valor estratégico:** cada miembro del equipo respondió a la pregunta “¿Qué parte del sistema genera directamente valor para los usuarios y diferencia la solución de otras similares?”.
+
+    ![Identificación de valor estratégico](./assets/diagrams/ddd/candidate-context-discovery/candidate-context-discovery-step1-v1.jpg)
+
+2. **Agrupación de eventos en torno al valor:** se revisaron los clusters de eventos y agregados formados en el Event Storming, destacando aquellos que respondían a las necesidades de mayor impacto.
+
+    ![Agrupación de eventos en torno al valor](./assets/diagrams/ddd/candidate-context-discovery/candidate-context-discovery-step2-v1.jpg)
+
+3. **Clasificación Core, Supporting, Generic:** los contexts se categorizaron según su aporte al negocio y el nivel de complejidad de su modelo.
+
+    ![Clasificación Core, Supporting, Generic](./assets/diagrams/ddd/candidate-context-discovery/candidate-context-discovery-step3-v1.jpg)
+
 #### 4.1.1.2. Domain Message Flows Modeling
 
 Write here...
