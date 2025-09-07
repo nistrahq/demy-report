@@ -303,6 +303,21 @@ El análisis permitió identificar los siguientes bounded contexts candidatos:
 | Billing              | Boleta de matrícula de alumno registrada, Boleta mensual asignada a estudiante, Boleta de estudiante pagada, Boleta de estudiante vencida                 | Supporting    | Emisión y control de boletas y obligaciones de pago.           | Es clave para la sostenibilidad financiera, pero su complejidad es secundaria frente al core.         |
 | Accounting & Finance | Ingreso registrado, Egreso registrado, Reporte financiero creado, Reporte exportado a PDF                                                                 | Generic       | Registro de ingresos/egresos y reportes financieros.           | Puede externalizarse con software contable estándar, no genera diferenciación.                        |
 
+**Clasificación estratégica**
+
+Como parte del análisis Start-with-Value, se representó gráficamente la clasificación de los bounded contexts en una matriz de dos ejes:
+
+- **Business Differentiation** (eje X): grado en que el contexto aporta valor estratégico o diferenciación frente a otras soluciones.
+- **Model Complexity (eje Y):** nivel de complejidad requerido para implementar y mantener el contexto.
+
+En esta matriz de clasificación de bounded contexts, distribuyeron los contextos en los tres tipos:
+
+- **Core:** Institution, Enrollment, Attendance.
+- **Supporting:** Scheduling, Billing.
+- **Generic:** Identity & Access, Accounting & Finance.
+
+![Matriz de clasificación de bounded contexts](./assets/diagrams/ddd/candidate-context-discovery/candidate-context-discovery-strategic-classification-v1.jpg)
+
 #### 4.1.1.2. Domain Message Flows Modeling
 
 Write here...
