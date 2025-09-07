@@ -359,7 +359,25 @@ Debe ser moderno, simple, responsivo y seguro, con navegación intuitiva, respue
 
 #### 1.2.2.4. Lean UX Canvas
 
-Write here...
+
+El **Lean UX Canvas** permite organizar de manera clara y colaborativa los elementos esenciales del diseño, como el problema, los usuarios, las suposiciones, las hipótesis y las métricas.  
+En este proyecto, esta herramienta nos ayuda a enfocar el desarrollo en generar **valor real para las academias educativas**.
+
+A continuación, se presenta el Lean UX Canvas elaborado en la herramienta *Miro*:
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+**Figura 4.** Lean UX Canvas del proyecto *Demy*.
+
+![Lean UX Canvas](./assets/lean-ux/canvas/lean-ux-canvas-demy.jpg)
+
+<br>
+
+</div>
+
+**Enlace al Lean UX Canvas:** [*Ver en Miro*](https://miro.com/app/board/uXjVJOf6qbw=/?share_link_id=946873343163)
+
+
 
 ## 1.3. Segmentos objetivo
 
