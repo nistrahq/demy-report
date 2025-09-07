@@ -317,7 +317,45 @@ Debe ser moderno, simple, responsivo y seguro, con navegación intuitiva, respue
 
 #### 1.2.2.3. Lean UX Hypothesis
 
-Write here...
+- **Hypothesis 01:**
+
+  **Creemos que** los administradores de academias presenciales adoptarán nuestra plataforma para digitalizar procesos como matrícula, pagos, asistencia y horarios, mejorando su eficiencia operativa.
+
+  **Sabremos que** hemos tenido éxito.
+
+  **Cuando** al menos el 70% de los usuarios administrativos gestionen estos procesos en el primer mes y el 60% renueve su suscripción al segundo mes.
+
+- **Hypothesis 02:**
+
+  **Creemos que** los recordatorios automáticos de pagos reducirán significativamente la morosidad de los estudiantes.
+
+  **Sabremos que** hemos tenido éxito.
+
+  **Cuando** los pagos atrasados disminuyan en al menos un 40% en los primeros tres meses de uso.
+
+- **Hypothesis 03:**
+
+  **Creemos que** centralizar información académica y financiera en una sola plataforma mejorará la comunicación y el acceso a información para administrativos, docentes y estudiantes.
+
+  **Sabremos que** hemos tenido éxito.
+
+  **Cuando** al menos el 80% de los estudiantes y docentes utilicen la plataforma activamente en el primer ciclo académico.
+
+- **Hypothesis 04:**
+
+  **Creemos que** una interfaz simple, intuitiva y adaptable incrementará el uso de la plataforma por parte de administrativos, docentes y estudiantes, incluso sin experiencia tecnológica previa.
+
+  **Sabremos que** hemos tenido éxito.
+
+  **Cuando** al menos el 75% de los usuarios califiquen la plataforma como “fácil” o “muy fácil” en encuestas de la fase piloto.
+
+- **Hypothesis 05:**
+
+  **Creemos que** los planes escalables (Essentials, Pro, Elite) facilitarán el crecimiento de las academias dentro del sistema.
+
+  **Sabremos que** hemos tenido éxito.
+
+  **Cuando** al menos el 25% de clientes del plan Essentials migren a planes superiores en seis meses.
 
 #### 1.2.2.4. Lean UX Canvas
 
