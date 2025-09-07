@@ -259,7 +259,17 @@ Write here...
 
 #### 4.1.1.1. Candidate Context Discovery
 
-Write here...
+En esta sección se presenta el proceso seguido por el equipo para la descubierta de bounded contexts candidatos a partir del Event Storming realizado previamente. El objetivo fue identificar los límites naturales del dominio, determinar cuáles son las partes core del negocio y cuáles cumplen roles de apoyo o genéricos, con el fin de priorizar los esfuerzos de diseño en aquellos elementos que aportan mayor valor estratégico.
+
+**Preparación de la sesión:**
+
+La sesión de Candidate Context Discovery se desarrolló en un espacio colaborativo inmediatamente después del taller de Event Storming, con una duración aproximada de 1 hora 30 minutos. Como insumo se utilizaron:
+
+- La línea de tiempo de eventos generada en el Event Storming.
+- Los clusters iniciales de eventos y agregados identificados.
+- Los eventos clave (pivotal events) que marcaban cambios de estado relevantes.
+
+El equipo estuvo conformado por cinco participantes, con un facilitador encargado de guiar la dinámica y un relator responsable de documentar la evolución del mural mediante fotografías.
 
 #### 4.1.1.2. Domain Message Flows Modeling
 
