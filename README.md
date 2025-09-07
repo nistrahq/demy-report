@@ -318,6 +318,20 @@ En esta matriz de clasificación de bounded contexts, distribuyeron los contexto
 
 ![Matriz de clasificación de bounded contexts](./assets/diagrams/ddd/candidate-context-discovery/candidate-context-discovery-strategic-classification-v1.jpg)
 
+**Resultados**
+
+Se definieron siete bounded contexts candidatos, de los cuales:
+
+- 3 Core (Institution, Enrollment y Attendance).
+- 2 Supporting (Scheduling, Billing).
+- 2 Generic (Identity & Access y Accounting & Finance).
+
+![Candidate Contexts finales](./assets/diagrams/ddd/candidate-context-discovery/candidate-context-discovery-results-v1.jpg)
+
+La aplicación de la técnica Start-with-Value permitió asegurar que la atención principal del diseño táctico se concentre en el contexto de Institution, Enrollment y Attendance, dado que allí reside la propuesta de valor diferenciadora.
+
+El resto de contexts serán modelados en las siguientes secciones mediante Bounded Context Canvas y Domain Message Flows, garantizando consistencia y claridad en la arquitectura estratégica.
+
 #### 4.1.1.2. Domain Message Flows Modeling
 
 Write here...
