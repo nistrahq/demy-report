@@ -275,7 +275,45 @@ El lanzamiento se enfocará en academias educativas presenciales de tamaño medi
 
 #### 1.2.2.2. Lean UX Assumptions
 
-Write here...
+#### Business Assumptions
+
+1. **Creemos que nuestros clientes necesitan** una aplicación móvil multiplataforma que centralice y optimice su gestión administrativa diaria de sus academias.
+2. **Estas necesidades se pueden resolver con** una app que simplifique procesos como matrícula, pagos, asistencia, horarios, docentes, salones y cursos.
+3. **Nuestros clientes iniciales serán** las academias educativas presenciales pequeñas y medianas que dependen de métodos manuales.
+4. **El valor más importante que el cliente quiere de nuestro servicio es** tener mayor eficiencia y control, reduciendo errores y carga operativa.
+5. **El cliente también puede obtener beneficios adicionales** como recordatorios automáticos, reportes claros, escalabilidad y soporte técnico.
+6. **Vamos a adquirir la mayoría de nuestros clientes mediante** marketing digital en redes sociales, anuncios segmentados y alianzas con asociaciones educativas.
+7. **Generaremos dinero a través de** un modelo de suscripción mensual escalable, con tres planes: Essentials (academias pequeñas); Pro (academias medianas); Elite (academias grandes).
+8. **Nuestra competencia principal en el mercado son** soluciones genéricas de gestión escolar, sistemas empresariales complejos y hojas de cálculo.
+9. **Lo venceremos debido a** ofrecer una solución diseñada específicamente para academias presenciales peruanas, con soporte local y una interfaz intuitiva.
+10. **El mayor riesgo del servicio es** la resistencia al cambio o el desconocimiento tecnológico.
+11. **Resolveremos esto a través de** capacitación, soporte, una interfaz amigable y un periodo de prueba gratuito.
+
+#### User Assumptions
+
+**¿Quién es el usuario?**
+
+Administrativos que gestionan procesos internos, docentes que registran asistencia y organizan clases, y estudiantes que consultan horarios, pagos y notificaciones.
+
+**¿Qué problema tiene nuestro producto que debe resolver?**
+
+Resolver la desorganización administrativa, el exceso de tareas manuales, la falta de control de pagos y asistencia, y la ausencia de una plataforma centralizada.
+
+**¿Qué características son importantes?**
+
+Control de matrículas, asistencia, horarios y pagos con alertas; reportes claros; y notificaciones en tiempo real para estudiantes.
+
+**¿Dónde encaja nuestro producto en su trabajo o vida?**
+
+Administrativos lo usarán para gestión diaria, docentes para organizar clases y asistencia, y estudiantes para acceder a información académica fácilmente.
+
+**¿Cúando y cómo es nuestro producto? ¿Usado?**
+
+Será usado a diario desde tablets y móviles por administrativos, y principalmente desde smartphones por docentes y estudiantes.
+
+**¿Cómo debe verse nuestro producto y cómo debe comportarse?**
+
+Debe ser moderno, simple, responsivo y seguro, con navegación intuitiva, respuestas rápidas y notificaciones útiles.
 
 #### 1.2.2.3. Lean UX Hypothesis
 
