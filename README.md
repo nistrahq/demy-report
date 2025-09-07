@@ -182,7 +182,7 @@ La solución está orientada a academias educativas que desean modernizar su ges
 
 #### ¿Dónde surge el problema?
 
-Este problema se origina en academias presenciales a nivel nacional que aún dependen de procesos manuales para la gestión administrativa. Estas instituciones tienen un rol fundamental en la formación académica en el Perú, ya que aproximadamente **cuatro de cada cinco estudiantes universitarios recurrieron a academias y/o centros preuniversitarios como preparación previa a su ingreso a la universidad** (Ministerio de Educación del Perú, 2019). Esta alta participación evidencia la necesidad de optimizar y modernizar sus sistemas de gestión.
+Este problema se origina en academias presenciales a nivel nacional que aún dependen de procesos manuales para la gestión administrativa. Estas instituciones tienen un rol fundamental en la formación académica en el Perú, ya que aproximadamente **cuatro de cada cinco estudiantes universitarios recurrieron a academias y/o centros preuniversitarios como preparación previa a su ingreso a la universidad** (Ministerio de Educación del Perú, 2021). Esta alta participación evidencia la necesidad de optimizar y modernizar sus sistemas de gestión.
 
 #### Who (Quién)
 
@@ -359,7 +359,6 @@ Debe ser moderno, simple, responsivo y seguro, con navegación intuitiva, respue
 
 #### 1.2.2.4. Lean UX Canvas
 
-
 El **Lean UX Canvas** permite organizar de manera clara y colaborativa los elementos esenciales del diseño, como el problema, los usuarios, las suposiciones, las hipótesis y las métricas.  
 En este proyecto, esta herramienta nos ayuda a enfocar el desarrollo en generar **valor real para las academias educativas**.
 
@@ -377,11 +376,45 @@ A continuación, se presenta el Lean UX Canvas elaborado en la herramienta *Miro
 
 **Enlace al Lean UX Canvas:** [*Ver en Miro*](https://miro.com/app/board/uXjVJOf6qbw=/?share_link_id=946873343163)
 
-
-
 ## 1.3. Segmentos objetivo
 
-Write here...
+
+En el análisis de los segmentos objetivo de **Demy**, hemos identificado tres grupos clave que se beneficiarán de nuestra plataforma: **profesores**, **personal administrativo** y **estudiantes** de academias educativas presenciales.
+
+### Profesores de academias
+
+Según la revista Gan@Mas (24 de julio, 2014), los docentes dedican hasta el **29% de su tiempo a tareas administrativas**, tiempo que debería enfocarse en la enseñanza. La alta demanda académica y la falta de herramientas integradas dificultan su labor, generando sobrecarga y limitando su rendimiento.
+
+- **Edad:** Profesores de cualquier rango de edad.
+- **Necesidad clave:** Reducir tareas administrativas y optimizar su tiempo para enfocarse en la enseñanza.
+- **Nivel educativo:** Formación universitaria, preferiblemente con especialización en educación o áreas afines.
+- **Uso de tecnología:** Manejo básico a intermedio de herramientas digitales, pero con necesidad de sistemas más eficientes para gestión académica.
+
+---
+
+### Administradores de academias
+
+El personal administrativo de academias suele enfrentarse a una carga de trabajo elevada, desde planificación de horarios hasta control de pagos y matrículas. La **Encuesta Nacional de Uso del Tiempo (ENUT, 2024)** señala que **el 45% de trabajadores en educación dedica más de 20 horas semanales a tareas administrativas**. Además, un estudio de **GRADE (2023)** indica que **el 70% de directores considera ineficientes las herramientas de gestión actuales**, evidenciando la necesidad de soluciones tecnológicas integradas.
+
+- **Edad:** Personal administrativo de cualquier edad.
+- **Necesidad clave:** Optimizar procesos internos y reducir errores administrativos mediante tecnología.
+- **Nivel educativo:** Formación técnica o universitaria en administración, gestión u otras áreas afines.
+- **Uso de tecnología:** Conocimientos básicos a avanzados en herramientas digitales, con necesidad de plataformas más centralizadas.
+
+---
+
+### Estudiantes de academias
+
+Los estudiantes son un segmento clave, ya que su experiencia académica depende directamente de la organización y transparencia en la gestión de información. Actualmente, muchos alumnos aún enfrentan procesos manuales para inscripciones, pagos y horarios, lo que genera pérdida de tiempo e incertidumbre.
+Según el **Instituto Nacional de Estadística e Informática (INEI, 2024)**, en el primer trimestre de 2024 el **91,3 % de la población peruana de 6 años a más que accede a Internet lo hace a través del celular**.
+Además, **entre 19 y 24 años, el acceso a Internet alcanza el 95,4 %, reflejando que los jóvenes de este rango son altamente digitales** (INEI, 2024).
+Estos datos refuerzan la necesidad de plataformas accesibles y adaptadas a dispositivos móviles para atender sus necesidades académicas.
+
+- **Edad:** Principalmente jóvenes entre 16 y 24 años.
+- **Necesidad clave:** Acceso rápido y claro a horarios, reprogramación de horarios e información relevante desde el celular.
+- **Nivel educativo:** Estudiantes de último grado de secundaria, preparación preuniversitaria o formación técnica.
+- **Uso de tecnología:** Usuarios con alta familiaridad con aplicaciones móviles, que esperan interfaces intuitivas y funcionales.
+
 
 # Capítulo II: Requirements Elicitation & Analysis
 
@@ -551,7 +584,19 @@ Write here...
 
 # Bibliografía
 
-Write here...
+Díaz-García, V., Montero-Navarro, A., Rodríguez-Sánchez, J.-L., & Gallego-Losada, R. (2023). Managing digital transformation: A case study in a higher education institution. Electronics, 12(11), Artículo e2522. https://doi.org/10.3390/electronics12112522
+
+Instituto Nacional de Estadística e Informática (INEI). (2024). Encuesta Nacional de Uso del Tiempo (ENUT) 2024. Instituto Nacional de Estadística e Informática. https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib2010/libro.pdf
+
+Instituto Nacional de Estadística e Informática. (2024, 27 de junio). Las Tecnologías de Información y Comunicación en los Hogares: Ene-Feb-Mar 2024. INEI. https://www.gob.pe/institucion/inei/informes-publicaciones/5702640-las-tecnologias-de-informacion-y-comunicacion-en-los-hogares-ene-feb-mar-2024
+
+Gan@Más. (2014, julio 24). Docentes usan hasta el 29% de su tiempo en las tareas administrativas. Revista Gan@Más. https://revistaganamas.com.pe/docentes-utilizan-hasta-el-29-de-su-tiempo-en-las-tareas-administrativas/
+
+GRADE. (2023). Estado de la educación en el Perú. Grupo de Análisis para el Desarrollo. https://repositorio.minedu.gob.pe/bitstream/handle/20.500.12799/5692/Estado%20de%20la%20educaci%C3%B3n%20en%20el%20Per%C3%BA.pdf?isAllowed=y&sequence=1
+
+Ministerio de Educación del Perú. (2021). Encuesta Nacional de Estudiantes de Educación Superior Universitaria 2019: Principales resultados. MINEDU. https://repositorio.minedu.gob.pe/handle/20.500.12799/7745
+
+Naranjo, J. E., Alban, J. S., Balseca, M. S., Bustamante Villagómez, D. F., Mancheno Falconi, M. G., & Garcia, M. V. (2025). Enhancing institutional sustainability through process optimization: A hybrid approach using FMEA and machine learning. Sustainability, 17(4), Artículo e1357. https://doi.org/10.3390/su17041357
 
 # Anexos
 
