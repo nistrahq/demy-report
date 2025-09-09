@@ -139,7 +139,7 @@ En los primeros 12 meses después de graduarme, completar una certificación int
 **Objetivo 2:**
 En un plazo de 5 años tras mi graduación, ser admitida en un programa de MBA con enfoque en innovación o gestión tecnológica, en una universidad reconocida internacionalmente, con el fin de fortalecer mis competencias de liderazgo y estrategia empresarial para dirigir proyectos con impacto regional.
 
-**Objetivo 3:**
+**Objetivo 3:**  
 Antes de cumplir 8 años desde mi graduación, liderar o fundar un equipo tecnológico multidisciplinario dedicado a resolver un problema crítico del Perú, validando el impacto del proyecto a través de pilotos en al menos dos regiones del país.
 
 
@@ -162,7 +162,17 @@ En un plazo máximo de 5 años tras la graduación, completar un MBA en gestión
 Antes de cumplir 7 años de egresado, fundar una startup tecnológica enfocada en soluciones móviles, validando el producto en el mercado local primero y luego expandiéndolo internacionalmente, con el objetivo de generar impacto y posicionarme como líder emprendedor en el ecosistema digital.
 
 
-**Integrante 4: Paúl Sulca**
+**Integrante 4: Paúl Sulca**  
+**Objetivo 1:**
+En un plazo máximo de 18 meses después de mi egreso, conseguir un puesto como desarrollador backend en una empresa consultora de software reconocida en el Perú (por ejemplo, Everis, Globant o Belatrix), aplicando mis conocimientos en desarrollo de software y fortaleciendo mis habilidades técnicas y blandas. Esto será medible al haber obtenido al menos un año de experiencia laboral formal en el sector, lo que me permitirá afianzar mi perfil profesional.
+
+**Objetivo 2:**
+En un plazo máximo de 5 años tras la graduación, cursar y completar una maestría en Ingeniería de Software o Gestión de Proyectos Ágiles en una universidad en Canada. Para lograrlo, me comprometo a postular a becas y programas de financiamiento durante los primeros tres años, con el objetivo de ampliar mis competencias de liderazgo, obtener mejores ingresos laborales y acceder a posiciones estratégicas dentro de la industria tecnológica.
+
+**Objetivo 3:**
+Antes de cumplir 10 años de egresado, liderar al menos dos proyectos tecnológicos de gran impacto (uno dentro de una empresa reconocida y otro como iniciativa emprendedora propia), enfocados en soluciones innovadoras basadas en inteligencia artificial aplicadas a la industria. El cumplimiento se medirá por mi rol de líder de equipo o gerente de proyecto, validado a través de la entrega de resultados concretos y la generación de valor en el mercado local e internacional.
+
+
 
 
 **Integrante 5: Diego Vilca**  
