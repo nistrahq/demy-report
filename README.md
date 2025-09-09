@@ -130,18 +130,47 @@
 # Student Outcome
 
 # Objetivos SMART
+A continuación, cada integrante del equipo presenta sus objetivos SMART, enfocados en su desarrollo profesional luego de culminar la carrera universitaria.
+
+**Integrante 1: Andrea Aponte**  
+**Objetivo 1:**
+En los primeros 12 meses después de graduarme, completar una certificación internacional en Lean Six Sigma (nivel Green Belt), para adquirir habilidades en la mejora de procesos y gestión de calidad, aplicables a proyectos de innovación en sectores estratégicos del país como minería o exportaciones.
+
+**Objetivo 2:**
+En un plazo de 5 años tras mi graduación, ser admitida en un programa de MBA con enfoque en innovación o gestión tecnológica, en una universidad reconocida internacionalmente, con el fin de fortalecer mis competencias de liderazgo y estrategia empresarial para dirigir proyectos con impacto regional.
+
+**Objetivo 3:**
+Antes de cumplir 8 años desde mi graduación, liderar o fundar un equipo tecnológico multidisciplinario dedicado a resolver un problema crítico del Perú, validando el impacto del proyecto a través de pilotos en al menos dos regiones del país.
 
 
-**Integrante 5: Diego Vilca** <br>
-Objetivo 1: <br>
-Al culminar mi carrera, conseguir un puesto como desarrollador web o móvil en un plazo máximo de 1 mes <br>
-después de graduarme, aplicando a un mínimo de 5 ofertas laborables por semana y actualizando constantement <br>
-mi portafolio con proyectos en GitHub.
+**Integrante 2: Daniel Crispin**  
+**Objetivo 1:**
+En los primeros 6 meses luego de graduarme, involucrarme activamente en al menos dos proyectos colaborativos relacionados con la creación de aplicaciones web y móvil, mejorando mis habilidades técnicas y construyendo una red profesional global para incrementar mis oportunidades laborales en el sector tecnológico.
 
-Objetivo 2: <br>
-Iniciar una maestría en Arquitectura de Software en un plazo máximo de 3 años después de graduarme, <br>
-complementado mi experiencia laboral. El objetivo es finalizar la maestría en 2 años y, posteriormente, <br>
-postularme como docente universitario dentro de los 5 años posteriores a la graduación.
+**Objetivo 2:**
+Dentro de los próximos 3 años, alcanzar un puesto de liderazgo como coordinador de equipo en una empresa de innovación tecnológica,  fortaleciendo mis habilidades en gestión de proyectos, liderazgo efectivo y metodologías ágiles a través de formación especializada y experiencia práctica, con el fin de optimizar la productividad y el desempeño del equipo.
+
+
+**Integrante 3: Salim Ramirez**  
+**Objetivo 1:**
+Dentro de los primeros 12 meses después de graduarme, conseguir un puesto como desarrollador backend en una empresa tecnológica internacional, aplicando mis conocimientos en arquitecturas escalables y buenas prácticas de programación, con el fin de adquirir experiencia práctica en entornos de alto rendimiento.
+
+**Objetivo 2:**
+En un plazo máximo de 5 años tras la graduación, completar un MBA en gestión de proyectos tecnológicos en una universidad de prestigio, para fortalecer mis competencias de liderazgo y estrategia empresarial, y sentar las bases para dirigir equipos de desarrollo de software y proyectos innovadores.
+
+**Objetivo 3:**
+Antes de cumplir 7 años de egresado, fundar una startup tecnológica enfocada en soluciones móviles, validando el producto en el mercado local primero y luego expandiéndolo internacionalmente, con el objetivo de generar impacto y posicionarme como líder emprendedor en el ecosistema digital.
+
+
+**Integrante 4: Paúl Sulca**
+
+
+**Integrante 5: Diego Vilca**  
+**Objetivo 1:**
+Al culminar mi carrera, conseguir un puesto como desarrollador web o móvil en un plazo máximo de 1 mes después de graduarme, aplicando a un mínimo de 5 ofertas laborales por semana y actualizando constantemente mi portafolio con proyectos en GitHub.
+
+**Objetivo 2:**
+Iniciar una maestría en Arquitectura de Software en un plazo máximo de 3 años después de graduarme, complementado mi experiencia laboral. El objetivo es finalizar la maestría en 2 años y, posteriormente, postularme como docente universitario dentro de los 5 años posteriores a la graduación.
 
 # Capítulo I: Introducción
 
