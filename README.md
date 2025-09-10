@@ -57,6 +57,9 @@
 
 # Registro de Versiones del Informe
 
+|Versión | Fecha        | Autor           | Descripción de modificación                     |
+|--------|--------------|-----------------|-------------------------------------------------|
+| 1.0    | 30/08/2025   | Salim Ramirez   | Creación inicial de la estructura del informe   |
 
 
 # Project Report Collaboration Insights
