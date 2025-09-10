@@ -128,6 +128,12 @@
 - [Anexos](#anexos)
 
 # Student Outcome
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7
+
+| Criterio específico                                                                                                                                              | Acciones realizadas                                                                                                                                                                                                                      | Conclusiones |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Actualiza conceptos y<br> conocimientos necesarios <br> para su desarrollo<br> profesional y en especial <br> para su proyecto en <br> soluciones de software.   | Aponte Cruzado, Andrea Marielena <br> *TB1* <br>  Crispin Ramos, Daniel Franco <br> *TB1* <br> Ramirez Mestanza, Salim Ignacio <br> *TB1* <br> Sulca Gonzales, Paúl Fernando <br> *TB1* <br>  Vilca Saboya, Diego Alejandro <br> *TB1*   |              |
+| Reconoce la necesidad del <br> aprendizaje permamente <br> para el desempeño <br> profesional y el desarrollo de <br> proyectos en soluciones de <br> software.  | Aponte Cruzado, Andrea Marielena <br> *TB1* <br>  Crispin Ramos, Daniel Franco <br> *TB1* <br> Ramirez Mestanza, Salim Ignacio <br> *TB1* <br> Sulca Gonzales, Paúl Fernando <br> *TB1* <br>  Vilca Saboya, Diego Alejandro <br> *TB1*   |              |              
 
 # Objetivos SMART
 A continuación, cada integrante del equipo presenta sus objetivos SMART, enfocados en su desarrollo profesional luego de culminar la carrera universitaria.
