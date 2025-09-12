@@ -414,13 +414,13 @@ Representa la cuenta de facturación de un estudiante, incluyendo su historial d
 
 **Atributos principales:**
 
-| Atributo        | Tipo            | Visibilidad | Descripción                                            |
-|-----------------|-----------------|-------------|--------------------------------------------------------|
-| `id`            | `Long`          | `private`   | Identificador único de la cuenta de facturación.       |
-| `studentId`     | `StudentId`     | `private`   | Identificador del estudiante asociado a la cuenta.     |
-| `invoices`      | `List<Invoice>` | `private`   | Lista de boletas asociadas a la cuenta.                |
-| `accountStatus` | `Enum`          | `private`   | Estado actual de la cuenta (activa, suspendida, etc.). |
-| `academyId`     | `AcademyId`     | `private`   | Identificador de la academia asociada a la cuenta.     |
+| Atributo        | Tipo             | Visibilidad | Descripción                                            |
+|-----------------|------------------|-------------|--------------------------------------------------------|
+| `id`            | `Long`           | `private`   | Identificador único de la cuenta de facturación.       |
+| `studentId`     | `StudentId`      | `private`   | Identificador del estudiante asociado a la cuenta.     |
+| `invoices`      | `Set<Invoice>`   | `private`   | Conjunto de boletas emitidas a la cuenta.              |
+| `accountStatus` | `AccountStatus`  | `private`   | Estado actual de la cuenta (activa, suspendida, etc.). |
+| `academyId`     | `AcademyId`      | `private`   | Identificador de la academia asociada a la cuenta.     |
 
 **Métodos principales:**
 
@@ -434,6 +434,37 @@ Representa la cuenta de facturación de un estudiante, incluyendo su historial d
 | `getOutstandingBalance()`                             | `BigDecimal`    | `public`    | Calcula el saldo pendiente de la cuenta.                        |
 | `suspendAccount()`                                    | `void`          | `public`    | Suspende la cuenta por falta de pago.                           |
 | `reactivateAccount()`                                 | `void`          | `public`    | Reactiva una cuenta suspendida.                                 |
+
+---
+
+**`Invoice` (Entity)**
+
+Representa una boleta de pago emitida a un estudiante.
+
+**Atributos principales:**
+
+| Atributo           | Tipo            | Visibilidad | Descripción                                          |
+|--------------------|-----------------|-------------|------------------------------------------------------|
+| `id`               | `Long`          | `private`   | Identificador único de la boleta.                    |
+| `invoiceType`      | `InvoiceType`   | `private`   | Tipo de boleta (matrícula, mensualidad, etc.).       |
+| `amount`           | `Money`         | `private`   | Monto total de la boleta.                            |
+| `description`      | `String`        | `private`   | Descripción o detalles adicionales de la boleta.     |
+| `issuedDate`       | `LocalDate`     | `private`   | Fecha de emisión de la boleta.                       |
+| `dueDate`          | `LocalDate`     | `private`   | Fecha de vencimiento de la boleta.                   |
+| `invoiceStatus`    | `InvoiceStatus` | `private`   | Estado de la boleta (pendiente, pagada, vencida).    |
+| `billingAccountId` | `Long`          | `private`   | Identificador de la cuenta de facturación asociada.  |
+
+**Métodos principales:**
+
+| Método                                  | Tipo de Retorno | Visibilidad | Descripción                                                  |
+|-----------------------------------------|-----------------|-------------|--------------------------------------------------------------|
+| `Invoice()`                             | `Constructor`   | `protected` | Constructor protegido para uso por el repositorio.           |
+| `Invoice(AssignInvoiceCommand command)` | `Constructor`   | `public`    | Constructor que inicializa la boleta a partir de un comando. |
+| `markAsPaid()`                          | `void`          | `public`    | Marca la boleta como pagada.                                 |
+| `isOverdue()`                           | `boolean`       | `public`    | Verifica si la boleta está vencida.                          |
+| `getOutstandingAmount()`                | `Money`         | `public`    | Obtiene el monto pendiente de la boleta.                     |
+| `updateDueDate(LocalDate newDueDate)`   | `void`          | `public`    | Actualiza la fecha de vencimiento de la boleta.              |
+| `cancelInvoice()`                       | `void`          | `public`    | Cancela la boleta si es necesario.                           | 
 
 
 #### 4.2.6.2. Interface Layer
