@@ -490,6 +490,29 @@ Representa el estado de una cuenta de facturación.
 | `isSuspended()` | `boolean`       | `public`    | Verifica si la cuenta está suspendida.      |
 | `isCanceled()`  | `boolean`       | `boolean`   | Verifica si la cuenta ha sido cancelada.    |
 
+---
+
+**`InvoiceType` (Value Object)**
+
+Representa el tipo de boleta emitida.
+
+**Atributos principales:**
+
+| Atributo     | Tipo   | Visibilidad | Descripción                    |
+|--------------|--------|-------------|--------------------------------|
+| `ENROLLMENT` | `Enum` | `public`    | Boleta de matrícula.           |
+| `MONTHLY`    | `Enum` | `public`    | Boleta de mensualidad.         |
+| `OTHER`      | `Enum` | `public`    | Boleta de otro tipo.           |
+
+**Métodos principales:**
+
+| Método           | Tipo de Retorno | Visibilidad | Descripción                               |
+|------------------|-----------------|-------------|-------------------------------------------|
+| `isEnrollment()` | `boolean`       | `public`    | Verifica si es una boleta de matrícula.   |
+| `isMonthly()`    | `boolean`       | `public`    | Verifica si es una boleta de mensualidad. |
+| `isOther()`      | `boolean`       | `public`    | Verifica si es una boleta de otro tipo.   |
+
+---
 
 
 #### 4.2.6.2. Interface Layer
