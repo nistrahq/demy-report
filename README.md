@@ -171,7 +171,37 @@ Write here...
 
 ## 1.3. Segmentos objetivo
 
-Write here...
+En el análisis del segmento objetivo para Demy, hemos previsto que nuestros principales usuarios de nuestra startup
+serían profesores y personal administrativo de academias preuniversitarias.
+
+#### Profesores de academias preuniversitarias
+
+Según la revista Gan@Mas(24 de julio, 2014), sabemos que diversos docentes usan hasta el 29% de su tiempo en tareas administrativas, las cuales no deberían estar ligadas a profesionales de la educación. La gran demanda en estas academias preuniversitarias no permite a los profesores dedicar su tiempo laboral a ejercer plenamente su labor de docente.
+
+* Edad: Buscamos profesores de cualquier edad.
+* Necesidad clave: Reducir la carga administrativa y optimizar su tiempo para centrarse en la    enseñanza y mejorar su eficiencia en las aulas.
+* Nivel educativo: Profesores con formación universitaria, preferiblemente con especialización en educación o áreas afines.
+* Uso de tecnología: Profesores que utilizan tecnología en su labor docente, pero que requieren herramientas más eficientes para la gestión administrativa.
+
+#### Administradores de academias preuniversitarias
+
+Los administradores de las academias preuniversitarias suelen enfrentarse a una gran carga de trabajo relacionada con la planificación de horarios, gestión de pagos y matrículas. Según la Encuesta Nacional de Uso del Tiempo (ENUT) 2024, el 45% de los trabajadores en el sector educativo dedican más de 20 horas semanales a tareas administrativas, lo que refleja una carga significativa en el tiempo dedicado a tareas no pedagógicas (Instituto Nacional de Estadística e
+Informática [INEI], 2024). Además, un estudio realizado por el Grupo de Análisis para el Desarrollo (GRADE) destaca que el 70% de los directores de instituciones educativas en Perú consideran que las herramientas actuales para la gestión administrativa son ineficientes, lo que subraya la necesidad de adoptar nuevas soluciones tecnológicas (GRADE, 2023). Este segmento busca soluciones tecnológicas que optimicen el manejo de información y mejoren la experiencia educativa de los alumnos.
+
+* Edad: Buscamos personal administrativo de cualquier edad.
+* Necesidad clave: Contar con una solución tecnológica que facilite la gestión, mejore la eficiencia operativa y brinde una experiencia más fluida tanto para el personal como para los alumnos y padres.
+* Nivel educativo: Administradores con formación técnica o universitaria, preferiblemente en áreas de gestión, administración o educación.
+* Uso de tecnología: Administradores que utilizan herramientas digitales para la gestión de información, pero que requieren una plataforma más integrada y eficiente para optimizar sus procesos.
+
+#### Alumnos de academias preuniversitarias
+
+Los estudiantes de academias se caracterizan por ser jóvenes disciplinados, por lo que organizan, desarrollan y planean sus actividades de acuerdo con el ambiente y tareas que escogen, lo que se relaciona con el nivel de autoeficacia que tengan. La autoeficacia les permite desenvolverse de acuerdo con las habilidades y capacidades que cree poseer (Bandura, 1997b; Domínguez, 2014; García et al., 2010, citado en Burgos-Torre & Salas-Blas, 2020).
+En este sentido, este segmento busca optimizar su tiempo y requiere de una solución tecnológica que facilite dicha gestión.
+
+* Edad: Buscamos estudiantes jóvenes
+* Necesidad clave: Optimizar tiempo para gestionar mejor sus horarios académicos.
+* Nivel Educativo: Alumnos de colegios o personas jóvenes que cuenten con educación secundaria completa.
+* Uso de tecnología: Alumnos que utilizan tecnología en su día a día, pero que requieren herramientas más eficientes para la gestión administrativa.
 
 # Capítulo II: Requirements Elicitation & Analysis
 
