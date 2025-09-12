@@ -566,7 +566,7 @@ Proporciona métodos para consultar información relacionada con las cuentas de 
 |---------------------------------------------|----------------------------|-------------|--------------------------------------------------------------------|
 | `handle(GetBillingAccountByIdQuery query)`  | `Optional<BillingAccount>` | `public`    | Obtiene una cuenta de facturación por su ID.                       |
 | `handle(GetInvoicesByAccountIdQuery query)` | `List<Invoice>`            | `public`    | Obtiene todas las boletas asociadas a una cuenta de facturación.   |
-| `handle(GetOutstandingBalanceQuery query)`  | `BigDecimal`               | `public`    | Obtiene el saldo pendiente de una cuenta de facturación.           |
+| `handle(GetOutstandingBalanceQuery query)`  | `Optional<Money>`          | `public`    | Obtiene el saldo pendiente de una cuenta de facturación.           |
 | `handle(GetOverdueInvoicesQuery query)`     | `List<Invoice>`            | `public`    | Obtiene todas las boletas vencidas de una cuenta de facturación.   |
 | `handle(GetAccountStatusQuery query)`       | `Optional<AccountStatus>`  | `public`    | Obtiene el estado actual de una cuenta de facturación.             |
 
@@ -612,6 +612,26 @@ Implementación del servicio de comandos para gestionar cuentas de facturación 
 | `handle(RecordPaymentCommand command)`        | `void`                     | `public`    | Maneja el comando para registrar un pago.                     |
 | `handle(SuspendAccountCommand command)`       | `void`                     | `public`    | Maneja el comando para suspender una cuenta de facturación.   |
 | `handle(ReactivateAccountCommand command)`    | `void`                     | `public`    | Maneja el comando para reactivar una cuenta suspendida.       |
+
+2. **`BillingAccountQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para obtener información sobre cuentas de facturación y boletas.
+
+**Atributos principales:**
+
+| Atributo                   | Tipo                       | Visibilidad | Descripción                                             |
+|----------------------------|----------------------------|-------------|---------------------------------------------------------|
+| `billingAccountRepository` | `BillingAccountRepository` | `private`   | Repositorio para acceder a las cuentas de facturación.  |
+
+**Métodos principales:**
+
+| Método                                      | Tipo de Retorno            | Visibilidad | Descripción                                                     |
+|---------------------------------------------|----------------------------|-------------|-----------------------------------------------------------------|
+| `handle(GetBillingAccountByIdQuery query)`  | `Optional<BillingAccount>` | `public`    | Maneja la consulta para obtener una cuenta por su ID.           |
+| `handle(GetInvoicesByAccountIdQuery query)` | `List<Invoice>`            | `public`    | Maneja la consulta para obtener boletas asociadas a una cuenta. |
+| `handle(GetOutstandingBalanceQuery query)`  | `Optional<Money>`          | `public`    | Maneja la consulta para obtener el saldo pendiente.             |
+| `handle(GetOverdueInvoicesQuery query)`     | `List<Invoice>`            | `public`    | Maneja la consulta para obtener boletas vencidas.               |
+| `handle(GetAccountStatusQuery query)`       | `Optional<AccountStatus>`  | `public`    | Maneja la consulta para obtener el estado de una cuenta.        |
 
 #### 4.2.6.4. Infrastructure Layer
 
