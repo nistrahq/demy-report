@@ -360,7 +360,9 @@ Write here...
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
-Write here...
+En esta sección se aborda la perspectiva táctica del enfoque Domain-Driven Design (DDD), la cual se centra en representar el dominio del negocio mediante elementos concretos de software. A partir de los límites definidos en el diseño estratégico, se modelan entidades, objetos de valor, servicios y otros componentes clave que encapsulan las reglas del dominio y responden a las necesidades del sistema. Este nivel permite estructurar la solución de manera más alineada con los procesos y problemáticas reales, garantizando una implementación coherente y sostenible.
+
+Cada bounded context contará con su propio apartado, donde se detallará cómo estos elementos se articulan para gestionar los flujos de aplicación, facilitar la interacción con sistemas externos y contribuir al objetivo central de la solución.
 
 ### 4.2.X. Bounded Context: <Bounded Context Name>
 
@@ -395,6 +397,43 @@ Write here...
 Write here...
 
 #### 4.2.X.6.2. Bounded Context Database Design Diagram
+
+Write here...
+
+### 4.2.6. Bounded Context: Billing
+
+Este contexto se encarga de la gestión de las boletas y obligaciones de pago de los estudiantes. Incluye la emisión, seguimiento y control de las boletas mensuales y de matrícula, así como la gestión de pagos y vencimientos. Este contexto es crucial para asegurar la sostenibilidad financiera de la institución educativa. Aunque no es el núcleo del negocio, su correcta implementación es vital para el funcionamiento general del sistema.
+
+#### 4.2.6.1. Domain Layer
+
+En esta sección se describen los elementos del Domain Layer del contexto de Billing, que encapsulan las reglas y lógica del dominio relacionadas con la gestión de boletas y pagos.
+
+
+#### 4.2.6.2. Interface Layer
+
+Write here...
+
+#### 4.2.6.3. Application Layer
+
+Write here...
+
+#### 4.2.6.4. Infrastructure Layer
+
+Write here...
+
+#### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
+
+Write here...
+
+#### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
+
+Write here...
+
+#### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
+
+Write here...
+
+#### 4.2.6.6.2. Bounded Context Database Design Diagram
 
 Write here...
 
