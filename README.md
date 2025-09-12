@@ -514,6 +514,29 @@ Representa el tipo de boleta emitida.
 
 ---
 
+**`InvoiceStatus` (Value Object)**
+
+Representa el estado de una boleta.
+
+**Atributos principales:**
+
+| Atributo     | Tipo   | Visibilidad | Descripción                       |
+|--------------|--------|-------------|-----------------------------------|
+| `PENDING`    | `Enum` | `public`    | La boleta está pendiente de pago. |
+| `PAID`       | `Enum` | `public`    | La boleta ha sido pagada.         |
+| `OVERDUE`    | `Enum` | `public`    | La boleta está vencida.           |
+| `CANCELED`   | `Enum` | `public`    | La boleta ha sido cancelada.      |
+
+**Métodos principales:**
+
+| Método         | Tipo de Retorno | Visibilidad | Descripción                               |
+|----------------|-----------------|-------------|-------------------------------------------|
+| `isPending()`  | `boolean`       | `public`    | Verifica si la boleta está pendiente.     |
+| `isPaid()`     | `boolean`       | `public`    | Verifica si la boleta ha sido pagada.     |
+| `isOverdue()`  | `boolean`       | `public`    | Verifica si la boleta está vencida.       |
+| `isCanceled()` | `boolean`       | `public`    | Verifica si la boleta ha sido cancelada.  |
+
+---
 
 #### 4.2.6.2. Interface Layer
 
