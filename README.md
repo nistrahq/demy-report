@@ -408,7 +408,9 @@ Este contexto se encarga de la gestión de las boletas y obligaciones de pago de
 
 En esta sección se describen los elementos del Domain Layer del contexto de Billing, que encapsulan las reglas y lógica del dominio relacionadas con la gestión de boletas y pagos.
 
-**`BillingAccount` (Aggregate)**
+---
+
+1. **`BillingAccount` (Aggregate)**
 
 Representa la cuenta de facturación de un estudiante, incluyendo su historial de boletas y pagos.
 
@@ -437,7 +439,7 @@ Representa la cuenta de facturación de un estudiante, incluyendo su historial d
 
 ---
 
-**`Invoice` (Entity)**
+2. **`Invoice` (Entity)**
 
 Representa una boleta de pago emitida a un estudiante.
 
@@ -468,7 +470,7 @@ Representa una boleta de pago emitida a un estudiante.
 
 ---
 
-**`AccountStatus` (Value Object)**
+3. **`AccountStatus` (Value Object)**
 
 Representa el estado de una cuenta de facturación.
 
@@ -492,7 +494,7 @@ Representa el estado de una cuenta de facturación.
 
 ---
 
-**`InvoiceType` (Value Object)**
+4. **`InvoiceType` (Value Object)**
 
 Representa el tipo de boleta emitida.
 
@@ -514,7 +516,7 @@ Representa el tipo de boleta emitida.
 
 ---
 
-**`InvoiceStatus` (Value Object)**
+5. **`InvoiceStatus` (Value Object)**
 
 Representa el estado de una boleta.
 
@@ -538,7 +540,7 @@ Representa el estado de una boleta.
 
 ---
 
-**`BillingAccountCommandService` (Domain Service)**
+6. **`BillingAccountCommandService` (Domain Service)**
 
 Proporciona métodos para ejecutar comandos relacionados con la gestión de cuentas de facturación y boletas.
 
@@ -554,7 +556,7 @@ Proporciona métodos para ejecutar comandos relacionados con la gestión de cuen
 
 ---
 
-**`BillingAccountQueryService` (Domain Service)**
+7. **`BillingAccountQueryService` (Domain Service)**
 
 Proporciona métodos para consultar información relacionada con las cuentas de facturación y boletas.
 
