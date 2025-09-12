@@ -538,6 +538,21 @@ Representa el estado de una boleta.
 
 ---
 
+**`BillingAccountCommandService` (Domain Service)**
+
+Abstracción que encapsula la lógica de negocio relacionada con las operaciones sobre cuentas de facturación.
+
+**Métodos principales:**
+
+| Método                                                        | Tipo de Retorno    | Visibilidad | Descripción                                                     |
+|---------------------------------------------------------------|--------------------|-------------|-----------------------------------------------------------------|
+| `createBillingAccount(CreateBillingAccountCommand command)`   | `BillingAccount`   | `public`    | Crea una nueva cuenta de facturación a partir de un comando.    |
+| `assignInvoice(AssignInvoiceCommand command)`                 | `Invoice`          | `public`    | Asigna una nueva boleta a una cuenta de facturación.            |
+| `recordPayment(RecordPaymentCommand command)`                 | `void`             | `public`    | Registra un pago en una cuenta de facturación.                  |
+| `suspendAccount(SuspendAccountCommand command)`               | `void`             | `public`    | Suspende una cuenta de facturación por falta de pago.           |
+| `reactivateAccount(ReactivateAccountCommand command)`         | `void`             | `public`    | Reactiva una cuenta de facturación suspendida.                  |
+
+
 #### 4.2.6.2. Interface Layer
 
 Write here...
