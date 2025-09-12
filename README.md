@@ -574,7 +574,22 @@ Proporciona métodos para consultar información relacionada con las cuentas de 
 
 #### 4.2.6.2. Interface Layer
 
-Write here...
+1. **`BillingAccountsController` (REST Controller)**
+
+Controlador REST que expone endpoints para gestionar cuentas de facturación y boletas.
+
+**Endpoints principales:**
+
+| Nombre del método        | Ruta base típica                           | Método HTTP | Descripción                                                      |
+|--------------------------|--------------------------------------------|-------------|------------------------------------------------------------------|
+| `createBillingAccount`   | `/api/v1/billing-accounts`                 | `POST`      | Crea una nueva cuenta de facturación.                            |
+| `getBillingAccountById`  | `/api/v1/billing-accounts/{id}`            | `GET`       | Obtiene una cuenta de facturación por su ID.                     |
+| `assignInvoice`          | `/api/v1/billing-accounts/{id}/invoices`   | `POST`      | Asigna una nueva boleta a una cuenta de facturación.             |
+| `getInvoicesByAccountId` | `/api/v1/billing-accounts/{id}/invoices`   | `GET`       | Obtiene todas las boletas asociadas a una cuenta de facturación. |
+| `recordPayment`          | `/api/v1/billing-accounts/{id}/payments`   | `POST`      | Registra un pago en una cuenta de facturación.                   |
+| `getOutstandingBalance`  | `/api/v1/billing-accounts/{id}/balance`    | `GET`       | Obtiene el saldo pendiente de una cuenta de facturación.         |
+| `suspendAccount`         | `/api/v1/billing-accounts/{id}/suspend`    | `POST`      | Suspende una cuenta de facturación por falta de pago.            |
+| `reactivateAccount`      | `/api/v1/billing-accounts/{id}/reactivate` | `POST`      | Reactiva una cuenta de facturación suspendida.                   |
 
 #### 4.2.6.3. Application Layer
 
