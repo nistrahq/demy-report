@@ -466,6 +466,31 @@ Representa una boleta de pago emitida a un estudiante.
 | `updateDueDate(LocalDate newDueDate)`   | `void`          | `public`    | Actualiza la fecha de vencimiento de la boleta.              |
 | `cancelInvoice()`                       | `void`          | `public`    | Cancela la boleta si es necesario.                           | 
 
+---
+
+**`AccountStatus` (Value Object)**
+
+Representa el estado de una cuenta de facturación.
+
+**Atributos principales:**
+
+| Atributo    | Tipo   | Visibilidad | Descripción                     |
+|-------------|--------|-------------|---------------------------------|
+| `ACTIVE`    | `Enum` | `public`    | La cuenta está activa.          |
+| `OVERDUE`   | `Enum` | `public`    | La cuenta tiene pagos vencidos. |
+| `SUSPENDED` | `Enum` | `public`    | La cuenta está suspendida.      |
+| `CANCELED`  | `Enum` | `public`    | La cuenta ha sido cancelada.    |
+
+**Métodos principales:**
+
+| Método          | Tipo de Retorno | Visibilidad | Descripción                                 |
+|-----------------|-----------------|-------------|---------------------------------------------|
+| `isActive()`    | `boolean`       | `public`    | Verifica si la cuenta está activa.          |
+| `isOverdue()`   | `boolean`       | `public`    | Verifica si la cuenta tiene pagos vencidos. |
+| `isSuspended()` | `boolean`       | `public`    | Verifica si la cuenta está suspendida.      |
+| `isCanceled()`  | `boolean`       | `boolean`   | Verifica si la cuenta ha sido cancelada.    |
+
+
 
 #### 4.2.6.2. Interface Layer
 
