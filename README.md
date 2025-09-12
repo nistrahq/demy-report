@@ -275,17 +275,26 @@ Write here...
 
 ### 4.1.3. Software Architecture
 
+En esta sección se presenta la arquitectura de software de Demy, diseñada bajo un enfoque basado en Domain-Driven Design (DDD) y representada mediante el C4 Model utilizando Structurizr DSL. La arquitectura ilustra cómo se estructura el sistema a distintos niveles de abstracción.
+
 #### 4.1.3.1. Software Architecture Context Level Diagrams
 
-Write here...
+El Context Diagram muestra a Demy como el sistema central que interactúa con tres usuarios principales: el coordinador, que gestiona matrículas, horarios y pagos; el docente, que consulta horarios y registra asistencia; y el estudiante, que revisa sus horarios y comprobantes. Además, el sistema se integra con Stripe y PagoEfectivo para la gestión de pagos y con Gmail para el envío de notificaciones por correo electrónico.
+
+
+![Context Diagram](assets/diagrams/software-architecture/context/software_architecture_context_diagram.png)
 
 #### 4.1.3.2. Software Architecture Container Level Diagrams
 
-Write here...
+El Container Diagram descompone la solución en sus principales contenedores: una Flutter App para coordinadores, una Android App para docentes y una iOS App para estudiantes, todas conectadas a un API Backend desarrollado en Spring Boot que concentra la lógica de negocio y accede a una base de datos MySQL para la información académica. El backend también se integra con Stripe y PagoEfectivo para pagos y con Gmail para notificaciones automáticas.
+
+![Context Diagram](assets/diagrams/software-architecture/containers/software_architecture_container_diagram.png)
 
 #### 4.1.3.3. Software Architecture Deployment Diagrams
 
-Write here...
+El diagrama de deployment de Demy Application muestra la distribución física del sistema en producción, detallando cómo se despliegan los contenedores y servicios en la infraestructura y cómo interactúan entre sí. Las aplicaciones móviles (iOS, Android y Flutter) se ejecutan en los dispositivos de los usuarios y son distribuidas mediante Firebase, mientras que el backend en Spring Boot y la base de datos MySQL se alojan en Railway PaaS. Asimismo, se incluyen sistemas externos como Stripe, PagoEfectivo y Gmail. En conjunto, el diagrama ofrece una visión clara de la ubicación de los componentes y de los protocolos de comunicación empleados.
+
+![Context Diagram](assets/diagrams/software-architecture/deployment/software_architecture_deployment_diagram.png)
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
