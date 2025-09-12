@@ -593,7 +593,25 @@ Controlador REST que expone endpoints para gestionar cuentas de facturación y b
 
 #### 4.2.6.3. Application Layer
 
-Write here...
+1. **`BillingAccountCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar cuentas de facturación y boletas.
+
+**Atributos principales:**
+
+| Atributo                     | Tipo                       | Visibilidad | Descripción                                             |
+|------------------------------|----------------------------|-------------|---------------------------------------------------------|
+| `billingAccountRepository`   | `BillingAccountRepository` | `private`   | Repositorio para acceder a las cuentas de facturación.  |
+
+**Métodos principales:**
+
+| Método                                        | Tipo de Retorno            | Visibilidad | Descripción                                                   |
+|-----------------------------------------------|----------------------------|-------------|---------------------------------------------------------------|
+| `hnadle(CreateBillingAccountCommand command)` | `Optional<BillingAccount>` | `public`    | Maneja el comando para crear una nueva cuenta de facturación. |
+| `handle(AssignInvoiceCommand command)`        | `Optional<Invoice>`        | `public`    | Maneja el comando para asignar una nueva boleta.              |
+| `handle(RecordPaymentCommand command)`        | `void`                     | `public`    | Maneja el comando para registrar un pago.                     |
+| `handle(SuspendAccountCommand command)`       | `void`                     | `public`    | Maneja el comando para suspender una cuenta de facturación.   |
+| `handle(ReactivateAccountCommand command)`    | `void`                     | `public`    | Maneja el comando para reactivar una cuenta suspendida.       |
 
 #### 4.2.6.4. Infrastructure Layer
 
