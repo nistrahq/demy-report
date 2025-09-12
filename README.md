@@ -408,6 +408,33 @@ Este contexto se encarga de la gestión de las boletas y obligaciones de pago de
 
 En esta sección se describen los elementos del Domain Layer del contexto de Billing, que encapsulan las reglas y lógica del dominio relacionadas con la gestión de boletas y pagos.
 
+**`BillingAccount` (Aggregate)**
+
+Representa la cuenta de facturación de un estudiante, incluyendo su historial de boletas y pagos.
+
+**Atributos principales:**
+
+| Atributo        | Tipo            | Visibilidad | Descripción                                            |
+|-----------------|-----------------|-------------|--------------------------------------------------------|
+| `id`            | `Long`          | `private`   | Identificador único de la cuenta de facturación.       |
+| `studentId`     | `StudentId`     | `private`   | Identificador del estudiante asociado a la cuenta.     |
+| `invoices`      | `List<Invoice>` | `private`   | Lista de boletas asociadas a la cuenta.                |
+| `accountStatus` | `Enum`          | `private`   | Estado actual de la cuenta (activa, suspendida, etc.). |
+| `academyId`     | `AcademyId`     | `private`   | Identificador de la academia asociada a la cuenta.     |
+
+**Métodos principales:**
+
+| Método                                                | Tipo de Retorno | Visibilidad | Descripción                                                     |
+|-------------------------------------------------------|-----------------|-------------|-----------------------------------------------------------------|
+| `BillingAccount()`                                    | `Constructor`   | `protected` | Constructor protegido para uso por el repositorio.              |
+| `BillingAccount(StudentId studentId)`                 | `Constructor`   | `public`    | Constructor que inicializa la cuenta con el ID del estudiante.  |
+| `BillingAccount(CreateBillingAccountCommand command)` | `Constructor`   | `public`    | Constructor que inicializa la cuenta a partir de un comando.    |
+| `addInvoice(Invoice invoice)`                         | `void`          | `public`    | Agrega una nueva boleta a la cuenta.                            |
+| `recordPayment(Payment payment)`                      | `void`          | `public`    | Registra un pago realizado en la cuenta.                        |
+| `getOutstandingBalance()`                             | `BigDecimal`    | `public`    | Calcula el saldo pendiente de la cuenta.                        |
+| `suspendAccount()`                                    | `void`          | `public`    | Suspende la cuenta por falta de pago.                           |
+| `reactivateAccount()`                                 | `void`          | `public`    | Reactiva una cuenta suspendida.                                 |
+
 
 #### 4.2.6.2. Interface Layer
 
