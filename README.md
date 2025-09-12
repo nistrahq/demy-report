@@ -540,7 +540,7 @@ Representa el estado de una boleta.
 
 **`BillingAccountCommandService` (Domain Service)**
 
-Abstracción que encapsula la lógica de negocio relacionada con las operaciones sobre cuentas de facturación.
+Proporciona métodos para ejecutar comandos relacionados con la gestión de cuentas de facturación y boletas.
 
 **Métodos principales:**
 
@@ -552,6 +552,23 @@ Abstracción que encapsula la lógica de negocio relacionada con las operaciones
 | `suspendAccount(SuspendAccountCommand command)`               | `void`             | `public`    | Suspende una cuenta de facturación por falta de pago.           |
 | `reactivateAccount(ReactivateAccountCommand command)`         | `void`             | `public`    | Reactiva una cuenta de facturación suspendida.                  |
 
+---
+
+**`BillingAccountQueryService` (Domain Service)**
+
+Proporciona métodos para consultar información relacionada con las cuentas de facturación y boletas.
+
+**Métodos principales:**
+
+| Método                                      | Tipo de Retorno            | Visibilidad | Descripción                                                        |
+|---------------------------------------------|----------------------------|-------------|--------------------------------------------------------------------|
+| `handle(GetBillingAccountByIdQuery query)`  | `Optional<BillingAccount>` | `public`    | Obtiene una cuenta de facturación por su ID.                       |
+| `handle(GetInvoicesByAccountIdQuery query)` | `List<Invoice>`            | `public`    | Obtiene todas las boletas asociadas a una cuenta de facturación.   |
+| `handle(GetOutstandingBalanceQuery query)`  | `BigDecimal`               | `public`    | Obtiene el saldo pendiente de una cuenta de facturación.           |
+| `handle(GetOverdueInvoicesQuery query)`     | `List<Invoice>`            | `public`    | Obtiene todas las boletas vencidas de una cuenta de facturación.   |
+| `handle(GetAccountStatusQuery query)`       | `Optional<AccountStatus>`  | `public`    | Obtiene el estado actual de una cuenta de facturación.             |
+
+---
 
 #### 4.2.6.2. Interface Layer
 
