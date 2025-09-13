@@ -588,7 +588,7 @@ Write here...
 
 3. **Institution → Scheduling**
     - **Patrón**: Customer/Supplier + Anticorruption Layer (ACL)
-    - **Relación**: Institution (Supplier/U) → Scheduling (Customer/D)
+    - **Relación**: Institution (U) → Scheduling (D)
     - **Justificación**: Scheduling necesita información de profesores que se gestiona en Institution para poder crear horarios y asignarlos correctamente. Institution actúa como proveedor de estos datos, mientras que Scheduling los consume. Se utiliza ACL para traducir entidades administrativas a su modelo operativo, manteniendo independencia entre contextos y evitando acoplamientos innecesarios.
 
 4. **Enrollment → Billing**
@@ -813,6 +813,147 @@ Write here...
 #### 4.2.X.6.2. Bounded Context Database Design Diagram
 
 Write here...
+
+### 4.2.5. Bounded Context: Scheduling
+
+#### 4.2.5.1. Domain Layer
+
+En esta sección se describen los elementos del Domain Layer del contexto de Scheduling, que encapsulan las reglas y lógica del dominio relacionadas con la programación de cursos, aulas y sesiones de clase.
+
+---
+
+1. **`Schedule` (Aggregate Root)**
+
+Representa un horario académico que contiene múltiples sesiones de clase.
+
+**Atributos principales:**
+
+| Atributo     | Tipo         | Visibilidad    | Descripción                                       |
+|--------------|--------------|----------------|---------------------------------------------------|
+| `id`         | `Long`       | `private`      | Identificador único del horario.                  |
+| `name`       | `String`     | `private`      | Nombre del horario.                               |
+| `academyId`  | `AcademyId`  | `private`      | Identificador de la academia asociada.            |
+
+**Métodos principales:**
+
+| Método                                  | Tipo de Retorno | Visibilidad | Descripción                                                |
+|-----------------------------------------|-----------------|-------------|------------------------------------------------------------|
+| `Schedule()`                            | `Constructor`   | `protected` | Constructor protegido para uso por el repositorio.         |
+| `addClassSession(ClassSession session)` | `void`          | `public`    | Agrega una nueva sesión de clase al horario.               |
+| `removeClassSession(Long sessionId)`    | `void`          | `public`    | Elimina una sesión de clase del horario.                   |
+| `validateConflicts(): boolean`          | `boolean`       | `public`    | Verifica si hay conflictos de horarios entre las sesiones. |
+| `updateName(String name)`               | `void`          | `public`    | Actualiza el nombre del horario de clase.                  |
+
+---
+
+2. **`Course` (Aggregate Root)**
+
+Representa un curso académico que puede tener múltiples sesiones de clase.
+
+**Atributos principales:**
+
+| Atributo      | Tipo         | Visibilidad | Descripción                            |
+|---------------|--------------|-------------|----------------------------------------|
+| `id`          | `Long`       | `private`   | Identificador único del curso.         |
+| `name`        | `String`     | `private`   | Nombre del curso.                      |
+| `courseCode`  | `CourseCode` | `private`   | Código único del curso.                |
+| `description` | `String`     | `private`   | Descripción del curso.                 |
+| `academyId`   | `AcademyId`  | `private`   | Identificador de la academia asociada. |
+
+**Métodos principales:**
+
+| Método                                                         | Tipo de Retorno | Visibilidad | Descripción                                        |
+|----------------------------------------------------------------|-----------------|-------------|----------------------------------------------------|
+| `Course()`                                                     | `Constructor`   | `protected` | Constructor protegido para uso por el repositorio. |
+| `updateCourse(String name, String code, String description)`   | `Course`        | `public`    | Actualiza los campos del curso correspondiente.    |
+
+---
+
+
+3. **`Classroom` (Aggregate Root)**
+
+Representa un aula disponible para la programación de sesiones.
+
+**Atributos principales:**
+
+| Atributo       | Tipo          | Visibilidad | Descripción                       |
+|---------------|---------------|-------------|-----------------------------------|
+| `id`           | `Long`       | `private`   | Identificador único del aula.     |
+| `classroomCode`| `ClassroomCode` | `private` | Código del aula.                  |
+| `capacity`     | `Integer`    | `private`   | Capacidad máxima de estudiantes. |
+| `campus`       | `String`     | `private`   | Campus donde se ubica el aula.   |
+| `academyId`    | `AcademyId`  | `private`   | Identificador de la academia asociada.|
+
+**Métodos principales:**
+
+| Método                                                                   | Tipo de Retorno   | Visibilidad | Descripción                                              |
+|--------------------------------------------------------------------------|-------------------|-------------|----------------------------------------------------------|
+| `Classroom()`                                                            | `Constructor`     | `protected` | Constructor protegido para uso por el repositorio.       |
+| `updateClassroom(String classroomCode, Integer capacity, String campus)` | `Classroom`       | `public`    | Actualiza los campos del salon de clase correspondiente. |
+
+---
+
+
+4. **`ClassSession` (Entity)**
+
+Representa una sesión de clase programada.
+
+**Atributos principales:**
+
+| Atributo       | Tipo           | Visibilidad | Descripción                               |
+|----------------|----------------|-------------|-------------------------------------------|
+| `id`           | `Long`         | `private`   | Identificador único de la sesión.         |
+| `courseId`     | `CourseId`     | `private`   | Referencia al curso asociado.             |
+| `classroomId`  | `ClassroomId`  | `private`   | Referencia al aula donde se dicta.        |
+| `teacherId`    | `TeacherId`    | `private`   | Identificador del docente asignado.       |
+| `dayOfWeek`    | `DayOfWeek`    | `private`   | Día de la semana en que ocurre la sesión. |
+| `timeRange`    | `TimeRange`    | `private`   | Intervalo horario de la sesión.           |
+
+**Métodos principales:**
+
+| Método            | Tipo de Retorno | Visibilidad   | Descripción                                         |
+|-------------------|-----------------|---------------|-----------------------------------------------------|
+| `ClassSession()`  | `Constructor`   | `protected`   | Constructor protegido para uso por el repositorio.  |
+
+---
+
+
+5. **`DayOfWeek` (Value Object)**
+
+Representa un día de la semana.
+
+| Atributo    | Tipo   | Visibilidad | Descripción               |
+|------------|--------|-------------|---------------------------|
+| `MONDAY`    | Enum  | `public`    | Lunes                     |
+| `TUESDAY`   | Enum  | `public`    | Martes                    |
+| `WEDNESDAY` | Enum  | `public`    | Miércoles                 |
+| `THURSDAY`  | Enum  | `public`    | Jueves                    |
+| `FRIDAY`    | Enum  | `public`    | Viernes                   |
+| `SATURDAY`  | Enum  | `public`    | Sábado                    |
+| `SUNDAY`    | Enum  | `public`    | Domingo                   |
+
+---
+
+6. **`TimeRange` (Value Object)**
+
+Representa un intervalo de tiempo.
+
+| Atributo    | Tipo       | Visibilidad | Descripción                    |
+|------------|------------|-------------|--------------------------------|
+| `startTime` | `LocalTime` | `private`  | Hora de inicio del intervalo.  |
+| `endTime`   | `LocalTime` | `private`  | Hora de fin del intervalo.     |
+
+**Métodos principales:**
+
+| Método                   | Tipo de Retorno | Visibilidad | Descripción                                         |
+|---------------------------|----------------|-------------|---------------------------------------------------|
+| `overlapsWith(TimeRange other)` | `boolean` | `public`    | Verifica si dos intervalos de tiempo se superponen.|
+
+---
+
+7. **Otros Value Objects**
+
+- **`CourseCode`**, **`ClassroomCode`**, **`CourseId`**, **`ClassroomId`**: Representan identificadores o códigos de cursos y aulas, con visibilidad `private` y métodos básicos para validación o comparación.
 
 ## Conclusiones y Recomendaciones
 
