@@ -745,6 +745,20 @@ Write here...
 
 #### Decisión Final del Context Mapping
 
+Luego de analizar las alternativas y sus implicancias, el equipo decidió mantener una arquitectura **desacoplada y basada en patrones de integración definidos por Domain-Driven Design (DDD)**. Se priorizó la independencia de cada Bounded Context para facilitar la escalabilidad, el mantenimiento y la evolución del sistema a largo plazo.
+
+- **IAM como Open Host Service (OHS):** Garantiza una autenticación centralizada, estable y reusable, permitiendo que otros contexts accedan mediante APIs documentadas sin acoplarse a detalles internos.
+- **Institution y Scheduling mediante Customer/Supplier + ACL:** Se optó por mantener independencia entre la gestión administrativa y la programación de clases, usando eventos y capas anticorrupción para sincronización.
+- **Enrollment y Scheduling con Customer/Supplier + ACL:** Asegura flexibilidad para que matrícula y horarios evolucionen de forma independiente, reduciendo riesgos de acoplamiento.
+- **Enrollment y Billing integrados automáticamente:** La facturación se dispara a partir de eventos de matrícula, eliminando procesos manuales y mejorando la consistencia financiera.
+- **Attendance con ACL/OHS:** La asistencia consume datos de matrícula y horarios a través de interfaces públicas, protegiendo estabilidad y seguridad.
+
+<div style="text-align: center;">
+  <img src="assets/diagrams/ddd/context-maps/src/context-mapping.jpg" alt="Context Mapping - Demy" height="600">
+</div>
+
+**Conclusión:**  
+La arquitectura final fomenta desacoplamiento, estabilidad y escalabilidad. Cada contexto mantiene autonomía de modelos y responsabilidades, mientras que las interacciones se realizan mediante APIs estables, ACLs y eventos de dominio. Esto soporta el crecimiento del sistema sin comprometer su mantenibilidad, asegurando que nuevos módulos puedan integrarse fácilmente sin refactorizaciones costosas.
 
 ### 4.1.3. Software Architecture
 
