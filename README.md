@@ -213,23 +213,309 @@ Write here...
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-Write here...
+Para competir eficazmente en el mercado de plataformas de gestión para academias presenciales, Nistra aplicará las siguientes estrategias y tácticas preliminares, considerando sus propias fortalezas y debilidades, así como el contexto de oportunidades y amenazas en relación a sus competidores:
+
+* Diferenciación por enfoque especializado
+**Estrategia:** Posicionar a Demy como la plataforma especializada en academias preuniversitarias presenciales, a diferencia de otros competidores que ofrecen soluciones más genéricas o centradas en colegios o empresas.
+**Tácticas:** Desarrollar funcionalidades específicas para academias preuniversitarias, como módulos de simulacros, cronogramas de preparación para exámenes de admisión
+
+* Modelo de precios escalables
+**Estrategia:** Mantener un esquema de precios accesible, con planes diferenciados según el tamaño de la academia, y con mejor relación calidad-precio frente a competidores como QuickSchools o Playoff.
+**Tácticas:** Evaluar una prueba gratuita de n días, ofrecer descuentos cada cierto tiempo o evaluar una contratación anual incluida con descuento.
+
+* Mejora progresiva del producto y adaptabilidad
+**Estrategia:** Competir frente a soluciones más maduras (como QuickSchools) con un enfoque ágil y adaptable, incorporando mejoras constantes con base en la retroalimentación directa de los usuarios.
+**Tácticas:** Lanzamientos de mejoras mensuales (por sprints).
+
+* Seguridad y confianza
+**Estrategia:** Reducir la percepción de riesgo en torno a ciberseguridad, una amenaza para startups, generando confianza desde etapas tempranas.
+**Táctica:** Contratar un servicio externo para auditorías de seguridad básicas.
+
+* Aprovechamiento del contexto post-pandemia
+**Estrategia:** Capitalizar el aumento de la digitalización en la educación tras el COVID-19 para incentivar la transformación digital de academias tradicionales.
+**Tácticas:** Ofrecer workshops gratuitos virtuales sobre “Digitaliza tu academia en 3 pasos con Demy”. Enseñar casos de éxito que muestren cómo academias presenciales mejoraron su eficiencia tras usar la plataforma.
 
 ## 2.2. Entrevistas
 
-Write here...
+En esta sección se aborda la investigación cualitativa realizada mediante entrevistas a representantes de los segmentos objetivo del proyecto: administrativos, docentes y alumnos de academias educativas. El objetivo fue comprender las herramientas, procesos y problemáticas actuales en su gestión, así como validar posibles soluciones digitales a partir de sus propias experiencias.
 
 ### 2.2.1. Diseño de entrevistas
 
-Write here...
+Para diseñar las entrevistas, se elaboraron dos bloques de preguntas, diferenciados según el segmento objetivo. Las preguntas buscaban obtener tanto información objetiva (como el contexto de trabajo y herramientas utilizadas) como información subjetiva (percepciones, frustraciones y expectativas respecto a posibles soluciones).
+
+**Segmento 1: Administrativos de academias**
+
+**Preguntas sobre la problemática**
+1. ¿Cómo gestionan actualmente los procesos administrativos como matrículas, horarios, pagos y asistencia?
+2. ¿Qué problemas frecuentes enfrentas con las herramientas o métodos que usas hoy?
+3. ¿Qué tipo de información necesitas consultar con frecuencia, y qué tan fácil es acceder a ella?
+4. ¿Qué consecuencias trae la desorganización o errores en la administración para ti o tu equipo?
+
+**Preguntas sobre la solución**
+1. ¿Qué funcionalidades crees que debería tener una herramienta ideal para facilitar tu trabajo administrativo?
+2. ¿Qué tan importante sería para ti recibir alertas sobre tareas o pagos?
+3. ¿Preferirías un sistema con muchas funciones o uno más simple pero fácil de usar?
+4. ¿Qué beneficios esperas obtener si decides adoptar una nueva plataforma de gestión?
+5. ¿Estarías dispuesto a aprender a usar una nueva herramienta si mejora tu gestión (organización)?
+
+**Segmento 2: Docentes de academias**
+
+**Preguntas sobre la problemática**
+1. ¿Qué herramientas o métodos usas para registrar asistencia o notas en caso lo hagas? ¿Funcionan bien para usted?
+2. ¿Qué tipo de coordinación tiene con el personal administrativo? ¿Es fácil comunicarse con ellos o enfrenta dificultades?
+3. ¿Cómo accedes a la información de tus clases o alumnos cuando la necesitas?
+4. ¿Cómo manejas los cambios de aula, horarios u otras incidencias en tu día a día?
+
+**Preguntas sobre la solución**
+1. ¿Qué funcionalidades te gustaría que tenga una herramienta digital para docentes?
+2. ¿Qué tan útil sería para ti revisar tu horario o registrar asistencia desde cualquier dispositivo?
+3. ¿Qué tan importante es que la plataforma sea fácil de usar e intuitiva?
+4. ¿Preferirías acceder a la plataforma desde tu celular o tablet?
+5. ¿Qué tan valioso sería que recibas alertas (notificaciones) sobre cambios de horario o asistencia irregular, y demás?
+6. ¿Estarías dispuesto a aprender a usar una nueva herramienta si mejora tu gestión (organización)?
+
+**Segmento 3: Alumnos de academias**
+
+**Preguntas sobre la problemática**
+1.¿Qué medio utilizas para consultar tu horario de academia? ¿Usas algún dispositivo digital?
+2.¿Cuando te matriculas, ¿cómo te entregan o muestran tu horario?
+3.¿Que tipo de informacion te gustaria ver en tu horario de clase?
+4.¿Qué haces o cómo te organizas cuando la academia cambia de aula o reprograma alguna clase?
+**Preguntas sobre la solución**
+1.¿Qué funcionalidades te gustaría que tenga una herramienta digital para usar como alumno?
+2.¿Qué tan útil sería para ti revisar tu horario desde tu celular?
+3.En un sistema que gestione tu horario, ¿qué priorizarías más: facilidad de uso, rapidez, o ambas?
+4.¿Qué características o beneficios esperas encontrar en el sistema?
+5.¿Estarías dispuesto a aprender a usar una nueva herramienta si mejora tu gestión (organización)?
 
 ### 2.2.2. Registro de entrevistas
 
-Write here...
+**Segmento Alumno: Entrevistado 1**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
+  <tr>
+    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
+    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
+    <td style="border: 1px solid #000; padding:6px;">Maykel Vivas Savedra</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
+    <td style="border: 1px solid #000; padding:6px;">18</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
+    <td style="border: 1px solid #000; padding:6px;">Masculino</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
+    <td style="border: 1px solid #000; padding:6px;">Villa El Salvador - Lima</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
+    <td style="border: 1px solid #000; padding:6px;">Alumno de Academia</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
+    <td style="border: 1px solid #000; padding:6px;">02 de septiembre de 2025</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
+    <td style="border: 1px solid #000; padding:6px;">00:00 - 000</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
+    <td style="border: 1px solid #000; padding:6px;">
+    <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/ERoxZfqu0udFjTeXBnbdKj4B3sUFUqHSlfmcSS3jo959Tg?e=OXcmBm&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">Ver en Microsoft Stream</a>    
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
+    <td style="border: 1px solid #000; padding:6px;">Mikel es un estudiante de academia que consulta su horario principalmente desde el celular, aunque prefiere también tenerlo impreso. Señala que la información recibida al matricularse fue básica y tardía, y le gustaría que el horario incluya además los nombres de los profesores. Eventualmente, cuando hay cambios de clases, anota manualmente las nuevas fechas para reorganizarse. Por lo que, considera clave que una herramienta digital para organizarse exista y sea simple, ligera y fácil de usar, pues no se siente muy hábil con la tecnología. Valora funcionalidades como la posibilidad de revisar el horario desde el móvil y la incorporación de dinámicas interactivas. Además, está dispuesto a adoptar una nueva aplicación siempre que mejore su organización académica y le ayude a mantener todo en orden.</td>
+  </tr>
+</table>
+
+**Segmento Alumno: Entrevistado 2**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
+  <tr>
+    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
+    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
+    <td style="border: 1px solid #000; padding:6px;">Yolanda Reyes Castillo</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
+    <td style="border: 1px solid #000; padding:6px;">17</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
+    <td style="border: 1px solid #000; padding:6px;">Femenino</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
+    <td style="border: 1px solid #000; padding:6px;">Trujillo</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
+    <td style="border: 1px solid #000; padding:6px;">Alumno de Academia</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
+    <td style="border: 1px solid #000; padding:6px;">02 de septiembre de 2025</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
+    <td style="border: 1px solid #000; padding:6px;">00:00 - 000</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
+    <td style="border: 1px solid #000; padding:6px;">
+    <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/EZuq6orw4LVAh5t7cEBAf5cBopblUt9483KZhjoGn6l40w?e=Q5ID0c&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">Ver en Microsoft Stream</a>    
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
+    <td style="border: 1px solid #000; padding:6px;">Yolanda es una estudiante que consulta su horario principalmente desde el aula virtual de su academia, aunque afirma que al inicio de clases deben esperar hasta una semana para recibir el horario completo, lo que genera incertidumbre sobre con qué profesores le tocará. Considera necesario que el horario muestre no solo cursos y horas, sino también los nombres y horarios de los docentes, ya que ha tenido experiencias de retrasos significativos. Frente a reprogramaciones, asiste cuando puede y que muchos compañeros con trayectos largos no logran adaptarse a estos cambios inesperados. Considera que de presentarse una aplicación de gestión académica, valoraría que sea rápida y que no se bloquee o caiga con muchos usuarios conectados. Además, le gustaría que incluya mensajes motivacionales y que el horario esté disponible de inmediato en la pantalla de inicio junto con información indicada. Afirma que está dispuesta a usar una nueva herramienta siempre y cuando le facilite la organización y mejore su experiencia como estudiante.</td>
+  </tr>
+</table>
+
+**Segmento Alumno: Entrevistado 3**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
+  <tr>
+    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
+    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
+    <td style="border: 1px solid #000; padding:6px;">Emy Luz Ganoza Suarez</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
+    <td style="border: 1px solid #000; padding:6px;">16</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
+    <td style="border: 1px solid #000; padding:6px;">Femenino</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
+    <td style="border: 1px solid #000; padding:6px;">Trujillo</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
+    <td style="border: 1px solid #000; padding:6px;">Alumno de Academia</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
+    <td style="border: 1px solid #000; padding:6px;">02 de septiembre de 2025</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
+    <td style="border: 1px solid #000; padding:6px;">00:00 - 000</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
+    <td style="border: 1px solid #000; padding:6px;">
+    <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/EUVPNVaNxNtGnzL66FGLNEoBi9IrUSqM8EnaGxbzsFmnqQ?e=bwkaTS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">Ver en Microsoft Stream</a>    
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
+    <td style="border: 1px solid #000; padding:6px;">Emy es una alumna que consulta su horario principalmente desde el celular, ya que la academia suele enviar imágenes del horario por WhatsApp, además de entregarlo impreso aproximadamente una semana después de la matrícula. El horario que le presentan incluye clases y horas, pero considera importante que también se indiquen los nombres de los profesores, sobre todo para los alumnos nuevos que no los conocen. Cuando ocurre un imprevisto, como un cambio de aula o reprogramación, suele acudir a recepción para preguntar, sim embargo, muchas veces no hay personal disponible, lo que genera incertidumbre. Para una aplicación de gestión académica, valora que sea fácil de usar y rápida de cargar, ya que muchas veces está contra el tiempo y necesita acceder de inmediato. Le gustaría que el sistema muestre también su nombre en pantalla y ofrezca la opción de añadir notas personales sobre el horario, algo que ahora resuelve escribiendo en las hojas impresas. Afirma que está dispuesta a aprender a usar una nueva herramienta siempre que le ayude a mejorar su organización y acceso al horario.</td>
+  </tr>
+</table>
 
 ### 2.2.3. Análisis de entrevistas
 
-Write here...
+Las entrevistas se realizaron entre el 2 y el 3 de septiembre de 2025 a un total de nueve participantes: tres docentes, tres
+administrativos/coordinadores de academias preuniversitarias y tres alumnos de las mismas en Lima, Ica y Trujillo. El objetivo fue entender sus contextos
+operativos, frustraciones actuales y validar hipótesis sobre posibles soluciones digitales.
+
+**Segmento: Docentes de academias**
+
+**Total entrevistados:** 3  
+**Edades:** 21, 25, 25 años  
+**Distritos:** La Molina, Santa Anita, San Juan de Lurigancho  
+**Instituciones:** CEPRE Agraria, Círculos de estudio UNALM, Academia ADUNI  
+**Fechas:** 2 y 3 de septiembre de 2025  
+
+**Características objetivas**  
+* Usan Excel o Google Forms para registrar notas y asistencias: **3/3 (100%)**  
+* Prefieren gestionar tareas desde celulares o laptops: **3/3 (100%)**  
+* Los cambios de aula u horarios se gestionan por WhatsApp o encuestas improvisadas: **3/3 (100%)**
+* No utilizan plataformas centralizadas ni automatizadas: **3/3 (100%)**  
+
+**Características subjetivas**  
+* Encuentran incómodo el uso de Excel en celular: **2/3 (66%)**  
+* Consideran que el trabajo administrativo les resta tiempo valioso de enseñanza: **3/3 (100%)**  
+* Ven con buenos ojos una solución intuitiva y fácil de usar: **3/3 (100%)**  
+* Quieren acceso a la plataforma desde múltiples dispositivos, especialmente celular: **3/3 (100%)**  
+* Notificaciones de cambios de horario son altamente valoradas: **2/3 (66%)**  
+* Disposición a adoptar nuevas herramientas si mejoran su productividad: **3/3 (100%)**  
+
+
+**Segmento: Administrativos de academias**
+
+**Total entrevistados:** 3  
+**Edades:** 28, 42, 58 años  
+**Distritos:** Ica (todos)  
+**Instituciones:** Enigmas, academias escolares particulares  
+**Fechas:** 2 y 3 de septiembre de 2025  
+
+**Características objetivas** 
+
+- Utilizan Excel y registros manuales para manejar pagos, matrículas, asistencia y horarios: **3/3 (100%)**  
+- Consultan frecuentemente asistencia, notas y estado de pagos: **3/3 (100%)**  
+- Dependen de múltiples hojas y archivos, dificultando la trazabilidad: **3/3 (100%)** 
+
+**Características subjetivas**  
+
+- Consideran sus métodos actuales ineficientes y repetitivos: **3/3 (100%)**  
+- Señalan consecuencias negativas como pérdida de tiempo y mala atención a padres: **3/3 (100%)**  
+- Alertas para pagos vencidos son altamente valoradas: **3/3 (100%)**  
+- Desean funcionalidades como búsqueda rápida por nombre o DNI: **2/3 (66%)**  
+- Esperan una solución intuitiva, accesible y asequible: **3/3 (100%)**  
+- Disposición a adoptar nuevas plataformas si mejoran su gestión: **3/3 (100%)**  
+
+**Segmento: Estudiantes de academias**
+
+**Total entrevistados:** 3  
+**Edades:** 16–18 años  
+**Ubicación:** Lima y Trujillo (varias academias)  
+**Fechas:** 2 y 3 de septiembre de 2025  
+
+**Características objetivas**  
+- Consultan el horario desde el celular (aula virtual, WhatsApp, imágenes): **3/3 (100%)**  
+- Reciben el horario tarde/incompleto tras la matrícula: **3/3 (100%)**  
+- Requieren ver nombres de profesores en el horario: **3/3 (100%)**  
+- Gestionan cambios manualmente (anotando o preguntando en recepción): **3/3 (100%)**  
+
+**Características subjetivas**  
+- Perciben desorganización por falta de notificaciones de cambios: **2/3 (66%)**  
+- Priorizan simplicidad por baja confianza tecnológica: **2/3 (66%)**  
+- Valoran rapidez de la app: **3/3 (100%)**  
+- Interés por elementos motivacionales o interactivos (mensajes/juegos): **2/3 (66%)**  
+- Quieren añadir notas personales en el horario: **1/3 (33%)**  
+- Disposición a adoptar la herramienta si mejora su organización: **3/3 (100%)**
+
+**Conclusión general**
+Este análisis refleja claramente patrones de uso, frustraciones comunes y criterios clave que deben guiar el diseño del sistema. La coincidencia en prioridades entre ambos segmentos refuerza la necesidad de una plataforma centralizada, móvil, intuitiva y orientada a mejorar la eficiencia operativa diaria.
+
 
 ## 2.3. Needfinding
 
