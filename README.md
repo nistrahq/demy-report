@@ -611,13 +611,137 @@ Write here...
     - **Relación**: Billing (U) → Accounting & Finance (D)
     - **Justificación**: Billing es el consumidor principal de las capacidades contables, ya que sus pagos definen los ingresos que el bounded de Accounting & Finance registra y reporta. Se utiliza un ACL para transformar los pagos y boletas en transacciones contables detalladas sin exponer la lógica interna de Accounting & Finance. Esta capa asegura independencia y evita acoplar Billing a estructuras contables que podrían cambiar.
 
-8. **Servicios Externos**
-    - IAM usa servicio de correo protegido por ACL.
-    - Enrollment y Attendance usan servicio de notificaciones con ACL para abstraer proveedores.
-
+---
 
 #### Análisis de Alternativas y Preguntas Clave
 
+1. ¿Qué pasaría si IAM no fuera un Open Host Service (OHS)?
+
+**Alternativa A: IAM como OHS**  
+**Ventajas:**
+- Desacoplamiento total: otros contexts consumen solo APIs documentadas.
+- Estabilidad: cambios internos en IAM no afectan a otros contexts.
+- Escalabilidad: facilita integrar futuros módulos con el mismo servicio.
+
+**Desventajas:**
+- Necesidad de mantener documentación y contratos de API robustos.
+- Requiere inversión inicial en gobernanza de endpoints y autenticación.
+
+**Alternativa B: Integración directa entre contexts**  
+**Ventajas:**
+- Desarrollo inicial más rápido.
+- No requiere diseñar APIs estables al inicio.
+
+**Desventajas:**
+- Alto acoplamiento: cambios internos en IAM afectarían múltiples módulos.
+- Dificultad para escalar: integrar nuevos contexts sería costoso.
+
+**Decisión Sustentada: Mantener IAM como OHS**
+- **Razón crítica**: La autenticación y gestión de usuarios son funciones transversales que deben escalar sin impactar otros contexts.
+- **Evidencia**: El sistema planea crecer, por lo que una interfaz pública es esencial.
+- **Mitigación**: Establecer contratos claros de API y versionamiento para evitar rupturas.
+
+
+2. ¿Qué pasaría si Institution y Scheduling compartieran el mismo modelo de profesores?
+
+**Alternativa A: Customer/Supplier + ACL**  
+**Ventajas:**
+- Autonomía de dominios: Institution gestiona empleados, Scheduling los consume.
+- Facilidad para cambios: ajustes en estructura administrativa no afectan programación.
+- Mejor aislamiento: evita modelos inflados o mezclados.
+
+**Desventajas:**
+- Sobrecarga de integración al usar ACL.
+- Duplicación parcial de datos.
+
+**Alternativa B: Shared Kernel**  
+**Ventajas:**
+- Consistencia inmediata en ambos contexts.
+- Simplificación de sincronización.
+
+**Desventajas:**
+- Acoplamiento fuerte entre contextos.
+- Evolución más lenta: cambios en uno requieren coordinación estrecha.
+
+**Decisión Sustentada: Mantener Customer/Supplier + ACL**
+- **Razón crítica**: Programación de clases y administración de personal tienen ritmos distintos; es preferible aislamiento.
+- **Mitigación**: Definir eventos claros para cambios en profesores.
+
+3. ¿Qué pasaría si Enrollment accediera directamente a datos de Scheduling?
+
+**Alternativa A: Customer/Supplier + ACL**  
+**Ventajas:**
+- Independencia: cada context evoluciona sin compartir modelos internos.
+- Flexibilidad: permite cambios en horarios sin afectar matrícula.
+- Control de integridad: ACL traduce conceptos al modelo propio.
+
+**Desventajas:**
+- Mayor complejidad técnica al incluir capas de traducción.
+- Necesidad de sincronización de eventos.
+
+**Alternativa B: Modelo compartido de horarios**  
+**Ventajas:**
+- Implementación más rápida.
+- No se necesita una capa de traducción.
+
+**Desventajas:**
+- Acoplamiento alto: cambios en Scheduling romperían Enrollment.
+- Dificultad para escalar equipos y dominios.
+
+**Decisión Sustentada: Mantener Customer/Supplier + ACL**
+- **Razón crítica**: El negocio requiere flexibilidad y escalabilidad; acoplar horarios y matrícula generaría riesgos.
+- **Evidencia**: La creación de horarios es independiente de procesos de matrícula.
+- **Mitigación**: Automatizar pruebas de integración para validar contratos.
+
+4. ¿Qué pasaría si Enrollment y Billing estuvieran completamente desacoplados?
+
+**Alternativa A: Customer/Supplier + ACL**  
+**Ventajas:**
+- Flujo automático: matrícula dispara boletas sin intervención manual.
+- Claridad de responsabilidades: Enrollment gestiona matrícula, Billing gestiona finanzas.
+
+**Desventajas:**
+- Necesidad de traducir eventos a operaciones financieras.
+- Dependencia en tiempo real.
+
+**Alternativa B: Procesos manuales entre sistemas**  
+**Ventajas:**
+- Implementación inicial más simple.
+- Menos complejidad técnica.
+
+**Desventajas:**
+- Procesos lentos: requeriría intervención humana.
+- Mayor riesgo de errores y retrasos en facturación.
+
+**Decisión Sustentada: Mantener integración automatizada**
+- **Razón crítica**: La matrícula y facturación deben estar alineadas en tiempo real para evitar errores administrativos.
+- **Evidencia**: Los cobros automáticos son requisito de negocio.
+
+5. ¿Qué pasaría si Attendance se integrara directamente con Enrollment y Scheduling sin capas adicionales?
+
+**Alternativa A: Customer/Supplier + ACL/OHS**  
+**Ventajas:**
+- Escalabilidad: Attendance depende de interfaces estables.
+- Flexibilidad: cambios en matrícula u horarios no afectan lógica interna.
+- Seguridad: se filtran datos sensibles.
+
+**Desventajas:**
+- Complejidad adicional en diseño de APIs y ACL.
+
+**Alternativa B: Acceso directo a modelos internos**  
+**Ventajas:**
+- Implementación más rápida.
+- No requiere capas de traducción.
+
+**Desventajas:**
+- Alto acoplamiento: cualquier cambio rompe integraciones.
+- Difícil de mantener a largo plazo.
+
+**Decisión Sustentada: Mantener arquitectura desacoplada**
+- **Razón crítica**: Attendance necesita estabilidad; depender de modelos internos generaría fragilidad.
+- **Mitigación**: Documentar y versionar contratos de API.
+
+---
 
 #### Decisión Final del Context Mapping
 
