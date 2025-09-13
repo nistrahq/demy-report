@@ -574,7 +574,53 @@ Write here...
 
 ### 4.1.2. Context Mapping
 
-Write here...
+#### Identificación de las Relaciones Iniciales y Patrones
+
+1. **IAM → Institution**
+    - **Patrón**: Open Host Service (OHS)
+    - **Relación**: IAM (U) → Institution (D)
+    - **Justificación**: IAM centraliza la autenticación y gestión de usuarios para todo el sistema. Institution depende de la verificación de identidad para asignar roles y gestionar perfiles. Se modela IAM como un servicio abierto (OHS), donde Institution accede a servicios documentados (login, validación de usuarios) sin depender de la estructura interna de datos de IAM.
+
+2. **Enrollment → Scheduling**
+    - **Patrón**: Customer/Supplier + Anticorruption Layer (ACL)
+    - **Relación**: Enrollment (U) → Scheduling (D)
+    - **Justificación**: Enrollment requiere consultar horarios creados en Scheduling para ofrecer opciones válidas de matrícula. Scheduling actúa como proveedor de esta información, mientras que Enrollment consume esos datos. Se usa ACL para traducir entidades al modelo propio de matrícula y así evitar acoplamiento directo.
+
+3. **Institution → Scheduling**
+    - **Patrón**: Customer/Supplier + Anticorruption Layer (ACL)
+    - **Relación**: Institution (Supplier/U) → Scheduling (Customer/D)
+    - **Justificación**: Scheduling necesita información de profesores que se gestiona en Institution para poder crear horarios y asignarlos correctamente. Institution actúa como proveedor de estos datos, mientras que Scheduling los consume. Se utiliza ACL para traducir entidades administrativas a su modelo operativo, manteniendo independencia entre contextos y evitando acoplamientos innecesarios.
+
+4. **Enrollment → Billing**
+    - **Patrón**: Customer/Supplier + Anticorruption Layer (ACL)
+    - **Relación**: Enrollment (U) → Billing (D)
+    - **Justificación**: Cuando un alumno se matricula o se generan cambios en su matrícula (por ejemplo, mensualidades, suspensión o reactivación), Enrollment envía esa información a Billing para que cree las boletas correspondientes. Billing depende de los eventos de Enrollment, mientras que Enrollment no necesita detalles internos de Billing. Se utiliza ACL para traducir estos eventos académicos a solicitudes financieras, asegurando independencia entre contextos.
+
+5. **Enrollment → Attendance**
+    - **Patrón**: Customer/Supplier + Anticorruption Layer (ACL)
+    - **Relación**: Enrollment (U) → Attendance (D)
+    - **Justificación**: Attendance necesita información de los alumnos matriculados y su estado actual para poder registrar asistencias correctamente. Enrollment provee esta información, mientras que Attendance no necesita conocer detalles internos de la matrícula. Se usa ACL para traducir y filtrar datos relevantes (como estado activo del alumno), manteniendo independencia entre ambos contextos.
+   
+6. **Scheduling → Attendance**
+    - **Patrón**: Customer/Supplier + Open Host Service (OHS)
+    - **Relación**: Scheduling (U) → Attendance (D)
+    - **Justificación**: Attendance necesita consultar los horarios de clases creados en Scheduling para registrar asistencias. Scheduling expone esta información mediante un OHS, ofreciendo una interfaz estándar que facilita que Attendance acceda sin acoplarse a detalles internos.
+
+7. **Billing → Accounting & Finance**
+    - **Patrón**: Customer/Supplier + Anticorruption Layer (ACL)
+    - **Relación**: Billing (U) → Accounting & Finance (D)
+    - **Justificación**: Billing es el consumidor principal de las capacidades contables, ya que sus pagos definen los ingresos que el bounded de Accounting & Finance registra y reporta. Se utiliza un ACL para transformar los pagos y boletas en transacciones contables detalladas sin exponer la lógica interna de Accounting & Finance. Esta capa asegura independencia y evita acoplar Billing a estructuras contables que podrían cambiar.
+
+8. **Servicios Externos**
+    - IAM usa servicio de correo protegido por ACL.
+    - Enrollment y Attendance usan servicio de notificaciones con ACL para abstraer proveedores.
+
+
+#### Análisis de Alternativas y Preguntas Clave
+
+
+#### Decisión Final del Context Mapping
+
 
 ### 4.1.3. Software Architecture
 
