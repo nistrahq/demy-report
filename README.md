@@ -951,9 +951,106 @@ Representa un intervalo de tiempo.
 
 ---
 
-7. **Otros Value Objects**
+7. **`ClassroomCommandService` (Domain Service)**
 
-- **`CourseCode`**, **`ClassroomCode`**, **`CourseId`**, **`ClassroomId`**: Representan identificadores o códigos de cursos y aulas, con visibilidad `private` y métodos básicos para validación o comparación.
+Proporciona métodos para ejecutar comandos relacionados con la gestión de aulas.
+
+**Métodos principales:**
+
+| Método                                | Tipo de Retorno       | Visibilidad | Descripción                                     |
+|--------------------------------------|---------------------|-------------|------------------------------------------------|
+| `handle(CreateClassroomCommand command)` | `Long`             | `public`    | Crea una nueva aula y retorna su ID.           |
+| `handle(UpdateClassroomCommand command)` | `Optional<Classroom>` | `public` | Actualiza los datos de un aula existente.      |
+| `handle(DeleteClassroomCommand command)` | `void`             | `public`    | Elimina un aula existente.                     |
+
+---
+
+8. **`ClassroomQueryService` (Domain Service)**
+
+Proporciona métodos para consultar información relacionada con las aulas.
+
+**Métodos principales:**
+
+| Método                           | Tipo de Retorno      | Visibilidad | Descripción                                     |
+|---------------------------------|--------------------|-------------|------------------------------------------------|
+| `handle(GetAllClassroomsQuery query)` | `List<Classroom>` | `public`    | Obtiene todas las aulas registradas.           |
+| `handle(GetClassroomByIdQuery query)` | `Optional<Classroom>` | `public` | Obtiene un aula específica por su ID.         |
+
+---
+
+9. **`CourseCommandService` (Domain Service)**
+
+Proporciona métodos para ejecutar comandos relacionados con la gestión de cursos.
+
+**Métodos principales:**
+
+| Método                                | Tipo de Retorno       | Visibilidad | Descripción                                     |
+|--------------------------------------|---------------------|-------------|------------------------------------------------|
+| `handle(CreateCourseCommand command)` | `Long`              | `public`    | Crea un nuevo curso y retorna su ID.           |
+| `handle(UpdateCourseCommand command)` | `Optional<Course>`  | `public`    | Actualiza los datos de un curso existente.    |
+| `handle(DeleteCourseCommand command)` | `void`              | `public`    | Elimina un curso existente.                   |
+
+---
+
+10. **`CourseQueryService` (Domain Service)**
+
+Proporciona métodos para consultar información relacionada con cursos.
+
+**Métodos principales:**
+
+| Método                               | Tipo de Retorno       | Visibilidad | Descripción                                     |
+|-------------------------------------|---------------------|-------------|------------------------------------------------|
+| `handle(GetAllCoursesQuery query)`   | `List<Course>`       | `public`    | Obtiene todos los cursos registrados.          |
+| `handle(GetCourseByIdQuery query)`   | `Optional<Course>`   | `public`    | Obtiene un curso específico por su ID.        |
+| `handle(GetCourseByCodeQuery query)` | `Optional<Course>`   | `public`    | Obtiene un curso por su código de curso.      |
+
+11. **`ScheduleCommandService` (Domain Service)**
+
+Proporciona métodos para ejecutar comandos relacionados con la gestión de horarios y sesiones.
+
+**Métodos principales:**
+
+| Método                                      | Tipo de Retorno           | Visibilidad | Descripción                                                      |
+|---------------------------------------------|---------------------------|-------------|------------------------------------------------------------------|
+| `handle(CreateWeeklyScheduleCommand command)` | `Long`                   | `public`    | Crea un nuevo horario semanal y retorna su ID.                  |
+| `handle(UpdateWeeklyScheduleNameCommand command)` | `Optional<WeeklySchedule>` | `public` | Actualiza el nombre de un horario semanal existente.            |
+| `handle(AddScheduleToWeeklyCommand command)` | `Optional<WeeklySchedule>` | `public` | Agrega un horario al horario semanal.                            |
+| `handle(RemoveScheduleFromWeeklyCommand command)` | `Optional<WeeklySchedule>` | `public` | Elimina un horario del horario semanal.                          |
+| `handle(DeleteWeeklyScheduleCommand command)` | `void`                    | `public`    | Elimina un horario semanal.                                      |
+| `handle(UpdateScheduleCommand command)`      | `Optional<Schedule>`      | `public`    | Actualiza un horario individual dentro del horario semanal.      |
+
+---
+
+12. **`ScheduleQueryService` (Domain Service)**
+
+Proporciona métodos para consultar información relacionada con horarios y sesiones.
+
+**Métodos principales:**
+
+| Método                                      | Tipo de Retorno           | Visibilidad | Descripción                                                      |
+|---------------------------------------------|---------------------------|-------------|------------------------------------------------------------------|
+| `handle(GetAllWeeklySchedulesQuery query)`   | `List<WeeklySchedule>`    | `public`    | Obtiene todos los horarios semanales registrados.               |
+| `handle(GetWeeklyScheduleByIdQuery query)`   | `Optional<WeeklySchedule>` | `public`   | Obtiene un horario semanal específico por su ID.                |
+| `handle(GetWeeklyScheduleByNameQuery query)` | `Optional<WeeklySchedule>` | `public`   | Obtiene un horario semanal por su nombre.                        |
+| `handle(GetSchedulesByTeacherIdQuery query)` | `List<Schedule>`          | `public`    | Obtiene todos los horarios asignados a un docente específico.    |
+
+---
+
+#### 4.2.5.2. Interface Layer
+
+
+#### 4.2.5.3. Application Layer
+
+
+#### 4.2.5.4. Infrastructure Layer
+
+#### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+#### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+#### 4.2.5.6.2. Bounded Context Database Design Diagram
 
 ## Conclusiones y Recomendaciones
 
