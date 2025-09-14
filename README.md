@@ -635,7 +635,19 @@ Implementación del servicio de consultas para obtener información sobre cuenta
 
 #### 4.2.6.4. Infrastructure Layer
 
-Write here...
+1. **`BillingAccountRepository` (Repository Interface)**
+
+Interfaz del repositorio para acceder a las cuentas de facturación y boletas.
+
+**Métodos principales:**
+
+| Método                                           | Tipo de Retorno            | Visibilidad | Descripción                                                    |
+|--------------------------------------------------|----------------------------|-------------|----------------------------------------------------------------|
+| `save(BillingAccount account)`                   | `BillingAccount`           | `public`    | Guarda o actualiza una cuenta de facturación.                  |
+| `findById(Long id)`                              | `Optional<BillingAccount>` | `public`    | Busca una cuenta de facturación por su ID.                     |
+| `findInvoicesByAccountId(Long accountId)`        | `List<Invoice>`            | `public`    | Busca todas las boletas asociadas a una cuenta de facturación. |
+| `findOverdueInvoicesByAccountId(Long accountId)` | `List<Invoice>`            | `public`    | Busca todas las boletas vencidas de una cuenta de facturación. |
+| `delete(BillingAccount account)`                 | `void`                     | `public`    | Elimina una cuenta de facturación.                             |
 
 #### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
 
