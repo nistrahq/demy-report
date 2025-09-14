@@ -649,7 +649,11 @@ Interfaz del repositorio para acceder a las cuentas de facturación y boletas.
 
 #### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
 
-Write here...
+En esta sección se presentan los diagramas de nivel componente que ilustran la arquitectura de software del contexto de Billing. Se muestra la interacción entre los diferentes componentes, servicios y capas que conforman este bounded context. Se integra con la base de datos relacional definida en el diagrama de contenedores.
+
+![Diagrama de Componentes del Contexto de Billing](./assets/diagrams/software-architecture/components/out/billing-component-level-diagram.png)
+
+Además, se incluye el [código fuente del diagrama de componentes de Billing](./assets/diagrams/software-architecture/components/src/billing-component-level-diagram.dsl).
 
 #### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
 
