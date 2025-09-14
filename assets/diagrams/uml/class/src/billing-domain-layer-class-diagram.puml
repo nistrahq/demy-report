@@ -6,6 +6,7 @@ skinparam class {
     BackgroundColor<<Aggregate Root>> #FFFFFF/B3E5FC
     BackgroundColor<<Entity>> #FFFFFF/C8E6C9
     BackgroundColor<<Value Object>> #FFFFFF/FFF9C4
+    BackgroundColor<<Domain Service>> #FFFFFF/FFCCBC
     BorderColor #212121
     ArrowColor #212121
     FontSize 14
@@ -84,6 +85,22 @@ package "Billing Context" {
             + isOverdue() : boolean
             + isCancelled() : boolean
         }
+
+        class "BillingAccountCommandService" <<(S, #FF8A65) Domain Service>> {
+            + handle(command : CreateBillingAccountCommand) : Optional<BillingAccount>
+            + handle(command : AssignInvoiceCommand) : Optional<Invoice>
+            + handle(command : RecordPaymentCommand) : void
+            + handle(command : SuspendAccountCommand) : void
+            + handle(command : ReactivateAccountCommand) : void
+        }
+
+        class "BillingAccountQueryService" <<(S, #FF8A65) Domain Service>> {
+            + handle(query : GetBillingAccountByIdQuery) : Optional<BillingAccount>
+            + handle(query : GetInvoicesByAccountIdQuery) : List<Invoice>
+            + handle(query : GetOutstandingBalanceQuery) : Optional<Money>
+            + handle(query : GetOverdueInvoicesQuery) : List<Invoice>
+            + handle(query : GetAccountStatusQuery) : Optional<AccountStatus>
+        }
     }
 }
 
@@ -123,6 +140,8 @@ BillingAccount "1" *-- "0..*" Invoice : contains >
 BillingAccount "1" *-- "1" AccountStatus : has >
 Invoice "1" *-- "1" InvoiceType : has >
 Invoice "1" *-- "1" InvoiceStatus : has >
+BillingAccountCommandService ..> BillingAccount : manages >
+BillingAccountQueryService ..> BillingAccount : queries >
 
 ' Relationships between contexts
 BillingAccount "1" ..> "1" StudentId : references >
