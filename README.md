@@ -546,13 +546,13 @@ Proporciona métodos para ejecutar comandos relacionados con la gestión de cuen
 
 **Métodos principales:**
 
-| Método                                                        | Tipo de Retorno            | Visibilidad | Descripción                                                     |
-|---------------------------------------------------------------|----------------------------|-------------|-----------------------------------------------------------------|
-| `createBillingAccount(CreateBillingAccountCommand command)`   | `Optional<BillingAccount>` | `public`    | Crea una nueva cuenta de facturación a partir de un comando.    |
-| `assignInvoice(AssignInvoiceCommand command)`                 | `Optional<Invoice>`        | `public`    | Asigna una nueva boleta a una cuenta de facturación.            |
-| `recordPayment(RecordPaymentCommand command)`                 | `void`                     | `public`    | Registra un pago en una cuenta de facturación.                  |
-| `suspendAccount(SuspendAccountCommand command)`               | `void`                     | `public`    | Suspende una cuenta de facturación por falta de pago.           |
-| `reactivateAccount(ReactivateAccountCommand command)`         | `void`                     | `public`    | Reactiva una cuenta de facturación suspendida.                  |
+| Método                                        | Tipo de Retorno            | Visibilidad | Descripción                                                     |
+|-----------------------------------------------|----------------------------|-------------|-----------------------------------------------------------------|
+| `handle(CreateBillingAccountCommand command)` | `Optional<BillingAccount>` | `public`    | Crea una nueva cuenta de facturación a partir de un comando.    |
+| `handle(AssignInvoiceCommand command)`        | `Optional<Invoice>`        | `public`    | Asigna una nueva boleta a una cuenta de facturación.            |
+| `handle(RecordPaymentCommand command)`        | `void`                     | `public`    | Registra un pago en una cuenta de facturación.                  |
+| `handle(SuspendAccountCommand command)`       | `void`                     | `public`    | Suspende una cuenta de facturación por falta de pago.           |
+| `handle(ReactivateAccountCommand command)`    | `void`                     | `public`    | Reactiva una cuenta de facturación suspendida.                  |
 
 ---
 
