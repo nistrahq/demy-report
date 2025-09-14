@@ -346,11 +346,11 @@ En esta sección el equipo presenta sus Bounded Context Canvases, empezando por 
 
 
 **Accounting & Finance**  
-[!Bounded Context Canvas Accounting & Finance](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-accounting&finance.png)
+![Bounded Context Canvas Accounting & Finance](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-accounting&finance.png)
 
 
 **IAM**  
-[!Bounded Context Canvas IAM](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-iam.png)
+![Bounded Context Canvas IAM](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-iam.png)
 
 ### 4.1.2. Context Mapping
 
