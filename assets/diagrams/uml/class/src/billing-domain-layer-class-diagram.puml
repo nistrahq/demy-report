@@ -7,7 +7,7 @@ skinparam class {
     BackgroundColor<<Entity>> #FFFFFF/C8E6C9
     BackgroundColor<<Value Object>> #FFFFFF/FFF9C4
     BorderColor #212121
-    ArrowColor SeaGreen
+    ArrowColor #212121
     FontSize 14
 }
 
