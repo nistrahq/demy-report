@@ -2,6 +2,9 @@ workspace "Demy" "Demy Platform" {
 
     model {
         demy = softwareSystem "Demy" "Software de gestión administrativa" {
+            androidMobile = container "Android Mobile Application" "Aplicación nativa Android diseñada para administradores" "Kotlin / Android SDK" "Microsoft Azure - Mobile Engagement"
+            flutterMobile = container "Flutter Mobile Application" "Aplicación Flutter multiplataforma diseñada para profesores" "Dart / Flutter SDK" "Microsoft Azure - Mobile"
+            iOsMobile = container "iOS Mobile Application" "Aplicación nativa iOS diseñada para estudiantes" "Swift / iOS SDK" "Microsoft Azure - Mobile"
             apiRest = container "RESTful API" "Provee funcionalidades a través de JSON/HTTPS" "Java 21 / Spring Boot 3.5" {
                 billingDomainLayer = component "Billing Domain Layer" "Entidades y reglas de negocio para facturas y cobros" "Java 21 / Spring Boot 3.5" "Microsoft Azure - Windows10 Core Services"
                 billingInterfaceLayer = component "Billing Interface Layer" "Controladores y endpoints REST para funcionalidades de Billing" "Java 21 / Spring Boot 3.5" "Microsoft Azure - API Connections"
@@ -11,11 +14,17 @@ workspace "Demy" "Demy Platform" {
             database = container "Relational SQL Database" "Almacena todos los datos relacionados al sistema" "MySQL 8 Database Schema" "Microsoft Azure - SQL Database"
         }
 
+        gmail = softwareSystem "Gmail Mailing Service" "Servicio externo de correos usado para enviar notificaciones por correo" "Microsoft Azure - Data Share Invitations"
+
         // Components
+        androidMobile -> billingInterfaceLayer "Hace llamadas API hacia" "JSON/HTTPS"
+        flutterMobile -> billingInterfaceLayer "Hace llamadas API hacia" "JSON/HTTPS"
+        iOsMobile -> billingInterfaceLayer "Hace llamadas API hacia" "JSON/HTTPS"
         billingInterfaceLayer -> billingApplicationLayer "Invoca servicios de la capa de aplicación"
         billingApplicationLayer -> billingDomainLayer "Usa servicios y entidades de dominio"
         billingApplicationLayer -> billingInfrastructureLayer "Usa infraestructura para persistencia e integraciones"
         billingInfrastructureLayer -> database "Usa comandos y queries" "JDBC"
+        billingInfrastructureLayer -> gmail "Envía correos usando" "SMTP"
     }
 
     views {
@@ -35,9 +44,21 @@ workspace "Demy" "Demy Platform" {
         }
 
         styles {
+            element "Microsoft Azure - Mobile Engagement" {
+                shape "MobileDeviceLandscape"
+                background "#AB47BC"
+            }
+            element "Microsoft Azure - Mobile" {
+                shape "MobileDevicePortrait"
+                background "#039BE5"
+            }
             element "Microsoft Azure - SQL Database" {
                 shape "Cylinder"
                 background "#00758F"
+            }
+            element "Microsoft Azure - Data Share Invitations" {
+                shape "Diamond"
+                background "#EF5350"
             }
         }
 
