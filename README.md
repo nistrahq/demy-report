@@ -657,11 +657,15 @@ Además, se incluye el [código fuente del diagrama de componentes de Billing](.
 
 #### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
 
-Write here...
+En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de Billing. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
 
 #### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
 
-Write here...
+El diagrama de clases del Domain Layer del contexto de Billing ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
+
+![Diagrama de Clases del Domain Layer del Contexto de Billing](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/nistrahq/demy-report/refs/heads/feature/tb1-salim/assets/diagrams/uml/class/src/billing-domain-layer-class-diagram.puml?token=GHSAT0AAAAAAC6GPIH5NQIOQTEYFGBMGVIG2GHHJNA)
+
+Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Billing](./assets/diagrams/uml/class/src/billing-domain-layer-class-diagram.puml).
 
 #### 4.2.6.6.2. Bounded Context Database Design Diagram
 
