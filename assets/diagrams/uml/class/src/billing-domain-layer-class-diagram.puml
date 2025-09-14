@@ -13,7 +13,7 @@ skinparam class {
 
 package "Billing Context" {
     package "Domain Layer" {
-        class "Billing Account" <<(A, #27D3F5) Aggregate Root>> {
+        class "BillingAccount" <<(A, #27D3F5) Aggregate Root>> {
             - id : Long
             - studentId : StudentId
             - invoices : Set<Invoice>
@@ -118,5 +118,15 @@ package "Shared Kernel" {
     }
 }
 
+' Billing Relationships
+BillingAccount "1" *-- "0..*" Invoice : contains >
+BillingAccount "1" *-- "1" AccountStatus : has >
+Invoice "1" *-- "1" InvoiceType : has >
+Invoice "1" *-- "1" InvoiceStatus : has >
+
+' Relationships between contexts
+BillingAccount "1" ..> "1" StudentId : references >
+BillingAccount "1" ..> "1" AcademyId : belongs to >
+Invoice "1" ..> "1" Money : uses >
 
 @enduml
