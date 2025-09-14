@@ -327,7 +327,30 @@ Write here...
 
 #### 4.1.1.3. Bounded Context Canvases
 
-Write here...
+En esta sección el equipo presenta sus Bounded Context Canvases, empezando por los importantes.  
+
+**Institution**  
+[!Bounded Context Canvas Institution](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-institution.png)  
+
+**Enrollment**  
+[!Bounded Context Canvas Enrollment](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-enrollment.png)  
+
+**Attendance**  
+[!Bounded Context Canvas Attendance](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-attendance.png)  
+
+**Scheduling**  
+[!Bounded Context Canvas Scheduling](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-scheduling.png)
+
+**Billing**  
+[!Bounded Context Canvas Billing](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-billing.png)
+
+
+**Accounting & Finance**  
+[!Bounded Context Canvas Accounting & Finance](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-accounting&finance.png)
+
+
+**IAM**  
+[!Bounded Context Canvas IAM](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-iam.png)
 
 ### 4.1.2. Context Mapping
 
