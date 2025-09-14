@@ -410,7 +410,7 @@ En esta sección se describen los elementos del Domain Layer del contexto de Bil
 
 ---
 
-1. **`BillingAccount` (Aggregate)**
+1. **`BillingAccount` (Aggregate Root)**
 
 Representa la cuenta de facturación de un estudiante, incluyendo su historial de boletas y pagos.
 
