@@ -964,7 +964,30 @@ A continuación se presentarán los User Journey Maps de cada User Persona. Esto
 
 ### 2.3.4. Empathy Mapping
 
-Write here...
+Se elaboraron los Empathy Mapping para los dos User Personas: el Administrador de la academia y el Profesor. Este proceso permitió comprender mejor lo que dicen, piensan, hacen y sienten en su día a día, identificando sus principales pains y gains para diseñar una solución que realmente se adapte a sus necesidades.
+
+---
+
+#### Administrador de academia
+
+![Empathy Mapping – Administrator](./assets/images/photos/empathy-mapping-admin.png)
+**Figura 1.** Empathy Mapping del user persona *Administrador*.
+
+---
+
+#### Docente de academia
+
+![Empathy Mapping – Teacher](./assets/images/photos/empathy-mapping-teacher.png)
+**Figura 2.** Empathy Mapping del user persona *Docente*.
+
+---
+
+#### Alumno de academia
+
+![Empathy Mapping – Alumno](./assets/images/photos/empathy-mapping-alumno.png)
+**Figura 3.** Empathy Mapping del user persona *Alumno*.
+
+---
 
 ## 2.4. Ubiquitous Language
 
