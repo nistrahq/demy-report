@@ -410,6 +410,158 @@ Write here...
 
 Write here...
 
+### 4.2.4. Bounded Context: Attendance
+
+El bounded context de Attendance gestiona todo el ciclo de registro y control de la asistencia de los estudiantes. Es un contexto core del dominio educativo, ya que brinda a los profesores la capacidad de monitorear, registrar y consultar la asistencia de manera estructurada y confiable.
+
+#### 4.2.4.1. Domain Layer
+
+En esta sección se describen los elementos del Domain Layer del contexto de Attendance, que encapsulan las reglas y lógica del dominio relacionadas con la gestión de asistencias.
+<hr>  
+
+1.**`ClassAttendance` (Aggregate Root)**
+
+Representa la asistencia de todos los estudiantes de una sesión de clase.  
+
+**Atributos principales:**
+
+| Atributo         | Tipo                    | Visibilidad | Descripción                                                     |
+|------------------|-------------------------|-------------|-----------------------------------------------------------------|
+| `id`             | `Long`                  | `private`   | Identificador único de la asistencia de una sesión de clase     |
+| `classSessionId` | `ClassSessionId`        | `private`   | Identificador único de una sesión de clase                      |
+| `date`           | `LocalDate`             | `private`   | Fecha en la que fue tomada la asistencia de una sesión de clase |
+| `attendances`    | `List<AttendanceRecord` | `private`   | Lista de asistencia  de cada estudiante                         |
+| `academyId`      | `AcademyId`             | `private`   | Identificador único de la academia                              |
+
+**Métodos principales:**
+
+| Método                                                   | Tipo de retorno | Visibilidad    | Descripción                                                                          |
+|----------------------------------------------------------|-----------------|----------------|--------------------------------------------------------------------------------------|
+| `ClassAttendance()`                                      | `Constructor `  | `protected   ` | Constructor protegido para uso por el repositorio.                                   |
+| `ClassAttendance(CreateClassAttendanceCommand command)`  | `Constructor`   | `public`       | Constructor que inicializa la asistencia de una sesión de clase mediante un comando  |
+
+2.**`AttendanceRecord` (Entity)**  
+
+Representa la asistencia de un solo estudiante.
+
+| Atributo     | Tipo         | Visibilidad | Descripción                                            |
+|--------------|--------------|-------------|--------------------------------------------------------|
+| `id`         | `Long`       | `private`   | Identificador único de una asistencia de un estudiante | 
+| `studentId`  | `StudentId`  | `private`   | Identificador único de un estudiante.                  |
+
+*Métodos principales:**
+
+| Método                                     | Tipo de retorno | Visibilidad | Descripción                                      |
+|--------------------------------------------|-----------------|-------------|--------------------------------------------------|
+| `changeStatus(AttendanceStatus newStatus)` | `void`          | `public`    | Cambia el status de asistencia de un estudiante  |
+
+3.**`AttendanceStatus` (Value object)**
+
+| Atributo     | Tipo    | Visibilidad | Descripción                        |
+|--------------|---------|-------------|------------------------------------|
+| `PRESENT`    | `Enum`  | `public`    | Estudiante presente en la clase    |
+| `ABSENT`     | `Enum`  | `public`    | Estudiante ausente en la clase     |
+| `EXCUSED`    | `Enum`  | `public`    | Estudiante con falta justificada   |
+
+
+
+4.*`ClassSessionId` (Value object)**
+
+| Atributo | Tipo   | Visibilidad | Descripción                                |
+|----------|--------|-------------|--------------------------------------------|
+| `id`     | `Long` | `public`    | Identificador único de una sesión de clase |
+
+5.*`ClassAttendanceCommandService` (Domain Service)**
+
+| Atributo                                           | Tipo                         | Visibilidad | Descripción                                                                |
+|----------------------------------------------------|------------------------------|-------------|----------------------------------------------------------------------------|
+| `handle (CreateClassAttendanceCommand command)`    | `Optional<ClassAttendance>`  | `public`    | Crea un nuevo registro de asistencia de una clase a partir de un comando.  |
+
+6.*`ClassAttendanceQueryService` (Domain Service)**
+
+| Atributo                                                                | Tipo                         | Visibilidad | Descripción                                                                       |
+|-------------------------------------------------------------------------|------------------------------|-------------|-----------------------------------------------------------------------------------|
+| ` handle(GetAttendanceRecordsByStudentIdCourseAndDateRangeQuery query)` | `Optional<AttendanceRecord>` | `public`    | Obtiene todas las asistencias por ID del estudiante, curso en un rango de fechas. |
+
+
+
+#### 4.2.4.2. Interface Layer
+
+1.*`ClassAttendanceController` (REST controller)**  
+Controlador REST que expone endpoints para registrar asistencia o obtenerlas.
+
+**Endpoints Principales:**
+
+| Nombre del método       | Ruta base típica                    | Método HTTP | Descripción                                                                                         |
+|-------------------------|-------------------------------------|-------------|-----------------------------------------------------------------------------------------------------|
+| `CreateClassAttendance` | `/api/v1/class-attendances`         | `POST`      | Crea un nuevo registro de asistencia de una clase                                                   |
+| `getAttendanceReport`   | `/api/v1/class-attendances/report`  | `GET`       | Obtiene el registro de asistencia de un estudiante según ID del estudiante, curso y rango de fechas |
+
+
+#### 4.2.4.3. Application Layer
+
+1.*`ClassAttendanceCommandServiceImpl` (Command Service Implementation)**  
+Implementación del servicio de comandos para gestionar asistencias de una clase.
+
+**Atributos principales**  
+
+| Atributo                     | Tipo                         | Visibilidad | Descripción                                              |
+|------------------------------|------------------------------|-------------|----------------------------------------------------------|
+| `classAttendanceRepository`  | `ClassAttendanceRepository`  | `private`   | Repositorio para acceder a las asistencias de una clase  |
+
+**Métodos principales**
+
+| Nombre del método                                 | Tipo                        | Visibilidad | Descripción                                                                 |
+|---------------------------------------------------|-----------------------------|-------------|-----------------------------------------------------------------------------|
+| `handle (CreateClassAttendanceCommand command)`   | `Optional<ClassAttendance>` | `public`    | Maneja el comando para crear un nuevo registro de asistencia de una clase   |
+
+
+2.*`ClassAttendanceQueryServiceImpl` (Query Service Implementation)**  
+Implementación del servicio de consultas para obtener asistencias de una clase.
+
+**Atributos principales**
+
+| Atributo                     | Tipo                         | Visibilidad | Descripción                                              |
+|------------------------------|------------------------------|-------------|----------------------------------------------------------|
+| `classAttendanceRepository`  | `ClassAttendanceRepository`  | `private`   | Repositorio para acceder a las asistencias de una clase  |
+
+**Métodos principales**
+
+| Nombre del método                                                     | Tipo                    | Visibilidad | Descripción                                                                                                           |
+|-----------------------------------------------------------------------|-------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------|
+| `handle(GetAttendanceRecordsByStudentIdCourseAndDateRangeQuery query` | `List<ClassAttendance>` | `public`    | Maneja la consulta para obtener registros de asistencia de una clase según ID del estudiante, curso y rango de fechas |
+
+
+#### 4.2.4.4. Infrastructure Layer
+
+1.*`ClassAttendanceRepository` (Repository Interface)**  
+Interfaz del repositorio para acceder a los registros de asistencia de una sesión de clase.
+
+
+**Métodos principales**
+
+| Nombre del método                                                                          | Tipo de Retorno           | Visibilidad | Descripción                                                           |
+|--------------------------------------------------------------------------------------------|---------------------------|-------------|-----------------------------------------------------------------------|
+| `findByCourseIdAndDateBetween(CourseId courseId, LocalDate startDate, LocalDate endDate)`  | ` List<ClassAttendance>`  | `public`    | Obtiene todas las asistencias por ID del course y un rango de fechas  |
+
+
+
+#### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+Write here...
+
+#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
+
+Write here...
+
+#### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+Write here...
+
+#### 4.2.4.6.2. Bounded Context Database Design Diagram
+
+Write here...
+
 ## Conclusiones y Recomendaciones
 
 Write here...
