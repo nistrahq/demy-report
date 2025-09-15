@@ -1040,6 +1040,58 @@ Proporciona métodos para consultar información relacionada con horarios y sesi
 #### 4.2.5.2. Interface Layer
 
 
+1. **`SchedulesController` (REST Controller)**
+
+Controlador REST que expone endpoints para gestionar **horarios** (Schedules) y las **sesiones de clase** (ClassSessions) asociadas.
+
+**Endpoints principales:**
+
+| Nombre del método                         | Ruta base típica                                      | Método HTTP | Descripción                                                                 |
+|-------------------------------------------|-------------------------------------------------------|-------------|-----------------------------------------------------------------------------|
+| `createSchedule`                          | `/api/v1/schedules`                                   | `POST`      | Crea un nuevo horario.                                                      |
+| `getAllSchedules`                         | `/api/v1/schedules`                                   | `GET`       | Obtiene todos los horarios registrados.                                     |
+| `getScheduleById`                         | `/api/v1/schedules/{scheduleId}`                      | `GET`       | Obtiene un horario por su ID.                                               |
+| `updateSchedule`                          | `/api/v1/schedules/{scheduleId}`                      | `PUT`       | Actualiza los datos de un horario existente.                                |
+| `deleteSchedule`                          | `/api/v1/schedules/{scheduleId}`                      | `DELETE`    | Elimina un horario existente.                                               |
+| `addClassSessionToSchedule`               | `/api/v1/schedules/{scheduleId}/sessions`             | `POST`      | Agrega una sesión de clase a un horario.                                    |
+| `removeClassSessionFromSchedule`          | `/api/v1/schedules/{scheduleId}/sessions/{sessionId}` | `DELETE`    | Elimina una sesión de clase de un horario.                                  |
+| `getSchedulesByTeacherId`                 | `/api/v1/schedules/by-teacher/{teacherId}`            | `GET`       | Obtiene todos los horarios de un docente específico.                        |
+| `updateClassSession`                      | `/api/v1/schedules/sessions/{sessionId}`              | `PUT`       | Actualiza los datos de una sesión de clase existente.                       |
+
+---
+
+2. **`CoursesController` (REST Controller)**
+
+Controlador REST que expone endpoints para gestionar **cursos**.
+
+**Endpoints principales:**
+
+| Nombre del método           | Ruta base típica                   | Método HTTP | Descripción                                             |
+|-----------------------------|------------------------------------|-------------|---------------------------------------------------------|
+| `createCourse`              | `/api/v1/courses`                 | `POST`      | Crea un nuevo curso.                                    |
+| `getAllCourses`             | `/api/v1/courses`                 | `GET`       | Obtiene todos los cursos registrados.                   |
+| `getCourseById`             | `/api/v1/courses/{courseId}`      | `GET`       | Obtiene un curso por su ID.                             |
+| `updateCourse`              | `/api/v1/courses/{courseId}`      | `PUT`       | Actualiza los datos de un curso existente.              |
+| `deleteCourse`              | `/api/v1/courses/{courseId}`      | `DELETE`    | Elimina un curso existente.                             |
+
+---
+
+3. **`ClassroomsController` (REST Controller)**
+
+Controlador REST que expone endpoints para gestionar **aulas**.
+
+**Endpoints principales:**
+
+| Nombre del método           | Ruta base típica                      | Método HTTP | Descripción                                             |
+|-----------------------------|---------------------------------------|-------------|---------------------------------------------------------|
+| `createClassroom`           | `/api/v1/classrooms`                 | `POST`      | Crea una nueva aula.                                    |
+| `getAllClassrooms`          | `/api/v1/classrooms`                 | `GET`       | Obtiene todas las aulas registradas.                    |
+| `getClassroomById`          | `/api/v1/classrooms/{classroomId}`   | `GET`       | Obtiene un aula por su ID.                              |
+| `updateClassroom`           | `/api/v1/classrooms/{classroomId}`   | `PUT`       | Actualiza los datos de un aula existente.               |
+| `deleteClassroom`           | `/api/v1/classrooms/{classroomId}`   | `DELETE`    | Elimina un aula existente.                              |
+
+---
+
 #### 4.2.5.3. Application Layer
 
 
