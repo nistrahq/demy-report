@@ -1278,10 +1278,20 @@ En esta sección se presentan los diagramas de nivel componente que ilustran la 
 
 Además, se incluye el [código fuente del diagrama de componentes de Scheduling](./assets/diagrams/software-architecture/components/src/scheduling-component-level-diagram.dsl).
 
-
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 
+En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de **Scheduling**. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
+
+
 #### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+
+El diagrama de clases del **Domain Layer** del contexto de Scheduling ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
+
+![Diagrama de Clases del Domain Layer del Contexto de Scheduling](https://www.plantuml.com/plantuml/proxy?src=)
+
+Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Scheduling](./assets/diagrams/uml/class/src/scheduling-domain-layer-class-diagram.puml).
+
 
 #### 4.2.5.6.2. Bounded Context Database Design Diagram
 
