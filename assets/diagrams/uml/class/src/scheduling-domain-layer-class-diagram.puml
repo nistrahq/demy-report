@@ -64,8 +64,14 @@ package "Scheduling Context" {
         }
 
         ' Value Objects
-        class "DayOfWeek" <<(V, #FFD700) Value Object>> {
-            MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+        enum "DayOfWeek" <<Value Object>> {
+            MONDAY
+            TUESDAY
+            WEDNESDAY
+            THURSDAY
+            FRIDAY
+            SATURDAY
+            SUNDAY
             --
             + isWeekend() : boolean
         }
