@@ -754,7 +754,7 @@ Luego de analizar las alternativas y sus implicancias, el equipo decidió manten
 - **Attendance con ACL/OHS:** La asistencia consume datos de matrícula y horarios a través de interfaces públicas, protegiendo estabilidad y seguridad.
 
 <div style="text-align: center;">
-  <img src="assets/diagrams/ddd/context-maps/out/context-mapping.jpg" alt="Context Mapping - Demy" height="600">
+  <img src="assets/diagrams/ddd/context-maps/out/context-mapping.jpg" alt="Context Mapping - Demy">
 </div>
 
 **Conclusión:**  
