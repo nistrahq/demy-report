@@ -989,25 +989,27 @@ Se elaboraron los Empathy Mapping para los dos User Personas: el Administrador d
 
 ---
 
-## 2.4. Ubiquitous Language
+### 2.3.5. Ubiquitous Language
+
+
+## 2.4. Requirements Specification
 
 Write here...
 
-# Capítulo III: Requirements Specification
-
-## 3.1. To-Be Scenario Mapping.
+### 2.4.1. User Stories
 
 Write here...
 
-## 3.2. User Stories
+### 2.4.2. Impact Mapping
 
-Write here...
+En esta sección hemos elaborado nuestro Impact Mapping. Para ello, utilizamos la hipótesis desarrollada durante nuestro proceso de Lean UX. Reemplazamos los segmentos de cliente por los User Personas, los cuales fueron elaborados en las secciones previas, y conectamos las funcionalidades con los objetivos, para que formen parte del Product Backlog.
 
-## 3.3. Impact Mapping
+![ImpactMapping](./assets/images/photos/impact-mapping.png)
+[Ver Imagen detallada aquí](https://drive.google.com/file/d/1qX03tIoB5RfaTdrvkf7_UE9ZsFycgXJ-/view?usp=sharing)
 
-Write here...
+Dentro de nuestro Impact Mapping se puede observar cómo los segmentos objetivos están relacionados con una acción representativa de cada uno, la cual, a su vez, es parte esencial de los business goals planteados anteriormente. Tanto el administrador, alumno como el profesor de academias desempeñan un papel crucial en el cumplimiento de los objetivos propuestos por Demy.
 
-## 3.4. Product Backlog
+### 2.4.3. Product Backlog
 
 Write here...
 
