@@ -1,5 +1,4 @@
 @startuml Demy: Scheduling Domain Layer Class Diagram
-
 title Demy: Scheduling Domain Layer Class Diagram
 
 skinparam class {
@@ -14,7 +13,7 @@ skinparam class {
 
 package "Scheduling Context" {
     package "Domain Layer" {
-
+        ' Aggregate Roots
         class "Schedule" <<(A, #27D3F5) Aggregate Root>> {
             - id : Long
             - name : String
@@ -25,20 +24,6 @@ package "Scheduling Context" {
             + addClassSession(session : ClassSession) : void
             + removeClassSession(sessionId : Long) : void
             + validateConflicts() : boolean
-        }
-
-        class "ClassSession" <<(E, #9ACD32) Entity>> {
-            - id : Long
-            - courseId : CourseId
-            - classroomId : ClassroomId
-            - teacherId : TeacherId
-            - dayOfWeek : DayOfWeek
-            - timeRange : TimeRange
-            # ClassSession()
-            + ClassSession(courseId : CourseId, classroomId : ClassroomId, teacherId : TeacherId,
-                           dayOfWeek : DayOfWeek, timeRange : TimeRange)
-            + reschedule(newRange : TimeRange) : void
-            + conflictsWith(other : ClassSession) : boolean
         }
 
         class "Course" <<(A, #27D3F5) Aggregate Root>> {
@@ -63,14 +48,24 @@ package "Scheduling Context" {
             + updateClassroom(command : UpdateClassroomCommand) : Classroom
         }
 
+        ' Entity
+        class "ClassSession" <<(E, #9ACD32) Entity>> {
+            - id : Long
+            - courseId : CourseId
+            - classroomId : ClassroomId
+            - teacherId : TeacherId
+            - dayOfWeek : DayOfWeek
+            - timeRange : TimeRange
+            # ClassSession()
+            + ClassSession(courseId : CourseId, classroomId : ClassroomId, teacherId : TeacherId,
+                           dayOfWeek : DayOfWeek, timeRange : TimeRange)
+            + reschedule(newRange : TimeRange) : void
+            + conflictsWith(other : ClassSession) : boolean
+        }
+
+        ' Value Objects
         class "DayOfWeek" <<(V, #FFD700) Value Object>> {
-            MONDAY
-            TUESDAY
-            WEDNESDAY
-            THURSDAY
-            FRIDAY
-            SATURDAY
-            SUNDAY
+            MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
             --
             + isWeekend() : boolean
         }
@@ -96,6 +91,7 @@ package "Scheduling Context" {
             + getCode() : String
         }
 
+        ' Command Services
         class "ScheduleCommandService" <<(S, #FF8A65) Domain Service>> {
             + handle(command : CreateScheduleCommand) : Optional<Schedule>
             + handle(command : AddClassSessionCommand) : Optional<Schedule>
@@ -104,6 +100,19 @@ package "Scheduling Context" {
             + handle(command : DeleteScheduleCommand) : void
         }
 
+        class "CourseCommandService" <<(S, #FF8A65) Domain Service>> {
+            + handle(command : CreateCourseCommand) : Optional<Course>
+            + handle(command : UpdateCourseCommand) : Optional<Course>
+            + handle(command : DeleteCourseCommand) : void
+        }
+
+        class "ClassroomCommandService" <<(S, #FF8A65) Domain Service>> {
+            + handle(command : CreateClassroomCommand) : Optional<Classroom>
+            + handle(command : UpdateClassroomCommand) : Optional<Classroom>
+            + handle(command : DeleteClassroomCommand) : void
+        }
+
+        ' Query Services
         class "ScheduleQueryService" <<(S, #FF8A65) Domain Service>> {
             + handle(query : GetAllSchedulesQuery) : List<Schedule>
             + handle(query : GetScheduleByIdQuery) : Optional<Schedule>
@@ -111,22 +120,10 @@ package "Scheduling Context" {
             + handle(query : GetClassSessionsByTeacherIdQuery) : List<ClassSession>
         }
 
-        class "CourseCommandService" <<(S, #FF8A65) Domain Service>> {
-            + handle(command : CreateCourseCommand) : Optional<Course>
-            + handle(command : UpdateCourseCommand) : Optional<Course>
-            + handle(command : DeleteCourseCommand) : void
-        }
-
         class "CourseQueryService" <<(S, #FF8A65) Domain Service>> {
             + handle(query : GetAllCoursesQuery) : List<Course>
             + handle(query : GetCourseByIdQuery) : Optional<Course>
             + handle(query : GetCourseByCodeQuery) : Optional<Course>
-        }
-
-        class "ClassroomCommandService" <<(S, #FF8A65) Domain Service>> {
-            + handle(command : CreateClassroomCommand) : Optional<Classroom>
-            + handle(command : UpdateClassroomCommand) : Optional<Classroom>
-            + handle(command : DeleteClassroomCommand) : void
         }
 
         class "ClassroomQueryService" <<(S, #FF8A65) Domain Service>> {
@@ -169,22 +166,18 @@ package "Shared Kernel" {
     }
 }
 
-' =========================
 ' Relationships
-' =========================
 Schedule "1" *-- "0..*" ClassSession : contains >
 ClassSession "1" ..> "1" CourseId : references >
 ClassSession "1" ..> "1" TeacherId : references >
 ClassSession "1" ..> "1" ClassroomId : references >
 ClassSession "1" *-- "1" DayOfWeek : occurs on >
 ClassSession "1" *-- "1" TimeRange : scheduled in >
-
 Schedule "1" ..> "1" AcademyId : belongs to >
 Course "1" ..> "1" AcademyId : belongs to >
 Classroom "1" ..> "1" AcademyId : belongs to >
 Course "1" ..> "1" CourseCode : identity >
 Classroom "1" ..> "1" ClassroomCode : has >
-
 ScheduleCommandService ..> Schedule : manages >
 ScheduleQueryService ..> Schedule : queries >
 CourseCommandService ..> Course : manages >
