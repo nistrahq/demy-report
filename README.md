@@ -1288,7 +1288,7 @@ En esta sección se presentan los diagramas de nivel código que detallan la est
 
 El diagrama de clases del **Domain Layer** del contexto de Scheduling ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
 
-![Diagrama de Clases del Domain Layer del Contexto de Scheduling](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/nistrahq/demy-report/refs/heads/feature/tb1-daniel/assets/diagrams/uml/class/src/scheduling-domain-layer-class-diagram.puml?token=GHSAT0AAAAAADJQS6UUQMRRF2CXW7DMSR542GIH65Q)
+![Diagrama de Clases del Domain Layer del Contexto de Scheduling](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/nistrahq/demy-report/refs/heads/feature/tb1-daniel/assets/diagrams/uml/class/src/scheduling-domain-layer-class-diagram.puml?token=GHSAT0AAAAAADJQS6UVVMJANEIU5N4CZS7W2GIIMMA)
 
 Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Scheduling](./assets/diagrams/uml/class/src/scheduling-domain-layer-class-diagram.puml).
 
