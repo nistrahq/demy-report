@@ -290,6 +290,336 @@ Para diseñar las entrevistas, se elaboraron dos bloques de preguntas, diferenci
 
 ### 2.2.2. Registro de entrevistas
 
+**Segmento Administrativos: Entrevistado 1**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
+  <tr>
+    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
+    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
+    <td style="border: 1px solid #000; padding:6px;">Kevin Rodriguez</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
+    <td style="border: 1px solid #000; padding:6px;">28</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
+    <td style="border: 1px solid #000; padding:6px;">Masculino</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
+    <td style="border: 1px solid #000; padding:6px;">Ica</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
+    <td style="border: 1px solid #000; padding:6px;">Coordinador de Academia</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
+    <td style="border: 1px solid #000; padding:6px;">3 de septiembre de 2025</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
+    <td style="border: 1px solid #000; padding:6px;">00:00 - 05:29</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EXN4PH3yo6BDpMxZlyfjpr8BqyL-elHkge9QM1vrQeoYRg?e=F1PS4p&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6MS40Mn19" target="_blank">Ver en Microsoft Stream</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      <img src="./assets/images/screenshots/interview-screenshot-coordinator1.png" alt="Captura entrevista Kevin" style="max-width:100%; height:auto;">
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      Kevin gestiona actualmente sus procesos administrativos con Excel y listas impresas, lo que considera poco eficiente y repetitivo. Necesita acceder con frecuencia a información como asistencias y notas, pero no siempre la tiene a la mano, lo que afecta la atención a padres. Desea un sistema automatizado con búsquedas rápidas por nombre o código y alertas sobre pagos. Está dispuesto a adoptar una herramienta intuitiva, que centralice la información y tenga un costo accesible, para mejorar organización y control.
+    </td>
+  </tr>
+</table>
+
+**Segmento Administrativos: Entrevistado 2**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
+  <tr>
+    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
+    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
+    <td style="border: 1px solid #000; padding:6px;">Marleni Rosa Flores</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
+    <td style="border: 1px solid #000; padding:6px;">58</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
+    <td style="border: 1px solid #000; padding:6px;">Femenino</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
+    <td style="border: 1px solid #000; padding:6px;">Ica</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
+    <td style="border: 1px solid #000; padding:6px;">Coordinadora de Academia</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
+    <td style="border: 1px solid #000; padding:6px;">2 de septiembre de 2025</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
+    <td style="border: 1px solid #000; padding:6px;">05:30 - 10:17</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EXN4PH3yo6BDpMxZlyfjpr8BqyL-elHkge9QM1vrQeoYRg?e=h4QH4g&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6MzMwLjV9fQ%3D%3D" target="_blank">Ver en Microsoft Stream</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      <img src="assets/images/screenshots/interview-screenshot-coordinator2.png" alt="Captura entrevista Marleni" style="max-width:100%; height:auto;">
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      Marleni gestiona matrículas, pagos y asistencias de forma manual. Esto dificulta el control de pagos, ingresos, egresos y asistencia, afectando la organización. Le interesa una herramienta con registro de alumnos, control de pagos y reportes, además de alertas por pagos vencidos. Prefiere un sistema simple y con funciones esenciales; adoptaría una nueva plataforma si mejora su gestión.
+    </td>
+  </tr>
+</table>
+
+**Segmento Administrativos: Entrevistado 3**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
+  <tr>
+    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
+    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
+    <td style="border: 1px solid #000; padding:6px;">Jhon Robert Candioti</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
+    <td style="border: 1px solid #000; padding:6px;">42</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
+    <td style="border: 1px solid #000; padding:6px;">Masculino</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
+    <td style="border: 1px solid #000; padding:6px;">Ica</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
+    <td style="border: 1px solid #000; padding:6px;">Dueño y administrativo de la academia Enigmas</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
+    <td style="border: 1px solid #000; padding:6px;">09 de abril de 2025</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
+    <td style="border: 1px solid #000; padding:6px;">10:18 - 18:45</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EXN4PH3yo6BDpMxZlyfjpr8BqyL-elHkge9QM1vrQeoYRg?e=Tf0He1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6NjE5LjE5fX0%3D" target="_blank">Ver en Microsoft Stream</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      <img src="./assets/images/screenshots/interview-screenshot-administrator3.png" alt="Captura entrevista Jhon Robert" style="max-width:100%; height:auto;">
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      Jhon Robert utiliza Excel para manejar matrículas, asistencia, pagos y horarios, lo que le genera desorganización y sobrecarga de tiempo. Reporta estrés y errores por navegar múltiples hojas. Busca una solución sencilla y automatizada, con consulta rápida por DNI de alumnos y apoderados, y registro de pagos pendientes. Está dispuesto a aprender una nueva plataforma si es fácil de usar y mejora la productividad.
+    </td>
+  </tr>
+</table>
+
+**Segmento Docente: Entrevistado 1**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
+  <tr>
+    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
+    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
+    <td style="border: 1px solid #000; padding:6px;">Luis de la Cruz Herrera</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
+    <td style="border: 1px solid #000; padding:6px;">25</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
+    <td style="border: 1px solid #000; padding:6px;">Masculino</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
+    <td style="border: 1px solid #000; padding:6px;">La Molina</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
+    <td style="border: 1px solid #000; padding:6px;">Docente de Círculos de Estudio en la UNALM</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
+    <td style="border: 1px solid #000; padding:6px;">3 de septiembre de 2025</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
+    <td style="border: 1px solid #000; padding:6px;">18:46 - 31:01</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EXN4PH3yo6BDpMxZlyfjpr8BqyL-elHkge9QM1vrQeoYRg?e=qvqo4T" target="_blank">Ver en Microsoft Stream</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      <img src="./assets/images/screenshots/interview-screenshot-teacher1.jpg" alt="Captura entrevista Luis" style="max-width:100%; height:auto;">
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      Luis dicta clases en círculos de estudio de la UNALM y enfrenta problemas con la gestión manual de horarios y notas, usando principalmente Excel y cuadernos. Esto le consume tiempo y reduce su eficiencia. Percibe valor en una solución digital centralizada que le permita enfocarse más en la enseñanza. Está dispuesto a usar nuevas herramientas si son simples y accesibles desde celular.
+    </td>
+  </tr>
+</table>
+
+**Segmento Docente: Entrevistado 2**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
+  <tr>
+    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
+    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
+    <td style="border: 1px solid #000; padding:6px;">Jean Paul Benezú</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
+    <td style="border: 1px solid #000; padding:6px;">21</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
+    <td style="border: 1px solid #000; padding:6px;">Masculino</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
+    <td style="border: 1px solid #000; padding:6px;">Santa Anita</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
+    <td style="border: 1px solid #000; padding:6px;">Docente en CEPRE Agraria</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
+    <td style="border: 1px solid #000; padding:6px;">3 de septiembre de 2025</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
+    <td style="border: 1px solid #000; padding:6px;">31:01 - 45:48</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EXN4PH3yo6BDpMxZlyfjpr8BqyL-elHkge9QM1vrQeoYRg?e=amN8XV" target="_blank">Ver en Microsoft Stream</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      <img src="./assets/images/screenshots/interview-screenshot-teacher2.png" alt="Captura entrevista Jean Paul" style="max-width:100%; height:auto;">
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      Jean Paul enseña en CEPRE Agraria y usa Excel y Google Forms para registrar notas y asistencia. Para reprogramar clases recurre a encuestas improvisadas. Considera clave contar con una herramienta centralizada e intuitiva, accesible desde celular. Sugiere que tutores puedan consultar información académica y valora recibir notificaciones de cambios de horario. Está dispuesto a aprender nuevas herramientas si percibe mejoras en productividad.
+    </td>
+  </tr>
+</table>
+
+**Segmento Docente: Entrevistado 3**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
+  <tr>
+    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
+    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
+    <td style="border: 1px solid #000; padding:6px;">Jeff Aylas Quispe Vergara</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
+    <td style="border: 1px solid #000; padding:6px;">25</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
+    <td style="border: 1px solid #000; padding:6px;">Masculino</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
+    <td style="border: 1px solid #000; padding:6px;">San Juan de Lurigancho</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
+    <td style="border: 1px solid #000; padding:6px;">Docente en Academia ADUNI</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
+    <td style="border: 1px solid #000; padding:6px;">2 de septiembre de 2025</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
+    <td style="border: 1px solid #000; padding:6px;">45:49 - 50:16</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EXN4PH3yo6BDpMxZlyfjpr8BqyL-elHkge9QM1vrQeoYRg?e=KNljaH" target="_blank">Ver en Microsoft Stream</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      <img src="./assets/images/screenshots/interview-screenshot-teacher3.png" alt="Captura entrevista Jeff" style="max-width:100%; height:auto;">
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      Jeff combina su rol de docente con el de estudiante y organiza asistencia y notas en Excel y cuadernos. La coordinación con administrativos ocurre vía WhatsApp o correo, generando demoras y confusión en cambios de aula. Valora una plataforma digital que integre asistencia, notas y horarios, accesible desde celular. Considera esencial que sea intuitiva, pues si es compleja volvería a métodos tradicionales. Está dispuesto a adoptarla si facilita su gestión y aporta notificaciones claras.
+    </td>
+  </tr>
+</table>
+
 **Segmento Alumno: Entrevistado 1**
 
 <table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
@@ -333,6 +663,9 @@ Para diseñar las entrevistas, se elaboraron dos bloques de preguntas, diferenci
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      <img src="./assets/images/screenshots/interview-screenshot-alumno2.png" alt="Captura entrevista Maykel Vivas" style="max-width:100%; height:auto;">
+    </td>
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
@@ -383,6 +716,9 @@ Para diseñar las entrevistas, se elaboraron dos bloques de preguntas, diferenci
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      <img src="./assets/images/screenshots/interview-screenshot-alumno1.png" alt="Captura entrevista Yolanda Reyes" style="max-width:100%; height:auto;">
+    </td>
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
@@ -433,6 +769,9 @@ Para diseñar las entrevistas, se elaboraron dos bloques de preguntas, diferenci
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
+    <td style="border: 1px solid #000; padding:6px;">
+      <img src="./assets/images/screenshots/interview-screenshot-alumno3.png" alt="Captura entrevista Emy Ganoza" style="max-width:100%; height:auto;">
+    </td>
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
@@ -445,6 +784,8 @@ Para diseñar las entrevistas, se elaboraron dos bloques de preguntas, diferenci
 Las entrevistas se realizaron entre el 2 y el 3 de septiembre de 2025 a un total de nueve participantes: tres docentes, tres
 administrativos/coordinadores de academias preuniversitarias y tres alumnos de las mismas en Lima, Ica y Trujillo. El objetivo fue entender sus contextos
 operativos, frustraciones actuales y validar hipótesis sobre posibles soluciones digitales.
+
+---
 
 **Segmento: Docentes de academias**
 
@@ -468,6 +809,7 @@ operativos, frustraciones actuales y validar hipótesis sobre posibles solucione
 * Notificaciones de cambios de horario son altamente valoradas: **2/3 (66%)**  
 * Disposición a adoptar nuevas herramientas si mejoran su productividad: **3/3 (100%)**  
 
+---
 
 **Segmento: Administrativos de academias**
 
@@ -490,7 +832,9 @@ operativos, frustraciones actuales y validar hipótesis sobre posibles solucione
 - Alertas para pagos vencidos son altamente valoradas: **3/3 (100%)**  
 - Desean funcionalidades como búsqueda rápida por nombre o DNI: **2/3 (66%)**  
 - Esperan una solución intuitiva, accesible y asequible: **3/3 (100%)**  
-- Disposición a adoptar nuevas plataformas si mejoran su gestión: **3/3 (100%)**  
+- Disposición a adoptar nuevas plataformas si mejoran su gestión: **3/3 (100%)** 
+
+---
 
 **Segmento: Estudiantes de academias**
 
@@ -513,9 +857,10 @@ operativos, frustraciones actuales y validar hipótesis sobre posibles solucione
 - Quieren añadir notas personales en el horario: **1/3 (33%)**  
 - Disposición a adoptar la herramienta si mejora su organización: **3/3 (100%)**
 
+---
+
 **Conclusión general**
 Este análisis refleja claramente patrones de uso, frustraciones comunes y criterios clave que deben guiar el diseño del sistema. La coincidencia en prioridades entre ambos segmentos refuerza la necesidad de una plataforma centralizada, móvil, intuitiva y orientada a mejorar la eficiencia operativa diaria.
-
 
 ## 2.3. Needfinding
 
