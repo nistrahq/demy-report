@@ -754,7 +754,7 @@ Luego de analizar las alternativas y sus implicancias, el equipo decidió manten
 - **Attendance con ACL/OHS:** La asistencia consume datos de matrícula y horarios a través de interfaces públicas, protegiendo estabilidad y seguridad.
 
 <div style="text-align: center;">
-  <img src="assets/diagrams/ddd/context-maps/src/context-mapping.jpg" alt="Context Mapping - Demy" height="600">
+  <img src="assets/diagrams/ddd/context-maps/out/context-mapping.jpg" alt="Context Mapping - Demy" height="600">
 </div>
 
 **Conclusión:**  
@@ -1271,6 +1271,13 @@ Interfaz del repositorio para gestionar aulas.
 | `existsByCodeAndIdNot(String code, Long id)`        | `boolean`       | `public`    | Verifica si existe un aula con el código dado, excluyendo el ID especificado.      |
 
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presentan los diagramas de nivel componente que ilustran la arquitectura de software del contexto de **Scheduling**. Se muestra la interacción entre los diferentes componentes, servicios y capas que conforman este bounded context. Se integra con la base de datos relacional definida en el diagrama de contenedores.
+
+![Diagrama de Componentes del Contexto de Scheduling](./assets/diagrams/software-architecture/components/out/scheduling-component-level-diagram.png)
+
+Además, se incluye el [código fuente del diagrama de componentes de Scheduling](./assets/diagrams/software-architecture/components/src/scheduling-component-level-diagram.dsl).
+
 
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 
