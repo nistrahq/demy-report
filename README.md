@@ -1095,6 +1095,129 @@ Controlador REST que expone endpoints para gestionar **aulas**.
 #### 4.2.5.3. Application Layer
 
 
+1. **`ClassroomCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar aulas.
+
+**Atributos principales:**
+
+| Atributo                | Tipo                    | Visibilidad | Descripción                                      |
+|-------------------------|-------------------------|-------------|--------------------------------------------------|
+| `classroomRepository`   | `ClassroomRepository`   | `private`   | Repositorio para acceder y gestionar aulas.      |
+
+**Métodos principales:**
+
+| Método                                         | Tipo de Retorno        | Visibilidad  | Descripción                                           |
+|------------------------------------------------|------------------------|--------------|-------------------------------------------------------|
+| `handle(CreateClassroomCommand command)`       | `Long`                 | `public`     | Crea una nueva aula y devuelve su ID.                 |
+| `handle(UpdateClassroomCommand command)`       | `Optional<Classroom>`  | `public`     | Actualiza una aula existente.                         |
+| `handle(DeleteClassroomCommand command)`       | `void`                 | `public`     | Elimina una aula existente.                           |
+
+---
+
+2. **`CourseCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar cursos.
+
+**Atributos principales:**
+
+| Atributo              | Tipo                 | Visibilidad  | Descripción                                   |
+|-----------------------|----------------------|--------------|-----------------------------------------------|
+| `courseRepository`    | `CourseRepository`   | `private`    | Repositorio para acceder y gestionar cursos.  |
+
+**Métodos principales:**
+
+| Método                                   | Tipo de Retorno     | Visibilidad | Descripción                              |
+|------------------------------------------|---------------------|-------------|------------------------------------------|
+| `handle(CreateCourseCommand command)`    | `Long`              | `public`    | Crea un curso nuevo y devuelve su ID.    |
+| `handle(UpdateCourseCommand command)`    | `Optional<Course>`  | `public`    | Actualiza los datos de un curso.         |
+| `handle(DeleteCourseCommand command)`    | `void`              | `public`    | Elimina un curso existente.              |
+
+---
+
+3. **`ScheduleCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar horarios semanales y sesiones de clase.
+
+**Atributos principales:**
+
+| Atributo                    | Tipo                       | Visibilidad | Descripción                                                        |
+|-----------------------------|---------------------------|-------------|--------------------------------------------------------------------|
+| `scheduleRepository`        | `ScheduleRepository`      | `private`   | Repositorio para acceder y gestionar horarios semanales.           |
+| `scheduleRepository`        | `ClassSessionRepository`  | `private`   | Repositorio para acceder y gestionar sesiones de clase.           |
+| `externalIamService`        | `ExternalIamService`      | `private`   | Servicio externo para validar docentes.                           |
+
+**Métodos principales:**
+
+| Método                                                    | Tipo de Retorno          | Visibilidad | Descripción                                                     |
+|-----------------------------------------------------------|--------------------------|-------------|-----------------------------------------------------------------|
+| `handle(CreateScheduleCommand command)`                   | `Long`                   | `public`    | Crea un nuevo horario semanal.                                  |
+| `handle(UpdateScheduleNameCommand command)`               | `Optional<Schedule>`     | `public`    | Actualiza el nombre de un horario semanal.                      |
+| `handle(AddClassSessionToScheduleCommand command)`        | `Optional<Schedule>`     | `public`    | Agrega una sesión de clase a un horario semanal.                |
+| `handle(RemoveClassSessionFromScheduleCommand command)`   | `Optional<Schedule>`     | `public`    | Elimina una sesión de clase de un horario semanal.              |
+| `handle(DeleteScheduleCommand command)`                   | `void`                   | `public`    | Elimina un horario semanal.                                     |
+| `handle(UpdateClassSessionCommand command)`               | `Optional<ClassSession>` | `public`    | Actualiza los datos de una sesión de clase.                     |
+
+---
+
+4. **`ClassroomQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para aulas.
+
+**Atributos principales:**
+
+| Atributo                | Tipo                    | Visibilidad | Descripción                                      |
+|-------------------------|-------------------------|-------------|--------------------------------------------------|
+| `classroomRepository`   | `ClassroomRepository`   | `private`   | Repositorio para acceder a las aulas.            |
+
+**Métodos principales:**
+
+| Método                                     | Tipo de Retorno         | Visibilidad | Descripción                                    |
+|--------------------------------------------|-------------------------|-------------|------------------------------------------------|
+| `handle(GetAllClassroomsQuery query)`      | `List<Classroom>`       | `public`    | Obtiene todas las aulas registradas.           |
+| `handle(GetClassroomByIdQuery query)`      | `Optional<Classroom>`   | `public`    | Obtiene un aula por su ID.                     |
+
+---
+
+5. **`CourseQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para cursos.
+
+**Atributos principales:**
+
+| Atributo              | Tipo                | Visibilidad | Descripción                                 |
+|-----------------------|---------------------|-------------|---------------------------------------------|
+| `courseRepository`    | `CourseRepository`  | `private`   | Repositorio para acceder a los cursos.      |
+
+**Métodos principales:**
+
+| Método                                  | Tipo de Retorno      | Visibilidad | Descripción                           |
+|-----------------------------------------|----------------------|-------------|---------------------------------------|
+| `handle(GetAllCoursesQuery query)`      | `List<Course>`       | `public`    | Obtiene todos los cursos registrados. |
+| `handle(GetCourseByIdQuery query)`      | `Optional<Course>`   | `public`    | Obtiene un curso por su ID.           |
+
+---
+
+6. **`ScheduleQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para horarios semanales y sesiones de clase.
+
+**Atributos principales:**
+
+| Atributo                    | Tipo                        | Visibilidad  | Descripción                                              |
+|-----------------------------|-----------------------------|--------------|----------------------------------------------------------|
+| `scheduleRepository`        | `ScheduleRepository`        | `private`    | Repositorio para acceder a los horarios semanales.       |
+| `classSessionRepository`    | `ClassSessionRepository`    | `private`    | Repositorio para acceder a las sesiones de clase.        |
+
+**Métodos principales:**
+
+| Método                                            | Tipo de Retorno        | Visibilidad | Descripción                                        |
+|---------------------------------------------------|------------------------|-------------|----------------------------------------------------|
+| `handle(GetAllSchedulesQuery query)`              | `List<Schedule>`       | `public`    | Obtiene todos los horarios semanales.              |
+| `handle(GetScheduleByIdQuery query)`              | `Optional<Schedule>`   | `public`    | Obtiene un horario semanal por su ID.              |
+| `handle(GetScheduleByNameQuery query)`            | `Optional<Schedule>`   | `public`    | Obtiene un horario semanal por su nombre.          |
+| `handle(GetClassSessionsByTeacherIdQuery query)`  | `List<ClassSession>`   | `public`    | Obtiene todas las sesiones de clase de un docente. |
+
 #### 4.2.5.4. Infrastructure Layer
 
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
