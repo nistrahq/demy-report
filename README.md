@@ -1220,6 +1220,56 @@ Implementación del servicio de consultas para horarios semanales y sesiones de 
 
 #### 4.2.5.4. Infrastructure Layer
 
+1. **`ScheduleRepository` (Repository Interface)**
+
+Interfaz del repositorio para acceder a los horarios semanales (schedules).
+
+**Métodos principales:**
+
+| Método                                       | Tipo de Retorno      | Visibilidad | Descripción                                                                              |
+|----------------------------------------------|----------------------|-------------|------------------------------------------------------------------------------------------|
+| `findByName(String name)`                    | `Optional<Schedule>` | `public`    | Busca un horario semanal por su nombre único.                                            |
+| `existsByName(String name)`                  | `boolean`            | `public`    | Verifica si existe un horario semanal con el nombre especificado.                        |
+| `existsByNameAndIdNot(String name, Long id)` | `boolean`            | `public`    | Verifica si existe un horario semanal con el nombre dado, excluyendo el ID especificado. |
+
+---
+
+2. **`ClassSessionRepository` (Repository Interface)**
+
+Interfaz del repositorio para acceder a las sesiones de clase (class sessions).
+
+**Métodos principales:**
+
+| Método                                 | Tipo de Retorno           | Visibilidad | Descripción                                                                 |
+|----------------------------------------|---------------------------|-------------|-----------------------------------------------------------------------------|
+| `findByTeacherId(UserId teacherId)`    | `List<ClassSession>`      | `public`    | Busca todas las sesiones de clase asignadas a un profesor específico.       |
+
+---
+
+3. **`CourseRepository` (Repository Interface)**
+
+Interfaz del repositorio para gestionar cursos.
+
+**Métodos principales:**
+
+| Método                                              | Tipo de Retorno | Visibilidad | Descripción                                                                           |
+|-----------------------------------------------------|-----------------|-------------|---------------------------------------------------------------------------------------|
+| `existsByName(String name)`                         | `boolean`       | `public`    | Verifica si existe un curso con el nombre especificado.                               |
+| `existsByNameAndIdNot(String name, Long id)`        | `boolean`       | `public`    | Verifica si existe un curso con el nombre dado, excluyendo el ID especificado.        |
+
+---
+
+4. **`ClassroomRepository` (Repository Interface)**
+
+Interfaz del repositorio para gestionar aulas.
+
+**Métodos principales:**
+
+| Método                                              | Tipo de Retorno | Visibilidad | Descripción                                                                        |
+|-----------------------------------------------------|-----------------|-------------|------------------------------------------------------------------------------------|
+| `existsByCode(String code)`                         | `boolean`       | `public`    | Verifica si existe un aula con el código especificado.                             |
+| `existsByCodeAndIdNot(String code, Long id)`        | `boolean`       | `public`    | Verifica si existe un aula con el código dado, excluyendo el ID especificado.      |
+
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
