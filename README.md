@@ -828,11 +828,12 @@ Representa un horario académico que contiene múltiples sesiones de clase.
 
 **Atributos principales:**
 
-| Atributo     | Tipo         | Visibilidad    | Descripción                                       |
-|--------------|--------------|----------------|---------------------------------------------------|
-| `id`         | `Long`       | `private`      | Identificador único del horario.                  |
-| `name`       | `String`     | `private`      | Nombre del horario.                               |
-| `academyId`  | `AcademyId`  | `private`      | Identificador de la academia asociada.            |
+| Atributo        | Tipo                | Visibilidad   | Descripción                                                          |
+|-----------------|---------------------|---------------|----------------------------------------------------------------------|
+| `id`            | `Long`              | `private`     | Identificador único del horario.                                     |
+| `name`          | `String`            | `private`     | Nombre del horario.                                                  |
+| `academyId`     | `AcademyId`         | `private`     | Identificador de la academia asociada.                               |
+| `classSessions` | `Set<ClassSession>` | `private`     | Conjunto de sesiones de clase que forman parte del horario semanal.  |
 
 **Métodos principales:**
 
@@ -1010,14 +1011,14 @@ Proporciona métodos para ejecutar comandos relacionados con la gestión de hora
 
 **Métodos principales:**
 
-| Método                                      | Tipo de Retorno           | Visibilidad | Descripción                                                      |
-|---------------------------------------------|---------------------------|-------------|------------------------------------------------------------------|
-| `handle(CreateWeeklyScheduleCommand command)` | `Long`                   | `public`    | Crea un nuevo horario semanal y retorna su ID.                  |
-| `handle(UpdateWeeklyScheduleNameCommand command)` | `Optional<WeeklySchedule>` | `public` | Actualiza el nombre de un horario semanal existente.            |
-| `handle(AddScheduleToWeeklyCommand command)` | `Optional<WeeklySchedule>` | `public` | Agrega un horario al horario semanal.                            |
-| `handle(RemoveScheduleFromWeeklyCommand command)` | `Optional<WeeklySchedule>` | `public` | Elimina un horario del horario semanal.                          |
-| `handle(DeleteWeeklyScheduleCommand command)` | `void`                    | `public`    | Elimina un horario semanal.                                      |
-| `handle(UpdateScheduleCommand command)`      | `Optional<Schedule>`      | `public`    | Actualiza un horario individual dentro del horario semanal.      |
+| Método                                                  | Tipo de Retorno          | Visibilidad | Descripción                                               |
+|---------------------------------------------------------|--------------------------|-------------|-----------------------------------------------------------|
+| `handle(CreateScheduleCommand command)`                 | `Long`                   | `public`    | Crea un nuevo horario semanal y retorna su ID.            |
+| `handle(UpdateScheduleNameCommand command)`             | `Optional<Schedule>`     | `public`    | Actualiza el nombre de un horario semanal existente.      |
+| `handle(AddClassSessionToScheduleCommand command)`      | `Optional<Schedule>`     | `public`    | Agrega una sesión de clase al horario semanal.            |
+| `handle(RemoveClassSessionFromScheduleCommand command)` | `Optional<Schedule>`     | `public`    | Elimina una sesión de clase del horario semanal.          |
+| `handle(DeleteScheduleCommand command)`                 | `void`                   | `public`    | Elimina un horario semanal.                               |
+| `handle(UpdateClassSessionFromScheduleCommand command)` | `Optional<ClassSession>` | `public`    | Actualiza una sesión de clase dentro del horario semanal. |
 
 ---
 
@@ -1027,12 +1028,12 @@ Proporciona métodos para consultar información relacionada con horarios y sesi
 
 **Métodos principales:**
 
-| Método                                      | Tipo de Retorno           | Visibilidad | Descripción                                                      |
-|---------------------------------------------|---------------------------|-------------|------------------------------------------------------------------|
-| `handle(GetAllWeeklySchedulesQuery query)`   | `List<WeeklySchedule>`    | `public`    | Obtiene todos los horarios semanales registrados.               |
-| `handle(GetWeeklyScheduleByIdQuery query)`   | `Optional<WeeklySchedule>` | `public`   | Obtiene un horario semanal específico por su ID.                |
-| `handle(GetWeeklyScheduleByNameQuery query)` | `Optional<WeeklySchedule>` | `public`   | Obtiene un horario semanal por su nombre.                        |
-| `handle(GetSchedulesByTeacherIdQuery query)` | `List<Schedule>`          | `public`    | Obtiene todos los horarios asignados a un docente específico.    |
+| Método                                       | Tipo de Retorno      | Visibilidad | Descripción                                                   |
+|----------------------------------------------|----------------------|-------------|---------------------------------------------------------------|
+| `handle(GetAllSchedulesQuery query)`         | `List<Schedule>`     | `public`    | Obtiene todos los horarios semanales registrados.             |
+| `handle(GetScheduleByIdQuery query)`         | `Optional<Schedule>` | `public`    | Obtiene un horario semanal específico por su ID.              |
+| `handle(GetScheduleByNameQuery query)`       | `Optional<Schedule>` | `public`    | Obtiene un horario semanal por su nombre.                     |
+| `handle(GetSchedulesByTeacherIdQuery query)` | `List<ClassSession>` | `public`    | Obtiene todos los horarios asignados a un docente específico. |
 
 ---
 
