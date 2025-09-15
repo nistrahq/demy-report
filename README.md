@@ -905,7 +905,44 @@ Estudiante de secundaria o con secundaria completa que busca una herramienta dig
 
 ### 2.3.2. User Task Matrix
 
-Write here...
+En este User Task Matrix se detallan las tareas clave que cada tipo de usuario puede realizar dentro del sistema académico
+
+| **TAREA**                                              |  **Carmen Gutierrez.(Administrador) - Frecuencia**  |  **Carmen Gutierrez.(Administrador) - Importancia**  |
+|--------------------------------------------------------|:---------------------------------------------------:|:----------------------------------------------------:|
+| Registrar matrícula de estudiantes                     |                       always                        |                         high                         |
+| Gestionar los horarios de docentes y estudiantes       |                      sometimes                      |                         high                         |
+| Controlar los pagos de estudiantes                     |                      sometimes                      |                         high                         |
+| Visualizar la información académica                    |                        never                        |                        medium                        |
+| Ver la información financiera de los estudiantes       |                      sometimes                      |                         high                         |
+| Coordinar con los docentes para la gestión             |                      sometimes                      |                        medium                        |
+| Gestionar reportes para estudiantes y profesores       |                      sometimes                      |                         high                         |
+| Gestionar cambios en la asignación de aulas y horarios |                      sometimes                      |                         high                         |
+| Supervisar los procesos administrativos                |                       always                        |                         high                         |
+
+| **TAREA**                                       |  **Luis Mendoza(Profesor) - Frecuencia**  |  **Luis Mendoza(Profesor) - Importancia**  |
+|-------------------------------------------------|:-----------------------------------------:|:------------------------------------------:|
+| Registrar asistencia de estudiantes             |                 sometimes                 |                    high                    |
+| Revisar y gestionar horarios de clases          |                 sometimes                 |                   medium                   |
+| Registrar calificaciones                        |                  always                   |                    high                    |
+| Acceder a información de los estudiantes        |                 sometimes                 |                 sometimes                  |
+| Coordinar con el personal administrativo        |                 sometimes                 |                   medium                   |
+| Comunicar incidencias en horario regular        |                   never                   |                    high                    |
+| Preparar los materiales para las clases         |                  always                   |                    high                    |
+| Diseñar las evaluaciones                        |                 sometimes                 |                    high                    |
+| Gestionar que se cumplan las normas en el aula  |                  always                   |                    high                    |
+
+| **TAREA**                                     | **Aleza Silva (Alumno) - Frecuencia** | **Aleza Silva (Alumno) - Importancia** |
+|-----------------------------------------------|:-------------------------------------:|:--------------------------------------:|
+| Visualizar matrícula                          |                always                |                  high                  |
+| Consultar horario de clases                   |                always                |                  high                  |
+| Visualizar detalles de horario                |              sometimes               |                 medium                 |
+| Consultar detalles de profesores              |              sometimes               |                 medium                 |
+| Acceder a información personal                |                never                 |                 medium                 |
+| Consultar pagos                               |              sometimes               |                  high                  |
+| Editar horario de clase                       |                never                 |                 medium                 |
+| Recibir notificaciones sobre cambios de horario |             sometimes               |                 medium                 |
+| Revisar cambios del horario                   |              sometimes               |                  high                  |
+
 
 ### 2.3.3. User Journey Mapping
 
