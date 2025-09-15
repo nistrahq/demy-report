@@ -864,11 +864,44 @@ Este análisis refleja claramente patrones de uso, frustraciones comunes y crite
 
 ## 2.3. Needfinding
 
-Write here...
+El Needfinding permite identificar necesidades reales de los usuarios mediante entrevistas y análisis del contexto.
+A partir de esta información, se construyeron artefactos clave que ayudaron a comprender mejor sus objetivos, tareas, emociones y frustraciones.
 
 ### 2.3.1. User Personas
 
-Write here...
+Los User Personas fueron elaborados a partir de los hallazgos de las entrevistas, reflejando perfiles representativos de los segmentos objetivo.
+Cada ficha sintetiza aspectos demográficos, conductuales y emocionales que guían el diseño funcional y visual de la plataforma.
+
+---
+
+#### User Persona: Administrador de academia
+
+Coordinadora administrativa que necesita centralizar pagos, matrículas y horarios.
+Busca evitar errores, ahorrar tiempo y modernizar los procesos de su academia.
+
+![User Persona – Administrator](./assets/images/photos/user-persona-admin.png)
+**Figura 2.** User Persona del segmento *Administrador*.
+
+---
+
+#### User Persona: Docente de academia
+
+Profesor joven que busca herramientas simples y accesibles para gestionar asistencia y horarios desde su dispositivo movil.
+Valora la movilidad y odia perder tiempo con tareas repetitivas.
+
+![User Persona – Teacher](./assets/images/photos/user-persona-teacher.png)
+**Figura 3.** User Persona del segmento *Docente*.
+
+---
+
+#### User Persona: Alumno de academia
+
+Estudiante de secundaria o con secundaria completa que busca una herramienta digital rápida para gestionar sus horarios desde su celular. Valora la rapidez, facilidad de uso, y prioriza ahorrar tiempo.
+
+![User Persona – Alumno](./assets/images/photos/user-persona-alumno.png)
+**Figura 3.** User Persona del segmento *Alumno*.
+
+---
 
 ### 2.3.2. User Task Matrix
 
@@ -879,10 +912,6 @@ Write here...
 Write here...
 
 ### 2.3.4. Empathy Mapping
-
-Write here...
-
-### 2.3.5. As-Is Scenario Mapping
 
 Write here...
 
