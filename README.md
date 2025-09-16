@@ -1119,7 +1119,7 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 
 | Método                                                                                    | Tipo Retorno  | Visibilidad | Descripción                                                    |
 | ----------------------------------------------------------------------------------------- | ------------- | ----------- | -------------------------------------------------------------- |
-| `Academy()`                                                                               | Constructor   | `protected` | Constructor protegido para JPA.                                |
+| `Academy()`                                                                               | `Constructor`   | `protected` | Constructor protegido para JPA.                                |
 | `Academy(AcademyName, AcademyDescription, StreetAddress, EmailAddress, PhoneNumber, Ruc)` | `Constructor` | `public`    | Crea una academia con sus datos básicos.                       |
 | `Academy(RegisterAcademyCommand command)`                                                 | `Constructor` | `public`    | Crea una academia a partir de un comando de registro.          |
 | `assignAdministrator(AdministratorId administratorId)`                                    | `void`        | `public`    | Asigna un administrador a la academia si no existe uno previo. |
@@ -1141,9 +1141,9 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 
 | Método                                                                 | Tipo Retorno | Visibilidad | Descripción                                               |
 | ---------------------------------------------------------------------- | ------------ | ----------- | --------------------------------------------------------- |
-| `Administrator()`                                                      | Constructor  | `protected` | Constructor protegido para JPA.                           |
-| `Administrator(PersonName, PhoneNumber, DniNumber, AcademyId, UserId)` | Constructor  | `public`    | Crea un administrador con sus datos básicos.              |
-| `Administrator(RegisterAdministratorCommand command)`                  | Constructor  | `public`    | Crea un administrador a partir de un comando de registro. |
+| `Administrator()`                                                      | `Constructor`  | `protected` | Constructor protegido para JPA.                           |
+| `Administrator(PersonName, PhoneNumber, DniNumber, AcademyId, UserId)` | `Constructor`  | `public`    | Crea un administrador con sus datos básicos.              |
+| `Administrator(RegisterAdministratorCommand command)`                  | `Constructor`  | `public`    | Crea un administrador a partir de un comando de registro. |
 | `registerAdministrator(Long academyId, Long userId)`                   | `void`       | `public`    | Publica un evento de registro de administrador.           |
 | `disassociateAcademy(AcademyId academyId)`                             | `void`       | `public`    | Desasocia al administrador de una academia.               |
 
@@ -1162,7 +1162,7 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 
 | Método      | Tipo Retorno | Visibilidad | Descripción                |
 | ----------- | ------------ | ----------- | -------------------------- |
-| `Teacher()` | Constructor  | `protected` | Constructor protegido JPA. |
+| `Teacher()` | `Constructor`  | `protected` | Constructor protegido JPA. |
 
 4. **`RegisterAcademyCommand`(Command)**
 
@@ -1205,7 +1205,7 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 | ---------------------------------- | ----------------------- | ------------------------------------------ |
 | `GetAcademyByIdQuery`              | `academyId : Long`      | Obtiene una academia por su identificador. |
 | `GetAdministratorByDniNumberQuery` | `dniNumber : DniNumber` | Busca administrador por DNI.               |
-| `GetAllTeachersQuery`              | *(sin atributos)*       | Devuelve todos los docentes registrados.   |
+| `GetAllTeachersQuery`              | `*(sin atributos)*`       | Devuelve todos los docentes registrados.   |
 
 8. **`AdministratorRegisteredEvent` (Domain Event)**
 
@@ -1300,8 +1300,8 @@ Representa el nombre de una academia, asegurando que no sea nulo, vacío ni supe
 
 | Método                 | Tipo Retorno | Visibilidad | Descripción                                   |
 |------------------------|--------------|-------------|-----------------------------------------------|
-| `AcademyName()`        | Constructor  | `public`    | Constructor requerido por JPA (valor vacío).  |
-| `AcademyName(String)`  | Constructor  | `public`    | Inicializa y valida el nombre de la academia. |
+| `AcademyName()`        | `Constructor`  | `public`    | Constructor requerido por JPA (valor vacío).  |
+| `AcademyName(String)`  | `Constructor`  | `public`    | Inicializa y valida el nombre de la academia. |
 
 ---
 
@@ -1319,8 +1319,8 @@ Encapsula la descripción de una academia, validando que no sea nula ni vacía.
 
 | Método                        | Tipo Retorno | Visibilidad | Descripción                              |
 |-------------------------------|--------------|-------------|------------------------------------------|
-| `AcademyDescription()`        | Constructor  | `public`    | Constructor requerido por JPA (valor vacío). |
-| `AcademyDescription(String)`  | Constructor  | `public`    | Inicializa y valida la descripción.      |
+| `AcademyDescription()`        | `Constructor`  | `public`    | Constructor requerido por JPA (valor vacío). |
+| `AcademyDescription(String)`  | `Constructor`  | `public`    | Inicializa y valida la descripción.      |
 
 ---
 
@@ -1338,8 +1338,8 @@ Identificador único de un administrador, con la invariante de ser mayor que cer
 
 | Método                                 | Tipo Retorno | Visibilidad | Descripción                                      |
 |----------------------------------------|--------------|-------------|--------------------------------------------------|
-| `AdministratorId()`                    | Constructor  | `public`    | Constructor requerido por JPA (valor `null`).    |
-| `AdministratorId(Long administratorId)`| Constructor  | `public`    | Inicializa y valida que sea mayor que cero.      |
+| `AdministratorId()`                    | `Constructor`  | `public`    | Constructor requerido por JPA (valor `null`).    |
+| `AdministratorId(Long administratorId)`| `Constructor`  | `public`    | Inicializa y valida que sea mayor que cero.      |
 | `isAssigned()`                         | `boolean`    | `public`    | Devuelve `true` si hay un ID válido asignado.    |
 
 ---
@@ -1358,8 +1358,8 @@ Representa el RUC de la academia, validando que tenga exactamente 11 dígitos nu
 
 | Método        | Tipo Retorno | Visibilidad | Descripción                                   |
 |---------------|--------------|-------------|-----------------------------------------------|
-| `Ruc()`       | Constructor  | `public`    | Constructor requerido por JPA (valor vacío).  |
-| `Ruc(String)` | Constructor  | `public`    | Inicializa y valida longitud y formato numérico. |
+| `Ruc()`       | `Constructor`  | `public`    | Constructor requerido por JPA (valor vacío).  |
+| `Ruc(String)` | `Constructor`  | `public`    | Inicializa y valida longitud y formato numérico. |
 
 ---
 
@@ -1377,8 +1377,8 @@ Identificador único de un usuario dentro del sistema.
 
 | Método               | Tipo Retorno | Visibilidad | Descripción                                   |
 |----------------------|--------------|-------------|-----------------------------------------------|
-| `UserId()`           | Constructor  | `public`    | Constructor requerido por JPA (valor `0L`).   |
-| `UserId(Long)`       | Constructor  | `public`    | Inicializa y valida que el ID sea mayor a 0.  |
+| `UserId()`           | `Constructor`  | `public`    | Constructor requerido por JPA (valor `0L`).   |
+| `UserId(Long)`       | `Constructor`  | `public`    | Inicializa y valida que el ID sea mayor a 0.  |
 
 #### 4.2.6.2. Interface Layer
 
