@@ -389,7 +389,134 @@ Write here...
 
 ## 3.4. Product Backlog
 
-Write here...
+En esta sección se presenta el Product Backlog del proyecto, el cual contiene una lista priorizada de todas las funcionalidades, mejoras y correcciones necesarias para el desarrollo de la plataforma educativa. Cada ítem del backlog está detallado con su User Story ID, Título y Story Points.
+
+La priorización se ha realizado considerando el valor que cada ítem aporta al negocio, la complejidad técnica y la dependencia entre tareas. Este backlog servirá como guía para el equipo de desarrollo durante las diferentes fases del proyecto, asegurando que se enfoquen en entregar el mayor valor posible en cada iteración.
+
+| # Orden | User Story ID | Título                                                                             | Story Points |
+|---------|---------------|------------------------------------------------------------------------------------|--------------|
+| 1       | US001         | Registro de Academia                                                               | 5            |
+| 2       | TS006         | Exponer *endpoint* para registrar administrador                                    | 3            |
+| 3       | TS001         | Exponer *endpoint* para registrar academias                                        | 3            |
+| 4       | US004         | Registro de Profesor                                                               | 5            |
+| 5       | US013         | Creación de Periodo Académico                                                      | 5            |
+| 6       | TS021         | Exponer *endpoint* para registrar periodos académicos                              | 3            |
+| 7       | US016         | Creación de Salones de Clase                                                       | 5            |
+| 8       | TS026         | Exponer *endpoint* para registrar salones de clase                                 | 3            |
+| 9       | US019         | Creación de Horarios                                                               | 5            |
+| 10      | TS031         | Exponer *endpoint* para registrar cursos                                           | 3            |
+| 11      | US007         | Matrícula de Alumno                                                                | 5            |
+| 12      | TS011         | Exponer *endpoint* para registrar matrículas                                       | 3            |
+| 13      | US010         | Registro de Asistencia                                                             | 3            |
+| 14      | TS016         | Exponer *endpoint* para registrar asistencias de clase                             | 2            |
+| 15      | US030         | Visualización de Horario de Clases                                                 | 3            |
+| 16      | TS036         | Exponer *endpoint* para registrar horarios                                         | 3            |
+| 17      | US031         | Reprogramación de Clase                                                            | 5            |
+| 18      | TS054         | Exponer *endpoint* para reprogramar una sesión de clases de un horario             | 2            |
+| 19      | US022         | Generación de Boletas de Pago                                                      | 5            |
+| 20      | TS041         | Exponer *endpoint* para registrar cuentas de cobro                                 | 3            |
+| 21      | TS046         | Exponer *endpoint* para asignar boletas de pago                                    | 2            |
+| 22      | US025         | Registro de Ingreso/Egreso                                                         | 5            |
+| 23      | TS050         | Exponer *endpoint* para registrar transacciones                                    | 3            |
+| 24      | US028         | Visualización de Resumen de Finanzas                                               | 5            |
+| 25      | US029         | Generación de Reportes Financieros                                                 | 8            |
+| 26      | TS053         | Exponer *endpoint* para generar reportes financieros                               | 5            |
+| 27      | US032         | Visualización de Horario de Clases                                                 | 3            |
+| 28      | TS053         | Exponer *endpoint* para visualizar horarios de un profesor                         | 3            |
+| 29      | TS055         | Exponer *endpoint* para visualizar horarios de un alumno                           | 3            |
+| 30      | US033         | Visualizar detalles de los Profesores                                              | 2            |
+| 31      | US034         | Visualizar detalles de los Cursos                                                  | 2            |
+| 32      | US035         | Recibir alertas por cambio de horario                                              | 5            |
+| 33      | US036         | Registro de Cuenta                                                                 | 3            |
+| 34      | TS056         | Exponer *endpoint* para registrar cuenta de usuario                                | 2            |
+| 35      | US037         | Activación de Cuenta                                                               | 3            |
+| 36      | TS059         | Exponer *endpoint* para activar cuenta de usuario                                  | 3            |
+| 37      | TS060         | Exponer *endpoint* para reenviar código de verificación de usuario                 | 3            |
+| 38      | US038         | Inicio de Sesión                                                                   | 2            |
+| 39      | TS062         | Exponer *endpoint* para iniciar sesión de usuario                                  | 2            |
+| 40      | US002         | Actualización de Academia                                                          | 2            |
+| 41      | US003         | Eliminación de Academia                                                            | 2            |
+| 42      | TS002         | Exponer *endpoint* para actualizar academias                                       | 3            |
+| 43      | TS003         | Exponer *endpoint* para eliminar academias                                         | 3            |
+| 44      | TS004         | Exponer *endpoint* para listar academias                                           | 2            |
+| 45      | TS005         | Exponer *endpoint* para obtener detalles de una academia                           | 1            |
+| 46      | US005         | Actualización de Profesor                                                          | 2            |
+| 47      | US006         | Eliminación de Profesor                                                            | 2            |
+| 48      | TS007         | Exponer *endpoint* para actualizar administrador                                   | 3            |
+| 49      | TS008         | Exponer *endpoint* para eliminar administrador                                     | 3            |
+| 50      | TS009         | Exponer *endpoint* para listar administradores                                     | 3            |
+| 51      | TS010         | Exponer *endpoint* para obtener detalles de un administrador                       | 2            |
+| 52      | US008         | Actualización de Matrícula                                                         | 5            |
+| 53      | US009         | Cancelación de Matrícula                                                           | 2            |
+| 54      | TS012         | Exponer *endpoint* para actualizar matrículas                                      | 3            |
+| 55      | TS013         | Exponer *endpoint* para eliminar matrículas                                        | 3            |
+| 56      | TS014         | Exponer *endpoint* para listar matrículas                                          | 2            |
+| 57      | TS015         | Exponer *endpoint* para obtener detalles de una matrícula                          | 1            |
+| 58      | US011         | Actualización de Asistencia                                                        | 3            |
+| 59      | US012         | Visualización de Reportes de Asistencia                                            | 5            |
+| 60      | TS017         | Exponer *endpoint* para actualizar asistencias de clase                            | 3            |
+| 61      | TS018         | Exponer *endpoint* para eliminar asistencias de clase                              | 2            |
+| 62      | TS019         | Exponer *endpoint* para listar asistencias de clase                                | 2            |
+| 63      | TS020         | Exponer *endpoint* para obtener detalles de una asistencia de clase                | 1            |
+| 64      | US014         | Actualización de Periodo Académico                                                 | 3            |
+| 65      | US015         | Eliminación de Periodo Académico                                                   | 3            |
+| 66      | TS022         | Exponer *endpoint* para actualizar periodos académicos                             | 2            |
+| 67      | TS023         | Exponer *endpoint* para eliminar periodos académicos                               | 1            |
+| 68      | TS024         | Exponer *endpoint* para listar periodos académicos                                 | 2            |
+| 69      | TS025         | Exponer *endpoint* para obtener detalles de un periodo académico                   | 1            |
+| 70      | US017         | Actualización de Salones de Clase                                                  | 3            |
+| 71      | US018         | Eliminación de Salones de Clase                                                    | 2            |
+| 72      | TS027         | Exponer *endpoint* para actualizar salones de clase                                | 3            |
+| 73      | TS028         | Exponer *endpoint* para eliminar salones de clase                                  | 2            |
+| 74      | TS029         | Exponer *endpoint* para listar salones de clase                                    | 2            |
+| 75      | TS030         | Exponer *endpoint* para obtener detalles de un salón de clase                      | 1            |
+| 76      | US020         | Actualización de Horarios                                                          | 5            |
+| 77      | US021         | Eliminación de Horarios                                                            | 2            |
+| 78      | TS032         | Exponer *endpoint* para actualizar cursos                                          | 3            |
+| 79      | TS033         | Exponer *endpoint* para eliminar cursos                                            | 2            |
+| 80      | TS034         | Exponer *endpoint* para listar cursos                                              | 2            |
+| 81      | TS035         | Exponer *endpoint* para obtener detalles de un curso                               | 2            |
+| 82      | TS037         | Exponer *endpoint* para actualizar horarios                                        | 2            |
+| 83      | TS038         | Exponer *endpoint* para eliminar horarios                                          | 1            |
+| 84      | TS039         | Exponer *endpoint* para listar horarios                                            | 2            |
+| 85      | TS040         | Exponer *endpoint* para obtener detalles de un horario                             | 1            |
+| 86      | US023         | Actualización de Boletas de Pago                                                   | 3            |
+| 87      | US024         | Eliminación de Boletas de Pago                                                     | 1            |
+| 88      | TS042         | Exponer *endpoint* para actualizar cuentas de cobro                                | 5            |
+| 89      | TS043         | Exponer *endpoint* para eliminar cuentas de cobro                                  | 3            |
+| 90      | TS044         | Exponer *endpoint* para listar cuentas de cobro                                    | 2            |
+| 91      | TS045         | Exponer *endpoint* para obtener detalles de una cuenta de cobro                    | 2            |
+| 92      | TS047         | Exponer *endpoint* para actualizar boletas de pago asignadas a una cuenta de cobro | 3            |
+| 93      | TS048         | Exponer *endpoint* para listar boletas de pago asignadas a una cuenta de cobro     | 3            |
+| 94      | TS049         | Exponer *endpoint* para eliminar boletas de pago asignadas a una cuenta de cobro   | 2            |
+| 95      | US026         | Actualización de Ingreso/Egreso                                                    | 3            |
+| 96      | US027         | Eliminación de Ingreso/Egreso                                                      | 2            |
+| 97      | TS051         | Exponer *endpoint* para actualizar transacciones                                   | 3            |
+| 98      | TS052         | Exponer *endpoint* para eliminar transacciones                                     | 2            |
+| 99      | TS051         | Exponer *endpoint* para listar transacciones                                       | 2            |
+| 100     | TS052         | Exponer *endpoint* para obtener detalles de una transacción                        | 2            |
+| 101     | TS057         | Exponer *endpoint* para actualizar cuenta de usuario                               | 3            |
+| 102     | TS058         | Exponer *endpoint* para eliminar cuenta de usuario                                 | 1            |
+| 103     | TS061         | Exponer *endpoint* para cambiar contraseña mediante código de verificación         | 5            |
+| 104     | SWS001        | Ver sección *Hero*                                                                 | 5            |
+| 105     | SWS002        | Ver sección *Features*                                                             | 3            |
+| 106     | SWS003        | Ver sección *How It Works*                                                         | 3            |
+| 107     | SWS004        | Ver sección *About The Product*                                                    | 5            |
+| 108     | SWS005        | Ver sección *Testimonials*                                                         | 3            |
+| 109     | SWS006        | Ver sección *About Us*                                                             | 2            |
+| 110     | SWS007        | Ver sección *About The Team*                                                       | 5            |
+| 111     | SWS008        | Ver sección *Pricing*                                                              | 3            |
+| 112     | SWS009        | Ver sección *FAQ*                                                                  | 5            |
+| 113     | SWS010        | Ver sección *Contact*                                                              | 3            |
+| 114     | SWS011        | Ver sección *Footer*                                                               | 2            |
+| 115     | SS001         | Investigación de la integración de Stripe                                          | 8            |
+| 116     | SS002         | Investigación de la integración de Gmail                                           | 8            |
+| 117     | SS003         | Investigación de la integración de PagoEfectivo                                    | 8            |
+| 118     | SS004         | Probar librerías de generación de archivos PDF y Excel                             | 8            |
+| 119     | SS005         | Probar librerías de generación de gráficos                                         | 8            |
+| 120     | SS006         | Probar librerías de generación de códigos QR                                       | 8            |
+| 121     | TS063         | Exponer *endpoint* para validación de recursos                                     | 1            |
+| 122     | TS064         | Exponer *endpoint* para manejo de CORS y métodos permitidos                        | 2            |
 
 # Capítulo IV: Solution Software Design
 
