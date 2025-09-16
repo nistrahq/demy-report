@@ -471,7 +471,7 @@ Representa la asistencia de un solo estudiante.
 |----------|--------|-------------|--------------------------------------------|
 | `id`     | `Long` | `public`    | Identificador único de una sesión de clase |
 
-5.*`ClassAttendanceCommandService` (Domain Service)**
+5.**`ClassAttendanceCommandService` (Domain Service)**
 
 | Atributo                                           | Tipo                         | Visibilidad | Descripción                                                                |
 |----------------------------------------------------|------------------------------|-------------|----------------------------------------------------------------------------|
@@ -479,15 +479,15 @@ Representa la asistencia de un solo estudiante.
 
 6.*`ClassAttendanceQueryService` (Domain Service)**
 
-| Atributo                                                                | Tipo                         | Visibilidad | Descripción                                                                       |
-|-------------------------------------------------------------------------|------------------------------|-------------|-----------------------------------------------------------------------------------|
-| ` handle(GetAttendanceRecordsByStudentIdCourseAndDateRangeQuery query)` | `Optional<AttendanceRecord>` | `public`    | Obtiene todas las asistencias por ID del estudiante, curso en un rango de fechas. |
+| Atributo                                                               | Tipo                         | Visibilidad | Descripción                                                                       |
+|------------------------------------------------------------------------|------------------------------|-------------|-----------------------------------------------------------------------------------|
+| `handle(GetAttendanceRecordsByStudentIdCourseAndDateRangeQuery query)` | `Optional<AttendanceRecord>` | `public`    | Obtiene todas las asistencias por ID del estudiante, curso en un rango de fechas. |
 
 
 
 #### 4.2.4.2. Interface Layer
 
-1.*`ClassAttendanceController` (REST controller)**  
+1.**`ClassAttendanceController` (REST controller)**  
 Controlador REST que expone endpoints para registrar asistencia o obtenerlas.
 
 **Endpoints Principales:**
@@ -500,7 +500,7 @@ Controlador REST que expone endpoints para registrar asistencia o obtenerlas.
 
 #### 4.2.4.3. Application Layer
 
-1.*`ClassAttendanceCommandServiceImpl` (Command Service Implementation)**  
+1.**`ClassAttendanceCommandServiceImpl` (Command Service Implementation)**  
 Implementación del servicio de comandos para gestionar asistencias de una clase.
 
 **Atributos principales**  
@@ -516,7 +516,7 @@ Implementación del servicio de comandos para gestionar asistencias de una clase
 | `handle (CreateClassAttendanceCommand command)`   | `Optional<ClassAttendance>` | `public`    | Maneja el comando para crear un nuevo registro de asistencia de una clase   |
 
 
-2.*`ClassAttendanceQueryServiceImpl` (Query Service Implementation)**  
+2.**`ClassAttendanceQueryServiceImpl` (Query Service Implementation)**  
 Implementación del servicio de consultas para obtener asistencias de una clase.
 
 **Atributos principales**
@@ -534,15 +534,15 @@ Implementación del servicio de consultas para obtener asistencias de una clase.
 
 #### 4.2.4.4. Infrastructure Layer
 
-1.*`ClassAttendanceRepository` (Repository Interface)**  
+1.**`ClassAttendanceRepository` (Repository Interface)**  
 Interfaz del repositorio para acceder a los registros de asistencia de una sesión de clase.
 
 
 **Métodos principales**
 
-| Nombre del método                                                                          | Tipo de Retorno           | Visibilidad | Descripción                                                           |
-|--------------------------------------------------------------------------------------------|---------------------------|-------------|-----------------------------------------------------------------------|
-| `findByCourseIdAndDateBetween(CourseId courseId, LocalDate startDate, LocalDate endDate)`  | ` List<ClassAttendance>`  | `public`    | Obtiene todas las asistencias por ID del course y un rango de fechas  |
+| Nombre del método                                                                          | Tipo de Retorno          | Visibilidad | Descripción                                                           |
+|--------------------------------------------------------------------------------------------|--------------------------|-------------|-----------------------------------------------------------------------|
+| `findByCourseIdAndDateBetween(CourseId courseId, LocalDate startDate, LocalDate endDate)`  | `List<ClassAttendance>`  | `public`    | Obtiene todas las asistencias por ID del course y un rango de fechas  |
 
 
 
