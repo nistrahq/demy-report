@@ -556,11 +556,15 @@ Además, se incluye el [código fuente del diagrama de componentes de Attendance
 
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
 
-
+En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de Attendance. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
 
 #### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
 
-Write here...
+El diagrama de clases del Domain Layer del contexto de Attendance ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
+
+![Diagrama de Componentes del Contexto de Attendance](./assets/diagrams/uml/class/out/attendance-domain-layer-class-diagram.png)  
+
+Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Attendance](./assets/diagrams/uml/class/src/attendance-domain-layer-class-diagram.puml).
 
 #### 4.2.4.6.2. Bounded Context Database Design Diagram
 
