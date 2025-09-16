@@ -1295,6 +1295,12 @@ Además, se incluye el [código fuente del diagrama de clases del Domain Layer d
 
 #### 4.2.5.6.2. Bounded Context Database Design Diagram
 
+El diagrama de diseño de base de datos del contexto de Scheduling muestra la estructura de las tablas y sus relaciones en la base de datos relacional. Se detallan las tablas principales, sus columnas, tipos de datos y claves primarias/foráneas que permiten gestionar la información relacionada con la programación de horarios académicos, la asignación de cursos, el uso de aulas y las sesiones de clase.
+
+![Diagrama de Diseño de Base de Datos del Contexto de Scheduling](./assets/diagrams/database/erd/out/scheduling-database-diagram.png)
+
+Además, se incluye el [esquema SQL del diagrama de base de datos de Scheduling](./assets/diagrams/database/schema/src/scheduling-database-diagram-create.sql).
+
 ## Conclusiones y Recomendaciones
 
 Write here...
