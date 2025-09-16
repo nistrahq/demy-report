@@ -1070,61 +1070,318 @@ En este sentido, elaboramos los domain storytelling tomando como referencia las 
 
 Write here...
 
-### 4.1.2. Context Mapping
+### 2.5.2. Context Mapping
 
 Write here...
 
-### 4.1.3. Software Architecture
+### 2.5.3. Software Architecture
 
-#### 4.1.3.1. Software Architecture Context Level Diagrams
-
-Write here...
-
-#### 4.1.3.2. Software Architecture Container Level Diagrams
+#### 2.5.3.1. Software Architecture Context Level Diagrams
 
 Write here...
 
-#### 4.1.3.3. Software Architecture Deployment Diagrams
+#### 2.5.3.2. Software Architecture Container Level Diagrams
 
 Write here...
 
-## 4.2. Tactical-Level Domain-Driven Design
+#### 2.5.3.3. Software Architecture Deployment Diagrams
 
 Write here...
 
-### 4.2.X. Bounded Context: <Bounded Context Name>
+## 2.6. Tactical-Level Domain-Driven Design
+
+### 4.2.6. Bounded Context: Institution
+
+Este contexto se encarga de ...
+
+#### 4.2.6.1. Domain Layer
+
+En esta sección se describen los elementos del Domain Layer del contexto de Intitution, que encapsulan las reglas y lógica del dominio relacionadas con ...
+
+---
+
+1. **`BillingAccount` (Aggregate Root)**
+
+Representa la cuenta de facturación de un estudiante, incluyendo su historial de boletas y pagos.
+
+**Atributos principales:**
+
+| Atributo        | Tipo             | Visibilidad | Descripción                                            |
+|-----------------|------------------|-------------|--------------------------------------------------------|
+| `id`            | `Long`           | `private`   | Identificador único de la cuenta de facturación.       |
+| `studentId`     | `StudentId`      | `private`   | Identificador del estudiante asociado a la cuenta.     |
+| `invoices`      | `Set<Invoice>`   | `private`   | Conjunto de boletas emitidas a la cuenta.              |
+| `accountStatus` | `AccountStatus`  | `private`   | Estado actual de la cuenta (activa, suspendida, etc.). |
+| `academyId`     | `AcademyId`      | `private`   | Identificador de la academia asociada a la cuenta.     |
+
+**Métodos principales:**
+
+| Método                                                | Tipo de Retorno | Visibilidad | Descripción                                                     |
+|-------------------------------------------------------|-----------------|-------------|-----------------------------------------------------------------|
+| `BillingAccount()`                                    | `Constructor`   | `protected` | Constructor protegido para uso por el repositorio.              |
+| `BillingAccount(StudentId studentId)`                 | `Constructor`   | `public`    | Constructor que inicializa la cuenta con el ID del estudiante.  |
+| `BillingAccount(CreateBillingAccountCommand command)` | `Constructor`   | `public`    | Constructor que inicializa la cuenta a partir de un comando.    |
+| `addInvoice(Invoice invoice)`                         | `void`          | `public`    | Agrega una nueva boleta a la cuenta.                            |
+| `recordPayment(Payment payment)`                      | `void`          | `public`    | Registra un pago realizado en la cuenta.                        |
+| `getOutstandingBalance()`                             | `BigDecimal`    | `public`    | Calcula el saldo pendiente de la cuenta.                        |
+| `suspendAccount()`                                    | `void`          | `public`    | Suspende la cuenta por falta de pago.                           |
+| `reactivateAccount()`                                 | `void`          | `public`    | Reactiva una cuenta suspendida.                                 |
+
+---
+
+2. **`Invoice` (Entity)**
+
+Representa una boleta de pago emitida a un estudiante.
+
+**Atributos principales:**
+
+| Atributo           | Tipo            | Visibilidad | Descripción                                          |
+|--------------------|-----------------|-------------|------------------------------------------------------|
+| `id`               | `Long`          | `private`   | Identificador único de la boleta.                    |
+| `invoiceType`      | `InvoiceType`   | `private`   | Tipo de boleta (matrícula, mensualidad, etc.).       |
+| `amount`           | `Money`         | `private`   | Monto total de la boleta.                            |
+| `description`      | `String`        | `private`   | Descripción o detalles adicionales de la boleta.     |
+| `issuedDate`       | `LocalDate`     | `private`   | Fecha de emisión de la boleta.                       |
+| `dueDate`          | `LocalDate`     | `private`   | Fecha de vencimiento de la boleta.                   |
+| `invoiceStatus`    | `InvoiceStatus` | `private`   | Estado de la boleta (pendiente, pagada, vencida).    |
+| `billingAccountId` | `Long`          | `private`   | Identificador de la cuenta de facturación asociada.  |
+
+**Métodos principales:**
+
+| Método                                  | Tipo de Retorno | Visibilidad | Descripción                                                  |
+|-----------------------------------------|-----------------|-------------|--------------------------------------------------------------|
+| `Invoice()`                             | `Constructor`   | `protected` | Constructor protegido para uso por el repositorio.           |
+| `Invoice(AssignInvoiceCommand command)` | `Constructor`   | `public`    | Constructor que inicializa la boleta a partir de un comando. |
+| `markAsPaid()`                          | `void`          | `public`    | Marca la boleta como pagada.                                 |
+| `isOverdue()`                           | `boolean`       | `public`    | Verifica si la boleta está vencida.                          |
+| `getOutstandingAmount()`                | `Money`         | `public`    | Obtiene el monto pendiente de la boleta.                     |
+| `updateDueDate(LocalDate newDueDate)`   | `void`          | `public`    | Actualiza la fecha de vencimiento de la boleta.              |
+| `cancelInvoice()`                       | `void`          | `public`    | Cancela la boleta si es necesario.                           | 
+
+---
+
+3. **`AccountStatus` (Value Object)**
+
+Representa el estado de una cuenta de facturación.
+
+**Atributos principales:**
+
+| Atributo    | Tipo   | Visibilidad | Descripción                     |
+|-------------|--------|-------------|---------------------------------|
+| `ACTIVE`    | `Enum` | `public`    | La cuenta está activa.          |
+| `OVERDUE`   | `Enum` | `public`    | La cuenta tiene pagos vencidos. |
+| `SUSPENDED` | `Enum` | `public`    | La cuenta está suspendida.      |
+| `CANCELED`  | `Enum` | `public`    | La cuenta ha sido cancelada.    |
+
+**Métodos principales:**
+
+| Método          | Tipo de Retorno | Visibilidad | Descripción                                 |
+|-----------------|-----------------|-------------|---------------------------------------------|
+| `isActive()`    | `boolean`       | `public`    | Verifica si la cuenta está activa.          |
+| `isOverdue()`   | `boolean`       | `public`    | Verifica si la cuenta tiene pagos vencidos. |
+| `isSuspended()` | `boolean`       | `public`    | Verifica si la cuenta está suspendida.      |
+| `isCanceled()`  | `boolean`       | `boolean`   | Verifica si la cuenta ha sido cancelada.    |
+
+---
+
+4. **`InvoiceType` (Value Object)**
+
+Representa el tipo de boleta emitida.
+
+**Atributos principales:**
+
+| Atributo     | Tipo   | Visibilidad | Descripción                    |
+|--------------|--------|-------------|--------------------------------|
+| `ENROLLMENT` | `Enum` | `public`    | Boleta de matrícula.           |
+| `MONTHLY`    | `Enum` | `public`    | Boleta de mensualidad.         |
+| `OTHER`      | `Enum` | `public`    | Boleta de otro tipo.           |
+
+**Métodos principales:**
+
+| Método           | Tipo de Retorno | Visibilidad | Descripción                               |
+|------------------|-----------------|-------------|-------------------------------------------|
+| `isEnrollment()` | `boolean`       | `public`    | Verifica si es una boleta de matrícula.   |
+| `isMonthly()`    | `boolean`       | `public`    | Verifica si es una boleta de mensualidad. |
+| `isOther()`      | `boolean`       | `public`    | Verifica si es una boleta de otro tipo.   |
+
+---
+
+5. **`InvoiceStatus` (Value Object)**
+
+Representa el estado de una boleta.
+
+**Atributos principales:**
+
+| Atributo     | Tipo   | Visibilidad | Descripción                       |
+|--------------|--------|-------------|-----------------------------------|
+| `PENDING`    | `Enum` | `public`    | La boleta está pendiente de pago. |
+| `PAID`       | `Enum` | `public`    | La boleta ha sido pagada.         |
+| `OVERDUE`    | `Enum` | `public`    | La boleta está vencida.           |
+| `CANCELED`   | `Enum` | `public`    | La boleta ha sido cancelada.      |
+
+**Métodos principales:**
+
+| Método         | Tipo de Retorno | Visibilidad | Descripción                               |
+|----------------|-----------------|-------------|-------------------------------------------|
+| `isPending()`  | `boolean`       | `public`    | Verifica si la boleta está pendiente.     |
+| `isPaid()`     | `boolean`       | `public`    | Verifica si la boleta ha sido pagada.     |
+| `isOverdue()`  | `boolean`       | `public`    | Verifica si la boleta está vencida.       |
+| `isCanceled()` | `boolean`       | `public`    | Verifica si la boleta ha sido cancelada.  |
+
+---
+
+6. **`BillingAccountCommandService` (Domain Service)**
+
+Proporciona métodos para ejecutar comandos relacionados con la gestión de cuentas de facturación y boletas.
+
+**Métodos principales:**
+
+| Método                                        | Tipo de Retorno            | Visibilidad | Descripción                                                     |
+|-----------------------------------------------|----------------------------|-------------|-----------------------------------------------------------------|
+| `handle(CreateBillingAccountCommand command)` | `Optional<BillingAccount>` | `public`    | Crea una nueva cuenta de facturación a partir de un comando.    |
+| `handle(AssignInvoiceCommand command)`        | `Optional<Invoice>`        | `public`    | Asigna una nueva boleta a una cuenta de facturación.            |
+| `handle(RecordPaymentCommand command)`        | `void`                     | `public`    | Registra un pago en una cuenta de facturación.                  |
+| `handle(SuspendAccountCommand command)`       | `void`                     | `public`    | Suspende una cuenta de facturación por falta de pago.           |
+| `handle(ReactivateAccountCommand command)`    | `void`                     | `public`    | Reactiva una cuenta de facturación suspendida.                  |
+
+---
+
+7. **`BillingAccountQueryService` (Domain Service)**
+
+Proporciona métodos para consultar información relacionada con las cuentas de facturación y boletas.
+
+**Métodos principales:**
+
+| Método                                      | Tipo de Retorno            | Visibilidad | Descripción                                                        |
+|---------------------------------------------|----------------------------|-------------|--------------------------------------------------------------------|
+| `handle(GetBillingAccountByIdQuery query)`  | `Optional<BillingAccount>` | `public`    | Obtiene una cuenta de facturación por su ID.                       |
+| `handle(GetInvoicesByAccountIdQuery query)` | `List<Invoice>`            | `public`    | Obtiene todas las boletas asociadas a una cuenta de facturación.   |
+| `handle(GetOutstandingBalanceQuery query)`  | `Optional<Money>`          | `public`    | Obtiene el saldo pendiente de una cuenta de facturación.           |
+| `handle(GetOverdueInvoicesQuery query)`     | `List<Invoice>`            | `public`    | Obtiene todas las boletas vencidas de una cuenta de facturación.   |
+| `handle(GetAccountStatusQuery query)`       | `Optional<AccountStatus>`  | `public`    | Obtiene el estado actual de una cuenta de facturación.             |
+
+---
+
+#### 4.2.6.2. Interface Layer
+
+1. **`BillingAccountsController` (REST Controller)**
+
+Controlador REST que expone endpoints para gestionar cuentas de facturación y boletas.
+
+**Endpoints principales:**
+
+| Nombre del método        | Ruta base típica                           | Método HTTP | Descripción                                                      |
+|--------------------------|--------------------------------------------|-------------|------------------------------------------------------------------|
+| `createBillingAccount`   | `/api/v1/billing-accounts`                 | `POST`      | Crea una nueva cuenta de facturación.                            |
+| `getBillingAccountById`  | `/api/v1/billing-accounts/{id}`            | `GET`       | Obtiene una cuenta de facturación por su ID.                     |
+| `assignInvoice`          | `/api/v1/billing-accounts/{id}/invoices`   | `POST`      | Asigna una nueva boleta a una cuenta de facturación.             |
+| `getInvoicesByAccountId` | `/api/v1/billing-accounts/{id}/invoices`   | `GET`       | Obtiene todas las boletas asociadas a una cuenta de facturación. |
+| `recordPayment`          | `/api/v1/billing-accounts/{id}/payments`   | `POST`      | Registra un pago en una cuenta de facturación.                   |
+| `getOutstandingBalance`  | `/api/v1/billing-accounts/{id}/balance`    | `GET`       | Obtiene el saldo pendiente de una cuenta de facturación.         |
+| `suspendAccount`         | `/api/v1/billing-accounts/{id}/suspend`    | `POST`      | Suspende una cuenta de facturación por falta de pago.            |
+| `reactivateAccount`      | `/api/v1/billing-accounts/{id}/reactivate` | `POST`      | Reactiva una cuenta de facturación suspendida.                   |
+
+#### 4.2.6.3. Application Layer
+
+1. **`BillingAccountCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar cuentas de facturación y boletas.
+
+**Atributos principales:**
+
+| Atributo                     | Tipo                       | Visibilidad | Descripción                                             |
+|------------------------------|----------------------------|-------------|---------------------------------------------------------|
+| `billingAccountRepository`   | `BillingAccountRepository` | `private`   | Repositorio para acceder a las cuentas de facturación.  |
+
+**Métodos principales:**
+
+| Método                                        | Tipo de Retorno            | Visibilidad | Descripción                                                   |
+|-----------------------------------------------|----------------------------|-------------|---------------------------------------------------------------|
+| `hnadle(CreateBillingAccountCommand command)` | `Optional<BillingAccount>` | `public`    | Maneja el comando para crear una nueva cuenta de facturación. |
+| `handle(AssignInvoiceCommand command)`        | `Optional<Invoice>`        | `public`    | Maneja el comando para asignar una nueva boleta.              |
+| `handle(RecordPaymentCommand command)`        | `void`                     | `public`    | Maneja el comando para registrar un pago.                     |
+| `handle(SuspendAccountCommand command)`       | `void`                     | `public`    | Maneja el comando para suspender una cuenta de facturación.   |
+| `handle(ReactivateAccountCommand command)`    | `void`                     | `public`    | Maneja el comando para reactivar una cuenta suspendida.       |
+
+2. **`BillingAccountQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para obtener información sobre cuentas de facturación y boletas.
+
+**Atributos principales:**
+
+| Atributo                   | Tipo                       | Visibilidad | Descripción                                             |
+|----------------------------|----------------------------|-------------|---------------------------------------------------------|
+| `billingAccountRepository` | `BillingAccountRepository` | `private`   | Repositorio para acceder a las cuentas de facturación.  |
+
+**Métodos principales:**
+
+| Método                                      | Tipo de Retorno            | Visibilidad | Descripción                                                     |
+|---------------------------------------------|----------------------------|-------------|-----------------------------------------------------------------|
+| `handle(GetBillingAccountByIdQuery query)`  | `Optional<BillingAccount>` | `public`    | Maneja la consulta para obtener una cuenta por su ID.           |
+| `handle(GetInvoicesByAccountIdQuery query)` | `List<Invoice>`            | `public`    | Maneja la consulta para obtener boletas asociadas a una cuenta. |
+| `handle(GetOutstandingBalanceQuery query)`  | `Optional<Money>`          | `public`    | Maneja la consulta para obtener el saldo pendiente.             |
+| `handle(GetOverdueInvoicesQuery query)`     | `List<Invoice>`            | `public`    | Maneja la consulta para obtener boletas vencidas.               |
+| `handle(GetAccountStatusQuery query)`       | `Optional<AccountStatus>`  | `public`    | Maneja la consulta para obtener el estado de una cuenta.        |
+
+#### 4.2.6.4. Infrastructure Layer
+
+1. **`BillingAccountRepository` (Repository Interface)**
+
+Interfaz del repositorio para acceder a las cuentas de facturación y boletas.
+
+**Métodos principales:**
+
+| Método                                           | Tipo de Retorno            | Visibilidad | Descripción                                                    |
+|--------------------------------------------------|----------------------------|-------------|----------------------------------------------------------------|
+| `findById(Long id)`                              | `Optional<BillingAccount>` | `public`    | Busca una cuenta de facturación por su ID.                     |
+| `findInvoicesByAccountId(Long accountId)`        | `List<Invoice>`            | `public`    | Busca todas las boletas asociadas a una cuenta de facturación. |
+| `findOverdueInvoicesByAccountId(Long accountId)` | `List<Invoice>`            | `public`    | Busca todas las boletas vencidas de una cuenta de facturación. |
+
+#### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presentan los diagramas de nivel componente que ilustran la arquitectura de software del contexto de Billing. Se muestra la interacción entre los diferentes componentes, servicios y capas que conforman este bounded context. Se integra con la base de datos relacional definida en el diagrama de contenedores.
+
+![Diagrama de Componentes del Contexto de Billing](./assets/diagrams/software-architecture/components/out/billing-component-level-diagram.png)
+
+Además, se incluye el [código fuente del diagrama de componentes de Billing](./assets/diagrams/software-architecture/components/src/billing-component-level-diagram.dsl).
+
+#### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de Billing. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
+
+#### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases del Domain Layer del contexto de Billing ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
+
+![Diagrama de Clases del Domain Layer del Contexto de Billing](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/nistrahq/demy-report/refs/heads/feature/tb1-salim/assets/diagrams/uml/class/src/billing-domain-layer-class-diagram.puml?token=GHSAT0AAAAAAC6GPIH5NQIOQTEYFGBMGVIG2GHHJNA)
+
+Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Billing](./assets/diagrams/uml/class/src/billing-domain-layer-class-diagram.puml).
+
+#### 4.2.6.6.2. Bounded Context Database Design Diagram
+
+El diagrama de diseño de base de datos del contexto de Billing muestra la estructura de las tablas y sus relaciones en la base de datos relacional. Se detallan las tablas principales, sus columnas, tipos de datos y claves primarias/foráneas que permiten gestionar la información relacionada con las cuentas de facturación y boletas.
+
+![Diagrama de Diseño de Base de Datos del Contexto de Billing](./assets/diagrams/database/erd/out/billing-database-diagram.png)
+
+Además, se incluye el [esquema SQL del diagrama de base de datos de Billing](./assets/diagrams/database/schema/src/billing-database-diagram-create.sql).
+
+## Conclusiones y Recomendaciones
 
 Write here...
 
-#### 4.2.X.1. Domain Layer
+### Conclusiones
 
 Write here...
 
-#### 4.2.X.2. Interface Layer
+### Recomendaciones
 
 Write here...
 
-#### 4.2.X.3. Application Layer
+# Bibliografía
 
 Write here...
 
-#### 4.2.X.4. Infrastructure Layer
-
-Write here...
-
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-
-Write here...
-
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-
-Write here...
-
-#### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-
-Write here...
-
-#### 4.2.X.6.2. Bounded Context Database Design Diagram
+# Anexos
 
 Write here...
 
