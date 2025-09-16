@@ -1092,175 +1092,293 @@ Write here...
 
 ### 4.2.6. Bounded Context: Institution
 
-Este contexto se encarga de ...
+Este contexto se encarga de la gestión de academias, administradores y docentes dentro de la plataforma.
 
 #### 4.2.6.1. Domain Layer
 
-En esta sección se describen los elementos del Domain Layer del contexto de Intitution, que encapsulan las reglas y lógica del dominio relacionadas con ...
+En esta sección se describen los elementos del Domain Layer del contexto de Institution, que encapsulan la lógica central relacionada con el registro y administración de instituciones educativas.
 
----
-
-1. **`BillingAccount` (Aggregate Root)**
-
-Representa la cuenta de facturación de un estudiante, incluyendo su historial de boletas y pagos.
+1. **`Academy` (Aggregate Root)**
 
 **Atributos principales:**
 
-| Atributo        | Tipo             | Visibilidad | Descripción                                            |
-|-----------------|------------------|-------------|--------------------------------------------------------|
-| `id`            | `Long`           | `private`   | Identificador único de la cuenta de facturación.       |
-| `studentId`     | `StudentId`      | `private`   | Identificador del estudiante asociado a la cuenta.     |
-| `invoices`      | `Set<Invoice>`   | `private`   | Conjunto de boletas emitidas a la cuenta.              |
-| `accountStatus` | `AccountStatus`  | `private`   | Estado actual de la cuenta (activa, suspendida, etc.). |
-| `academyId`     | `AcademyId`      | `private`   | Identificador de la academia asociada a la cuenta.     |
+---
+
+| Atributo             | Tipo                 | Visibilidad | Descripción                                             |
+| -------------------- | -------------------- | ----------- | ------------------------------------------------------- |
+| `id`                 | `Long`               | `private`   | Identificador único de la academia.                     |
+| `administratorId`    | `AdministratorId`    | `private`   | Identificador del administrador asignado a la academia. |
+| `academyName`        | `AcademyName`        | `private`   | Nombre oficial de la academia.                          |
+| `academyDescription` | `AcademyDescription` | `private`   | Descripción de la academia.                             |
+| `streetAddress`      | `StreetAddress`      | `private`   | Dirección física de la academia.                        |
+| `emailAddress`       | `EmailAddress`       | `private`   | Correo electrónico institucional.                       |
+| `phoneNumber`        | `PhoneNumber`        | `private`   | Número de teléfono institucional.                       |
+| `ruc`                | `Ruc`                | `private`   | Registro Único de Contribuyentes de la academia.        |
 
 **Métodos principales:**
 
-| Método                                                | Tipo de Retorno | Visibilidad | Descripción                                                     |
-|-------------------------------------------------------|-----------------|-------------|-----------------------------------------------------------------|
-| `BillingAccount()`                                    | `Constructor`   | `protected` | Constructor protegido para uso por el repositorio.              |
-| `BillingAccount(StudentId studentId)`                 | `Constructor`   | `public`    | Constructor que inicializa la cuenta con el ID del estudiante.  |
-| `BillingAccount(CreateBillingAccountCommand command)` | `Constructor`   | `public`    | Constructor que inicializa la cuenta a partir de un comando.    |
-| `addInvoice(Invoice invoice)`                         | `void`          | `public`    | Agrega una nueva boleta a la cuenta.                            |
-| `recordPayment(Payment payment)`                      | `void`          | `public`    | Registra un pago realizado en la cuenta.                        |
-| `getOutstandingBalance()`                             | `BigDecimal`    | `public`    | Calcula el saldo pendiente de la cuenta.                        |
-| `suspendAccount()`                                    | `void`          | `public`    | Suspende la cuenta por falta de pago.                           |
-| `reactivateAccount()`                                 | `void`          | `public`    | Reactiva una cuenta suspendida.                                 |
+| Método                                                                                    | Tipo Retorno  | Visibilidad | Descripción                                                    |
+| ----------------------------------------------------------------------------------------- | ------------- | ----------- | -------------------------------------------------------------- |
+| `Academy()`                                                                               | Constructor   | `protected` | Constructor protegido para JPA.                                |
+| `Academy(AcademyName, AcademyDescription, StreetAddress, EmailAddress, PhoneNumber, Ruc)` | `Constructor` | `public`    | Crea una academia con sus datos básicos.                       |
+| `Academy(RegisterAcademyCommand command)`                                                 | `Constructor` | `public`    | Crea una academia a partir de un comando de registro.          |
+| `assignAdministrator(AdministratorId administratorId)`                                    | `void`        | `public`    | Asigna un administrador a la academia si no existe uno previo. |
 
----
-
-2. **`Invoice` (Entity)**
-
-Representa una boleta de pago emitida a un estudiante.
+2. **`Administrator` (Aggregate Root)**
 
 **Atributos principales:**
 
-| Atributo           | Tipo            | Visibilidad | Descripción                                          |
-|--------------------|-----------------|-------------|------------------------------------------------------|
-| `id`               | `Long`          | `private`   | Identificador único de la boleta.                    |
-| `invoiceType`      | `InvoiceType`   | `private`   | Tipo de boleta (matrícula, mensualidad, etc.).       |
-| `amount`           | `Money`         | `private`   | Monto total de la boleta.                            |
-| `description`      | `String`        | `private`   | Descripción o detalles adicionales de la boleta.     |
-| `issuedDate`       | `LocalDate`     | `private`   | Fecha de emisión de la boleta.                       |
-| `dueDate`          | `LocalDate`     | `private`   | Fecha de vencimiento de la boleta.                   |
-| `invoiceStatus`    | `InvoiceStatus` | `private`   | Estado de la boleta (pendiente, pagada, vencida).    |
-| `billingAccountId` | `Long`          | `private`   | Identificador de la cuenta de facturación asociada.  |
+| Atributo      | Tipo          | Visibilidad | Descripción                                      |
+| ------------- | ------------- | ----------- | ------------------------------------------------ |
+| `id`          | `Long`        | `private`   | Identificador único del administrador.           |
+| `personName`  | `PersonName`  | `private`   | Nombre completo del administrador.               |
+| `phoneNumber` | `PhoneNumber` | `private`   | Número de contacto del administrador.            |
+| `dniNumber`   | `DniNumber`   | `private`   | Documento Nacional de Identidad.                 |
+| `academyId`   | `AcademyId`   | `private`   | Identificador de la academia a la que pertenece. |
+| `userId`      | `UserId`      | `private`   | Identificador del usuario asociado.              |
 
 **Métodos principales:**
 
-| Método                                  | Tipo de Retorno | Visibilidad | Descripción                                                  |
-|-----------------------------------------|-----------------|-------------|--------------------------------------------------------------|
-| `Invoice()`                             | `Constructor`   | `protected` | Constructor protegido para uso por el repositorio.           |
-| `Invoice(AssignInvoiceCommand command)` | `Constructor`   | `public`    | Constructor que inicializa la boleta a partir de un comando. |
-| `markAsPaid()`                          | `void`          | `public`    | Marca la boleta como pagada.                                 |
-| `isOverdue()`                           | `boolean`       | `public`    | Verifica si la boleta está vencida.                          |
-| `getOutstandingAmount()`                | `Money`         | `public`    | Obtiene el monto pendiente de la boleta.                     |
-| `updateDueDate(LocalDate newDueDate)`   | `void`          | `public`    | Actualiza la fecha de vencimiento de la boleta.              |
-| `cancelInvoice()`                       | `void`          | `public`    | Cancela la boleta si es necesario.                           | 
+| Método                                                                 | Tipo Retorno | Visibilidad | Descripción                                               |
+| ---------------------------------------------------------------------- | ------------ | ----------- | --------------------------------------------------------- |
+| `Administrator()`                                                      | Constructor  | `protected` | Constructor protegido para JPA.                           |
+| `Administrator(PersonName, PhoneNumber, DniNumber, AcademyId, UserId)` | Constructor  | `public`    | Crea un administrador con sus datos básicos.              |
+| `Administrator(RegisterAdministratorCommand command)`                  | Constructor  | `public`    | Crea un administrador a partir de un comando de registro. |
+| `registerAdministrator(Long academyId, Long userId)`                   | `void`       | `public`    | Publica un evento de registro de administrador.           |
+| `disassociateAcademy(AcademyId academyId)`                             | `void`       | `public`    | Desasocia al administrador de una academia.               |
 
----
-
-3. **`AccountStatus` (Value Object)**
-
-Representa el estado de una cuenta de facturación.
+3. **`Teacher`(Aggregate Root)**
 
 **Atributos principales:**
 
-| Atributo    | Tipo   | Visibilidad | Descripción                     |
-|-------------|--------|-------------|---------------------------------|
-| `ACTIVE`    | `Enum` | `public`    | La cuenta está activa.          |
-| `OVERDUE`   | `Enum` | `public`    | La cuenta tiene pagos vencidos. |
-| `SUSPENDED` | `Enum` | `public`    | La cuenta está suspendida.      |
-| `CANCELED`  | `Enum` | `public`    | La cuenta ha sido cancelada.    |
+| Atributo     | Tipo         | Visibilidad | Descripción                                  |
+| ------------ | ------------ | ----------- | -------------------------------------------- |
+| `id`         | `Long`       | `private`   | Identificador único del docente.             |
+| `personName` | `PersonName` | `private`   | Nombre completo del docente.                 |
+| `academyId`  | `AcademyId`  | `private`   | Academia a la que está vinculado el docente. |
+| `userId`     | `UserId`     | `private`   | Identificador del usuario asociado.          |
 
 **Métodos principales:**
 
-| Método          | Tipo de Retorno | Visibilidad | Descripción                                 |
-|-----------------|-----------------|-------------|---------------------------------------------|
-| `isActive()`    | `boolean`       | `public`    | Verifica si la cuenta está activa.          |
-| `isOverdue()`   | `boolean`       | `public`    | Verifica si la cuenta tiene pagos vencidos. |
-| `isSuspended()` | `boolean`       | `public`    | Verifica si la cuenta está suspendida.      |
-| `isCanceled()`  | `boolean`       | `boolean`   | Verifica si la cuenta ha sido cancelada.    |
+| Método      | Tipo Retorno | Visibilidad | Descripción                |
+| ----------- | ------------ | ----------- | -------------------------- |
+| `Teacher()` | Constructor  | `protected` | Constructor protegido JPA. |
 
----
-
-4. **`InvoiceType` (Value Object)**
-
-Representa el tipo de boleta emitida.
+4. **`RegisterAcademyCommand`(Command)**
 
 **Atributos principales:**
 
-| Atributo     | Tipo   | Visibilidad | Descripción                    |
-|--------------|--------|-------------|--------------------------------|
-| `ENROLLMENT` | `Enum` | `public`    | Boleta de matrícula.           |
-| `MONTHLY`    | `Enum` | `public`    | Boleta de mensualidad.         |
-| `OTHER`      | `Enum` | `public`    | Boleta de otro tipo.           |
+| Atributo             | Tipo                 | Visibilidad | Descripción                       |
+| -------------------- | -------------------- | ----------- | --------------------------------- |
+| `academyName`        | `AcademyName`        | `public`    | Nombre de la academia.            |
+| `academyDescription` | `AcademyDescription` | `public`    | Descripción de la academia.       |
+| `streetAddress`      | `StreetAddress`      | `public`    | Dirección física.                 |
+| `emailAddress`       | `EmailAddress`       | `public`    | Correo electrónico institucional. |
+| `phoneNumber`        | `PhoneNumber`        | `public`    | Número de contacto.               |
+| `ruc`                | `Ruc`                | `public`    | Registro Único de Contribuyentes. |
 
-**Métodos principales:**
-
-| Método           | Tipo de Retorno | Visibilidad | Descripción                               |
-|------------------|-----------------|-------------|-------------------------------------------|
-| `isEnrollment()` | `boolean`       | `public`    | Verifica si es una boleta de matrícula.   |
-| `isMonthly()`    | `boolean`       | `public`    | Verifica si es una boleta de mensualidad. |
-| `isOther()`      | `boolean`       | `public`    | Verifica si es una boleta de otro tipo.   |
-
----
-
-5. **`InvoiceStatus` (Value Object)**
-
-Representa el estado de una boleta.
+5. **`RegisterAdministratorCommand`(Command)**
 
 **Atributos principales:**
 
-| Atributo     | Tipo   | Visibilidad | Descripción                       |
-|--------------|--------|-------------|-----------------------------------|
-| `PENDING`    | `Enum` | `public`    | La boleta está pendiente de pago. |
-| `PAID`       | `Enum` | `public`    | La boleta ha sido pagada.         |
-| `OVERDUE`    | `Enum` | `public`    | La boleta está vencida.           |
-| `CANCELED`   | `Enum` | `public`    | La boleta ha sido cancelada.      |
+| Atributo      | Tipo          | Visibilidad | Descripción                         |
+| ------------- | ------------- | ----------- | ----------------------------------- |
+| `personName`  | `PersonName`  | `public`    | Nombre del administrador.           |
+| `phoneNumber` | `PhoneNumber` | `public`    | Número de contacto.                 |
+| `dniNumber`   | `DniNumber`   | `public`    | DNI del administrador.              |
+| `academyId`   | `AcademyId`   | `public`    | Identificador de la academia.       |
+| `userId`      | `UserId`      | `public`    | Identificador del usuario asociado. |
+
+6. **`RegisterTeacherCommand`(Command)**
+
+**Atributos principales:**
+
+| Atributo     | Tipo         | Visibilidad | Descripción                   |
+| ------------ | ------------ | ----------- | ----------------------------- |
+| `personName` | `PersonName` | `public`    | Nombre del docente.           |
+| `academyId`  | `AcademyId`  | `public`    | Identificador de la academia. |
+| `userId`     | `UserId`     | `public`    | Identificador del usuario.    |
+
+7. **`Queries` (Query)**
+
+| Query                              | Atributos principales   | Descripción                                |
+| ---------------------------------- | ----------------------- | ------------------------------------------ |
+| `GetAcademyByIdQuery`              | `academyId : Long`      | Obtiene una academia por su identificador. |
+| `GetAdministratorByDniNumberQuery` | `dniNumber : DniNumber` | Busca administrador por DNI.               |
+| `GetAllTeachersQuery`              | *(sin atributos)*       | Devuelve todos los docentes registrados.   |
+
+8. **`AdministratorRegisteredEvent` (Domain Event)**
+
+| Atributo    | Tipo     | Visibilidad | Descripción                              |
+| ----------- | -------- | ----------- | ---------------------------------------- |
+| `source`    | `Object` | `private`   | Objeto origen del evento.                |
+| `academyId` | `Long`   | `private`   | Identificador de la academia asociada.   |
+| `userId`    | `Long`   | `private`   | Identificador del usuario administrador. |
+
+9. **`AcademyCommandService` (Domain Service)**
+
+Proporciona métodos para manejar comandos relacionados con la gestión de academias.
 
 **Métodos principales:**
 
-| Método         | Tipo de Retorno | Visibilidad | Descripción                               |
-|----------------|-----------------|-------------|-------------------------------------------|
-| `isPending()`  | `boolean`       | `public`    | Verifica si la boleta está pendiente.     |
-| `isPaid()`     | `boolean`       | `public`    | Verifica si la boleta ha sido pagada.     |
-| `isOverdue()`  | `boolean`       | `public`    | Verifica si la boleta está vencida.       |
-| `isCanceled()` | `boolean`       | `public`    | Verifica si la boleta ha sido cancelada.  |
+| Método                                               | Tipo de Retorno     | Visibilidad | Descripción                                                     |
+|------------------------------------------------------|---------------------|-------------|-----------------------------------------------------------------|
+| `handle(RegisterAcademyCommand command)`             | `Optional<Academy>` | `public`    | Crea y registra una nueva academia a partir de un comando.      |
+| `handle(AssignAdministratorToAcademyCommand command)`| `void`              | `public`    | Asigna un administrador a una academia existente.               |
 
 ---
 
-6. **`BillingAccountCommandService` (Domain Service)**
+10. **`AcademyQueryService` (Domain Service)**
 
-Proporciona métodos para ejecutar comandos relacionados con la gestión de cuentas de facturación y boletas.
+Permite consultar información relacionada con academias.
 
 **Métodos principales:**
 
-| Método                                        | Tipo de Retorno            | Visibilidad | Descripción                                                     |
-|-----------------------------------------------|----------------------------|-------------|-----------------------------------------------------------------|
-| `handle(CreateBillingAccountCommand command)` | `Optional<BillingAccount>` | `public`    | Crea una nueva cuenta de facturación a partir de un comando.    |
-| `handle(AssignInvoiceCommand command)`        | `Optional<Invoice>`        | `public`    | Asigna una nueva boleta a una cuenta de facturación.            |
-| `handle(RecordPaymentCommand command)`        | `void`                     | `public`    | Registra un pago en una cuenta de facturación.                  |
-| `handle(SuspendAccountCommand command)`       | `void`                     | `public`    | Suspende una cuenta de facturación por falta de pago.           |
-| `handle(ReactivateAccountCommand command)`    | `void`                     | `public`    | Reactiva una cuenta de facturación suspendida.                  |
+| Método                                   | Tipo de Retorno     | Visibilidad | Descripción                                         |
+|------------------------------------------|---------------------|-------------|-----------------------------------------------------|
+| `handle(GetAcademyByIdQuery query)`      | `Optional<Academy>` | `public`    | Obtiene una academia específica por su identificador.|
 
 ---
 
-7. **`BillingAccountQueryService` (Domain Service)**
+11. **`AdministratorCommandService` (Domain Service)**
 
-Proporciona métodos para consultar información relacionada con las cuentas de facturación y boletas.
+Proporciona métodos para manejar comandos relacionados con la gestión de administradores.
 
 **Métodos principales:**
 
-| Método                                      | Tipo de Retorno            | Visibilidad | Descripción                                                        |
-|---------------------------------------------|----------------------------|-------------|--------------------------------------------------------------------|
-| `handle(GetBillingAccountByIdQuery query)`  | `Optional<BillingAccount>` | `public`    | Obtiene una cuenta de facturación por su ID.                       |
-| `handle(GetInvoicesByAccountIdQuery query)` | `List<Invoice>`            | `public`    | Obtiene todas las boletas asociadas a una cuenta de facturación.   |
-| `handle(GetOutstandingBalanceQuery query)`  | `Optional<Money>`          | `public`    | Obtiene el saldo pendiente de una cuenta de facturación.           |
-| `handle(GetOverdueInvoicesQuery query)`     | `List<Invoice>`            | `public`    | Obtiene todas las boletas vencidas de una cuenta de facturación.   |
-| `handle(GetAccountStatusQuery query)`       | `Optional<AccountStatus>`  | `public`    | Obtiene el estado actual de una cuenta de facturación.             |
+| Método                                         | Tipo de Retorno          | Visibilidad | Descripción                                                           |
+|------------------------------------------------|--------------------------|-------------|-----------------------------------------------------------------------|
+| `handle(RegisterAdministratorCommand command)` | `Optional<Administrator>`| `public`    | Registra un nuevo administrador a partir de un comando.               |
 
 ---
+
+12. **`AdministratorQueryService` (Domain Service)**
+
+Permite consultar información relacionada con administradores.
+
+**Métodos principales:**
+
+| Método                                                | Tipo de Retorno          | Visibilidad | Descripción                                                    |
+|-------------------------------------------------------|--------------------------|-------------|----------------------------------------------------------------|
+| `handle(GetAdministratorByDniNumberQuery query)`      | `Optional<Administrator>`| `public`    | Obtiene un administrador usando su número de DNI.              |
+
+---
+
+13. **`TeacherCommandService` (Domain Service)**
+
+Proporciona métodos para manejar comandos relacionados con la gestión de docentes.
+
+**Métodos principales:**
+
+| Método                                   | Tipo de Retorno     | Visibilidad | Descripción                                                      |
+|------------------------------------------|---------------------|-------------|------------------------------------------------------------------|
+| `handle(RegisterTeacherCommand command)` | `Optional<Teacher>` | `public`    | Registra un nuevo docente en el sistema a partir de un comando.  |
+
+---
+
+14. **`TeacherQueryService` (Domain Service)**
+
+Permite consultar información relacionada con docentes.
+
+**Métodos principales:**
+
+| Método                                 | Tipo de Retorno | Visibilidad | Descripción                                         |
+|----------------------------------------|-----------------|-------------|-----------------------------------------------------|
+| `handle(GetAllTeachersQuery query)`    | `List<Teacher>` | `public`    | Obtiene la lista completa de docentes registrados.  |
+
+15. **`AcademyName` (Value Object)**
+
+Representa el nombre de una academia, asegurando que no sea nulo, vacío ni supere los 80 caracteres.
+
+**Atributos principales:**
+
+| Atributo | Tipo     | Visibilidad | Descripción                                  |
+|----------|----------|-------------|----------------------------------------------|
+| `name`   | `String` | `private`   | Nombre de la academia (máx. 80 caracteres).  |
+
+**Métodos principales:**
+
+| Método                 | Tipo Retorno | Visibilidad | Descripción                                   |
+|------------------------|--------------|-------------|-----------------------------------------------|
+| `AcademyName()`        | Constructor  | `public`    | Constructor requerido por JPA (valor vacío).  |
+| `AcademyName(String)`  | Constructor  | `public`    | Inicializa y valida el nombre de la academia. |
+
+---
+
+16. **`AcademyDescription` (Value Object)**
+
+Encapsula la descripción de una academia, validando que no sea nula ni vacía.
+
+**Atributos principales:**
+
+| Atributo      | Tipo     | Visibilidad | Descripción                   |
+|---------------|----------|-------------|-------------------------------|
+| `description` | `String` | `private`   | Descripción de la academia.   |
+
+**Métodos principales:**
+
+| Método                        | Tipo Retorno | Visibilidad | Descripción                              |
+|-------------------------------|--------------|-------------|------------------------------------------|
+| `AcademyDescription()`        | Constructor  | `public`    | Constructor requerido por JPA (valor vacío). |
+| `AcademyDescription(String)`  | Constructor  | `public`    | Inicializa y valida la descripción.      |
+
+---
+
+17. **`AdministratorId` (Value Object)**
+
+Identificador único de un administrador, con la invariante de ser mayor que cero.
+
+**Atributos principales:**
+
+| Atributo           | Tipo  | Visibilidad | Descripción                                 |
+|--------------------|-------|-------------|---------------------------------------------|
+| `administratorId`  | `Long`| `private`   | Id del administrador.                       |
+
+**Métodos principales:**
+
+| Método                                 | Tipo Retorno | Visibilidad | Descripción                                      |
+|----------------------------------------|--------------|-------------|--------------------------------------------------|
+| `AdministratorId()`                    | Constructor  | `public`    | Constructor requerido por JPA (valor `null`).    |
+| `AdministratorId(Long administratorId)`| Constructor  | `public`    | Inicializa y valida que sea mayor que cero.      |
+| `isAssigned()`                         | `boolean`    | `public`    | Devuelve `true` si hay un ID válido asignado.    |
+
+---
+
+18. **`Ruc` (Value Object)**
+
+Representa el RUC de la academia, validando que tenga exactamente 11 dígitos numéricos.
+
+**Atributos principales:**
+
+| Atributo | Tipo     | Visibilidad | Descripción                                  |
+|----------|----------|-------------|----------------------------------------------|
+| `ruc`    | `String` | `private`   | Número único de contribuyente (11 dígitos).  |
+
+**Métodos principales:**
+
+| Método        | Tipo Retorno | Visibilidad | Descripción                                   |
+|---------------|--------------|-------------|-----------------------------------------------|
+| `Ruc()`       | Constructor  | `public`    | Constructor requerido por JPA (valor vacío).  |
+| `Ruc(String)` | Constructor  | `public`    | Inicializa y valida longitud y formato numérico. |
+
+---
+
+19. **`UserId` (Value Object)**
+
+Identificador único de un usuario dentro del sistema.
+
+**Atributos principales:**
+
+| Atributo | Tipo  | Visibilidad | Descripción                           |
+|----------|-------|-------------|---------------------------------------|
+| `userId` | `Long`| `private`   | Identificador único del usuario.      |
+
+**Métodos principales:**
+
+| Método               | Tipo Retorno | Visibilidad | Descripción                                   |
+|----------------------|--------------|-------------|-----------------------------------------------|
+| `UserId()`           | Constructor  | `public`    | Constructor requerido por JPA (valor `0L`).   |
+| `UserId(Long)`       | Constructor  | `public`    | Inicializa y valida que el ID sea mayor a 0.  |
 
 #### 4.2.6.2. Interface Layer
 
