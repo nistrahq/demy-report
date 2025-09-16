@@ -1013,25 +1013,60 @@ Dentro de nuestro Impact Mapping se puede observar cómo los segmentos objetivos
 
 Write here...
 
-# Capítulo IV: Solution Software Design
-
-## 4.1. Strategic-Level Domain-Driven Design
+## 2.5 Strategic-Level Domain-Driven Design
 
 Write here...
 
-### 4.1.1. EventStorming
+### 2.5.1. EventStorming
 
 Write here...
 
-#### 4.1.1.1. Candidate Context Discovery
+#### 2.5.1.1. Candidate Context Discovery
 
 Write here...
 
-#### 4.1.1.2. Domain Message Flows Modeling
+#### 2.5.1.2. Domain Message Flows Modeling
 
-Write here...
+El Domain Storytelling es una técnica visual y colaborativa que facilita la exploración del conocimiento dentro del dominio del negocio, cuyo propósito principal es generar una comprensión común sobre lo que se desarrolla en un proceso específico, involucrando tanto a los expertos del negocio como a los equipos técnicos.
 
-#### 4.1.1.3. Bounded Context Canvases
+En este sentido, elaboramos los domain storytelling tomando como referencia las interacciones entre los bounded contexts, con el fin de analizar y comprender de manera más clara la lógica del negocio.
+
+**Escenario 1:** Academia creada
+**Objetivo:** Registrar una nueva academia en el sistema para habilitar su operación.
+
+![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-1.jpg)
+
+**Escenario 2:** Matricular alumno en periodo académico
+**Objetivo:** Un alumno quiere matricularse en un nuevo periodo académico y hacer el pago de la matrícula.
+
+![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-2.jpg)
+
+**Escenario 3:** Periodo académico creado
+**Objetivo:** Un administrador quiere abrir un nuevo periodo académico en su academia para habilitar matrículas, cursos y horarios correspondientes al ciclo.
+
+![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-3.jpg)
+
+**Escenario 4:** Gestionar horario académico
+**Objetivo:** El alumno desea administrar su horario académico, pudiendo reorganizar sus cursos y consultar los detalles de cada curso y de los profesores que los dictan.
+
+![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-4.jpg)
+
+**Escenario 5:** Gestionar finanzas de alumnos en pagos académicos
+**Objetivo:** La administración de la academia quiere manejar los cobros y pagos derivados de la matrícula, generando facturas, registrando pagos y actualizando el estado de cuenta
+
+![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-5.jpg)
+
+**Escenario 6:** Gestionar la asistencia de personal académico a las instalaciones de la academia
+**Objetivo:** La administración de la academia quiere manejar la hora de llegada de su personal académico.
+
+![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-6.jpg)
+
+**Escenario 7:** Marcar la asistencia de alumnos a clases.
+**Objetivo:** Los profesores quieren poder marcar la asistencia de los alumnos a las clases regulares.
+
+![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-7.jpg)
+
+#### 2.5.1.3. Bounded Context Canvases
 
 Write here...
 
