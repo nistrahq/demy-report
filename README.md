@@ -237,7 +237,31 @@ Write here...
 
 ## 3.2. User Stories
 
-Write here...
+En esta sección se presentan las historias de usuario que describen las funcionalidades y características que el sistema debe ofrecer para satisfacer las necesidades de los usuarios y cumplir con los objetivos del negocio. Cada historia de usuario sigue el formato estándar "Como [tipo de usuario], quiero [acción] para [beneficio/valor]", lo que facilita la comprensión de los requisitos desde la perspectiva del usuario final.
+
+Se incluyen diferentes tipos de historias, tales como:
+- **Epics:** grandes funcionalidades que pueden descomponerse en varias historias más pequeñas.
+- **User Stories:** funcionalidades específicas que aportan valor directo al usuario.
+- **Static Web Stories:** historias relacionadas con la presentación y navegación en la interfaz web para los diferentes segmentos identificados.
+- **Technical Stories:** historias que abordan aspectos técnicos necesarios para el correcto funcionamiento del sistema, como la integración con servicios externos, seguridad, rendimiento, entre otros.
+- **Spike Stories:** historias que representan tareas de investigación o exploración técnica para resolver incertidumbres o evaluar alternativas antes de la implementación.
+
+| Story ID | User                 | Title                                | Description                                                                                                                                                                         | Acceptance Criteria    | Priority | Epic                   |
+|----------|----------------------|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|----------|------------------------|
+| EP001    | Administrador        | Manejo de la Institución y Miembros  | Como administrador, quiero gestionar la información de la institución, academias y miembros (profesores y alumnos) para mantener datos actualizados y facilitar la administración.  | — *(Épica, no aplica)* | Alta     | — *(Épica, no aplica)* |
+| EP002    | Administrador        | Gestión de Matrículas                | Como administrador, quiero gestionar las matrículas de los estudiantes para asegurar que todos los alumnos estén correctamente registrados en sus cursos.                           | — *(Épica, no aplica)* | Alta     | — *(Épica, no aplica)* |
+| EP003    | Profesor             | Registro de Asistencia               | Como profesor, quiero registrar la asistencia de los estudiantes en cada clase para llevar un control preciso y facilitar la gestión académica.                                     | — *(Épica, no aplica)* | Alta     | — *(Épica, no aplica)* |
+| EP004    | Administrador        | Gestión de Horarios                  | Como administrador, quiero gestionar los horarios de clases y asignar salones para optimizar el uso de los recursos y facilitar la planificación académica.                         | — *(Épica, no aplica)* | Media    | — *(Épica, no aplica)* |
+| EP005    | Administrador        | Gestión de Boletas                   | Como administrador, quiero gestionar la emisión y seguimiento de las boletas de pago para asegurar que los estudiantes cumplan con sus obligaciones financieras.                    | — *(Épica, no aplica)* | Media    | — *(Épica, no aplica)* |
+| EP006    | Administrador        | Gestión Financiera y Contable        | Como administrador, quiero gestionar los ingresos y egresos de la institución para mantener un control financiero adecuado y generar reportes contables.                            | — *(Épica, no aplica)* | Media    | — *(Épica, no aplica)* |
+| EP007    | Profesor             | Visualización de Horarios            | Como profesor, quiero visualizar mi horario de clases para organizar mejor mi tiempo y prepararme adecuadamente para cada sesión.                                                   | — *(Épica, no aplica)* | Media    | — *(Épica, no aplica)* |
+| EP008    | Alumno               | Visualización de Horarios            | Como alumno, quiero visualizar mi horario de clases para planificar mis actividades y asistir puntualmente a cada sesión.                                                           | — *(Épica, no aplica)* | Media    | — *(Épica, no aplica)* |
+| EP009    | Usuario              | Gestión de Cuentas y Autenticación   | Como usuario, quiero gestionar mi cuenta y autenticación para acceder de manera segura a la plataforma y proteger mi información personal.                                          | — *(Épica, no aplica)* | Alta     | — *(Épica, no aplica)* |
+| EP010    | Visitante            | Navegación por el Sitio Web Estático | Como visitante, quiero navegar por el sitio web estático para obtener información sobre la institución y sus servicios antes de registrarme.                                        | — *(Épica, no aplica)* | Baja     | — *(Épica, no aplica)* |
+| EP011    | Developer            | Servicios Técnicos y APIs REST       | Como developer, quiero implementar servicios técnicos y APIs REST para facilitar la integración con otros sistemas y asegurar la escalabilidad del sistema.                         | — *(Épica, no aplica)* | Alta     | — *(Épica, no aplica)* |
+| EP012    | Equipo de Desarrollo | Investigación y Prototipado          | Como equipo de desarrollo, quiero realizar investigación y prototipado para explorar nuevas tecnologías y enfoques que puedan mejorar la solución propuesta.                        | — *(Épica, no aplica)* | Media    | — *(Épica, no aplica)* |
+
+
 
 ## 3.3. Impact Mapping
 
