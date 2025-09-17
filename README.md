@@ -1012,4 +1012,73 @@ Write here...
 
 # Anexos
 
-Write here...
+En esta sección se incluyen materiales adicionales que complementan el contenido del informe principal. Se proporciona información detallada sobre aspectos que no se abordaron en profundidad en las secciones anteriores, pero que son relevantes para una comprensión completa del proyecto.
+
+Se incluyen además, enlaces a repositorios, diagramas, documentos, y otros recursos que son de utilidad.
+
+## Anexo A: Repositorio del Proyecto
+
+El código fuente del proyecto está disponible en el siguiente repositorio de GitHub:
+
+- [Repositorio en GitHub]()
+
+## Anexo B: Spikes Stories
+
+En esta sección se documentan las Spikes Stories realizadas durante el desarrollo del proyecto. Las Spikes Stories son tareas exploratorias que permiten investigar y resolver incertidumbres técnicas o de diseño antes de implementar funcionalidades completas.
+
+### Spike Story: Investigación de la Integración de Stripe para Pagos en Demy
+
+- **ID:** SS001
+- **Rol:** Equipo de Desarrollo
+- **Epic Asociado:** EP012
+- **Prioridad:** Media
+
+**Contexto**
+<br>
+La startup Nistra, conformada por estudiantes de Ingeniería de Software, desarrolla Demy, una plataforma web para la gestión administrativa de academias educativas en el Perú. Entre sus funcionalidades clave se encuentran la matrícula, la asistencia, la asignación de horarios, el control de inventarios y la gestión de pagos tanto de estudiantes como de docentes.
+
+Para garantizar un sistema de pagos confiable y seguro, el equipo evalúa integrar Stripe como pasarela de pago en la plataforma. Stripe permitiría manejar transacciones en línea (pagos de matrícula, mensualidades, o servicios complementarios) con soporte de cumplimiento PCI, flujos escalables y SDKs para web y móvil. Dado que el backend utiliza Java con Spring Boot, y las aplicaciones cliente se desarrollan en Kotlin (Jetpack Compose), Flutter (Dart) y Swift (SwiftUI), es necesario explorar la compatibilidad y los requisitos de integración en estos entornos.
+
+**User Story**
+<br>
+**Como** equipo de desarrollo, **quiero** investigar y prototipar la integración de Stripe en Demy, **para** comprender las implicaciones técnicas, riesgos y costos de implementar pagos en la plataforma.
+
+**Criterios de Aceptación (Given-When-Then)**
+<br>
+1. **Revisión de la documentación oficial**
+   - **Given** que el equipo necesita entender las capacidades de Stripe,
+   - **When** revisa la documentación oficial (Payments, Checkout, SDKs móviles y Stripe.js),
+   - **Then** identifica y documenta los flujos más adecuados para Demy (pago único, recurrente, suscripciones).
+
+2. **Compatibilidad con el backend**
+   - **Given** que el backend de Demy está desarrollado en Java con Spring Boot,
+   - **When** el equipo investiga las bibliotecas y SDKs disponibles para Java,
+   - **Then** documenta los requisitos técnicos, dependencias y ejemplos de integración.
+
+3. **Compatibilidad móvil y web**
+   - **Given** que las aplicaciones cliente se desarrollan en Kotlin, Flutter y Swift,
+   - **When** el equipo revisa los SDKs de Stripe para estos lenguajes,
+   - **Then** documenta las capacidades, limitaciones y ejemplos de integración para cada plataforma.
+
+4. **Evaluación de seguridad y cumplimiento**
+   - **Given** que la seguridad es crítica para manejar pagos,
+   - **When** el equipo investiga las prácticas recomendadas de Stripe para PCI DSS y manejo de datos sensibles,
+   - **Then** documenta las medidas necesarias para asegurar el cumplimiento y proteger la información de los usuarios.
+
+5. **Costos y viabilidad**
+   - **Given** que el equipo debe evaluar la viabilidad económica,
+   - **When** revisa la estructura de costos de Stripe (tarifas por transacción, costos mensuales, etc.),
+   - **Then** documenta un análisis de costos y beneficios para presentar a los stakeholders.
+
+6. **Prototipo mínimo (PoC)**
+   - **Given** que el equipo necesita validar la integración,
+   - **When** desarrolla un prototipo mínimo que permita realizar un pago de prueba utilizando Stripe en el backend y una aplicación cliente,
+   - **Then** documenta los pasos realizados, desafíos encontrados y resultados obtenidos.
+
+**Definition of Done (DoD)**
+<br>
+- Informe documentado con hallazgos técnicos, costos y riesgos.
+- Identificación de dependencias necesarias (SDKs, librerías, configuración de cuenta Stripe).
+- PoC mínimo funcionando en sandbox (al menos en un cliente + backend).
+- Revisión del informe en sesión de refinamiento.
+- Spike completado dentro del timebox (8–16 horas).
