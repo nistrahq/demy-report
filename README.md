@@ -57,11 +57,85 @@
 
 # Registro de Versiones del Informe
 
+| Versión | Fecha        | Autor                                                                                   | Descripción de modificación                                                          |
+|---------|--------------|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| 1.0     | 30/08/2025   | Salim Ramirez                                                                           | Creación inicial de la estructura del informe                                        |
+| 2.0     | 06/09/2025   | Andrea Aponte <br> Daniel Crispin  <br> Salim Ramirez <br> Paúl Sulca <br> Diego Vilca  | Se completó el Capítulo I: Presentación                                              |
+| 3.0     | 17/09/2025   | Andrea Aponte <br> Daniel Crispin  <br> Salim Ramirez <br> Paúl Sulca <br> Diego Vilca  | Se completó el Capitulo II: : Requirements Development and Software Solution Design  |
+
 
 
 # Project Report Collaboration Insights
 
+Enlace para acceder al repositorio para el reporte del proyecto. [Ver en Github](https://github.com/nistrahq/demy-report)
 
+**TB1**
+Para el desarrollo del TB1 cada participante del equipo realizo las siguientes tareas
+
+| Integrantes                      | Tarea asignada                                                                                                                                                                                                                                                                 |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Aponte Cruzado, Andrea Marielena | - Diseño de entrevistas <br> - Registro de entrevistas <br> - Análisis de Entrevistas <br> - User personas <br> - User Task Matrix <br> - User Journey Mapping <br> - Empathy Mapping   <br> - Domain Message Flow  Modeling <br> - Tactical Level DDD for Institution Context |
+| Crispin Ramos, Daniel Franco     | - Startup Profile <br> - Solution Profile <br> - Segmentos objetivo <br> - Competidores <br> - Ubiquitous Language <br> - Impact mapping  <br> -  Context Mapping <br> - Tactical Level DDD for Scheduling Context                                                             |
+| Ramirez Mestanza, Salim Ignacio  | - User stories <br> - Product Backlog <br> - Event Storming documentation <br> - Candidate Context Discovery <br> - Tactical Level DDD for Billing Context and Accounting Context                                                                                              |
+| Sulca Gonzales, Paúl Fernando    | - Software Architecture Context Diagram <br> - Software Architecture Container Diagrams <br> - Software Architecture Deployments Diagrams <br> - Tactical Level DDD for Enrollment Context                                                                                     |
+| Vilca Saboya, Diego Alejandro    | - Registro de versiones del informe <br> - Project Report Collaboration Insights <br> - Student Outcome documentation <br> - Objetivos Smart documentation <br> - Bounded Context Canvases <br> - Tactical Level DD for Attendance Context                                     |                                                  
+
+**GitHub Collaboration Insights**
+En GitHub se presenta un timeline de las principales ramas creadas por cada integrante del equipo, así como los procesos de merge realizados.  
+Todas las ramas fueron gestionadas siguiendo el flujo de trabajo **GitFlow**, adaptado para una organización que utiliza un sistema de control de versiones.  
+
+Los integrantes son:
+
+| Integrantes                      | Nombre en GitHub |
+|----------------------------------|------------------|
+| Aponte Cruzado, Andrea Marielena | iconicmiau       |
+| Crispin Ramos, Daniel Franco     | danielcr04       |
+| Ramirez Mestanza, Salim Ignacio  | salimramirez     |
+| Sulca Gonzales, Paúl Fernando    | Kyrubi           |
+| Vilca Saboya, Diego Alejandro    | diesoks          |
+
+Las principales ramas del repositorio son las siguientes:
+
+- **main:** Rama principal que contiene la versión estable y consolidada del documento.
+- **develop:** Rama de integración utilizada para fusionar los cambios realizados en las ramas de características.
+- **feature/tbX-daniel:** Rama utilizada por Daniel para el desarrollo de las tareas correspondientes para una determinada entrega.
+- **feature/tbX-diego:** Rama utilizada por Diego para el desarrollo de las tareas correspondientes para una determinada entrega.
+- **feature/tbX-paul:** Rama utilizada por Paul para el desarrollo de las tareas correspondientes para una determinada entrega.
+- **feature/tbX-andrea:** Rama utilizada por Andrea para el desarrollo de las tareas correspondientes para una determinada entrega.
+- **feature/tbX-salim:** Rama utilizada por Salim para el desarrollo de las tareas correspondientes para una determinada entrega.
+- **release/vX.X.X:** Rama creada para preparar versiones candidatas al reporte final, siguiendo *Semantic Versioning 2.0.0*. En esta rama se realizan ajustes finales como correcciones menores y revisiones antes de integrarla a `main`.
+- **hotfix/urgent-fix:** Rama utilizada para aplicar correcciones críticas directamente sobre `main`, asegurando la estabilidad de la versión publicada.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+**TB1**
+
+Gráfico de red (*network graph*) de ramas en el repositorio de GitHub.
+
+![Insights - Network Graph](./assets/images/insights-network-graph.png)
+
+</div>
+
+A continuación, se presentan los gráficos que muestran el análisis de los commits en el repositorio correspondiente al informe.  
+Estos gráficos detallan la cantidad de líneas de código añadidas por cada miembro del equipo y la actividad de commits registrada.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Análisis de líneas de código añadidas por contribuyente.
+
+![Insights - Contributors](./assets/images/insights-contributors.png)
+
+</div>
+
+El siguiente gráfico muestra la cantidad de commits realizados en la semana con mayor actividad en el proyecto.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Análisis de cantidad de commits realizados por semana.
+
+![Insights - Commits](./assets/images/insights-commits.png)
+
+</div>
 
 # Contenido
 
@@ -128,8 +202,65 @@
 - [Anexos](#anexos)
 
 # Student Outcome
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7
+
+| Criterio específico                                                                                                                                             | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Conclusiones                                                                                                                                                                                                                                |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Actualiza conceptos y<br> conocimientos necesarios <br> para su desarrollo<br> profesional y en especial <br> para su proyecto en <br> soluciones de software.  | Aponte Cruzado, Andrea Marielena <br> *TB1*:Agregue artefactos UX <br> del nuevo segmento objetivo <br>  Crispin Ramos, Daniel Franco <br> *TB1*: Investigué los nuevos posibles competidores <br> de la aplicación en un ecosistema móvil  <br> Ramirez Mestanza, Salim Ignacio <br> *TB1*: Actualizé user stories <br> Sulca Gonzales, Paúl Fernando <br> *TB1*: Actualizé la arquitectura del software <br> en base al nuevo entorno móvil <br>  Vilca Saboya, Diego Alejandro <br> *TB1*: Actualizé mis conocimientos sobre la <br> parte táctica de DDD | Creemos que hemos logrado un buen desempeño en este aspecto, <br> ya que tuvimos que actualizar en algunos aspectos una <br> idea que utilizamos en un curso previo de desarrollo web.                                                      |
+| Reconoce la necesidad del <br> aprendizaje permamente <br> para el desempeño <br> profesional y el desarrollo de <br> proyectos en soluciones de <br> software. | Aponte Cruzado, Andrea Marielena <br> *TB1*:Agregue artefactos UX <br> del nuevo segmento objetivo <br>  Crispin Ramos, Daniel Franco <br> *TB1*: Investigué los nuevos posibles competidores <br> de la aplicación en un ecosistema móvil  <br> Ramirez Mestanza, Salim Ignacio <br> *TB1*: Actualizé user stories <br> Sulca Gonzales, Paúl Fernando <br> *TB1*: Actualizé la arquitectura del software <br> en base al nuevo entorno móvil <br>  Vilca Saboya, Diego Alejandro <br> *TB1*: Actualizé mis conocimientos sobre la <br> parte táctica de DDD | Consideramos que logramos cumplir este aspecto, ya que reconocemos la <br> necesidad de tener un aprendizaje permanente sobre nuevos entornos,<br> en este caso móvil, para reestructurar o actualizar<br> ideas de soluciones de software. |              
 
 # Objetivos SMART
+A continuación, cada integrante del equipo presenta sus objetivos SMART, enfocados en su desarrollo profesional luego de culminar la carrera universitaria.
+
+**Integrante 1: Andrea Aponte**  
+**Objetivo 1:**
+En los primeros 12 meses después de graduarme, completar una certificación internacional en Lean Six Sigma (nivel Green Belt), para adquirir habilidades en la mejora de procesos y gestión de calidad, aplicables a proyectos de innovación en sectores estratégicos del país como minería o exportaciones.
+
+**Objetivo 2:**
+En un plazo de 5 años tras mi graduación, ser admitida en un programa de MBA con enfoque en innovación o gestión tecnológica, en una universidad reconocida internacionalmente, con el fin de fortalecer mis competencias de liderazgo y estrategia empresarial para dirigir proyectos con impacto regional.
+
+**Objetivo 3:**  
+Antes de cumplir 8 años desde mi graduación, liderar o fundar un equipo tecnológico multidisciplinario dedicado a resolver un problema crítico del Perú, validando el impacto del proyecto a través de pilotos en al menos dos regiones del país.
+
+
+**Integrante 2: Daniel Crispin**  
+**Objetivo 1:**
+En los primeros 6 meses luego de graduarme, involucrarme activamente en al menos dos proyectos colaborativos relacionados con la creación de aplicaciones web y móvil, mejorando mis habilidades técnicas y construyendo una red profesional global para incrementar mis oportunidades laborales en el sector tecnológico.
+
+**Objetivo 2:**
+Dentro de los próximos 3 años, alcanzar un puesto de liderazgo como coordinador de equipo en una empresa de innovación tecnológica,  fortaleciendo mis habilidades en gestión de proyectos, liderazgo efectivo y metodologías ágiles a través de formación especializada y experiencia práctica, con el fin de optimizar la productividad y el desempeño del equipo.
+
+
+**Integrante 3: Salim Ramirez**  
+**Objetivo 1:**
+Dentro de los primeros 12 meses después de graduarme, conseguir un puesto como desarrollador backend en una empresa tecnológica internacional, aplicando mis conocimientos en arquitecturas escalables y buenas prácticas de programación, con el fin de adquirir experiencia práctica en entornos de alto rendimiento.
+
+**Objetivo 2:**
+En un plazo máximo de 5 años tras la graduación, completar un MBA en gestión de proyectos tecnológicos en una universidad de prestigio, para fortalecer mis competencias de liderazgo y estrategia empresarial, y sentar las bases para dirigir equipos de desarrollo de software y proyectos innovadores.
+
+**Objetivo 3:**
+Antes de cumplir 7 años de egresado, fundar una startup tecnológica enfocada en soluciones móviles, validando el producto en el mercado local primero y luego expandiéndolo internacionalmente, con el objetivo de generar impacto y posicionarme como líder emprendedor en el ecosistema digital.
+
+
+**Integrante 4: Paúl Sulca**  
+**Objetivo 1:**
+En un plazo máximo de 18 meses después de mi egreso, conseguir un puesto como desarrollador backend en una empresa consultora de software reconocida en el Perú (por ejemplo, Everis, Globant o Belatrix), aplicando mis conocimientos en desarrollo de software y fortaleciendo mis habilidades técnicas y blandas. Esto será medible al haber obtenido al menos un año de experiencia laboral formal en el sector, lo que me permitirá afianzar mi perfil profesional.
+
+**Objetivo 2:**
+En un plazo máximo de 5 años tras la graduación, cursar y completar una maestría en Ingeniería de Software o Gestión de Proyectos Ágiles en una universidad en Canada. Para lograrlo, me comprometo a postular a becas y programas de financiamiento durante los primeros tres años, con el objetivo de ampliar mis competencias de liderazgo, obtener mejores ingresos laborales y acceder a posiciones estratégicas dentro de la industria tecnológica.
+
+**Objetivo 3:**
+Antes de cumplir 10 años de egresado, liderar al menos dos proyectos tecnológicos de gran impacto (uno dentro de una empresa reconocida y otro como iniciativa emprendedora propia), enfocados en soluciones innovadoras basadas en inteligencia artificial aplicadas a la industria. El cumplimiento se medirá por mi rol de líder de equipo o gerente de proyecto, validado a través de la entrega de resultados concretos y la generación de valor en el mercado local e internacional.
+
+
+
+
+**Integrante 5: Diego Vilca**  
+**Objetivo 1:**
+Al culminar mi carrera, conseguir un puesto como desarrollador web o móvil en un plazo máximo de 1 mes después de graduarme, aplicando a un mínimo de 5 ofertas laborales por semana y actualizando constantemente mi portafolio con proyectos en GitHub.
+
+**Objetivo 2:**
+Iniciar una maestría en Arquitectura de Software en un plazo máximo de 3 años después de graduarme, complementado mi experiencia laboral. El objetivo es finalizar la maestría en 2 años y, posteriormente, postularme como docente universitario dentro de los 5 años posteriores a la graduación.
 
 # Capítulo I: Introducción
 
@@ -338,7 +469,37 @@ Write here...
 
 #### 4.1.1.3. Bounded Context Canvases
 
-Write here...
+En esta sección el equipo presenta sus Bounded Context Canvases, empezando por los importantes.  
+
+**Institution**  
+Encargado de gestionar el ciclo de vida de las academias y su personal docente.  
+![Bounded Context Canvas Institution](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-institution.png)  
+
+**Enrollment**  
+Encargado de gestionar el ciclo de vida de las matrículas y el registro de alumnos.  
+![Bounded Context Canvas Enrollment](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-enrollment.png)  
+
+**Attendance**  
+Encargado de gestionar las asistencias de una clase.  
+![Bounded Context Canvas Attendance](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-attendance.png)  
+
+**Scheduling**  
+Encargado de la gestión de horarios, salones y clases programadas.  
+![Bounded Context Canvas Scheduling](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-scheduling.png)
+
+**Billing** 
+Encargado de la emisión y control de boletas y obligaciones de pago.  
+![Bounded Context Canvas Billing](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-billing.png)
+
+
+**Accounting & Finance**  
+Encargado del control de ingresos y egresos de la academia.    
+![Bounded Context Canvas Accounting & Finance](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-accounting&finance.png)
+
+
+**IAM**  
+Contexto génerico para la identificación y acceso.  
+![Bounded Context Canvas IAM](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-iam.png)
 
 ### 4.1.2. Context Mapping
 
@@ -397,6 +558,171 @@ Write here...
 #### 4.2.X.6.2. Bounded Context Database Design Diagram
 
 Write here...
+
+### 4.2.4. Bounded Context: Attendance
+
+El bounded context de Attendance gestiona todo el ciclo de registro y control de la asistencia de los estudiantes. Es un contexto core del dominio educativo, ya que brinda a los profesores la capacidad de monitorear, registrar y consultar la asistencia de manera estructurada y confiable.
+
+#### 4.2.4.1. Domain Layer
+
+En esta sección se describen los elementos del Domain Layer del contexto de Attendance, que encapsulan las reglas y lógica del dominio relacionadas con la gestión de asistencias.
+<hr>  
+
+1.**`ClassAttendance` (Aggregate Root)**
+
+Representa la asistencia de todos los estudiantes de una sesión de clase.  
+
+**Atributos principales:**
+
+| Atributo         | Tipo                    | Visibilidad | Descripción                                                     |
+|------------------|-------------------------|-------------|-----------------------------------------------------------------|
+| `id`             | `Long`                  | `private`   | Identificador único de la asistencia de una sesión de clase     |
+| `classSessionId` | `ClassSessionId`        | `private`   | Identificador único de una sesión de clase                      |
+| `date`           | `LocalDate`             | `private`   | Fecha en la que fue tomada la asistencia de una sesión de clase |
+| `attendances`    | `List<AttendanceRecord` | `private`   | Lista de asistencia  de cada estudiante                         |
+| `academyId`      | `AcademyId`             | `private`   | Identificador único de la academia                              |
+
+**Métodos principales:**
+
+| Método                                                   | Tipo de retorno | Visibilidad    | Descripción                                                                          |
+|----------------------------------------------------------|-----------------|----------------|--------------------------------------------------------------------------------------|
+| `ClassAttendance()`                                      | `Constructor `  | `protected   ` | Constructor protegido para uso por el repositorio.                                   |
+| `ClassAttendance(CreateClassAttendanceCommand command)`  | `Constructor`   | `public`       | Constructor que inicializa la asistencia de una sesión de clase mediante un comando  |
+
+2.**`AttendanceRecord` (Entity)**  
+
+Representa la asistencia de un solo estudiante.
+
+| Atributo     | Tipo         | Visibilidad | Descripción                                            |
+|--------------|--------------|-------------|--------------------------------------------------------|
+| `id`         | `Long`       | `private`   | Identificador único de una asistencia de un estudiante | 
+| `studentId`  | `StudentId`  | `private`   | Identificador único de un estudiante.                  |
+
+**Métodos principales:**
+
+| Método                                     | Tipo de retorno | Visibilidad | Descripción                                      |
+|--------------------------------------------|-----------------|-------------|--------------------------------------------------|
+| `changeStatus(AttendanceStatus newStatus)` | `void`          | `public`    | Cambia el status de asistencia de un estudiante  |
+
+3.**`AttendanceStatus` (Value object)**
+
+| Atributo     | Tipo    | Visibilidad | Descripción                        |
+|--------------|---------|-------------|------------------------------------|
+| `PRESENT`    | `Enum`  | `public`    | Estudiante presente en la clase    |
+| `ABSENT`     | `Enum`  | `public`    | Estudiante ausente en la clase     |
+| `EXCUSED`    | `Enum`  | `public`    | Estudiante con falta justificada   |
+
+
+
+4.**`ClassSessionId` (Value object)**
+
+| Atributo | Tipo   | Visibilidad | Descripción                                |
+|----------|--------|-------------|--------------------------------------------|
+| `id`     | `Long` | `public`    | Identificador único de una sesión de clase |
+
+5.**`ClassAttendanceCommandService` (Domain Service)**
+
+| Atributo                                           | Tipo                         | Visibilidad | Descripción                                                                |
+|----------------------------------------------------|------------------------------|-------------|----------------------------------------------------------------------------|
+| `handle (CreateClassAttendanceCommand command)`    | `Optional<ClassAttendance>`  | `public`    | Crea un nuevo registro de asistencia de una clase a partir de un comando.  |
+
+6.**`ClassAttendanceQueryService` (Domain Service)**
+
+| Atributo                                                               | Tipo                         | Visibilidad | Descripción                                                                       |
+|------------------------------------------------------------------------|------------------------------|-------------|-----------------------------------------------------------------------------------|
+| `handle(GetAttendanceRecordsByStudentIdCourseAndDateRangeQuery query)` | `Optional<AttendanceRecord>` | `public`    | Obtiene todas las asistencias por ID del estudiante, curso en un rango de fechas. |
+
+
+
+#### 4.2.4.2. Interface Layer
+
+1.**`ClassAttendanceController` (REST controller)**  
+Controlador REST que expone endpoints para registrar asistencia o obtenerlas.
+
+**Endpoints Principales:**
+
+| Nombre del método       | Ruta base típica                    | Método HTTP | Descripción                                                                                         |
+|-------------------------|-------------------------------------|-------------|-----------------------------------------------------------------------------------------------------|
+| `CreateClassAttendance` | `/api/v1/class-attendances`         | `POST`      | Crea un nuevo registro de asistencia de una clase                                                   |
+| `getAttendanceReport`   | `/api/v1/class-attendances/report`  | `GET`       | Obtiene el registro de asistencia de un estudiante según ID del estudiante, curso y rango de fechas |
+
+
+#### 4.2.4.3. Application Layer
+
+1.**`ClassAttendanceCommandServiceImpl` (Command Service Implementation)**  
+Implementación del servicio de comandos para gestionar asistencias de una clase.
+
+**Atributos principales**  
+
+| Atributo                     | Tipo                         | Visibilidad | Descripción                                              |
+|------------------------------|------------------------------|-------------|----------------------------------------------------------|
+| `classAttendanceRepository`  | `ClassAttendanceRepository`  | `private`   | Repositorio para acceder a las asistencias de una clase  |
+
+**Métodos principales**
+
+| Nombre del método                                 | Tipo                        | Visibilidad | Descripción                                                                 |
+|---------------------------------------------------|-----------------------------|-------------|-----------------------------------------------------------------------------|
+| `handle (CreateClassAttendanceCommand command)`   | `Optional<ClassAttendance>` | `public`    | Maneja el comando para crear un nuevo registro de asistencia de una clase   |
+
+
+2.**`ClassAttendanceQueryServiceImpl` (Query Service Implementation)**  
+Implementación del servicio de consultas para obtener asistencias de una clase.
+
+**Atributos principales**
+
+| Atributo                     | Tipo                         | Visibilidad | Descripción                                              |
+|------------------------------|------------------------------|-------------|----------------------------------------------------------|
+| `classAttendanceRepository`  | `ClassAttendanceRepository`  | `private`   | Repositorio para acceder a las asistencias de una clase  |
+
+**Métodos principales**
+
+| Nombre del método                                                     | Tipo                    | Visibilidad | Descripción                                                                                                           |
+|-----------------------------------------------------------------------|-------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------|
+| `handle(GetAttendanceRecordsByStudentIdCourseAndDateRangeQuery query` | `List<ClassAttendance>` | `public`    | Maneja la consulta para obtener registros de asistencia de una clase según ID del estudiante, curso y rango de fechas |
+
+
+#### 4.2.4.4. Infrastructure Layer
+
+1.**`ClassAttendanceRepository` (Repository Interface)**  
+Interfaz del repositorio para acceder a los registros de asistencia de una sesión de clase.
+
+
+**Métodos principales**
+
+| Nombre del método                                                                          | Tipo de Retorno          | Visibilidad | Descripción                                                           |
+|--------------------------------------------------------------------------------------------|--------------------------|-------------|-----------------------------------------------------------------------|
+| `findByCourseIdAndDateBetween(CourseId courseId, LocalDate startDate, LocalDate endDate)`  | `List<ClassAttendance>`  | `public`    | Obtiene todas las asistencias por ID del course y un rango de fechas  |
+
+
+
+#### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presentan los diagramas de nivel componente que ilustran la arquitectura de software del contexto de Attendance. Se muestra la interacción entre los diferentes componentes, servicios y capas que conforman este bounded context. Se integra con la base de datos relacional definida en el diagrama de contenedores.  
+
+![Diagrama de Componentes del Contexto de Attendance](./assets/diagrams/software-architecture/components/out/attendance-component-level-diagram.png)  
+
+Además, se incluye el [código fuente del diagrama de componentes de Attendance](./assets/diagrams/software-architecture/components/src/attendance-component-level-diagram.dsl)
+
+#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de Attendance. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
+
+#### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases del Domain Layer del contexto de Attendance ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
+
+![Diagrama de Componentes del Contexto de Attendance](./assets/diagrams/uml/class/out/attendance-domain-layer-class-diagram.png)  
+
+Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Attendance](./assets/diagrams/uml/class/src/attendance-domain-layer-class-diagram.puml).
+
+#### 4.2.4.6.2. Bounded Context Database Design Diagram
+
+El diagrama de diseño de base de datos del contexto de Attendance muestra la estructura de las tablas y sus relaciones en la base de datos relacional. Se detallan las tablas principales, sus columnas, tipos de datos y claves primarias/foráneas que permiten gestionar la información relacionada con las asistencias de una clase.
+
+![Diagrama de Diseño de Base de Datos del Contexto de Attendance](./assets/diagrams/database/erd/out/attendance-database-diagram.png)
+
+Además, se incluye el [esquema SQL del diagrama de base de datos de Attendance](./assets/diagrams/database/schema/src/attendance-database-diagram-create.sql).
+
 
 ## Conclusiones y Recomendaciones
 
