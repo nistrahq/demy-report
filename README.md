@@ -112,15 +112,69 @@
             - [4.1.3.2. Software Architecture Container Level Diagrams](#4132-software-architecture-container-level-diagrams)
             - [4.1.3.3. Software Architecture Deployment Diagrams](#4133-software-architecture-deployment-diagrams)
     - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-        - [4.2.X. Bounded Context: <Bounded Context Name>](#42x-bounded-context-bounded-context-name)
-            - [4.2.X.1. Domain Layer](#42X1-domain-layer)
-            - [4.2.X.2. Interface Layer](#42X2-interface-layer)
-            - [4.2.X.3. Application Layer](#42X3-application-layer)
-            - [4.2.X.4. Infrastructure Layer](#42X4-infrastructure-layer)
-            - [4.2.X.5. Bounded Context Software Architecture Component Level Diagrams](#42X5-bounded-context-software-architecture-component-level-diagrams)
-            - [4.2.X.6. Bounded Context Software Architecture Code Level Diagrams](#42X6-bounded-context-software-architecture-code-level-diagrams)
-                - [4.2.X.6.1. Bounded Context Domain Layer Class Diagrams](#42X61-bounded-context-domain-layer-class-diagrams)
-                - [4.2.X.6.2. Bounded Context Database Design Diagram](#42X62-bounded-context-database-design-diagram)
+        - [4.2.1. Bounded Context: Institution](#421-bounded-context-institution)
+            - [4.2.1.1. Domain Layer](#4211-domain-layer)
+            - [4.2.1.2. Interface Layer](#4212-interface-layer)
+            - [4.2.1.3. Application Layer](#4213-application-layer)
+            - [4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)
+            - [4.2.1.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
+            - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
+                - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
+                - [4.2.1.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
+        - [4.2.2. Bounded Context: IAM](#422-bounded-context-iam)
+            - [4.2.2.1. Domain Layer](#4211-domain-layer)
+            - [4.2.2.2. Interface Layer](#4212-interface-layer)
+            - [4.2.2.3. Application Layer](#4213-application-layer)
+            - [4.2.2.4. Infrastructure Layer](#4214-infrastructure-layer)
+            - [4.2.2.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
+            - [4.2.2.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
+                - [4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
+                - [4.2.2.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
+        - [4.2.3. Bounded Context: Enrollment](#423-bounded-context-enrollment)
+            - [4.2.3.1. Domain Layer](#4211-domain-layer)
+            - [4.2.3.2. Interface Layer](#4212-interface-layer)
+            - [4.2.3.3. Application Layer](#4213-application-layer)
+            - [4.2.3.4. Infrastructure Layer](#4214-infrastructure-layer)
+            - [4.2.3.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
+            - [4.2.3.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
+                - [4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
+                - [4.2.3.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
+        - [4.2.4. Bounded Context: Attendance](#424-bounded-context-attendance)
+            - [4.2.4.1. Domain Layer](#4211-domain-layer)
+            - [4.2.4.2. Interface Layer](#4212-interface-layer)
+            - [4.2.4.3. Application Layer](#4213-application-layer)
+            - [4.2.4.4. Infrastructure Layer](#4214-infrastructure-layer)
+            - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
+            - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
+                - [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
+                - [4.2.4.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
+        - [4.2.5. Bounded Context: Scheduling](#425-bounded-context-scheduling)
+            - [4.2.5.1. Domain Layer](#4251-domain-layer)
+            - [4.2.5.2. Interface Layer](#4252-interface-layer)
+            - [4.2.5.3. Application Layer](#4253-application-layer)
+            - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)
+            - [4.2.5.5. Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
+            - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
+                - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
+                - [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
+        - [4.2.6. Bounded Context: Billing](#426-bounded-context-billing)
+            - [4.2.6.1. Domain Layer](#4261-domain-layer)
+            - [4.2.6.2. Interface Layer](#4262-interface-layer)
+            - [4.2.6.3. Application Layer](#4263-application-layer)
+            - [4.2.6.4. Infrastructure Layer](#4264-infrastructure-layer)
+            - [4.2.6.5. Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams)
+            - [4.2.6.6. Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
+                - [4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
+                - [4.2.6.6.2. Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
+        - [4.2.7. Bounded Context: Accounting & Finance](#427-bounded-context-accounting--finance)
+            - [4.2.7.1. Domain Layer](#4271-domain-layer)
+            - [4.2.7.2. Interface Layer](#4272-interface-layer)
+            - [4.2.7.3. Application Layer](#4273-application-layer)
+            - [4.2.7.4. Infrastructure Layer](#4274-infrastructure-layer)
+            - [4.2.7.5. Bounded Context Software Architecture Component Level Diagrams](#4275-bounded-context-software-architecture-component-level-diagrams)
+            - [4.2.7.6. Bounded Context Software Architecture Code Level Diagrams](#4276-bounded-context-software-architecture-code-level-diagrams)
+                - [4.2.7.6.1. Bounded Context Domain Layer Class Diagrams](#42761-bounded-context-domain-layer-class-diagrams)
+                - [4.2.7.6.2. Bounded Context Database Design Diagram](#42762-bounded-context-database-design-diagram)
 
 - [Conclusiones](#conclusiones)
     - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
@@ -691,42 +745,6 @@ Write here...
 En esta sección se aborda la perspectiva táctica del enfoque Domain-Driven Design (DDD), la cual se centra en representar el dominio del negocio mediante elementos concretos de software. A partir de los límites definidos en el diseño estratégico, se modelan entidades, objetos de valor, servicios y otros componentes clave que encapsulan las reglas del dominio y responden a las necesidades del sistema. Este nivel permite estructurar la solución de manera más alineada con los procesos y problemáticas reales, garantizando una implementación coherente y sostenible.
 
 Cada bounded context contará con su propio apartado, donde se detallará cómo estos elementos se articulan para gestionar los flujos de aplicación, facilitar la interacción con sistemas externos y contribuir al objetivo central de la solución.
-
-### 4.2.X. Bounded Context: <Bounded Context Name>
-
-Write here...
-
-#### 4.2.X.1. Domain Layer
-
-Write here...
-
-#### 4.2.X.2. Interface Layer
-
-Write here...
-
-#### 4.2.X.3. Application Layer
-
-Write here...
-
-#### 4.2.X.4. Infrastructure Layer
-
-Write here...
-
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-
-Write here...
-
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-
-Write here...
-
-#### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-
-Write here...
-
-#### 4.2.X.6.2. Bounded Context Database Design Diagram
-
-Write here...
 
 ### 4.2.6. Bounded Context: Billing
 
@@ -1399,15 +1417,31 @@ Además, se incluye el [esquema SQL del diagrama de base de datos de Accounting 
 
 ## Conclusiones y Recomendaciones
 
-Write here...
+En esta sección se presentan las conclusiones y recomendaciones derivadas del desarrollo del proyecto. Se analizan los resultados obtenidos, los desafíos enfrentados y las lecciones aprendidas durante el proceso. Además, se proponen acciones futuras para mejorar y optimizar la plataforma Demy.
 
 ### Conclusiones
 
-Write here...
+El equipo concluyó que las academias educativas en el Perú enfrentan desafíos significativos en la gestión administrativa, lo que afecta su eficiencia operativa y la experiencia de estudiantes y docentes.
+La plataforma Demy, desarrollada por la startup Nistra, aborda estas necesidades mediante una solución integral que automatiza procesos clave como matrícula, asistencia, asignación de horarios, control de inventarios y gestión de pagos.
+Mediante el uso de Demy, las academias pueden mejorar su eficiencia operativa, reducir errores administrativos y ofrecer una mejor experiencia a sus usuarios.
+Aunque aún no se ha implementado la plataforma, el equipo ha realizado un análisis exhaustivo de los requisitos y ha diseñado una arquitectura de software robusta que soporta las funcionalidades necesarias.
+
+Las hipótesis se consideran válidas, ya que se basan en entrevistas y validaciones con potenciales usuarios y expertos en el dominio educativo.
+Sin embargo, aún no se ha contrastado la solución con usuarios reales, lo que será un paso crucial en las siguientes fases del proyecto.
+A pesar de ello, la investigación y el diseño realizados proporcionan una base sólida para el desarrollo futuro de la plataforma.
+
+Se recomienda priorizar la implementación de las funcionalidades más críticas para las academias, como la gestión de matrículas y pagos, para maximizar el impacto inicial de la plataforma.
+Asimismo, se sugiere realizar pruebas piloto con academias reales para obtener retroalimentación directa y ajustar la solución según las necesidades específicas del mercado.
 
 ### Recomendaciones
 
-Write here...
+Es crucial preparar los escenarios de validación con usuarios reales para contrastar las hipótesis planteadas y asegurar que la solución propuesta realmente satisface las necesidades del mercado, así como identificar posibles mejoras o ajustes necesarios.
+
+Además, se recomienda mantener la coherencia visual y de experiencia de usuario en todas las plataformas (web y móvil) para garantizar una experiencia fluida y agradable para los usuarios.
+Estas acciones permitirán aumentar la adopción y satisfacción de los usuarios con la plataforma Demy y acercarse al objetivo de transformar la gestión administrativa de las academias educativas en el Perú.
+
+Finalmente, se sugiere explorar oportunidades de integración con otras herramientas y servicios utilizados por las academias, como sistemas de contabilidad, plataformas de comunicación y servicios de pago, para ofrecer una solución aún más completa y atractiva.
+Esto contribuirá a posicionar a Demy como una plataforma integral y líder en el mercado educativo.
 
 # Bibliografía
 
