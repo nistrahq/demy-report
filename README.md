@@ -1190,3 +1190,159 @@ Para ampliar la accesibilidad de la plataforma y reducir la fricción en los pag
 - PoC funcionando en entorno sandbox con generación de un CIP de prueba.
 - Revisión del informe en sesión de refinamiento.
 - Spike completado dentro del timebox (8–16 horas).
+
+---
+
+### Spike Story: Prueba de Librerías para Generación de Archivos PDF y Excel en Demy
+
+- **ID:** SS004
+- **Rol:** Equipo de Desarrollo
+- **Epic Asociado:** EP012
+- **Prioridad:** Media
+
+**Contexto**
+<br>
+La plataforma Demy requiere la generación de reportes administrativos, como listas de asistencia, estados de cuenta y reportes de inventario. Para facilitar estas funcionalidades, es necesario seleccionar librerías que permitan generar archivos PDF y Excel de manera eficiente, segura y compatible con el backend desarrollado en Java con Spring Boot, así como con integraciones móviles y web.
+
+**User Story**
+<br>
+**Como** equipo de desarrollo, **quiero** investigar y probar librerías para generación de PDF y Excel, **para** seleccionar las más adecuadas para la creación de reportes en Demy.
+
+**Criterios de Aceptación (Given-When-Then)**
+<br>
+1. **Investigación inicial**
+    - **Given** que el equipo necesita librerías confiables para PDF y Excel,
+    - **When** revisa documentación, comparativas y reseñas,
+    - **Then** crea una lista de librerías candidatas (ej. Apache POI, iText, JasperReports).
+
+2. **Implementación de pruebas**
+    - **Given** la lista de librerías candidatas,
+    - **When** el equipo implementa pruebas básicas de exportación,
+    - **Then** evalúa la facilidad de uso, rendimiento y calidad de los archivos generados.
+
+3. **Compatibilidad con backend**
+    - **Given** que Demy usa Spring Boot,
+    - **When** se prueban librerías en un prototipo,
+    - **Then** se documenta la integración con endpoints REST y controladores.
+
+4. **Evaluación de licencias y costos**
+    - **Given** que algunas librerías tienen modelos de licencia comerciales,
+    - **When** el equipo compara costos y restricciones,
+    - **Then** documenta la viabilidad de cada opción.
+
+5. **Prototipo mínimo (PoC)**
+    - **Given** que se necesita validar,
+    - **When** el equipo genera un PDF y un Excel de prueba desde Demy,
+    - **Then** documenta el flujo completo y los resultados obtenidos.
+
+**Definition of Done (DoD)**
+<br>
+- Informe con hallazgos técnicos, ventajas y limitaciones de cada librería.
+- Comparativa de costos, rendimiento y soporte.
+- PoC funcionando con exportación básica de PDF y Excel.
+- Revisión en sesión de refinamiento.
+- Spike completado dentro del timebox (8–16 horas).
+
+---
+
+### Spike Story: Prueba de Librerías para Generación de Gráficos en Demy
+
+- **ID:** SS005
+- **Rol:** Equipo de Desarrollo
+- **Epic Asociado:** EP012
+- **Prioridad:** Media
+
+**Contexto**
+<br>
+Demy requiere visualizaciones para reportes académicos y administrativos, como gráficas de asistencia, desempeño y pagos. Para ello, se deben evaluar librerías de generación de gráficos que ofrezcan flexibilidad, buen rendimiento y compatibilidad con el frontend y backend.
+
+**User Story**
+<br>
+**Como** equipo de desarrollo, **quiero** investigar y probar librerías para generación de gráficos, **para** seleccionar las más adecuadas para la visualización de datos en Demy.
+
+**Criterios de Aceptación (Given-When-Then)**
+<br>
+1. **Investigación de librerías**
+    - **Given** la necesidad de gráficos dinámicos,
+    - **When** se revisan librerías populares (Chart.js, ECharts, D3.js),
+    - **Then** se documentan sus características y limitaciones.
+
+2. **Pruebas básicas**
+    - **Given** la lista de librerías,
+    - **When** el equipo genera gráficos simples (barras, líneas, pastel),
+    - **Then** evalúa facilidad de integración, estética y rendimiento.
+
+3. **Compatibilidad con frontend**
+    - **Given** que el frontend web usa tecnologías modernas,
+    - **When** se integran librerías en un prototipo,
+    - **Then** se valida la interacción con datos en tiempo real.
+
+4. **Evaluación de soporte y documentación**
+    - **Given** que la mantenibilidad es clave,
+    - **When** se comparan recursos de soporte y comunidad,
+    - **Then** se documentan opciones sostenibles.
+
+5. **Prototipo mínimo (PoC)**
+    - **Given** que se necesita validar la integración,
+    - **When** el equipo crea un dashboard de prueba,
+    - **Then** se valida la visualización en entorno sandbox.
+
+**Definition of Done (DoD)**
+<br>
+- Informe con hallazgos técnicos y comparativa de librerías.
+- PoC funcionando con al menos 2 tipos de gráficos.
+- Documentación de ventajas, limitaciones y soporte de cada opción.
+- Revisión en sesión de refinamiento.
+- Spike completado dentro del timebox (8–16 horas).
+
+---
+
+### Spike Story: Prueba de Librerías para Generación de Códigos QR en Demy
+
+- **ID:** SS006
+- **Rol:** Equipo de Desarrollo
+- **Epic Asociado:** EP012
+- **Prioridad:** Media
+
+**Contexto**
+<br>
+Demy planea implementar funcionalidades basadas en códigos QR, como control de asistencia, check-in en clases o validación de identidad. Es necesario probar librerías para generación de QR que sean seguras, flexibles y fáciles de integrar en el backend y aplicaciones móviles.
+
+**User Story**
+<br>
+**Como** equipo de desarrollo, **quiero** investigar y probar librerías para generación de códigos QR, **para** seleccionar las más adecuadas para el registro y control de asistencia en Demy.
+
+**Criterios de Aceptación (Given-When-Then)**
+<br>
+1. **Investigación inicial**
+    - **Given** que se necesitan librerías para generar QR,
+    - **When** el equipo revisa opciones disponibles (ZXing, QRGen, qrcode.js),
+    - **Then** documenta las características principales de cada una.
+
+2. **Pruebas básicas**
+    - **Given** la lista de librerías,
+    - **When** se generan QR con distintos niveles de corrección de error,
+    - **Then** se evalúan rendimiento y legibilidad.
+
+3. **Compatibilidad con backend y móviles**
+    - **Given** que Demy usa Spring Boot y apps móviles en Kotlin/Flutter/Swift,
+    - **When** se prueban librerías en un prototipo,
+    - **Then** se documenta la integración en cada entorno.
+
+4. **Seguridad y uso en asistencia**
+    - **Given** que los QR pueden usarse en asistencia y control de acceso,
+    - **When** el equipo evalúa riesgos de falsificación y duplicación,
+    - **Then** documenta medidas de mitigación.
+
+5. **Prototipo mínimo (PoC)**
+    - **Given** que se necesita validar,
+    - **When** se genera un QR de prueba para asistencia,
+    - **Then** se valida que pueda ser leído e interpretado por la aplicación móvil.
+
+**Definition of Done (DoD)**
+<br>
+- Informe con hallazgos técnicos y comparativa de librerías.
+- PoC funcionando con generación de QR para asistencia.
+- Documentación de limitaciones, seguridad y riesgos.
+- Revisión en sesión de refinamiento.
+- Spike completado dentro del timebox (8–16 horas).
