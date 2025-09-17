@@ -1354,6 +1354,14 @@ Interfaz del repositorio para acceder a los reportes financieros.
 
 ---
 
+#### 4.2.7.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presentan los diagramas de nivel componente que ilustran la arquitectura de software del contexto de Accounting & Finance. Se muestra la interacción entre los diferentes componentes, servicios y capas que conforman este bounded context. Se integra con la base de datos relacional definida en el diagrama de contenedores.
+
+![Diagrama de Componentes del Contexto de Accounting & Finance](./assets/diagrams/software-architecture/components/out/accountingfinance-component-level-diagram.png)
+
+Además, se incluye el [código fuente del diagrama de componentes de Accounting & Finance](./assets/diagrams/software-architecture/components/src/accountingfinance-component-level-diagram.dsl).
+
 ## Conclusiones y Recomendaciones
 
 Write here...
