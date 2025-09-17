@@ -565,9 +565,129 @@ Controlador REST que expone endpoints para gestionar estudiantes.
 | `deleteStudent`   | `/api/v1/students/{id}`      | `DELETE`    | Elimina un estudiante por su ID.                      |
 
 
-#### 4.2.X.3. Application Layer
+#### 4.2.3.3. Application Layer
 
-Write here...
+1. **`EnrollmentCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar matrículas.
+
+**Atributos principales:**
+
+| Atributo                    | Tipo                        | Visibilidad | Descripción                                                   |
+| --------------------------- | --------------------------- | ----------- | ------------------------------------------------------------- |
+| `enrollmentRepository`      | `EnrollmentRepository`      | `private`   | Repositorio para acceder y persistir matrículas.              |
+| `externalSchedulingService` | `ExternalSchedulingService` | `private`   | Servicio externo para obtener horarios semanales disponibles. |
+
+**Métodos principales:**
+
+| Método                                    | Tipo de Retorno        | Visibilidad | Descripción                                                        |
+| ----------------------------------------- |------------------------| ----------- | ------------------------------------------------------------------ |
+| `handle(CreateEnrollmentCommand command)` | `Long`                 | `public`    | Maneja el comando para crear una nueva matrícula.                  |
+| `handle(DeleteEnrollmentCommand command)` | `void`                 | `public`    | Maneja el comando para eliminar una matrícula existente.           |
+| `handle(UpdateEnrollmentCommand command)` | `Optional<Enrollment>` | `public`    | Maneja el comando para actualizar la información de una matrícula. |
+
+---
+
+2. **`EnrollmentQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para obtener información sobre matrículas.
+
+**Atributos principales:**
+
+| Atributo               | Tipo                   | Visibilidad | Descripción                                        |
+| ---------------------- | ---------------------- | ----------- | -------------------------------------------------- |
+| `enrollmentRepository` | `EnrollmentRepository` | `private`   | Repositorio para acceder a las matrículas.         |
+| `studentRepository`    | `StudentRepository`    | `private`   | Repositorio para acceder a estudiantes vinculados. |
+
+**Métodos principales:**
+
+| Método                                             | Tipo de Retorno        | Visibilidad | Descripción                                                           |
+| -------------------------------------------------- | ---------------------- | ----------- | --------------------------------------------------------------------- |
+| `handle(GetAllEnrollmentsByStudentIdQuery query)`  | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas de un estudiante por su ID.              |
+| `handle(GetAllEnrollmentsQuery query)`             | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas registradas en el sistema.               |
+| `handle(GetEnrollmentByIdQuery query)`             | `Optional<Enrollment>` | `public`    | Obtiene una matrícula específica por su ID.                           |
+| `handle(GetAllEnrollmentsByStudentDniQuery query)` | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas asociadas a un estudiante usando su DNI. |
+
+---
+
+3. **`AcademicPeriodCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar períodos académicos.
+
+**Atributos principales:**
+
+| Atributo                   | Tipo                       | Visibilidad | Descripción                                    |
+| -------------------------- | -------------------------- | ----------- | ---------------------------------------------- |
+| `academicPeriodRepository` | `AcademicPeriodRepository` | `private`   | Repositorio para acceder y persistir períodos. |
+
+**Métodos principales:**
+
+| Método                                        | Tipo de Retorno            | Visibilidad | Descripción                                                       |
+| --------------------------------------------- |----------------------------| ----------- | ----------------------------------------------------------------- |
+| `handle(CreateAcademicPeriodCommand command)` | `Long`                     | `public`    | Maneja el comando para crear un nuevo período académico.          |
+| `handle(DeleteAcademicPeriodCommand command)` | `void`                     | `public`    | Maneja el comando para eliminar un período académico existente.   |
+| `handle(UpdateAcademicPeriodCommand command)` | `Optional<AcademicPeriod>` | `public`    | Maneja el comando para actualizar un período académico existente. |
+
+---
+
+4. **`AcademicPeriodQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para obtener información sobre períodos académicos.
+
+**Atributos principales:**
+
+| Atributo                   | Tipo                       | Visibilidad | Descripción                                         |
+| -------------------------- | -------------------------- | ----------- | --------------------------------------------------- |
+| `academicPeriodRepository` | `AcademicPeriodRepository` | `private`   | Repositorio para acceder a los períodos académicos. |
+
+**Métodos principales:**
+
+| Método                                     | Tipo de Retorno            | Visibilidad | Descripción                                        |
+| ------------------------------------------ | -------------------------- | ----------- | -------------------------------------------------- |
+| `handle(GetAllAcademicPeriodsQuery query)` | `List<AcademicPeriod>`     | `public`    | Obtiene todos los períodos académicos registrados. |
+| `handle(GetAcademicPeriodByIdQuery query)` | `Optional<AcademicPeriod>` | `public`    | Obtiene un período académico específico por su ID. |
+
+---
+
+5. **`StudentCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar estudiantes.
+
+**Atributos principales:**
+
+| Atributo            | Tipo                | Visibilidad | Descripción                                       |
+| ------------------- | ------------------- | ----------- | ------------------------------------------------- |
+| `studentRepository` | `StudentRepository` | `private`   | Repositorio para acceder y persistir estudiantes. |
+
+**Métodos principales:**
+
+| Método                                 | Tipo de Retorno     | Visibilidad | Descripción                                                        |
+| -------------------------------------- | ------------------- | ----------- | ------------------------------------------------------------------ |
+| `handle(CreateStudentCommand command)` | `Long`              | `public`    | Maneja el comando para crear un nuevo estudiante.                  |
+| `handle(DeleteStudentCommand command)` | `void`              | `public`    | Maneja el comando para eliminar un estudiante existente.           |
+| `handle(UpdateStudentCommand command)` | `Optional<Student>` | `public`    | Maneja el comando para actualizar la información de un estudiante. |
+
+---
+
+6. **`StudentQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para obtener información sobre estudiantes.
+
+**Atributos principales:**
+
+| Atributo            | Tipo                | Visibilidad | Descripción                                 |
+| ------------------- | ------------------- | ----------- | ------------------------------------------- |
+| `studentRepository` | `StudentRepository` | `private`   | Repositorio para acceder a los estudiantes. |
+
+**Métodos principales:**
+
+| Método                               | Tipo de Retorno     | Visibilidad | Descripción                                            |
+| ------------------------------------ | ------------------- | ----------- | ------------------------------------------------------ |
+| `handle(GetStudentByIdQuery query)`  | `Optional<Student>` | `public`    | Obtiene un estudiante específico por su ID.            |
+| `handle(GetAllStudentsQuery query)`  | `List<Student>`     | `public`    | Obtiene la lista de todos los estudiantes registrados. |
+| `handle(GetStudentByDniQuery query)` | `Optional<Student>` | `public`    | Obtiene un estudiante a partir de su DNI.              |
+
+
 
 #### 4.2.X.4. Infrastructure Layer
 
