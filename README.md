@@ -2355,7 +2355,6 @@ El diagrama de diseño de base de datos del contexto de IAM muestra la estructur
 
 Además, se incluye el [esquema SQL del diagrama de base de datos de IAM](./assets/diagrams/database/schema/src/IAM-database-diagram-create.sql).
 
-
 ## Conclusiones y Recomendaciones
 
 Write here...
