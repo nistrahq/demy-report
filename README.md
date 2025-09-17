@@ -999,6 +999,170 @@ El diagrama de diseño de base de datos del contexto de Billing muestra la estru
 
 Además, se incluye el [esquema SQL del diagrama de base de datos de Billing](./assets/diagrams/database/schema/src/billing-database-diagram-create.sql).
 
+### 4.2.7. Bounded Context: Accounting & Finance
+
+Este contexto se encarga de la gestión contable y financiera de la academia. Incluye el registro de ingresos y egresos, así como la generación de reportes financieros que permiten a los administradores tener una visión clara de la situación económica de la institución. Aunque este contexto no es el núcleo del negocio, su correcta implementación es esencial para asegurar la transparencia y el cumplimiento de las normativas financieras.
+
+#### 4.2.7.1. Domain Layer
+
+En esta sección se describen los elementos del Domain Layer del contexto de Accounting & Finance, que encapsulan las reglas y lógica del dominio relacionadas con la gestión contable y financiera.
+
+---
+
+1. **`Transaction` (Aggregate Root)**
+
+Representa una transacción financiera, ya sea un ingreso o un egreso registrado en la academia.
+
+**Atributos principales:**
+
+| Atributo              | Tipo                  | Visibilidad | Descripción                                                  |
+|-----------------------|-----------------------|-------------|--------------------------------------------------------------|
+| `id`                  | `Long`                | `private`   | Identificador único de la transacción.                       |
+| `transactionType`     | `TransactionType`     | `private`   | Tipo de transacción (ingreso o egreso).                      |
+| `transactionCategory` | `TransactionCategory` | `private`   | Categoría de la transacción (matrícula, salario, etc.).      |
+| `transactionMethod`   | `TransactionMethod`   | `private`   | Método de la transacción (efectivo, tarjeta, transferencia). |
+| `amount`              | `Money`               | `private`   | Monto de la transacción.                                     |
+| `description`         | `String`              | `private`   | Descripción o detalles adicionales de la transacción.        |
+| `transactionDate`     | `LocalDate`           | `private`   | Fecha de la transacción.                                     |
+| `academyId`           | `AcademyId`           | `private`   | Identificador de la academia asociada a la transacción.      |
+
+**Métodos principales:**
+
+| Método                                          | Tipo de Retorno | Visibilidad | Descripción                                                       |
+|-------------------------------------------------|-----------------|-------------|-------------------------------------------------------------------|
+| `Transaction()`                                 | `Constructor`   | `protected` | Constructor protegido para uso por el repositorio.                |
+| `Transaction(CreateTransactionCommand command)` | `Constructor`   | `public`    | Constructor que inicializa la transacción a partir de un comando. |
+| `getDetails()`                                  | `String`        | `public`    | Obtiene los detalles completos de la transacción.                 |
+
+---
+
+2. **`Report` (Aggregate Root)**
+
+Representa un reporte financiero generado para la academia.
+
+**Atributos principales:**
+
+| Atributo         | Tipo           | Visibilidad | Descripción                                         |
+|------------------|----------------|-------------|-----------------------------------------------------|
+| `id`             | `Long`         | `private`   | Identificador único del reporte.                    |
+| `reportType`     | `ReportType`   | `private`   | Tipo de reporte (ingresos, egresos, balance, etc.). |
+| `reportPeriod`   | `ReportPeriod` | `private`   | Período cubierto por el reporte.                    |
+| `generatedDate`  | `LocalDate`    | `private`   | Fecha de generación del reporte.                    |
+| `academyId`      | `AcademyId`    | `private`   | Identificador de la academia asociada al reporte.   |
+
+---
+
+3. **`TransactionType` (Value Object)**
+
+Representa el tipo de transacción financiera.
+
+**Atributos principales:**
+
+| Atributo  | Tipo   | Visibilidad | Descripción             |
+|-----------|--------|-------------|-------------------------|
+| `INCOME`  | `Enum` | `public`    | Transacción de ingreso. |
+| `EXPENSE` | `Enum` | `public`    | Transacción de egreso.  |
+
+**Métodos principales:**
+
+| Método        | Tipo de Retorno  | Visibilidad   | Descripción                                |
+|---------------|------------------|---------------|--------------------------------------------|
+| `isIncome()`  | `boolean`        | `public`      | Verifica si es una transacción de ingreso. |
+| `isExpense()` | `boolean`        | `public`      | Verifica si es una transacción de egreso.  |
+
+---
+
+4. **`TransactionCategory` (Value Object)**
+
+Representa la categoría de una transacción financiera.
+
+**Atributos principales:**
+
+| Atributo        | Tipo    | Visibilidad  | Descripción                 |
+|-----------------|---------|--------------|-----------------------------|
+| `ENROLLMENT`    | `Enum`  | `public`     | Categoría de matrícula.     |
+| `MONTHLY_FEE`   | `Enum`  | `public`     | Categoría de mensualidad.   |
+| `SALARY`        | `Enum`  | `public`     | Categoría de salario.       |
+| `SUPPLIES`      | `Enum`  | `public`     | Categoría de suministros.   |
+| `MAINTENANCE`   | `Enum`  | `public`     | Categoría de mantenimiento. |
+| `OTHER`         | `Enum`  | `public`     | Categoría de otro tipo.     |
+
+**Métodos principales:**
+
+| Método              | Tipo de Retorno | Visibilidad | Descripción                                |
+|---------------------|-----------------|-------------|--------------------------------------------|
+| `isEnrollment()`    | `boolean`       | `public`    | Verifica si es categoría de matrícula.     |
+| `isMonthlyFee()`    | `boolean`       | `public`    | Verifica si es categoría de mensualidad.   |
+| `isSalary()`        | `boolean`       | `public`    | Verifica si es categoría de salario.       |
+| `isSupplies()`      | `boolean`       | `public`    | Verifica si es categoría de suministros.   |
+| `isMaintenance()`   | `boolean`       | `public`    | Verifica si es categoría de mantenimiento. |  
+| `isOther()`         | `boolean`       | `public`    | Verifica si es categoría de otro tipo.     |
+
+---
+
+5. **`TransactionMethod` (Value Object)**
+
+Representa el método utilizado para una transacción financiera.
+
+**Atributos principales:**
+
+| Atributo        | Tipo    | Visibilidad | Descripción                       |
+|-----------------|---------|-------------|-----------------------------------|
+| `CASH`          | `Enum`  | `public`    | Método de efectivo.               |
+| `CREDIT_CARD`   | `Enum`  | `public`    | Método de tarjeta de crédito.     |
+| `DEBIT_CARD`    | `Enum`  | `public`    | Método de tarjeta de débito.      |
+| `BANK_TRANSFER` | `Enum`  | `public`    | Método de transferencia bancaria. |
+| `WALLET`        | `Enum`  | `public`    | Método de billetera digital.      |
+| `OTHER`         | `Enum`  | `public`    | Método de otro tipo.              |
+
+---
+
+6. **`ReportType` (Value Object)**
+
+Representa el tipo de reporte financiero.
+
+**Atributos principales:**
+
+| Atributo     | Tipo    | Visibilidad | Descripción                    |
+|--------------|---------|-------------|--------------------------------|
+| `INCOME`     | `Enum`  | `public`    | Reporte de ingresos.           |
+| `EXPENSE`    | `Enum`  | `public`    | Reporte de egresos.            |
+| `BALANCE`    | `Enum`  | `public`    | Reporte de balance financiero. |
+| `CASH_FLOW`  | `Enum`  | `public`    | Reporte de flujo de caja.      |
+| `OTHER`      | `Enum`  | `public`    | Reporte de otro tipo.          |
+
+**Métodos principales:**
+
+| Método         | Tipo de Retorno | Visibilidad | Descripción                                      |
+|----------------|-----------------|-------------|--------------------------------------------------|
+| `isIncome()`   | `boolean`       | `public`    | Verifica si es un reporte de ingresos.           |
+| `isExpense()`  | `boolean`       | `public`    | Verifica si es un reporte de egresos.            |
+| `isBalance()`  | `boolean`       | `public`    | Verifica si es un reporte de balance financiero. |
+| `isCashFlow()` | `boolean`       | `public`    | Verifica si es un reporte de flujo de caja.      |
+| `isOther()`    | `boolean`       | `public`    | Verifica si es un reporte de otro tipo.          |
+
+---
+
+7. **`ReportPeriod` (Value Object)**
+
+Representa el período cubierto por un reporte financiero.
+
+**Atributos principales:**
+
+| Atributo     | Tipo         | Visibilidad | Descripción                     |
+|--------------|--------------|-------------|---------------------------------|
+| `startDate`  | `LocalDate`  | `private`   | Fecha de inicio del período.    |
+| `endDate`    | `LocalDate`  | `private`   | Fecha de fin del período.       |
+
+**Métodos principales:**
+
+| Método                         | Tipo de Retorno | Visibilidad | Descripción                                    |
+|--------------------------------|-----------------|-------------|------------------------------------------------|
+| `getDuration()`                | `Period`        | `public`    | Obtiene la duración del período.               |
+| `includesDate(LocalDate date)` | `boolean`       | `public`    | Verifica si una fecha está dentro del período. |
+
+---
+
 ## Conclusiones y Recomendaciones
 
 Write here...
