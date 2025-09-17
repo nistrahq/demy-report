@@ -1462,10 +1462,9 @@ El código fuente del proyecto está disponible en el siguiente repositorio de G
 
 ## Anexo B: Videos en Microsoft Streams
 
-Los videos de entrevistas para *needfinding*, *validation* y videos de exposición de avances del proyecto están disponibles en Microsoft Streams:
+Los videos de entrevistas para *needfinding*, *validation* y otros videos sobre avances del proyecto están disponibles en Microsoft Streams:
 
-1. [Entrevistas para Needfinding]()
-2. [Videos de Exposición del TB1]()
+1. [Entrevistas para Needfinding](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EUeBQObXSdZBvoolgyQ1JmcBRYnwPS0RfsU6kusFf0mfmw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BINKHX)
 
 ## Anexo C: Detalle de Spike Stories
 
