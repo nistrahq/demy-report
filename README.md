@@ -1082,3 +1082,111 @@ Para garantizar un sistema de pagos confiable y seguro, el equipo evalúa integr
 - PoC mínimo funcionando en sandbox (al menos en un cliente + backend).
 - Revisión del informe en sesión de refinamiento.
 - Spike completado dentro del timebox (8–16 horas).
+
+---
+
+### Spike Story: Investigación de la Integración de Gmail en Demy
+
+- **ID:** SS002
+- **Rol:** Equipo de Desarrollo
+- **Epic Asociado:** EP012
+- **Prioridad:** Media
+
+**Contexto**
+<br>
+La startup Nistra desarrolla Demy, una plataforma web que optimiza la gestión administrativa de academias educativas en el Perú. Entre sus funcionalidades se encuentra la comunicación con estudiantes y docentes, que requiere notificaciones de matrícula, confirmaciones de pago y avisos de programación de clases.
+
+Para mejorar la experiencia de comunicación, el equipo evalúa la integración de la **Gmail API**, que permitiría enviar y recibir correos electrónicos desde la plataforma de manera automatizada y segura. El backend de Demy está desarrollado en Java con Spring Boot, lo que hace necesario explorar la compatibilidad de Gmail API con RESTful APIs, OAuth 2.0 y el manejo de credenciales seguras.
+
+**User Story**
+<br>
+**Como** equipo de desarrollo, **quiero** investigar y prototipar la integración de Gmail API en Demy, **para** comprender cómo automatizar y gestionar correos electrónicos de manera segura dentro de la plataforma.
+
+**Criterios de Aceptación (Given-When-Then)**
+<br>
+1. **Revisión de la documentación oficial**
+    - **Given** que el equipo necesita entender la API de Gmail,
+    - **When** revisa la documentación oficial y ejemplos de uso,
+    - **Then** identifica los métodos disponibles para envío, lectura y manejo de correos.
+
+2. **Autenticación y seguridad**
+    - **Given** que Gmail API utiliza OAuth 2.0,
+    - **When** el equipo implementa un flujo de autenticación en entorno sandbox,
+    - **Then** documenta los pasos, dependencias y medidas de seguridad necesarias.
+
+3. **Compatibilidad con backend**
+    - **Given** que el backend está desarrollado en Java con Spring Boot,
+    - **When** se revisan librerías de soporte y ejemplos de integración,
+    - **Then** se documentan dependencias y configuración necesarias para habilitar la API.
+
+4. **Casos de uso relevantes**
+    - **Given** que la plataforma necesita enviar notificaciones automáticas,
+    - **When** el equipo analiza escenarios como confirmación de matrícula y recibos de pago,
+    - **Then** documenta los flujos de integración aplicables.
+
+5. **Prototipo mínimo (PoC)**
+    - **Given** que se requiere validar la integración,
+    - **When** el equipo implementa un prototipo que envíe un correo de prueba usando la API,
+    - **Then** documenta los resultados obtenidos.
+
+**Definition of Done (DoD)**
+<br>
+- Informe documentado con hallazgos técnicos y casos de uso aplicables.
+- Configuración de credenciales seguras para el entorno de prueba.
+- PoC funcional con envío de un correo de prueba desde Demy.
+- Revisión del informe en sesión de refinamiento.
+- Spike completado dentro del timebox (8–16 horas).
+
+---
+
+### Spike Story: Investigación de la Integración de PagoEfectivo en Demy
+
+- **ID:** SS003
+- **Rol:** Equipo de Desarrollo
+- **Epic Asociado:** EP012
+- **Prioridad:** Media
+
+**Contexto**
+<br>
+Demy busca ofrecer alternativas de pago adaptadas al contexto peruano. Aunque Stripe cubre tarjetas de crédito y débito, muchos estudiantes y familias prefieren medios de pago locales como **PagoEfectivo**, que permite generar códigos CIP y realizar depósitos en bancos o agentes autorizados.
+
+Para ampliar la accesibilidad de la plataforma y reducir la fricción en los pagos, el equipo evalúa integrar PagoEfectivo. El backend de Demy está desarrollado en Spring Boot, por lo que es necesario analizar cómo implementar la API de PagoEfectivo, manejar los callbacks de confirmación y gestionar la conciliación de pagos en la base de datos.
+
+**User Story**
+<br>
+**Como** equipo de desarrollo, **quiero** investigar la integración de PagoEfectivo en Demy, **para** ofrecer un método de pago local y accesible a estudiantes y familias que no utilizan tarjeta de crédito.
+
+**Criterios de Aceptación (Given-When-Then)**
+<br>
+1. **Revisión de la documentación oficial**
+    - **Given** que el equipo necesita entender PagoEfectivo,
+    - **When** revisa la documentación de su API y flujos de integración,
+    - **Then** identifica los pasos para generar CIPs y verificar pagos.
+
+2. **Compatibilidad con backend**
+    - **Given** que Demy usa Spring Boot,
+    - **When** se investigan las dependencias y endpoints requeridos,
+    - **Then** se documenta un diseño preliminar de integración.
+
+3. **Casos de uso relevantes**
+    - **Given** que los alumnos necesitan pagar matrículas y mensualidades,
+    - **When** se analizan los flujos de PagoEfectivo aplicables a estos escenarios,
+    - **Then** se documentan los pasos de integración necesarios.
+
+4. **Seguridad y callbacks**
+    - **Given** que PagoEfectivo envía confirmaciones por callback,
+    - **When** el equipo analiza cómo recibir y validar estas notificaciones en Spring Boot,
+    - **Then** documenta un esquema seguro de validación.
+
+5. **Prototipo mínimo (PoC)**
+    - **Given** que se debe probar la viabilidad,
+    - **When** se implementa un flujo básico de generación de CIP en sandbox,
+    - **Then** se valida que el backend reciba la confirmación del pago.
+
+**Definition of Done (DoD)**
+<br>
+- Informe con hallazgos técnicos, riesgos y casos de uso aplicables.
+- Dependencias y configuración necesarias documentadas.
+- PoC funcionando en entorno sandbox con generación de un CIP de prueba.
+- Revisión del informe en sesión de refinamiento.
+- Spike completado dentro del timebox (8–16 horas).
