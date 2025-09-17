@@ -279,8 +279,7 @@ En esta sección se presenta la arquitectura de software de Demy, diseñada bajo
 
 #### 4.1.3.1. Software Architecture Context Level Diagrams
 
-El Context Diagram muestra a Demy como el sistema central que interactúa con tres usuarios principales: el coordinador, que gestiona matrículas, horarios y pagos; el docente, que consulta horarios y registra asistencia; y el estudiante, que revisa sus horarios y comprobantes. Además, el sistema se integra con Stripe y PagoEfectivo para la gestión de pagos y con Gmail para el envío de notificaciones por correo electrónico.
-
+El Context Diagram muestra como el sistema central que interactúa con tres usuarios principales: el coordinador, que gestiona matrículas, horarios y pagos; el docente, que consulta horarios y registra asistencia; y el estudiante, que revisa sus horarios y comprobantes. Además, el sistema se integra con Stripe y PagoEfectivo para la gestión de pagos y con Gmail para el envío de notificaciones por correo electrónico.
 
 ![Context Diagram](assets/diagrams/software-architecture/context/software_architecture_context_diagram.png)
 
@@ -288,25 +287,236 @@ El Context Diagram muestra a Demy como el sistema central que interactúa con tr
 
 El Container Diagram descompone la solución en sus principales contenedores: una Flutter App para coordinadores, una Android App para docentes y una iOS App para estudiantes, todas conectadas a un API Backend desarrollado en Spring Boot que concentra la lógica de negocio y accede a una base de datos MySQL para la información académica. El backend también se integra con Stripe y PagoEfectivo para pagos y con Gmail para notificaciones automáticas.
 
-![Context Diagram](assets/diagrams/software-architecture/containers/software_architecture_container_diagram.png)
+![Container Diagram](assets/diagrams/software-architecture/containers/software_architecture_container_diagram.png)
 
 #### 4.1.3.3. Software Architecture Deployment Diagrams
 
-El diagrama de deployment de Demy Application muestra la distribución física del sistema en producción, detallando cómo se despliegan los contenedores y servicios en la infraestructura y cómo interactúan entre sí. Las aplicaciones móviles (iOS, Android y Flutter) se ejecutan en los dispositivos de los usuarios y son distribuidas mediante Firebase, mientras que el backend en Spring Boot y la base de datos MySQL se alojan en Railway PaaS. Asimismo, se incluyen sistemas externos como Stripe, PagoEfectivo y Gmail. En conjunto, el diagrama ofrece una visión clara de la ubicación de los componentes y de los protocolos de comunicación empleados.
+El Deployment Diagram muestra la distribución física del sistema en producción, detallando cómo se despliegan los contenedores y servicios en la infraestructura y cómo interactúan entre sí. Las aplicaciones móviles (iOS, Android y Flutter) se ejecutan en los dispositivos de los usuarios y son distribuidas mediante Firebase, mientras que el backend en Spring Boot y la base de datos MySQL se alojan en Railway PaaS. Asimismo, se incluyen sistemas externos como Stripe, PagoEfectivo y Gmail. En conjunto, el diagrama ofrece una visión clara de la ubicación de los componentes y de los protocolos de comunicación empleados.
 
-![Context Diagram](assets/diagrams/software-architecture/deployment/software_architecture_deployment_diagram.png)
+![Deployment Diagram](assets/diagrams/software-architecture/deployment/software_architecture_deployment_diagram.png)
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
 Write here...
 
-### 4.2.X. Bounded Context: <Bounded Context Name>
+### 4.2.3. Bounded Context: Enrollment
 
-Write here...
+Este bounded context se encarga de gestionar todo lo relacionado con la matricula de los estudiantes en los cursos ofrecidos por la institución educativa. Incluye la creación, actualización y eliminación de matrículas, así como la validación de requisitos previos y la generación de comprobantes de pago.
 
-#### 4.2.X.1. Domain Layer
+#### 4.2.3.1. Domain Layer 
 
-Write here...
+Se describen los elementos del Domain Layer del contexto de Enrollment, que encapsula las reglas y logica del dominio relacionadas con la gestion de matriculas, periodos academicos y alumnos.
+
+---
+1. **`Enrollment` (Aggregate Root)**
+
+Representa la matrícula de un estudiante en una academia, con su estado, estudiante, horario y período académico, incluyendo operaciones de gestión y validación.
+
+**Atributos Principales:**
+
+| Atributo     | Tipo               | Visibilidad | Descripción                                                  |
+| ------------ | ------------------ | ----------- | ------------------------------------------------------------ |
+| `id`         | `Long`             | `private`   | Identificador único de la matrícula.                         |
+| `periodId`   | `AcademicPeriodId` | `private`   | Identificador del período académico asociado a la matrícula. |
+| `studentId`  | `StudentId`        | `private`   | Identificador del estudiante asociado a la matrícula.        |
+| `scheduleId` | `ScheduleId`       | `private`   | Identificador del horario asociado a la matrícula.           |
+| `academyId`  | `AcademyId`        | `private`   | Identificador de la academia asociada a la matrícula.        |
+| `status`     | `EnrollmentStatus` | `private`   | Estado actual de la matrícula.                               |
+| `amount`     | `Money`            | `private`   | Monto a pagar o pagado correspondiente a la matrícula.       |
+
+**Métodos principales:**
+
+| Método                                      | Tipo de Retorno | Visibilidad | Descripción                                                       |
+|---------------------------------------------|-----------------| ----------- |-------------------------------------------------------------------|
+| `Enrollment()`                              | `Constructor`   | `protected` | Constructor protegido para uso exclusivo del repositorio.         |
+| `Enrollment(CreateEnrollmentCommand)`       | `Constructor`   | `public`    | Constructor que instancia un `Enrollment` a partir de un command. |
+| `UpdateEnrollment(UpdateEnrollmentCommand)` | `Enrollment`    | `public`    | Actualiza la información de un `Enrollment` a partir de un command. |
+
+---
+2. **`AcademicPeriod` (Aggregate Root)**
+
+Representa un período académico dentro de una academia, incluyendo su nombre, duración y estado.
+
+**Atributos Principales:**
+
+| Atributo     | Tipo             | Visibilidad | Descripción                                                 |
+| ------------ | ---------------- | ----------- | ----------------------------------------------------------- |
+| `id`         | `Long`           | `private`   | Identificador único del período académico.                  |
+| `periodName` | `String`         | `private`   | Nombre del período académico (ej. "2025-I").                |
+| `duration`   | `PeriodDuration` | `private`   | Duración del período académico (fecha de inicio y fin).     |
+| `status`     | `PeriodStatus`   | `private`   | Estado actual del período académico (activo/inactivo).      |
+| `academyId`  | `AcademyId`      | `private`   | Identificador de la academia asociada al período académico. |
+
+**Métodos principales:**
+
+| Método                                             | Tipo de Retorno  | Visibilidad | Descripción                                                              |
+|----------------------------------------------------|------------------|------------|--------------------------------------------------------------------------|
+| `AcademicPeriod()`                                 | `Constructor`    | `protected` | Constructor protegido para uso por el repositorio.                       |
+| `AcademicPeriod(CreateAcademicPeriodCommand)`      | `Constructor`    | `public`   | Constructor que instancia un `Academic Period` a partir de un command.                    |
+| `UpdateAcademicPeriod(UpdateAcademicPeriodCommand)` | `AcademicPeriod` | `public`   | Actualiza la información de un `Academic Period` a partir de un command. |
+
+---
+3. **`Student` (Aggregate Root)**
+
+| Atributo      | Tipo          | Visibilidad | Descripción                                                    |
+| ------------- |---------------| ----------- | -------------------------------------------------------------- |
+| `id`          | `Long`        | `private`   | Identificador único del estudiante.                            |
+| `fullName`    | `FullName`    | `private`   | Nombre completo del estudiante.                                |
+| `dni`         | `Dni`         | `private`   | Documento Nacional de Identidad (DNI) del estudiante.          |
+| `sex`         | `Sex`         | `private`   | Sexo del estudiante.                                           |
+| `birthDate`   | `LocalDate`   | `private`   | Fecha de nacimiento del estudiante.                            |
+| `address`     | `String`       | `private`   | Dirección de domicilio del estudiante.                         |
+| `phoneNumber` | `PhoneNumber` | `private`   | Número de teléfono del estudiante.                             |
+| `email`       | `Email`       | `private`   | Correo electrónico del estudiante.                             |
+| `academyId`   | `AcademyId`   | `private`   | Identificador de la academia a la que pertenece el estudiante. |
+
+
+**Métodos principales:**
+
+| Método                                    | Tipo de Retorno | Visibilidad | Descripción                                                       |
+| ----------------------------------------- | --------------- | ----------- | ----------------------------------------------------------------- |
+| `Student()`                               | `Constructor`   | `protected` | Constructor protegido para uso exclusivo del repositorio.         |
+| `Student(CreateStudentCommand)`           | `Constructor`   | `public`    | Constructor que instancia un `Student` a partir de un command.    |
+| `updateInformation(UpdateStudentCommand)` | `Student`       | `public`    | Actualiza la información de un estudiante a partir de un command. |
+
+---
+
+4. **`EnrollmentStatus` (Value Object)**
+
+Representa el estado de una matrícula dentro del sistema académico.
+
+**Atributos principales:**
+
+| Atributo    | Tipo   | Visibilidad | Descripción                       |
+| ----------- | ------ | ----------- | --------------------------------- |
+| `ACTIVE`    | `Enum` | `public`    | La matrícula se encuentra activa. |
+| `CANCELLED` | `Enum` | `public`    | La matrícula ha sido cancelada.   |
+| `COMPLETED` | `Enum` | `public`    | La matrícula ha sido completada.  |
+
+**Métodos principales:**
+
+| Método          | Tipo de Retorno | Visibilidad | Descripción                                  |
+| --------------- | --------------- | ----------- | -------------------------------------------- |
+| `isActive()`    | `boolean`       | `public`    | Verifica si la matrícula está activa.        |
+| `isCancelled()` | `boolean`       | `public`    | Verifica si la matrícula ha sido cancelada.  |
+| `isCompleted()` | `boolean`       | `public`    | Verifica si la matrícula ha sido completada. |
+
+---
+
+5. **`PeriodDuration` (Value Object)**
+
+Representa la duración de un período académico mediante fechas de inicio y fin.
+
+**Atributos principales:**
+
+| Atributo    | Tipo        | Visibilidad | Descripción                        |
+| ----------- | ----------- | ----------- | ---------------------------------- |
+| `startDate` | `LocalDate` | `private`   | Fecha de inicio del período.       |
+| `endDate`   | `LocalDate` | `private`   | Fecha de finalización del período. |
+
+**Métodos principales:**
+
+| Método                | Tipo de Retorno | Visibilidad | Descripción                                                                 |
+| --------------------- | --------------- | ----------- | --------------------------------------------------------------------------- |
+| `isCurrentlyActive()` | `boolean`       | `public`    | Verifica si la fecha actual está dentro del rango de duración del período.  |
+| `getDurationInDays()` | `long`          | `public`    | Devuelve la cantidad de días entre la fecha de inicio y la de finalización. |
+
+---
+
+6. **`PeriodStatus` (Value Object)**
+
+Representa si un período académico se encuentra activo o inactivo.
+
+**Atributos principales:**
+
+| Atributo   | Tipo      | Visibilidad | Descripción                                   |
+| ---------- | --------- | ----------- | --------------------------------------------- |
+| `isActive` | `Boolean` | `private`   | Indica si el período está actualmente activo. |
+
+**Métodos principales:**
+
+| Método       | Tipo de Retorno | Visibilidad | Descripción                                          |
+| ------------ | --------------- | ----------- | ---------------------------------------------------- |
+| `active()`   | `PeriodStatus`  | `public`    | Crea un objeto con el período marcado como activo.   |
+| `inactive()` | `PeriodStatus`  | `public`    | Crea un objeto con el período marcado como inactivo. |
+| `isActive()` | `boolean`       | `public`    | Retorna `true` si el período se encuentra activo.    |
+
+---
+7. **`EnrollmentCommandService` (Domain Service)**
+
+Proporciona métodos para ejecutar comandos relacionados con la gestión de matrículas.
+
+**Métodos principales:**
+| Método                                    | Tipo de Retorno        | Visibilidad | Descripción                                                    |
+|-------------------------------------------|------------------------|------------|----------------------------------------------------------------|
+| `handle(CreateEnrollmentCommand command)` | `Long`   | `public`   | Crea una nueva matricula en la academica a partir de un command. |
+| `handle(DeleteEnrollmentCommand command)` | `void`                 | `public`   | Asigna una nueva boleta a una cuenta de facturación.           |
+| `handle(UpdateEnrollmentCommand command)` | `Optional<Enrollment>` | `public`   | Registra un pago en una cuenta de facturación.                 |
+
+---
+8. **`EnrollmentQueryService` (Domain Service)**
+
+Proporciona métodos para consultar información de matrículas.
+
+**Metodos principales:**
+
+| Método                                             | Tipo de Retorno        | Visibilidad | Descripción                                                       |
+| -------------------------------------------------- | ---------------------- | ----------- | ----------------------------------------------------------------- |
+| `handle(GetAllEnrollmentsByStudentIdQuery query)`  | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas asociadas a un estudiante (por ID).  |
+| `handle(GetAllEnrollmentsQuery query)`             | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas del sistema.                         |
+| `handle(GetEnrollmentByIdQuery query)`             | `Optional<Enrollment>` | `public`    | Obtiene una matrícula específica por su identificador.            |
+| `handle(GetAllEnrollmentsByStudentDniQuery query)` | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas asociadas a un estudiante (por DNI). |
+
+---
+9. **`AcademicPeriodCommandService` (Domain Service)**
+
+Proporciona métodos para ejecutar comandos relacionados con la gestión de períodos académicos.
+
+**Metodos principales:**
+
+| Método                                        | Tipo de Retorno            | Visibilidad | Descripción                                             |
+| --------------------------------------------- | -------------------------- | ----------- |---------------------------------------------------------|
+| `handle(CreateAcademicPeriodCommand command)` | `Long` | `public`    | Crea un nuevo período académico a partir de un command. |
+| `handle(DeleteAcademicPeriodCommand command)` | `void`                     | `public`    | Elimina un período académico existente.                 |
+| `handle(UpdateAcademicPeriodCommand command)` | `Optional<AcademicPeriod>` | `public`    | Actualiza los datos de un período académico existente.  |
+
+---
+10. **`AcademicPeriodQueryService` (Domain Service)**
+
+Proporciona métodos para consultar información de los períodos académicos.
+
+**Metodos principales:**
+
+| Método                                     | Tipo de Retorno            | Visibilidad | Descripción                                        |
+| ------------------------------------------ | -------------------------- | ----------- | -------------------------------------------------- |
+| `handle(GetAcademicPeriodByIdQuery query)` | `Optional<AcademicPeriod>` | `public`    | Obtiene un período académico por su identificador. |
+| `handle(GetAllAcademicPeriodsQuery query)` | `List<AcademicPeriod>`     | `public`    | Obtiene la lista completa de períodos académicos.  |
+
+---
+11. **`StudentCommandService` (Domain Service)**
+
+Proporciona métodos para ejecutar comandos relacionados con la gestión de estudiantes.
+
+**Métodos principales:**
+
+| Método                                 | Tipo de Retorno     | Visibilidad | Descripción                                          |
+| -------------------------------------- | ------------------- | ----------- |------------------------------------------------------|
+| `handle(CreateStudentCommand command)` | `Long` | `public`    | Crea un nuevo estudiante a partir de un command.     |
+| `handle(DeleteStudentCommand command)` | `void`              | `public`    | Elimina un estudiante existente.                     |
+| `handle(UpdateStudentCommand command)` | `Optional<Student>` | `public`    | Actualiza la información de un estudiante existente. |
+
+---
+12. **`StudentQueryService` (Domain Service)**
+
+Proporciona métodos para consultar información de estudiantes.
+
+**Métodos principales:**
+
+| Método                               | Tipo de Retorno     | Visibilidad | Descripción                                           |
+| ------------------------------------ | ------------------- | ----------- | ----------------------------------------------------- |
+| `handle(GetStudentByIdQuery query)`  | `Optional<Student>` | `public`    | Obtiene un estudiante por su identificador.           |
+| `handle(GetAllStudentsQuery query)`  | `List<Student>`     | `public`    | Obtiene la lista completa de estudiantes registrados. |
+| `handle(GetStudentByDniQuery query)` | `Optional<Student>` | `public`    | Obtiene un estudiante a partir de su DNI.             |
 
 #### 4.2.X.2. Interface Layer
 
@@ -335,7 +545,6 @@ Write here...
 #### 4.2.X.6.2. Bounded Context Database Design Diagram
 
 Write here...
-
 ## Conclusiones y Recomendaciones
 
 Write here...
