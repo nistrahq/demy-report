@@ -1590,11 +1590,11 @@ Además, se incluye el [código fuente del diagrama de clases del Domain Layer d
 
 #### 4.2.6.6.2. Bounded Context Database Design Diagram
 
-El diagrama de diseño de base de datos del contexto de Billing muestra la estructura de las tablas y sus relaciones en la base de datos relacional. Se detallan las tablas principales, sus columnas, tipos de datos y claves primarias/foráneas que permiten gestionar la información relacionada con las cuentas de facturación y boletas.
+El diagrama de diseño de base de datos del contexto de Institution muestra la estructura de las tablas y sus relaciones en la base de datos relacional. Se detallan las tablas principales, sus columnas, tipos de datos y claves primarias/foráneas que permiten gestionar la información relacionada con los docentes, administradores y profesores.
 
-![Diagrama de Diseño de Base de Datos del Contexto de Billing](./assets/diagrams/database/erd/out/billing-database-diagram.png)
+![Diagrama de Diseño de Base de Datos del Contexto de Institution](./assets/diagrams/database/erd/out/institution-database-diagram.png)
 
-Además, se incluye el [esquema SQL del diagrama de base de datos de Billing](./assets/diagrams/database/schema/src/billing-database-diagram-create.sql).
+Además, se incluye el [esquema SQL del diagrama de base de datos de Institution](./assets/diagrams/database/schema/src/institution-database-diagram-create.sql).
 
 ## Conclusiones y Recomendaciones
 
