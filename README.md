@@ -1861,11 +1861,484 @@ Maneja comandos relacionados con la gestión de roles.
 
 ---
 
-#### 2.6.2.2. Domain Layer
-#### 2.6.2.3. Domain Layer
-#### 2.6.2.4. Domain Layer
-#### 2.6.2.5. Domain Layer
-#### 2.6.2.6. Domain Layer
+#### 2.6.2.2. Interface Layer
+
+1. **`AuthenticationController` (REST Controller)**
+
+**Endpoints principales:**
+
+| Nombre del método | Ruta base típica                     | Método HTTP | Descripción                                   |
+|-------------------|--------------------------------------|-------------|-----------------------------------------------|
+| `signIn`          | `/api/v1/authentication/sign-in`     | `POST`      | Autentica con credenciales y retorna sesión.  |
+| `signUp`          | `/api/v1/authentication/sign-up`     | `POST`      | Registra un nuevo usuario.                    |
+| `verify`          | `/api/v1/authentication/verify`      | `POST`      | Verifica al usuario con el código enviado.    |
+| `resendCode`      | `/api/v1/authentication/resend-code` | `POST`      | Reenvía el código de verificación al correo.  |
+
+2. **`Resources` (Resources)**
+
+| Resource                         | Atributos principales                                                       | Descripción                                   |
+| -------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------- |
+| `AuthenticatedUserResource`      | `id: Long`, `emailAddress: String`, `token: String`                         | Respuesta de autenticación (sign-in).         |
+| `ResendVerificationCodeResource` | `email: String`                                                             | Solicita reenviar el código de verificación.  |
+| `RoleResource`                   | `id: Long`, `name: String`                                                  | Representación de un rol.                     |
+| `SignInResource`                 | `emailAddress: String`, `password: String`                                  | Credenciales para iniciar sesión.             |
+| `SignUpResource`                 | `emailAddress: String`, `password: String`, `roles: List<String>`           | Datos para registrar usuario (incluye roles). |
+| `UserResource`                   | `id: Long`, `emailAddress: String`, `roles: List<String>`, `tenantId: Long` | Usuario expuesto por la API.                  |
+| `VerifyUserResource`             | `email: String`, `code: String`                                             | Verificación de usuario por código.           |
+
+3. **`Transform` (Assemblers)**
+
+| Assembler                                            | Entrada                          | Salida                          | Descripción                                                      |
+| ---------------------------------------------------- | -------------------------------- | ------------------------------- | ---------------------------------------------------------------- |
+| `AuthenticatedUserResourceFromEntityAssembler`       | `User`, `token: String`          | `AuthenticatedUserResource`     | Mapea user y token a recurso de autenticación.                   |
+| `ResendVerificationCodeCommandFromResourceAssembler` | `ResendVerificationCodeResource` | `ResendVerificationCodeCommand` | Convierte el DTO de reenvío en comando.                          |
+| `RoleResourceFromEntityAssembler`                    | `Role`                           | `RoleResource`                  | Expone el rol como recurso.                                      |
+| `SignInCommandFromResourceAssembler`                 | `SignInResource`                 | `SignInCommand`                 | Construye comando de inicio de sesión (crea `EmailAddress` VO).  |
+| `SignUpCommandFromResourceAssembler`                 | `SignUpResource`                 | `SignUpCommand`                 | Construye comando de registro (mapea `roles` `String` `Role`). |
+| `UserResourceFromEntityAssembler`                    | `User`                           | `UserResource`                  | Expone usuario con `roles` y `tenantId`.                         |
+| `VerifyUserCommandFromResourceAssembler`             | `VerifyUserResource`             | `VerifyUserCommand`             | Construye comando de verificación por código.                    |
+
+---
+
+#### 2.6.2.3. Application Layer
+
+1. **`IamContextFacadeImpl` (ACL Facade)**
+Implementación de la fachada hacia otros bounded contexts para obtener datos del contexto IAM.
+
+**Atributos principales:**
+
+| Atributo            | Tipo              | Visibilidad | Descripción                                       |
+|---------------------|-------------------|-------------|---------------------------------------------------|
+| `userQueryService`  | `UserQueryService`| `private`   | Servicio de consultas del dominio IAM.            |
+
+**Métodos principales:**
+
+| Método                              | Tipo de Retorno | Visibilidad | Descripción                                                     |
+|-------------------------------------|------------------|-------------|-----------------------------------------------------------------|
+| `fetchAuthenticatedUserTenantId()`  | `Long`           | `public`    | Retorna el `tenantId` actual (0 si no existe en el contexto).   |
+
+---
+
+2. **`RoleCommandServiceImpl` (Command Service Implementation)**.
+
+**Atributos principales:**
+
+| Atributo          | Tipo            | Visibilidad | Descripción                                   |
+|-------------------|-----------------|-------------|-----------------------------------------------|
+| `roleRepository`  | `RoleRepository`| `private`   | Acceso a persistencia de roles.               |
+
+**Métodos principales:**
+
+| Método                      | Tipo de Retorno | Visibilidad | Descripción                                             |
+|----------------------------|------------------|-------------|---------------------------------------------------------|
+| `handle(SeedRolesCommand)` | `void`           | `public`    | Crea roles del enum `Roles` si no existen.              |
+
+---
+
+3. **`UserCommandServiceImpl` (Command Service Implementation)**
+Gestión de registro, autenticación, verificación y asociación de tenant.
+
+**Atributos principales:**
+
+| Atributo               | Tipo              | Visibilidad | Descripción                              |
+|------------------------|-------------------|-------------|------------------------------------------|
+| `userRepository`       | `UserRepository`  | `private`   | Persistencia de usuarios.                 |
+| `hashingService`       | `HashingService`  | `private`   | Hashing y verificación de contraseñas.    |
+| `tokenService`         | `TokenService`    | `private`   | Emisión de tokens de autenticación.       |
+| `verificationService`  | `VerificationService` | `private`| Generación y validación de códigos.       |
+| `roleRepository`       | `RoleRepository`  | `private`   | Resolución de roles por nombre.           |
+
+**Métodos principales:**
+
+| Método                                 | Tipo de Retorno                              | Visibilidad | Descripción                                                                          |
+|----------------------------------------|-----------------------------------------------|-------------|--------------------------------------------------------------------------------------|
+| `handle(SignInCommand)`                | `Optional<ImmutablePair<User,String>>`        | `public`    | Autentica: valida credenciales, genera token y retorna `(user, token)`.             |
+| `handle(SignUpCommand)`                | `Optional<User>`                               | `public`    | Registra usuario, asigna roles, genera y publica código de verificación.            |
+| `handle(VerifyUserCommand)`            | `boolean`                                      | `public`    | Verifica usuario por código y activa la cuenta.                                      |
+| `handle(ResendVerificationCodeCommand)`| `boolean`                                      | `public`    | Reenvía código de verificación si aún no está verificado.                            |
+| `handle(AssignUserTenantId)`           | `void`                                         | `public`    | Asocia un `tenantId` al usuario indicado.                                            |
+
+---
+
+4. **`UserQueryServiceImpl` (Query Service Implementation)**
+Obtiene datos del contexto del usuario autenticado.
+
+**Atributos principales:**
+
+| Atributo            | Tipo             | Visibilidad | Descripción                          |
+|---------------------|------------------|-------------|--------------------------------------|
+| `userRepository`    | `UserRepository` | `private`   | (No usado en el método mostrado).     |
+| `identityService`   | `IdentityService`| `private`   | Proveedor de identidad actual.        |
+
+**Métodos principales:**
+
+| Método                                   | Tipo de Retorno        | Visibilidad | Descripción                                          |
+|------------------------------------------|------------------------|-------------|------------------------------------------------------|
+| `handle(GetAuthenticatedUserTenantIdQuery)` | `Optional<TenantId>` | `public`    | Retorna el `TenantId` del contexto de identidad.     |
+
+---
+
+5. **`AdministratorRegisteredEventHandler` (Domain Event Handler)**
+Sincroniza tenant en IAM cuando se registra un administrador en Institution.
+
+**Atributos principales:**
+
+| Atributo               | Tipo                 | Visibilidad | TheDescripción                         |
+|------------------------|----------------------|-------------|-----------------------------------------|
+| `userCommandService`   | `UserCommandService` | `private`   | Envía comando para asociar tenant.      |
+
+**Métodos principales:**
+
+| Método                                      | Tipo de Retorno | Visibilidad | Descripción                                                           |
+|---------------------------------------------|------------------|-------------|-----------------------------------------------------------------------|
+| `on(AdministratorRegisteredEvent)`          | `void`           | `public`    | Asigna `tenantId` al usuario usando `AssignUserTenantId`.             |
+
+---
+
+6. **`ApplicationReadyEventHandler` (Framework Event Handler)**
+
+**Atributos principales:**
+
+| Atributo               | Tipo                 | Visibilidad | Descripción                       |
+|------------------------|----------------------|-------------|-----------------------------------|
+| `roleCommandService`   | `RoleCommandService` | `private`   | Orquesta la siembra de roles.     |
+
+**Métodos principales:**
+
+| Método                               | Tipo de Retorno | Visibilidad | Descripción                                  |
+|--------------------------------------|------------------|-------------|----------------------------------------------|
+| `on(ApplicationReadyEvent)`          | `void`           | `public`    | Ejecuta `SeedRolesCommand` al arrancar.      |
+
+---
+
+7. **`UserVerificationCodeAssignedEventHandler` (Domain Event Handler)**
+Envía el correo con el código de verificación.
+
+**Atributos principales:**
+
+| Atributo        | Tipo          | Visibilidad | Descripción                             |
+|-----------------|---------------|-------------|-----------------------------------------|
+| `emailService`  | `EmailService`| `private`   | Servicio para envío de correos.         |
+
+**Métodos principales:**
+
+| Método                                      | Tipo de Retorno | Visibilidad | Descripción                                            |
+|---------------------------------------------|------------------|-------------|--------------------------------------------------------|
+| `handle(UserVerificationCodeAssignedEvent)` | `void`           | `public`    | Envía email con código y expiración (ejecución `@Async`). |
+
+---
+
+8. **`EmailService` (Outbound Service Port)**
+Interfaz para envío de correos.
+
+**Métodos principales:**
+
+| Método                                      | Tipo de Retorno | Visibilidad | Descripción                                      |
+|---------------------------------------------|------------------|-------------|--------------------------------------------------|
+| `sendVerificationEmail(String, String, int)`| `void`           | `public`    | Envía correo de verificación.                    |
+| `sendPasswordResetEmail(String, String)`    | `void`           | `public`    | Envía correo de restablecimiento de contraseña.  |
+
+---
+
+9. **`HashingService` (Outbound Service Port)**
+Interfaz para hashing de contraseñas.
+
+**Métodos principales:**
+
+| Método                                      | Tipo de Retorno | Visibilidad | Descripción                                   |
+|---------------------------------------------|------------------|-------------|-----------------------------------------------|
+| `encode(CharSequence)`                      | `String`         | `public`    | Genera hash de la contraseña.                 |
+| `matches(CharSequence, String)`             | `boolean`        | `public`    | Verifica contraseña cruda contra hash.        |
+
+---
+
+10. **`IdentityService` (Outbound Service Port)**
+Interfaz para obtener roles del contexto actual.
+
+**Métodos principales:**
+
+| Método                 | Tipo de Retorno          | Visibilidad | Descripción                           |
+|------------------------|--------------------------|-------------|---------------------------------------|
+| `getUserId()`          | `Optional<Long>`         | `public`    | ID del usuario autenticado.           |
+| `getUsername()`        | `Optional<String>`       | `public`    | Username del contexto.                |
+| `getRoles()`           | `Set<String>`            | `public`    | Roles del contexto.                   |
+| `getTenantId()`        | `Optional<Long>`         | `public`    | Tenant actual.                        |
+| `isServiceAccount()`   | `boolean`                | `public`    | Indica si es cuenta de servicio.      |
+
+---
+
+11. **`TokenService` (Outbound Service Port)**
+Interfaz para emisión y validación de tokens.
+
+**Métodos principales:**
+
+| Método                        | Tipo de Retorno | Visibilidad | Descripción                              |
+|-------------------------------|------------------|-------------|------------------------------------------|
+| `generateToken(String)`       | `String`         | `public`    | Genera token a partir del username.      |
+| `getUsernameFromToken(String)`| `String`         | `public`    | Extrae username del token.               |
+| `getUserIdFromToken(String)`  | `Long`           | `public`    | Extrae userId del token.                 |
+| `getTenantIdFromToken(String)`| `Long`           | `public`    | Extrae tenantId del token.               |
+| `validateToken(String)`       | `boolean`        | `public`    | Valida integridad/expiración del token.  |
+
+---
+
+12. **`VerificationService` (Outbound Service Port)**
+Interfaz para generación de códigos de verificación.
+
+**Métodos principales:**
+
+| Método                                                     | Tipo de Retorno | Visibilidad | Descripción                                      |
+|------------------------------------------------------------|------------------|-------------|--------------------------------------------------|
+| `generateCode()`                                           | `String`         | `public`    | Genera un código por defecto.                    |
+| `generateCode(int length)`                                 | `String`         | `public`    | Genera un código con longitud indicada.          |
+| `generateExpirationMinutes()`                              | `Integer`        | `public`    | Define minutos de expiración.                    |
+| `verifyCode(String code, String expected, LocalDateTime)`  | `boolean`        | `public`    | Verifica coincidencia y vigencia del código.     |
+
+---
+#### 2.6.2.4. Infrastructure Layer
+
+1. **`RoleRepository` (Repository Interface)**  
+Interfaz de acceso a datos para roles (Spring Data JPA).
+
+**Métodos principales:**
+
+| Método                         | Tipo de Retorno            | Visibilidad | Descripción                                       |
+|--------------------------------|----------------------------|-------------|---------------------------------------------------|
+| `findById(Long id)`            | `Optional<Role>`           | `public`    | Busca un rol por su identificador.               |
+| `save(Role role)`              | `Role`                     | `public`    | Persiste o actualiza un rol.                     |
+| `findByName(Roles name)`       | `Optional<Role>`           | `public`    | Obtiene un rol por su enum `Roles`.              |
+| `existsByName(Roles name)`     | `boolean`                  | `public`    | Verifica existencia por nombre de rol.           |
+
+---
+
+2. **`UserRepository` (Repository Interface)**  
+Interfaz de acceso a datos para usuarios (Spring Data JPA).
+
+**Métodos principales:**
+
+| Método                                   | Tipo de Retorno          | Visibilidad | Descripción                                            |
+|------------------------------------------|---------------------------|-------------|--------------------------------------------------------|
+| `findById(Long id)`                       | `Optional<User>`         | `public`    | Busca un usuario por su identificador.                 |
+| `save(User user)`                         | `User`                   | `public`    | Persiste o actualiza un usuario.                       |
+| `findByEmailAddress(EmailAddress email)`  | `Optional<User>`         | `public`    | Obtiene un usuario por su `EmailAddress`.              |
+| `existsByEmailAddress(EmailAddress email)`| `boolean`                | `public`    | Verifica existencia por correo.                        |
+
+---
+
+3. **`WebSecurityConfiguration` (Security Config)**  
+Configuración Spring Security (stateless, JWT, CORS).
+
+**Métodos/Beans principales:**
+
+| Método/Bean                         | Tipo de Retorno                 | Visibilidad | Descripción                                                                                      |
+|-------------------------------------|----------------------------------|-------------|--------------------------------------------------------------------------------------------------|
+| `authorizationRequestFilter()`      | `BearerAuthorizationRequestFilter` | `public`  | Filtro que extrae, valida JWT y autentica en el contexto.                                        |
+| `authenticationManager(config)`     | `AuthenticationManager`          | `public`    | Expone el `AuthenticationManager`.                                                               |
+| `authenticationProvider()`          | `DaoAuthenticationProvider`      | `public`    | Provider con `UserDetailsService` y `PasswordEncoder (BCrypt)`.                                  |
+| `passwordEncoder()`                 | `PasswordEncoder`                | `public`    | Usa `BCryptHashingService` como encoder.                                                         |
+| `filterChain(HttpSecurity http)`    | `SecurityFilterChain`            | `public`    | CORS, CSRF off, 401 handler, stateless, `permitAll` a `/api/v1/authentication/**` y Swagger, etc.|
+
+---
+
+4. **`BearerAuthorizationRequestFilter` (Security Filter)**  
+Filtro JWT que autentica peticiones con token Bearer.
+
+**Métodos principales:**
+
+| Método                                              | Tipo de Retorno | Visibilidad | TheDescripción                                                             |
+|-----------------------------------------------------|------------------|-------------|----------------------------------------------------------------------------|
+| `doFilterInternal(request, response, chain)`        | `void`           | `protected` | Extrae token, valida, carga `UserDetails` y establece la autenticación.    |
+
+---
+
+5. **`UnauthorizedRequestHandlerEntryPoint` (Auth EntryPoint)**  
+Maneja respuestas 401 no autorizadas.
+
+**Métodos principales:**
+
+| Método                                                          | Tipo de Retorno | Visibilidad | Descripción                           |
+|-----------------------------------------------------------------|------------------|-------------|---------------------------------------|
+| `commence(request, response, authException)`                    | `void`           | `public`    | Responde con `401 Unauthorized`.      |
+
+---
+
+6. **`UserDetailsServiceImpl` (UserDetailsService)**  
+Carga usuarios para Spring Security desde `UserRepository`.
+
+**Métodos principales:**
+
+| Método                             | Tipo de Retorno | Visibilidad | Descripción                                      |
+|------------------------------------|------------------|-------------|--------------------------------------------------|
+| `loadUserByUsername(String user)`  | `UserDetails`    | `public`    | Carga usuario por email (username).              |
+
+---
+
+7. **`UserDetailsImpl` (Security Model)**  
+Adaptador con authorities y tenant.
+
+**Métodos principales:**
+
+| Método                              | Tipo de Retorno     | Visibilidad | Descripción                                         |
+|-------------------------------------|----------------------|-------------|-----------------------------------------------------|
+| `build(User user)`                  | `UserDetailsImpl`    | `public`    | Construye desde entidad `User` (roles → authorities). |
+
+---
+
+8. **`UsernamePasswordAuthenticationTokenBuilder` (Helper)**  
+Crea `UsernamePasswordAuthenticationToken` con detalles de request.
+
+**Métodos principales:**
+
+| Método                                                   | Tipo de Retorno                         | Visibilidad | Descripción                                         |
+|----------------------------------------------------------|------------------------------------------|-------------|-----------------------------------------------------|
+| `build(UserDetails principal, HttpServletRequest req)`   | `UsernamePasswordAuthenticationToken`    | `public`    | Genera el token de autenticación con detalles web.  |
+
+---
+
+9. **`TokenServiceImpl` (JWT Service)**  
+Servicio JWT basado en JJWT (HS key, expiración configurable).
+
+**Métodos principales:**
+
+| Método                                   | Tipo de Retorno | Visibilidad | Descripción                                            |
+|------------------------------------------|------------------|-------------|--------------------------------------------------------|
+| `generateToken(Authentication auth)`     | `String`         | `public`    | Genera JWT desde `Authentication`.                    |
+| `generateToken(String username)`         | `String`         | `public`    | Genera JWT desde username.                            |
+| `getUsernameFromToken(String token)`     | `String`         | `public`    | Extrae `sub` (username).                               |
+| `getUserIdFromToken(String token)`       | `Long`           | `public`    | Extrae claim `userId` (si existe).                     |
+| `getTenantIdFromToken(String token)`     | `Long`           | `public`    | Extrae claim `tenantId` (si existe).                   |
+| `validateToken(String token)`            | `boolean`        | `public`    | Valida firma/fecha/estructura del JWT.                 |
+| `getBearerTokenFrom(HttpServletRequest)` | `String`         | `public`    | Obtiene el token del header `Authorization`.           |
+
+---
+
+10. **`BearerTokenService` (Interface)**  
+Contrato para manejo de JWT Bearer (extiende `TokenService`).
+
+**Métodos principales:**
+
+| Método                                   | Tipo de Retorno | Visibilidad | Descripción                         |
+|------------------------------------------|------------------|-------------|-------------------------------------|
+| `getBearerTokenFrom(HttpServletRequest)` | `String`         | `public`    | Extrae token Bearer del request.    |
+| `generateToken(Authentication auth)`     | `String`         | `public`    | Genera token desde `Authentication`.|
+
+---
+
+11. **`HashingServiceImpl` (BCrypt Service)**  
+Implementación de hashing de contraseñas con `BCryptPasswordEncoder`.
+
+**Métodos principales:**
+
+| Método                                   | Tipo de Retorno | Visibilidad | Descripción                          |
+|------------------------------------------|------------------|-------------|--------------------------------------|
+| `encode(CharSequence rawPassword)`       | `String`         | `public`    | Genera hash con BCrypt.              |
+| `matches(CharSequence raw, String enc)`  | `boolean`        | `public`    | Compara texto plano vs hash BCrypt.  |
+
+---
+
+12. **`BCryptHashingService` (Interface)**  
+Contrato que combina `HashingService` y `PasswordEncoder`.
+
+**Métodos principales:**
+
+| Método                                   | Tipo de Retorno | Visibilidad | Descripción                               |
+|------------------------------------------|------------------|-------------|-------------------------------------------|
+| `encode(CharSequence rawPassword)`       | `String`         | `public`    | Hash de contraseña.                       |
+| `matches(CharSequence raw, String enc)`  | `boolean`        | `public`    | Verificación de contraseña.               |
+
+---
+
+13. **`VerificationServiceImpl` (Verification Service)**
+
+Generación y validación de códigos con configuración externa.
+
+**Métodos principales:**
+
+| Método                                                      | Tipo de Retorno | Visibilidad | Descripción                                         |
+|-------------------------------------------------------------|------------------|-------------|-----------------------------------------------------|
+| `generateCode()`                                            | `String`         | `public`    | Genera código con longitud por defecto.             |
+| `generateCode(int length)`                                  | `String`         | `public`    | Genera código con longitud indicada.                |
+| `generateExpirationMinutes()`                               | `Integer`        | `public`    | Minutos de expiración configurados.                 |
+| `verifyCode(String code, String expected, LocalDateTime)`   | `boolean`        | `public`    | Verifica coincidencia y vigencia del código.        |
+
+---
+
+14. **`VerificationProperties` (Configuration Properties)**  
+Propiedades externas para OTP (prefijo `app.verification`).
+
+**Campos principales:**
+
+| Campo                | Tipo      | Visibilidad | Descripción                        |
+|----------------------|-----------|-------------|------------------------------------|
+| `expirationMinutes`  | `Integer` | `private`   | Minutos de expiración por defecto. |
+| `codeLength`         | `Integer` | `private`   | Longitud del código OTP.           |
+
+---
+
+15. **`UserNotificationEmailService` (Interface)**  
+Adaptador de salida para notificaciones por email (extiende `EmailService`).
+
+**Métodos principales:**
+
+| Método                                          | Tipo de Retorno | Visibilidad | Descripción                                |
+|-------------------------------------------------|------------------|-------------|--------------------------------------------|
+| `sendVerificationEmail(String to, String code, int exp)` | `void` | `public`    | Envía email con código de verificación.     |
+| `sendPasswordResetEmail(String to, String link)`         | `void` | `public`    | Envía email con enlace de reseteo.          |
+
+---
+
+16. **`NotificationEmailServiceImpl` (Email Adapter)**  
+Implementación que usa `TemplatedEmailService` para emails.
+
+**Métodos principales:**
+
+| Método                                          | Tipo de Retorno | Visibilidad | Descripción                                           |
+|-------------------------------------------------|------------------|-------------|-------------------------------------------------------|
+| `sendVerificationEmail(String to, String code, int exp)` | `void` | `public`    | Envía correo de verificación con plantilla.           |
+| `sendPasswordResetEmail(String to, String link)`         | `void` | `public`    | Envía correo de reseteo con plantilla.                |
+
+---
+
+17. **`CurrentUserProviderImpl` (Identity Adapter)**  
+Proveedor de identidad actual basado en Spring Security (`SecurityContextHolder`).
+
+**Métodos principales:**
+
+| Método            | Tipo de Retorno      | Visibilidad | Descripción                                  |
+|-------------------|----------------------|-------------|----------------------------------------------|
+| `getUserId()`     | `Optional<Long>`     | `public`    | Retorna el ID del usuario autenticado.       |
+| `getUsername()`   | `Optional<String>`   | `public`    | Retorna el username (email).                 |
+| `getRoles()`      | `Set<String>`        | `public`    | Retorna los authorities del contexto.        |
+| `getTenantId()`   | `Optional<Long>`     | `public`    | Retorna el tenant actual (si existe).        |
+| `isServiceAccount()` | `boolean`         | `public`    | Indica si es una cuenta de servicio.         |
+
+---
+
+18. **`SpringSecurityCurrentUserProvider` (Interface)**  
+Contrato que extiende `IdentityService` para exponer identidad vía Spring Security.
+
+**Métodos principales:** *(hereda de `IdentityService`)*
+
+| Método          | Tipo de Retorno      | Descripción                          |
+|-----------------|----------------------|--------------------------------------|
+| `getUserId()`   | `Optional<Long>`     | ID del usuario autenticado.          |
+| `getUsername()` | `Optional<String>`   | Username del contexto.               |
+| `getRoles()`    | `Set<String>`        | Roles/autorizaciones actuales.       |
+| `getTenantId()` | `Optional<Long>`     | Tenant actual (si existe).           |
+| `isServiceAccount()` | `boolean`       | Indica cuenta de servicio.           |
+
+#### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presentan los diagramas de nivel componente que ilustran la arquitectura de software del contexto de IAM. Se muestra la interacción entre los diferentes componentes, servicios y capas que conforman este bounded context. Se integra con la base de datos relacional definida en el diagrama de contenedores.
+
+![Diagrama de Componentes del Contexto de IAM](./assets/diagrams/software-architecture/components/out/IAM-component-level-diagram.png)
+
+Además, se incluye el [código fuente del diagrama de componentes de IAM](./assets/diagrams/software-architecture/components/src/IAM-component-level-diagram.dsl).
+
+#### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de IAM. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
+
 #### 2.6.2.6.1 Bounded Context Domain Layer Class Diagrams
 
 El diagrama de clases del Domain Layer del contexto de IAM ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
