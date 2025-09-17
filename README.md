@@ -57,14 +57,85 @@
 
 # Registro de Versiones del Informe
 
-|Versión | Fecha        | Autor           | Descripción de modificación                     |
-|--------|--------------|-----------------|-------------------------------------------------|
-| 1.0    | 30/08/2025   | Salim Ramirez   | Creación inicial de la estructura del informe   |
+| Versión | Fecha        | Autor                                                                                   | Descripción de modificación                                                          |
+|---------|--------------|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| 1.0     | 30/08/2025   | Salim Ramirez                                                                           | Creación inicial de la estructura del informe                                        |
+| 2.0     | 06/09/2025   | Andrea Aponte <br> Daniel Crispin  <br> Salim Ramirez <br> Paúl Sulca <br> Diego Vilca  | Se completó el Capítulo I: Presentación                                              |
+| 3.0     | 17/09/2025   | Andrea Aponte <br> Daniel Crispin  <br> Salim Ramirez <br> Paúl Sulca <br> Diego Vilca  | Se completó el Capitulo II: : Requirements Development and Software Solution Design  |
+
 
 
 # Project Report Collaboration Insights
 
+Enlace para acceder al repositorio para el reporte del proyecto. [Ver en Github](https://github.com/nistrahq/demy-report)
 
+**TB1**
+Para el desarrollo del TB1 cada participante del equipo realizo las siguientes tareas
+
+| Integrantes                      | Tarea asignada                                                                                                                                                                                                                                                                 |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Aponte Cruzado, Andrea Marielena | - Diseño de entrevistas <br> - Registro de entrevistas <br> - Análisis de Entrevistas <br> - User personas <br> - User Task Matrix <br> - User Journey Mapping <br> - Empathy Mapping   <br> - Domain Message Flow  Modeling <br> - Tactical Level DDD for Institution Context |
+| Crispin Ramos, Daniel Franco     | - Startup Profile <br> - Solution Profile <br> - Segmentos objetivo <br> - Competidores <br> - Ubiquitous Language <br> - Impact mapping  <br> -  Context Mapping <br> - Tactical Level DDD for Scheduling Context                                                             |
+| Ramirez Mestanza, Salim Ignacio  | - User stories <br> - Product Backlog <br> - Event Storming documentation <br> - Candidate Context Discovery <br> - Tactical Level DDD for Billing Context and Accounting Context                                                                                              |
+| Sulca Gonzales, Paúl Fernando    | - Software Architecture Context Diagram <br> - Software Architecture Container Diagrams <br> - Software Architecture Deployments Diagrams <br> - Tactical Level DDD for Enrollment Context                                                                                     |
+| Vilca Saboya, Diego Alejandro    | - Registro de versiones del informe <br> - Project Report Collaboration Insights <br> - Student Outcome documentation <br> - Objetivos Smart documentation <br> - Bounded Context Canvases <br> - Tactical Level DD for Attendance Context                                     |                                                  
+
+**GitHub Collaboration Insights**
+En GitHub se presenta un timeline de las principales ramas creadas por cada integrante del equipo, así como los procesos de merge realizados.  
+Todas las ramas fueron gestionadas siguiendo el flujo de trabajo **GitFlow**, adaptado para una organización que utiliza un sistema de control de versiones.  
+
+Los integrantes son:
+
+| Integrantes                      | Nombre en GitHub |
+|----------------------------------|------------------|
+| Aponte Cruzado, Andrea Marielena | iconicmiau       |
+| Crispin Ramos, Daniel Franco     | danielcr04       |
+| Ramirez Mestanza, Salim Ignacio  | salimramirez     |
+| Sulca Gonzales, Paúl Fernando    | Kyrubi           |
+| Vilca Saboya, Diego Alejandro    | diesoks          |
+
+Las principales ramas del repositorio son las siguientes:
+
+- **main:** Rama principal que contiene la versión estable y consolidada del documento.
+- **develop:** Rama de integración utilizada para fusionar los cambios realizados en las ramas de características.
+- **feature/tbX-daniel:** Rama utilizada por Daniel para el desarrollo de las tareas correspondientes para una determinada entrega.
+- **feature/tbX-diego:** Rama utilizada por Diego para el desarrollo de las tareas correspondientes para una determinada entrega.
+- **feature/tbX-paul:** Rama utilizada por Paul para el desarrollo de las tareas correspondientes para una determinada entrega.
+- **feature/tbX-andrea:** Rama utilizada por Andrea para el desarrollo de las tareas correspondientes para una determinada entrega.
+- **feature/tbX-salim:** Rama utilizada por Salim para el desarrollo de las tareas correspondientes para una determinada entrega.
+- **release/vX.X.X:** Rama creada para preparar versiones candidatas al reporte final, siguiendo *Semantic Versioning 2.0.0*. En esta rama se realizan ajustes finales como correcciones menores y revisiones antes de integrarla a `main`.
+- **hotfix/urgent-fix:** Rama utilizada para aplicar correcciones críticas directamente sobre `main`, asegurando la estabilidad de la versión publicada.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+**TB1**
+
+Gráfico de red (*network graph*) de ramas en el repositorio de GitHub.
+
+![Insights - Network Graph](./assets/images/insights-network-graph.png)
+
+</div>
+
+A continuación, se presentan los gráficos que muestran el análisis de los commits en el repositorio correspondiente al informe.  
+Estos gráficos detallan la cantidad de líneas de código añadidas por cada miembro del equipo y la actividad de commits registrada.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Análisis de líneas de código añadidas por contribuyente.
+
+![Insights - Contributors](./assets/images/insights-contributors.png)
+
+</div>
+
+El siguiente gráfico muestra la cantidad de commits realizados en la semana con mayor actividad en el proyecto.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Análisis de cantidad de commits realizados por semana.
+
+![Insights - Commits](./assets/images/insights-commits.png)
+
+</div>
 
 # Contenido
 
@@ -133,10 +204,10 @@
 # Student Outcome
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7
 
-| Criterio específico                                                                                                                                              | Acciones realizadas                                                                                                                                                                                                                      | Conclusiones |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Actualiza conceptos y<br> conocimientos necesarios <br> para su desarrollo<br> profesional y en especial <br> para su proyecto en <br> soluciones de software.   | Aponte Cruzado, Andrea Marielena <br> *TB1* <br>  Crispin Ramos, Daniel Franco <br> *TB1* <br> Ramirez Mestanza, Salim Ignacio <br> *TB1* <br> Sulca Gonzales, Paúl Fernando <br> *TB1* <br>  Vilca Saboya, Diego Alejandro <br> *TB1*   |              |
-| Reconoce la necesidad del <br> aprendizaje permamente <br> para el desempeño <br> profesional y el desarrollo de <br> proyectos en soluciones de <br> software.  | Aponte Cruzado, Andrea Marielena <br> *TB1* <br>  Crispin Ramos, Daniel Franco <br> *TB1* <br> Ramirez Mestanza, Salim Ignacio <br> *TB1* <br> Sulca Gonzales, Paúl Fernando <br> *TB1* <br>  Vilca Saboya, Diego Alejandro <br> *TB1*   |              |              
+| Criterio específico                                                                                                                                             | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Conclusiones                                                                                                                                                                                                                                |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Actualiza conceptos y<br> conocimientos necesarios <br> para su desarrollo<br> profesional y en especial <br> para su proyecto en <br> soluciones de software.  | Aponte Cruzado, Andrea Marielena <br> *TB1*:Agregue artefactos UX <br> del nuevo segmento objetivo <br>  Crispin Ramos, Daniel Franco <br> *TB1*: Investigué los nuevos posibles competidores <br> de la aplicación en un ecosistema móvil  <br> Ramirez Mestanza, Salim Ignacio <br> *TB1*: Actualizé user stories <br> Sulca Gonzales, Paúl Fernando <br> *TB1*: Actualizé la arquitectura del software <br> en base al nuevo entorno móvil <br>  Vilca Saboya, Diego Alejandro <br> *TB1*: Actualizé mis conocimientos sobre la <br> parte táctica de DDD | Creemos que hemos logrado un buen desempeño en este aspecto, <br> ya que tuvimos que actualizar en algunos aspectos una <br> idea que utilizamos en un curso previo de desarrollo web.                                                      |
+| Reconoce la necesidad del <br> aprendizaje permamente <br> para el desempeño <br> profesional y el desarrollo de <br> proyectos en soluciones de <br> software. | Aponte Cruzado, Andrea Marielena <br> *TB1*:Agregue artefactos UX <br> del nuevo segmento objetivo <br>  Crispin Ramos, Daniel Franco <br> *TB1*: Investigué los nuevos posibles competidores <br> de la aplicación en un ecosistema móvil  <br> Ramirez Mestanza, Salim Ignacio <br> *TB1*: Actualizé user stories <br> Sulca Gonzales, Paúl Fernando <br> *TB1*: Actualizé la arquitectura del software <br> en base al nuevo entorno móvil <br>  Vilca Saboya, Diego Alejandro <br> *TB1*: Actualizé mis conocimientos sobre la <br> parte táctica de DDD | Consideramos que logramos cumplir este aspecto, ya que reconocemos la <br> necesidad de tener un aprendizaje permanente sobre nuevos entornos,<br> en este caso móvil, para reestructurar o actualizar<br> ideas de soluciones de software. |              
 
 # Objetivos SMART
 A continuación, cada integrante del equipo presenta sus objetivos SMART, enfocados en su desarrollo profesional luego de culminar la carrera universitaria.
