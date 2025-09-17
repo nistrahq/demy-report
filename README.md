@@ -456,7 +456,7 @@ Representa la asistencia de un solo estudiante.
 | `id`         | `Long`       | `private`   | Identificador único de una asistencia de un estudiante | 
 | `studentId`  | `StudentId`  | `private`   | Identificador único de un estudiante.                  |
 
-*Métodos principales:**
+**Métodos principales:**
 
 | Método                                     | Tipo de retorno | Visibilidad | Descripción                                      |
 |--------------------------------------------|-----------------|-------------|--------------------------------------------------|
