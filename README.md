@@ -277,16 +277,17 @@ Para diseñar las entrevistas, se elaboraron dos bloques de preguntas, diferenci
 **Segmento 3: Alumnos de academias**
 
 **Preguntas sobre la problemática**
-1.¿Qué medio utilizas para consultar tu horario de academia? ¿Usas algún dispositivo digital?
-2.¿Cuando te matriculas, ¿cómo te entregan o muestran tu horario?
-3.¿Que tipo de informacion te gustaria ver en tu horario de clase?
-4.¿Qué haces o cómo te organizas cuando la academia cambia de aula o reprograma alguna clase?
+1. ¿Qué medio utilizas para consultar tu horario de academia? ¿Usas algún dispositivo digital?
+2. ¿Cuando te matriculas, ¿cómo te entregan o muestran tu horario?
+3. ¿Qué tipo de información te gustaría ver en tu horario de clase?
+4. ¿Qué haces o cómo te organizas cuando la academia cambia de aula o reprograma alguna clase?
+
 **Preguntas sobre la solución**
-1.¿Qué funcionalidades te gustaría que tenga una herramienta digital para usar como alumno?
-2.¿Qué tan útil sería para ti revisar tu horario desde tu celular?
-3.En un sistema que gestione tu horario, ¿qué priorizarías más: facilidad de uso, rapidez, o ambas?
-4.¿Qué características o beneficios esperas encontrar en el sistema?
-5.¿Estarías dispuesto a aprender a usar una nueva herramienta si mejora tu gestión (organización)?
+1. ¿Qué funcionalidades te gustaría que tenga una herramienta digital para usar como alumno?
+2. ¿Qué tan útil sería para ti revisar tu horario desde tu celular?
+3. ¿En un sistema que gestione tu horario, ¿qué priorizarías más: facilidad de uso, rapidez, o ambas?
+4. ¿Qué características o beneficios esperas encontrar en el sistema?
+5. ¿Estarías dispuesto a aprender a usar una nueva herramienta si mejora tu gestión (organización)?
 
 ### 2.2.2. Registro de entrevistas
 
