@@ -126,8 +126,9 @@
     - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
-    - [Anexo A: Repositorio del Proyecto](#anexo-a-repositorio-del-proyecto)
-    - [Anexo B: Spikes Stories](#anexo-b-spikes-stories)
+    - [Anexo A: Código Fuente](#anexo-a-código-fuente)
+    - [Anexo B: Videos en Microsoft Streams](#anexo-b-videos-en-microsoft-streams)
+    - [Anexo C: Detalle de Spike Stories](#anexo-c-detalle-de-spike-stories)
 
 # Student Outcome
 
@@ -248,7 +249,7 @@ Se incluyen diferentes tipos de historias, tales como:
 - **Technical Stories:** historias que abordan aspectos técnicos necesarios para el correcto funcionamiento del sistema, como la integración con servicios externos, seguridad, rendimiento, entre otros.
 - **Spike Stories:** historias que representan tareas de investigación o exploración técnica para resolver incertidumbres o evaluar alternativas antes de la implementación.
 
-> **Nota:** Las *Spike Stories* se presentan aquí de manera resumida. Para un detalle completo, incluyendo criterios de aceptación y escenarios específicos, por favor véase el [Anexo B: Detalle de Spike Stories](#anexo-b-spikes-stories).
+> **Nota:** Las *Spike Stories* se presentan aquí de manera resumida. Para un detalle completo, incluyendo criterios de aceptación y escenarios específicos, por favor véase el [Anexo C: Detalle de Spike Stories](#anexo-c-detalle-de-spike-stories).
 
 | Story ID | User                 | Title                                                                              | Description                                                                                                                                                                                         | Acceptance Criteria                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Priority | Epic                   |
 |----------|----------------------|------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|------------------------|
@@ -1020,13 +1021,21 @@ En esta sección se incluyen materiales adicionales que complementan el contenid
 
 Se incluyen además, enlaces a repositorios, diagramas, documentos, y otros recursos que son de utilidad.
 
-## Anexo A: Repositorio del Proyecto
+## Anexo A: Código Fuente
 
 El código fuente del proyecto está disponible en el siguiente repositorio de GitHub:
 
-- [Repositorio en GitHub]()
+1. [Organización de GitHub](https://github.com/nistrahq)
+2. [Repositorio del reporte en GitHub](https://github.com/nistrahq/demy-report)
 
-## Anexo B: Spikes Stories
+## Anexo B: Videos en Microsoft Streams
+
+Los videos de entrevistas para *needfinding*, *validation* y videos de exposición de avances del proyecto están disponibles en Microsoft Streams:
+
+1. [Entrevistas para Needfinding]()
+2. [Videos de Exposición del TB1]()
+
+## Anexo C: Detalle de Spike Stories
 
 En esta sección se documentan las Spikes Stories realizadas durante el desarrollo del proyecto. Las Spikes Stories son tareas exploratorias que permiten investigar y resolver incertidumbres técnicas o de diseño antes de implementar funcionalidades completas.
 
