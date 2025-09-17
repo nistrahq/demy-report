@@ -330,26 +330,33 @@ Write here...
 En esta sección el equipo presenta sus Bounded Context Canvases, empezando por los importantes.  
 
 **Institution**  
+Encargado de gestionar el ciclo de vida de las academias y su personal docente.  
 ![Bounded Context Canvas Institution](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-institution.png)  
 
 **Enrollment**  
+Encargado de gestionar el ciclo de vida de las matrículas y el registro de alumnos.  
 ![Bounded Context Canvas Enrollment](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-enrollment.png)  
 
 **Attendance**  
+Encargado de gestionar las asistencias de una clase.  
 ![Bounded Context Canvas Attendance](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-attendance.png)  
 
 **Scheduling**  
+Encargado de la gestión de horarios, salones y clases programadas.  
 ![Bounded Context Canvas Scheduling](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-scheduling.png)
 
-**Billing**  
+**Billing** 
+Encargado de la emisión y control de boletas y obligaciones de pago.  
 ![Bounded Context Canvas Billing](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-billing.png)
 
 
 **Accounting & Finance**  
+Encargado del control de ingresos y egresos de la academia.    
 ![Bounded Context Canvas Accounting & Finance](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-accounting&finance.png)
 
 
 **IAM**  
+Contexto génerico para la identificación y acceso.  
 ![Bounded Context Canvas IAM](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-iam.png)
 
 ### 4.1.2. Context Mapping
