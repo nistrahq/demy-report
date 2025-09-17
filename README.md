@@ -465,7 +465,7 @@ Representa la asistencia de un solo estudiante.
 
 
 
-4.*`ClassSessionId` (Value object)**
+4.**`ClassSessionId` (Value object)**
 
 | Atributo | Tipo   | Visibilidad | Descripción                                |
 |----------|--------|-------------|--------------------------------------------|
@@ -477,7 +477,7 @@ Representa la asistencia de un solo estudiante.
 |----------------------------------------------------|------------------------------|-------------|----------------------------------------------------------------------------|
 | `handle (CreateClassAttendanceCommand command)`    | `Optional<ClassAttendance>`  | `public`    | Crea un nuevo registro de asistencia de una clase a partir de un comando.  |
 
-6.*`ClassAttendanceQueryService` (Domain Service)**
+6.**`ClassAttendanceQueryService` (Domain Service)**
 
 | Atributo                                                               | Tipo                         | Visibilidad | Descripción                                                                       |
 |------------------------------------------------------------------------|------------------------------|-------------|-----------------------------------------------------------------------------------|
@@ -568,7 +568,12 @@ Además, se incluye el [código fuente del diagrama de clases del Domain Layer d
 
 #### 4.2.4.6.2. Bounded Context Database Design Diagram
 
-Write here...
+El diagrama de diseño de base de datos del contexto de Attendance muestra la estructura de las tablas y sus relaciones en la base de datos relacional. Se detallan las tablas principales, sus columnas, tipos de datos y claves primarias/foráneas que permiten gestionar la información relacionada con las asistencias de una clase.
+
+![Diagrama de Diseño de Base de Datos del Contexto de Attendance](./assets/diagrams/database/erd/out/attendance-database-diagram.png)
+
+Además, se incluye el [esquema SQL del diagrama de base de datos de Attendance](./assets/diagrams/database/schema/src/attendance-database-diagram-create.sql).
+
 
 ## Conclusiones y Recomendaciones
 
