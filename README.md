@@ -1387,7 +1387,11 @@ Además, se incluye el [código fuente del diagrama de clases del Domain Layer d
 
 #### 4.2.7.6.2. Bounded Context Database Design Diagram
 
-Write here...
+El diagrama de diseño de base de datos del contexto de Accounting & Finance muestra la estructura de las tablas y sus relaciones en la base de datos relacional. Se detallan las tablas principales, sus columnas, tipos de datos y claves primarias/foráneas que permiten gestionar la información relacionada con las transacciones financieras y reportes.
+
+![Diagrama de Diseño de Base de Datos del Contexto de Accounting & Finance](./assets/diagrams/database/erd/out/accountingfinance-database-diagram.png)
+
+Además, se incluye el [esquema SQL del diagrama de base de datos de Accounting & Finance](./assets/diagrams/database/schema/src/accountingfinance-database-diagram-create.sql).
 
 ## Conclusiones y Recomendaciones
 
