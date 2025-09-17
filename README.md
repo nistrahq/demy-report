@@ -293,495 +293,138 @@ Para diseñar las entrevistas, se elaboraron dos bloques de preguntas, diferenci
 
 **Segmento Administrativos: Entrevistado 1**
 
-<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
-  <tr>
-    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
-    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
-    <td style="border: 1px solid #000; padding:6px;">Kevin Rodriguez</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
-    <td style="border: 1px solid #000; padding:6px;">28</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
-    <td style="border: 1px solid #000; padding:6px;">Masculino</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
-    <td style="border: 1px solid #000; padding:6px;">Ica</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
-    <td style="border: 1px solid #000; padding:6px;">Coordinador de Academia</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
-    <td style="border: 1px solid #000; padding:6px;">3 de septiembre de 2025</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
-    <td style="border: 1px solid #000; padding:6px;">00:00 - 05:29</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EXN4PH3yo6BDpMxZlyfjpr8BqyL-elHkge9QM1vrQeoYRg?e=F1PS4p&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6MS40Mn19" target="_blank">Ver en Microsoft Stream</a>
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      <img src="./assets/images/screenshots/interview-screenshot-coordinator1.png" alt="Captura entrevista Kevin" style="max-width:100%; height:auto;">
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      Kevin gestiona actualmente sus procesos administrativos con Excel y listas impresas, lo que considera poco eficiente y repetitivo. Necesita acceder con frecuencia a información como asistencias y notas, pero no siempre la tiene a la mano, lo que afecta la atención a padres. Desea un sistema automatizado con búsquedas rápidas por nombre o código y alertas sobre pagos. Está dispuesto a adoptar una herramienta intuitiva, que centralice la información y tenga un costo accesible, para mejorar organización y control.
-    </td>
-  </tr>
-</table>
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Nombre**              | Kevin Rodriguez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Edad**                | 28                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Distrito**            | Ica                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Ocupación**           | Coordinador de Academia                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Fecha de entrevista** | 03 de septiembre de 2025                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Timing**              | 00:00 - 05:29                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EUeBQObXSdZBvoolgyQ1JmcBRYnwPS0RfsU6kusFf0mfmw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BINKHX)                                                                                                                                                                               |
+| **Captura**             | ![Captura entrevista Kevin](./assets/images/screenshots/interview-screenshot-coordinator1.png)                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Resumen**             | Kevin gestiona actualmente sus procesos administrativos con Excel y listas impresas, lo que considera poco eficiente y repetitivo. Necesita acceder con frecuencia a información como asistencias y notas, pero no siempre la tiene a la mano, lo que afecta la atención a padres. Desea un sistema automatizado con búsquedas rápidas por nombre o código y alertas sobre pagos. Está dispuesto a adoptar una herramienta intuitiva, que centralice la información y tenga un costo accesible, para mejorar organización y control. |
 
 **Segmento Administrativos: Entrevistado 2**
 
-<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
-  <tr>
-    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
-    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
-    <td style="border: 1px solid #000; padding:6px;">Marleni Rosa Flores</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
-    <td style="border: 1px solid #000; padding:6px;">58</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
-    <td style="border: 1px solid #000; padding:6px;">Femenino</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
-    <td style="border: 1px solid #000; padding:6px;">Ica</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
-    <td style="border: 1px solid #000; padding:6px;">Coordinadora de Academia</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
-    <td style="border: 1px solid #000; padding:6px;">2 de septiembre de 2025</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
-    <td style="border: 1px solid #000; padding:6px;">05:30 - 10:17</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EXN4PH3yo6BDpMxZlyfjpr8BqyL-elHkge9QM1vrQeoYRg?e=h4QH4g&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6MzMwLjV9fQ%3D%3D" target="_blank">Ver en Microsoft Stream</a>
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      <img src="assets/images/screenshots/interview-screenshot-coordinator2.png" alt="Captura entrevista Marleni" style="max-width:100%; height:auto;">
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      Marleni gestiona matrículas, pagos y asistencias de forma manual. Esto dificulta el control de pagos, ingresos, egresos y asistencia, afectando la organización. Le interesa una herramienta con registro de alumnos, control de pagos y reportes, además de alertas por pagos vencidos. Prefiere un sistema simple y con funciones esenciales; adoptaría una nueva plataforma si mejora su gestión.
-    </td>
-  </tr>
-</table>
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                              |
+|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Nombre**              | Marleni Rosa Flores                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Edad**                | 58                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Sexo**                | Femenino                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Distrito**            | Ica                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Ocupación**           | Coordinadora de Academia                                                                                                                                                                                                                                                                                                                                                                             |
+| **Fecha de entrevista** | 02 de septiembre de 2025                                                                                                                                                                                                                                                                                                                                                                             |
+| **Timing**              | 05:30 - 10:17                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EUeBQObXSdZBvoolgyQ1JmcBRYnwPS0RfsU6kusFf0mfmw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BINKHX)                                               |
+| **Captura**             | ![Captura entrevista Marleni](assets/images/screenshots/interview-screenshot-coordinator2.png)                                                                                                                                                                                                                                                                                                       |
+| **Resumen**             | Marleni gestiona matrículas, pagos y asistencias de forma manual. Esto dificulta el control de pagos, ingresos, egresos y asistencia, afectando la organización. Le interesa una herramienta con registro de alumnos, control de pagos y reportes, además de alertas por pagos vencidos. Prefiere un sistema simple y con funciones esenciales; adoptaría una nueva plataforma si mejora su gestión. |
 
 **Segmento Administrativos: Entrevistado 3**
 
-<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
-  <tr>
-    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
-    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
-    <td style="border: 1px solid #000; padding:6px;">Jhon Robert Candioti</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
-    <td style="border: 1px solid #000; padding:6px;">42</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
-    <td style="border: 1px solid #000; padding:6px;">Masculino</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
-    <td style="border: 1px solid #000; padding:6px;">Ica</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
-    <td style="border: 1px solid #000; padding:6px;">Dueño y administrativo de la academia Enigmas</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
-    <td style="border: 1px solid #000; padding:6px;">09 de abril de 2025</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
-    <td style="border: 1px solid #000; padding:6px;">10:18 - 18:45</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EXN4PH3yo6BDpMxZlyfjpr8BqyL-elHkge9QM1vrQeoYRg?e=Tf0He1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6NjE5LjE5fX0%3D" target="_blank">Ver en Microsoft Stream</a>
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      <img src="./assets/images/screenshots/interview-screenshot-administrator3.png" alt="Captura entrevista Jhon Robert" style="max-width:100%; height:auto;">
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      Jhon Robert utiliza Excel para manejar matrículas, asistencia, pagos y horarios, lo que le genera desorganización y sobrecarga de tiempo. Reporta estrés y errores por navegar múltiples hojas. Busca una solución sencilla y automatizada, con consulta rápida por DNI de alumnos y apoderados, y registro de pagos pendientes. Está dispuesto a aprender una nueva plataforma si es fácil de usar y mejora la productividad.
-    </td>
-  </tr>
-</table>
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Nombre**              | Jhon Robert Candioti                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Edad**                | 42                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Distrito**            | Ica                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Ocupación**           | Dueño y administrativo de la academia Enigmas                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Fecha de entrevista** | 09 de septiembre de 2025                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Timing**              | 10:18 - 18:45                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EUeBQObXSdZBvoolgyQ1JmcBRYnwPS0RfsU6kusFf0mfmw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BINKHX)                                                                         |
+| **Captura**             | ![Captura entrevista Jhon Robert](./assets/images/screenshots/interview-screenshot-administrator3.png)                                                                                                                                                                                                                                                                                                                         |
+| **Resumen**             | Jhon Robert utiliza Excel para manejar matrículas, asistencia, pagos y horarios, lo que le genera desorganización y sobrecarga de tiempo. Reporta estrés y errores por navegar múltiples hojas. Busca una solución sencilla y automatizada, con consulta rápida por DNI de alumnos y apoderados, y registro de pagos pendientes. Está dispuesto a aprender una nueva plataforma si es fácil de usar y mejora la productividad. |
 
 **Segmento Docente: Entrevistado 1**
 
-<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
-  <tr>
-    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
-    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
-    <td style="border: 1px solid #000; padding:6px;">Diego Meléndez</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
-    <td style="border: 1px solid #000; padding:6px;">24</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
-    <td style="border: 1px solid #000; padding:6px;">Masculino</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
-    <td style="border: 1px solid #000; padding:6px;">Surquillo</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
-    <td style="border: 1px solid #000; padding:6px;">Docente de academia</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
-    <td style="border: 1px solid #000; padding:6px;">3/09/25</td>
-  </tr>
-    <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
-    <td style="border: 1px solid #000; padding:6px;">10:19 - 25:02</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EXN4PH3yo6BDpMxZlyfjpr8BqyL-elHkge9QM1vrQeoYRg?e=amN8XV" target="_blank">Ver en Microsoft Stream</a>
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      <img src="./assets/images/screenshots/interview-screenshot-teacher1.png" alt="Captura entrevista Diego Melendez" style="max-width:100%; height:auto;">
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      Diego Meléndez dicta clases en una academia y actualmente gestiona asistencia y notas en un cuaderno. Este método le resulta poco práctico debido al espacio limitado, la necesidad de transportarlo y la dificultad para acceder rápidamente a la información.  
-      Para coordinar con la academia o comunicar cambios utiliza WhatsApp, aunque reconoce que no siempre es eficaz ya que algunos padres no leen los mensajes a tiempo. Esto genera descoordinación y retrasos.  
-      Percibe gran valor en una solución digital que le permita registrar asistencia de forma rápida, consultar perfiles de alumnos, acceder a horarios y recibir notificaciones automáticas sobre cambios o incidencias. Prefiere usar el celular como dispositivo principal y considera fundamental que la aplicación sea intuitiva y fácil de usar, dado que no tiene una alta familiaridad tecnológica.  
-      Está dispuesto a adoptar nuevas herramientas si le ayudan a ahorrar tiempo, evitar contratiempos y mejorar la comunicación con alumnos y padres.
-    </td>
-  </tr>
-</table>
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Nombre**              | Diego Meléndez Marín                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Edad**                | 24                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Distrito**            | Surquillo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Ocupación**           | Docente de academia                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Fecha de entrevista** | 03 de septiembre de 2025                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Timing**              | 10:19 - 25:02                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EUeBQObXSdZBvoolgyQ1JmcBRYnwPS0RfsU6kusFf0mfmw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BINKHX)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Captura**             | ![Captura entrevista Diego Meléndez](./assets/images/screenshots/interview-screenshot-teacher1.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Resumen**             | Diego Meléndez dicta clases en una academia y actualmente gestiona asistencia y notas en un cuaderno. Este método le resulta poco práctico debido al espacio limitado, la necesidad de transportarlo y la dificultad para acceder rápidamente a la información.<br><br>Para coordinar con la academia o comunicar cambios utiliza WhatsApp, aunque reconoce que no siempre es eficaz ya que algunos padres no leen los mensajes a tiempo. Esto genera descoordinación y retrasos.<br><br>Percibe gran valor en una solución digital que le permita registrar asistencia de forma rápida, consultar perfiles de alumnos, acceder a horarios y recibir notificaciones automáticas sobre cambios o incidencias. Prefiere usar el celular como dispositivo principal y considera fundamental que la aplicación sea intuitiva y fácil de usar, dado que no tiene una alta familiaridad tecnológica.<br><br>Está dispuesto a adoptar nuevas herramientas si le ayudan a ahorrar tiempo, evitar contratiempos y mejorar la comunicación con alumnos y padres. |
 
 **Segmento Docente: Entrevistado 2**
 
-<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
-  <tr>
-    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
-    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
-    <td style="border: 1px solid #000; padding:6px;">Jean Paul Benezú</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
-    <td style="border: 1px solid #000; padding:6px;">21</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
-    <td style="border: 1px solid #000; padding:6px;">Masculino</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
-    <td style="border: 1px solid #000; padding:6px;">Santa Anita</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
-    <td style="border: 1px solid #000; padding:6px;">Docente en CEPRE Agraria</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
-    <td style="border: 1px solid #000; padding:6px;">3 de septiembre de 2025</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
-    <td style="border: 1px solid #000; padding:6px;">25:03 - 39:49</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EXN4PH3yo6BDpMxZlyfjpr8BqyL-elHkge9QM1vrQeoYRg?e=amN8XV" target="_blank">Ver en Microsoft Stream</a>
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      <img src="./assets/images/screenshots/interview-screenshot-teacher2.png" alt="Captura entrevista Jean Paul" style="max-width:100%; height:auto;">
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      Jean Paul enseña en CEPRE Agraria y usa Excel y Google Forms para registrar notas y asistencia. Para reprogramar clases recurre a encuestas improvisadas. Considera clave contar con una herramienta centralizada e intuitiva, accesible desde celular. Sugiere que tutores puedan consultar información académica y valora recibir notificaciones de cambios de horario. Está dispuesto a aprender nuevas herramientas si percibe mejoras en productividad.
-    </td>
-  </tr>
-</table>
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Nombre**              | Jean Paul Benezú                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Edad**                | 21                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Distrito**            | Santa Anita                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Ocupación**           | Docente en CEPRE Agraria                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Fecha de entrevista** | 03 de septiembre de 2025                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Timing**              | 25:03 - 39:49                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EUeBQObXSdZBvoolgyQ1JmcBRYnwPS0RfsU6kusFf0mfmw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BINKHX)                                                                                                       |
+| **Captura**             | ![Captura entrevista Jean Paul](./assets/images/screenshots/interview-screenshot-teacher2.png)                                                                                                                                                                                                                                                                                                                                                               |
+| **Resumen**             | Jean Paul enseña en CEPRE Agraria y usa Excel y Google Forms para registrar notas y asistencia. Para reprogramar clases recurre a encuestas improvisadas. Considera clave contar con una herramienta centralizada e intuitiva, accesible desde celular. Sugiere que tutores puedan consultar información académica y valora recibir notificaciones de cambios de horario. Está dispuesto a aprender nuevas herramientas si percibe mejoras en productividad. |
 
 **Segmento Docente: Entrevistado 3**
 
-<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
-  <tr>
-    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
-    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
-    <td style="border: 1px solid #000; padding:6px;">Jeff Aylas Quispe Vergara</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
-    <td style="border: 1px solid #000; padding:6px;">25</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
-    <td style="border: 1px solid #000; padding:6px;">Masculino</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
-    <td style="border: 1px solid #000; padding:6px;">San Juan de Lurigancho</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
-    <td style="border: 1px solid #000; padding:6px;">Docente en Academia ADUNI</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
-    <td style="border: 1px solid #000; padding:6px;">2 de septiembre de 2025</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
-    <td style="border: 1px solid #000; padding:6px;">39:51 - 44:17</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EXN4PH3yo6BDpMxZlyfjpr8BqyL-elHkge9QM1vrQeoYRg?e=KNljaH" target="_blank">Ver en Microsoft Stream</a>
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      <img src="./assets/images/screenshots/interview-screenshot-teacher3.png" alt="Captura entrevista Jeff" style="max-width:100%; height:auto;">
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      Jeff combina su rol de docente con el de estudiante y organiza asistencia y notas en Excel y cuadernos. La coordinación con administrativos ocurre vía WhatsApp o correo, generando demoras y confusión en cambios de aula. Valora una plataforma digital que integre asistencia, notas y horarios, accesible desde celular. Considera esencial que sea intuitiva, pues si es compleja volvería a métodos tradicionales. Está dispuesto a adoptarla si facilita su gestión y aporta notificaciones claras.
-    </td>
-  </tr>
-</table>
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Nombre**              | Jeff Aylas Quispe Vergara                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Edad**                | 25                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Distrito**            | San Juan de Lurigancho                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Ocupación**           | Docente en Academia ADUNI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Fecha de entrevista** | 02 de septiembre de 2025                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Timing**              | 39:51 - 44:17                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EUeBQObXSdZBvoolgyQ1JmcBRYnwPS0RfsU6kusFf0mfmw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BINKHX)                                                                                                                                                     |
+| **Captura**             | ![Captura entrevista Jeff](./assets/images/screenshots/interview-screenshot-teacher3.png)                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Resumen**             | Jeff combina su rol de docente con el de estudiante y organiza asistencia y notas en Excel y cuadernos. La coordinación con administrativos ocurre vía WhatsApp o correo, generando demoras y confusión en cambios de aula. Valora una plataforma digital que integre asistencia, notas y horarios, accesible desde celular. Considera esencial que sea intuitiva, pues si es compleja volvería a métodos tradicionales. Está dispuesto a adoptarla si facilita su gestión y aporta notificaciones claras. |
 
 **Segmento Alumno: Entrevistado 1**
 
-<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
-  <tr>
-    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
-    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
-    <td style="border: 1px solid #000; padding:6px;">Maykel Vivas Savedra</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
-    <td style="border: 1px solid #000; padding:6px;">18</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
-    <td style="border: 1px solid #000; padding:6px;">Masculino</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
-    <td style="border: 1px solid #000; padding:6px;">Villa El Salvador - Lima</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
-    <td style="border: 1px solid #000; padding:6px;">Alumno de Academia</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
-    <td style="border: 1px solid #000; padding:6px;">02 de septiembre de 2025</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
-    <td style="border: 1px solid #000; padding:6px;">44:18 - 49:00</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
-    <td style="border: 1px solid #000; padding:6px;">
-    <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/ERoxZfqu0udFjTeXBnbdKj4B3sUFUqHSlfmcSS3jo959Tg?e=OXcmBm&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">Ver en Microsoft Stream</a>    
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      <img src="./assets/images/screenshots/interview-screenshot-alumno2.png" alt="Captura entrevista Maykel Vivas" style="max-width:100%; height:auto;">
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
-    <td style="border: 1px solid #000; padding:6px;">Mikel es un estudiante de academia que consulta su horario principalmente desde el celular, aunque prefiere también tenerlo impreso. Señala que la información recibida al matricularse fue básica y tardía, y le gustaría que el horario incluya además los nombres de los profesores. Eventualmente, cuando hay cambios de clases, anota manualmente las nuevas fechas para reorganizarse. Por lo que, considera clave que una herramienta digital para organizarse exista y sea simple, ligera y fácil de usar, pues no se siente muy hábil con la tecnología. Valora funcionalidades como la posibilidad de revisar el horario desde el móvil y la incorporación de dinámicas interactivas. Además, está dispuesto a adoptar una nueva aplicación siempre que mejore su organización académica y le ayude a mantener todo en orden.</td>
-  </tr>
-</table>
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Nombre**              | Maykel Vivas Savedra                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Edad**                | 18                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Distrito**            | Villa El Salvador                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Ocupación**           | Alumno de Academia                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Fecha de entrevista** | 02 de septiembre de 2025                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Timing**              | 44:18 - 49:45                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EUeBQObXSdZBvoolgyQ1JmcBRYnwPS0RfsU6kusFf0mfmw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BINKHX)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Captura**             | ![Captura entrevista Maykel Vivas](./assets/images/screenshots/interview-screenshot-alumno2.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Resumen**             | Mikel es un estudiante de academia que consulta su horario principalmente desde el celular, aunque prefiere también tenerlo impreso. Señala que la información recibida al matricularse fue básica y tardía, y le gustaría que el horario incluya además los nombres de los profesores. Eventualmente, cuando hay cambios de clases, anota manualmente las nuevas fechas para reorganizarse. Por lo que, considera clave que una herramienta digital para organizarse exista y sea simple, ligera y fácil de usar, pues no se siente muy hábil con la tecnología. Valora funcionalidades como la posibilidad de revisar el horario desde el móvil y la incorporación de dinámicas interactivas. Además, está dispuesto a adoptar una nueva aplicación siempre que mejore su organización académica y le ayude a mantener todo en orden. |
 
 **Segmento Alumno: Entrevistado 2**
 
-<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
-  <tr>
-    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
-    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
-    <td style="border: 1px solid #000; padding:6px;">Yolanda Reyes Castillo</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
-    <td style="border: 1px solid #000; padding:6px;">17</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
-    <td style="border: 1px solid #000; padding:6px;">Femenino</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
-    <td style="border: 1px solid #000; padding:6px;">Trujillo</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
-    <td style="border: 1px solid #000; padding:6px;">Alumno de Academia</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
-    <td style="border: 1px solid #000; padding:6px;">02 de septiembre de 2025</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
-    <td style="border: 1px solid #000; padding:6px;">49:01 - 55:25</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
-    <td style="border: 1px solid #000; padding:6px;">
-    <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/EZuq6orw4LVAh5t7cEBAf5cBopblUt9483KZhjoGn6l40w?e=Q5ID0c&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">Ver en Microsoft Stream</a>    
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      <img src="./assets/images/screenshots/interview-screenshot-alumno1.png" alt="Captura entrevista Yolanda Reyes" style="max-width:100%; height:auto;">
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
-    <td style="border: 1px solid #000; padding:6px;">Yolanda es una estudiante que consulta su horario principalmente desde el aula virtual de su academia, aunque afirma que al inicio de clases deben esperar hasta una semana para recibir el horario completo, lo que genera incertidumbre sobre con qué profesores le tocará. Considera necesario que el horario muestre no solo cursos y horas, sino también los nombres y horarios de los docentes, ya que ha tenido experiencias de retrasos significativos. Frente a reprogramaciones, asiste cuando puede y que muchos compañeros con trayectos largos no logran adaptarse a estos cambios inesperados. Considera que de presentarse una aplicación de gestión académica, valoraría que sea rápida y que no se bloquee o caiga con muchos usuarios conectados. Además, le gustaría que incluya mensajes motivacionales y que el horario esté disponible de inmediato en la pantalla de inicio junto con información indicada. Afirma que está dispuesta a usar una nueva herramienta siempre y cuando le facilite la organización y mejore su experiencia como estudiante.</td>
-  </tr>
-</table>
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Nombre**              | Yolanda Reyes Castillo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Edad**                | 17                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Sexo**                | Femenino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Distrito**            | Trujillo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Ocupación**           | Alumno de Academia                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Fecha de entrevista** | 02 de septiembre de 2025                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Timing**              | 49:45 - 55:25                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EUeBQObXSdZBvoolgyQ1JmcBRYnwPS0RfsU6kusFf0mfmw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BINKHX)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Captura**             | ![Captura entrevista Yolanda Reyes](./assets/images/screenshots/interview-screenshot-alumno1.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Resumen**             | Yolanda es una estudiante que consulta su horario principalmente desde el aula virtual de su academia, aunque afirma que al inicio de clases deben esperar hasta una semana para recibir el horario completo, lo que genera incertidumbre sobre con qué profesores le tocará. Considera necesario que el horario muestre no solo cursos y horas, sino también los nombres y horarios de los docentes, ya que ha tenido experiencias de retrasos significativos. Frente a reprogramaciones, asiste cuando puede y que muchos compañeros con trayectos largos no logran adaptarse a estos cambios inesperados. Considera que de presentarse una aplicación de gestión académica, valoraría que sea rápida y que no se bloquee o caiga con muchos usuarios conectados. Además, le gustaría que incluya mensajes motivacionales y que el horario esté disponible de inmediato en la pantalla de inicio junto con información indicada. Afirma que está dispuesta a usar una nueva herramienta siempre y cuando le facilite la organización y mejore su experiencia como estudiante. |
 
 **Segmento Alumno: Entrevistado 3**
 
-<table style="width:100%; border-collapse: collapse; border: 1px solid #000;">
-  <tr>
-    <th style="border: 1px solid #000; border-right:none; text-align:left; padding:6px; width:30%;">Atributo</th>
-    <th style="border: 1px solid #000; text-align:left; padding:6px; width:70%;">Detalle</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
-    <td style="border: 1px solid #000; padding:6px;">Emy Luz Ganoza Suarez</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
-    <td style="border: 1px solid #000; padding:6px;">16</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
-    <td style="border: 1px solid #000; padding:6px;">Femenino</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
-    <td style="border: 1px solid #000; padding:6px;">Trujillo</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
-    <td style="border: 1px solid #000; padding:6px;">Alumno de Academia</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
-    <td style="border: 1px solid #000; padding:6px;">02 de septiembre de 2025</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
-    <td style="border: 1px solid #000; padding:6px;">55:26 - 01:00:19</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
-    <td style="border: 1px solid #000; padding:6px;">
-    <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/EUVPNVaNxNtGnzL66FGLNEoBi9IrUSqM8EnaGxbzsFmnqQ?e=bwkaTS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">Ver en Microsoft Stream</a>    
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
-    <td style="border: 1px solid #000; padding:6px;">
-      <img src="./assets/images/screenshots/interview-screenshot-alumno3.png" alt="Captura entrevista Emy Ganoza" style="max-width:100%; height:auto;">
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
-    <td style="border: 1px solid #000; padding:6px;">Emy es una alumna que consulta su horario principalmente desde el celular, ya que la academia suele enviar imágenes del horario por WhatsApp, además de entregarlo impreso aproximadamente una semana después de la matrícula. El horario que le presentan incluye clases y horas, pero considera importante que también se indiquen los nombres de los profesores, sobre todo para los alumnos nuevos que no los conocen. Cuando ocurre un imprevisto, como un cambio de aula o reprogramación, suele acudir a recepción para preguntar, sim embargo, muchas veces no hay personal disponible, lo que genera incertidumbre. Para una aplicación de gestión académica, valora que sea fácil de usar y rápida de cargar, ya que muchas veces está contra el tiempo y necesita acceder de inmediato. Le gustaría que el sistema muestre también su nombre en pantalla y ofrezca la opción de añadir notas personales sobre el horario, algo que ahora resuelve escribiendo en las hojas impresas. Afirma que está dispuesta a aprender a usar una nueva herramienta siempre que le ayude a mejorar su organización y acceso al horario.</td>
-  </tr>
-</table>
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Nombre**              | Emy Luz Ganoza Suarez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Edad**                | 16                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Sexo**                | Femenino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Distrito**            | Trujillo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Ocupación**           | Alumno de Academia                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Fecha de entrevista** | 02 de septiembre de 2025                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Timing**              | 55:26 - 01:00:19                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EUeBQObXSdZBvoolgyQ1JmcBRYnwPS0RfsU6kusFf0mfmw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BINKHX)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Captura**             | ![Captura entrevista Emy Ganoza](./assets/images/screenshots/interview-screenshot-alumno3.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Resumen**             | Emy es una alumna que consulta su horario principalmente desde el celular, ya que la academia suele enviar imágenes del horario por WhatsApp, además de entregarlo impreso aproximadamente una semana después de la matrícula. El horario que le presentan incluye clases y horas, pero considera importante que también se indiquen los nombres de los profesores, sobre todo para los alumnos nuevos que no los conocen. Cuando ocurre un imprevisto, como un cambio de aula o reprogramación, suele acudir a recepción para preguntar, sin embargo, muchas veces no hay personal disponible, lo que genera incertidumbre. Para una aplicación de gestión académica, valora que sea fácil de usar y rápida de cargar, ya que muchas veces está contra el tiempo y necesita acceder de inmediato. Le gustaría que el sistema muestre también su nombre en pantalla y ofrezca la opción de añadir notas personales sobre el horario, algo que ahora resuelve escribiendo en las hojas impresas. Afirma que está dispuesta a aprender a usar una nueva herramienta siempre que le ayude a mejorar su organización y acceso al horario. |
 
 ### 2.2.3. Análisis de entrevistas
 
