@@ -1375,11 +1375,15 @@ Además, se incluye el [código fuente del diagrama de componentes de Accounting
 
 #### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams
 
-Write here...
+En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de Accounting & Finance. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
 
 #### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams
 
-Write here...
+El diagrama de clases del Domain Layer del contexto de Accounting & Finance ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
+
+![Diagrama de Clases del Domain Layer del Contexto de Accounting & Finance](./assets/diagrams/uml/class/out/accountingfinance-domain-layer-class-diagram.png)
+
+Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Accounting & Finance](./assets/diagrams/uml/class/src/accountingfinance-domain-layer-class-diagram.puml)
 
 #### 4.2.7.6.2. Bounded Context Database Design Diagram
 
