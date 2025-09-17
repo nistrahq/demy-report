@@ -518,9 +518,52 @@ Proporciona métodos para consultar información de estudiantes.
 | `handle(GetAllStudentsQuery query)`  | `List<Student>`     | `public`    | Obtiene la lista completa de estudiantes registrados. |
 | `handle(GetStudentByDniQuery query)` | `Optional<Student>` | `public`    | Obtiene un estudiante a partir de su DNI.             |
 
-#### 4.2.X.2. Interface Layer
+#### 4.2.3.2. Interface Layer
 
-Write here...
+1. **`EnrollmentsController` (REST Controller)**
+
+Controlador REST que expone endpoints para gestionar matrículas.
+
+**Endpoints principales:**
+
+| Nombre del método            | Ruta base típica                        | Método HTTP | Descripción                                                        |
+| ---------------------------- | --------------------------------------- | ----------- | ------------------------------------------------------------------ |
+| `createEnrollment`           | `/api/v1/enrollments`                   | `POST`      | Crea una nueva matrícula.                                          |
+| `getAllEnrollments`          | `/api/v1/enrollments`                   | `GET`       | Obtiene la lista completa de matrículas.                           |
+| `getEnrollmentById`          | `/api/v1/enrollments/{id}`              | `GET`       | Obtiene una matrícula específica por su ID.                        |
+| `getEnrollmentsByStudentId`  | `/api/v1/enrollments/student/{id}`      | `GET`       | Obtiene todas las matrículas asociadas a un estudiante por su ID.  |
+| `getEnrollmentsByStudentDni` | `/api/v1/enrollments/student/dni/{dni}` | `GET`       | Obtiene todas las matrículas asociadas a un estudiante por su DNI. |
+| `updateEnrollment`           | `/api/v1/enrollments/{id}`              | `PUT`       | Actualiza los datos de una matrícula existente.                    |
+| `deleteEnrollment`           | `/api/v1/enrollments/{id}`              | `DELETE`    | Elimina una matrícula por su ID.                                   |
+
+2. **`AcademicPeriodsController` (REST Controller)**
+
+Controlador REST que expone endpoints para gestionar períodos académicos.
+
+**Endpoints principales:**
+
+| Nombre del método       | Ruta base típica                | Método HTTP | Descripción                                            |
+| ----------------------- | ------------------------------- | ----------- | ------------------------------------------------------ |
+| `createAcademicPeriod`  | `/api/v1/academic-periods`      | `POST`      | Crea un nuevo período académico.                       |
+| `getAllAcademicPeriods` | `/api/v1/academic-periods`      | `GET`       | Obtiene la lista completa de períodos académicos.      |
+| `updateAcademicPeriod`  | `/api/v1/academic-periods/{id}` | `PUT`       | Actualiza los datos de un período académico existente. |
+| `deleteAcademicPeriod`  | `/api/v1/academic-periods/{id}` | `DELETE`    | Elimina un período académico por su ID.                |
+
+3. **`StudentsController` (REST Controller)**
+
+Controlador REST que expone endpoints para gestionar estudiantes.
+
+**Endpoints principales:**
+
+| Nombre del método | Ruta base típica             | Método HTTP | Descripción                                           |
+| ----------------- | ---------------------------- | ----------- | ----------------------------------------------------- |
+| `createStudent`   | `/api/v1/students`           | `POST`      | Crea un nuevo estudiante.                             |
+| `getAllStudents`  | `/api/v1/students`           | `GET`       | Obtiene la lista completa de estudiantes registrados. |
+| `getStudentById`  | `/api/v1/students/{id}`      | `GET`       | Obtiene un estudiante específico por su ID.           |
+| `getStudentByDni` | `/api/v1/students/dni/{dni}` | `GET`       | Obtiene un estudiante a partir de su DNI.             |
+| `updateStudent`   | `/api/v1/students/{id}`      | `PUT`       | Actualiza la información de un estudiante existente.  |
+| `deleteStudent`   | `/api/v1/students/{id}`      | `DELETE`    | Elimina un estudiante por su ID.                      |
+
 
 #### 4.2.X.3. Application Layer
 
