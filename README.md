@@ -1326,6 +1326,34 @@ Implementación del servicio de consultas para obtener información sobre report
 
 ---
 
+#### 4.2.7.4. Infrastructure Layer
+
+1. **`TransactionRepository` (Repository Interface)**
+
+Interfaz del repositorio para acceder a las transacciones financieras.
+
+**Métodos principales:**
+
+| Método                                            | Tipo de Retorno         | Visibilidad | Descripción                                                   |
+|---------------------------------------------------|-------------------------|-------------|---------------------------------------------------------------|
+| `findById(Long id)`                               | `Optional<Transaction>` | `public`    | Busca una transacción por su ID.                              |
+| `findByDateRange(LocalDate start, LocalDate end)` | `List<Transaction>`     | `public`    | Busca todas las transacciones dentro de un rango de fechas.   |
+
+---
+
+2. **`ReportRepository` (Repository Interface)**
+
+Interfaz del repositorio para acceder a los reportes financieros.
+
+**Métodos principales:**
+
+| Método                                         | Tipo de Retorno         | Visibilidad | Descripción                                         |
+|------------------------------------------------|-------------------------|-------------|-----------------------------------------------------|
+| `findById(Long id)`                            | `Optional<Report>`      | `public`    | Busca un reporte por su ID.                         |
+| `findByPeriod(LocalDate start, LocalDate end)` | `List<Report>`          | `public`    | Busca todos los reportes dentro de un período.      |
+
+---
+
 ## Conclusiones y Recomendaciones
 
 Write here...
