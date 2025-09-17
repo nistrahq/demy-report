@@ -2346,7 +2346,14 @@ El diagrama de clases del Domain Layer del contexto de IAM ilustra las entidades
 ![Diagrama de Clases del Domain Layer del Contexto de IAM](./assets/diagrams/uml/class/out/IAM-domain-layer-class-diagram.png)
 
 Además, se incluye el [código fuente del diagrama de clases del Domain Layer de IAM](./assets/diagrams/uml/class/src/IAM-domain-layer-class-diagram.puml).
-#### 2.6.2.6.2 Domain Layer
+
+#### 2.6.2.6.2 Bounded Context Database Design Diagram
+
+El diagrama de diseño de base de datos del contexto de IAM muestra la estructura de las tablas y sus relaciones en la base de datos relacional. Se detallan las tablas principales, sus columnas, tipos de datos y claves primarias/foráneas que permiten gestionar la información relacionada con los usuarios.
+
+![Diagrama de Diseño de Base de Datos del Contexto de IAM](./assets/diagrams/database/erd/out/IAM-database-diagram.png)
+
+Además, se incluye el [esquema SQL del diagrama de base de datos de IAM](./assets/diagrams/database/schema/src/IAM-database-diagram-create.sql).
 
 
 ## Conclusiones y Recomendaciones
