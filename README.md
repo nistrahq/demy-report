@@ -1214,6 +1214,39 @@ Proporciona métodos para consultar información relacionada con los reportes fi
 
 ---
 
+#### 4.2.7.2. Interface Layer
+
+1. **`TransactionsController` (REST Controller)**
+
+Controlador REST que expone endpoints para gestionar transacciones financieras.
+
+**Endpoints principales:**
+
+| Nombre del método            | Ruta base típica                     | Método HTTP | Descripción                                         |
+|------------------------------|--------------------------------------|-------------|-----------------------------------------------------|
+| `registerTransaction`        | `/api/v1/transactions`               | `POST`      | Registra una nueva transacción financiera.          |
+| `getTransactionById`         | `/api/v1/transactions/{id}`          | `GET`       | Obtiene una transacción por su ID.                  |
+| `getTransactionsByDateRange` | `/api/v1/transactions`               | `GET`       | Obtiene transacciones dentro de un rango de fechas. |
+| `updateTransaction`          | `/api/v1/transactions/{id}`          | `PUT`       | Actualiza los detalles de una transacción.          |
+| `deleteTransaction`          | `/api/v1/transactions/{id}`          | `DELETE`    | Elimina una transacción por su ID.                  |
+
+---
+
+2. **`ReportsController` (REST Controller)**
+
+Controlador REST que expone endpoints para gestionar reportes financieros.
+
+**Endpoints principales:**
+
+| Nombre del método       | Ruta base típica         | Método HTTP | Descripción                            |
+|-------------------------|--------------------------|-------------|----------------------------------------|
+| `generateReport`        | `/api/v1/reports`        | `POST`      | Genera un nuevo reporte financiero.    |
+| `getReportById`         | `/api/v1/reports/{id}`   | `GET`       | Obtiene un reporte por su ID.          |
+| `getReportsByPeriod`    | `/api/v1/reports`        | `GET`       | Obtiene reportes dentro de un período. |
+| `deleteReport`          | `/api/v1/reports/{id}`   | `DELETE`    | Elimina un reporte por su ID.          |
+
+---
+
 ## Conclusiones y Recomendaciones
 
 Write here...
