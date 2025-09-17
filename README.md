@@ -744,9 +744,12 @@ El diagrama de clases del Domain Layer del contexto de Enrollment ilustra las en
 
 ![Diagrama de Clases del Domain Layer del Contexto de Enrollment](assets/diagrams/uml/class/out/enrollment-domain-layer-class-diagram.png)
 
-#### 4.2.X.6.2. Bounded Context Database Design Diagram
+#### 4.2.3.6.2. Bounded Context Database Design Diagram
 
-Write here...
+El diagrama de base de datos del contexto Enrollment muestra las tablas y relaciones que persisten los aggregates del dominio.
+
+![Diagrama de base de datos del bounded context Enrollment](assets/diagrams/database/erd/out/enrollment-database-diagram.png)
+
 ## Conclusiones y Recomendaciones
 
 Write here...
