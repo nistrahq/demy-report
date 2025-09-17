@@ -727,9 +727,12 @@ Interfaz del repositorio para acceder y gestionar estudiantes.
 | `existsStudentByDni_Dni(String dni)` | `boolean`           | `public`    | Verifica si existe un estudiante registrado con el DNI proporcionado. |
 | `findByDni_Dni(String dni)`          | `Optional<Student>` | `public`    | Busca un estudiante específico a partir de su DNI.                    |
 
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
 
-Write here...
+#### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+El Component Diagram muestra la arquitectura interna del bounded context Enrollment, detallando cómo se organizan e interactúan entre las capas de application, domain, infrastructure y interfaces.
+
+![Component Diagram](assets/diagrams/software-architecture/components/out/enrollment_software_architecture_component_diagram.png)
 
 #### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
 
