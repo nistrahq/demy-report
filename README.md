@@ -587,7 +587,7 @@ En este User Task Matrix se detallan las tareas clave que cada tipo de usuario p
 | Acceder a información personal                  |                 never                 |                 medium                 |
 | Consultar pagos                                 |               sometimes               |                  high                  |
 | Editar horario de clase                         |                 never                 |                 medium                 |
-| Recibir notificaciones sobre cambios de horario |       sometimes                       |                 medium                 |
+| Recibir notificaciones sobre cambios de horario |               sometimes               |                 medium                 |
 | Revisar cambios del horario                     |               sometimes               |                  high                  |
 
 
