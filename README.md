@@ -1090,11 +1090,11 @@ Write here...
 
 ## 2.6. Tactical-Level Domain-Driven Design
 
-### 4.2.6. Bounded Context: Institution
+### 2.6.1. Bounded Context: Institution
 
 Este contexto se encarga de la gestión de academias, administradores y docentes dentro de la plataforma.
 
-#### 4.2.6.1. Domain Layer
+#### 2.6.1.1. Domain Layer
 
 En esta sección se describen los elementos del Domain Layer del contexto de Institution, que encapsulan la lógica central relacionada con el registro y administración de instituciones educativas.
 
@@ -1380,7 +1380,7 @@ Identificador único de un usuario dentro del sistema.
 | `UserId()`           | `Constructor`  | `public`    | Constructor requerido por JPA (valor `0L`).   |
 | `UserId(Long)`       | `Constructor`  | `public`    | Inicializa y valida que el ID sea mayor a 0.  |
 
-#### 4.2.6.2. Interface Layer
+#### 2.6.1.2. Interface Layer
 
 1. **`AcademiesController` (REST Controller)**
 
@@ -1410,7 +1410,7 @@ Identificador único de un usuario dentro del sistema.
 |-------------------|--------------------|-------------|----------------------------------------|
 | `getAllTeachers`  | `/api/v1/teachers` | `GET`       | Obtiene la lista completa de docentes. |
 
-#### 4.2.6.3. Application Layer
+#### 2.6.1.3. Application Layer
 
 1. **`AcademyCommandServiceImpl` (Command Service Implementation)**
 
@@ -1527,7 +1527,7 @@ Implementación del servicio de consultas para docentes.
 | ----------------------------------- | --------------- | ----------- | ------------------------------------------------------------------------------------------- |
 | `handle(GetAllTeachersQuery query)` | `List<Teacher>` | `public`    | Lista docentes filtrando por `AcademyId` obtenido desde IAM; requiere contexto de academia. |
 
-#### 4.2.6.4. Infrastructure Layer
+#### 2.6.1.4. Infrastructure Layer
 
 1. **`AcademyRepository` (Repository Interface)**
 
@@ -1568,7 +1568,7 @@ Interfaz del repositorio para gestionar docentes.
 | `findAllByAcademyId(AcademyId academyId)` | `List<Teacher>`     | `public`    | Recupera todos los docentes asociados a la academia indicada. |
 
 
-#### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
 En esta sección se presentan los diagramas de nivel componente que ilustran la arquitectura de software del contexto de Institution. Se muestra la interacción entre los diferentes componentes, servicios y capas que conforman este bounded context. Se integra con la base de datos relacional definida en el diagrama de contenedores.
 
@@ -1576,11 +1576,11 @@ En esta sección se presentan los diagramas de nivel componente que ilustran la 
 
 Además, se incluye el [código fuente del diagrama de componentes de Intitution](./assets/diagrams/software-architecture/components/src/institution-component-level-diagram.dsl).
 
-#### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
+#### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de Institution. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
 
-#### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
+#### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
 El diagrama de clases del Domain Layer del contexto de Institution ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
 
@@ -1588,13 +1588,293 @@ El diagrama de clases del Domain Layer del contexto de Institution ilustra las e
 
 Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Institution](./assets/diagrams/uml/class/src/institution-domain-layer-class-diagram.puml).
 
-#### 4.2.6.6.2. Bounded Context Database Design Diagram
+#### 2.6.1.6.2. Bounded Context Database Design Diagram
 
 El diagrama de diseño de base de datos del contexto de Institution muestra la estructura de las tablas y sus relaciones en la base de datos relacional. Se detallan las tablas principales, sus columnas, tipos de datos y claves primarias/foráneas que permiten gestionar la información relacionada con los docentes, administradores y profesores.
 
 ![Diagrama de Diseño de Base de Datos del Contexto de Institution](./assets/diagrams/database/erd/out/institution-database-diagram.png)
 
 Además, se incluye el [esquema SQL del diagrama de base de datos de Institution](./assets/diagrams/database/schema/src/institution-database-diagram-create.sql).
+
+### 2.6.2. Bounded Context: IAM
+
+Este contexto se encarga de la gestión de identidad y accesos de toda la plataforma. Provee registro y autenticación de usuarios, verificación de correo, gestión de contraseñas, sesiones, roles y permisos.
+
+#### 2.6.2.1. Domain Layer
+
+En esta sección se describen los elementos del Domain Layer del contexto de IAM, que son necesarios para modelar la gestión de identidades y accesos. Estos componentes definen las reglas de negocio y las invariantes asociadas a la autenticación, autorización y administración de usuarios dentro de la plataforma.
+
+### 2.6.2.1. Domain Layer
+
+En esta sección se describen los elementos del Domain Layer del contexto de IAM, que encapsulan la lógica central relacionada con el registro, verificación y administración de usuarios, así como la siembra de roles base del sistema.
+
+1. **`User` (Aggregate Root)**
+
+Representa al usuario del sistema, con sus credenciales, estados y roles.
+
+**Atributos principales:**
+
+| Atributo              | Tipo                 | Visibilidad | Descripción                                                                 |
+|-----------------------|----------------------|-------------|-----------------------------------------------------------------------------|
+| `emailAddress`        | `EmailAddress`       | `private`   | Correo del usuario (VO compartido).                                         |
+| `password`            | `String`             | `private`   | Contraseña hasheada almacenada como texto (según código actual).            |
+| `roles`               | `Set<Role>`          | `private`   | Conjunto de roles asignados al usuario.                                     |
+| `verificationStatus`  | `VerificationStatus` | `private`   | Estado de verificación de correo (`NOT_VERIFIED`/`VERIFIED`).               |
+| `accountStatus`       | `AccountStatus`      | `private`   | Estado de la cuenta (`PENDING`, `ACTIVE`, `BLOCKED`, `DELETED`).            |
+| `verificationCode`    | `VerificationCode`   | `private`   | Código y expiración para verificación de cuenta.                            |
+| `tenantId`            | `TenantId`           | `private`   | Identificador del tenant con el que se asocia el usuario.                   |
+
+**Métodos principales:**
+
+| Método                                                                                 | Tipo Retorno | Visibilidad | Descripción                                                                                 |
+|----------------------------------------------------------------------------------------|--------------|-------------|---------------------------------------------------------------------------------------------|
+| `User()`                                                                               | `Constructor`  | `public`    | Constructor vacío requerido por JPA.                                                        |
+| `User(EmailAddress, String, VerificationCode)`                                         | `Constructor`  | `public`    | Crea usuario en estado `PENDING` y `NOT_VERIFIED`, con `tenantId` vacío y `roles` vacíos.   |
+| `User(EmailAddress, String, VerificationCode, List<Role>)`                             | `Constructor`  | `public`    | Crea usuario e inicializa roles usando `validateRoleSet`.                                   |
+| `addRole(Role role)`                                                                   | `User`       | `public`    | Agrega un rol al set de roles.                                                              |
+| `addRoles(List<Role> roles)`                                                           | `User`       | `public`    | Valida y agrega múltiples roles.                                                            |
+| `isVerified()`                                                                         | `boolean`    | `public`    | Devuelve `true` si `verificationStatus == VERIFIED`.                                        |
+| `activate()`                                                                           | `void`       | `public`    | Cambia `accountStatus` a `ACTIVE` solo si `verificationStatus == VERIFIED`.                 |
+| `assignVerificationCode(String email, String code, Integer expirationMinutes)`         | `void`       | `public`    | Asigna un nuevo `VerificationCode` y publica `UserVerificationCodeAssignedEvent`.           |
+| `verifyUser(String code)`                                                              | `void`       | `public`    | Verifica el código, marca `VERIFIED` y activa la cuenta; limpia `verificationCode`.         |
+| `associateTenant(TenantId tenantId)`                                                   | `void`       | `public`    | Asocia un `tenantId` si aún no tenía uno asignado.                                          |
+| `disassociateTenant(TenantId tenantId)`                                                | `void`       | `public`    | Desasocia si coincide con el tenant actual; si no, lanza excepción.                         |
+
+2. **`Role` (Entity)**
+
+Define un rol específico que puede ser asignado a un usuario.
+
+**Atributos principales:**
+
+| Atributo | Tipo   | Visibilidad | Descripción                                          |
+|----------|--------|-------------|------------------------------------------------------|
+| `id`     | `Long` | `private`   | Identificador único del rol.                         |
+| `name`   | `Roles`| `private`   | Nombre del rol (enum): USER, ADMINISTRATOR, TEACHER. |
+
+**Métodos principales:**
+
+| Método                                    | Tipo Retorno | Visibilidad | Descripción                                           |
+|-------------------------------------------|--------------|-------------|-------------------------------------------------------|
+| `Role()`                                  | `Constructor`  | `public`    | Constructor vacío (JPA/Lombok).                       |
+| `Role(Roles name)`                        | `Constructor`  | `public`    | Inicializa rol con el enum correspondiente.           |
+| `getStringName()`                         | `String`     | `public`    | Devuelve el nombre del enum como `String`.            |
+| `getDefaultRole()` *(static)*             | `Role`       | `public`    | Devuelve el rol por defecto (`ROLE_USER`).            |
+| `toRoleFromName(String name)` *(static)*  | `Role`       | `public`    | Crea un `Role` a partir del nombre del enum.          |
+| `validateRoleSet(List<Role> roles)` *(static)* | `List<Role>` | `public` | Si la lista es nula/vacía, retorna `[ROLE_USER]`.     |
+
+3. **`AccountStatus` (Value Object)**
+
+Estado actual de la cuenta del usuario (pendiente, activa, bloqueada, eliminada).
+
+**Atributos principales:**
+
+| Atributo  | Tipo | Visibilidad | Descripción                             |
+| --------- | ---- | ----------- | --------------------------------------- |
+| `PENDING` | `Enum` | `public`    | La cuenta está pendiente de activación. |
+| `ACTIVE`  | `Enum` | `public`    | La cuenta está activa.                  |
+| `BLOCKED` | `Enum` | `public`    | La cuenta está bloqueada.               |
+| `DELETED` | `Enum` | `public`    | La cuenta fue eliminada.                |
+
+
+4. **`VerificationStatus` (Value Object)**
+
+Indica si el usuario ha sido verificado o no.
+
+**Atributos principales:**
+
+| Atributo       | Tipo | Visibilidad | Descripción                        |
+| -------------- | ---- | ----------- | ---------------------------------- |
+| `NOT_VERIFIED` | `Enum` | `public`    | El usuario aún no está verificado. |
+| `VERIFIED`     | `Enum` | `public`    | El usuario ha sido verificado.     |
+
+5. **`Roles` (Value Object)**
+
+Enumera los distintos roles disponibles en el sistema.
+
+**Atributos principales:**
+
+| Atributo             | Tipo | Visibilidad | Descripción                           |
+| -------------------- | ---- | ----------- | ------------------------------------- |
+| `ROLE_USER`          | `Enum` | `public`    | Rol básico de usuario estándar.       |
+| `ROLE_ADMINISTRATOR` | `Enum` | `public`    | Rol con privilegios administrativos.  |
+| `ROLE_TEACHER`       | `Enum` | `public`    | Rol para usuarios con perfil docente. |
+
+6. **`TenantId` (Value Object)**
+
+Identificador único del tenant asociado a un usuario.
+
+**Atributos principales:**
+
+| Atributo   | Tipo  | Visibilidad | Descripción                                               |
+|------------|-------|-------------|-----------------------------------------------------------|
+| `tenantId` | `Long`| `private`   | Identificador del tenant; puede ser `null` si no asignado.|
+
+**Métodos principales:**
+
+| Método                               | Tipo Retorno | Visibilidad | Descripción                                                    |
+|--------------------------------------|--------------|-------------|----------------------------------------------------------------|
+| `TenantId()`                         | `Constructor`  | `public`    | Inicializa con `null` (no asignado).                           |
+| `TenantId(Long tenantId)`            | `Constructor`  | `public`    | Valida `tenantId > 0` cuando no es `null`.                     |
+| `isAssigned()`                       | `boolean`    | `public`    | `true` si `tenantId != null`.                                  |
+
+7. **`VerificationCode` (Value Object)**
+
+Código y fecha de expiración usados para verificar usuarios.
+
+**Atributos principales:**
+
+| Atributo     | Tipo            | Visibilidad | Descripción                                         |
+|--------------|-----------------|-------------|-----------------------------------------------------|
+| `code`       | `String`        | `private`   | Código de verificación (puede quedar `null`).       |
+| `expiration` | `LocalDateTime` | `private`   | Fecha/hora de expiración del código.                |
+
+**Métodos principales:**
+
+| Método                                  | Tipo Retorno | Visibilidad | Descripción                                                        |
+|-----------------------------------------|--------------|-------------|--------------------------------------------------------------------|
+| `VerificationCode(String, LocalDateTime)` | `Constructor`| `public`    | Valida que no esté expirado al crearse y que el código no sea vacío. |
+| `isExpired()`                           | `boolean`    | `public`    | `true` si `now > expiration`.                                      |
+| `matches(String inputCode)`             | `boolean`    | `public`    | `true` si coincide y **no** está expirado.                         |
+
+8. **`SignUpCommand` (Command)**
+
+Comando para registrar un nuevo usuario en el sistema.
+
+**Atributos principales:**
+
+| Atributo       | Tipo           | Visibilidad | Descripción                          |
+|----------------|----------------|-------------|--------------------------------------|
+| `emailAddress` | `EmailAddress` | `public`    | Correo del usuario a registrar.      |
+| `password`     | `String`       | `public`    | Contraseña en texto (se hashea luego). |
+| `roles`        | `List<Role>`   | `public`    | Roles iniciales (validados).         |
+
+9. **`SignInCommand` (Command)**
+
+Comando para autenticar un usuario con credenciales.
+
+**Atributos principales:**
+
+| Atributo       | Tipo           | Visibilidad | Descripción                    |
+|----------------|----------------|-------------|--------------------------------|
+| `emailAddress` | `EmailAddress` | `public`    | Correo de acceso.              |
+| `password`     | `String`       | `public`    | Contraseña provista por el user.|
+
+10. **`VerifyUserCommand` (Command)**
+
+Comando para verificar un usuario mediante código.
+
+**Atributos principales:**
+
+| Atributo | Tipo     | Visibilidad | Descripción                            |
+|----------|----------|-------------|----------------------------------------|
+| `email`  | `String` | `public`    | Correo a verificar (no vacío).         |
+| `code`   | `String` | `public`    | Código de verificación (no vacío).     |
+
+11. **`ResendVerificationCodeCommand` (Command)**
+
+Comando para reenviar un código de verificación.
+
+**Atributos principales:**
+
+| Atributo | Tipo     | Visibilidad | Descripción                      |
+|----------|----------|-------------|----------------------------------|
+| `email`  | `String` | `public`    | Correo válido y no vacío.        |
+
+12. **`AssignUserTenantId` (Command)**
+
+Comando para asociar un usuario a un tenant.
+
+**Atributos principales:**
+
+| Atributo  | Tipo   | Visibilidad | Descripción                 |
+|-----------|--------|-------------|-----------------------------|
+| `userId`  | `Long` | `public`    | ID del usuario objetivo.    |
+| `tenantId`| `Long` | `public`    | ID del tenant a asociar.    |
+
+13. **`SeedRolesCommand` (Command)**
+
+Comando utilizado para sembrar los roles base en el sistema.
+
+**Atributos principales:**  
+
+| Atributo    | Tipo | Visibilidad | Descripción                                                 |
+| ----------- | ---- | ----------- | ----------------------------------------------------------- |
+| *(ninguno)* | -    | -           | No requiere atributos; su ejecución siembra los roles base. |
+
+
+14. **`GetAuthenticatedUserTenantIdQuery` (Query)**
+
+Consulta utilizada para obtener el tenant asociado al usuario autenticado.
+
+**Atributos principales:** 
+
+| Atributo    | Tipo | Visibilidad | Descripción                                                           |
+| ----------- | ---- | ----------- | --------------------------------------------------------------------- |
+| *(ninguno)* | -    | -           | No requiere atributos; retorna el `TenantId` del usuario autenticado. |
+
+15. **`UserVerificationCodeAssignedEvent` (Domain Event)**
+
+Evento publicado al asignar un código de verificación.
+
+**Atributos principales:**
+
+| Atributo            | Tipo      | Visibilidad | Descripción                                   |
+|---------------------|-----------|-------------|-----------------------------------------------|
+| `source` *(heredado)* | `Object` | `private`   | Objeto origen del evento (ApplicationEvent).   |
+| `email`             | `String`  | `private`   | Correo destinatario del código.               |
+| `code`              | `String`  | `private`   | Código generado.                               |
+| `expirationMinutes` | `Integer` | `private`   | Minutos hasta la expiración.                  |
+
+16. **`UserCommandService` (Domain Service)**
+
+Maneja comandos relacionados con usuarios.
+
+**Métodos principales:**
+
+| Método                                      | Tipo de Retorno                       | Visibilidad | Descripción                                                         |
+|---------------------------------------------|---------------------------------------|-------------|---------------------------------------------------------------------|
+| `handle(SignInCommand command)`             | `Optional<ImmutablePair<User,String>>`| `public`    | Autentica y retorna user + token/credencial (según implementación). |
+| `handle(SignUpCommand command)`             | `Optional<User>`                      | `public`    | Registra un usuario nuevo.                                          |
+| `handle(VerifyUserCommand command)`         | `boolean`                             | `public`    | Verifica usuario por código.                                        |
+| `handle(ResendVerificationCodeCommand cmd)` | `boolean`                             | `public`    | Reenvía código de verificación.                                     |
+| `handle(AssignUserTenantId command)`        | `void`                                | `public`    | Asocia usuario a un tenant.                                         |
+
+17. **`UserQueryService` (Domain Service)**
+
+Maneja consultas relacionadas con usuarios.
+
+**Métodos principales:**
+
+| Método                                            | Tipo de Retorno      | Visibilidad | Descripción                                          |
+|---------------------------------------------------|----------------------|-------------|------------------------------------------------------|
+| `handle(GetAuthenticatedUserTenantIdQuery query)` | `Optional<TenantId>` | `public`    | Obtiene el `TenantId` del usuario autenticado.       |
+
+18. **`RoleCommandService` (Domain Service)**
+
+Maneja comandos relacionados con la gestión de roles.
+
+**Métodos principales:**
+
+| Método                         | Tipo de Retorno | Visibilidad | Descripción                                  |
+|--------------------------------|-----------------|-------------|----------------------------------------------|
+| `handle(SeedRolesCommand cmd)` | `void`          | `public`    | Siembra los roles base si aún no existen.    |
+
+---
+
+#### 2.6.2.2. Domain Layer
+#### 2.6.2.3. Domain Layer
+#### 2.6.2.4. Domain Layer
+#### 2.6.2.5. Domain Layer
+#### 2.6.2.6. Domain Layer
+#### 2.6.2.6.1 Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases del Domain Layer del contexto de IAM ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
+
+![Diagrama de Clases del Domain Layer del Contexto de IAM](./assets/diagrams/uml/class/out/IAM-domain-layer-class-diagram.png)
+
+Además, se incluye el [código fuente del diagrama de clases del Domain Layer de IAM](./assets/diagrams/uml/class/src/IAM-domain-layer-class-diagram.puml).
+#### 2.6.2.6.2 Domain Layer
+
 
 ## Conclusiones y Recomendaciones
 
