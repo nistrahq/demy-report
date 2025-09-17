@@ -734,13 +734,15 @@ El Component Diagram muestra la arquitectura interna del bounded context Enrollm
 
 ![Component Diagram](assets/diagrams/software-architecture/components/out/enrollment_software_architecture_component_diagram.png)
 
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
+#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 
-Write here...
+En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de Enrollment. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
 
-#### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
+#### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
 
-Write here...
+El diagrama de clases del Domain Layer del contexto de Enrollment ilustra las entities, value objects y services que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
+
+![Diagrama de Clases del Domain Layer del Contexto de Enrollment](assets/diagrams/uml/class/out/enrollment-domain-layer-class-diagram.png)
 
 #### 4.2.X.6.2. Bounded Context Database Design Diagram
 
