@@ -578,17 +578,17 @@ En este User Task Matrix se detallan las tareas clave que cada tipo de usuario p
 | Diseñar las evaluaciones                        |                 sometimes                 |                    high                    |
 | Gestionar que se cumplan las normas en el aula  |                  always                   |                    high                    |
 
-| **TAREA**                                     | **Aleza Silva (Alumno) - Frecuencia** | **Aleza Silva (Alumno) - Importancia** |
-|-----------------------------------------------|:-------------------------------------:|:--------------------------------------:|
-| Visualizar matrícula                          |                always                |                  high                  |
-| Consultar horario de clases                   |                always                |                  high                  |
-| Visualizar detalles de horario                |              sometimes               |                 medium                 |
-| Consultar detalles de profesores              |              sometimes               |                 medium                 |
-| Acceder a información personal                |                never                 |                 medium                 |
-| Consultar pagos                               |              sometimes               |                  high                  |
-| Editar horario de clase                       |                never                 |                 medium                 |
-| Recibir notificaciones sobre cambios de horario |             sometimes               |                 medium                 |
-| Revisar cambios del horario                   |              sometimes               |                  high                  |
+| **TAREA**                                       | **Aleza Silva (Alumno) - Frecuencia** | **Aleza Silva (Alumno) - Importancia** |
+|-------------------------------------------------|:-------------------------------------:|:--------------------------------------:|
+| Visualizar matrícula                            |                always                 |                  high                  |
+| Consultar horario de clases                     |                always                 |                  high                  |
+| Visualizar detalles de horario                  |               sometimes               |                 medium                 |
+| Consultar detalles de profesores                |               sometimes               |                 medium                 |
+| Acceder a información personal                  |                 never                 |                 medium                 |
+| Consultar pagos                                 |               sometimes               |                  high                  |
+| Editar horario de clase                         |                 never                 |                 medium                 |
+| Recibir notificaciones sobre cambios de horario |       sometimes                       |                 medium                 |
+| Revisar cambios del horario                     |               sometimes               |                  high                  |
 
 
 ### 2.3.3. User Journey Mapping
@@ -752,7 +752,7 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 ---
 
 | Atributo             | Tipo                 | Visibilidad | Descripción                                             |
-| -------------------- | -------------------- | ----------- | ------------------------------------------------------- |
+|----------------------|----------------------|-------------|---------------------------------------------------------|
 | `id`                 | `Long`               | `private`   | Identificador único de la academia.                     |
 | `administratorId`    | `AdministratorId`    | `private`   | Identificador del administrador asignado a la academia. |
 | `academyName`        | `AcademyName`        | `private`   | Nombre oficial de la academia.                          |
@@ -765,8 +765,8 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 **Métodos principales:**
 
 | Método                                                                                    | Tipo Retorno  | Visibilidad | Descripción                                                    |
-| ----------------------------------------------------------------------------------------- | ------------- | ----------- | -------------------------------------------------------------- |
-| `Academy()`                                                                               | `Constructor`   | `protected` | Constructor protegido para JPA.                                |
+|-------------------------------------------------------------------------------------------|---------------|-------------|----------------------------------------------------------------|
+| `Academy()`                                                                               | `Constructor` | `protected` | Constructor protegido para JPA.                                |
 | `Academy(AcademyName, AcademyDescription, StreetAddress, EmailAddress, PhoneNumber, Ruc)` | `Constructor` | `public`    | Crea una academia con sus datos básicos.                       |
 | `Academy(RegisterAcademyCommand command)`                                                 | `Constructor` | `public`    | Crea una academia a partir de un comando de registro.          |
 | `assignAdministrator(AdministratorId administratorId)`                                    | `void`        | `public`    | Asigna un administrador a la academia si no existe uno previo. |
@@ -776,7 +776,7 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 **Atributos principales:**
 
 | Atributo      | Tipo          | Visibilidad | Descripción                                      |
-| ------------- | ------------- | ----------- | ------------------------------------------------ |
+|---------------|---------------|-------------|--------------------------------------------------|
 | `id`          | `Long`        | `private`   | Identificador único del administrador.           |
 | `personName`  | `PersonName`  | `private`   | Nombre completo del administrador.               |
 | `phoneNumber` | `PhoneNumber` | `private`   | Número de contacto del administrador.            |
@@ -786,20 +786,20 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 
 **Métodos principales:**
 
-| Método                                                                 | Tipo Retorno | Visibilidad | Descripción                                               |
-| ---------------------------------------------------------------------- | ------------ | ----------- | --------------------------------------------------------- |
-| `Administrator()`                                                      | `Constructor`  | `protected` | Constructor protegido para JPA.                           |
-| `Administrator(PersonName, PhoneNumber, DniNumber, AcademyId, UserId)` | `Constructor`  | `public`    | Crea un administrador con sus datos básicos.              |
-| `Administrator(RegisterAdministratorCommand command)`                  | `Constructor`  | `public`    | Crea un administrador a partir de un comando de registro. |
-| `registerAdministrator(Long academyId, Long userId)`                   | `void`       | `public`    | Publica un evento de registro de administrador.           |
-| `disassociateAcademy(AcademyId academyId)`                             | `void`       | `public`    | Desasocia al administrador de una academia.               |
+| Método                                                                 | Tipo Retorno  | Visibilidad | Descripción                                               |
+|------------------------------------------------------------------------|---------------|-------------|-----------------------------------------------------------|
+| `Administrator()`                                                      | `Constructor` | `protected` | Constructor protegido para JPA.                           |
+| `Administrator(PersonName, PhoneNumber, DniNumber, AcademyId, UserId)` | `Constructor` | `public`    | Crea un administrador con sus datos básicos.              |
+| `Administrator(RegisterAdministratorCommand command)`                  | `Constructor` | `public`    | Crea un administrador a partir de un comando de registro. |
+| `registerAdministrator(Long academyId, Long userId)`                   | `void`        | `public`    | Publica un evento de registro de administrador.           |
+| `disassociateAcademy(AcademyId academyId)`                             | `void`        | `public`    | Desasocia al administrador de una academia.               |
 
 3. **`Teacher`(Aggregate Root)**
 
 **Atributos principales:**
 
 | Atributo     | Tipo         | Visibilidad | Descripción                                  |
-| ------------ | ------------ | ----------- | -------------------------------------------- |
+|--------------|--------------|-------------|----------------------------------------------|
 | `id`         | `Long`       | `private`   | Identificador único del docente.             |
 | `personName` | `PersonName` | `private`   | Nombre completo del docente.                 |
 | `academyId`  | `AcademyId`  | `private`   | Academia a la que está vinculado el docente. |
@@ -807,16 +807,16 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 
 **Métodos principales:**
 
-| Método      | Tipo Retorno | Visibilidad | Descripción                |
-| ----------- | ------------ | ----------- | -------------------------- |
-| `Teacher()` | `Constructor`  | `protected` | Constructor protegido JPA. |
+| Método      | Tipo Retorno  | Visibilidad | Descripción                |
+|-------------|---------------|-------------|----------------------------|
+| `Teacher()` | `Constructor` | `protected` | Constructor protegido JPA. |
 
 4. **`RegisterAcademyCommand`(Command)**
 
 **Atributos principales:**
 
 | Atributo             | Tipo                 | Visibilidad | Descripción                       |
-| -------------------- | -------------------- | ----------- | --------------------------------- |
+|----------------------|----------------------|-------------|-----------------------------------|
 | `academyName`        | `AcademyName`        | `public`    | Nombre de la academia.            |
 | `academyDescription` | `AcademyDescription` | `public`    | Descripción de la academia.       |
 | `streetAddress`      | `StreetAddress`      | `public`    | Dirección física.                 |
@@ -829,7 +829,7 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 **Atributos principales:**
 
 | Atributo      | Tipo          | Visibilidad | Descripción                         |
-| ------------- | ------------- | ----------- | ----------------------------------- |
+|---------------|---------------|-------------|-------------------------------------|
 | `personName`  | `PersonName`  | `public`    | Nombre del administrador.           |
 | `phoneNumber` | `PhoneNumber` | `public`    | Número de contacto.                 |
 | `dniNumber`   | `DniNumber`   | `public`    | DNI del administrador.              |
@@ -841,7 +841,7 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 **Atributos principales:**
 
 | Atributo     | Tipo         | Visibilidad | Descripción                   |
-| ------------ | ------------ | ----------- | ----------------------------- |
+|--------------|--------------|-------------|-------------------------------|
 | `personName` | `PersonName` | `public`    | Nombre del docente.           |
 | `academyId`  | `AcademyId`  | `public`    | Identificador de la academia. |
 | `userId`     | `UserId`     | `public`    | Identificador del usuario.    |
@@ -849,15 +849,15 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 7. **`Queries` (Query)**
 
 | Query                              | Atributos principales   | Descripción                                |
-| ---------------------------------- | ----------------------- | ------------------------------------------ |
+|------------------------------------|-------------------------|--------------------------------------------|
 | `GetAcademyByIdQuery`              | `academyId : Long`      | Obtiene una academia por su identificador. |
 | `GetAdministratorByDniNumberQuery` | `dniNumber : DniNumber` | Busca administrador por DNI.               |
-| `GetAllTeachersQuery`              | `*(sin atributos)*`       | Devuelve todos los docentes registrados.   |
+| `GetAllTeachersQuery`              | `*(sin atributos)*`     | Devuelve todos los docentes registrados.   |
 
 8. **`AdministratorRegisteredEvent` (Domain Event)**
 
 | Atributo    | Tipo     | Visibilidad | Descripción                              |
-| ----------- | -------- | ----------- | ---------------------------------------- |
+|-------------|----------|-------------|------------------------------------------|
 | `source`    | `Object` | `private`   | Objeto origen del evento.                |
 | `academyId` | `Long`   | `private`   | Identificador de la academia asociada.   |
 | `userId`    | `Long`   | `private`   | Identificador del usuario administrador. |
@@ -868,10 +868,10 @@ Proporciona métodos para manejar comandos relacionados con la gestión de acade
 
 **Métodos principales:**
 
-| Método                                               | Tipo de Retorno     | Visibilidad | Descripción                                                     |
-|------------------------------------------------------|---------------------|-------------|-----------------------------------------------------------------|
-| `handle(RegisterAcademyCommand command)`             | `Optional<Academy>` | `public`    | Crea y registra una nueva academia a partir de un comando.      |
-| `handle(AssignAdministratorToAcademyCommand command)`| `void`              | `public`    | Asigna un administrador a una academia existente.               |
+| Método                                                 | Tipo de Retorno     | Visibilidad | Descripción                                                     |
+|--------------------------------------------------------|---------------------|-------------|-----------------------------------------------------------------|
+| `handle(RegisterAcademyCommand command)`               | `Optional<Academy>` | `public`    | Crea y registra una nueva academia a partir de un comando.      |
+| `handle(AssignAdministratorToAcademyCommand command)`  | `void`              | `public`    | Asigna un administrador a una academia existente.               |
 
 ---
 
@@ -881,9 +881,9 @@ Permite consultar información relacionada con academias.
 
 **Métodos principales:**
 
-| Método                                   | Tipo de Retorno     | Visibilidad | Descripción                                         |
-|------------------------------------------|---------------------|-------------|-----------------------------------------------------|
-| `handle(GetAcademyByIdQuery query)`      | `Optional<Academy>` | `public`    | Obtiene una academia específica por su identificador.|
+| Método                                   | Tipo de Retorno     | Visibilidad | Descripción                                            |
+|------------------------------------------|---------------------|-------------|--------------------------------------------------------|
+| `handle(GetAcademyByIdQuery query)`      | `Optional<Academy>` | `public`    | Obtiene una academia específica por su identificador.  |
 
 ---
 
@@ -893,9 +893,9 @@ Proporciona métodos para manejar comandos relacionados con la gestión de admin
 
 **Métodos principales:**
 
-| Método                                         | Tipo de Retorno          | Visibilidad | Descripción                                                           |
-|------------------------------------------------|--------------------------|-------------|-----------------------------------------------------------------------|
-| `handle(RegisterAdministratorCommand command)` | `Optional<Administrator>`| `public`    | Registra un nuevo administrador a partir de un comando.               |
+| Método                                          | Tipo de Retorno            | Visibilidad | Descripción                                                           |
+|-------------------------------------------------|----------------------------|-------------|-----------------------------------------------------------------------|
+| `handle(RegisterAdministratorCommand command)`  | `Optional<Administrator>`  | `public`    | Registra un nuevo administrador a partir de un comando.               |
 
 ---
 
@@ -905,9 +905,9 @@ Permite consultar información relacionada con administradores.
 
 **Métodos principales:**
 
-| Método                                                | Tipo de Retorno          | Visibilidad | Descripción                                                    |
-|-------------------------------------------------------|--------------------------|-------------|----------------------------------------------------------------|
-| `handle(GetAdministratorByDniNumberQuery query)`      | `Optional<Administrator>`| `public`    | Obtiene un administrador usando su número de DNI.              |
+| Método                                                | Tipo de Retorno            | Visibilidad | Descripción                                                    |
+|-------------------------------------------------------|----------------------------|-------------|----------------------------------------------------------------|
+| `handle(GetAdministratorByDniNumberQuery query)`      | `Optional<Administrator>`  | `public`    | Obtiene un administrador usando su número de DNI.              |
 
 ---
 
@@ -945,10 +945,10 @@ Representa el nombre de una academia, asegurando que no sea nulo, vacío ni supe
 
 **Métodos principales:**
 
-| Método                 | Tipo Retorno | Visibilidad | Descripción                                   |
-|------------------------|--------------|-------------|-----------------------------------------------|
-| `AcademyName()`        | `Constructor`  | `public`    | Constructor requerido por JPA (valor vacío).  |
-| `AcademyName(String)`  | `Constructor`  | `public`    | Inicializa y valida el nombre de la academia. |
+| Método                 | Tipo Retorno  | Visibilidad | Descripción                                   |
+|------------------------|---------------|-------------|-----------------------------------------------|
+| `AcademyName()`        | `Constructor` | `public`    | Constructor requerido por JPA (valor vacío).  |
+| `AcademyName(String)`  | `Constructor` | `public`    | Inicializa y valida el nombre de la academia. |
 
 ---
 
@@ -964,10 +964,10 @@ Encapsula la descripción de una academia, validando que no sea nula ni vacía.
 
 **Métodos principales:**
 
-| Método                        | Tipo Retorno | Visibilidad | Descripción                              |
-|-------------------------------|--------------|-------------|------------------------------------------|
-| `AcademyDescription()`        | `Constructor`  | `public`    | Constructor requerido por JPA (valor vacío). |
-| `AcademyDescription(String)`  | `Constructor`  | `public`    | Inicializa y valida la descripción.      |
+| Método                        | Tipo Retorno  | Visibilidad | Descripción                                  |
+|-------------------------------|---------------|-------------|----------------------------------------------|
+| `AcademyDescription()`        | `Constructor` | `public`    | Constructor requerido por JPA (valor vacío). |
+| `AcademyDescription(String)`  | `Constructor` | `public`    | Inicializa y valida la descripción.          |
 
 ---
 
@@ -977,17 +977,17 @@ Identificador único de un administrador, con la invariante de ser mayor que cer
 
 **Atributos principales:**
 
-| Atributo           | Tipo  | Visibilidad | Descripción                                 |
-|--------------------|-------|-------------|---------------------------------------------|
-| `administratorId`  | `Long`| `private`   | Id del administrador.                       |
+| Atributo           | Tipo   | Visibilidad | Descripción                                 |
+|--------------------|--------|-------------|---------------------------------------------|
+| `administratorId`  | `Long` | `private`   | Id del administrador.                       |
 
 **Métodos principales:**
 
-| Método                                 | Tipo Retorno | Visibilidad | Descripción                                      |
-|----------------------------------------|--------------|-------------|--------------------------------------------------|
-| `AdministratorId()`                    | `Constructor`  | `public`    | Constructor requerido por JPA (valor `null`).    |
-| `AdministratorId(Long administratorId)`| `Constructor`  | `public`    | Inicializa y valida que sea mayor que cero.      |
-| `isAssigned()`                         | `boolean`    | `public`    | Devuelve `true` si hay un ID válido asignado.    |
+| Método                                   | Tipo Retorno  | Visibilidad | Descripción                                      |
+|------------------------------------------|---------------|-------------|--------------------------------------------------|
+| `AdministratorId()`                      | `Constructor` | `public`    | Constructor requerido por JPA (valor `null`).    |
+| `AdministratorId(Long administratorId)`  | `Constructor` | `public`    | Inicializa y valida que sea mayor que cero.      |
+| `isAssigned()`                           | `boolean`     | `public`    | Devuelve `true` si hay un ID válido asignado.    |
 
 ---
 
@@ -1003,10 +1003,10 @@ Representa el RUC de la academia, validando que tenga exactamente 11 dígitos nu
 
 **Métodos principales:**
 
-| Método        | Tipo Retorno | Visibilidad | Descripción                                   |
-|---------------|--------------|-------------|-----------------------------------------------|
-| `Ruc()`       | `Constructor`  | `public`    | Constructor requerido por JPA (valor vacío).  |
-| `Ruc(String)` | `Constructor`  | `public`    | Inicializa y valida longitud y formato numérico. |
+| Método        | Tipo Retorno  | Visibilidad | Descripción                                      |
+|---------------|---------------|-------------|--------------------------------------------------|
+| `Ruc()`       | `Constructor` | `public`    | Constructor requerido por JPA (valor vacío).     |
+| `Ruc(String)` | `Constructor` | `public`    | Inicializa y valida longitud y formato numérico. |
 
 ---
 
@@ -1016,16 +1016,16 @@ Identificador único de un usuario dentro del sistema.
 
 **Atributos principales:**
 
-| Atributo | Tipo  | Visibilidad | Descripción                           |
-|----------|-------|-------------|---------------------------------------|
-| `userId` | `Long`| `private`   | Identificador único del usuario.      |
+| Atributo | Tipo    | Visibilidad | Descripción                           |
+|----------|---------|-------------|---------------------------------------|
+| `userId` | `Long`  | `private`   | Identificador único del usuario.      |
 
 **Métodos principales:**
 
-| Método               | Tipo Retorno | Visibilidad | Descripción                                   |
-|----------------------|--------------|-------------|-----------------------------------------------|
-| `UserId()`           | `Constructor`  | `public`    | Constructor requerido por JPA (valor `0L`).   |
-| `UserId(Long)`       | `Constructor`  | `public`    | Inicializa y valida que el ID sea mayor a 0.  |
+| Método               | Tipo Retorno  | Visibilidad | Descripción                                   |
+|----------------------|---------------|-------------|-----------------------------------------------|
+| `UserId()`           | `Constructor` | `public`    | Constructor requerido por JPA (valor `0L`).   |
+| `UserId(Long)`       | `Constructor` | `public`    | Inicializa y valida que el ID sea mayor a 0.  |
 
 #### 2.6.1.2. Interface Layer
 
@@ -1066,13 +1066,13 @@ Implementación del servicio de comandos para gestionar academias.
 **Atributos principales:**
 
 | Atributo            | Tipo                | Visibilidad | Descripción                                   |
-| ------------------- | ------------------- | ----------- | --------------------------------------------- |
+|---------------------|---------------------|-------------|-----------------------------------------------|
 | `academyRepository` | `AcademyRepository` | `private`   | Repositorio para operaciones de persistencia. |
 
 **Métodos principales:**
 
 | Método                                            | Tipo de Retorno     | Visibilidad | Descripción                                                           |
-| ------------------------------------------------- | ------------------- | ----------- | --------------------------------------------------------------------- |
+|---------------------------------------------------|---------------------|-------------|-----------------------------------------------------------------------|
 | `handle(RegisterAcademyCommand command)`          | `Optional<Academy>` | `public`    | Crea y persiste una nueva academia; valida email y RUC únicos.        |
 | `handle(AssignAdministratorToAcademyCommand cmd)` | `void`              | `public`    | Asigna un administrador existente a una academia; persiste el cambio. |
 
@@ -1083,14 +1083,14 @@ Implementación del servicio de comandos para gestionar administradores.
 **Atributos principales:**
 
 | Atributo                  | Tipo                      | Visibilidad | Descripción                                              |
-| ------------------------- | ------------------------- | ----------- | -------------------------------------------------------- |
+|---------------------------|---------------------------|-------------|----------------------------------------------------------|
 | `academyRepository`       | `AcademyRepository`       | `private`   | Acceso a academias para asociación y persistencia.       |
 | `administratorRepository` | `AdministratorRepository` | `private`   | Acceso a administradores para validación y persistencia. |
 
 **Métodos principales:**
 
 | Método                                         | Tipo de Retorno           | Visibilidad | Descripción                                                                                                  |
-| ---------------------------------------------- | ------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------ |
+|------------------------------------------------|---------------------------|-------------|--------------------------------------------------------------------------------------------------------------|
 | `handle(RegisterAdministratorCommand command)` | `Optional<Administrator>` | `public`    | Registra un administrador; valida duplicados por DNI; publica evento; asocia a la academia y persiste ambos. |
 
 3. **`TeacherCommandServiceImpl` (Command Service Implementation)**
@@ -1116,13 +1116,13 @@ Adaptador de salida hacia IAM para obtener el contexto del usuario autenticado.
 **Atributos principales:**
 
 | Atributo           | Tipo               | Visibilidad | Descripción                                 |
-| ------------------ | ------------------ | ----------- | ------------------------------------------- |
+|--------------------|--------------------|-------------|---------------------------------------------|
 | `iamContextFacade` | `IamContextFacade` | `private`   | Fachada del contexto IAM (sistema externo). |
 
 **Métodos principales:**
 
 | Método                    | Tipo de Retorno       | Visibilidad | Descripción                                                           |
-| ------------------------- | --------------------- | ----------- | --------------------------------------------------------------------- |
+|---------------------------|-----------------------|-------------|-----------------------------------------------------------------------|
 | `fetchCurrentAcademyId()` | `Optional<AcademyId>` | `public`    | Obtiene el `AcademyId` del usuario autenticado desde IAM (si existe). |
 
 5. **`AcademyQueryServiceImpl` (Query Service Implementation)**
@@ -1132,13 +1132,13 @@ Implementación del servicio de consultas para academias.
 **Atributos principales:**
 
 | Atributo            | Tipo                | Visibilidad | Descripción                         |
-| ------------------- | ------------------- | ----------- | ----------------------------------- |
+|---------------------|---------------------|-------------|-------------------------------------|
 | `academyRepository` | `AcademyRepository` | `private`   | Repositorio para acceso de lectura. |
 
 **Métodos principales:**
 
 | Método                              | Tipo de Retorno     | Visibilidad | Descripción                                |
-| ----------------------------------- | ------------------- | ----------- | ------------------------------------------ |
+|-------------------------------------|---------------------|-------------|--------------------------------------------|
 | `handle(GetAcademyByIdQuery query)` | `Optional<Academy>` | `public`    | Obtiene una academia por su identificador. |
 
 6. **`AdministratorQueryServiceImpl` (Query Service Implementation)**
@@ -1148,13 +1148,13 @@ Implementación del servicio de consultas para administradores.
 **Atributos principales:**
 
 | Atributo                  | Tipo                      | Visibilidad | Descripción                         |
-| ------------------------- | ------------------------- | ----------- | ----------------------------------- |
+|---------------------------|---------------------------|-------------|-------------------------------------|
 | `administratorRepository` | `AdministratorRepository` | `private`   | Repositorio para acceso de lectura. |
 
 **Métodos principales:**
 
 | Método                                           | Tipo de Retorno           | Visibilidad | Descripción                          |
-| ------------------------------------------------ | ------------------------- | ----------- | ------------------------------------ |
+|--------------------------------------------------|---------------------------|-------------|--------------------------------------|
 | `handle(GetAdministratorByDniNumberQuery query)` | `Optional<Administrator>` | `public`    | Obtiene un administrador por su DNI. |
 
 7. **`TeacherQueryServiceImpl` (Query Service Implementation)**
@@ -1164,15 +1164,15 @@ Implementación del servicio de consultas para docentes.
 **Atributos principales:**
 
 | Atributo             | Tipo                 | Visibilidad | Descripción                                                      |
-| -------------------- | -------------------- | ----------- | ---------------------------------------------------------------- |
+|----------------------|----------------------|-------------|------------------------------------------------------------------|
 | `teacherRepository`  | `TeacherRepository`  | `private`   | Repositorio para acceso de lectura de docentes.                  |
 | `externalIamService` | `ExternalIamService` | `private`   | Servicio para obtener `AcademyId` del usuario autenticado (IAM). |
 
 **Métodos principales:**
 
-| Método                              | Tipo de Retorno | Visibilidad | Descripción                                                                                 |
-| ----------------------------------- | --------------- | ----------- | ------------------------------------------------------------------------------------------- |
-| `handle(GetAllTeachersQuery query)` | `List<Teacher>` | `public`    | Lista docentes filtrando por `AcademyId` obtenido desde IAM; requiere contexto de academia. |
+| Método                               | Tipo de Retorno  | Visibilidad  | Descripción                                                                                  |
+|--------------------------------------|------------------|--------------|----------------------------------------------------------------------------------------------|
+| `handle(GetAllTeachersQuery query)`  | `List<Teacher>`  | `public`     | Lista docentes filtrando por `AcademyId` obtenido desde IAM; requiere contexto de academia.  |
 
 #### 2.6.1.4. Infrastructure Layer
 
@@ -1182,12 +1182,12 @@ Interfaz del repositorio para gestionar academias.
 
 **Métodos principales:**
 
-| Método                                            | Tipo de Retorno     | Visibilidad | Descripción                                                |
-| ------------------------------------------------- | ------------------- | ----------- | ---------------------------------------------------------- |
-| `findById(Long id)`                               | `Optional<Academy>` | `public`    | Busca una academia por su identificador.                   |
-| `save(Academy academy)`                           | `Academy`           | `public`    | Persiste o actualiza una academia.                         |
-| `existsByEmailAddress(EmailAddress emailAddress)` | `boolean`           | `public`    | Verifica si existe una academia con el email especificado. |
-| `existsByRuc(Ruc ruc)`                            | `boolean`           | `public`    | Verifica si existe una academia con el RUC especificado.   |
+| Método                                             | Tipo de Retorno      | Visibilidad  | Descripción                                                |
+|----------------------------------------------------|----------------------|--------------|------------------------------------------------------------|
+| `findById(Long id)`                                | `Optional<Academy>`  | `public`     | Busca una academia por su identificador.                   |
+| `save(Academy academy)`                            | `Academy`            | `public`     | Persiste o actualiza una academia.                         |
+| `existsByEmailAddress(EmailAddress emailAddress)`  | `boolean`            | `public`     | Verifica si existe una academia con el email especificado. |
+| `existsByRuc(Ruc ruc)`                             | `boolean`            | `public`     | Verifica si existe una academia con el RUC especificado.   |
 
 2. **`AdministratorRepository` (Repository Interface)**
 
@@ -1195,12 +1195,12 @@ Interfaz del repositorio para gestionar administradores.
 
 **Métodos principales:**
 
-| Método                                   | Tipo de Retorno           | Visibilidad | Descripción                                              |
-| ---------------------------------------- | ------------------------- | ----------- | -------------------------------------------------------- |
-| `findById(Long id)`                      | `Optional<Administrator>` | `public`    | Busca un administrador por su identificador.             |
-| `save(Administrator administrator)`      | `Administrator`           | `public`    | Persiste o actualiza un administrador.                   |
-| `findByDniNumber(DniNumber dniNumber)`   | `Optional<Administrator>` | `public`    | Obtiene un administrador por su DNI.                     |
-| `existsByDniNumber(DniNumber dniNumber)` | `boolean`                 | `public`    | Verifica si existe un administrador con el DNI indicado. |
+| Método                                   | Tipo de Retorno           | Visibilidad   | Descripción                                              |
+|------------------------------------------|---------------------------|---------------|----------------------------------------------------------|
+| `findById(Long id)`                      | `Optional<Administrator>` | `public`      | Busca un administrador por su identificador.             |
+| `save(Administrator administrator)`      | `Administrator`           | `public`      | Persiste o actualiza un administrador.                   |
+| `findByDniNumber(DniNumber dniNumber)`   | `Optional<Administrator>` | `public`      | Obtiene un administrador por su DNI.                     |
+| `existsByDniNumber(DniNumber dniNumber)` | `boolean`                 | `public`      | Verifica si existe un administrador con el DNI indicado. |
 
 3. **`TeacherRepository` (Repository Interface)**
 
@@ -1208,11 +1208,11 @@ Interfaz del repositorio para gestionar docentes.
 
 **Métodos principales:**
 
-| Método                                    | Tipo de Retorno     | Visibilidad | Descripción                                                   |
-| ----------------------------------------- | ------------------- | ----------- | ------------------------------------------------------------- |
-| `findById(Long id)`                       | `Optional<Teacher>` | `public`    | Busca un docente por su identificador.                        |
-| `save(Teacher teacher)`                   | `Teacher`           | `public`    | Persiste o actualiza un docente.                              |
-| `findAllByAcademyId(AcademyId academyId)` | `List<Teacher>`     | `public`    | Recupera todos los docentes asociados a la academia indicada. |
+| Método                                    | Tipo de Retorno     | Visibilidad   | Descripción                                                   |
+|-------------------------------------------|---------------------|---------------|---------------------------------------------------------------|
+| `findById(Long id)`                       | `Optional<Teacher>` | `public`      | Busca un docente por su identificador.                        |
+| `save(Teacher teacher)`                   | `Teacher`           | `public`      | Persiste o actualiza un docente.                              |
+| `findAllByAcademyId(AcademyId academyId)` | `List<Teacher>`     | `public`      | Recupera todos los docentes asociados a la academia indicada. |
 
 
 #### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
@@ -1273,19 +1273,19 @@ Representa al usuario del sistema, con sus credenciales, estados y roles.
 
 **Métodos principales:**
 
-| Método                                                                                 | Tipo Retorno | Visibilidad | Descripción                                                                                 |
-|----------------------------------------------------------------------------------------|--------------|-------------|---------------------------------------------------------------------------------------------|
-| `User()`                                                                               | `Constructor`  | `public`    | Constructor vacío requerido por JPA.                                                        |
-| `User(EmailAddress, String, VerificationCode)`                                         | `Constructor`  | `public`    | Crea usuario en estado `PENDING` y `NOT_VERIFIED`, con `tenantId` vacío y `roles` vacíos.   |
-| `User(EmailAddress, String, VerificationCode, List<Role>)`                             | `Constructor`  | `public`    | Crea usuario e inicializa roles usando `validateRoleSet`.                                   |
-| `addRole(Role role)`                                                                   | `User`       | `public`    | Agrega un rol al set de roles.                                                              |
-| `addRoles(List<Role> roles)`                                                           | `User`       | `public`    | Valida y agrega múltiples roles.                                                            |
-| `isVerified()`                                                                         | `boolean`    | `public`    | Devuelve `true` si `verificationStatus == VERIFIED`.                                        |
-| `activate()`                                                                           | `void`       | `public`    | Cambia `accountStatus` a `ACTIVE` solo si `verificationStatus == VERIFIED`.                 |
-| `assignVerificationCode(String email, String code, Integer expirationMinutes)`         | `void`       | `public`    | Asigna un nuevo `VerificationCode` y publica `UserVerificationCodeAssignedEvent`.           |
-| `verifyUser(String code)`                                                              | `void`       | `public`    | Verifica el código, marca `VERIFIED` y activa la cuenta; limpia `verificationCode`.         |
-| `associateTenant(TenantId tenantId)`                                                   | `void`       | `public`    | Asocia un `tenantId` si aún no tenía uno asignado.                                          |
-| `disassociateTenant(TenantId tenantId)`                                                | `void`       | `public`    | Desasocia si coincide con el tenant actual; si no, lanza excepción.                         |
+| Método                                                                         | Tipo Retorno  | Visibilidad | Descripción                                                                                 |
+|--------------------------------------------------------------------------------|---------------|-------------|---------------------------------------------------------------------------------------------|
+| `User()`                                                                       | `Constructor` | `public`    | Constructor vacío requerido por JPA.                                                        |
+| `User(EmailAddress, String, VerificationCode)`                                 | `Constructor` | `public`    | Crea usuario en estado `PENDING` y `NOT_VERIFIED`, con `tenantId` vacío y `roles` vacíos.   |
+| `User(EmailAddress, String, VerificationCode, List<Role>)`                     | `Constructor` | `public`    | Crea usuario e inicializa roles usando `validateRoleSet`.                                   |
+| `addRole(Role role)`                                                           | `User`        | `public`    | Agrega un rol al set de roles.                                                              |
+| `addRoles(List<Role> roles)`                                                   | `User`        | `public`    | Valida y agrega múltiples roles.                                                            |
+| `isVerified()`                                                                 | `boolean`     | `public`    | Devuelve `true` si `verificationStatus == VERIFIED`.                                        |
+| `activate()`                                                                   | `void`        | `public`    | Cambia `accountStatus` a `ACTIVE` solo si `verificationStatus == VERIFIED`.                 |
+| `assignVerificationCode(String email, String code, Integer expirationMinutes)` | `void`        | `public`    | Asigna un nuevo `VerificationCode` y publica `UserVerificationCodeAssignedEvent`.           |
+| `verifyUser(String code)`                                                      | `void`        | `public`    | Verifica el código, marca `VERIFIED` y activa la cuenta; limpia `verificationCode`.         |
+| `associateTenant(TenantId tenantId)`                                           | `void`        | `public`    | Asocia un `tenantId` si aún no tenía uno asignado.                                          |
+| `disassociateTenant(TenantId tenantId)`                                        | `void`        | `public`    | Desasocia si coincide con el tenant actual; si no, lanza excepción.                         |
 
 2. **`Role` (Entity)**
 
@@ -1293,21 +1293,21 @@ Define un rol específico que puede ser asignado a un usuario.
 
 **Atributos principales:**
 
-| Atributo | Tipo   | Visibilidad | Descripción                                          |
-|----------|--------|-------------|------------------------------------------------------|
-| `id`     | `Long` | `private`   | Identificador único del rol.                         |
-| `name`   | `Roles`| `private`   | Nombre del rol (enum): USER, ADMINISTRATOR, TEACHER. |
+| Atributo   | Tipo    | Visibilidad | Descripción                                          |
+|------------|---------|-------------|------------------------------------------------------|
+| `id`       | `Long`  | `private`   | Identificador único del rol.                         |
+| `name`     | `Roles` | `private`   | Nombre del rol (enum): USER, ADMINISTRATOR, TEACHER. |
 
 **Métodos principales:**
 
-| Método                                    | Tipo Retorno | Visibilidad | Descripción                                           |
-|-------------------------------------------|--------------|-------------|-------------------------------------------------------|
-| `Role()`                                  | `Constructor`  | `public`    | Constructor vacío (JPA/Lombok).                       |
-| `Role(Roles name)`                        | `Constructor`  | `public`    | Inicializa rol con el enum correspondiente.           |
-| `getStringName()`                         | `String`     | `public`    | Devuelve el nombre del enum como `String`.            |
-| `getDefaultRole()` *(static)*             | `Role`       | `public`    | Devuelve el rol por defecto (`ROLE_USER`).            |
-| `toRoleFromName(String name)` *(static)*  | `Role`       | `public`    | Crea un `Role` a partir del nombre del enum.          |
-| `validateRoleSet(List<Role> roles)` *(static)* | `List<Role>` | `public` | Si la lista es nula/vacía, retorna `[ROLE_USER]`.     |
+| Método                                         | Tipo Retorno   | Visibilidad   | Descripción                                       |
+|------------------------------------------------|----------------|---------------|---------------------------------------------------|
+| `Role()`                                       | `Constructor`  | `public`      | Constructor vacío (JPA/Lombok).                   |
+| `Role(Roles name)`                             | `Constructor`  | `public`      | Inicializa rol con el enum correspondiente.       |
+| `getStringName()`                              | `String`       | `public`      | Devuelve el nombre del enum como `String`.        |
+| `getDefaultRole()` *(static)*                  | `Role`         | `public`      | Devuelve el rol por defecto (`ROLE_USER`).        |
+| `toRoleFromName(String name)` *(static)*       | `Role`         | `public`      | Crea un `Role` a partir del nombre del enum.      |
+| `validateRoleSet(List<Role> roles)` *(static)* | `List<Role>`   | `public`      | Si la lista es nula/vacía, retorna `[ROLE_USER]`. |
 
 3. **`AccountStatus` (Value Object)**
 
@@ -1315,12 +1315,12 @@ Estado actual de la cuenta del usuario (pendiente, activa, bloqueada, eliminada)
 
 **Atributos principales:**
 
-| Atributo  | Tipo | Visibilidad | Descripción                             |
-| --------- | ---- | ----------- | --------------------------------------- |
-| `PENDING` | `Enum` | `public`    | La cuenta está pendiente de activación. |
-| `ACTIVE`  | `Enum` | `public`    | La cuenta está activa.                  |
-| `BLOCKED` | `Enum` | `public`    | La cuenta está bloqueada.               |
-| `DELETED` | `Enum` | `public`    | La cuenta fue eliminada.                |
+| Atributo   | Tipo   | Visibilidad  | Descripción                             |
+|------------|--------|--------------|-----------------------------------------|
+| `PENDING`  | `Enum` | `public`     | La cuenta está pendiente de activación. |
+| `ACTIVE`   | `Enum` | `public`     | La cuenta está activa.                  |
+| `BLOCKED`  | `Enum` | `public`     | La cuenta está bloqueada.               |
+| `DELETED`  | `Enum` | `public`     | La cuenta fue eliminada.                |
 
 
 4. **`VerificationStatus` (Value Object)**
@@ -1329,10 +1329,10 @@ Indica si el usuario ha sido verificado o no.
 
 **Atributos principales:**
 
-| Atributo       | Tipo | Visibilidad | Descripción                        |
-| -------------- | ---- | ----------- | ---------------------------------- |
-| `NOT_VERIFIED` | `Enum` | `public`    | El usuario aún no está verificado. |
-| `VERIFIED`     | `Enum` | `public`    | El usuario ha sido verificado.     |
+| Atributo        | Tipo   | Visibilidad   | Descripción                        |
+|-----------------|--------|---------------|------------------------------------|
+| `NOT_VERIFIED`  | `Enum` | `public`      | El usuario aún no está verificado. |
+| `VERIFIED`      | `Enum` | `public`      | El usuario ha sido verificado.     |
 
 5. **`Roles` (Value Object)**
 
@@ -1340,11 +1340,11 @@ Enumera los distintos roles disponibles en el sistema.
 
 **Atributos principales:**
 
-| Atributo             | Tipo | Visibilidad | Descripción                           |
-| -------------------- | ---- | ----------- | ------------------------------------- |
-| `ROLE_USER`          | `Enum` | `public`    | Rol básico de usuario estándar.       |
-| `ROLE_ADMINISTRATOR` | `Enum` | `public`    | Rol con privilegios administrativos.  |
-| `ROLE_TEACHER`       | `Enum` | `public`    | Rol para usuarios con perfil docente. |
+| Atributo             | Tipo   | Visibilidad  | Descripción                           |
+|----------------------|--------|--------------|---------------------------------------|
+| `ROLE_USER`          | `Enum` | `public`     | Rol básico de usuario estándar.       |
+| `ROLE_ADMINISTRATOR` | `Enum` | `public`     | Rol con privilegios administrativos.  |
+| `ROLE_TEACHER`       | `Enum` | `public`     | Rol para usuarios con perfil docente. |
 
 6. **`TenantId` (Value Object)**
 
@@ -1352,17 +1352,17 @@ Identificador único del tenant asociado a un usuario.
 
 **Atributos principales:**
 
-| Atributo   | Tipo  | Visibilidad | Descripción                                               |
-|------------|-------|-------------|-----------------------------------------------------------|
-| `tenantId` | `Long`| `private`   | Identificador del tenant; puede ser `null` si no asignado.|
+| Atributo   | Tipo   | Visibilidad   | Descripción                                                |
+|------------|--------|---------------|------------------------------------------------------------|
+| `tenantId` | `Long` | `private`     | Identificador del tenant; puede ser `null` si no asignado. |
 
 **Métodos principales:**
 
-| Método                               | Tipo Retorno | Visibilidad | Descripción                                                    |
-|--------------------------------------|--------------|-------------|----------------------------------------------------------------|
-| `TenantId()`                         | `Constructor`  | `public`    | Inicializa con `null` (no asignado).                           |
-| `TenantId(Long tenantId)`            | `Constructor`  | `public`    | Valida `tenantId > 0` cuando no es `null`.                     |
-| `isAssigned()`                       | `boolean`    | `public`    | `true` si `tenantId != null`.                                  |
+| Método                            | Tipo Retorno   | Visibilidad  | Descripción                                |
+|-----------------------------------|----------------|--------------|--------------------------------------------|
+| `TenantId()`                      | `Constructor`  | `public`     | Inicializa con `null` (no asignado).       |
+| `TenantId(Long tenantId)`         | `Constructor`  | `public`     | Valida `tenantId > 0` cuando no es `null`. |
+| `isAssigned()`                    | `boolean`      | `public`     | `true` si `tenantId != null`.              |
 
 7. **`VerificationCode` (Value Object)**
 
@@ -1370,18 +1370,18 @@ Código y fecha de expiración usados para verificar usuarios.
 
 **Atributos principales:**
 
-| Atributo     | Tipo            | Visibilidad | Descripción                                         |
-|--------------|-----------------|-------------|-----------------------------------------------------|
-| `code`       | `String`        | `private`   | Código de verificación (puede quedar `null`).       |
-| `expiration` | `LocalDateTime` | `private`   | Fecha/hora de expiración del código.                |
+| Atributo     | Tipo            | Visibilidad  | Descripción                                   |
+|--------------|-----------------|--------------|-----------------------------------------------|
+| `code`       | `String`        | `private`    | Código de verificación (puede quedar `null`). |
+| `expiration` | `LocalDateTime` | `private`    | Fecha/hora de expiración del código.          |
 
 **Métodos principales:**
 
-| Método                                  | Tipo Retorno | Visibilidad | Descripción                                                        |
-|-----------------------------------------|--------------|-------------|--------------------------------------------------------------------|
-| `VerificationCode(String, LocalDateTime)` | `Constructor`| `public`    | Valida que no esté expirado al crearse y que el código no sea vacío. |
-| `isExpired()`                           | `boolean`    | `public`    | `true` si `now > expiration`.                                      |
-| `matches(String inputCode)`             | `boolean`    | `public`    | `true` si coincide y **no** está expirado.                         |
+| Método                                    | Tipo Retorno   | Visibilidad   | Descripción                                                          |
+|-------------------------------------------|----------------|---------------|----------------------------------------------------------------------|
+| `VerificationCode(String, LocalDateTime)` | `Constructor`  | `public`      | Valida que no esté expirado al crearse y que el código no sea vacío. |
+| `isExpired()`                             | `boolean`      | `public`      | `true` si `now > expiration`.                                        |
+| `matches(String inputCode)`               | `boolean`      | `public`      | `true` si coincide y **no** está expirado.                           |
 
 8. **`SignUpCommand` (Command)**
 
@@ -1389,11 +1389,11 @@ Comando para registrar un nuevo usuario en el sistema.
 
 **Atributos principales:**
 
-| Atributo       | Tipo           | Visibilidad | Descripción                          |
-|----------------|----------------|-------------|--------------------------------------|
-| `emailAddress` | `EmailAddress` | `public`    | Correo del usuario a registrar.      |
-| `password`     | `String`       | `public`    | Contraseña en texto (se hashea luego). |
-| `roles`        | `List<Role>`   | `public`    | Roles iniciales (validados).         |
+| Atributo       | Tipo           | Visibilidad   | Descripción                            |
+|----------------|----------------|---------------|----------------------------------------|
+| `emailAddress` | `EmailAddress` | `public`      | Correo del usuario a registrar.        |
+| `password`     | `String`       | `public`      | Contraseña en texto (se hashea luego). |
+| `roles`        | `List<Role>`   | `public`      | Roles iniciales (validados).           |
 
 9. **`SignInCommand` (Command)**
 
@@ -1401,10 +1401,10 @@ Comando para autenticar un usuario con credenciales.
 
 **Atributos principales:**
 
-| Atributo       | Tipo           | Visibilidad | Descripción                    |
-|----------------|----------------|-------------|--------------------------------|
-| `emailAddress` | `EmailAddress` | `public`    | Correo de acceso.              |
-| `password`     | `String`       | `public`    | Contraseña provista por el user.|
+| Atributo        | Tipo           | Visibilidad  | Descripción                      |
+|-----------------|----------------|--------------|----------------------------------|
+| `emailAddress`  | `EmailAddress` | `public`     | Correo de acceso.                |
+| `password`      | `String`       | `public`     | Contraseña provista por el user. |
 
 10. **`VerifyUserCommand` (Command)**
 
@@ -1433,10 +1433,10 @@ Comando para asociar un usuario a un tenant.
 
 **Atributos principales:**
 
-| Atributo  | Tipo   | Visibilidad | Descripción                 |
-|-----------|--------|-------------|-----------------------------|
-| `userId`  | `Long` | `public`    | ID del usuario objetivo.    |
-| `tenantId`| `Long` | `public`    | ID del tenant a asociar.    |
+| Atributo   | Tipo   | Visibilidad | Descripción                 |
+|------------|--------|-------------|-----------------------------|
+| `userId`   | `Long` | `public`    | ID del usuario objetivo.    |
+| `tenantId` | `Long` | `public`    | ID del tenant a asociar.    |
 
 13. **`SeedRolesCommand` (Command)**
 
@@ -1444,9 +1444,9 @@ Comando utilizado para sembrar los roles base en el sistema.
 
 **Atributos principales:**  
 
-| Atributo    | Tipo | Visibilidad | Descripción                                                 |
-| ----------- | ---- | ----------- | ----------------------------------------------------------- |
-| *(ninguno)* | -    | -           | No requiere atributos; su ejecución siembra los roles base. |
+| Atributo     | Tipo  | Visibilidad  | Descripción                                                 |
+|--------------|-------|--------------|-------------------------------------------------------------|
+| *(ninguno)*  | -     | -            | No requiere atributos; su ejecución siembra los roles base. |
 
 
 14. **`GetAuthenticatedUserTenantIdQuery` (Query)**
@@ -1455,9 +1455,9 @@ Consulta utilizada para obtener el tenant asociado al usuario autenticado.
 
 **Atributos principales:** 
 
-| Atributo    | Tipo | Visibilidad | Descripción                                                           |
-| ----------- | ---- | ----------- | --------------------------------------------------------------------- |
-| *(ninguno)* | -    | -           | No requiere atributos; retorna el `TenantId` del usuario autenticado. |
+| Atributo    | Tipo  | Visibilidad  | Descripción                                                           |
+|-------------|-------|--------------|-----------------------------------------------------------------------|
+| *(ninguno)* | -     | -            | No requiere atributos; retorna el `TenantId` del usuario autenticado. |
 
 15. **`UserVerificationCodeAssignedEvent` (Domain Event)**
 
@@ -1465,12 +1465,12 @@ Evento publicado al asignar un código de verificación.
 
 **Atributos principales:**
 
-| Atributo            | Tipo      | Visibilidad | Descripción                                   |
-|---------------------|-----------|-------------|-----------------------------------------------|
-| `source` *(heredado)* | `Object` | `private`   | Objeto origen del evento (ApplicationEvent).   |
-| `email`             | `String`  | `private`   | Correo destinatario del código.               |
-| `code`              | `String`  | `private`   | Código generado.                               |
-| `expirationMinutes` | `Integer` | `private`   | Minutos hasta la expiración.                  |
+| Atributo              | Tipo      | Visibilidad   | Descripción                                  |
+|-----------------------|-----------|---------------|----------------------------------------------|
+| `source` *(heredado)* | `Object`  | `private`     | Objeto origen del evento (ApplicationEvent). |
+| `email`               | `String`  | `private`     | Correo destinatario del código.              |
+| `code`                | `String`  | `private`     | Código generado.                             |
+| `expirationMinutes`   | `Integer` | `private`     | Minutos hasta la expiración.                 |
 
 16. **`UserCommandService` (Domain Service)**
 
@@ -1478,13 +1478,13 @@ Maneja comandos relacionados con usuarios.
 
 **Métodos principales:**
 
-| Método                                      | Tipo de Retorno                       | Visibilidad | Descripción                                                         |
-|---------------------------------------------|---------------------------------------|-------------|---------------------------------------------------------------------|
-| `handle(SignInCommand command)`             | `Optional<ImmutablePair<User,String>>`| `public`    | Autentica y retorna user + token/credencial (según implementación). |
-| `handle(SignUpCommand command)`             | `Optional<User>`                      | `public`    | Registra un usuario nuevo.                                          |
-| `handle(VerifyUserCommand command)`         | `boolean`                             | `public`    | Verifica usuario por código.                                        |
-| `handle(ResendVerificationCodeCommand cmd)` | `boolean`                             | `public`    | Reenvía código de verificación.                                     |
-| `handle(AssignUserTenantId command)`        | `void`                                | `public`    | Asocia usuario a un tenant.                                         |
+| Método                                      | Tipo de Retorno                        | Visibilidad  | Descripción                                                         |
+|---------------------------------------------|----------------------------------------|--------------|---------------------------------------------------------------------|
+| `handle(SignInCommand command)`             | `Optional<ImmutablePair<User,String>>` | `public`     | Autentica y retorna user + token/credencial (según implementación). |
+| `handle(SignUpCommand command)`             | `Optional<User>`                       | `public`     | Registra un usuario nuevo.                                          |
+| `handle(VerifyUserCommand command)`         | `boolean`                              | `public`     | Verifica usuario por código.                                        |
+| `handle(ResendVerificationCodeCommand cmd)` | `boolean`                              | `public`     | Reenvía código de verificación.                                     |
+| `handle(AssignUserTenantId command)`        | `void`                                 | `public`     | Asocia usuario a un tenant.                                         |
 
 17. **`UserQueryService` (Domain Service)**
 
@@ -1492,9 +1492,9 @@ Maneja consultas relacionadas con usuarios.
 
 **Métodos principales:**
 
-| Método                                            | Tipo de Retorno      | Visibilidad | Descripción                                          |
-|---------------------------------------------------|----------------------|-------------|------------------------------------------------------|
-| `handle(GetAuthenticatedUserTenantIdQuery query)` | `Optional<TenantId>` | `public`    | Obtiene el `TenantId` del usuario autenticado.       |
+| Método                                            | Tipo de Retorno      | Visibilidad | Descripción                                    |
+|---------------------------------------------------|----------------------|-------------|------------------------------------------------|
+| `handle(GetAuthenticatedUserTenantIdQuery query)` | `Optional<TenantId>` | `public`    | Obtiene el `TenantId` del usuario autenticado. |
 
 18. **`RoleCommandService` (Domain Service)**
 
@@ -1502,9 +1502,9 @@ Maneja comandos relacionados con la gestión de roles.
 
 **Métodos principales:**
 
-| Método                         | Tipo de Retorno | Visibilidad | Descripción                                  |
-|--------------------------------|-----------------|-------------|----------------------------------------------|
-| `handle(SeedRolesCommand cmd)` | `void`          | `public`    | Siembra los roles base si aún no existen.    |
+| Método                         | Tipo de Retorno | Visibilidad | Descripción                               |
+|--------------------------------|-----------------|-------------|-------------------------------------------|
+| `handle(SeedRolesCommand cmd)` | `void`          | `public`    | Siembra los roles base si aún no existen. |
 
 ---
 
@@ -1514,17 +1514,17 @@ Maneja comandos relacionados con la gestión de roles.
 
 **Endpoints principales:**
 
-| Nombre del método | Ruta base típica                     | Método HTTP | Descripción                                   |
-|-------------------|--------------------------------------|-------------|-----------------------------------------------|
-| `signIn`          | `/api/v1/authentication/sign-in`     | `POST`      | Autentica con credenciales y retorna sesión.  |
-| `signUp`          | `/api/v1/authentication/sign-up`     | `POST`      | Registra un nuevo usuario.                    |
-| `verify`          | `/api/v1/authentication/verify`      | `POST`      | Verifica al usuario con el código enviado.    |
-| `resendCode`      | `/api/v1/authentication/resend-code` | `POST`      | Reenvía el código de verificación al correo.  |
+| Nombre del método | Ruta base típica                     | Método HTTP | Descripción                                  |
+|-------------------|--------------------------------------|-------------|----------------------------------------------|
+| `signIn`          | `/api/v1/authentication/sign-in`     | `POST`      | Autentica con credenciales y retorna sesión. |
+| `signUp`          | `/api/v1/authentication/sign-up`     | `POST`      | Registra un nuevo usuario.                   |
+| `verify`          | `/api/v1/authentication/verify`      | `POST`      | Verifica al usuario con el código enviado.   |
+| `resendCode`      | `/api/v1/authentication/resend-code` | `POST`      | Reenvía el código de verificación al correo. |
 
 2. **`Resources` (Resources)**
 
 | Resource                         | Atributos principales                                                       | Descripción                                   |
-| -------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------- |
+|----------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------|
 | `AuthenticatedUserResource`      | `id: Long`, `emailAddress: String`, `token: String`                         | Respuesta de autenticación (sign-in).         |
 | `ResendVerificationCodeResource` | `email: String`                                                             | Solicita reenviar el código de verificación.  |
 | `RoleResource`                   | `id: Long`, `name: String`                                                  | Representación de un rol.                     |
@@ -1535,15 +1535,15 @@ Maneja comandos relacionados con la gestión de roles.
 
 3. **`Transform` (Assemblers)**
 
-| Assembler                                            | Entrada                          | Salida                          | Descripción                                                      |
-| ---------------------------------------------------- | -------------------------------- | ------------------------------- | ---------------------------------------------------------------- |
-| `AuthenticatedUserResourceFromEntityAssembler`       | `User`, `token: String`          | `AuthenticatedUserResource`     | Mapea user y token a recurso de autenticación.                   |
-| `ResendVerificationCodeCommandFromResourceAssembler` | `ResendVerificationCodeResource` | `ResendVerificationCodeCommand` | Convierte el DTO de reenvío en comando.                          |
-| `RoleResourceFromEntityAssembler`                    | `Role`                           | `RoleResource`                  | Expone el rol como recurso.                                      |
-| `SignInCommandFromResourceAssembler`                 | `SignInResource`                 | `SignInCommand`                 | Construye comando de inicio de sesión (crea `EmailAddress` VO).  |
-| `SignUpCommandFromResourceAssembler`                 | `SignUpResource`                 | `SignUpCommand`                 | Construye comando de registro (mapea `roles` `String` `Role`). |
-| `UserResourceFromEntityAssembler`                    | `User`                           | `UserResource`                  | Expone usuario con `roles` y `tenantId`.                         |
-| `VerifyUserCommandFromResourceAssembler`             | `VerifyUserResource`             | `VerifyUserCommand`             | Construye comando de verificación por código.                    |
+| Assembler                                            | Entrada                          | Salida                          | Descripción                                                     |
+|------------------------------------------------------|----------------------------------|---------------------------------|-----------------------------------------------------------------|
+| `AuthenticatedUserResourceFromEntityAssembler`       | `User`, `token: String`          | `AuthenticatedUserResource`     | Mapea user y token a recurso de autenticación.                  |
+| `ResendVerificationCodeCommandFromResourceAssembler` | `ResendVerificationCodeResource` | `ResendVerificationCodeCommand` | Convierte el DTO de reenvío en comando.                         |
+| `RoleResourceFromEntityAssembler`                    | `Role`                           | `RoleResource`                  | Expone el rol como recurso.                                     |
+| `SignInCommandFromResourceAssembler`                 | `SignInResource`                 | `SignInCommand`                 | Construye comando de inicio de sesión (crea `EmailAddress` VO). |
+| `SignUpCommandFromResourceAssembler`                 | `SignUpResource`                 | `SignUpCommand`                 | Construye comando de registro (mapea `roles` `String` `Role`).  |
+| `UserResourceFromEntityAssembler`                    | `User`                           | `UserResource`                  | Expone usuario con `roles` y `tenantId`.                        |
+| `VerifyUserCommandFromResourceAssembler`             | `VerifyUserResource`             | `VerifyUserCommand`             | Construye comando de verificación por código.                   |
 
 ---
 
@@ -1554,15 +1554,15 @@ Implementación de la fachada hacia otros bounded contexts para obtener datos de
 
 **Atributos principales:**
 
-| Atributo            | Tipo              | Visibilidad | Descripción                                       |
-|---------------------|-------------------|-------------|---------------------------------------------------|
-| `userQueryService`  | `UserQueryService`| `private`   | Servicio de consultas del dominio IAM.            |
+| Atributo           | Tipo               | Visibilidad   | Descripción                            |
+|--------------------|--------------------|---------------|----------------------------------------|
+| `userQueryService` | `UserQueryService` | `private`     | Servicio de consultas del dominio IAM. |
 
 **Métodos principales:**
 
-| Método                              | Tipo de Retorno | Visibilidad | Descripción                                                     |
-|-------------------------------------|------------------|-------------|-----------------------------------------------------------------|
-| `fetchAuthenticatedUserTenantId()`  | `Long`           | `public`    | Retorna el `tenantId` actual (0 si no existe en el contexto).   |
+| Método                             | Tipo de Retorno   | Visibilidad  | Descripción                                                   |
+|------------------------------------|-------------------|--------------|---------------------------------------------------------------|
+| `fetchAuthenticatedUserTenantId()` | `Long`            | `public`     | Retorna el `tenantId` actual (0 si no existe en el contexto). |
 
 ---
 
@@ -1570,15 +1570,15 @@ Implementación de la fachada hacia otros bounded contexts para obtener datos de
 
 **Atributos principales:**
 
-| Atributo          | Tipo            | Visibilidad | Descripción                                   |
-|-------------------|-----------------|-------------|-----------------------------------------------|
-| `roleRepository`  | `RoleRepository`| `private`   | Acceso a persistencia de roles.               |
+| Atributo         | Tipo             | Visibilidad | Descripción                     |
+|------------------|------------------|-------------|---------------------------------|
+| `roleRepository` | `RoleRepository` | `private`   | Acceso a persistencia de roles. |
 
 **Métodos principales:**
 
-| Método                      | Tipo de Retorno | Visibilidad | Descripción                                             |
-|----------------------------|------------------|-------------|---------------------------------------------------------|
-| `handle(SeedRolesCommand)` | `void`           | `public`    | Crea roles del enum `Roles` si no existen.              |
+| Método                     | Tipo de Retorno   | Visibilidad | Descripción                                |
+|----------------------------|-------------------|-------------|--------------------------------------------|
+| `handle(SeedRolesCommand)` | `void`            | `public`    | Crea roles del enum `Roles` si no existen. |
 
 ---
 
@@ -1587,23 +1587,23 @@ Gestión de registro, autenticación, verificación y asociación de tenant.
 
 **Atributos principales:**
 
-| Atributo               | Tipo              | Visibilidad | Descripción                              |
-|------------------------|-------------------|-------------|------------------------------------------|
-| `userRepository`       | `UserRepository`  | `private`   | Persistencia de usuarios.                 |
-| `hashingService`       | `HashingService`  | `private`   | Hashing y verificación de contraseñas.    |
-| `tokenService`         | `TokenService`    | `private`   | Emisión de tokens de autenticación.       |
-| `verificationService`  | `VerificationService` | `private`| Generación y validación de códigos.       |
-| `roleRepository`       | `RoleRepository`  | `private`   | Resolución de roles por nombre.           |
+| Atributo              | Tipo                  | Visibilidad   | Descripción                            |
+|-----------------------|-----------------------|---------------|----------------------------------------|
+| `userRepository`      | `UserRepository`      | `private`     | Persistencia de usuarios.              |
+| `hashingService`      | `HashingService`      | `private`     | Hashing y verificación de contraseñas. |
+| `tokenService`        | `TokenService`        | `private`     | Emisión de tokens de autenticación.    |
+| `verificationService` | `VerificationService` | `private`     | Generación y validación de códigos.    |
+| `roleRepository`      | `RoleRepository`      | `private`     | Resolución de roles por nombre.        |
 
 **Métodos principales:**
 
-| Método                                 | Tipo de Retorno                              | Visibilidad | Descripción                                                                          |
-|----------------------------------------|-----------------------------------------------|-------------|--------------------------------------------------------------------------------------|
-| `handle(SignInCommand)`                | `Optional<ImmutablePair<User,String>>`        | `public`    | Autentica: valida credenciales, genera token y retorna `(user, token)`.             |
-| `handle(SignUpCommand)`                | `Optional<User>`                               | `public`    | Registra usuario, asigna roles, genera y publica código de verificación.            |
-| `handle(VerifyUserCommand)`            | `boolean`                                      | `public`    | Verifica usuario por código y activa la cuenta.                                      |
-| `handle(ResendVerificationCodeCommand)`| `boolean`                                      | `public`    | Reenvía código de verificación si aún no está verificado.                            |
-| `handle(AssignUserTenantId)`           | `void`                                         | `public`    | Asocia un `tenantId` al usuario indicado.                                            |
+| Método                                  | Tipo de Retorno                        | Visibilidad | Descripción                                                              |
+|-----------------------------------------|----------------------------------------|-------------|--------------------------------------------------------------------------|
+| `handle(SignInCommand)`                 | `Optional<ImmutablePair<User,String>>` | `public`    | Autentica: valida credenciales, genera token y retorna `(user, token)`.  |
+| `handle(SignUpCommand)`                 | `Optional<User>`                       | `public`    | Registra usuario, asigna roles, genera y publica código de verificación. |
+| `handle(VerifyUserCommand)`             | `boolean`                              | `public`    | Verifica usuario por código y activa la cuenta.                          |
+| `handle(ResendVerificationCodeCommand)` | `boolean`                              | `public`    | Reenvía código de verificación si aún no está verificado.                |
+| `handle(AssignUserTenantId)`            | `void`                                 | `public`    | Asocia un `tenantId` al usuario indicado.                                |
 
 ---
 
@@ -1612,16 +1612,16 @@ Obtiene datos del contexto del usuario autenticado.
 
 **Atributos principales:**
 
-| Atributo            | Tipo             | Visibilidad | Descripción                          |
-|---------------------|------------------|-------------|--------------------------------------|
-| `userRepository`    | `UserRepository` | `private`   | (No usado en el método mostrado).     |
-| `identityService`   | `IdentityService`| `private`   | Proveedor de identidad actual.        |
+| Atributo          | Tipo              | Visibilidad | Descripción                       |
+|-------------------|-------------------|-------------|-----------------------------------|
+| `userRepository`  | `UserRepository`  | `private`   | (No usado en el método mostrado). |
+| `identityService` | `IdentityService` | `private`   | Proveedor de identidad actual.    |
 
 **Métodos principales:**
 
-| Método                                   | Tipo de Retorno        | Visibilidad | Descripción                                          |
-|------------------------------------------|------------------------|-------------|------------------------------------------------------|
-| `handle(GetAuthenticatedUserTenantIdQuery)` | `Optional<TenantId>` | `public`    | Retorna el `TenantId` del contexto de identidad.     |
+| Método                                      | Tipo de Retorno         | Visibilidad | Descripción                                      |
+|---------------------------------------------|-------------------------|-------------|--------------------------------------------------|
+| `handle(GetAuthenticatedUserTenantIdQuery)` | `Optional<TenantId>`    | `public`    | Retorna el `TenantId` del contexto de identidad. |
 
 ---
 
@@ -1630,15 +1630,15 @@ Sincroniza tenant en IAM cuando se registra un administrador en Institution.
 
 **Atributos principales:**
 
-| Atributo               | Tipo                 | Visibilidad | TheDescripción                         |
-|------------------------|----------------------|-------------|-----------------------------------------|
-| `userCommandService`   | `UserCommandService` | `private`   | Envía comando para asociar tenant.      |
+| Atributo               | Tipo                 | Visibilidad | TheDescripción                     |
+|------------------------|----------------------|-------------|------------------------------------|
+| `userCommandService`   | `UserCommandService` | `private`   | Envía comando para asociar tenant. |
 
 **Métodos principales:**
 
-| Método                                      | Tipo de Retorno | Visibilidad | Descripción                                                           |
-|---------------------------------------------|------------------|-------------|-----------------------------------------------------------------------|
-| `on(AdministratorRegisteredEvent)`          | `void`           | `public`    | Asigna `tenantId` al usuario usando `AssignUserTenantId`.             |
+| Método                                    | Tipo de Retorno  | Visibilidad | Descripción                                               |
+|-------------------------------------------|------------------|-------------|-----------------------------------------------------------|
+| `on(AdministratorRegisteredEvent)`        | `void`           | `public`    | Asigna `tenantId` al usuario usando `AssignUserTenantId`. |
 
 ---
 
@@ -1646,15 +1646,15 @@ Sincroniza tenant en IAM cuando se registra un administrador en Institution.
 
 **Atributos principales:**
 
-| Atributo               | Tipo                 | Visibilidad | Descripción                       |
-|------------------------|----------------------|-------------|-----------------------------------|
-| `roleCommandService`   | `RoleCommandService` | `private`   | Orquesta la siembra de roles.     |
+| Atributo              | Tipo                 | Visibilidad | Descripción                   |
+|-----------------------|----------------------|-------------|-------------------------------|
+| `roleCommandService`  | `RoleCommandService` | `private`   | Orquesta la siembra de roles. |
 
 **Métodos principales:**
 
-| Método                               | Tipo de Retorno | Visibilidad | Descripción                                  |
-|--------------------------------------|------------------|-------------|----------------------------------------------|
-| `on(ApplicationReadyEvent)`          | `void`           | `public`    | Ejecuta `SeedRolesCommand` al arrancar.      |
+| Método                          | Tipo de Retorno   | Visibilidad | Descripción                             |
+|---------------------------------|-------------------|-------------|-----------------------------------------|
+| `on(ApplicationReadyEvent)`     | `void`            | `public`    | Ejecuta `SeedRolesCommand` al arrancar. |
 
 ---
 
@@ -1663,15 +1663,15 @@ Envía el correo con el código de verificación.
 
 **Atributos principales:**
 
-| Atributo        | Tipo          | Visibilidad | Descripción                             |
-|-----------------|---------------|-------------|-----------------------------------------|
-| `emailService`  | `EmailService`| `private`   | Servicio para envío de correos.         |
+| Atributo        | Tipo           | Visibilidad | Descripción                     |
+|-----------------|----------------|-------------|---------------------------------|
+| `emailService`  | `EmailService` | `private`   | Servicio para envío de correos. |
 
 **Métodos principales:**
 
-| Método                                      | Tipo de Retorno | Visibilidad | Descripción                                            |
-|---------------------------------------------|------------------|-------------|--------------------------------------------------------|
-| `handle(UserVerificationCodeAssignedEvent)` | `void`           | `public`    | Envía email con código y expiración (ejecución `@Async`). |
+| Método                                      | Tipo de Retorno   | Visibilidad | Descripción                                               |
+|---------------------------------------------|-------------------|-------------|-----------------------------------------------------------|
+| `handle(UserVerificationCodeAssignedEvent)` | `void`            | `public`    | Envía email con código y expiración (ejecución `@Async`). |
 
 ---
 
@@ -1680,10 +1680,10 @@ Interfaz para envío de correos.
 
 **Métodos principales:**
 
-| Método                                      | Tipo de Retorno | Visibilidad | Descripción                                      |
-|---------------------------------------------|------------------|-------------|--------------------------------------------------|
-| `sendVerificationEmail(String, String, int)`| `void`           | `public`    | Envía correo de verificación.                    |
-| `sendPasswordResetEmail(String, String)`    | `void`           | `public`    | Envía correo de restablecimiento de contraseña.  |
+| Método                                       | Tipo de Retorno  | Visibilidad | Descripción                                     |
+|----------------------------------------------|------------------|-------------|-------------------------------------------------|
+| `sendVerificationEmail(String, String, int)` | `void`           | `public`    | Envía correo de verificación.                   |
+| `sendPasswordResetEmail(String, String)`     | `void`           | `public`    | Envía correo de restablecimiento de contraseña. |
 
 ---
 
@@ -1692,10 +1692,10 @@ Interfaz para hashing de contraseñas.
 
 **Métodos principales:**
 
-| Método                                      | Tipo de Retorno | Visibilidad | Descripción                                   |
-|---------------------------------------------|------------------|-------------|-----------------------------------------------|
-| `encode(CharSequence)`                      | `String`         | `public`    | Genera hash de la contraseña.                 |
-| `matches(CharSequence, String)`             | `boolean`        | `public`    | Verifica contraseña cruda contra hash.        |
+| Método                                 | Tipo de Retorno   | Visibilidad | Descripción                            |
+|----------------------------------------|-------------------|-------------|----------------------------------------|
+| `encode(CharSequence)`                 | `String`          | `public`    | Genera hash de la contraseña.          |
+| `matches(CharSequence, String)`        | `boolean`         | `public`    | Verifica contraseña cruda contra hash. |
 
 ---
 
@@ -1719,13 +1719,13 @@ Interfaz para emisión y validación de tokens.
 
 **Métodos principales:**
 
-| Método                        | Tipo de Retorno | Visibilidad | Descripción                              |
-|-------------------------------|------------------|-------------|------------------------------------------|
-| `generateToken(String)`       | `String`         | `public`    | Genera token a partir del username.      |
-| `getUsernameFromToken(String)`| `String`         | `public`    | Extrae username del token.               |
-| `getUserIdFromToken(String)`  | `Long`           | `public`    | Extrae userId del token.                 |
-| `getTenantIdFromToken(String)`| `Long`           | `public`    | Extrae tenantId del token.               |
-| `validateToken(String)`       | `boolean`        | `public`    | Valida integridad/expiración del token.  |
+| Método                         | Tipo de Retorno   | Visibilidad | Descripción                             |
+|--------------------------------|-------------------|-------------|-----------------------------------------|
+| `generateToken(String)`        | `String`          | `public`    | Genera token a partir del username.     |
+| `getUsernameFromToken(String)` | `String`          | `public`    | Extrae username del token.              |
+| `getUserIdFromToken(String)`   | `Long`            | `public`    | Extrae userId del token.                |
+| `getTenantIdFromToken(String)` | `Long`            | `public`    | Extrae tenantId del token.              |
+| `validateToken(String)`        | `boolean`         | `public`    | Valida integridad/expiración del token. |
 
 ---
 
@@ -1734,12 +1734,12 @@ Interfaz para generación de códigos de verificación.
 
 **Métodos principales:**
 
-| Método                                                     | Tipo de Retorno | Visibilidad | Descripción                                      |
-|------------------------------------------------------------|------------------|-------------|--------------------------------------------------|
-| `generateCode()`                                           | `String`         | `public`    | Genera un código por defecto.                    |
-| `generateCode(int length)`                                 | `String`         | `public`    | Genera un código con longitud indicada.          |
-| `generateExpirationMinutes()`                              | `Integer`        | `public`    | Define minutos de expiración.                    |
-| `verifyCode(String code, String expected, LocalDateTime)`  | `boolean`        | `public`    | Verifica coincidencia y vigencia del código.     |
+| Método                                                    | Tipo de Retorno   | Visibilidad | Descripción                                  |
+|-----------------------------------------------------------|-------------------|-------------|----------------------------------------------|
+| `generateCode()`                                          | `String`          | `public`    | Genera un código por defecto.                |
+| `generateCode(int length)`                                | `String`          | `public`    | Genera un código con longitud indicada.      |
+| `generateExpirationMinutes()`                             | `Integer`         | `public`    | Define minutos de expiración.                |
+| `verifyCode(String code, String expected, LocalDateTime)` | `boolean`         | `public`    | Verifica coincidencia y vigencia del código. |
 
 ---
 #### 2.6.2.4. Infrastructure Layer
@@ -1749,12 +1749,12 @@ Interfaz de acceso a datos para roles (Spring Data JPA).
 
 **Métodos principales:**
 
-| Método                         | Tipo de Retorno            | Visibilidad | Descripción                                       |
-|--------------------------------|----------------------------|-------------|---------------------------------------------------|
-| `findById(Long id)`            | `Optional<Role>`           | `public`    | Busca un rol por su identificador.               |
-| `save(Role role)`              | `Role`                     | `public`    | Persiste o actualiza un rol.                     |
-| `findByName(Roles name)`       | `Optional<Role>`           | `public`    | Obtiene un rol por su enum `Roles`.              |
-| `existsByName(Roles name)`     | `boolean`                  | `public`    | Verifica existencia por nombre de rol.           |
+| Método                     | Tipo de Retorno     | Visibilidad | Descripción                            |
+|----------------------------|---------------------|-------------|----------------------------------------|
+| `findById(Long id)`        | `Optional<Role>`    | `public`    | Busca un rol por su identificador.     |
+| `save(Role role)`          | `Role`              | `public`    | Persiste o actualiza un rol.           |
+| `findByName(Roles name)`   | `Optional<Role>`    | `public`    | Obtiene un rol por su enum `Roles`.    |
+| `existsByName(Roles name)` | `boolean`           | `public`    | Verifica existencia por nombre de rol. |
 
 ---
 
@@ -1763,12 +1763,12 @@ Interfaz de acceso a datos para usuarios (Spring Data JPA).
 
 **Métodos principales:**
 
-| Método                                   | Tipo de Retorno          | Visibilidad | Descripción                                            |
-|------------------------------------------|---------------------------|-------------|--------------------------------------------------------|
-| `findById(Long id)`                       | `Optional<User>`         | `public`    | Busca un usuario por su identificador.                 |
-| `save(User user)`                         | `User`                   | `public`    | Persiste o actualiza un usuario.                       |
-| `findByEmailAddress(EmailAddress email)`  | `Optional<User>`         | `public`    | Obtiene un usuario por su `EmailAddress`.              |
-| `existsByEmailAddress(EmailAddress email)`| `boolean`                | `public`    | Verifica existencia por correo.                        |
+| Método                                     | Tipo de Retorno         | Visibilidad  | Descripción                               |
+|--------------------------------------------|-------------------------|--------------|-------------------------------------------|
+| `findById(Long id)`                        | `Optional<User>`        | `public`     | Busca un usuario por su identificador.    |
+| `save(User user)`                          | `User`                  | `public`     | Persiste o actualiza un usuario.          |
+| `findByEmailAddress(EmailAddress email)`   | `Optional<User>`        | `public`     | Obtiene un usuario por su `EmailAddress`. |
+| `existsByEmailAddress(EmailAddress email)` | `boolean`               | `public`     | Verifica existencia por correo.           |
 
 ---
 
@@ -1777,13 +1777,13 @@ Configuración Spring Security (stateless, JWT, CORS).
 
 **Métodos/Beans principales:**
 
-| Método/Bean                         | Tipo de Retorno                 | Visibilidad | Descripción                                                                                      |
-|-------------------------------------|----------------------------------|-------------|--------------------------------------------------------------------------------------------------|
-| `authorizationRequestFilter()`      | `BearerAuthorizationRequestFilter` | `public`  | Filtro que extrae, valida JWT y autentica en el contexto.                                        |
-| `authenticationManager(config)`     | `AuthenticationManager`          | `public`    | Expone el `AuthenticationManager`.                                                               |
-| `authenticationProvider()`          | `DaoAuthenticationProvider`      | `public`    | Provider con `UserDetailsService` y `PasswordEncoder (BCrypt)`.                                  |
-| `passwordEncoder()`                 | `PasswordEncoder`                | `public`    | Usa `BCryptHashingService` como encoder.                                                         |
-| `filterChain(HttpSecurity http)`    | `SecurityFilterChain`            | `public`    | CORS, CSRF off, 401 handler, stateless, `permitAll` a `/api/v1/authentication/**` y Swagger, etc.|
+| Método/Bean                      | Tipo de Retorno                    | Visibilidad   | Descripción                                                                                       |
+|----------------------------------|------------------------------------|---------------|---------------------------------------------------------------------------------------------------|
+| `authorizationRequestFilter()`   | `BearerAuthorizationRequestFilter` | `public`      | Filtro que extrae, valida JWT y autentica en el contexto.                                         |
+| `authenticationManager(config)`  | `AuthenticationManager`            | `public`      | Expone el `AuthenticationManager`.                                                                |
+| `authenticationProvider()`       | `DaoAuthenticationProvider`        | `public`      | Provider con `UserDetailsService` y `PasswordEncoder (BCrypt)`.                                   |
+| `passwordEncoder()`              | `PasswordEncoder`                  | `public`      | Usa `BCryptHashingService` como encoder.                                                          |
+| `filterChain(HttpSecurity http)` | `SecurityFilterChain`              | `public`      | CORS, CSRF off, 401 handler, stateless, `permitAll` a `/api/v1/authentication/**` y Swagger, etc. |
 
 ---
 
@@ -1792,9 +1792,9 @@ Filtro JWT que autentica peticiones con token Bearer.
 
 **Métodos principales:**
 
-| Método                                              | Tipo de Retorno | Visibilidad | TheDescripción                                                             |
-|-----------------------------------------------------|------------------|-------------|----------------------------------------------------------------------------|
-| `doFilterInternal(request, response, chain)`        | `void`           | `protected` | Extrae token, valida, carga `UserDetails` y establece la autenticación.    |
+| Método                                             | Tipo de Retorno  | Visibilidad | Descripción                                                             |
+|----------------------------------------------------|------------------|-------------|-------------------------------------------------------------------------|
+| `doFilterInternal(request, response, chain)`       | `void`           | `protected` | Extrae token, valida, carga `UserDetails` y establece la autenticación. |
 
 ---
 
@@ -1803,9 +1803,9 @@ Maneja respuestas 401 no autorizadas.
 
 **Métodos principales:**
 
-| Método                                                          | Tipo de Retorno | Visibilidad | Descripción                           |
-|-----------------------------------------------------------------|------------------|-------------|---------------------------------------|
-| `commence(request, response, authException)`                    | `void`           | `public`    | Responde con `401 Unauthorized`.      |
+| Método                                       | Tipo de Retorno   | Visibilidad | Descripción                      |
+|----------------------------------------------|-------------------|-------------|----------------------------------|
+| `commence(request, response, authException)` | `void`            | `public`    | Responde con `401 Unauthorized`. |
 
 ---
 
@@ -1814,9 +1814,9 @@ Carga usuarios para Spring Security desde `UserRepository`.
 
 **Métodos principales:**
 
-| Método                             | Tipo de Retorno | Visibilidad | Descripción                                      |
-|------------------------------------|------------------|-------------|--------------------------------------------------|
-| `loadUserByUsername(String user)`  | `UserDetails`    | `public`    | Carga usuario por email (username).              |
+| Método                            | Tipo de Retorno  | Visibilidad | Descripción                         |
+|-----------------------------------|------------------|-------------|-------------------------------------|
+| `loadUserByUsername(String user)` | `UserDetails`    | `public`    | Carga usuario por email (username). |
 
 ---
 
@@ -1825,9 +1825,9 @@ Adaptador con authorities y tenant.
 
 **Métodos principales:**
 
-| Método                              | Tipo de Retorno     | Visibilidad | Descripción                                         |
-|-------------------------------------|----------------------|-------------|-----------------------------------------------------|
-| `build(User user)`                  | `UserDetailsImpl`    | `public`    | Construye desde entidad `User` (roles → authorities). |
+| Método             | Tipo de Retorno      | Visibilidad | Descripción                                           |
+|--------------------|----------------------|-------------|-------------------------------------------------------|
+| `build(User user)` | `UserDetailsImpl`    | `public`    | Construye desde entidad `User` (roles → authorities). |
 
 ---
 
@@ -1836,9 +1836,9 @@ Crea `UsernamePasswordAuthenticationToken` con detalles de request.
 
 **Métodos principales:**
 
-| Método                                                   | Tipo de Retorno                         | Visibilidad | Descripción                                         |
-|----------------------------------------------------------|------------------------------------------|-------------|-----------------------------------------------------|
-| `build(UserDetails principal, HttpServletRequest req)`   | `UsernamePasswordAuthenticationToken`    | `public`    | Genera el token de autenticación con detalles web.  |
+| Método                                                 | Tipo de Retorno                       | Visibilidad | Descripción                                        |
+|--------------------------------------------------------|---------------------------------------|-------------|----------------------------------------------------|
+| `build(UserDetails principal, HttpServletRequest req)` | `UsernamePasswordAuthenticationToken` | `public`    | Genera el token de autenticación con detalles web. |
 
 ---
 
@@ -1847,15 +1847,15 @@ Servicio JWT basado en JJWT (HS key, expiración configurable).
 
 **Métodos principales:**
 
-| Método                                   | Tipo de Retorno | Visibilidad | Descripción                                            |
-|------------------------------------------|------------------|-------------|--------------------------------------------------------|
-| `generateToken(Authentication auth)`     | `String`         | `public`    | Genera JWT desde `Authentication`.                    |
-| `generateToken(String username)`         | `String`         | `public`    | Genera JWT desde username.                            |
-| `getUsernameFromToken(String token)`     | `String`         | `public`    | Extrae `sub` (username).                               |
-| `getUserIdFromToken(String token)`       | `Long`           | `public`    | Extrae claim `userId` (si existe).                     |
-| `getTenantIdFromToken(String token)`     | `Long`           | `public`    | Extrae claim `tenantId` (si existe).                   |
-| `validateToken(String token)`            | `boolean`        | `public`    | Valida firma/fecha/estructura del JWT.                 |
-| `getBearerTokenFrom(HttpServletRequest)` | `String`         | `public`    | Obtiene el token del header `Authorization`.           |
+| Método                                   | Tipo de Retorno   | Visibilidad | Descripción                                  |
+|------------------------------------------|-------------------|-------------|----------------------------------------------|
+| `generateToken(Authentication auth)`     | `String`          | `public`    | Genera JWT desde `Authentication`.           |
+| `generateToken(String username)`         | `String`          | `public`    | Genera JWT desde username.                   |
+| `getUsernameFromToken(String token)`     | `String`          | `public`    | Extrae `sub` (username).                     |
+| `getUserIdFromToken(String token)`       | `Long`            | `public`    | Extrae claim `userId` (si existe).           |
+| `getTenantIdFromToken(String token)`     | `Long`            | `public`    | Extrae claim `tenantId` (si existe).         |
+| `validateToken(String token)`            | `boolean`         | `public`    | Valida firma/fecha/estructura del JWT.       |
+| `getBearerTokenFrom(HttpServletRequest)` | `String`          | `public`    | Obtiene el token del header `Authorization`. |
 
 ---
 
@@ -1864,10 +1864,10 @@ Contrato para manejo de JWT Bearer (extiende `TokenService`).
 
 **Métodos principales:**
 
-| Método                                   | Tipo de Retorno | Visibilidad | Descripción                         |
-|------------------------------------------|------------------|-------------|-------------------------------------|
-| `getBearerTokenFrom(HttpServletRequest)` | `String`         | `public`    | Extrae token Bearer del request.    |
-| `generateToken(Authentication auth)`     | `String`         | `public`    | Genera token desde `Authentication`.|
+| Método                                   | Tipo de Retorno   | Visibilidad | Descripción                          |
+|------------------------------------------|-------------------|-------------|--------------------------------------|
+| `getBearerTokenFrom(HttpServletRequest)` | `String`          | `public`    | Extrae token Bearer del request.     |
+| `generateToken(Authentication auth)`     | `String`          | `public`    | Genera token desde `Authentication`. |
 
 ---
 
@@ -1876,10 +1876,10 @@ Implementación de hashing de contraseñas con `BCryptPasswordEncoder`.
 
 **Métodos principales:**
 
-| Método                                   | Tipo de Retorno | Visibilidad | Descripción                          |
-|------------------------------------------|------------------|-------------|--------------------------------------|
-| `encode(CharSequence rawPassword)`       | `String`         | `public`    | Genera hash con BCrypt.              |
-| `matches(CharSequence raw, String enc)`  | `boolean`        | `public`    | Compara texto plano vs hash BCrypt.  |
+| Método                                  | Tipo de Retorno   | Visibilidad | Descripción                         |
+|-----------------------------------------|-------------------|-------------|-------------------------------------|
+| `encode(CharSequence rawPassword)`      | `String`          | `public`    | Genera hash con BCrypt.             |
+| `matches(CharSequence raw, String enc)` | `boolean`         | `public`    | Compara texto plano vs hash BCrypt. |
 
 ---
 
@@ -1888,10 +1888,10 @@ Contrato que combina `HashingService` y `PasswordEncoder`.
 
 **Métodos principales:**
 
-| Método                                   | Tipo de Retorno | Visibilidad | Descripción                               |
-|------------------------------------------|------------------|-------------|-------------------------------------------|
-| `encode(CharSequence rawPassword)`       | `String`         | `public`    | Hash de contraseña.                       |
-| `matches(CharSequence raw, String enc)`  | `boolean`        | `public`    | Verificación de contraseña.               |
+| Método                                  | Tipo de Retorno   | Visibilidad | Descripción                 |
+|-----------------------------------------|-------------------|-------------|-----------------------------|
+| `encode(CharSequence rawPassword)`      | `String`          | `public`    | Hash de contraseña.         |
+| `matches(CharSequence raw, String enc)` | `boolean`         | `public`    | Verificación de contraseña. |
 
 ---
 
@@ -1901,12 +1901,12 @@ Generación y validación de códigos con configuración externa.
 
 **Métodos principales:**
 
-| Método                                                      | Tipo de Retorno | Visibilidad | Descripción                                         |
-|-------------------------------------------------------------|------------------|-------------|-----------------------------------------------------|
-| `generateCode()`                                            | `String`         | `public`    | Genera código con longitud por defecto.             |
-| `generateCode(int length)`                                  | `String`         | `public`    | Genera código con longitud indicada.                |
-| `generateExpirationMinutes()`                               | `Integer`        | `public`    | Minutos de expiración configurados.                 |
-| `verifyCode(String code, String expected, LocalDateTime)`   | `boolean`        | `public`    | Verifica coincidencia y vigencia del código.        |
+| Método                                                    | Tipo de Retorno   | Visibilidad | Descripción                                  |
+|-----------------------------------------------------------|-------------------|-------------|----------------------------------------------|
+| `generateCode()`                                          | `String`          | `public`    | Genera código con longitud por defecto.      |
+| `generateCode(int length)`                                | `String`          | `public`    | Genera código con longitud indicada.         |
+| `generateExpirationMinutes()`                             | `Integer`         | `public`    | Minutos de expiración configurados.          |
+| `verifyCode(String code, String expected, LocalDateTime)` | `boolean`         | `public`    | Verifica coincidencia y vigencia del código. |
 
 ---
 
@@ -1927,10 +1927,10 @@ Adaptador de salida para notificaciones por email (extiende `EmailService`).
 
 **Métodos principales:**
 
-| Método                                          | Tipo de Retorno | Visibilidad | Descripción                                |
-|-------------------------------------------------|------------------|-------------|--------------------------------------------|
-| `sendVerificationEmail(String to, String code, int exp)` | `void` | `public`    | Envía email con código de verificación.     |
-| `sendPasswordResetEmail(String to, String link)`         | `void` | `public`    | Envía email con enlace de reseteo.          |
+| Método                                                   | Tipo de Retorno  | Visibilidad | Descripción                             |
+|----------------------------------------------------------|------------------|-------------|-----------------------------------------|
+| `sendVerificationEmail(String to, String code, int exp)` | `void`           | `public`    | Envía email con código de verificación. |
+| `sendPasswordResetEmail(String to, String link)`         | `void`           | `public`    | Envía email con enlace de reseteo.      |
 
 ---
 
@@ -1939,10 +1939,10 @@ Implementación que usa `TemplatedEmailService` para emails.
 
 **Métodos principales:**
 
-| Método                                          | Tipo de Retorno | Visibilidad | Descripción                                           |
-|-------------------------------------------------|------------------|-------------|-------------------------------------------------------|
-| `sendVerificationEmail(String to, String code, int exp)` | `void` | `public`    | Envía correo de verificación con plantilla.           |
-| `sendPasswordResetEmail(String to, String link)`         | `void` | `public`    | Envía correo de reseteo con plantilla.                |
+| Método                                                   | Tipo de Retorno   | Visibilidad | Descripción                                 |
+|----------------------------------------------------------|-------------------|-------------|---------------------------------------------|
+| `sendVerificationEmail(String to, String code, int exp)` | `void`            | `public`    | Envía correo de verificación con plantilla. |
+| `sendPasswordResetEmail(String to, String link)`         | `void`            | `public`    | Envía correo de reseteo con plantilla.      |
 
 ---
 
@@ -1951,13 +1951,13 @@ Proveedor de identidad actual basado en Spring Security (`SecurityContextHolder`
 
 **Métodos principales:**
 
-| Método            | Tipo de Retorno      | Visibilidad | Descripción                                  |
-|-------------------|----------------------|-------------|----------------------------------------------|
-| `getUserId()`     | `Optional<Long>`     | `public`    | Retorna el ID del usuario autenticado.       |
-| `getUsername()`   | `Optional<String>`   | `public`    | Retorna el username (email).                 |
-| `getRoles()`      | `Set<String>`        | `public`    | Retorna los authorities del contexto.        |
-| `getTenantId()`   | `Optional<Long>`     | `public`    | Retorna el tenant actual (si existe).        |
-| `isServiceAccount()` | `boolean`         | `public`    | Indica si es una cuenta de servicio.         |
+| Método               | Tipo de Retorno      | Visibilidad | Descripción                            |
+|----------------------|----------------------|-------------|----------------------------------------|
+| `getUserId()`        | `Optional<Long>`     | `public`    | Retorna el ID del usuario autenticado. |
+| `getUsername()`      | `Optional<String>`   | `public`    | Retorna el username (email).           |
+| `getRoles()`         | `Set<String>`        | `public`    | Retorna los authorities del contexto.  |
+| `getTenantId()`      | `Optional<Long>`     | `public`    | Retorna el tenant actual (si existe).  |
+| `isServiceAccount()` | `boolean`            | `public`    | Indica si es una cuenta de servicio.   |
 
 ---
 
@@ -1966,13 +1966,13 @@ Contrato que extiende `IdentityService` para exponer identidad vía Spring Secur
 
 **Métodos principales:** *(hereda de `IdentityService`)*
 
-| Método          | Tipo de Retorno      | Descripción                          |
-|-----------------|----------------------|--------------------------------------|
-| `getUserId()`   | `Optional<Long>`     | ID del usuario autenticado.          |
-| `getUsername()` | `Optional<String>`   | Username del contexto.               |
-| `getRoles()`    | `Set<String>`        | Roles/autorizaciones actuales.       |
-| `getTenantId()` | `Optional<Long>`     | Tenant actual (si existe).           |
-| `isServiceAccount()` | `boolean`       | Indica cuenta de servicio.           |
+| Método               | Tipo de Retorno      | Descripción                    |
+|----------------------|----------------------|--------------------------------|
+| `getUserId()`        | `Optional<Long>`     | ID del usuario autenticado.    |
+| `getUsername()`      | `Optional<String>`   | Username del contexto.         |
+| `getRoles()`         | `Set<String>`        | Roles/autorizaciones actuales. |
+| `getTenantId()`      | `Optional<Long>`     | Tenant actual (si existe).     |
+| `isServiceAccount()` | `boolean`            | Indica cuenta de servicio.     |
 
 #### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
 
