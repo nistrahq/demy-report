@@ -1198,6 +1198,7 @@ Proporciona métodos para ejecutar comandos relacionados con la generación de r
 | Método                                     | Tipo de Retorno     | Visibilidad | Descripción                                      |
 |--------------------------------------------|---------------------|-------------|--------------------------------------------------|
 | `handle(GenerateReportCommand command)`    | `Optional<Report>`  | `public`    | Genera un nuevo reporte financiero.              |
+| `handle(DeleteReportCommand command)`      | `void`              | `public`    | Elimina un reporte financiero existente.         |
 
 ---
 
@@ -1244,6 +1245,84 @@ Controlador REST que expone endpoints para gestionar reportes financieros.
 | `getReportById`         | `/api/v1/reports/{id}`   | `GET`       | Obtiene un reporte por su ID.          |
 | `getReportsByPeriod`    | `/api/v1/reports`        | `GET`       | Obtiene reportes dentro de un período. |
 | `deleteReport`          | `/api/v1/reports/{id}`   | `DELETE`    | Elimina un reporte por su ID.          |
+
+---
+
+#### 4.2.7.3. Application Layer
+
+1. **`TransactionCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar transacciones financieras.
+
+**Atributos principales:**
+
+| Atributo                     | Tipo                       | Visibilidad | Descripción                                   |
+|------------------------------|----------------------------|-------------|-----------------------------------------------|
+| `transactionRepository`      | `TransactionRepository`    | `private`   | Repositorio para acceder a las transacciones. |
+
+**Métodos principales:**
+
+| Método                                        | Tipo de Retorno         | Visibilidad | Descripción                                                   |
+|-----------------------------------------------|-------------------------|-------------|---------------------------------------------------------------|
+| `handle(RegisterTransactionCommand command)`  | `Optional<Transaction>` | `public`    | Maneja el comando para registrar una nueva transacción.       |
+| `handle(UpdateTransactionCommand command)`    | `void`                  | `public`    | Maneja el comando para actualizar una transacción existente.  |
+
+---
+
+2. **`TransactionQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para obtener información sobre transacciones financieras.
+
+**Atributos principales:**
+
+| Atributo                   | Tipo                       | Visibilidad | Descripción                                   |
+|----------------------------|----------------------------|-------------|-----------------------------------------------|
+| `transactionRepository`    | `TransactionRepository`    | `private`   | Repositorio para acceder a las transacciones. |
+
+**Métodos principales:**
+
+| Método                                          | Tipo de Retorno         | Visibilidad | Descripción                                                   |
+|-------------------------------------------------|-------------------------|-------------|---------------------------------------------------------------|
+| `handle(GetTransactionByIdQuery query)`         | `Optional<Transaction>` | `public`    | Maneja la consulta para obtener una transacción por su ID.    |
+| `handle(GetTransactionsByDateRangeQuery query)` | `List<Transaction>`     | `public`    | Maneja la consulta para obtener transacciones en un rango.    |
+
+---
+
+3. **`ReportCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar reportes financieros.
+
+**Atributos principales:**
+
+| Atributo                | Tipo                  | Visibilidad | Descripción                              |
+|-------------------------|-----------------------|-------------|------------------------------------------|
+| `reportRepository`      | `ReportRepository`    | `private`   | Repositorio para acceder a los reportes. |
+
+**Métodos principales:**
+
+| Método                                     | Tipo de Retorno     | Visibilidad | Descripción                                      |
+|--------------------------------------------|---------------------|-------------|--------------------------------------------------|
+| `handle(GenerateReportCommand command)`    | `Optional<Report>`  | `public`    | Maneja el comando para generar un nuevo reporte. |
+| `handle(DeleteReportCommand command)`      | `void`              | `public`    | Maneja el comando para eliminar un reporte.      |
+
+---
+
+4. **`ReportQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para obtener información sobre reportes financieros.
+
+**Atributos principales:**
+
+| Atributo               | Tipo                  | Visibilidad | Descripción                              |
+|------------------------|-----------------------|-------------|------------------------------------------|
+| `reportRepository`     | `ReportRepository`    | `private`   | Repositorio para acceder a los reportes. |
+
+**Métodos principales:**
+
+| Método                                  | Tipo de Retorno         | Visibilidad | Descripción                                             |
+|-----------------------------------------|-------------------------|-------------|---------------------------------------------------------|
+| `handle(GetReportByIdQuery query)`      | `Optional<Report>`      | `public`    | Maneja la consulta para obtener un reporte por su ID.   |
+| `handle(GetReportsByPeriodQuery query)` | `List<Report>`          | `public`    | Maneja la consulta para obtener reportes en un período. |
 
 ---
 
