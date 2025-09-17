@@ -1412,45 +1412,120 @@ Identificador único de un usuario dentro del sistema.
 
 #### 4.2.6.3. Application Layer
 
-1. **`BillingAccountCommandServiceImpl` (Command Service Implementation)**
+1. **`AcademyCommandServiceImpl` (Command Service Implementation)**
 
-Implementación del servicio de comandos para gestionar cuentas de facturación y boletas.
-
-**Atributos principales:**
-
-| Atributo                     | Tipo                       | Visibilidad | Descripción                                             |
-|------------------------------|----------------------------|-------------|---------------------------------------------------------|
-| `billingAccountRepository`   | `BillingAccountRepository` | `private`   | Repositorio para acceder a las cuentas de facturación.  |
-
-**Métodos principales:**
-
-| Método                                        | Tipo de Retorno            | Visibilidad | Descripción                                                   |
-|-----------------------------------------------|----------------------------|-------------|---------------------------------------------------------------|
-| `hnadle(CreateBillingAccountCommand command)` | `Optional<BillingAccount>` | `public`    | Maneja el comando para crear una nueva cuenta de facturación. |
-| `handle(AssignInvoiceCommand command)`        | `Optional<Invoice>`        | `public`    | Maneja el comando para asignar una nueva boleta.              |
-| `handle(RecordPaymentCommand command)`        | `void`                     | `public`    | Maneja el comando para registrar un pago.                     |
-| `handle(SuspendAccountCommand command)`       | `void`                     | `public`    | Maneja el comando para suspender una cuenta de facturación.   |
-| `handle(ReactivateAccountCommand command)`    | `void`                     | `public`    | Maneja el comando para reactivar una cuenta suspendida.       |
-
-2. **`BillingAccountQueryServiceImpl` (Query Service Implementation)**
-
-Implementación del servicio de consultas para obtener información sobre cuentas de facturación y boletas.
+Implementación del servicio de comandos para gestionar academias.
 
 **Atributos principales:**
 
-| Atributo                   | Tipo                       | Visibilidad | Descripción                                             |
-|----------------------------|----------------------------|-------------|---------------------------------------------------------|
-| `billingAccountRepository` | `BillingAccountRepository` | `private`   | Repositorio para acceder a las cuentas de facturación.  |
+| Atributo            | Tipo                | Visibilidad | Descripción                                   |
+| ------------------- | ------------------- | ----------- | --------------------------------------------- |
+| `academyRepository` | `AcademyRepository` | `private`   | Repositorio para operaciones de persistencia. |
 
 **Métodos principales:**
 
-| Método                                      | Tipo de Retorno            | Visibilidad | Descripción                                                     |
-|---------------------------------------------|----------------------------|-------------|-----------------------------------------------------------------|
-| `handle(GetBillingAccountByIdQuery query)`  | `Optional<BillingAccount>` | `public`    | Maneja la consulta para obtener una cuenta por su ID.           |
-| `handle(GetInvoicesByAccountIdQuery query)` | `List<Invoice>`            | `public`    | Maneja la consulta para obtener boletas asociadas a una cuenta. |
-| `handle(GetOutstandingBalanceQuery query)`  | `Optional<Money>`          | `public`    | Maneja la consulta para obtener el saldo pendiente.             |
-| `handle(GetOverdueInvoicesQuery query)`     | `List<Invoice>`            | `public`    | Maneja la consulta para obtener boletas vencidas.               |
-| `handle(GetAccountStatusQuery query)`       | `Optional<AccountStatus>`  | `public`    | Maneja la consulta para obtener el estado de una cuenta.        |
+| Método                                            | Tipo de Retorno     | Visibilidad | Descripción                                                           |
+| ------------------------------------------------- | ------------------- | ----------- | --------------------------------------------------------------------- |
+| `handle(RegisterAcademyCommand command)`          | `Optional<Academy>` | `public`    | Crea y persiste una nueva academia; valida email y RUC únicos.        |
+| `handle(AssignAdministratorToAcademyCommand cmd)` | `void`              | `public`    | Asigna un administrador existente a una academia; persiste el cambio. |
+
+2. **`AdministratorCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar administradores.
+
+**Atributos principales:**
+
+| Atributo                  | Tipo                      | Visibilidad | Descripción                                              |
+| ------------------------- | ------------------------- | ----------- | -------------------------------------------------------- |
+| `academyRepository`       | `AcademyRepository`       | `private`   | Acceso a academias para asociación y persistencia.       |
+| `administratorRepository` | `AdministratorRepository` | `private`   | Acceso a administradores para validación y persistencia. |
+
+**Métodos principales:**
+
+| Método                                         | Tipo de Retorno           | Visibilidad | Descripción                                                                                                  |
+| ---------------------------------------------- | ------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------ |
+| `handle(RegisterAdministratorCommand command)` | `Optional<Administrator>` | `public`    | Registra un administrador; valida duplicados por DNI; publica evento; asocia a la academia y persiste ambos. |
+
+3. **`TeacherCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar docentes.
+
+**Atributos principales:**
+
+| Atributo             | Tipo                | Visibilidad | Descripción                                  |
+|----------------------|---------------------|-------------|----------------------------------------------|
+| `teacherRepository`  | `TeacherRepository` | `private`   | Repositorio para persistencia de docentes.   |
+
+**Métodos principales:**
+
+| Método                                   | Tipo de Retorno     | Visibilidad | Descripción                                    |
+|------------------------------------------|---------------------|-------------|------------------------------------------------|
+| `handle(RegisterTeacherCommand command)` | `Optional<Teacher>` | `public`    | Registra un nuevo docente en la academia.      |
+
+4. **`ExternalIamService` (Outbound ACL Service)**
+
+Adaptador de salida hacia IAM para obtener el contexto del usuario autenticado.
+
+**Atributos principales:**
+
+| Atributo           | Tipo               | Visibilidad | Descripción                                 |
+| ------------------ | ------------------ | ----------- | ------------------------------------------- |
+| `iamContextFacade` | `IamContextFacade` | `private`   | Fachada del contexto IAM (sistema externo). |
+
+**Métodos principales:**
+
+| Método                    | Tipo de Retorno       | Visibilidad | Descripción                                                           |
+| ------------------------- | --------------------- | ----------- | --------------------------------------------------------------------- |
+| `fetchCurrentAcademyId()` | `Optional<AcademyId>` | `public`    | Obtiene el `AcademyId` del usuario autenticado desde IAM (si existe). |
+
+5. **`AcademyQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para academias.
+
+**Atributos principales:**
+
+| Atributo            | Tipo                | Visibilidad | Descripción                         |
+| ------------------- | ------------------- | ----------- | ----------------------------------- |
+| `academyRepository` | `AcademyRepository` | `private`   | Repositorio para acceso de lectura. |
+
+**Métodos principales:**
+
+| Método                              | Tipo de Retorno     | Visibilidad | Descripción                                |
+| ----------------------------------- | ------------------- | ----------- | ------------------------------------------ |
+| `handle(GetAcademyByIdQuery query)` | `Optional<Academy>` | `public`    | Obtiene una academia por su identificador. |
+
+6. **`AdministratorQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para administradores.
+
+**Atributos principales:**
+
+| Atributo                  | Tipo                      | Visibilidad | Descripción                         |
+| ------------------------- | ------------------------- | ----------- | ----------------------------------- |
+| `administratorRepository` | `AdministratorRepository` | `private`   | Repositorio para acceso de lectura. |
+
+**Métodos principales:**
+
+| Método                                           | Tipo de Retorno           | Visibilidad | Descripción                          |
+| ------------------------------------------------ | ------------------------- | ----------- | ------------------------------------ |
+| `handle(GetAdministratorByDniNumberQuery query)` | `Optional<Administrator>` | `public`    | Obtiene un administrador por su DNI. |
+
+7. **`TeacherQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para docentes.
+
+**Atributos principales:**
+
+| Atributo             | Tipo                 | Visibilidad | Descripción                                                      |
+| -------------------- | -------------------- | ----------- | ---------------------------------------------------------------- |
+| `teacherRepository`  | `TeacherRepository`  | `private`   | Repositorio para acceso de lectura de docentes.                  |
+| `externalIamService` | `ExternalIamService` | `private`   | Servicio para obtener `AcademyId` del usuario autenticado (IAM). |
+
+**Métodos principales:**
+
+| Método                              | Tipo de Retorno | Visibilidad | Descripción                                                                                 |
+| ----------------------------------- | --------------- | ----------- | ------------------------------------------------------------------------------------------- |
+| `handle(GetAllTeachersQuery query)` | `List<Teacher>` | `public`    | Lista docentes filtrando por `AcademyId` obtenido desde IAM; requiere contexto de academia. |
 
 #### 4.2.6.4. Infrastructure Layer
 
