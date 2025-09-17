@@ -24,11 +24,8 @@ package "Accounting & Finance Context" {
             - transactionDate : LocalDate
             - academyId : AcademyId
             # Transaction()
-            + Transaction(transactionType : TransactionType,
-              transactionCategory : TransactionCategory,
-              transactionMethod : TransactionMethod,
-              amount : Money, description : String,
-              transactionDate : LocalDate, academyId : AcademyId)
+            + Transaction(transactionType : TransactionType,transactionCategory : TransactionCategory,
+              transactionMethod : TransactionMethod, amount : Money, description : String, transactionDate : LocalDate, academyId : AcademyId)
             + Transaction(command : RegisterTransactionCommand)
             + getTransactionDetails() : String
         }

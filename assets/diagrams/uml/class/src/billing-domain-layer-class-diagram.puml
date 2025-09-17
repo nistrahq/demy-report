@@ -40,9 +40,8 @@ package "Billing Context" {
             - invoiceStatus : InvoiceStatus
             - billingAccountId : Long
             # Invoice()
-            + Invoice(invoiceType : InvoiceType, amount : Money,
-              description : String, issueDate : LocalDate,
-              dueDate : LocalDate, billingAccountId : Long)
+            + Invoice(invoiceType : InvoiceType, amount : Money, description : String,
+              issueDate : LocalDate, dueDate : LocalDate, billingAccountId : Long)
             + Invoice(command : AssignInvoiceCommand)
             + markAsPaid() : void
             + markAsOverdue() : void
