@@ -687,11 +687,45 @@ Implementación del servicio de consultas para obtener información sobre estudi
 | `handle(GetAllStudentsQuery query)`  | `List<Student>`     | `public`    | Obtiene la lista de todos los estudiantes registrados. |
 | `handle(GetStudentByDniQuery query)` | `Optional<Student>` | `public`    | Obtiene un estudiante a partir de su DNI.              |
 
+#### 4.2.3.4. Infrastructure Layer
 
+1. **`EnrollmentRepository` (Repository Interface)**
 
-#### 4.2.X.4. Infrastructure Layer
+Interfaz del repositorio para acceder y gestionar matrículas.
 
-Write here...
+**Métodos principales:**
+
+| Método                                                                       | Tipo de Retorno        | Visibilidad | Descripción                                                              |
+| ---------------------------------------------------------------------------- | ---------------------- | ----------- | ------------------------------------------------------------------------ |
+| `findAllByStudentId(StudentId studentId)`                                    | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas asociadas a un estudiante por su ID.        |
+| `findAllByAcademicPeriodId(PeriodId periodId)`                               | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas registradas en un período académico.        |
+| `findByStudentIdAndAcademicPeriodId(StudentId studentId, PeriodId periodId)` | `Optional<Enrollment>` | `public`    | Busca una matrícula específica por ID de estudiante y período académico. |
+
+---
+2. **`AcademicPeriodRepository` (Repository Interface)**
+
+Interfaz del repositorio para acceder y gestionar períodos académicos.
+
+**Métodos principales:**
+
+| Método                                                     | Tipo de Retorno            | Visibilidad | Descripción                                                                  |
+| ---------------------------------------------------------- | -------------------------- | ----------- | ---------------------------------------------------------------------------- |
+| `existsByPeriodName(String periodName)`                    | `boolean`                  | `public`    | Verifica si existe un período académico con el nombre especificado.          |
+| `findByPeriodName(String periodName)`                      | `Optional<AcademicPeriod>` | `public`    | Busca un período académico por su nombre.                                    |
+| `existsByPeriodNameAndIdIsNot(String periodName, Long id)` | `boolean`                  | `public`    | Verifica si existe otro período académico con el mismo nombre y distinto ID. |
+
+---
+
+3. **`StudentRepository` (Repository Interface)**
+
+Interfaz del repositorio para acceder y gestionar estudiantes.
+
+**Métodos principales:**
+
+| Método                               | Tipo de Retorno     | Visibilidad | Descripción                                                           |
+| ------------------------------------ | ------------------- | ----------- | --------------------------------------------------------------------- |
+| `existsStudentByDni_Dni(String dni)` | `boolean`           | `public`    | Verifica si existe un estudiante registrado con el DNI proporcionado. |
+| `findByDni_Dni(String dni)`          | `Optional<Student>` | `public`    | Busca un estudiante específico a partir de su DNI.                    |
 
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
 
