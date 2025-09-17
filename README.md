@@ -464,11 +464,11 @@ Para diseñar las entrevistas, se elaboraron dos bloques de preguntas, diferenci
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Nombre</td>
-    <td style="border: 1px solid #000; padding:6px;">Luis de la Cruz Herrera</td>
+    <td style="border: 1px solid #000; padding:6px;">Diego Meléndez</td>
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Edad</td>
-    <td style="border: 1px solid #000; padding:6px;">25</td>
+    <td style="border: 1px solid #000; padding:6px;">24</td>
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Sexo</td>
@@ -476,36 +476,39 @@ Para diseñar las entrevistas, se elaboraron dos bloques de preguntas, diferenci
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Distrito</td>
-    <td style="border: 1px solid #000; padding:6px;">La Molina</td>
+    <td style="border: 1px solid #000; padding:6px;">Surquillo</td>
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Ocupación</td>
-    <td style="border: 1px solid #000; padding:6px;">Docente de Círculos de Estudio en la UNALM</td>
+    <td style="border: 1px solid #000; padding:6px;">Docente de academia</td>
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Fecha de entrevista</td>
-    <td style="border: 1px solid #000; padding:6px;">3 de septiembre de 2025</td>
+    <td style="border: 1px solid #000; padding:6px;">3/09/25</td>
   </tr>
-  <tr>
+    <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
-    <td style="border: 1px solid #000; padding:6px;">18:46 - 31:01</td>
+    <td style="border: 1px solid #000; padding:6px;">10:19 - 25:02</td>
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
     <td style="border: 1px solid #000; padding:6px;">
-      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EXN4PH3yo6BDpMxZlyfjpr8BqyL-elHkge9QM1vrQeoYRg?e=qvqo4T" target="_blank">Ver en Microsoft Stream</a>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EXN4PH3yo6BDpMxZlyfjpr8BqyL-elHkge9QM1vrQeoYRg?e=amN8XV" target="_blank">Ver en Microsoft Stream</a>
     </td>
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Captura</td>
     <td style="border: 1px solid #000; padding:6px;">
-      <img src="./assets/images/screenshots/interview-screenshot-teacher1.jpg" alt="Captura entrevista Luis" style="max-width:100%; height:auto;">
+      <img src="./assets/images/screenshots/interview-screenshot-teacher1.png" alt="Captura entrevista Diego Melendez" style="max-width:100%; height:auto;">
     </td>
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Resumen</td>
     <td style="border: 1px solid #000; padding:6px;">
-      Luis dicta clases en círculos de estudio de la UNALM y enfrenta problemas con la gestión manual de horarios y notas, usando principalmente Excel y cuadernos. Esto le consume tiempo y reduce su eficiencia. Percibe valor en una solución digital centralizada que le permita enfocarse más en la enseñanza. Está dispuesto a usar nuevas herramientas si son simples y accesibles desde celular.
+      Diego Meléndez dicta clases en una academia y actualmente gestiona asistencia y notas en un cuaderno. Este método le resulta poco práctico debido al espacio limitado, la necesidad de transportarlo y la dificultad para acceder rápidamente a la información.  
+      Para coordinar con la academia o comunicar cambios utiliza WhatsApp, aunque reconoce que no siempre es eficaz ya que algunos padres no leen los mensajes a tiempo. Esto genera descoordinación y retrasos.  
+      Percibe gran valor en una solución digital que le permita registrar asistencia de forma rápida, consultar perfiles de alumnos, acceder a horarios y recibir notificaciones automáticas sobre cambios o incidencias. Prefiere usar el celular como dispositivo principal y considera fundamental que la aplicación sea intuitiva y fácil de usar, dado que no tiene una alta familiaridad tecnológica.  
+      Está dispuesto a adoptar nuevas herramientas si le ayudan a ahorrar tiempo, evitar contratiempos y mejorar la comunicación con alumnos y padres.
     </td>
   </tr>
 </table>
@@ -543,7 +546,7 @@ Para diseñar las entrevistas, se elaboraron dos bloques de preguntas, diferenci
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
-    <td style="border: 1px solid #000; padding:6px;">31:01 - 45:48</td>
+    <td style="border: 1px solid #000; padding:6px;">25:03 - 39:49</td>
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
@@ -598,7 +601,7 @@ Para diseñar las entrevistas, se elaboraron dos bloques de preguntas, diferenci
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
-    <td style="border: 1px solid #000; padding:6px;">45:49 - 50:16</td>
+    <td style="border: 1px solid #000; padding:6px;">39:51 - 44:17</td>
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
@@ -653,7 +656,7 @@ Para diseñar las entrevistas, se elaboraron dos bloques de preguntas, diferenci
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
-    <td style="border: 1px solid #000; padding:6px;">00:00 - 000</td>
+    <td style="border: 1px solid #000; padding:6px;">44:18 - 49:00</td>
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
@@ -706,7 +709,7 @@ Para diseñar las entrevistas, se elaboraron dos bloques de preguntas, diferenci
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
-    <td style="border: 1px solid #000; padding:6px;">00:00 - 000</td>
+    <td style="border: 1px solid #000; padding:6px;">49:01 - 55:25</td>
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
@@ -759,7 +762,7 @@ Para diseñar las entrevistas, se elaboraron dos bloques de preguntas, diferenci
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Timing</td>
-    <td style="border: 1px solid #000; padding:6px;">00:00 - 000</td>
+    <td style="border: 1px solid #000; padding:6px;">55:26 - 01:00:19</td>
   </tr>
   <tr>
     <td style="border: 1px solid #000; border-right:none; padding:6px;">Video</td>
