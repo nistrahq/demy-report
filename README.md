@@ -1050,6 +1050,17 @@ Representa un reporte financiero generado para la academia.
 | `generatedDate`  | `LocalDate`    | `private`   | Fecha de generación del reporte.                    |
 | `academyId`      | `AcademyId`    | `private`   | Identificador de la academia asociada al reporte.   |
 
+**Métodos principales:**
+
+| Método                                    | Tipo de Retorno | Visibilidad | Descripción                                                   |
+|-------------------------------------------|-----------------|-------------|---------------------------------------------------------------|
+| `Report()`                                | `Constructor`   | `protected` | Constructor protegido para uso por el repositorio.            |
+| `Report(GenerateReportCommand command)`   | `Constructor`   | `public`    | Constructor que inicializa el reporte a partir de un comando. |
+| `getSummary()`                            | `String`        | `public`    | Obtiene un resumen del contenido del reporte.                 |
+| `exportToPDF()`                           | `byte[]`        | `public`    | Exporta el reporte a formato PDF.                             |
+| `exportToExcel()`                         | `byte[]`        | `public`    | Exporta el reporte a formato Excel.                           |
+| `sendToEmail(String email)`               | `void`          | `public`    | Envía el reporte por correo electrónico.                      |
+
 ---
 
 3. **`TransactionType` (Value Object)**
@@ -1361,6 +1372,18 @@ En esta sección se presentan los diagramas de nivel componente que ilustran la 
 ![Diagrama de Componentes del Contexto de Accounting & Finance](./assets/diagrams/software-architecture/components/out/accountingfinance-component-level-diagram.png)
 
 Además, se incluye el [código fuente del diagrama de componentes de Accounting & Finance](./assets/diagrams/software-architecture/components/src/accountingfinance-component-level-diagram.dsl).
+
+#### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams
+
+Write here...
+
+#### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams
+
+Write here...
+
+#### 4.2.7.6.2. Bounded Context Database Design Diagram
+
+Write here...
 
 ## Conclusiones y Recomendaciones
 
