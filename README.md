@@ -1163,6 +1163,57 @@ Representa el período cubierto por un reporte financiero.
 
 ---
 
+8. **`TransactionCommandService` (Domain Service)**
+
+Proporciona métodos para ejecutar comandos relacionados con la gestión de transacciones financieras y reportes.
+
+**Métodos principales:**
+
+| Método                                        | Tipo de Retorno         | Visibilidad | Descripción                                                     |
+|-----------------------------------------------|-------------------------|-------------|-----------------------------------------------------------------|
+| `handle(RegisterTransactionCommand command)`  | `Optional<Transaction>` | `public`    | Registra una nueva transacción financiera.                      |
+| `handle(UpdateTransactionCommand command)`    | `void`                  | `public`    | Actualiza los detalles de una transacción existente.            |
+
+---
+
+9. **`TransactionQueryService` (Domain Service)**
+
+Proporciona métodos para consultar información relacionada con las transacciones financieras y reportes.
+
+**Métodos principales:**
+
+| Método                                          | Tipo de Retorno         | Visibilidad | Descripción                                                   |
+|-------------------------------------------------|-------------------------|-------------|---------------------------------------------------------------|
+| `handle(GetTransactionByIdQuery query)`         | `Optional<Transaction>` | `public`    | Obtiene una transacción por su ID.                            |
+| `handle(GetTransactionsByDateRangeQuery query)` | `List<Transaction>`     | `public`    | Obtiene todas las transacciones dentro de un rango de fechas. |
+
+---
+
+10. **`ReportCommandService` (Domain Service)**
+
+Proporciona métodos para ejecutar comandos relacionados con la generación de reportes financieros.
+
+**Métodos principales:**
+
+| Método                                     | Tipo de Retorno     | Visibilidad | Descripción                                      |
+|--------------------------------------------|---------------------|-------------|--------------------------------------------------|
+| `handle(GenerateReportCommand command)`    | `Optional<Report>`  | `public`    | Genera un nuevo reporte financiero.              |
+
+---
+
+11. **`ReportQueryService` (Domain Service)**
+
+Proporciona métodos para consultar información relacionada con los reportes financieros.
+
+**Métodos principales:**
+
+| Método                                  | Tipo de Retorno         | Visibilidad | Descripción                                      |
+|-----------------------------------------|-------------------------|-------------|--------------------------------------------------|
+| `handle(GetReportByIdQuery query)`      | `Optional<Report>`      | `public`    | Obtiene un reporte por su ID.                    |
+| `handle(GetReportsByPeriodQuery query)` | `List<Report>`          | `public`    | Obtiene todos los reportes dentro de un período. |
+
+---
+
 ## Conclusiones y Recomendaciones
 
 Write here...
