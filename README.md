@@ -1529,37 +1529,64 @@ Implementación del servicio de consultas para docentes.
 
 #### 4.2.6.4. Infrastructure Layer
 
-1. **`BillingAccountRepository` (Repository Interface)**
+1. **`AcademyRepository` (Repository Interface)**
 
-Interfaz del repositorio para acceder a las cuentas de facturación y boletas.
+Interfaz del repositorio para gestionar academias.
 
 **Métodos principales:**
 
-| Método                                           | Tipo de Retorno            | Visibilidad | Descripción                                                    |
-|--------------------------------------------------|----------------------------|-------------|----------------------------------------------------------------|
-| `findById(Long id)`                              | `Optional<BillingAccount>` | `public`    | Busca una cuenta de facturación por su ID.                     |
-| `findInvoicesByAccountId(Long accountId)`        | `List<Invoice>`            | `public`    | Busca todas las boletas asociadas a una cuenta de facturación. |
-| `findOverdueInvoicesByAccountId(Long accountId)` | `List<Invoice>`            | `public`    | Busca todas las boletas vencidas de una cuenta de facturación. |
+| Método                                            | Tipo de Retorno     | Visibilidad | Descripción                                                |
+| ------------------------------------------------- | ------------------- | ----------- | ---------------------------------------------------------- |
+| `findById(Long id)`                               | `Optional<Academy>` | `public`    | Busca una academia por su identificador.                   |
+| `save(Academy academy)`                           | `Academy`           | `public`    | Persiste o actualiza una academia.                         |
+| `existsByEmailAddress(EmailAddress emailAddress)` | `boolean`           | `public`    | Verifica si existe una academia con el email especificado. |
+| `existsByRuc(Ruc ruc)`                            | `boolean`           | `public`    | Verifica si existe una academia con el RUC especificado.   |
+
+2. **`AdministratorRepository` (Repository Interface)**
+
+Interfaz del repositorio para gestionar administradores.
+
+**Métodos principales:**
+
+| Método                                   | Tipo de Retorno           | Visibilidad | Descripción                                              |
+| ---------------------------------------- | ------------------------- | ----------- | -------------------------------------------------------- |
+| `findById(Long id)`                      | `Optional<Administrator>` | `public`    | Busca un administrador por su identificador.             |
+| `save(Administrator administrator)`      | `Administrator`           | `public`    | Persiste o actualiza un administrador.                   |
+| `findByDniNumber(DniNumber dniNumber)`   | `Optional<Administrator>` | `public`    | Obtiene un administrador por su DNI.                     |
+| `existsByDniNumber(DniNumber dniNumber)` | `boolean`                 | `public`    | Verifica si existe un administrador con el DNI indicado. |
+
+3. **`TeacherRepository` (Repository Interface)**
+
+Interfaz del repositorio para gestionar docentes.
+
+**Métodos principales:**
+
+| Método                                    | Tipo de Retorno     | Visibilidad | Descripción                                                   |
+| ----------------------------------------- | ------------------- | ----------- | ------------------------------------------------------------- |
+| `findById(Long id)`                       | `Optional<Teacher>` | `public`    | Busca un docente por su identificador.                        |
+| `save(Teacher teacher)`                   | `Teacher`           | `public`    | Persiste o actualiza un docente.                              |
+| `findAllByAcademyId(AcademyId academyId)` | `List<Teacher>`     | `public`    | Recupera todos los docentes asociados a la academia indicada. |
+
 
 #### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
 
-En esta sección se presentan los diagramas de nivel componente que ilustran la arquitectura de software del contexto de Billing. Se muestra la interacción entre los diferentes componentes, servicios y capas que conforman este bounded context. Se integra con la base de datos relacional definida en el diagrama de contenedores.
+En esta sección se presentan los diagramas de nivel componente que ilustran la arquitectura de software del contexto de Institution. Se muestra la interacción entre los diferentes componentes, servicios y capas que conforman este bounded context. Se integra con la base de datos relacional definida en el diagrama de contenedores.
 
-![Diagrama de Componentes del Contexto de Billing](./assets/diagrams/software-architecture/components/out/billing-component-level-diagram.png)
+![Diagrama de Componentes del Contexto de Institution](./assets/diagrams/software-architecture/components/out/billing-component-level-diagram.png)
 
-Además, se incluye el [código fuente del diagrama de componentes de Billing](./assets/diagrams/software-architecture/components/src/billing-component-level-diagram.dsl).
+Además, se incluye el [código fuente del diagrama de componentes de Intitution](./assets/diagrams/software-architecture/components/src/billing-component-level-diagram.dsl).
 
 #### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
 
-En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de Billing. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
+En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de Institution. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
 
 #### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
 
-El diagrama de clases del Domain Layer del contexto de Billing ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
+El diagrama de clases del Domain Layer del contexto de Institution ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
 
-![Diagrama de Clases del Domain Layer del Contexto de Billing](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/nistrahq/demy-report/refs/heads/feature/tb1-salim/assets/diagrams/uml/class/src/billing-domain-layer-class-diagram.puml?token=GHSAT0AAAAAAC6GPIH5NQIOQTEYFGBMGVIG2GHHJNA)
+![Diagrama de Clases del Domain Layer del Contexto de Institution](./assets/diagrams/uml/class/out/institution-domain-layer-class-diagram.png)
 
-Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Billing](./assets/diagrams/uml/class/src/billing-domain-layer-class-diagram.puml).
+Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Institution](./assets/diagrams/uml/class/src/institution-domain-layer-class-diagram.puml).
 
 #### 4.2.6.6.2. Bounded Context Database Design Diagram
 
