@@ -150,7 +150,7 @@ Análisis de cantidad de commits realizados por semana.
             - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
     - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
 
-- [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
+- [Capítulo II: Requirements Development and Software Solution Design](#capítulo-ii-requirements-development-and-software-solution-design)
     - [2.1. Competidores](#21-competidores)
         - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
         - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
@@ -592,7 +592,7 @@ Estos datos refuerzan la necesidad de plataformas accesibles y adaptadas a dispo
 - **Uso de tecnología:** Usuarios con alta familiaridad con aplicaciones móviles, que esperan interfaces intuitivas y funcionales.
 
 
-# Capítulo II: Requirements Elicitation & Analysis
+# Capítulo II: Requirements Development and Software Solution Design
 
 ## 2.1. Competidores
 
@@ -1927,10 +1927,14 @@ Proporciona métodos para manejar comandos relacionados con la gestión de acade
 
 **Métodos principales:**
 
+<div style="font-size:80%;">
+
 | Método                                                 | Tipo de Retorno     | Visibilidad | Descripción                                                     |
 |--------------------------------------------------------|---------------------|-------------|-----------------------------------------------------------------|
 | `handle(RegisterAcademyCommand command)`               | `Optional<Academy>` | `public`    | Crea y registra una nueva academia a partir de un comando.      |
 | `handle(AssignAdministratorToAcademyCommand command)`  | `void`              | `public`    | Asigna un administrador a una academia existente.               |
+
+</div>
 
 ---
 
@@ -1964,9 +1968,13 @@ Permite consultar información relacionada con administradores.
 
 **Métodos principales:**
 
+<div style="font-size:80%;">
+
 | Método                                                | Tipo de Retorno            | Visibilidad | Descripción                                                    |
 |-------------------------------------------------------|----------------------------|-------------|----------------------------------------------------------------|
 | `handle(GetAdministratorByDniNumberQuery query)`      | `Optional<Administrator>`  | `public`    | Obtiene un administrador usando su número de DNI.              |
+
+</div>
 
 ---
 
@@ -2130,10 +2138,14 @@ Implementación del servicio de comandos para gestionar academias.
 
 **Métodos principales:**
 
+<div style="font-size:80%;">
+
 | Método                                            | Tipo de Retorno     | Visibilidad | Descripción                                                           |
 |---------------------------------------------------|---------------------|-------------|-----------------------------------------------------------------------|
 | `handle(RegisterAcademyCommand command)`          | `Optional<Academy>` | `public`    | Crea y persiste una nueva academia; valida email y RUC únicos.        |
 | `handle(AssignAdministratorToAcademyCommand cmd)` | `void`              | `public`    | Asigna un administrador existente a una academia; persiste el cambio. |
+
+</div>
 
 ---
 
@@ -2150,9 +2162,13 @@ Implementación del servicio de comandos para gestionar administradores.
 
 **Métodos principales:**
 
+<div style="font-size:80%;">
+
 | Método                                         | Tipo de Retorno           | Visibilidad | Descripción                                                                                                  |
 |------------------------------------------------|---------------------------|-------------|--------------------------------------------------------------------------------------------------------------|
 | `handle(RegisterAdministratorCommand command)` | `Optional<Administrator>` | `public`    | Registra un administrador; valida duplicados por DNI; publica evento; asocia a la academia y persiste ambos. |
+
+</div>
 
 ---
 
@@ -2222,9 +2238,13 @@ Implementación del servicio de consultas para administradores.
 
 **Métodos principales:**
 
+<div style="font-size:80%;">
+
 | Método                                           | Tipo de Retorno           | Visibilidad | Descripción                          |
 |--------------------------------------------------|---------------------------|-------------|--------------------------------------|
 | `handle(GetAdministratorByDniNumberQuery query)` | `Optional<Administrator>` | `public`    | Obtiene un administrador por su DNI. |
+
+</div>
 
 ---
 
@@ -2343,6 +2363,8 @@ Representa al usuario del sistema, con sus credenciales, estados y roles.
 
 **Métodos principales:**
 
+<div style="font-size:80%;">
+
 | Método                                                                         | Tipo Retorno  | Visibilidad | Descripción                                                                                 |
 |--------------------------------------------------------------------------------|---------------|-------------|---------------------------------------------------------------------------------------------|
 | `User()`                                                                       | `Constructor` | `public`    | Constructor vacío requerido por JPA.                                                        |
@@ -2356,6 +2378,8 @@ Representa al usuario del sistema, con sus credenciales, estados y roles.
 | `verifyUser(String code)`                                                      | `void`        | `public`    | Verifica el código, marca `VERIFIED` y activa la cuenta; limpia `verificationCode`.         |
 | `associateTenant(TenantId tenantId)`                                           | `void`        | `public`    | Asocia un `tenantId` si aún no tenía uno asignado.                                          |
 | `disassociateTenant(TenantId tenantId)`                                        | `void`        | `public`    | Desasocia si coincide con el tenant actual; si no, lanza excepción.                         |
+
+</div>
 
 ---
 
@@ -2576,6 +2600,8 @@ Maneja comandos relacionados con usuarios.
 
 **Métodos principales:**
 
+<div style="font-size:60%;">
+
 | Método                                      | Tipo de Retorno                        | Visibilidad  | Descripción                                                         |
 |---------------------------------------------|----------------------------------------|--------------|---------------------------------------------------------------------|
 | `handle(SignInCommand command)`             | `Optional<ImmutablePair<User,String>>` | `public`     | Autentica y retorna user + token/credencial (según implementación). |
@@ -2583,6 +2609,8 @@ Maneja comandos relacionados con usuarios.
 | `handle(VerifyUserCommand command)`         | `boolean`                              | `public`     | Verifica usuario por código.                                        |
 | `handle(ResendVerificationCodeCommand cmd)` | `boolean`                              | `public`     | Reenvía código de verificación.                                     |
 | `handle(AssignUserTenantId command)`        | `void`                                 | `public`     | Asocia usuario a un tenant.                                         |
+
+</div>
 
 ---
 
@@ -2641,6 +2669,8 @@ Maneja comandos relacionados con la gestión de roles.
 
 3. **`Transform` (Assemblers)**
 
+<div style="font-size:55%;">
+
 | Assembler                                            | Entrada                          | Salida                          | Descripción                                                     |
 |------------------------------------------------------|----------------------------------|---------------------------------|-----------------------------------------------------------------|
 | `AuthenticatedUserResourceFromEntityAssembler`       | `User`, `token: String`          | `AuthenticatedUserResource`     | Mapea user y token a recurso de autenticación.                  |
@@ -2650,6 +2680,8 @@ Maneja comandos relacionados con la gestión de roles.
 | `SignUpCommandFromResourceAssembler`                 | `SignUpResource`                 | `SignUpCommand`                 | Construye comando de registro (mapea `roles` `String` `Role`).  |
 | `UserResourceFromEntityAssembler`                    | `User`                           | `UserResource`                  | Expone usuario con `roles` y `tenantId`.                        |
 | `VerifyUserCommandFromResourceAssembler`             | `VerifyUserResource`             | `VerifyUserCommand`             | Construye comando de verificación por código.                   |
+
+</div>
 
 ---
 
@@ -2703,6 +2735,8 @@ Gestión de registro, autenticación, verificación y asociación de tenant.
 
 **Métodos principales:**
 
+<div style="font-size:60%;">
+
 | Método                                  | Tipo de Retorno                        | Visibilidad | Descripción                                                              |
 |-----------------------------------------|----------------------------------------|-------------|--------------------------------------------------------------------------|
 | `handle(SignInCommand)`                 | `Optional<ImmutablePair<User,String>>` | `public`    | Autentica: valida credenciales, genera token y retorna `(user, token)`.  |
@@ -2710,6 +2744,8 @@ Gestión de registro, autenticación, verificación y asociación de tenant.
 | `handle(VerifyUserCommand)`             | `boolean`                              | `public`    | Verifica usuario por código y activa la cuenta.                          |
 | `handle(ResendVerificationCodeCommand)` | `boolean`                              | `public`    | Reenvía código de verificación si aún no está verificado.                |
 | `handle(AssignUserTenantId)`            | `void`                                 | `public`    | Asocia un `tenantId` al usuario indicado.                                |
+
+</div>
 
 ---
 
@@ -2725,9 +2761,13 @@ Obtiene datos del contexto del usuario autenticado.
 
 **Métodos principales:**
 
+<div style="font-size:70%;">
+
 | Método                                      | Tipo de Retorno         | Visibilidad | Descripción                                      |
 |---------------------------------------------|-------------------------|-------------|--------------------------------------------------|
 | `handle(GetAuthenticatedUserTenantIdQuery)` | `Optional<TenantId>`    | `public`    | Retorna el `TenantId` del contexto de identidad. |
+
+</div>
 
 ---
 
@@ -2884,6 +2924,8 @@ Configuración Spring Security (stateless, JWT, CORS).
 
 **Métodos/Beans principales:**
 
+<div style="font-size:60%;">
+
 | Método/Bean                      | Tipo de Retorno                    | Visibilidad   | Descripción                                                                                       |
 |----------------------------------|------------------------------------|---------------|---------------------------------------------------------------------------------------------------|
 | `authorizationRequestFilter()`   | `BearerAuthorizationRequestFilter` | `public`      | Filtro que extrae, valida JWT y autentica en el contexto.                                         |
@@ -2891,6 +2933,8 @@ Configuración Spring Security (stateless, JWT, CORS).
 | `authenticationProvider()`       | `DaoAuthenticationProvider`        | `public`      | Provider con `UserDetailsService` y `PasswordEncoder (BCrypt)`.                                   |
 | `passwordEncoder()`              | `PasswordEncoder`                  | `public`      | Usa `BCryptHashingService` como encoder.                                                          |
 | `filterChain(HttpSecurity http)` | `SecurityFilterChain`              | `public`      | CORS, CSRF off, 401 handler, stateless, `permitAll` a `/api/v1/authentication/**` y Swagger, etc. |
+
+</div>
 
 ---
 
@@ -3136,11 +3180,15 @@ Representa la matrícula de un estudiante en una academia, con su estado, estudi
 
 **Métodos principales:**
 
+<div style="font-size:55%;">
+
 | Método                                      | Tipo de Retorno | Visibilidad | Descripción                                                       |
 |---------------------------------------------|-----------------| ----------- |-------------------------------------------------------------------|
 | `Enrollment()`                              | `Constructor`   | `protected` | Constructor protegido para uso exclusivo del repositorio.         |
 | `Enrollment(CreateEnrollmentCommand)`       | `Constructor`   | `public`    | Constructor que instancia un `Enrollment` a partir de un command. |
 | `UpdateEnrollment(UpdateEnrollmentCommand)` | `Enrollment`    | `public`    | Actualiza la información de un `Enrollment` a partir de un command. |
+
+</div>
 
 ---
 
@@ -3259,11 +3307,16 @@ Representa si un período académico se encuentra activo o inactivo.
 Proporciona métodos para ejecutar comandos relacionados con la gestión de matrículas.
 
 **Métodos principales:**
+
+<div style="font-size:80%;">
+
 | Método                                    | Tipo de Retorno        | Visibilidad | Descripción                                                    |
 |-------------------------------------------|------------------------|------------|----------------------------------------------------------------|
 | `handle(CreateEnrollmentCommand command)` | `Long`   | `public`   | Crea una nueva matricula en la academica a partir de un command. |
 | `handle(DeleteEnrollmentCommand command)` | `void`                 | `public`   | Asigna una nueva boleta a una cuenta de facturación.           |
 | `handle(UpdateEnrollmentCommand command)` | `Optional<Enrollment>` | `public`   | Registra un pago en una cuenta de facturación.                 |
+
+</div>
 
 ---
 
@@ -3273,12 +3326,16 @@ Proporciona métodos para consultar información de matrículas.
 
 **Metodos principales:**
 
+<div style="font-size:60%;">
+
 | Método                                             | Tipo de Retorno        | Visibilidad | Descripción                                                       |
 | -------------------------------------------------- | ---------------------- | ----------- | ----------------------------------------------------------------- |
 | `handle(GetAllEnrollmentsByStudentIdQuery query)`  | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas asociadas a un estudiante (por ID).  |
 | `handle(GetAllEnrollmentsQuery query)`             | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas del sistema.                         |
 | `handle(GetEnrollmentByIdQuery query)`             | `Optional<Enrollment>` | `public`    | Obtiene una matrícula específica por su identificador.            |
 | `handle(GetAllEnrollmentsByStudentDniQuery query)` | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas asociadas a un estudiante (por DNI). |
+
+</div>
 
 ---
 
@@ -3342,6 +3399,8 @@ Proporciona métodos para consultar información de estudiantes.
 
 **Endpoints principales:**
 
+<div style="font-size:55%;">
+
 | Nombre del método            | Ruta base típica                        | Método HTTP | Descripción                                                        |
 | ---------------------------- | --------------------------------------- | ----------- | ------------------------------------------------------------------ |
 | `createEnrollment`           | `/api/v1/enrollments`                   | `POST`      | Crea una nueva matrícula.                                          |
@@ -3351,6 +3410,8 @@ Proporciona métodos para consultar información de estudiantes.
 | `getEnrollmentsByStudentDni` | `/api/v1/enrollments/student/dni/{dni}` | `GET`       | Obtiene todas las matrículas asociadas a un estudiante por su DNI. |
 | `updateEnrollment`           | `/api/v1/enrollments/{id}`              | `PUT`       | Actualiza los datos de una matrícula existente.                    |
 | `deleteEnrollment`           | `/api/v1/enrollments/{id}`              | `DELETE`    | Elimina una matrícula por su ID.                                   |
+
+</div>
 
 2. **`AcademicPeriodsController` (REST Controller)**
 Controlador REST que expone endpoints para gestionar períodos académicos.
@@ -3416,12 +3477,16 @@ Implementación del servicio de consultas para obtener información sobre matrí
 
 **Métodos principales:**
 
+<div style="font-size:80%;">
+
 | Método                                             | Tipo de Retorno        | Visibilidad | Descripción                                                           |
 | -------------------------------------------------- | ---------------------- | ----------- | --------------------------------------------------------------------- |
 | `handle(GetAllEnrollmentsByStudentIdQuery query)`  | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas de un estudiante por su ID.              |
 | `handle(GetAllEnrollmentsQuery query)`             | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas registradas en el sistema.               |
 | `handle(GetEnrollmentByIdQuery query)`             | `Optional<Enrollment>` | `public`    | Obtiene una matrícula específica por su ID.                           |
 | `handle(GetAllEnrollmentsByStudentDniQuery query)` | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas asociadas a un estudiante usando su DNI. |
+
+</div>
 
 ---
 
@@ -3510,11 +3575,15 @@ Interfaz del repositorio para acceder y gestionar matrículas.
 
 **Métodos principales:**
 
+<div style="font-size:70%;">
+
 | Método                                                                       | Tipo de Retorno        | Visibilidad | Descripción                                                              |
 | ---------------------------------------------------------------------------- | ---------------------- | ----------- | ------------------------------------------------------------------------ |
 | `findAllByStudentId(StudentId studentId)`                                    | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas asociadas a un estudiante por su ID.        |
 | `findAllByAcademicPeriodId(PeriodId periodId)`                               | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas registradas en un período académico.        |
 | `findByStudentIdAndAcademicPeriodId(StudentId studentId, PeriodId periodId)` | `Optional<Enrollment>` | `public`    | Busca una matrícula específica por ID de estudiante y período académico. |
+
+</div>
 
 ---
 
@@ -3524,11 +3593,15 @@ Interfaz del repositorio para acceder y gestionar períodos académicos.
 
 **Métodos principales:**
 
+<div style="font-size:80%;">
+
 | Método                                                     | Tipo de Retorno            | Visibilidad | Descripción                                                                  |
 | ---------------------------------------------------------- | -------------------------- | ----------- | ---------------------------------------------------------------------------- |
 | `existsByPeriodName(String periodName)`                    | `boolean`                  | `public`    | Verifica si existe un período académico con el nombre especificado.          |
 | `findByPeriodName(String periodName)`                      | `Optional<AcademicPeriod>` | `public`    | Busca un período académico por su nombre.                                    |
 | `existsByPeriodNameAndIdIsNot(String periodName, Long id)` | `boolean`                  | `public`    | Verifica si existe otro período académico con el mismo nombre y distinto ID. |
+
+</div>
 
 ---
 
@@ -3632,9 +3705,13 @@ Representa la asistencia de un solo estudiante.
 
 6.**`ClassAttendanceQueryService` (Domain Service)**
 
+<div style="font-size:55%;">
+
 | Atributo                                                               | Tipo                         | Visibilidad | Descripción                                                                       |
 |------------------------------------------------------------------------|------------------------------|-------------|-----------------------------------------------------------------------------------|
 | `handle(GetAttendanceRecordsByStudentIdCourseAndDateRangeQuery query)` | `Optional<AttendanceRecord>` | `public`    | Obtiene todas las asistencias por ID del estudiante, curso en un rango de fechas. |
+
+</div>
 
 #### 2.6.4.2. Interface Layer
 
@@ -3676,9 +3753,13 @@ Implementación del servicio de consultas para obtener asistencias de una clase.
 
 **Métodos principales**
 
+<div style="font-size:55%;">
+
 | Nombre del método                                                     | Tipo                    | Visibilidad | Descripción                                                                                                           |
 |-----------------------------------------------------------------------|-------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------|
 | `handle(GetAttendanceRecordsByStudentIdCourseAndDateRangeQuery query` | `List<ClassAttendance>` | `public`    | Maneja la consulta para obtener registros de asistencia de una clase según ID del estudiante, curso y rango de fechas |
+
+</div>
 
 #### 2.6.4.4. Infrastructure Layer
 
@@ -3914,6 +3995,8 @@ Proporciona métodos para ejecutar comandos relacionados con la gestión de hora
 
 **Métodos principales:**
 
+<div style="font-size:70%;">
+
 | Método                                                  | Tipo de Retorno          | Visibilidad | Descripción                                               |
 |---------------------------------------------------------|--------------------------|-------------|-----------------------------------------------------------|
 | `handle(CreateScheduleCommand command)`                 | `Long`                   | `public`    | Crea un nuevo horario semanal y retorna su ID.            |
@@ -3922,6 +4005,8 @@ Proporciona métodos para ejecutar comandos relacionados con la gestión de hora
 | `handle(RemoveClassSessionFromScheduleCommand command)` | `Optional<Schedule>`     | `public`    | Elimina una sesión de clase del horario semanal.          |
 | `handle(DeleteScheduleCommand command)`                 | `void`                   | `public`    | Elimina un horario semanal.                               |
 | `handle(UpdateClassSessionFromScheduleCommand command)` | `Optional<ClassSession>` | `public`    | Actualiza una sesión de clase dentro del horario semanal. |
+
+</div>
 
 ---
 
@@ -3948,6 +4033,8 @@ Controlador REST que expone endpoints para gestionar **horarios** (Schedules) y 
 
 **Endpoints principales:**
 
+<div style="font-size:55%;">
+
 | Nombre del método                         | Ruta base típica                                      | Método HTTP | Descripción                                                                 |
 |-------------------------------------------|-------------------------------------------------------|-------------|-----------------------------------------------------------------------------|
 | `createSchedule`                          | `/api/v1/schedules`                                   | `POST`      | Crea un nuevo horario.                                                      |
@@ -3959,6 +4046,8 @@ Controlador REST que expone endpoints para gestionar **horarios** (Schedules) y 
 | `removeClassSessionFromSchedule`          | `/api/v1/schedules/{scheduleId}/sessions/{sessionId}` | `DELETE`    | Elimina una sesión de clase de un horario.                                  |
 | `getSchedulesByTeacherId`                 | `/api/v1/schedules/by-teacher/{teacherId}`            | `GET`       | Obtiene todos los horarios de un docente específico.                        |
 | `updateClassSession`                      | `/api/v1/schedules/sessions/{sessionId}`              | `PUT`       | Actualiza los datos de una sesión de clase existente.                       |
+
+</div>
 
 ---
 
@@ -3995,7 +4084,6 @@ Controlador REST que expone endpoints para gestionar **aulas**.
 ---
 
 #### 2.6.5.3. Application Layer
-
 
 1. **`ClassroomCommandServiceImpl` (Command Service Implementation)**
 
@@ -4051,6 +4139,8 @@ Implementación del servicio de comandos para gestionar horarios semanales y ses
 
 **Métodos principales:**
 
+<div style="font-size:70%;">
+
 | Método                                                    | Tipo de Retorno          | Visibilidad | Descripción                                                     |
 |-----------------------------------------------------------|--------------------------|-------------|-----------------------------------------------------------------|
 | `handle(CreateScheduleCommand command)`                   | `Long`                   | `public`    | Crea un nuevo horario semanal.                                  |
@@ -4059,6 +4149,8 @@ Implementación del servicio de comandos para gestionar horarios semanales y ses
 | `handle(RemoveClassSessionFromScheduleCommand command)`   | `Optional<Schedule>`     | `public`    | Elimina una sesión de clase de un horario semanal.              |
 | `handle(DeleteScheduleCommand command)`                   | `void`                   | `public`    | Elimina un horario semanal.                                     |
 | `handle(UpdateClassSessionCommand command)`               | `Optional<ClassSession>` | `public`    | Actualiza los datos de una sesión de clase.                     |
+
+</div>
 
 ---
 
@@ -4443,11 +4535,15 @@ Interfaz del repositorio para acceder a las cuentas de facturación y boletas.
 
 **Métodos principales:**
 
+<div style="font-size:80%;">
+
 | Método                                           | Tipo de Retorno            | Visibilidad | Descripción                                                    |
 |--------------------------------------------------|----------------------------|-------------|----------------------------------------------------------------|
 | `findById(Long id)`                              | `Optional<BillingAccount>` | `public`    | Busca una cuenta de facturación por su ID.                     |
 | `findInvoicesByAccountId(Long accountId)`        | `List<Invoice>`            | `public`    | Busca todas las boletas asociadas a una cuenta de facturación. |
 | `findOverdueInvoicesByAccountId(Long accountId)` | `List<Invoice>`            | `public`    | Busca todas las boletas vencidas de una cuenta de facturación. |
+
+</div>
 
 #### 2.6.6.5. Bounded Context Software Architecture Component Level Diagrams
 
@@ -4465,7 +4561,7 @@ En esta sección se presentan los diagramas de nivel código que detallan la est
 
 El diagrama de clases del Domain Layer del contexto de Billing ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
 
-![Diagrama de Clases del Domain Layer del Contexto de Billing](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/nistrahq/demy-report/refs/heads/feature/tb1-salim/assets/diagrams/uml/class/src/billing-domain-layer-class-diagram.puml?token=GHSAT0AAAAAAC6GPIH5NQIOQTEYFGBMGVIG2GHHJNA)
+![Diagrama de Clases del Domain Layer del Contexto de Billing](./assets/diagrams/uml/class/out/billing-domain-layer-class-diagram.png)
 
 Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Billing](./assets/diagrams/uml/class/src/billing-domain-layer-class-diagram.puml).
 
@@ -4671,10 +4767,14 @@ Proporciona métodos para consultar información relacionada con las transaccion
 
 **Métodos principales:**
 
+<div style="font-size:80%;">
+
 | Método                                          | Tipo de Retorno         | Visibilidad | Descripción                                                   |
 |-------------------------------------------------|-------------------------|-------------|---------------------------------------------------------------|
 | `handle(GetTransactionByIdQuery query)`         | `Optional<Transaction>` | `public`    | Obtiene una transacción por su ID.                            |
 | `handle(GetTransactionsByDateRangeQuery query)` | `List<Transaction>`     | `public`    | Obtiene todas las transacciones dentro de un rango de fechas. |
+
+</div>
 
 ---
 
@@ -4770,10 +4870,14 @@ Implementación del servicio de consultas para obtener información sobre transa
 
 **Métodos principales:**
 
+<div style="font-size:80%;">
+
 | Método                                          | Tipo de Retorno         | Visibilidad | Descripción                                                   |
 |-------------------------------------------------|-------------------------|-------------|---------------------------------------------------------------|
 | `handle(GetTransactionByIdQuery query)`         | `Optional<Transaction>` | `public`    | Maneja la consulta para obtener una transacción por su ID.    |
 | `handle(GetTransactionsByDateRangeQuery query)` | `List<Transaction>`     | `public`    | Maneja la consulta para obtener transacciones en un rango.    |
+
+</div>
 
 ---
 
