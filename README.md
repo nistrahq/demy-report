@@ -6,7 +6,7 @@
 
 <h4 style="text-align: center"> Ingeniería de Software </h4>
 
-<h4 style="text-align: center"> CC238 - Aplicaciones para Dispositivos Móviles </h4>
+<h4 style="text-align: center"> 1ACC0238 - Aplicaciones para Dispositivos Móviles </h4>
 
 <h4 style="text-align: center"> NRC: 1798  </h4>
 
@@ -110,7 +110,7 @@ Las principales ramas del repositorio son las siguientes:
 
 Gráfico de red (*network graph*) de ramas en el repositorio de GitHub.
 
-![Insights - Network Graph](./assets/images/insights-network-graph.png)
+![Insights - Network Graph](./assets/images/screenshots/insights-network-graph.png)
 
 </div>
 
@@ -121,7 +121,7 @@ Estos gráficos detallan la cantidad de líneas de código añadidas por cada mi
 
 Análisis de líneas de código añadidas por contribuyente.
 
-![Insights - Contributors](./assets/images/insights-contributors.png)
+![Insights - Contributors](./assets/images/screenshots/insights-contributor.png)
 
 </div>
 
@@ -131,7 +131,7 @@ El siguiente gráfico muestra la cantidad de commits realizados en la semana con
 
 Análisis de cantidad de commits realizados por semana.
 
-![Insights - Commits](./assets/images/insights-commits.png)
+![Insights - Commits](./assets/images/screenshots/insights-commits.png)
 
 </div>
 
@@ -163,90 +163,85 @@ Análisis de cantidad de commits realizados por semana.
         - [2.3.2. User Task Matrix](#232-user-task-matrix)
         - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
         - [2.3.4. Empathy Mapping](#234-empathy-mapping)
-        - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
-    - [2.4. Ubiquitous Language](#24-ubiquitous-language)
-
-- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-    - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
-    - [3.2. User Stories](#32-user-stories)
-    - [3.3. Impact Mapping](#33-impact-mapping)
-    - [3.4. Product Backlog](#34-product-backlog)
-
-- [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
-    - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
-        - [4.1.1. EventStorming](#411-eventstorming)
-            - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
-            - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
-            - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
-        - [4.1.2. Context Mapping](#412-context-mapping)
-        - [4.1.3. Software Architecture](#413-software-architecture)
-            - [4.1.3.1. Software Architecture Context Level Diagrams](#4131-software-architecture-context-level-diagrams)
-            - [4.1.3.2. Software Architecture Container Level Diagrams](#4132-software-architecture-container-level-diagrams)
-            - [4.1.3.3. Software Architecture Deployment Diagrams](#4133-software-architecture-deployment-diagrams)
-    - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-        - [4.2.1. Bounded Context: Institution](#421-bounded-context-institution)
-            - [4.2.1.1. Domain Layer](#4211-domain-layer)
-            - [4.2.1.2. Interface Layer](#4212-interface-layer)
-            - [4.2.1.3. Application Layer](#4213-application-layer)
-            - [4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)
-            - [4.2.1.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
-            - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
-                - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
-                - [4.2.1.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
-        - [4.2.2. Bounded Context: IAM](#422-bounded-context-iam)
-            - [4.2.2.1. Domain Layer](#4211-domain-layer)
-            - [4.2.2.2. Interface Layer](#4212-interface-layer)
-            - [4.2.2.3. Application Layer](#4213-application-layer)
-            - [4.2.2.4. Infrastructure Layer](#4214-infrastructure-layer)
-            - [4.2.2.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
-            - [4.2.2.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
-                - [4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
-                - [4.2.2.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
-        - [4.2.3. Bounded Context: Enrollment](#423-bounded-context-enrollment)
-            - [4.2.3.1. Domain Layer](#4211-domain-layer)
-            - [4.2.3.2. Interface Layer](#4212-interface-layer)
-            - [4.2.3.3. Application Layer](#4213-application-layer)
-            - [4.2.3.4. Infrastructure Layer](#4214-infrastructure-layer)
-            - [4.2.3.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
-            - [4.2.3.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
-                - [4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
-                - [4.2.3.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
-        - [4.2.4. Bounded Context: Attendance](#424-bounded-context-attendance)
-            - [4.2.4.1. Domain Layer](#4211-domain-layer)
-            - [4.2.4.2. Interface Layer](#4212-interface-layer)
-            - [4.2.4.3. Application Layer](#4213-application-layer)
-            - [4.2.4.4. Infrastructure Layer](#4214-infrastructure-layer)
-            - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
-            - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
-                - [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
-                - [4.2.4.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
-        - [4.2.5. Bounded Context: Scheduling](#425-bounded-context-scheduling)
-            - [4.2.5.1. Domain Layer](#4251-domain-layer)
-            - [4.2.5.2. Interface Layer](#4252-interface-layer)
-            - [4.2.5.3. Application Layer](#4253-application-layer)
-            - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)
-            - [4.2.5.5. Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
-            - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
-                - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
-                - [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
-        - [4.2.6. Bounded Context: Billing](#426-bounded-context-billing)
-            - [4.2.6.1. Domain Layer](#4261-domain-layer)
-            - [4.2.6.2. Interface Layer](#4262-interface-layer)
-            - [4.2.6.3. Application Layer](#4263-application-layer)
-            - [4.2.6.4. Infrastructure Layer](#4264-infrastructure-layer)
-            - [4.2.6.5. Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams)
-            - [4.2.6.6. Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
-                - [4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
-                - [4.2.6.6.2. Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
-        - [4.2.7. Bounded Context: Accounting & Finance](#427-bounded-context-accounting--finance)
-            - [4.2.7.1. Domain Layer](#4271-domain-layer)
-            - [4.2.7.2. Interface Layer](#4272-interface-layer)
-            - [4.2.7.3. Application Layer](#4273-application-layer)
-            - [4.2.7.4. Infrastructure Layer](#4274-infrastructure-layer)
-            - [4.2.7.5. Bounded Context Software Architecture Component Level Diagrams](#4275-bounded-context-software-architecture-component-level-diagrams)
-            - [4.2.7.6. Bounded Context Software Architecture Code Level Diagrams](#4276-bounded-context-software-architecture-code-level-diagrams)
-                - [4.2.7.6.1. Bounded Context Domain Layer Class Diagrams](#42761-bounded-context-domain-layer-class-diagrams)
-                - [4.2.7.6.2. Bounded Context Database Design Diagram](#42762-bounded-context-database-design-diagram)
+        - [2.3.5. Ubiquitous Language](#235-ubiquitous-language)
+    - [2.4. Requirements specification](#24-requirements-specification)
+        - [2.4.1. User Stories](#241-user-stories)
+        - [2.4.2. Impact Mapping](#242-impact-mapping)
+        - [2.4.3. Product Backlog](#243-product-backlog)
+    - [2.5. Strategic-Level Domain-Driven Design](#25-strategic-level-domain-driven-design)
+        - [2.5.1. EventStorming](#251-eventstorming)
+            - [2.5.1.1. Candidate Context Discovery](#2511-candidate-context-discovery)
+            - [2.5.1.2. Domain Message Flows Modeling](#2512-domain-message-flows-modeling)
+            - [2.5.1.3. Bounded Context Canvases](#2513-bounded-context-canvases)
+        - [2.5.2. Context Mapping](#252-context-mapping)
+        - [2.5.3. Software Architecture](#253-software-architecture)
+            - [2.5.3.1. Software Architecture Context Level Diagrams](#2531-software-architecture-context-level-diagrams)
+            - [2.5.3.2. Software Architecture Container Level Diagrams](#2532-software-architecture-container-level-diagrams)
+            - [2.5.3.3. Software Architecture Deployment Diagrams](#2533-software-architecture-deployment-diagrams)
+    - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
+        - [2.6.1. Bounded Context: Institution](#261-bounded-context-institution)
+            - [2.6.1.1. Domain Layer](#2611-domain-layer)
+            - [2.6.1.2. Interface Layer](#2612-interface-layer)
+            - [2.6.1.3. Application Layer](#2613-application-layer)
+            - [2.6.1.4. Infrastructure Layer](#2614-infrastructure-layer)
+            - [2.6.1.5. Bounded Context Software Architecture Component Level Diagrams](#2615-bounded-context-software-architecture-component-level-diagrams)
+            - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
+                - [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
+                - [2.6.1.6.2. Bounded Context Database Design Diagram](#26162-bounded-context-database-design-diagram)
+        - [2.6.2. Bounded Context: IAM](#262-bounded-context-iam)
+            - [2.6.2.1. Domain Layer](#2621-domain-layer)
+            - [2.6.2.2. Interface Layer](#2622-interface-layer)
+            - [2.6.2.3. Application Layer](#2623-application-layer)
+            - [2.6.2.4. Infrastructure Layer](#2624-infrastructure-layer)
+            - [2.6.2.5. Bounded Context Software Architecture Component Level Diagrams](#2625-bounded-context-software-architecture-component-level-diagrams)
+            - [2.6.2.6. Bounded Context Software Architecture Code Level Diagrams](#2626-bounded-context-software-architecture-code-level-diagrams)
+                - [2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](#26261-bounded-context-domain-layer-class-diagrams)
+                - [2.6.2.6.2. Bounded Context Database Design Diagram](#26262-bounded-context-database-design-diagram)
+        - [2.6.3. Bounded Context: Enrollment](#263-bounded-context-enrollment)
+            - [2.6.3.1. Domain Layer](#2631-domain-layer)
+            - [2.6.3.2. Interface Layer](#2632-interface-layer)
+            - [2.6.3.3. Application Layer](#2633-application-layer)
+            - [2.6.3.4. Infrastructure Layer](#2634-infrastructure-layer)
+            - [2.6.3.5. Bounded Context Software Architecture Component Level Diagrams](#2635-bounded-context-software-architecture-component-level-diagrams)
+            - [2.6.3.6. Bounded Context Software Architecture Code Level Diagrams](#2636-bounded-context-software-architecture-code-level-diagrams)
+                - [2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](#26361-bounded-context-domain-layer-class-diagrams)
+                - [2.6.3.6.2. Bounded Context Database Design Diagram](#26362-bounded-context-database-design-diagram)
+        - [2.6.4. Bounded Context: Attendance](#264-bounded-context-attendance)
+            - [2.6.4.1. Domain Layer](#2641-domain-layer)
+            - [2.6.4.2. Interface Layer](#2642-interface-layer)
+            - [2.6.4.3. Application Layer](#2643-application-layer)
+            - [2.6.4.4. Infrastructure Layer](#2644-infrastructure-layer)
+            - [2.6.4.5. Bounded Context Software Architecture Component Level Diagrams](#2645-bounded-context-software-architecture-component-level-diagrams)
+            - [2.6.4.6. Bounded Context Software Architecture Code Level Diagrams](#2646-bounded-context-software-architecture-code-level-diagrams)
+                - [2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](#26461-bounded-context-domain-layer-class-diagrams)
+                - [2.6.4.6.2. Bounded Context Database Design Diagram](#26462-bounded-context-database-design-diagram)
+        - [2.6.5. Bounded Context: Scheduling](#265-bounded-context-scheduling)
+            - [2.6.5.1. Domain Layer](#2651-domain-layer)
+            - [2.6.5.2. Interface Layer](#2652-interface-layer)
+            - [2.6.5.3. Application Layer](#2653-application-layer)
+            - [2.6.5.4. Infrastructure Layer](#2654-infrastructure-layer)
+            - [2.6.5.5. Bounded Context Software Architecture Component Level Diagrams](#2655-bounded-context-software-architecture-component-level-diagrams)
+            - [2.6.5.6. Bounded Context Software Architecture Code Level Diagrams](#2656-bounded-context-software-architecture-code-level-diagrams)
+                - [2.6.5.6.1. Bounded Context Domain Layer Class Diagrams](#26561-bounded-context-domain-layer-class-diagrams)
+                - [2.6.5.6.2. Bounded Context Database Design Diagram](#26562-bounded-context-database-design-diagram)
+        - [2.6.6. Bounded Context: Billing](#266-bounded-context-billing)
+            - [2.6.6.1. Domain Layer](#2661-domain-layer)
+            - [2.6.6.2. Interface Layer](#2662-interface-layer)
+            - [2.6.6.3. Application Layer](#2663-application-layer)
+            - [2.6.6.4. Infrastructure Layer](#2664-infrastructure-layer)
+            - [2.6.6.5. Bounded Context Software Architecture Component Level Diagrams](#2665-bounded-context-software-architecture-component-level-diagrams)
+            - [2.6.6.6. Bounded Context Software Architecture Code Level Diagrams](#2666-bounded-context-software-architecture-code-level-diagrams)
+                - [2.6.6.6.1. Bounded Context Domain Layer Class Diagrams](#26661-bounded-context-domain-layer-class-diagrams)
+                - [2.6.6.6.2. Bounded Context Database Design Diagram](#26662-bounded-context-database-design-diagram)
+        - [2.6.7. Bounded Context: Accounting & Finance](#267-bounded-context-accounting--finance)
+            - [2.6.7.1. Domain Layer](#2671-domain-layer)
+            - [2.6.7.2. Interface Layer](#2672-interface-layer)
+            - [2.6.7.3. Application Layer](#2673-application-layer)
+            - [2.6.7.4. Infrastructure Layer](#2674-infrastructure-layer)
+            - [2.6.7.5. Bounded Context Software Architecture Component Level Diagrams](#2675-bounded-context-software-architecture-component-level-diagrams)
+            - [2.6.7.6. Bounded Context Software Architecture Code Level Diagrams](#2676-bounded-context-software-architecture-code-level-diagrams)
+                - [2.6.7.6.1. Bounded Context Domain Layer Class Diagrams](#26761-bounded-context-domain-layer-class-diagrams)
+                  - [2.6.7.6.2. Bounded Context Database Design Diagram](#26762-bounded-context-database-design-diagram)
 
 - [Conclusiones](#conclusiones)
     - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
@@ -1006,7 +1001,6 @@ En este User Task Matrix se detallan las tareas clave que cada tipo de usuario p
 | Recibir notificaciones sobre cambios de horario |               sometimes               |                 medium                 |
 | Revisar cambios del horario                     |               sometimes               |                  high                  |
 
-
 ### 2.3.3. User Journey Mapping
 
 A continuación se presentarán los User Journey Maps de cada User Persona. Estos mapas nos permitirán comprender los puntos de dolor que experimentan en cada etapa, desde que descubren nuestra app hasta que comparten su opinión sobre ella.
@@ -1023,7 +1017,6 @@ A continuación se presentarán los User Journey Maps de cada User Persona. Esto
 * User Journey Map de Aleza Silva:
   ![User Journey Map del User Persona Aleza Silva](./assets/images/photos/user-journey-map-aleza-silva.png)
   [Ver Imagen detallada aquí](https://drive.google.com/file/d/1h3VG-vVbut3HhOvJeQxFUFK62cNVABqW/view?usp=sharing)
-
 
 ### 2.3.4. Empathy Mapping
 
@@ -1076,30 +1069,9 @@ Un glosario de términos clave utilizados en el dominio de gestión académica d
 
 ## 2.4. Requirements Specification
 
-Write here...
+En esta sección se detallan los requisitos funcionales y no funcionales del sistema, basados en el análisis previo de las necesidades de los usuarios y los objetivos del negocio. Se incluyen historias de usuario que describen las funcionalidades desde la perspectiva del usuario final, así como criterios de aceptación para cada historia.
 
 ### 2.4.1. User Stories
-
-Write here...
-
-### 2.4.2. Impact Mapping
-
-En esta sección hemos elaborado nuestro Impact Mapping. Para ello, utilizamos la hipótesis desarrollada durante nuestro proceso de Lean UX. Reemplazamos los segmentos de cliente por los User Personas, los cuales fueron elaborados en las secciones previas, y conectamos las funcionalidades con los objetivos, para que formen parte del Product Backlog.
-
-![ImpactMapping](./assets/images/photos/impact-mapping.png)
-[Ver Imagen detallada aquí](https://drive.google.com/file/d/1qX03tIoB5RfaTdrvkf7_UE9ZsFycgXJ-/view?usp=sharing)
-
-Dentro de nuestro Impact Mapping se puede observar cómo los segmentos objetivos están relacionados con una acción representativa de cada uno, la cual, a su vez, es parte esencial de los business goals planteados anteriormente. Tanto el administrador, alumno como el profesor de academias desempeñan un papel crucial en el cumplimiento de los objetivos propuestos por Demy.
-
-### 2.4.3. Product Backlog
-
-Write here...
-
-## 2.5 Strategic-Level Domain-Driven Design
-
-Write here...
-
-### 2.5.1. EventStorming
 
 En esta sección se presentan las historias de usuario que describen las funcionalidades y características que el sistema debe ofrecer para satisfacer las necesidades de los usuarios y cumplir con los objetivos del negocio. Cada historia de usuario sigue el formato estándar "Como [tipo de usuario], quiero [acción] para [beneficio/valor]", lo que facilita la comprensión de los requisitos desde la perspectiva del usuario final.
 
@@ -1253,52 +1225,16 @@ Se incluyen diferentes tipos de historias, tales como:
 
 </div>
 
-#### 2.5.1.1. Candidate Context Discovery
+### 2.4.2. Impact Mapping
 
-Write here...
+En esta sección hemos elaborado nuestro Impact Mapping. Para ello, utilizamos la hipótesis desarrollada durante nuestro proceso de Lean UX. Reemplazamos los segmentos de cliente por los User Personas, los cuales fueron elaborados en las secciones previas, y conectamos las funcionalidades con los objetivos, para que formen parte del Product Backlog.
 
-#### 2.5.1.2. Domain Message Flows Modeling
+![ImpactMapping](./assets/images/photos/impact-mapping.png)
+[Ver Imagen detallada aquí](https://drive.google.com/file/d/1qX03tIoB5RfaTdrvkf7_UE9ZsFycgXJ-/view?usp=sharing)
 
-El Domain Storytelling es una técnica visual y colaborativa que facilita la exploración del conocimiento dentro del dominio del negocio, cuyo propósito principal es generar una comprensión común sobre lo que se desarrolla en un proceso específico, involucrando tanto a los expertos del negocio como a los equipos técnicos.
+Dentro de nuestro Impact Mapping se puede observar cómo los segmentos objetivos están relacionados con una acción representativa de cada uno, la cual, a su vez, es parte esencial de los business goals planteados anteriormente. Tanto el administrador, alumno como el profesor de academias desempeñan un papel crucial en el cumplimiento de los objetivos propuestos por Demy.
 
-En este sentido, elaboramos los domain storytelling tomando como referencia las interacciones entre los bounded contexts, con el fin de analizar y comprender de manera más clara la lógica del negocio.
-
-**Escenario 1:** Academia creada
-**Objetivo:** Registrar una nueva academia en el sistema para habilitar su operación.
-
-![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-1.jpg)
-
-**Escenario 2:** Matricular alumno en periodo académico
-**Objetivo:** Un alumno quiere matricularse en un nuevo periodo académico y hacer el pago de la matrícula.
-
-![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-2.jpg)
-
-**Escenario 3:** Periodo académico creado
-**Objetivo:** Un administrador quiere abrir un nuevo periodo académico en su academia para habilitar matrículas, cursos y horarios correspondientes al ciclo.
-
-![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-3.jpg)
-
-**Escenario 4:** Gestionar horario académico
-**Objetivo:** El alumno desea administrar su horario académico, pudiendo reorganizar sus cursos y consultar los detalles de cada curso y de los profesores que los dictan.
-
-![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-4.jpg)
-
-**Escenario 5:** Gestionar finanzas de alumnos en pagos académicos
-**Objetivo:** La administración de la academia quiere manejar los cobros y pagos derivados de la matrícula, generando facturas, registrando pagos y actualizando el estado de cuenta
-
-![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-5.jpg)
-
-**Escenario 6:** Gestionar la asistencia de personal académico a las instalaciones de la academia
-**Objetivo:** La administración de la academia quiere manejar la hora de llegada de su personal académico.
-
-![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-6.jpg)
-
-**Escenario 7:** Marcar la asistencia de alumnos a clases.
-**Objetivo:** Los profesores quieren poder marcar la asistencia de los alumnos a las clases regulares.
-
-![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-7.jpg)
-
-#### 2.5.1.3. Bounded Context Canvases
+### 2.4.3. Product Backlog
 
 En esta sección se presenta el Product Backlog del proyecto, el cual contiene una lista priorizada de todas las funcionalidades, mejoras y correcciones necesarias para el desarrollo de la plataforma educativa. Cada ítem del backlog está detallado con su User Story ID, Título y Story Points.
 
@@ -1429,6 +1365,210 @@ La priorización se ha realizado considerando el valor que cada ítem aporta al 
 | 121     | TS063         | Exponer *endpoint* para validación de recursos                                     | 1            |
 | 122     | TS064         | Exponer *endpoint* para manejo de CORS y métodos permitidos                        | 2            |
 
+## 2.5 Strategic-Level Domain-Driven Design
+
+En esta sección se aborda la perspectiva estratégica del enfoque Domain-Driven Design (DDD), la cual se centra en definir los límites del dominio y establecer una visión clara de cómo las diferentes partes del sistema interactúan entre sí. A través de técnicas como Event Storming, Context Mapping y la definición de una arquitectura de software adecuada, se busca garantizar que el diseño del sistema esté alineado con los objetivos del negocio y las necesidades de los usuarios.
+
+### 2.5.1. EventStorming
+
+El Event Storming se llevó a cabo en una sesión colaborativa con la participación de cinco miembros del equipo, incluyendo un facilitador y un relator. Durante la sesión, se utilizaron notas adhesivas de colores para representar eventos de dominio, comandos, agregados y otros elementos clave del sistema. El objetivo principal fue capturar una visión integral del flujo de eventos dentro del dominio educativo, identificar puntos críticos y descubrir posibles bounded contexts.
+
+A continuación, se detallan los pasos seguidos y los resultados obtenidos en cada una de las fases del Event Storming.
+
+**Antes de la sesión:**
+
+Primero, se preparó el espacio de trabajo con un mural digital (Miro) y se definieron las reglas básicas para la participación. Se estableció que todas las ideas eran bienvenidas y que el objetivo era fomentar la colaboración y la creatividad.
+
+**Durante la sesión:**
+
+1. **Unstructured Exploration**: Se comenzó con una lluvia de ideas para identificar eventos de dominio relevantes. Cada participante escribió eventos en notas adhesivas y las colocó en el mural, sin preocuparse inicialmente por el orden o la estructura.
+
+![Unstructured Exploration](./assets/diagrams/ddd/event-storming/event-storming-step1-v1.JPG)
+
+2. **Timelines**: Se organizó la secuencia temporal de los eventos identificados, creando una línea de tiempo que reflejaba el flujo natural del dominio. Se agruparon eventos relacionados y se identificaron interacciones clave.
+
+![Timelines](./assets/diagrams/ddd/event-storming/event-storming-step2-v1.JPG)
+
+3. **Paint Points**: Se identificaron puntos de dolor y áreas de incertidumbre dentro del flujo de eventos. Estos puntos se marcaron con notas de color diferente para destacarlos y facilitar su análisis posterior.
+
+![Pain Points](./assets/diagrams/ddd/event-storming/event-storming-step3-v1.JPG)
+
+4. **Pivotal Points**: Se destacaron eventos clave que representaban cambios significativos en el estado del sistema o que tenían un impacto considerable en el negocio. Estos eventos se utilizaron como referencia para definir los límites de los bounded contexts.
+
+![Pivotal Points](./assets/diagrams/ddd/event-storming/event-storming-step4-v1.JPG)
+
+5. **Commands**: Se añadieron comandos que desencadenaban los eventos identificados. Esto ayudó a clarificar las acciones que los usuarios o sistemas externos podían realizar dentro del dominio.
+
+![Commands](./assets/diagrams/ddd/event-storming/event-storming-step5-v1.JPG)
+
+6. **Policies**: Se definieron políticas que regulaban cómo y cuándo se ejecutaban ciertos comandos o eventos, estableciendo reglas de negocio claras.
+
+![Policies](./assets/diagrams/ddd/event-storming/event-storming-step6-v1.JPG)
+
+7. **Read Models**: Se identificaron modelos de lectura necesarios para consultar el estado del sistema y presentar información relevante a los usuarios.
+
+![Read Models](./assets/diagrams/ddd/event-storming/event-storming-step7-v1.JPG)
+
+8. **External Systems**: Se mapearon sistemas externos que interactuaban con el dominio, identificando puntos de integración y comunicación.
+
+![External Systems](./assets/diagrams/ddd/event-storming/event-storming-step8-v1.JPG)
+
+9. **Aggregates**: Se agruparon eventos y comandos en agregados, definiendo las unidades de consistencia dentro del dominio.
+
+![Aggregates](./assets/diagrams/ddd/event-storming/event-storming-step9-v1.JPG)
+
+10. **Bounded Contexts**: Finalmente, se delinearon los límites de los bounded contexts basados en los eventos, agregados y puntos clave identificados. Esta agrupación en clústeres permitirá discutir e identificar los contextos candidatos a modelar en las siguientes fases del diseño.
+
+![Bounded Contexts](./assets/diagrams/ddd/event-storming/event-storming-step10-v1.JPG)
+
+#### 2.5.1.1. Candidate Context Discovery
+
+En esta sección se presenta el proceso seguido por el equipo para la descubierta de bounded contexts candidatos a partir del Event Storming realizado previamente. El objetivo fue identificar los límites naturales del dominio, determinar cuáles son las partes core del negocio y cuáles cumplen roles de apoyo o genéricos, con el fin de priorizar los esfuerzos de diseño en aquellos elementos que aportan mayor valor estratégico.
+
+**Preparación de la sesión:**
+
+La sesión de Candidate Context Discovery se desarrolló en un espacio colaborativo inmediatamente después del taller de Event Storming, con una duración aproximada de 1 hora 30 minutos. Como insumo se utilizaron:
+
+- La línea de tiempo de eventos generada en el Event Storming.
+- Los clusters iniciales de eventos y agregados identificados.
+- Los eventos clave (pivotal events) que marcaban cambios de estado relevantes.
+
+El equipo estuvo conformado por cinco participantes, con un facilitador encargado de guiar la dinámica y un relator responsable de documentar la evolución del mural mediante fotografías.
+
+**Técnica aplicada: *Start-with-Value***
+
+Para este trabajo se aplicó la técnica Start-with-Value, cuyo principio consiste en priorizar aquellas partes del dominio que representan el mayor valor para el negocio. Esta técnica permitió separar con claridad qué bounded contexts debían ser considerados como Core, y cuáles como Supporting o Generic.
+
+El proceso aplicado se organizó en tres pasos principales:
+
+1. **Identificación de valor estratégico:** cada miembro del equipo respondió a la pregunta “¿Qué parte del sistema genera directamente valor para los usuarios y diferencia la solución de otras similares?”.
+
+   ![Identificación de valor estratégico](./assets/diagrams/ddd/candidate-context-discovery/candidate-context-discovery-step1-v1.jpg)
+
+2. **Agrupación de eventos en torno al valor:** se revisaron los clusters de eventos y agregados formados en el Event Storming, destacando aquellos que respondían a las necesidades de mayor impacto.
+
+   ![Agrupación de eventos en torno al valor](./assets/diagrams/ddd/candidate-context-discovery/candidate-context-discovery-step2-v1.jpg)
+
+3. **Clasificación Core, Supporting, Generic:** los contexts se categorizaron según su aporte al negocio y el nivel de complejidad de su modelo.
+
+   ![Clasificación Core, Supporting, Generic](./assets/diagrams/ddd/candidate-context-discovery/candidate-context-discovery-step3-v1.jpg)
+
+**Candidate Contexts identificados**
+
+El análisis permitió identificar los siguientes bounded contexts candidatos:
+
+| Candidate Context    | Eventos Clave Asociados                                                                                                                                   | Clasificación | Descripción                                                    | Justificación                                                                                         |
+|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| Identity & Access    | Cuenta creada, Cuenta verificada, Organización asignada, Contraseña restablecida                                                                          | Generic       | Gestión de usuarios, roles y autenticación.                    | Es necesario para operar, pero no es diferenciador; existen soluciones estándar que podrían cubrirlo. |
+| Institution          | Administrador registrado, Academia registrada, Academia asignada, Profesor registrado                                                                     | Core          | Administración de instituciones, academias y personal docente. | Representa la base del modelo educativo, aporta diferenciación al negocio.                            |
+| Enrollment           | Alumno registrado, Alumno matriculado, Periodo académico registrado, Matrícula de alumno marcada con deuda                                                | Core          | Gestión del ciclo de vida de las matrículas y alumnos.         | Constituye el corazón del negocio académico, directamente ligado al valor central de la plataforma.   |
+| Attendance           | Asistencia de sesión de clase registrada, Alumno marcado como inasistió, QR único de registro de asistencia de clase creado, Asistencia por QR registrada | Core          | Registro y control de la asistencia de alumnos.                | Provee trazabilidad y control, diferenciador frente a procesos manuales.                              |
+| Scheduling           | Salón de clase registrado, Curso registrado, Horario registrado, Clase reprogramada                                                                       | Supporting    | Gestión de horarios, salones y clases programadas.             | Apoya el funcionamiento de las matrículas y asistencia, pero no es el núcleo del negocio.             |
+| Billing              | Boleta de matrícula de alumno registrada, Boleta mensual asignada a estudiante, Boleta de estudiante pagada, Boleta de estudiante vencida                 | Supporting    | Emisión y control de boletas y obligaciones de pago.           | Es clave para la sostenibilidad financiera, pero su complejidad es secundaria frente al core.         |
+| Accounting & Finance | Ingreso registrado, Egreso registrado, Reporte financiero creado, Reporte exportado a PDF                                                                 | Generic       | Registro de ingresos/egresos y reportes financieros.           | Puede externalizarse con software contable estándar, no genera diferenciación.                        |
+
+**Clasificación estratégica**
+
+Como parte del análisis Start-with-Value, se representó gráficamente la clasificación de los bounded contexts en una matriz de dos ejes:
+
+- **Business Differentiation** (eje X): grado en que el contexto aporta valor estratégico o diferenciación frente a otras soluciones.
+- **Model Complexity (eje Y):** nivel de complejidad requerido para implementar y mantener el contexto.
+
+En esta matriz de clasificación de bounded contexts, distribuyeron los contextos en los tres tipos:
+
+- **Core:** Institution, Enrollment, Attendance.
+- **Supporting:** Scheduling, Billing.
+- **Generic:** Identity & Access, Accounting & Finance.
+
+![Matriz de clasificación de bounded contexts](./assets/diagrams/ddd/candidate-context-discovery/candidate-context-discovery-strategic-classification-v1.jpg)
+
+**Resultados**
+
+Se definieron siete bounded contexts candidatos, de los cuales:
+
+- 3 Core (Institution, Enrollment y Attendance).
+- 2 Supporting (Scheduling, Billing).
+- 2 Generic (Identity & Access y Accounting & Finance).
+
+![Candidate Contexts finales](./assets/diagrams/ddd/candidate-context-discovery/candidate-context-discovery-results-v1.jpg)
+
+La aplicación de la técnica Start-with-Value permitió asegurar que la atención principal del diseño táctico se concentre en el contexto de Institution, Enrollment y Attendance, dado que allí reside la propuesta de valor diferenciadora.
+
+El resto de contexts serán modelados en las siguientes secciones mediante Bounded Context Canvas y Domain Message Flows, garantizando consistencia y claridad en la arquitectura estratégica.
+
+#### 2.5.1.2. Domain Message Flows Modeling
+
+El Domain Storytelling es una técnica visual y colaborativa que facilita la exploración del conocimiento dentro del dominio del negocio, cuyo propósito principal es generar una comprensión común sobre lo que se desarrolla en un proceso específico, involucrando tanto a los expertos del negocio como a los equipos técnicos.
+
+En este sentido, elaboramos los domain storytelling tomando como referencia las interacciones entre los bounded contexts, con el fin de analizar y comprender de manera más clara la lógica del negocio.
+
+**Escenario 1:** Academia creada
+**Objetivo:** Registrar una nueva academia en el sistema para habilitar su operación.
+
+![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-1.jpg)
+
+**Escenario 2:** Matricular alumno en periodo académico
+**Objetivo:** Un alumno quiere matricularse en un nuevo periodo académico y hacer el pago de la matrícula.
+
+![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-2.jpg)
+
+**Escenario 3:** Periodo académico creado
+**Objetivo:** Un administrador quiere abrir un nuevo periodo académico en su academia para habilitar matrículas, cursos y horarios correspondientes al ciclo.
+
+![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-3.jpg)
+
+**Escenario 4:** Gestionar horario académico
+**Objetivo:** El alumno desea administrar su horario académico, pudiendo reorganizar sus cursos y consultar los detalles de cada curso y de los profesores que los dictan.
+
+![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-4.jpg)
+
+**Escenario 5:** Gestionar finanzas de alumnos en pagos académicos
+**Objetivo:** La administración de la academia quiere manejar los cobros y pagos derivados de la matrícula, generando facturas, registrando pagos y actualizando el estado de cuenta
+
+![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-5.jpg)
+
+**Escenario 6:** Gestionar la asistencia de personal académico a las instalaciones de la academia
+**Objetivo:** La administración de la academia quiere manejar la hora de llegada de su personal académico.
+
+![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-6.jpg)
+
+**Escenario 7:** Marcar la asistencia de alumnos a clases.
+**Objetivo:** Los profesores quieren poder marcar la asistencia de los alumnos a las clases regulares.
+
+![ImpactMapping](./assets/images/photos/Domain-Message-Flow-Modelling-7.jpg)
+
+#### 2.5.1.3. Bounded Context Canvases
+
+En esta sección el equipo presenta sus Bounded Context Canvases, empezando por los importantes.
+
+**Institution**  
+Encargado de gestionar el ciclo de vida de las academias y su personal docente.  
+![Bounded Context Canvas Institution](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-institution.png)
+
+**Enrollment**  
+Encargado de gestionar el ciclo de vida de las matrículas y el registro de alumnos.  
+![Bounded Context Canvas Enrollment](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-enrollment.png)
+
+**Attendance**  
+Encargado de gestionar las asistencias de una clase.  
+![Bounded Context Canvas Attendance](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-attendance.png)
+
+**Scheduling**  
+Encargado de la gestión de horarios, salones y clases programadas.  
+![Bounded Context Canvas Scheduling](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-scheduling.png)
+
+**Billing**
+Encargado de la emisión y control de boletas y obligaciones de pago.  
+![Bounded Context Canvas Billing](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-billing.png)
+
+**Accounting & Finance**  
+Encargado del control de ingresos y egresos de la academia.    
+![Bounded Context Canvas Accounting & Finance](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-accounting&finance.png)
+
+**IAM**  
+Contexto génerico para la identificación y acceso.  
+![Bounded Context Canvas IAM](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-iam.png)
+
 ### 2.5.2. Context Mapping
 
 #### Identificación de las Relaciones Iniciales y Patrones
@@ -1497,7 +1637,6 @@ La priorización se ha realizado considerando el valor que cada ítem aporta al 
 - **Razón crítica**: La autenticación y gestión de usuarios son funciones transversales que deben escalar sin impactar otros contexts.
 - **Evidencia**: El sistema planea crecer, por lo que una interfaz pública es esencial.
 - **Mitigación**: Establecer contratos claros de API y versionamiento para evitar rupturas.
-
 
 2. ¿Qué pasaría si Institution y Scheduling compartieran el mismo modelo de profesores?
 
@@ -1598,59 +1737,6 @@ La priorización se ha realizado considerando el valor que cada ítem aporta al 
 - **Razón crítica**: Attendance necesita estabilidad; depender de modelos internos generaría fragilidad.
 - **Mitigación**: Documentar y versionar contratos de API.
 
-En esta sección se aborda la perspectiva estratégica del enfoque Domain-Driven Design (DDD), la cual se centra en definir los límites del dominio y establecer una visión clara de cómo las diferentes partes del sistema interactúan entre sí. A través de técnicas como Event Storming, Context Mapping y la definición de una arquitectura de software adecuada, se busca garantizar que el diseño del sistema esté alineado con los objetivos del negocio y las necesidades de los usuarios.
-
-El Event Storming se llevó a cabo en una sesión colaborativa con la participación de cinco miembros del equipo, incluyendo un facilitador y un relator. Durante la sesión, se utilizaron notas adhesivas de colores para representar eventos de dominio, comandos, agregados y otros elementos clave del sistema. El objetivo principal fue capturar una visión integral del flujo de eventos dentro del dominio educativo, identificar puntos críticos y descubrir posibles bounded contexts.
-
-A continuación, se detallan los pasos seguidos y los resultados obtenidos en cada una de las fases del Event Storming.
-
-**Antes de la sesión:**
-
-Primero, se preparó el espacio de trabajo con un mural digital (Miro) y se definieron las reglas básicas para la participación. Se estableció que todas las ideas eran bienvenidas y que el objetivo era fomentar la colaboración y la creatividad.
-
-**Durante la sesión:**
-
-1. **Unstructured Exploration**: Se comenzó con una lluvia de ideas para identificar eventos de dominio relevantes. Cada participante escribió eventos en notas adhesivas y las colocó en el mural, sin preocuparse inicialmente por el orden o la estructura.
-
-![Unstructured Exploration](./assets/diagrams/ddd/event-storming/event-storming-step1-v1.JPG)
-
-2. **Timelines**: Se organizó la secuencia temporal de los eventos identificados, creando una línea de tiempo que reflejaba el flujo natural del dominio. Se agruparon eventos relacionados y se identificaron interacciones clave.
-
-![Timelines](./assets/diagrams/ddd/event-storming/event-storming-step2-v1.JPG)
-
-3. **Paint Points**: Se identificaron puntos de dolor y áreas de incertidumbre dentro del flujo de eventos. Estos puntos se marcaron con notas de color diferente para destacarlos y facilitar su análisis posterior.
-
-![Pain Points](./assets/diagrams/ddd/event-storming/event-storming-step3-v1.JPG)
-
-4. **Pivotal Points**: Se destacaron eventos clave que representaban cambios significativos en el estado del sistema o que tenían un impacto considerable en el negocio. Estos eventos se utilizaron como referencia para definir los límites de los bounded contexts.
-
-![Pivotal Points](./assets/diagrams/ddd/event-storming/event-storming-step4-v1.JPG)
-
-5. **Commands**: Se añadieron comandos que desencadenaban los eventos identificados. Esto ayudó a clarificar las acciones que los usuarios o sistemas externos podían realizar dentro del dominio.
-
-![Commands](./assets/diagrams/ddd/event-storming/event-storming-step5-v1.JPG)
-
-6. **Policies**: Se definieron políticas que regulaban cómo y cuándo se ejecutaban ciertos comandos o eventos, estableciendo reglas de negocio claras.
-
-![Policies](./assets/diagrams/ddd/event-storming/event-storming-step6-v1.JPG)
-
-7. **Read Models**: Se identificaron modelos de lectura necesarios para consultar el estado del sistema y presentar información relevante a los usuarios.
-
-![Read Models](./assets/diagrams/ddd/event-storming/event-storming-step7-v1.JPG)
-
-8. **External Systems**: Se mapearon sistemas externos que interactuaban con el dominio, identificando puntos de integración y comunicación.
-
-![External Systems](./assets/diagrams/ddd/event-storming/event-storming-step8-v1.JPG)
-
-9. **Aggregates**: Se agruparon eventos y comandos en agregados, definiendo las unidades de consistencia dentro del dominio.
-
-![Aggregates](./assets/diagrams/ddd/event-storming/event-storming-step9-v1.JPG)
-
-10. **Bounded Contexts**: Finalmente, se delinearon los límites de los bounded contexts basados en los eventos, agregados y puntos clave identificados. Esta agrupación en clústeres permitirá discutir e identificar los contextos candidatos a modelar en las siguientes fases del diseño.
-
-![Bounded Contexts](./assets/diagrams/ddd/event-storming/event-storming-step10-v1.JPG)
-
-
 ---
 
 #### Decisión Final del Context Mapping
@@ -1674,120 +1760,27 @@ La arquitectura final fomenta desacoplamiento, estabilidad y escalabilidad. Cada
 
 #### 2.5.3.1. Software Architecture Context Level Diagrams
 
-En esta sección se presenta el proceso seguido por el equipo para la descubierta de bounded contexts candidatos a partir del Event Storming realizado previamente. El objetivo fue identificar los límites naturales del dominio, determinar cuáles son las partes core del negocio y cuáles cumplen roles de apoyo o genéricos, con el fin de priorizar los esfuerzos de diseño en aquellos elementos que aportan mayor valor estratégico.
-
-**Preparación de la sesión:**
-
-La sesión de Candidate Context Discovery se desarrolló en un espacio colaborativo inmediatamente después del taller de Event Storming, con una duración aproximada de 1 hora 30 minutos. Como insumo se utilizaron:
-
-- La línea de tiempo de eventos generada en el Event Storming.
-- Los clusters iniciales de eventos y agregados identificados.
-- Los eventos clave (pivotal events) que marcaban cambios de estado relevantes.
-
-El equipo estuvo conformado por cinco participantes, con un facilitador encargado de guiar la dinámica y un relator responsable de documentar la evolución del mural mediante fotografías.
-
-**Técnica aplicada: *Start-with-Value***
-
-Para este trabajo se aplicó la técnica Start-with-Value, cuyo principio consiste en priorizar aquellas partes del dominio que representan el mayor valor para el negocio. Esta técnica permitió separar con claridad qué bounded contexts debían ser considerados como Core, y cuáles como Supporting o Generic.
-
-El proceso aplicado se organizó en tres pasos principales:
-
-1. **Identificación de valor estratégico:** cada miembro del equipo respondió a la pregunta “¿Qué parte del sistema genera directamente valor para los usuarios y diferencia la solución de otras similares?”.
-
-    ![Identificación de valor estratégico](./assets/diagrams/ddd/candidate-context-discovery/candidate-context-discovery-step1-v1.jpg)
-
-2. **Agrupación de eventos en torno al valor:** se revisaron los clusters de eventos y agregados formados en el Event Storming, destacando aquellos que respondían a las necesidades de mayor impacto.
-
-    ![Agrupación de eventos en torno al valor](./assets/diagrams/ddd/candidate-context-discovery/candidate-context-discovery-step2-v1.jpg)
-
-3. **Clasificación Core, Supporting, Generic:** los contexts se categorizaron según su aporte al negocio y el nivel de complejidad de su modelo.
-
-    ![Clasificación Core, Supporting, Generic](./assets/diagrams/ddd/candidate-context-discovery/candidate-context-discovery-step3-v1.jpg)
-
-**Candidate Contexts identificados**
-
-El análisis permitió identificar los siguientes bounded contexts candidatos:
-
-| Candidate Context    | Eventos Clave Asociados                                                                                                                                   | Clasificación | Descripción                                                    | Justificación                                                                                         |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Identity & Access    | Cuenta creada, Cuenta verificada, Organización asignada, Contraseña restablecida                                                                          | Generic       | Gestión de usuarios, roles y autenticación.                    | Es necesario para operar, pero no es diferenciador; existen soluciones estándar que podrían cubrirlo. |
-| Institution          | Administrador registrado, Academia registrada, Academia asignada, Profesor registrado                                                                     | Core          | Administración de instituciones, academias y personal docente. | Representa la base del modelo educativo, aporta diferenciación al negocio.                            |
-| Enrollment           | Alumno registrado, Alumno matriculado, Periodo académico registrado, Matrícula de alumno marcada con deuda                                                | Core          | Gestión del ciclo de vida de las matrículas y alumnos.         | Constituye el corazón del negocio académico, directamente ligado al valor central de la plataforma.   |
-| Attendance           | Asistencia de sesión de clase registrada, Alumno marcado como inasistió, QR único de registro de asistencia de clase creado, Asistencia por QR registrada | Core          | Registro y control de la asistencia de alumnos.                | Provee trazabilidad y control, diferenciador frente a procesos manuales.                              |
-| Scheduling           | Salón de clase registrado, Curso registrado, Horario registrado, Clase reprogramada                                                                       | Supporting    | Gestión de horarios, salones y clases programadas.             | Apoya el funcionamiento de las matrículas y asistencia, pero no es el núcleo del negocio.             |
-| Billing              | Boleta de matrícula de alumno registrada, Boleta mensual asignada a estudiante, Boleta de estudiante pagada, Boleta de estudiante vencida                 | Supporting    | Emisión y control de boletas y obligaciones de pago.           | Es clave para la sostenibilidad financiera, pero su complejidad es secundaria frente al core.         |
-| Accounting & Finance | Ingreso registrado, Egreso registrado, Reporte financiero creado, Reporte exportado a PDF                                                                 | Generic       | Registro de ingresos/egresos y reportes financieros.           | Puede externalizarse con software contable estándar, no genera diferenciación.                        |
-
-**Clasificación estratégica**
-
-Como parte del análisis Start-with-Value, se representó gráficamente la clasificación de los bounded contexts en una matriz de dos ejes:
-
-- **Business Differentiation** (eje X): grado en que el contexto aporta valor estratégico o diferenciación frente a otras soluciones.
-- **Model Complexity (eje Y):** nivel de complejidad requerido para implementar y mantener el contexto.
-
-En esta matriz de clasificación de bounded contexts, distribuyeron los contextos en los tres tipos:
-
-- **Core:** Institution, Enrollment, Attendance.
-- **Supporting:** Scheduling, Billing.
-- **Generic:** Identity & Access, Accounting & Finance.
-
-![Matriz de clasificación de bounded contexts](./assets/diagrams/ddd/candidate-context-discovery/candidate-context-discovery-strategic-classification-v1.jpg)
-
-**Resultados**
-
-Se definieron siete bounded contexts candidatos, de los cuales:
-
-- 3 Core (Institution, Enrollment y Attendance).
-- 2 Supporting (Scheduling, Billing).
-- 2 Generic (Identity & Access y Accounting & Finance).
-
-![Candidate Contexts finales](./assets/diagrams/ddd/candidate-context-discovery/candidate-context-discovery-results-v1.jpg)
-
-La aplicación de la técnica Start-with-Value permitió asegurar que la atención principal del diseño táctico se concentre en el contexto de Institution, Enrollment y Attendance, dado que allí reside la propuesta de valor diferenciadora.
-
-El resto de contexts serán modelados en las siguientes secciones mediante Bounded Context Canvas y Domain Message Flows, garantizando consistencia y claridad en la arquitectura estratégica.
-
-#### 2.5.3.2. Software Architecture Container Level Diagrams
-
 El Context Diagram muestra como el sistema central que interactúa con tres usuarios principales: el coordinador, que gestiona matrículas, horarios y pagos; el docente, que consulta horarios y registra asistencia; y el estudiante, que revisa sus horarios y comprobantes. Además, el sistema se integra con Stripe y PagoEfectivo para la gestión de pagos y con Gmail para el envío de notificaciones por correo electrónico.
 
 ![Context Diagram](assets/diagrams/software-architecture/context/software_architecture_context_diagram.png)
 
+#### 2.5.3.2. Software Architecture Container Level Diagrams
+
+El Container Diagram descompone la solución en sus principales contenedores: una Flutter App para coordinadores, una Android App para docentes y una iOS App para estudiantes, todas conectadas a un API Backend desarrollado en Spring Boot que concentra la lógica de negocio y accede a una base de datos MySQL para la información académica. El backend también se integra con Stripe y PagoEfectivo para pagos y con Gmail para notificaciones automáticas.
+
+![Container Diagram](assets/diagrams/software-architecture/containers/software_architecture_container_diagram.png)
+
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 
-En esta sección el equipo presenta sus Bounded Context Canvases, empezando por los importantes.  
+El Deployment Diagram muestra la distribución física del sistema en producción, detallando cómo se despliegan los contenedores y servicios en la infraestructura y cómo interactúan entre sí. Las aplicaciones móviles (iOS, Android y Flutter) se ejecutan en los dispositivos de los usuarios y son distribuidas mediante Firebase, mientras que el backend en Spring Boot y la base de datos MySQL se alojan en Railway PaaS. Asimismo, se incluyen sistemas externos como Stripe, PagoEfectivo y Gmail. En conjunto, el diagrama ofrece una visión clara de la ubicación de los componentes y de los protocolos de comunicación empleados.
 
-**Institution**  
-Encargado de gestionar el ciclo de vida de las academias y su personal docente.  
-![Bounded Context Canvas Institution](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-institution.png)  
-
-**Enrollment**  
-Encargado de gestionar el ciclo de vida de las matrículas y el registro de alumnos.  
-![Bounded Context Canvas Enrollment](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-enrollment.png)  
-
-**Attendance**  
-Encargado de gestionar las asistencias de una clase.  
-![Bounded Context Canvas Attendance](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-attendance.png)  
-
-**Scheduling**  
-Encargado de la gestión de horarios, salones y clases programadas.  
-![Bounded Context Canvas Scheduling](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-scheduling.png)
-
-**Billing** 
-Encargado de la emisión y control de boletas y obligaciones de pago.  
-![Bounded Context Canvas Billing](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-billing.png)
-
-
-**Accounting & Finance**  
-Encargado del control de ingresos y egresos de la academia.    
-![Bounded Context Canvas Accounting & Finance](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-accounting&finance.png)
-
-
-**IAM**  
-Contexto génerico para la identificación y acceso.  
-![Bounded Context Canvas IAM](./assets/diagrams/ddd/bounded-context-canvases/bounded-context-canvas-iam.png)
+![Deployment Diagram](assets/diagrams/software-architecture/deployment/software_architecture_deployment_diagram.png)
 
 ## 2.6. Tactical-Level Domain-Driven Design
+
+En esta sección se aborda la perspectiva táctica del enfoque Domain-Driven Design (DDD), la cual se centra en representar el dominio del negocio mediante elementos concretos de software. A partir de los límites definidos en el diseño estratégico, se modelan entidades, objetos de valor, servicios y otros componentes clave que encapsulan las reglas del dominio y responden a las necesidades del sistema. Este nivel permite estructurar la solución de manera más alineada con los procesos y problemáticas reales, garantizando una implementación coherente y sostenible.
+
+Cada bounded context contará con su propio apartado, donde se detallará cómo estos elementos se articulan para gestionar los flujos de aplicación, facilitar la interacción con sistemas externos y contribuir al objetivo central de la solución.
 
 ### 2.6.1. Bounded Context: Institution
 
@@ -1800,8 +1793,6 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 1. **`Academy` (Aggregate Root)**
 
 **Atributos principales:**
-
----
 
 | Atributo             | Tipo                 | Visibilidad | Descripción                                             |
 |----------------------|----------------------|-------------|---------------------------------------------------------|
@@ -1822,6 +1813,8 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 | `Academy(AcademyName, AcademyDescription, StreetAddress, EmailAddress, PhoneNumber, Ruc)` | `Constructor` | `public`    | Crea una academia con sus datos básicos.                       |
 | `Academy(RegisterAcademyCommand command)`                                                 | `Constructor` | `public`    | Crea una academia a partir de un comando de registro.          |
 | `assignAdministrator(AdministratorId administratorId)`                                    | `void`        | `public`    | Asigna un administrador a la academia si no existe uno previo. |
+
+---
 
 2. **`Administrator` (Aggregate Root)**
 
@@ -1846,6 +1839,8 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 | `registerAdministrator(Long academyId, Long userId)`                   | `void`        | `public`    | Publica un evento de registro de administrador.           |
 | `disassociateAcademy(AcademyId academyId)`                             | `void`        | `public`    | Desasocia al administrador de una academia.               |
 
+---
+
 3. **`Teacher`(Aggregate Root)**
 
 **Atributos principales:**
@@ -1863,6 +1858,8 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 |-------------|---------------|-------------|----------------------------|
 | `Teacher()` | `Constructor` | `protected` | Constructor protegido JPA. |
 
+---
+
 4. **`RegisterAcademyCommand`(Command)**
 
 **Atributos principales:**
@@ -1876,6 +1873,8 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 | `phoneNumber`        | `PhoneNumber`        | `public`    | Número de contacto.               |
 | `ruc`                | `Ruc`                | `public`    | Registro Único de Contribuyentes. |
 
+---
+
 5. **`RegisterAdministratorCommand`(Command)**
 
 **Atributos principales:**
@@ -1888,6 +1887,8 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 | `academyId`   | `AcademyId`   | `public`    | Identificador de la academia.       |
 | `userId`      | `UserId`      | `public`    | Identificador del usuario asociado. |
 
+---
+
 6. **`RegisterTeacherCommand`(Command)**
 
 **Atributos principales:**
@@ -1898,6 +1899,8 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 | `academyId`  | `AcademyId`  | `public`    | Identificador de la academia. |
 | `userId`     | `UserId`     | `public`    | Identificador del usuario.    |
 
+---
+
 7. **`Queries` (Query)**
 
 | Query                              | Atributos principales   | Descripción                                |
@@ -1906,6 +1909,8 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 | `GetAdministratorByDniNumberQuery` | `dniNumber : DniNumber` | Busca administrador por DNI.               |
 | `GetAllTeachersQuery`              | `*(sin atributos)*`     | Devuelve todos los docentes registrados.   |
 
+---
+
 8. **`AdministratorRegisteredEvent` (Domain Event)**
 
 | Atributo    | Tipo     | Visibilidad | Descripción                              |
@@ -1913,6 +1918,8 @@ En esta sección se describen los elementos del Domain Layer del contexto de Ins
 | `source`    | `Object` | `private`   | Objeto origen del evento.                |
 | `academyId` | `Long`   | `private`   | Identificador de la academia asociada.   |
 | `userId`    | `Long`   | `private`   | Identificador del usuario administrador. |
+
+---
 
 9. **`AcademyCommandService` (Domain Service)**
 
@@ -2128,6 +2135,8 @@ Implementación del servicio de comandos para gestionar academias.
 | `handle(RegisterAcademyCommand command)`          | `Optional<Academy>` | `public`    | Crea y persiste una nueva academia; valida email y RUC únicos.        |
 | `handle(AssignAdministratorToAcademyCommand cmd)` | `void`              | `public`    | Asigna un administrador existente a una academia; persiste el cambio. |
 
+---
+
 2. **`AdministratorCommandServiceImpl` (Command Service Implementation)**
 
 Implementación del servicio de comandos para gestionar administradores.
@@ -2145,6 +2154,8 @@ Implementación del servicio de comandos para gestionar administradores.
 |------------------------------------------------|---------------------------|-------------|--------------------------------------------------------------------------------------------------------------|
 | `handle(RegisterAdministratorCommand command)` | `Optional<Administrator>` | `public`    | Registra un administrador; valida duplicados por DNI; publica evento; asocia a la academia y persiste ambos. |
 
+---
+
 3. **`TeacherCommandServiceImpl` (Command Service Implementation)**
 
 Implementación del servicio de comandos para gestionar docentes.
@@ -2160,6 +2171,8 @@ Implementación del servicio de comandos para gestionar docentes.
 | Método                                   | Tipo de Retorno     | Visibilidad | Descripción                                    |
 |------------------------------------------|---------------------|-------------|------------------------------------------------|
 | `handle(RegisterTeacherCommand command)` | `Optional<Teacher>` | `public`    | Registra un nuevo docente en la academia.      |
+
+---
 
 4. **`ExternalIamService` (Outbound ACL Service)**
 
@@ -2177,6 +2190,8 @@ Adaptador de salida hacia IAM para obtener el contexto del usuario autenticado.
 |---------------------------|-----------------------|-------------|-----------------------------------------------------------------------|
 | `fetchCurrentAcademyId()` | `Optional<AcademyId>` | `public`    | Obtiene el `AcademyId` del usuario autenticado desde IAM (si existe). |
 
+---
+
 5. **`AcademyQueryServiceImpl` (Query Service Implementation)**
 
 Implementación del servicio de consultas para academias.
@@ -2193,6 +2208,8 @@ Implementación del servicio de consultas para academias.
 |-------------------------------------|---------------------|-------------|--------------------------------------------|
 | `handle(GetAcademyByIdQuery query)` | `Optional<Academy>` | `public`    | Obtiene una academia por su identificador. |
 
+---
+
 6. **`AdministratorQueryServiceImpl` (Query Service Implementation)**
 
 Implementación del servicio de consultas para administradores.
@@ -2208,6 +2225,8 @@ Implementación del servicio de consultas para administradores.
 | Método                                           | Tipo de Retorno           | Visibilidad | Descripción                          |
 |--------------------------------------------------|---------------------------|-------------|--------------------------------------|
 | `handle(GetAdministratorByDniNumberQuery query)` | `Optional<Administrator>` | `public`    | Obtiene un administrador por su DNI. |
+
+---
 
 7. **`TeacherQueryServiceImpl` (Query Service Implementation)**
 
@@ -2241,6 +2260,8 @@ Interfaz del repositorio para gestionar academias.
 | `existsByEmailAddress(EmailAddress emailAddress)`  | `boolean`            | `public`     | Verifica si existe una academia con el email especificado. |
 | `existsByRuc(Ruc ruc)`                             | `boolean`            | `public`     | Verifica si existe una academia con el RUC especificado.   |
 
+---
+
 2. **`AdministratorRepository` (Repository Interface)**
 
 Interfaz del repositorio para gestionar administradores.
@@ -2254,6 +2275,8 @@ Interfaz del repositorio para gestionar administradores.
 | `findByDniNumber(DniNumber dniNumber)`   | `Optional<Administrator>` | `public`      | Obtiene un administrador por su DNI.                     |
 | `existsByDniNumber(DniNumber dniNumber)` | `boolean`                 | `public`      | Verifica si existe un administrador con el DNI indicado. |
 
+---
+
 3. **`TeacherRepository` (Repository Interface)**
 
 Interfaz del repositorio para gestionar docentes.
@@ -2265,7 +2288,6 @@ Interfaz del repositorio para gestionar docentes.
 | `findById(Long id)`                       | `Optional<Teacher>` | `public`      | Busca un docente por su identificador.                        |
 | `save(Teacher teacher)`                   | `Teacher`           | `public`      | Persiste o actualiza un docente.                              |
 | `findAllByAcademyId(AcademyId academyId)` | `List<Teacher>`     | `public`      | Recupera todos los docentes asociados a la academia indicada. |
-
 
 #### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
@@ -2303,10 +2325,6 @@ Este contexto se encarga de la gestión de identidad y accesos de toda la plataf
 
 En esta sección se describen los elementos del Domain Layer del contexto de IAM, que son necesarios para modelar la gestión de identidades y accesos. Estos componentes definen las reglas de negocio y las invariantes asociadas a la autenticación, autorización y administración de usuarios dentro de la plataforma.
 
-### 2.6.2.1. Domain Layer
-
-En esta sección se describen los elementos del Domain Layer del contexto de IAM, que encapsulan la lógica central relacionada con el registro, verificación y administración de usuarios, así como la siembra de roles base del sistema.
-
 1. **`User` (Aggregate Root)**
 
 Representa al usuario del sistema, con sus credenciales, estados y roles.
@@ -2339,6 +2357,8 @@ Representa al usuario del sistema, con sus credenciales, estados y roles.
 | `associateTenant(TenantId tenantId)`                                           | `void`        | `public`    | Asocia un `tenantId` si aún no tenía uno asignado.                                          |
 | `disassociateTenant(TenantId tenantId)`                                        | `void`        | `public`    | Desasocia si coincide con el tenant actual; si no, lanza excepción.                         |
 
+---
+
 2. **`Role` (Entity)**
 
 Define un rol específico que puede ser asignado a un usuario.
@@ -2361,6 +2381,8 @@ Define un rol específico que puede ser asignado a un usuario.
 | `toRoleFromName(String name)` *(static)*       | `Role`         | `public`      | Crea un `Role` a partir del nombre del enum.      |
 | `validateRoleSet(List<Role> roles)` *(static)* | `List<Role>`   | `public`      | Si la lista es nula/vacía, retorna `[ROLE_USER]`. |
 
+---
+
 3. **`AccountStatus` (Value Object)**
 
 Estado actual de la cuenta del usuario (pendiente, activa, bloqueada, eliminada).
@@ -2374,6 +2396,7 @@ Estado actual de la cuenta del usuario (pendiente, activa, bloqueada, eliminada)
 | `BLOCKED`  | `Enum` | `public`     | La cuenta está bloqueada.               |
 | `DELETED`  | `Enum` | `public`     | La cuenta fue eliminada.                |
 
+---
 
 4. **`VerificationStatus` (Value Object)**
 
@@ -2386,6 +2409,8 @@ Indica si el usuario ha sido verificado o no.
 | `NOT_VERIFIED`  | `Enum` | `public`      | El usuario aún no está verificado. |
 | `VERIFIED`      | `Enum` | `public`      | El usuario ha sido verificado.     |
 
+---
+
 5. **`Roles` (Value Object)**
 
 Enumera los distintos roles disponibles en el sistema.
@@ -2397,6 +2422,8 @@ Enumera los distintos roles disponibles en el sistema.
 | `ROLE_USER`          | `Enum` | `public`     | Rol básico de usuario estándar.       |
 | `ROLE_ADMINISTRATOR` | `Enum` | `public`     | Rol con privilegios administrativos.  |
 | `ROLE_TEACHER`       | `Enum` | `public`     | Rol para usuarios con perfil docente. |
+
+---
 
 6. **`TenantId` (Value Object)**
 
@@ -2415,6 +2442,8 @@ Identificador único del tenant asociado a un usuario.
 | `TenantId()`                      | `Constructor`  | `public`     | Inicializa con `null` (no asignado).       |
 | `TenantId(Long tenantId)`         | `Constructor`  | `public`     | Valida `tenantId > 0` cuando no es `null`. |
 | `isAssigned()`                    | `boolean`      | `public`     | `true` si `tenantId != null`.              |
+
+---
 
 7. **`VerificationCode` (Value Object)**
 
@@ -2435,6 +2464,8 @@ Código y fecha de expiración usados para verificar usuarios.
 | `isExpired()`                             | `boolean`      | `public`      | `true` si `now > expiration`.                                        |
 | `matches(String inputCode)`               | `boolean`      | `public`      | `true` si coincide y **no** está expirado.                           |
 
+---
+
 8. **`SignUpCommand` (Command)**
 
 Comando para registrar un nuevo usuario en el sistema.
@@ -2447,6 +2478,8 @@ Comando para registrar un nuevo usuario en el sistema.
 | `password`     | `String`       | `public`      | Contraseña en texto (se hashea luego). |
 | `roles`        | `List<Role>`   | `public`      | Roles iniciales (validados).           |
 
+---
+
 9. **`SignInCommand` (Command)**
 
 Comando para autenticar un usuario con credenciales.
@@ -2457,6 +2490,8 @@ Comando para autenticar un usuario con credenciales.
 |-----------------|----------------|--------------|----------------------------------|
 | `emailAddress`  | `EmailAddress` | `public`     | Correo de acceso.                |
 | `password`      | `String`       | `public`     | Contraseña provista por el user. |
+
+---
 
 10. **`VerifyUserCommand` (Command)**
 
@@ -2469,6 +2504,8 @@ Comando para verificar un usuario mediante código.
 | `email`  | `String` | `public`    | Correo a verificar (no vacío).         |
 | `code`   | `String` | `public`    | Código de verificación (no vacío).     |
 
+---
+
 11. **`ResendVerificationCodeCommand` (Command)**
 
 Comando para reenviar un código de verificación.
@@ -2478,6 +2515,8 @@ Comando para reenviar un código de verificación.
 | Atributo | Tipo     | Visibilidad | Descripción                      |
 |----------|----------|-------------|----------------------------------|
 | `email`  | `String` | `public`    | Correo válido y no vacío.        |
+
+---
 
 12. **`AssignUserTenantId` (Command)**
 
@@ -2490,6 +2529,8 @@ Comando para asociar un usuario a un tenant.
 | `userId`   | `Long` | `public`    | ID del usuario objetivo.    |
 | `tenantId` | `Long` | `public`    | ID del tenant a asociar.    |
 
+---
+
 13. **`SeedRolesCommand` (Command)**
 
 Comando utilizado para sembrar los roles base en el sistema.
@@ -2500,6 +2541,7 @@ Comando utilizado para sembrar los roles base en el sistema.
 |--------------|-------|--------------|-------------------------------------------------------------|
 | *(ninguno)*  | -     | -            | No requiere atributos; su ejecución siembra los roles base. |
 
+---
 
 14. **`GetAuthenticatedUserTenantIdQuery` (Query)**
 
@@ -2510,6 +2552,8 @@ Consulta utilizada para obtener el tenant asociado al usuario autenticado.
 | Atributo    | Tipo  | Visibilidad  | Descripción                                                           |
 |-------------|-------|--------------|-----------------------------------------------------------------------|
 | *(ninguno)* | -     | -            | No requiere atributos; retorna el `TenantId` del usuario autenticado. |
+
+---
 
 15. **`UserVerificationCodeAssignedEvent` (Domain Event)**
 
@@ -2523,6 +2567,8 @@ Evento publicado al asignar un código de verificación.
 | `email`               | `String`  | `private`     | Correo destinatario del código.              |
 | `code`                | `String`  | `private`     | Código generado.                             |
 | `expirationMinutes`   | `Integer` | `private`     | Minutos hasta la expiración.                 |
+
+---
 
 16. **`UserCommandService` (Domain Service)**
 
@@ -2538,6 +2584,8 @@ Maneja comandos relacionados con usuarios.
 | `handle(ResendVerificationCodeCommand cmd)` | `boolean`                              | `public`     | Reenvía código de verificación.                                     |
 | `handle(AssignUserTenantId command)`        | `void`                                 | `public`     | Asocia usuario a un tenant.                                         |
 
+---
+
 17. **`UserQueryService` (Domain Service)**
 
 Maneja consultas relacionadas con usuarios.
@@ -2547,6 +2595,8 @@ Maneja consultas relacionadas con usuarios.
 | Método                                            | Tipo de Retorno      | Visibilidad | Descripción                                    |
 |---------------------------------------------------|----------------------|-------------|------------------------------------------------|
 | `handle(GetAuthenticatedUserTenantIdQuery query)` | `Optional<TenantId>` | `public`    | Obtiene el `TenantId` del usuario autenticado. |
+
+---
 
 18. **`RoleCommandService` (Domain Service)**
 
@@ -2573,6 +2623,8 @@ Maneja comandos relacionados con la gestión de roles.
 | `verify`          | `/api/v1/authentication/verify`      | `POST`      | Verifica al usuario con el código enviado.   |
 | `resendCode`      | `/api/v1/authentication/resend-code` | `POST`      | Reenvía el código de verificación al correo. |
 
+---
+
 2. **`Resources` (Resources)**
 
 | Resource                         | Atributos principales                                                       | Descripción                                   |
@@ -2584,6 +2636,8 @@ Maneja comandos relacionados con la gestión de roles.
 | `SignUpResource`                 | `emailAddress: String`, `password: String`, `roles: List<String>`           | Datos para registrar usuario (incluye roles). |
 | `UserResource`                   | `id: Long`, `emailAddress: String`, `roles: List<String>`, `tenantId: Long` | Usuario expuesto por la API.                  |
 | `VerifyUserResource`             | `email: String`, `code: String`                                             | Verificación de usuario por código.           |
+
+---
 
 3. **`Transform` (Assemblers)**
 
@@ -2794,6 +2848,7 @@ Interfaz para generación de códigos de verificación.
 | `verifyCode(String code, String expected, LocalDateTime)` | `boolean`         | `public`    | Verifica coincidencia y vigencia del código. |
 
 ---
+
 #### 2.6.2.4. Infrastructure Layer
 
 1. **`RoleRepository` (Repository Interface)**  
@@ -3054,27 +3109,11 @@ El diagrama de diseño de base de datos del contexto de IAM muestra la estructur
 
 Además, se incluye el [esquema SQL del diagrama de base de datos de IAM](./assets/diagrams/database/schema/src/IAM-database-diagram-create.sql).
 
-## Conclusiones y Recomendaciones
-
-El Container Diagram descompone la solución en sus principales contenedores: una Flutter App para coordinadores, una Android App para docentes y una iOS App para estudiantes, todas conectadas a un API Backend desarrollado en Spring Boot que concentra la lógica de negocio y accede a una base de datos MySQL para la información académica. El backend también se integra con Stripe y PagoEfectivo para pagos y con Gmail para notificaciones automáticas.
-
-![Container Diagram](assets/diagrams/software-architecture/containers/software_architecture_container_diagram.png)
-
-### Conclusiones
-
-El Deployment Diagram muestra la distribución física del sistema en producción, detallando cómo se despliegan los contenedores y servicios en la infraestructura y cómo interactúan entre sí. Las aplicaciones móviles (iOS, Android y Flutter) se ejecutan en los dispositivos de los usuarios y son distribuidas mediante Firebase, mientras que el backend en Spring Boot y la base de datos MySQL se alojan en Railway PaaS. Asimismo, se incluyen sistemas externos como Stripe, PagoEfectivo y Gmail. En conjunto, el diagrama ofrece una visión clara de la ubicación de los componentes y de los protocolos de comunicación empleados.
-
-![Deployment Diagram](assets/diagrams/software-architecture/deployment/software_architecture_deployment_diagram.png)
-
-### Recomendaciones
-
-Write here...
-
-### 4.2.3. Bounded Context: Enrollment
+### 2.6.3. Bounded Context: Enrollment
 
 Este bounded context se encarga de gestionar todo lo relacionado con la matricula de los estudiantes en los cursos ofrecidos por la institución educativa. Incluye la creación, actualización y eliminación de matrículas, así como la validación de requisitos previos y la generación de comprobantes de pago.
 
-#### 4.2.3.1. Domain Layer 
+#### 2.6.3.1. Domain Layer
 
 Se describen los elementos del Domain Layer del contexto de Enrollment, que encapsula las reglas y logica del dominio relacionadas con la gestion de matriculas, periodos academicos y alumnos.
 
@@ -3104,6 +3143,7 @@ Representa la matrícula de un estudiante en una academia, con su estado, estudi
 | `UpdateEnrollment(UpdateEnrollmentCommand)` | `Enrollment`    | `public`    | Actualiza la información de un `Enrollment` a partir de un command. |
 
 ---
+
 2. **`AcademicPeriod` (Aggregate Root)**
 
 Representa un período académico dentro de una academia, incluyendo su nombre, duración y estado.
@@ -3127,6 +3167,7 @@ Representa un período académico dentro de una academia, incluyendo su nombre, 
 | `UpdateAcademicPeriod(UpdateAcademicPeriodCommand)` | `AcademicPeriod` | `public`   | Actualiza la información de un `Academic Period` a partir de un command. |
 
 ---
+
 3. **`Student` (Aggregate Root)**
 
 | Atributo      | Tipo          | Visibilidad | Descripción                                                    |
@@ -3140,7 +3181,6 @@ Representa un período académico dentro de una academia, incluyendo su nombre, 
 | `phoneNumber` | `PhoneNumber` | `private`   | Número de teléfono del estudiante.                             |
 | `email`       | `Email`       | `private`   | Correo electrónico del estudiante.                             |
 | `academyId`   | `AcademyId`   | `private`   | Identificador de la academia a la que pertenece el estudiante. |
-
 
 **Métodos principales:**
 
@@ -3213,6 +3253,7 @@ Representa si un período académico se encuentra activo o inactivo.
 | `isActive()` | `boolean`       | `public`    | Retorna `true` si el período se encuentra activo.    |
 
 ---
+
 7. **`EnrollmentCommandService` (Domain Service)**
 
 Proporciona métodos para ejecutar comandos relacionados con la gestión de matrículas.
@@ -3225,6 +3266,7 @@ Proporciona métodos para ejecutar comandos relacionados con la gestión de matr
 | `handle(UpdateEnrollmentCommand command)` | `Optional<Enrollment>` | `public`   | Registra un pago en una cuenta de facturación.                 |
 
 ---
+
 8. **`EnrollmentQueryService` (Domain Service)**
 
 Proporciona métodos para consultar información de matrículas.
@@ -3239,6 +3281,7 @@ Proporciona métodos para consultar información de matrículas.
 | `handle(GetAllEnrollmentsByStudentDniQuery query)` | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas asociadas a un estudiante (por DNI). |
 
 ---
+
 9. **`AcademicPeriodCommandService` (Domain Service)**
 
 Proporciona métodos para ejecutar comandos relacionados con la gestión de períodos académicos.
@@ -3252,6 +3295,7 @@ Proporciona métodos para ejecutar comandos relacionados con la gestión de per�
 | `handle(UpdateAcademicPeriodCommand command)` | `Optional<AcademicPeriod>` | `public`    | Actualiza los datos de un período académico existente.  |
 
 ---
+
 10. **`AcademicPeriodQueryService` (Domain Service)**
 
 Proporciona métodos para consultar información de los períodos académicos.
@@ -3264,6 +3308,7 @@ Proporciona métodos para consultar información de los períodos académicos.
 | `handle(GetAllAcademicPeriodsQuery query)` | `List<AcademicPeriod>`     | `public`    | Obtiene la lista completa de períodos académicos.  |
 
 ---
+
 11. **`StudentCommandService` (Domain Service)**
 
 Proporciona métodos para ejecutar comandos relacionados con la gestión de estudiantes.
@@ -3277,6 +3322,7 @@ Proporciona métodos para ejecutar comandos relacionados con la gestión de estu
 | `handle(UpdateStudentCommand command)` | `Optional<Student>` | `public`    | Actualiza la información de un estudiante existente. |
 
 ---
+
 12. **`StudentQueryService` (Domain Service)**
 
 Proporciona métodos para consultar información de estudiantes.
@@ -3288,17 +3334,879 @@ Proporciona métodos para consultar información de estudiantes.
 | `handle(GetStudentByIdQuery query)`  | `Optional<Student>` | `public`    | Obtiene un estudiante por su identificador.           |
 | `handle(GetAllStudentsQuery query)`  | `List<Student>`     | `public`    | Obtiene la lista completa de estudiantes registrados. |
 | `handle(GetStudentByDniQuery query)` | `Optional<Student>` | `public`    | Obtiene un estudiante a partir de su DNI.             |
-# Bibliografía
 
-En esta sección se aborda la perspectiva táctica del enfoque Domain-Driven Design (DDD), la cual se centra en representar el dominio del negocio mediante elementos concretos de software. A partir de los límites definidos en el diseño estratégico, se modelan entidades, objetos de valor, servicios y otros componentes clave que encapsulan las reglas del dominio y responden a las necesidades del sistema. Este nivel permite estructurar la solución de manera más alineada con los procesos y problemáticas reales, garantizando una implementación coherente y sostenible.
+#### 2.6.3.2. Interface Layer
 
-Cada bounded context contará con su propio apartado, donde se detallará cómo estos elementos se articulan para gestionar los flujos de aplicación, facilitar la interacción con sistemas externos y contribuir al objetivo central de la solución.
+1. **`EnrollmentsController` (REST Controller)**
+   Controlador REST que expone endpoints para gestionar matrículas.
 
-### 4.2.6. Bounded Context: Billing
+**Endpoints principales:**
+
+| Nombre del método            | Ruta base típica                        | Método HTTP | Descripción                                                        |
+| ---------------------------- | --------------------------------------- | ----------- | ------------------------------------------------------------------ |
+| `createEnrollment`           | `/api/v1/enrollments`                   | `POST`      | Crea una nueva matrícula.                                          |
+| `getAllEnrollments`          | `/api/v1/enrollments`                   | `GET`       | Obtiene la lista completa de matrículas.                           |
+| `getEnrollmentById`          | `/api/v1/enrollments/{id}`              | `GET`       | Obtiene una matrícula específica por su ID.                        |
+| `getEnrollmentsByStudentId`  | `/api/v1/enrollments/student/{id}`      | `GET`       | Obtiene todas las matrículas asociadas a un estudiante por su ID.  |
+| `getEnrollmentsByStudentDni` | `/api/v1/enrollments/student/dni/{dni}` | `GET`       | Obtiene todas las matrículas asociadas a un estudiante por su DNI. |
+| `updateEnrollment`           | `/api/v1/enrollments/{id}`              | `PUT`       | Actualiza los datos de una matrícula existente.                    |
+| `deleteEnrollment`           | `/api/v1/enrollments/{id}`              | `DELETE`    | Elimina una matrícula por su ID.                                   |
+
+2. **`AcademicPeriodsController` (REST Controller)**
+Controlador REST que expone endpoints para gestionar períodos académicos.
+
+**Endpoints principales:**
+
+| Nombre del método       | Ruta base típica                | Método HTTP | Descripción                                            |
+| ----------------------- | ------------------------------- | ----------- | ------------------------------------------------------ |
+| `createAcademicPeriod`  | `/api/v1/academic-periods`      | `POST`      | Crea un nuevo período académico.                       |
+| `getAllAcademicPeriods` | `/api/v1/academic-periods`      | `GET`       | Obtiene la lista completa de períodos académicos.      |
+| `updateAcademicPeriod`  | `/api/v1/academic-periods/{id}` | `PUT`       | Actualiza los datos de un período académico existente. |
+| `deleteAcademicPeriod`  | `/api/v1/academic-periods/{id}` | `DELETE`    | Elimina un período académico por su ID.                |
+
+---
+
+3. **`StudentsController` (REST Controller)**
+Controlador REST que expone endpoints para gestionar estudiantes.
+
+**Endpoints principales:**
+
+| Nombre del método | Ruta base típica             | Método HTTP | Descripción                                           |
+| ----------------- | ---------------------------- | ----------- | ----------------------------------------------------- |
+| `createStudent`   | `/api/v1/students`           | `POST`      | Crea un nuevo estudiante.                             |
+| `getAllStudents`  | `/api/v1/students`           | `GET`       | Obtiene la lista completa de estudiantes registrados. |
+| `getStudentById`  | `/api/v1/students/{id}`      | `GET`       | Obtiene un estudiante específico por su ID.           |
+| `getStudentByDni` | `/api/v1/students/dni/{dni}` | `GET`       | Obtiene un estudiante a partir de su DNI.             |
+| `updateStudent`   | `/api/v1/students/{id}`      | `PUT`       | Actualiza la información de un estudiante existente.  |
+| `deleteStudent`   | `/api/v1/students/{id}`      | `DELETE`    | Elimina un estudiante por su ID.                      |
+
+#### 2.6.3.3. Application Layer
+
+1. **`EnrollmentCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar matrículas.
+
+**Atributos principales:**
+
+| Atributo                    | Tipo                        | Visibilidad | Descripción                                                   |
+| --------------------------- | --------------------------- | ----------- | ------------------------------------------------------------- |
+| `enrollmentRepository`      | `EnrollmentRepository`      | `private`   | Repositorio para acceder y persistir matrículas.              |
+| `externalSchedulingService` | `ExternalSchedulingService` | `private`   | Servicio externo para obtener horarios semanales disponibles. |
+
+**Métodos principales:**
+
+| Método                                    | Tipo de Retorno        | Visibilidad | Descripción                                                        |
+| ----------------------------------------- |------------------------| ----------- | ------------------------------------------------------------------ |
+| `handle(CreateEnrollmentCommand command)` | `Long`                 | `public`    | Maneja el comando para crear una nueva matrícula.                  |
+| `handle(DeleteEnrollmentCommand command)` | `void`                 | `public`    | Maneja el comando para eliminar una matrícula existente.           |
+| `handle(UpdateEnrollmentCommand command)` | `Optional<Enrollment>` | `public`    | Maneja el comando para actualizar la información de una matrícula. |
+
+---
+
+2. **`EnrollmentQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para obtener información sobre matrículas.
+
+**Atributos principales:**
+
+| Atributo               | Tipo                   | Visibilidad | Descripción                                        |
+| ---------------------- | ---------------------- | ----------- | -------------------------------------------------- |
+| `enrollmentRepository` | `EnrollmentRepository` | `private`   | Repositorio para acceder a las matrículas.         |
+| `studentRepository`    | `StudentRepository`    | `private`   | Repositorio para acceder a estudiantes vinculados. |
+
+**Métodos principales:**
+
+| Método                                             | Tipo de Retorno        | Visibilidad | Descripción                                                           |
+| -------------------------------------------------- | ---------------------- | ----------- | --------------------------------------------------------------------- |
+| `handle(GetAllEnrollmentsByStudentIdQuery query)`  | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas de un estudiante por su ID.              |
+| `handle(GetAllEnrollmentsQuery query)`             | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas registradas en el sistema.               |
+| `handle(GetEnrollmentByIdQuery query)`             | `Optional<Enrollment>` | `public`    | Obtiene una matrícula específica por su ID.                           |
+| `handle(GetAllEnrollmentsByStudentDniQuery query)` | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas asociadas a un estudiante usando su DNI. |
+
+---
+
+3. **`AcademicPeriodCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar períodos académicos.
+
+**Atributos principales:**
+
+| Atributo                   | Tipo                       | Visibilidad | Descripción                                    |
+| -------------------------- | -------------------------- | ----------- | ---------------------------------------------- |
+| `academicPeriodRepository` | `AcademicPeriodRepository` | `private`   | Repositorio para acceder y persistir períodos. |
+
+**Métodos principales:**
+
+| Método                                        | Tipo de Retorno            | Visibilidad | Descripción                                                       |
+| --------------------------------------------- |----------------------------| ----------- | ----------------------------------------------------------------- |
+| `handle(CreateAcademicPeriodCommand command)` | `Long`                     | `public`    | Maneja el comando para crear un nuevo período académico.          |
+| `handle(DeleteAcademicPeriodCommand command)` | `void`                     | `public`    | Maneja el comando para eliminar un período académico existente.   |
+| `handle(UpdateAcademicPeriodCommand command)` | `Optional<AcademicPeriod>` | `public`    | Maneja el comando para actualizar un período académico existente. |
+
+---
+
+4. **`AcademicPeriodQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para obtener información sobre períodos académicos.
+
+**Atributos principales:**
+
+| Atributo                   | Tipo                       | Visibilidad | Descripción                                         |
+| -------------------------- | -------------------------- | ----------- | --------------------------------------------------- |
+| `academicPeriodRepository` | `AcademicPeriodRepository` | `private`   | Repositorio para acceder a los períodos académicos. |
+
+**Métodos principales:**
+
+| Método                                     | Tipo de Retorno            | Visibilidad | Descripción                                        |
+| ------------------------------------------ | -------------------------- | ----------- | -------------------------------------------------- |
+| `handle(GetAllAcademicPeriodsQuery query)` | `List<AcademicPeriod>`     | `public`    | Obtiene todos los períodos académicos registrados. |
+| `handle(GetAcademicPeriodByIdQuery query)` | `Optional<AcademicPeriod>` | `public`    | Obtiene un período académico específico por su ID. |
+
+---
+
+5. **`StudentCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar estudiantes.
+
+**Atributos principales:**
+
+| Atributo            | Tipo                | Visibilidad | Descripción                                       |
+| ------------------- | ------------------- | ----------- | ------------------------------------------------- |
+| `studentRepository` | `StudentRepository` | `private`   | Repositorio para acceder y persistir estudiantes. |
+
+**Métodos principales:**
+
+| Método                                 | Tipo de Retorno     | Visibilidad | Descripción                                                        |
+| -------------------------------------- | ------------------- | ----------- | ------------------------------------------------------------------ |
+| `handle(CreateStudentCommand command)` | `Long`              | `public`    | Maneja el comando para crear un nuevo estudiante.                  |
+| `handle(DeleteStudentCommand command)` | `void`              | `public`    | Maneja el comando para eliminar un estudiante existente.           |
+| `handle(UpdateStudentCommand command)` | `Optional<Student>` | `public`    | Maneja el comando para actualizar la información de un estudiante. |
+
+---
+
+6. **`StudentQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para obtener información sobre estudiantes.
+
+**Atributos principales:**
+
+| Atributo            | Tipo                | Visibilidad | Descripción                                 |
+| ------------------- | ------------------- | ----------- | ------------------------------------------- |
+| `studentRepository` | `StudentRepository` | `private`   | Repositorio para acceder a los estudiantes. |
+
+**Métodos principales:**
+
+| Método                               | Tipo de Retorno     | Visibilidad | Descripción                                            |
+| ------------------------------------ | ------------------- | ----------- | ------------------------------------------------------ |
+| `handle(GetStudentByIdQuery query)`  | `Optional<Student>` | `public`    | Obtiene un estudiante específico por su ID.            |
+| `handle(GetAllStudentsQuery query)`  | `List<Student>`     | `public`    | Obtiene la lista de todos los estudiantes registrados. |
+| `handle(GetStudentByDniQuery query)` | `Optional<Student>` | `public`    | Obtiene un estudiante a partir de su DNI.              |
+
+#### 2.6.3.4. Infrastructure Layer
+
+1. **`EnrollmentRepository` (Repository Interface)**
+
+Interfaz del repositorio para acceder y gestionar matrículas.
+
+**Métodos principales:**
+
+| Método                                                                       | Tipo de Retorno        | Visibilidad | Descripción                                                              |
+| ---------------------------------------------------------------------------- | ---------------------- | ----------- | ------------------------------------------------------------------------ |
+| `findAllByStudentId(StudentId studentId)`                                    | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas asociadas a un estudiante por su ID.        |
+| `findAllByAcademicPeriodId(PeriodId periodId)`                               | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas registradas en un período académico.        |
+| `findByStudentIdAndAcademicPeriodId(StudentId studentId, PeriodId periodId)` | `Optional<Enrollment>` | `public`    | Busca una matrícula específica por ID de estudiante y período académico. |
+
+---
+
+2. **`AcademicPeriodRepository` (Repository Interface)**
+
+Interfaz del repositorio para acceder y gestionar períodos académicos.
+
+**Métodos principales:**
+
+| Método                                                     | Tipo de Retorno            | Visibilidad | Descripción                                                                  |
+| ---------------------------------------------------------- | -------------------------- | ----------- | ---------------------------------------------------------------------------- |
+| `existsByPeriodName(String periodName)`                    | `boolean`                  | `public`    | Verifica si existe un período académico con el nombre especificado.          |
+| `findByPeriodName(String periodName)`                      | `Optional<AcademicPeriod>` | `public`    | Busca un período académico por su nombre.                                    |
+| `existsByPeriodNameAndIdIsNot(String periodName, Long id)` | `boolean`                  | `public`    | Verifica si existe otro período académico con el mismo nombre y distinto ID. |
+
+---
+
+3. **`StudentRepository` (Repository Interface)**
+
+Interfaz del repositorio para acceder y gestionar estudiantes.
+
+**Métodos principales:**
+
+| Método                               | Tipo de Retorno     | Visibilidad | Descripción                                                           |
+| ------------------------------------ | ------------------- | ----------- | --------------------------------------------------------------------- |
+| `existsStudentByDni_Dni(String dni)` | `boolean`           | `public`    | Verifica si existe un estudiante registrado con el DNI proporcionado. |
+| `findByDni_Dni(String dni)`          | `Optional<Student>` | `public`    | Busca un estudiante específico a partir de su DNI.                    |
+
+#### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+El Component Diagram muestra la arquitectura interna del bounded context Enrollment, detallando cómo se organizan e interactúan entre las capas de application, domain, infrastructure y interfaces.
+
+![Component Diagram](assets/diagrams/software-architecture/components/out/enrollment_software_architecture_component_diagram.png)
+
+#### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de Enrollment. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
+
+#### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases del Domain Layer del contexto de Enrollment ilustra las entities, value objects y services que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
+
+![Diagrama de Clases del Domain Layer del Contexto de Enrollment](assets/diagrams/uml/class/out/enrollment-domain-layer-class-diagram.png)
+
+#### 2.6.3.6.2. Bounded Context Database Design Diagram
+
+El diagrama de base de datos del contexto Enrollment muestra las tablas y relaciones que persisten los aggregates del dominio.
+
+![Diagrama de base de datos del bounded context Enrollment](assets/diagrams/database/erd/out/enrollment-database-diagram.png)
+
+### 2.6.4. Bounded Context: Attendance
+
+El bounded context de Attendance gestiona todo el ciclo de registro y control de la asistencia de los estudiantes. Es un contexto core del dominio educativo, ya que brinda a los profesores la capacidad de monitorear, registrar y consultar la asistencia de manera estructurada y confiable.
+
+#### 2.6.4.1. Domain Layer
+
+En esta sección se describen los elementos del Domain Layer del contexto de Attendance, que encapsulan las reglas y lógica del dominio relacionadas con la gestión de asistencias.
+<hr>  
+
+1.**`ClassAttendance` (Aggregate Root)**
+
+Representa la asistencia de todos los estudiantes de una sesión de clase.
+
+**Atributos principales:**
+
+| Atributo         | Tipo                    | Visibilidad | Descripción                                                     |
+|------------------|-------------------------|-------------|-----------------------------------------------------------------|
+| `id`             | `Long`                  | `private`   | Identificador único de la asistencia de una sesión de clase     |
+| `classSessionId` | `ClassSessionId`        | `private`   | Identificador único de una sesión de clase                      |
+| `date`           | `LocalDate`             | `private`   | Fecha en la que fue tomada la asistencia de una sesión de clase |
+| `attendances`    | `List<AttendanceRecord` | `private`   | Lista de asistencia  de cada estudiante                         |
+| `academyId`      | `AcademyId`             | `private`   | Identificador único de la academia                              |
+
+**Métodos principales:**
+
+| Método                                                   | Tipo de retorno | Visibilidad    | Descripción                                                                          |
+|----------------------------------------------------------|-----------------|----------------|--------------------------------------------------------------------------------------|
+| `ClassAttendance()`                                      | `Constructor `  | `protected   ` | Constructor protegido para uso por el repositorio.                                   |
+| `ClassAttendance(CreateClassAttendanceCommand command)`  | `Constructor`   | `public`       | Constructor que inicializa la asistencia de una sesión de clase mediante un comando  |
+
+2.**`AttendanceRecord` (Entity)**
+
+Representa la asistencia de un solo estudiante.
+
+| Atributo     | Tipo         | Visibilidad | Descripción                                            |
+|--------------|--------------|-------------|--------------------------------------------------------|
+| `id`         | `Long`       | `private`   | Identificador único de una asistencia de un estudiante | 
+| `studentId`  | `StudentId`  | `private`   | Identificador único de un estudiante.                  |
+
+**Métodos principales:**
+
+| Método                                     | Tipo de retorno | Visibilidad | Descripción                                      |
+|--------------------------------------------|-----------------|-------------|--------------------------------------------------|
+| `changeStatus(AttendanceStatus newStatus)` | `void`          | `public`    | Cambia el status de asistencia de un estudiante  |
+
+3.**`AttendanceStatus` (Value object)**
+
+| Atributo     | Tipo    | Visibilidad | Descripción                        |
+|--------------|---------|-------------|------------------------------------|
+| `PRESENT`    | `Enum`  | `public`    | Estudiante presente en la clase    |
+| `ABSENT`     | `Enum`  | `public`    | Estudiante ausente en la clase     |
+| `EXCUSED`    | `Enum`  | `public`    | Estudiante con falta justificada   |
+
+4.**`ClassSessionId` (Value object)**
+
+| Atributo | Tipo   | Visibilidad | Descripción                                |
+|----------|--------|-------------|--------------------------------------------|
+| `id`     | `Long` | `public`    | Identificador único de una sesión de clase |
+
+5.**`ClassAttendanceCommandService` (Domain Service)**
+
+| Atributo                                           | Tipo                         | Visibilidad | Descripción                                                                |
+|----------------------------------------------------|------------------------------|-------------|----------------------------------------------------------------------------|
+| `handle (CreateClassAttendanceCommand command)`    | `Optional<ClassAttendance>`  | `public`    | Crea un nuevo registro de asistencia de una clase a partir de un comando.  |
+
+6.**`ClassAttendanceQueryService` (Domain Service)**
+
+| Atributo                                                               | Tipo                         | Visibilidad | Descripción                                                                       |
+|------------------------------------------------------------------------|------------------------------|-------------|-----------------------------------------------------------------------------------|
+| `handle(GetAttendanceRecordsByStudentIdCourseAndDateRangeQuery query)` | `Optional<AttendanceRecord>` | `public`    | Obtiene todas las asistencias por ID del estudiante, curso en un rango de fechas. |
+
+#### 2.6.4.2. Interface Layer
+
+1.**`ClassAttendanceController` (REST controller)**  
+Controlador REST que expone endpoints para registrar asistencia o obtenerlas.
+
+**Endpoints Principales:**
+
+| Nombre del método       | Ruta base típica                    | Método HTTP | Descripción                                                                                         |
+|-------------------------|-------------------------------------|-------------|-----------------------------------------------------------------------------------------------------|
+| `CreateClassAttendance` | `/api/v1/class-attendances`         | `POST`      | Crea un nuevo registro de asistencia de una clase                                                   |
+| `getAttendanceReport`   | `/api/v1/class-attendances/report`  | `GET`       | Obtiene el registro de asistencia de un estudiante según ID del estudiante, curso y rango de fechas |
+
+#### 2.6.4.3. Application Layer
+
+1.**`ClassAttendanceCommandServiceImpl` (Command Service Implementation)**  
+Implementación del servicio de comandos para gestionar asistencias de una clase.
+
+**Atributos principales**
+
+| Atributo                     | Tipo                         | Visibilidad | Descripción                                              |
+|------------------------------|------------------------------|-------------|----------------------------------------------------------|
+| `classAttendanceRepository`  | `ClassAttendanceRepository`  | `private`   | Repositorio para acceder a las asistencias de una clase  |
+
+**Métodos principales**
+
+| Nombre del método                                 | Tipo                        | Visibilidad | Descripción                                                                 |
+|---------------------------------------------------|-----------------------------|-------------|-----------------------------------------------------------------------------|
+| `handle (CreateClassAttendanceCommand command)`   | `Optional<ClassAttendance>` | `public`    | Maneja el comando para crear un nuevo registro de asistencia de una clase   |
+
+2.**`ClassAttendanceQueryServiceImpl` (Query Service Implementation)**  
+Implementación del servicio de consultas para obtener asistencias de una clase.
+
+**Atributos principales**
+
+| Atributo                     | Tipo                         | Visibilidad | Descripción                                              |
+|------------------------------|------------------------------|-------------|----------------------------------------------------------|
+| `classAttendanceRepository`  | `ClassAttendanceRepository`  | `private`   | Repositorio para acceder a las asistencias de una clase  |
+
+**Métodos principales**
+
+| Nombre del método                                                     | Tipo                    | Visibilidad | Descripción                                                                                                           |
+|-----------------------------------------------------------------------|-------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------|
+| `handle(GetAttendanceRecordsByStudentIdCourseAndDateRangeQuery query` | `List<ClassAttendance>` | `public`    | Maneja la consulta para obtener registros de asistencia de una clase según ID del estudiante, curso y rango de fechas |
+
+#### 2.6.4.4. Infrastructure Layer
+
+1.**`ClassAttendanceRepository` (Repository Interface)**  
+Interfaz del repositorio para acceder a los registros de asistencia de una sesión de clase.
+
+**Métodos principales**
+
+| Nombre del método                                                                          | Tipo de Retorno          | Visibilidad | Descripción                                                           |
+|--------------------------------------------------------------------------------------------|--------------------------|-------------|-----------------------------------------------------------------------|
+| `findByCourseIdAndDateBetween(CourseId courseId, LocalDate startDate, LocalDate endDate)`  | `List<ClassAttendance>`  | `public`    | Obtiene todas las asistencias por ID del course y un rango de fechas  |
+
+#### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presentan los diagramas de nivel componente que ilustran la arquitectura de software del contexto de Attendance. Se muestra la interacción entre los diferentes componentes, servicios y capas que conforman este bounded context. Se integra con la base de datos relacional definida en el diagrama de contenedores.
+
+![Diagrama de Componentes del Contexto de Attendance](./assets/diagrams/software-architecture/components/out/attendance-component-level-diagram.png)
+
+Además, se incluye el [código fuente del diagrama de componentes de Attendance](./assets/diagrams/software-architecture/components/src/attendance-component-level-diagram.dsl)
+
+#### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de Attendance. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
+
+#### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases del Domain Layer del contexto de Attendance ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
+
+![Diagrama de Componentes del Contexto de Attendance](./assets/diagrams/uml/class/out/attendance-domain-layer-class-diagram.png)
+
+Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Attendance](./assets/diagrams/uml/class/src/attendance-domain-layer-class-diagram.puml).
+
+#### 2.6.4.6.2. Bounded Context Database Design Diagram
+
+El diagrama de diseño de base de datos del contexto de Attendance muestra la estructura de las tablas y sus relaciones en la base de datos relacional. Se detallan las tablas principales, sus columnas, tipos de datos y claves primarias/foráneas que permiten gestionar la información relacionada con las asistencias de una clase.
+
+![Diagrama de Diseño de Base de Datos del Contexto de Attendance](./assets/diagrams/database/erd/out/attendance-database-diagram.png)
+
+Además, se incluye el [esquema SQL del diagrama de base de datos de Attendance](./assets/diagrams/database/schema/src/attendance-database-diagram-create.sql).
+
+### 2.6.5. Bounded Context: Scheduling
+
+#### 2.6.5.1. Domain Layer
+
+En esta sección se describen los elementos del Domain Layer del contexto de Scheduling, que encapsulan las reglas y lógica del dominio relacionadas con la programación de cursos, aulas y sesiones de clase.
+
+---
+
+1. **`Schedule` (Aggregate Root)**
+
+Representa un horario académico que contiene múltiples sesiones de clase.
+
+**Atributos principales:**
+
+| Atributo        | Tipo                | Visibilidad   | Descripción                                                          |
+|-----------------|---------------------|---------------|----------------------------------------------------------------------|
+| `id`            | `Long`              | `private`     | Identificador único del horario.                                     |
+| `name`          | `String`            | `private`     | Nombre del horario.                                                  |
+| `academyId`     | `AcademyId`         | `private`     | Identificador de la academia asociada.                               |
+| `classSessions` | `Set<ClassSession>` | `private`     | Conjunto de sesiones de clase que forman parte del horario semanal.  |
+
+**Métodos principales:**
+
+| Método                                  | Tipo de Retorno | Visibilidad | Descripción                                                |
+|-----------------------------------------|-----------------|-------------|------------------------------------------------------------|
+| `Schedule()`                            | `Constructor`   | `protected` | Constructor protegido para uso por el repositorio.         |
+| `addClassSession(ClassSession session)` | `void`          | `public`    | Agrega una nueva sesión de clase al horario.               |
+| `removeClassSession(Long sessionId)`    | `void`          | `public`    | Elimina una sesión de clase del horario.                   |
+| `validateConflicts(): boolean`          | `boolean`       | `public`    | Verifica si hay conflictos de horarios entre las sesiones. |
+| `updateName(String name)`               | `void`          | `public`    | Actualiza el nombre del horario de clase.                  |
+
+---
+
+2. **`Course` (Aggregate Root)**
+
+Representa un curso académico que puede tener múltiples sesiones de clase.
+
+**Atributos principales:**
+
+| Atributo      | Tipo         | Visibilidad | Descripción                            |
+|---------------|--------------|-------------|----------------------------------------|
+| `id`          | `Long`       | `private`   | Identificador único del curso.         |
+| `name`        | `String`     | `private`   | Nombre del curso.                      |
+| `courseCode`  | `CourseCode` | `private`   | Código único del curso.                |
+| `description` | `String`     | `private`   | Descripción del curso.                 |
+| `academyId`   | `AcademyId`  | `private`   | Identificador de la academia asociada. |
+
+**Métodos principales:**
+
+| Método                                                         | Tipo de Retorno | Visibilidad | Descripción                                        |
+|----------------------------------------------------------------|-----------------|-------------|----------------------------------------------------|
+| `Course()`                                                     | `Constructor`   | `protected` | Constructor protegido para uso por el repositorio. |
+| `updateCourse(String name, String code, String description)`   | `Course`        | `public`    | Actualiza los campos del curso correspondiente.    |
+
+---
+
+
+3. **`Classroom` (Aggregate Root)**
+
+Representa un aula disponible para la programación de sesiones.
+
+**Atributos principales:**
+
+| Atributo       | Tipo          | Visibilidad | Descripción                       |
+|---------------|---------------|-------------|-----------------------------------|
+| `id`           | `Long`       | `private`   | Identificador único del aula.     |
+| `classroomCode`| `ClassroomCode` | `private` | Código del aula.                  |
+| `capacity`     | `Integer`    | `private`   | Capacidad máxima de estudiantes. |
+| `campus`       | `String`     | `private`   | Campus donde se ubica el aula.   |
+| `academyId`    | `AcademyId`  | `private`   | Identificador de la academia asociada.|
+
+**Métodos principales:**
+
+| Método                                                                   | Tipo de Retorno   | Visibilidad | Descripción                                              |
+|--------------------------------------------------------------------------|-------------------|-------------|----------------------------------------------------------|
+| `Classroom()`                                                            | `Constructor`     | `protected` | Constructor protegido para uso por el repositorio.       |
+| `updateClassroom(String classroomCode, Integer capacity, String campus)` | `Classroom`       | `public`    | Actualiza los campos del salon de clase correspondiente. |
+
+---
+
+4. **`ClassSession` (Entity)**
+
+Representa una sesión de clase programada.
+
+**Atributos principales:**
+
+| Atributo       | Tipo           | Visibilidad | Descripción                               |
+|----------------|----------------|-------------|-------------------------------------------|
+| `id`           | `Long`         | `private`   | Identificador único de la sesión.         |
+| `courseId`     | `CourseId`     | `private`   | Referencia al curso asociado.             |
+| `classroomId`  | `ClassroomId`  | `private`   | Referencia al aula donde se dicta.        |
+| `teacherId`    | `TeacherId`    | `private`   | Identificador del docente asignado.       |
+| `dayOfWeek`    | `DayOfWeek`    | `private`   | Día de la semana en que ocurre la sesión. |
+| `timeRange`    | `TimeRange`    | `private`   | Intervalo horario de la sesión.           |
+
+**Métodos principales:**
+
+| Método            | Tipo de Retorno | Visibilidad   | Descripción                                         |
+|-------------------|-----------------|---------------|-----------------------------------------------------|
+| `ClassSession()`  | `Constructor`   | `protected`   | Constructor protegido para uso por el repositorio.  |
+
+---
+
+5. **`DayOfWeek` (Value Object)**
+
+Representa un día de la semana.
+
+| Atributo    | Tipo   | Visibilidad | Descripción               |
+|------------|--------|-------------|---------------------------|
+| `MONDAY`    | Enum  | `public`    | Lunes                     |
+| `TUESDAY`   | Enum  | `public`    | Martes                    |
+| `WEDNESDAY` | Enum  | `public`    | Miércoles                 |
+| `THURSDAY`  | Enum  | `public`    | Jueves                    |
+| `FRIDAY`    | Enum  | `public`    | Viernes                   |
+| `SATURDAY`  | Enum  | `public`    | Sábado                    |
+| `SUNDAY`    | Enum  | `public`    | Domingo                   |
+
+---
+
+6. **`TimeRange` (Value Object)**
+
+Representa un intervalo de tiempo.
+
+| Atributo    | Tipo       | Visibilidad | Descripción                    |
+|------------|------------|-------------|--------------------------------|
+| `startTime` | `LocalTime` | `private`  | Hora de inicio del intervalo.  |
+| `endTime`   | `LocalTime` | `private`  | Hora de fin del intervalo.     |
+
+**Métodos principales:**
+
+| Método                   | Tipo de Retorno | Visibilidad | Descripción                                         |
+|---------------------------|----------------|-------------|---------------------------------------------------|
+| `overlapsWith(TimeRange other)` | `boolean` | `public`    | Verifica si dos intervalos de tiempo se superponen.|
+
+---
+
+7. **`ClassroomCommandService` (Domain Service)**
+
+Proporciona métodos para ejecutar comandos relacionados con la gestión de aulas.
+
+**Métodos principales:**
+
+| Método                                | Tipo de Retorno       | Visibilidad | Descripción                                     |
+|--------------------------------------|---------------------|-------------|------------------------------------------------|
+| `handle(CreateClassroomCommand command)` | `Long`             | `public`    | Crea una nueva aula y retorna su ID.           |
+| `handle(UpdateClassroomCommand command)` | `Optional<Classroom>` | `public` | Actualiza los datos de un aula existente.      |
+| `handle(DeleteClassroomCommand command)` | `void`             | `public`    | Elimina un aula existente.                     |
+
+---
+
+8. **`ClassroomQueryService` (Domain Service)**
+
+Proporciona métodos para consultar información relacionada con las aulas.
+
+**Métodos principales:**
+
+| Método                           | Tipo de Retorno      | Visibilidad | Descripción                                     |
+|---------------------------------|--------------------|-------------|------------------------------------------------|
+| `handle(GetAllClassroomsQuery query)` | `List<Classroom>` | `public`    | Obtiene todas las aulas registradas.           |
+| `handle(GetClassroomByIdQuery query)` | `Optional<Classroom>` | `public` | Obtiene un aula específica por su ID.         |
+
+---
+
+9. **`CourseCommandService` (Domain Service)**
+
+Proporciona métodos para ejecutar comandos relacionados con la gestión de cursos.
+
+**Métodos principales:**
+
+| Método                                | Tipo de Retorno       | Visibilidad | Descripción                                     |
+|--------------------------------------|---------------------|-------------|------------------------------------------------|
+| `handle(CreateCourseCommand command)` | `Long`              | `public`    | Crea un nuevo curso y retorna su ID.           |
+| `handle(UpdateCourseCommand command)` | `Optional<Course>`  | `public`    | Actualiza los datos de un curso existente.    |
+| `handle(DeleteCourseCommand command)` | `void`              | `public`    | Elimina un curso existente.                   |
+
+---
+
+10. **`CourseQueryService` (Domain Service)**
+
+Proporciona métodos para consultar información relacionada con cursos.
+
+**Métodos principales:**
+
+| Método                               | Tipo de Retorno       | Visibilidad | Descripción                                     |
+|-------------------------------------|---------------------|-------------|------------------------------------------------|
+| `handle(GetAllCoursesQuery query)`   | `List<Course>`       | `public`    | Obtiene todos los cursos registrados.          |
+| `handle(GetCourseByIdQuery query)`   | `Optional<Course>`   | `public`    | Obtiene un curso específico por su ID.        |
+| `handle(GetCourseByCodeQuery query)` | `Optional<Course>`   | `public`    | Obtiene un curso por su código de curso.      |
+
+11. **`ScheduleCommandService` (Domain Service)**
+
+Proporciona métodos para ejecutar comandos relacionados con la gestión de horarios y sesiones.
+
+**Métodos principales:**
+
+| Método                                                  | Tipo de Retorno          | Visibilidad | Descripción                                               |
+|---------------------------------------------------------|--------------------------|-------------|-----------------------------------------------------------|
+| `handle(CreateScheduleCommand command)`                 | `Long`                   | `public`    | Crea un nuevo horario semanal y retorna su ID.            |
+| `handle(UpdateScheduleNameCommand command)`             | `Optional<Schedule>`     | `public`    | Actualiza el nombre de un horario semanal existente.      |
+| `handle(AddClassSessionToScheduleCommand command)`      | `Optional<Schedule>`     | `public`    | Agrega una sesión de clase al horario semanal.            |
+| `handle(RemoveClassSessionFromScheduleCommand command)` | `Optional<Schedule>`     | `public`    | Elimina una sesión de clase del horario semanal.          |
+| `handle(DeleteScheduleCommand command)`                 | `void`                   | `public`    | Elimina un horario semanal.                               |
+| `handle(UpdateClassSessionFromScheduleCommand command)` | `Optional<ClassSession>` | `public`    | Actualiza una sesión de clase dentro del horario semanal. |
+
+---
+
+12. **`ScheduleQueryService` (Domain Service)**
+
+Proporciona métodos para consultar información relacionada con horarios y sesiones.
+
+**Métodos principales:**
+
+| Método                                       | Tipo de Retorno      | Visibilidad | Descripción                                                   |
+|----------------------------------------------|----------------------|-------------|---------------------------------------------------------------|
+| `handle(GetAllSchedulesQuery query)`         | `List<Schedule>`     | `public`    | Obtiene todos los horarios semanales registrados.             |
+| `handle(GetScheduleByIdQuery query)`         | `Optional<Schedule>` | `public`    | Obtiene un horario semanal específico por su ID.              |
+| `handle(GetScheduleByNameQuery query)`       | `Optional<Schedule>` | `public`    | Obtiene un horario semanal por su nombre.                     |
+| `handle(GetSchedulesByTeacherIdQuery query)` | `List<ClassSession>` | `public`    | Obtiene todos los horarios asignados a un docente específico. |
+
+---
+
+#### 2.6.5.2. Interface Layer
+
+1. **`SchedulesController` (REST Controller)**
+
+Controlador REST que expone endpoints para gestionar **horarios** (Schedules) y las **sesiones de clase** (ClassSessions) asociadas.
+
+**Endpoints principales:**
+
+| Nombre del método                         | Ruta base típica                                      | Método HTTP | Descripción                                                                 |
+|-------------------------------------------|-------------------------------------------------------|-------------|-----------------------------------------------------------------------------|
+| `createSchedule`                          | `/api/v1/schedules`                                   | `POST`      | Crea un nuevo horario.                                                      |
+| `getAllSchedules`                         | `/api/v1/schedules`                                   | `GET`       | Obtiene todos los horarios registrados.                                     |
+| `getScheduleById`                         | `/api/v1/schedules/{scheduleId}`                      | `GET`       | Obtiene un horario por su ID.                                               |
+| `updateSchedule`                          | `/api/v1/schedules/{scheduleId}`                      | `PUT`       | Actualiza los datos de un horario existente.                                |
+| `deleteSchedule`                          | `/api/v1/schedules/{scheduleId}`                      | `DELETE`    | Elimina un horario existente.                                               |
+| `addClassSessionToSchedule`               | `/api/v1/schedules/{scheduleId}/sessions`             | `POST`      | Agrega una sesión de clase a un horario.                                    |
+| `removeClassSessionFromSchedule`          | `/api/v1/schedules/{scheduleId}/sessions/{sessionId}` | `DELETE`    | Elimina una sesión de clase de un horario.                                  |
+| `getSchedulesByTeacherId`                 | `/api/v1/schedules/by-teacher/{teacherId}`            | `GET`       | Obtiene todos los horarios de un docente específico.                        |
+| `updateClassSession`                      | `/api/v1/schedules/sessions/{sessionId}`              | `PUT`       | Actualiza los datos de una sesión de clase existente.                       |
+
+---
+
+2. **`CoursesController` (REST Controller)**
+
+Controlador REST que expone endpoints para gestionar **cursos**.
+
+**Endpoints principales:**
+
+| Nombre del método           | Ruta base típica                   | Método HTTP | Descripción                                             |
+|-----------------------------|------------------------------------|-------------|---------------------------------------------------------|
+| `createCourse`              | `/api/v1/courses`                 | `POST`      | Crea un nuevo curso.                                    |
+| `getAllCourses`             | `/api/v1/courses`                 | `GET`       | Obtiene todos los cursos registrados.                   |
+| `getCourseById`             | `/api/v1/courses/{courseId}`      | `GET`       | Obtiene un curso por su ID.                             |
+| `updateCourse`              | `/api/v1/courses/{courseId}`      | `PUT`       | Actualiza los datos de un curso existente.              |
+| `deleteCourse`              | `/api/v1/courses/{courseId}`      | `DELETE`    | Elimina un curso existente.                             |
+
+---
+
+3. **`ClassroomsController` (REST Controller)**
+
+Controlador REST que expone endpoints para gestionar **aulas**.
+
+**Endpoints principales:**
+
+| Nombre del método           | Ruta base típica                      | Método HTTP | Descripción                                             |
+|-----------------------------|---------------------------------------|-------------|---------------------------------------------------------|
+| `createClassroom`           | `/api/v1/classrooms`                 | `POST`      | Crea una nueva aula.                                    |
+| `getAllClassrooms`          | `/api/v1/classrooms`                 | `GET`       | Obtiene todas las aulas registradas.                    |
+| `getClassroomById`          | `/api/v1/classrooms/{classroomId}`   | `GET`       | Obtiene un aula por su ID.                              |
+| `updateClassroom`           | `/api/v1/classrooms/{classroomId}`   | `PUT`       | Actualiza los datos de un aula existente.               |
+| `deleteClassroom`           | `/api/v1/classrooms/{classroomId}`   | `DELETE`    | Elimina un aula existente.                              |
+
+---
+
+#### 2.6.5.3. Application Layer
+
+
+1. **`ClassroomCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar aulas.
+
+**Atributos principales:**
+
+| Atributo                | Tipo                    | Visibilidad | Descripción                                      |
+|-------------------------|-------------------------|-------------|--------------------------------------------------|
+| `classroomRepository`   | `ClassroomRepository`   | `private`   | Repositorio para acceder y gestionar aulas.      |
+
+**Métodos principales:**
+
+| Método                                         | Tipo de Retorno        | Visibilidad  | Descripción                                           |
+|------------------------------------------------|------------------------|--------------|-------------------------------------------------------|
+| `handle(CreateClassroomCommand command)`       | `Long`                 | `public`     | Crea una nueva aula y devuelve su ID.                 |
+| `handle(UpdateClassroomCommand command)`       | `Optional<Classroom>`  | `public`     | Actualiza una aula existente.                         |
+| `handle(DeleteClassroomCommand command)`       | `void`                 | `public`     | Elimina una aula existente.                           |
+
+---
+
+2. **`CourseCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar cursos.
+
+**Atributos principales:**
+
+| Atributo              | Tipo                 | Visibilidad  | Descripción                                   |
+|-----------------------|----------------------|--------------|-----------------------------------------------|
+| `courseRepository`    | `CourseRepository`   | `private`    | Repositorio para acceder y gestionar cursos.  |
+
+**Métodos principales:**
+
+| Método                                   | Tipo de Retorno     | Visibilidad | Descripción                              |
+|------------------------------------------|---------------------|-------------|------------------------------------------|
+| `handle(CreateCourseCommand command)`    | `Long`              | `public`    | Crea un curso nuevo y devuelve su ID.    |
+| `handle(UpdateCourseCommand command)`    | `Optional<Course>`  | `public`    | Actualiza los datos de un curso.         |
+| `handle(DeleteCourseCommand command)`    | `void`              | `public`    | Elimina un curso existente.              |
+
+---
+
+3. **`ScheduleCommandServiceImpl` (Command Service Implementation)**
+
+Implementación del servicio de comandos para gestionar horarios semanales y sesiones de clase.
+
+**Atributos principales:**
+
+| Atributo                    | Tipo                       | Visibilidad | Descripción                                                        |
+|-----------------------------|---------------------------|-------------|--------------------------------------------------------------------|
+| `scheduleRepository`        | `ScheduleRepository`      | `private`   | Repositorio para acceder y gestionar horarios semanales.           |
+| `scheduleRepository`        | `ClassSessionRepository`  | `private`   | Repositorio para acceder y gestionar sesiones de clase.           |
+| `externalIamService`        | `ExternalIamService`      | `private`   | Servicio externo para validar docentes.                           |
+
+**Métodos principales:**
+
+| Método                                                    | Tipo de Retorno          | Visibilidad | Descripción                                                     |
+|-----------------------------------------------------------|--------------------------|-------------|-----------------------------------------------------------------|
+| `handle(CreateScheduleCommand command)`                   | `Long`                   | `public`    | Crea un nuevo horario semanal.                                  |
+| `handle(UpdateScheduleNameCommand command)`               | `Optional<Schedule>`     | `public`    | Actualiza el nombre de un horario semanal.                      |
+| `handle(AddClassSessionToScheduleCommand command)`        | `Optional<Schedule>`     | `public`    | Agrega una sesión de clase a un horario semanal.                |
+| `handle(RemoveClassSessionFromScheduleCommand command)`   | `Optional<Schedule>`     | `public`    | Elimina una sesión de clase de un horario semanal.              |
+| `handle(DeleteScheduleCommand command)`                   | `void`                   | `public`    | Elimina un horario semanal.                                     |
+| `handle(UpdateClassSessionCommand command)`               | `Optional<ClassSession>` | `public`    | Actualiza los datos de una sesión de clase.                     |
+
+---
+
+4. **`ClassroomQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para aulas.
+
+**Atributos principales:**
+
+| Atributo                | Tipo                    | Visibilidad | Descripción                                      |
+|-------------------------|-------------------------|-------------|--------------------------------------------------|
+| `classroomRepository`   | `ClassroomRepository`   | `private`   | Repositorio para acceder a las aulas.            |
+
+**Métodos principales:**
+
+| Método                                     | Tipo de Retorno         | Visibilidad | Descripción                                    |
+|--------------------------------------------|-------------------------|-------------|------------------------------------------------|
+| `handle(GetAllClassroomsQuery query)`      | `List<Classroom>`       | `public`    | Obtiene todas las aulas registradas.           |
+| `handle(GetClassroomByIdQuery query)`      | `Optional<Classroom>`   | `public`    | Obtiene un aula por su ID.                     |
+
+---
+
+5. **`CourseQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para cursos.
+
+**Atributos principales:**
+
+| Atributo              | Tipo                | Visibilidad | Descripción                                 |
+|-----------------------|---------------------|-------------|---------------------------------------------|
+| `courseRepository`    | `CourseRepository`  | `private`   | Repositorio para acceder a los cursos.      |
+
+**Métodos principales:**
+
+| Método                                  | Tipo de Retorno      | Visibilidad | Descripción                           |
+|-----------------------------------------|----------------------|-------------|---------------------------------------|
+| `handle(GetAllCoursesQuery query)`      | `List<Course>`       | `public`    | Obtiene todos los cursos registrados. |
+| `handle(GetCourseByIdQuery query)`      | `Optional<Course>`   | `public`    | Obtiene un curso por su ID.           |
+
+---
+
+6. **`ScheduleQueryServiceImpl` (Query Service Implementation)**
+
+Implementación del servicio de consultas para horarios semanales y sesiones de clase.
+
+**Atributos principales:**
+
+| Atributo                    | Tipo                        | Visibilidad  | Descripción                                              |
+|-----------------------------|-----------------------------|--------------|----------------------------------------------------------|
+| `scheduleRepository`        | `ScheduleRepository`        | `private`    | Repositorio para acceder a los horarios semanales.       |
+| `classSessionRepository`    | `ClassSessionRepository`    | `private`    | Repositorio para acceder a las sesiones de clase.        |
+
+**Métodos principales:**
+
+| Método                                            | Tipo de Retorno        | Visibilidad | Descripción                                        |
+|---------------------------------------------------|------------------------|-------------|----------------------------------------------------|
+| `handle(GetAllSchedulesQuery query)`              | `List<Schedule>`       | `public`    | Obtiene todos los horarios semanales.              |
+| `handle(GetScheduleByIdQuery query)`              | `Optional<Schedule>`   | `public`    | Obtiene un horario semanal por su ID.              |
+| `handle(GetScheduleByNameQuery query)`            | `Optional<Schedule>`   | `public`    | Obtiene un horario semanal por su nombre.          |
+| `handle(GetClassSessionsByTeacherIdQuery query)`  | `List<ClassSession>`   | `public`    | Obtiene todas las sesiones de clase de un docente. |
+
+#### 2.6.5.4. Infrastructure Layer
+
+1. **`ScheduleRepository` (Repository Interface)**
+
+Interfaz del repositorio para acceder a los horarios semanales (schedules).
+
+**Métodos principales:**
+
+| Método                                       | Tipo de Retorno      | Visibilidad | Descripción                                                                              |
+|----------------------------------------------|----------------------|-------------|------------------------------------------------------------------------------------------|
+| `findByName(String name)`                    | `Optional<Schedule>` | `public`    | Busca un horario semanal por su nombre único.                                            |
+| `existsByName(String name)`                  | `boolean`            | `public`    | Verifica si existe un horario semanal con el nombre especificado.                        |
+| `existsByNameAndIdNot(String name, Long id)` | `boolean`            | `public`    | Verifica si existe un horario semanal con el nombre dado, excluyendo el ID especificado. |
+
+---
+
+2. **`ClassSessionRepository` (Repository Interface)**
+
+Interfaz del repositorio para acceder a las sesiones de clase (class sessions).
+
+**Métodos principales:**
+
+| Método                                 | Tipo de Retorno           | Visibilidad | Descripción                                                                 |
+|----------------------------------------|---------------------------|-------------|-----------------------------------------------------------------------------|
+| `findByTeacherId(UserId teacherId)`    | `List<ClassSession>`      | `public`    | Busca todas las sesiones de clase asignadas a un profesor específico.       |
+
+---
+
+3. **`CourseRepository` (Repository Interface)**
+
+Interfaz del repositorio para gestionar cursos.
+
+**Métodos principales:**
+
+| Método                                              | Tipo de Retorno | Visibilidad | Descripción                                                                           |
+|-----------------------------------------------------|-----------------|-------------|---------------------------------------------------------------------------------------|
+| `existsByName(String name)`                         | `boolean`       | `public`    | Verifica si existe un curso con el nombre especificado.                               |
+| `existsByNameAndIdNot(String name, Long id)`        | `boolean`       | `public`    | Verifica si existe un curso con el nombre dado, excluyendo el ID especificado.        |
+
+---
+
+4. **`ClassroomRepository` (Repository Interface)**
+
+Interfaz del repositorio para gestionar aulas.
+
+**Métodos principales:**
+
+| Método                                              | Tipo de Retorno | Visibilidad | Descripción                                                                        |
+|-----------------------------------------------------|-----------------|-------------|------------------------------------------------------------------------------------|
+| `existsByCode(String code)`                         | `boolean`       | `public`    | Verifica si existe un aula con el código especificado.                             |
+| `existsByCodeAndIdNot(String code, Long id)`        | `boolean`       | `public`    | Verifica si existe un aula con el código dado, excluyendo el ID especificado.      |
+
+#### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presentan los diagramas de nivel componente que ilustran la arquitectura de software del contexto de **Scheduling**. Se muestra la interacción entre los diferentes componentes, servicios y capas que conforman este bounded context. Se integra con la base de datos relacional definida en el diagrama de contenedores.
+
+![Diagrama de Componentes del Contexto de Scheduling](./assets/diagrams/software-architecture/components/out/scheduling-component-level-diagram.png)
+
+Además, se incluye el [código fuente del diagrama de componentes de Scheduling](./assets/diagrams/software-architecture/components/src/scheduling-component-level-diagram.dsl).
+
+#### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de **Scheduling**. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
+
+
+#### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+
+El diagrama de clases del **Domain Layer** del contexto de Scheduling ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
+
+![Diagrama de Clases del Domain Layer del Contexto de Scheduling](./assets/diagrams/uml/class/out/scheduling-domain-layer-class-diagram.png)
+
+Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Scheduling](./assets/diagrams/uml/class/src/scheduling-domain-layer-class-diagram.puml).
+
+#### 2.6.5.6.2. Bounded Context Database Design Diagram
+
+El diagrama de diseño de base de datos del contexto de Scheduling muestra la estructura de las tablas y sus relaciones en la base de datos relacional. Se detallan las tablas principales, sus columnas, tipos de datos y claves primarias/foráneas que permiten gestionar la información relacionada con la programación de horarios académicos, la asignación de cursos, el uso de aulas y las sesiones de clase.
+
+![Diagrama de Diseño de Base de Datos del Contexto de Scheduling](./assets/diagrams/database/erd/out/scheduling-database-diagram.png)
+
+Además, se incluye el [esquema SQL del diagrama de base de datos de Scheduling](./assets/diagrams/database/schema/src/scheduling-database-diagram-create.sql).
+
+### 2.6.6. Bounded Context: Billing
 
 Este contexto se encarga de la gestión de las boletas y obligaciones de pago de los estudiantes. Incluye la emisión, seguimiento y control de las boletas mensuales y de matrícula, así como la gestión de pagos y vencimientos. Este contexto es crucial para asegurar la sostenibilidad financiera de la institución educativa. Aunque no es el núcleo del negocio, su correcta implementación es vital para el funcionamiento general del sistema.
 
-#### 4.2.6.1. Domain Layer
+#### 2.6.6.1. Domain Layer
 
 En esta sección se describen los elementos del Domain Layer del contexto de Billing, que encapsulan las reglas y lógica del dominio relacionadas con la gestión de boletas y pagos.
 
@@ -3466,7 +4374,7 @@ Proporciona métodos para consultar información relacionada con las cuentas de 
 
 ---
 
-#### 4.2.6.2. Interface Layer
+#### 2.6.6.2. Interface Layer
 
 1. **`BillingAccountsController` (REST Controller)**
 
@@ -3485,7 +4393,7 @@ Controlador REST que expone endpoints para gestionar cuentas de facturación y b
 | `suspendAccount`         | `/api/v1/billing-accounts/{id}/suspend`    | `POST`      | Suspende una cuenta de facturación por falta de pago.            |
 | `reactivateAccount`      | `/api/v1/billing-accounts/{id}/reactivate` | `POST`      | Reactiva una cuenta de facturación suspendida.                   |
 
-#### 4.2.6.3. Application Layer
+#### 2.6.6.3. Application Layer
 
 1. **`BillingAccountCommandServiceImpl` (Command Service Implementation)**
 
@@ -3527,7 +4435,7 @@ Implementación del servicio de consultas para obtener información sobre cuenta
 | `handle(GetOverdueInvoicesQuery query)`     | `List<Invoice>`            | `public`    | Maneja la consulta para obtener boletas vencidas.               |
 | `handle(GetAccountStatusQuery query)`       | `Optional<AccountStatus>`  | `public`    | Maneja la consulta para obtener el estado de una cuenta.        |
 
-#### 4.2.6.4. Infrastructure Layer
+#### 2.6.6.4. Infrastructure Layer
 
 1. **`BillingAccountRepository` (Repository Interface)**
 
@@ -3541,7 +4449,7 @@ Interfaz del repositorio para acceder a las cuentas de facturación y boletas.
 | `findInvoicesByAccountId(Long accountId)`        | `List<Invoice>`            | `public`    | Busca todas las boletas asociadas a una cuenta de facturación. |
 | `findOverdueInvoicesByAccountId(Long accountId)` | `List<Invoice>`            | `public`    | Busca todas las boletas vencidas de una cuenta de facturación. |
 
-#### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.6.5. Bounded Context Software Architecture Component Level Diagrams
 
 En esta sección se presentan los diagramas de nivel componente que ilustran la arquitectura de software del contexto de Billing. Se muestra la interacción entre los diferentes componentes, servicios y capas que conforman este bounded context. Se integra con la base de datos relacional definida en el diagrama de contenedores.
 
@@ -3549,11 +4457,11 @@ En esta sección se presentan los diagramas de nivel componente que ilustran la 
 
 Además, se incluye el [código fuente del diagrama de componentes de Billing](./assets/diagrams/software-architecture/components/src/billing-component-level-diagram.dsl).
 
-#### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
+#### 2.6.6.6. Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de Billing. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
 
-#### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
+#### 2.6.6.6.1. Bounded Context Domain Layer Class Diagrams
 
 El diagrama de clases del Domain Layer del contexto de Billing ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
 
@@ -3561,7 +4469,7 @@ El diagrama de clases del Domain Layer del contexto de Billing ilustra las entid
 
 Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Billing](./assets/diagrams/uml/class/src/billing-domain-layer-class-diagram.puml).
 
-#### 4.2.6.6.2. Bounded Context Database Design Diagram
+#### 2.6.6.6.2. Bounded Context Database Design Diagram
 
 El diagrama de diseño de base de datos del contexto de Billing muestra la estructura de las tablas y sus relaciones en la base de datos relacional. Se detallan las tablas principales, sus columnas, tipos de datos y claves primarias/foráneas que permiten gestionar la información relacionada con las cuentas de facturación y boletas.
 
@@ -3569,11 +4477,11 @@ El diagrama de diseño de base de datos del contexto de Billing muestra la estru
 
 Además, se incluye el [esquema SQL del diagrama de base de datos de Billing](./assets/diagrams/database/schema/src/billing-database-diagram-create.sql).
 
-### 4.2.7. Bounded Context: Accounting & Finance
+### 2.6.7. Bounded Context: Accounting & Finance
 
 Este contexto se encarga de la gestión contable y financiera de la academia. Incluye el registro de ingresos y egresos, así como la generación de reportes financieros que permiten a los administradores tener una visión clara de la situación económica de la institución. Aunque este contexto no es el núcleo del negocio, su correcta implementación es esencial para asegurar la transparencia y el cumplimiento de las normativas financieras.
 
-#### 4.2.7.1. Domain Layer
+#### 2.6.7.1. Domain Layer
 
 En esta sección se describen los elementos del Domain Layer del contexto de Accounting & Finance, que encapsulan las reglas y lógica del dominio relacionadas con la gestión contable y financiera.
 
@@ -3596,198 +4504,23 @@ Representa una transacción financiera, ya sea un ingreso o un egreso registrado
 | `description`         | `String`              | `private`   | Descripción o detalles adicionales de la transacción.        |
 | `transactionDate`     | `LocalDate`           | `private`   | Fecha de la transacción.                                     |
 | `academyId`           | `AcademyId`           | `private`   | Identificador de la academia asociada a la transacción.      |
-### 4.2.4. Bounded Context: Attendance
-
-El bounded context de Attendance gestiona todo el ciclo de registro y control de la asistencia de los estudiantes. Es un contexto core del dominio educativo, ya que brinda a los profesores la capacidad de monitorear, registrar y consultar la asistencia de manera estructurada y confiable.
-
-#### 4.2.4.1. Domain Layer
-
-En esta sección se describen los elementos del Domain Layer del contexto de Attendance, que encapsulan las reglas y lógica del dominio relacionadas con la gestión de asistencias.
-<hr>  
-
-1.**`ClassAttendance` (Aggregate Root)**
-
-Representa la asistencia de todos los estudiantes de una sesión de clase.  
-
-**Atributos principales:**
-
-| Atributo         | Tipo                    | Visibilidad | Descripción                                                     |
-|------------------|-------------------------|-------------|-----------------------------------------------------------------|
-| `id`             | `Long`                  | `private`   | Identificador único de la asistencia de una sesión de clase     |
-| `classSessionId` | `ClassSessionId`        | `private`   | Identificador único de una sesión de clase                      |
-| `date`           | `LocalDate`             | `private`   | Fecha en la que fue tomada la asistencia de una sesión de clase |
-| `attendances`    | `List<AttendanceRecord` | `private`   | Lista de asistencia  de cada estudiante                         |
-| `academyId`      | `AcademyId`             | `private`   | Identificador único de la academia                              |
 
 **Métodos principales:**
-
-| Método                                                   | Tipo de retorno | Visibilidad    | Descripción                                                                          |
-|----------------------------------------------------------|-----------------|----------------|--------------------------------------------------------------------------------------|
-| `ClassAttendance()`                                      | `Constructor `  | `protected   ` | Constructor protegido para uso por el repositorio.                                   |
-| `ClassAttendance(CreateClassAttendanceCommand command)`  | `Constructor`   | `public`       | Constructor que inicializa la asistencia de una sesión de clase mediante un comando  |
-
-2.**`AttendanceRecord` (Entity)**  
-
-Representa la asistencia de un solo estudiante.
-
-| Atributo     | Tipo         | Visibilidad | Descripción                                            |
-|--------------|--------------|-------------|--------------------------------------------------------|
-| `id`         | `Long`       | `private`   | Identificador único de una asistencia de un estudiante | 
-| `studentId`  | `StudentId`  | `private`   | Identificador único de un estudiante.                  |
-
-**Métodos principales:**
-
-| Método                                     | Tipo de retorno | Visibilidad | Descripción                                      |
-|--------------------------------------------|-----------------|-------------|--------------------------------------------------|
-| `changeStatus(AttendanceStatus newStatus)` | `void`          | `public`    | Cambia el status de asistencia de un estudiante  |
-
-3.**`AttendanceStatus` (Value object)**
-
-| Atributo     | Tipo    | Visibilidad | Descripción                        |
-|--------------|---------|-------------|------------------------------------|
-| `PRESENT`    | `Enum`  | `public`    | Estudiante presente en la clase    |
-| `ABSENT`     | `Enum`  | `public`    | Estudiante ausente en la clase     |
-| `EXCUSED`    | `Enum`  | `public`    | Estudiante con falta justificada   |
-
-
-
-4.**`ClassSessionId` (Value object)**
-
-| Atributo | Tipo   | Visibilidad | Descripción                                |
-|----------|--------|-------------|--------------------------------------------|
-| `id`     | `Long` | `public`    | Identificador único de una sesión de clase |
-
-5.**`ClassAttendanceCommandService` (Domain Service)**
-#### 4.2.3.2. Interface Layer
-
-| Atributo                                           | Tipo                         | Visibilidad | Descripción                                                                |
-|----------------------------------------------------|------------------------------|-------------|----------------------------------------------------------------------------|
-| `handle (CreateClassAttendanceCommand command)`    | `Optional<ClassAttendance>`  | `public`    | Crea un nuevo registro de asistencia de una clase a partir de un comando.  |
-1. **`EnrollmentsController` (REST Controller)**
-
-6.**`ClassAttendanceQueryService` (Domain Service)**
-
-| Atributo                                                               | Tipo                         | Visibilidad | Descripción                                                                       |
-|------------------------------------------------------------------------|------------------------------|-------------|-----------------------------------------------------------------------------------|
-| `handle(GetAttendanceRecordsByStudentIdCourseAndDateRangeQuery query)` | `Optional<AttendanceRecord>` | `public`    | Obtiene todas las asistencias por ID del estudiante, curso en un rango de fechas. |
-
-
-
-#### 4.2.4.2. Interface Layer
-
-1.**`ClassAttendanceController` (REST controller)**  
-Controlador REST que expone endpoints para registrar asistencia o obtenerlas.
-
-**Endpoints Principales:**
-
-| Nombre del método       | Ruta base típica                    | Método HTTP | Descripción                                                                                         |
-|-------------------------|-------------------------------------|-------------|-----------------------------------------------------------------------------------------------------|
-| `CreateClassAttendance` | `/api/v1/class-attendances`         | `POST`      | Crea un nuevo registro de asistencia de una clase                                                   |
-| `getAttendanceReport`   | `/api/v1/class-attendances/report`  | `GET`       | Obtiene el registro de asistencia de un estudiante según ID del estudiante, curso y rango de fechas |
-
-
-#### 4.2.4.3. Application Layer
-
-1.**`ClassAttendanceCommandServiceImpl` (Command Service Implementation)**  
-Implementación del servicio de comandos para gestionar asistencias de una clase.
-
-**Atributos principales**  
-
-| Atributo                     | Tipo                         | Visibilidad | Descripción                                              |
-|------------------------------|------------------------------|-------------|----------------------------------------------------------|
-| `classAttendanceRepository`  | `ClassAttendanceRepository`  | `private`   | Repositorio para acceder a las asistencias de una clase  |
-
-**Métodos principales**
-
-| Nombre del método                                 | Tipo                        | Visibilidad | Descripción                                                                 |
-|---------------------------------------------------|-----------------------------|-------------|-----------------------------------------------------------------------------|
-| `handle (CreateClassAttendanceCommand command)`   | `Optional<ClassAttendance>` | `public`    | Maneja el comando para crear un nuevo registro de asistencia de una clase   |
-
-
-2.**`ClassAttendanceQueryServiceImpl` (Query Service Implementation)**  
-Implementación del servicio de consultas para obtener asistencias de una clase.
-
-**Atributos principales**
-
-| Atributo                     | Tipo                         | Visibilidad | Descripción                                              |
-|------------------------------|------------------------------|-------------|----------------------------------------------------------|
-| `classAttendanceRepository`  | `ClassAttendanceRepository`  | `private`   | Repositorio para acceder a las asistencias de una clase  |
-
-**Métodos principales**
-
-| Nombre del método                                                     | Tipo                    | Visibilidad | Descripción                                                                                                           |
-|-----------------------------------------------------------------------|-------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------|
-| `handle(GetAttendanceRecordsByStudentIdCourseAndDateRangeQuery query` | `List<ClassAttendance>` | `public`    | Maneja la consulta para obtener registros de asistencia de una clase según ID del estudiante, curso y rango de fechas |
-
-
-#### 4.2.4.4. Infrastructure Layer
-
-1.**`ClassAttendanceRepository` (Repository Interface)**  
-Interfaz del repositorio para acceder a los registros de asistencia de una sesión de clase.
-
-
-**Métodos principales**
-
-| Nombre del método                                                                          | Tipo de Retorno          | Visibilidad | Descripción                                                           |
-|--------------------------------------------------------------------------------------------|--------------------------|-------------|-----------------------------------------------------------------------|
-| `findByCourseIdAndDateBetween(CourseId courseId, LocalDate startDate, LocalDate endDate)`  | `List<ClassAttendance>`  | `public`    | Obtiene todas las asistencias por ID del course y un rango de fechas  |
-
-
-
-#### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
-
-En esta sección se presentan los diagramas de nivel componente que ilustran la arquitectura de software del contexto de Attendance. Se muestra la interacción entre los diferentes componentes, servicios y capas que conforman este bounded context. Se integra con la base de datos relacional definida en el diagrama de contenedores.  
-
-![Diagrama de Componentes del Contexto de Attendance](./assets/diagrams/software-architecture/components/out/attendance-component-level-diagram.png)  
-
-Además, se incluye el [código fuente del diagrama de componentes de Attendance](./assets/diagrams/software-architecture/components/src/attendance-component-level-diagram.dsl)
-
-#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
-
-En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de Attendance. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
-
-#### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
-
-El diagrama de clases del Domain Layer del contexto de Attendance ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
-
-![Diagrama de Componentes del Contexto de Attendance](./assets/diagrams/uml/class/out/attendance-domain-layer-class-diagram.png)  
-
-Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Attendance](./assets/diagrams/uml/class/src/attendance-domain-layer-class-diagram.puml).
-
-#### 4.2.4.6.2. Bounded Context Database Design Diagram
-
-El diagrama de diseño de base de datos del contexto de Attendance muestra la estructura de las tablas y sus relaciones en la base de datos relacional. Se detallan las tablas principales, sus columnas, tipos de datos y claves primarias/foráneas que permiten gestionar la información relacionada con las asistencias de una clase.
-
-**Métodos principales:**
-
-![Diagrama de Diseño de Base de Datos del Contexto de Attendance](./assets/diagrams/database/erd/out/attendance-database-diagram.png)
 
 | Método                                          | Tipo de Retorno | Visibilidad | Descripción                                                       |
 |-------------------------------------------------|-----------------|-------------|-------------------------------------------------------------------|
 | `Transaction()`                                 | `Constructor`   | `protected` | Constructor protegido para uso por el repositorio.                |
 | `Transaction(CreateTransactionCommand command)` | `Constructor`   | `public`    | Constructor que inicializa la transacción a partir de un comando. |
 | `getDetails()`                                  | `String`        | `public`    | Obtiene los detalles completos de la transacción.                 |
-Además, se incluye el [esquema SQL del diagrama de base de datos de Attendance](./assets/diagrams/database/schema/src/attendance-database-diagram-create.sql).
 
 ---
-Controlador REST que expone endpoints para gestionar matrículas.
 
 2. **`Report` (Aggregate Root)**
-**Endpoints principales:**
 
 Representa un reporte financiero generado para la academia.
-| Nombre del método            | Ruta base típica                        | Método HTTP | Descripción                                                        |
-| ---------------------------- | --------------------------------------- | ----------- | ------------------------------------------------------------------ |
-| `createEnrollment`           | `/api/v1/enrollments`                   | `POST`      | Crea una nueva matrícula.                                          |
-| `getAllEnrollments`          | `/api/v1/enrollments`                   | `GET`       | Obtiene la lista completa de matrículas.                           |
-| `getEnrollmentById`          | `/api/v1/enrollments/{id}`              | `GET`       | Obtiene una matrícula específica por su ID.                        |
-| `getEnrollmentsByStudentId`  | `/api/v1/enrollments/student/{id}`      | `GET`       | Obtiene todas las matrículas asociadas a un estudiante por su ID.  |
-| `getEnrollmentsByStudentDni` | `/api/v1/enrollments/student/dni/{dni}` | `GET`       | Obtiene todas las matrículas asociadas a un estudiante por su DNI. |
-| `updateEnrollment`           | `/api/v1/enrollments/{id}`              | `PUT`       | Actualiza los datos de una matrícula existente.                    |
-| `deleteEnrollment`           | `/api/v1/enrollments/{id}`              | `DELETE`    | Elimina una matrícula por su ID.                                   |
 
 **Atributos principales:**
-2. **`AcademicPeriodsController` (REST Controller)**
+
 
 | Atributo         | Tipo           | Visibilidad | Descripción                                         |
 |------------------|----------------|-------------|-----------------------------------------------------|
@@ -3796,10 +4529,8 @@ Representa un reporte financiero generado para la academia.
 | `reportPeriod`   | `ReportPeriod` | `private`   | Período cubierto por el reporte.                    |
 | `generatedDate`  | `LocalDate`    | `private`   | Fecha de generación del reporte.                    |
 | `academyId`      | `AcademyId`    | `private`   | Identificador de la academia asociada al reporte.   |
-Controlador REST que expone endpoints para gestionar períodos académicos.
 
 **Métodos principales:**
-**Endpoints principales:**
 
 | Método                                    | Tipo de Retorno | Visibilidad | Descripción                                                   |
 |-------------------------------------------|-----------------|-------------|---------------------------------------------------------------|
@@ -3809,31 +4540,12 @@ Controlador REST que expone endpoints para gestionar períodos académicos.
 | `exportToPDF()`                           | `byte[]`        | `public`    | Exporta el reporte a formato PDF.                             |
 | `exportToExcel()`                         | `byte[]`        | `public`    | Exporta el reporte a formato Excel.                           |
 | `sendToEmail(String email)`               | `void`          | `public`    | Envía el reporte por correo electrónico.                      |
-| Nombre del método       | Ruta base típica                | Método HTTP | Descripción                                            |
-| ----------------------- | ------------------------------- | ----------- | ------------------------------------------------------ |
-| `createAcademicPeriod`  | `/api/v1/academic-periods`      | `POST`      | Crea un nuevo período académico.                       |
-| `getAllAcademicPeriods` | `/api/v1/academic-periods`      | `GET`       | Obtiene la lista completa de períodos académicos.      |
-| `updateAcademicPeriod`  | `/api/v1/academic-periods/{id}` | `PUT`       | Actualiza los datos de un período académico existente. |
-| `deleteAcademicPeriod`  | `/api/v1/academic-periods/{id}` | `DELETE`    | Elimina un período académico por su ID.                |
-
----
-3. **`StudentsController` (REST Controller)**
 
 3. **`TransactionType` (Value Object)**
-Controlador REST que expone endpoints para gestionar estudiantes.
 
 Representa el tipo de transacción financiera.
-**Endpoints principales:**
 
 **Atributos principales:**
-| Nombre del método | Ruta base típica             | Método HTTP | Descripción                                           |
-| ----------------- | ---------------------------- | ----------- | ----------------------------------------------------- |
-| `createStudent`   | `/api/v1/students`           | `POST`      | Crea un nuevo estudiante.                             |
-| `getAllStudents`  | `/api/v1/students`           | `GET`       | Obtiene la lista completa de estudiantes registrados. |
-| `getStudentById`  | `/api/v1/students/{id}`      | `GET`       | Obtiene un estudiante específico por su ID.           |
-| `getStudentByDni` | `/api/v1/students/dni/{dni}` | `GET`       | Obtiene un estudiante a partir de su DNI.             |
-| `updateStudent`   | `/api/v1/students/{id}`      | `PUT`       | Actualiza la información de un estudiante existente.  |
-| `deleteStudent`   | `/api/v1/students/{id}`      | `DELETE`    | Elimina un estudiante por su ID.                      |
 
 | Atributo  | Tipo   | Visibilidad | Descripción             |
 |-----------|--------|-------------|-------------------------|
@@ -3992,7 +4704,7 @@ Proporciona métodos para consultar información relacionada con los reportes fi
 
 ---
 
-#### 4.2.7.2. Interface Layer
+#### 2.6.7.2. Interface Layer
 
 1. **`TransactionsController` (REST Controller)**
 
@@ -4025,7 +4737,7 @@ Controlador REST que expone endpoints para gestionar reportes financieros.
 
 ---
 
-#### 4.2.7.3. Application Layer
+#### 2.6.7.3. Application Layer
 
 1. **`TransactionCommandServiceImpl` (Command Service Implementation)**
 
@@ -4103,7 +4815,7 @@ Implementación del servicio de consultas para obtener información sobre report
 
 ---
 
-#### 4.2.7.4. Infrastructure Layer
+#### 2.6.7.4. Infrastructure Layer
 
 1. **`TransactionRepository` (Repository Interface)**
 
@@ -4131,7 +4843,7 @@ Interfaz del repositorio para acceder a los reportes financieros.
 
 ---
 
-#### 4.2.7.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.7.5. Bounded Context Software Architecture Component Level Diagrams
 
 En esta sección se presentan los diagramas de nivel componente que ilustran la arquitectura de software del contexto de Accounting & Finance. Se muestra la interacción entre los diferentes componentes, servicios y capas que conforman este bounded context. Se integra con la base de datos relacional definida en el diagrama de contenedores.
 
@@ -4139,11 +4851,11 @@ En esta sección se presentan los diagramas de nivel componente que ilustran la 
 
 Además, se incluye el [código fuente del diagrama de componentes de Accounting & Finance](./assets/diagrams/software-architecture/components/src/accountingfinance-component-level-diagram.dsl).
 
-#### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams
+#### 2.6.7.6. Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de Accounting & Finance. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
 
-#### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams
+#### 2.6.7.6.1. Bounded Context Domain Layer Class Diagrams
 
 El diagrama de clases del Domain Layer del contexto de Accounting & Finance ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
 
@@ -4151,684 +4863,13 @@ El diagrama de clases del Domain Layer del contexto de Accounting & Finance ilus
 
 Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Accounting & Finance](./assets/diagrams/uml/class/src/accountingfinance-domain-layer-class-diagram.puml)
 
-#### 4.2.7.6.2. Bounded Context Database Design Diagram
+#### 2.6.7.6.2. Bounded Context Database Design Diagram
 
 El diagrama de diseño de base de datos del contexto de Accounting & Finance muestra la estructura de las tablas y sus relaciones en la base de datos relacional. Se detallan las tablas principales, sus columnas, tipos de datos y claves primarias/foráneas que permiten gestionar la información relacionada con las transacciones financieras y reportes.
 
 ![Diagrama de Diseño de Base de Datos del Contexto de Accounting & Finance](./assets/diagrams/database/erd/out/accountingfinance-database-diagram.png)
 
 Además, se incluye el [esquema SQL del diagrama de base de datos de Accounting & Finance](./assets/diagrams/database/schema/src/accountingfinance-database-diagram-create.sql).
-#### 4.2.3.3. Application Layer
-
-1. **`EnrollmentCommandServiceImpl` (Command Service Implementation)**
-
-Implementación del servicio de comandos para gestionar matrículas.
-
-**Atributos principales:**
-
-| Atributo                    | Tipo                        | Visibilidad | Descripción                                                   |
-| --------------------------- | --------------------------- | ----------- | ------------------------------------------------------------- |
-| `enrollmentRepository`      | `EnrollmentRepository`      | `private`   | Repositorio para acceder y persistir matrículas.              |
-| `externalSchedulingService` | `ExternalSchedulingService` | `private`   | Servicio externo para obtener horarios semanales disponibles. |
-
-**Métodos principales:**
-
-| Método                                    | Tipo de Retorno        | Visibilidad | Descripción                                                        |
-| ----------------------------------------- |------------------------| ----------- | ------------------------------------------------------------------ |
-| `handle(CreateEnrollmentCommand command)` | `Long`                 | `public`    | Maneja el comando para crear una nueva matrícula.                  |
-| `handle(DeleteEnrollmentCommand command)` | `void`                 | `public`    | Maneja el comando para eliminar una matrícula existente.           |
-| `handle(UpdateEnrollmentCommand command)` | `Optional<Enrollment>` | `public`    | Maneja el comando para actualizar la información de una matrícula. |
-
----
-
-2. **`EnrollmentQueryServiceImpl` (Query Service Implementation)**
-
-Implementación del servicio de consultas para obtener información sobre matrículas.
-
-**Atributos principales:**
-
-| Atributo               | Tipo                   | Visibilidad | Descripción                                        |
-| ---------------------- | ---------------------- | ----------- | -------------------------------------------------- |
-| `enrollmentRepository` | `EnrollmentRepository` | `private`   | Repositorio para acceder a las matrículas.         |
-| `studentRepository`    | `StudentRepository`    | `private`   | Repositorio para acceder a estudiantes vinculados. |
-
-**Métodos principales:**
-
-| Método                                             | Tipo de Retorno        | Visibilidad | Descripción                                                           |
-| -------------------------------------------------- | ---------------------- | ----------- | --------------------------------------------------------------------- |
-| `handle(GetAllEnrollmentsByStudentIdQuery query)`  | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas de un estudiante por su ID.              |
-| `handle(GetAllEnrollmentsQuery query)`             | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas registradas en el sistema.               |
-| `handle(GetEnrollmentByIdQuery query)`             | `Optional<Enrollment>` | `public`    | Obtiene una matrícula específica por su ID.                           |
-| `handle(GetAllEnrollmentsByStudentDniQuery query)` | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas asociadas a un estudiante usando su DNI. |
-
----
-
-3. **`AcademicPeriodCommandServiceImpl` (Command Service Implementation)**
-
-Implementación del servicio de comandos para gestionar períodos académicos.
-
-**Atributos principales:**
-
-| Atributo                   | Tipo                       | Visibilidad | Descripción                                    |
-| -------------------------- | -------------------------- | ----------- | ---------------------------------------------- |
-| `academicPeriodRepository` | `AcademicPeriodRepository` | `private`   | Repositorio para acceder y persistir períodos. |
-
-**Métodos principales:**
-
-| Método                                        | Tipo de Retorno            | Visibilidad | Descripción                                                       |
-| --------------------------------------------- |----------------------------| ----------- | ----------------------------------------------------------------- |
-| `handle(CreateAcademicPeriodCommand command)` | `Long`                     | `public`    | Maneja el comando para crear un nuevo período académico.          |
-| `handle(DeleteAcademicPeriodCommand command)` | `void`                     | `public`    | Maneja el comando para eliminar un período académico existente.   |
-| `handle(UpdateAcademicPeriodCommand command)` | `Optional<AcademicPeriod>` | `public`    | Maneja el comando para actualizar un período académico existente. |
-
----
-
-4. **`AcademicPeriodQueryServiceImpl` (Query Service Implementation)**
-
-Implementación del servicio de consultas para obtener información sobre períodos académicos.
-
-**Atributos principales:**
-
-| Atributo                   | Tipo                       | Visibilidad | Descripción                                         |
-| -------------------------- | -------------------------- | ----------- | --------------------------------------------------- |
-| `academicPeriodRepository` | `AcademicPeriodRepository` | `private`   | Repositorio para acceder a los períodos académicos. |
-
-**Métodos principales:**
-
-| Método                                     | Tipo de Retorno            | Visibilidad | Descripción                                        |
-| ------------------------------------------ | -------------------------- | ----------- | -------------------------------------------------- |
-| `handle(GetAllAcademicPeriodsQuery query)` | `List<AcademicPeriod>`     | `public`    | Obtiene todos los períodos académicos registrados. |
-| `handle(GetAcademicPeriodByIdQuery query)` | `Optional<AcademicPeriod>` | `public`    | Obtiene un período académico específico por su ID. |
-
----
-
-5. **`StudentCommandServiceImpl` (Command Service Implementation)**
-
-Implementación del servicio de comandos para gestionar estudiantes.
-
-**Atributos principales:**
-
-| Atributo            | Tipo                | Visibilidad | Descripción                                       |
-| ------------------- | ------------------- | ----------- | ------------------------------------------------- |
-| `studentRepository` | `StudentRepository` | `private`   | Repositorio para acceder y persistir estudiantes. |
-
-**Métodos principales:**
-
-| Método                                 | Tipo de Retorno     | Visibilidad | Descripción                                                        |
-| -------------------------------------- | ------------------- | ----------- | ------------------------------------------------------------------ |
-| `handle(CreateStudentCommand command)` | `Long`              | `public`    | Maneja el comando para crear un nuevo estudiante.                  |
-| `handle(DeleteStudentCommand command)` | `void`              | `public`    | Maneja el comando para eliminar un estudiante existente.           |
-| `handle(UpdateStudentCommand command)` | `Optional<Student>` | `public`    | Maneja el comando para actualizar la información de un estudiante. |
-
----
-
-6. **`StudentQueryServiceImpl` (Query Service Implementation)**
-
-Implementación del servicio de consultas para obtener información sobre estudiantes.
-
-**Atributos principales:**
-
-| Atributo            | Tipo                | Visibilidad | Descripción                                 |
-| ------------------- | ------------------- | ----------- | ------------------------------------------- |
-| `studentRepository` | `StudentRepository` | `private`   | Repositorio para acceder a los estudiantes. |
-
-**Métodos principales:**
-
-| Método                               | Tipo de Retorno     | Visibilidad | Descripción                                            |
-| ------------------------------------ | ------------------- | ----------- | ------------------------------------------------------ |
-| `handle(GetStudentByIdQuery query)`  | `Optional<Student>` | `public`    | Obtiene un estudiante específico por su ID.            |
-| `handle(GetAllStudentsQuery query)`  | `List<Student>`     | `public`    | Obtiene la lista de todos los estudiantes registrados. |
-| `handle(GetStudentByDniQuery query)` | `Optional<Student>` | `public`    | Obtiene un estudiante a partir de su DNI.              |
-
-#### 4.2.3.4. Infrastructure Layer
-
-1. **`EnrollmentRepository` (Repository Interface)**
-
-Interfaz del repositorio para acceder y gestionar matrículas.
-
-**Métodos principales:**
-
-| Método                                                                       | Tipo de Retorno        | Visibilidad | Descripción                                                              |
-| ---------------------------------------------------------------------------- | ---------------------- | ----------- | ------------------------------------------------------------------------ |
-| `findAllByStudentId(StudentId studentId)`                                    | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas asociadas a un estudiante por su ID.        |
-| `findAllByAcademicPeriodId(PeriodId periodId)`                               | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas registradas en un período académico.        |
-| `findByStudentIdAndAcademicPeriodId(StudentId studentId, PeriodId periodId)` | `Optional<Enrollment>` | `public`    | Busca una matrícula específica por ID de estudiante y período académico. |
-
----
-2. **`AcademicPeriodRepository` (Repository Interface)**
-
-Interfaz del repositorio para acceder y gestionar períodos académicos.
-
-**Métodos principales:**
-
-| Método                                                     | Tipo de Retorno            | Visibilidad | Descripción                                                                  |
-| ---------------------------------------------------------- | -------------------------- | ----------- | ---------------------------------------------------------------------------- |
-| `existsByPeriodName(String periodName)`                    | `boolean`                  | `public`    | Verifica si existe un período académico con el nombre especificado.          |
-| `findByPeriodName(String periodName)`                      | `Optional<AcademicPeriod>` | `public`    | Busca un período académico por su nombre.                                    |
-| `existsByPeriodNameAndIdIsNot(String periodName, Long id)` | `boolean`                  | `public`    | Verifica si existe otro período académico con el mismo nombre y distinto ID. |
-
----
-
-3. **`StudentRepository` (Repository Interface)**
-
-Interfaz del repositorio para acceder y gestionar estudiantes.
-
-**Métodos principales:**
-
-| Método                               | Tipo de Retorno     | Visibilidad | Descripción                                                           |
-| ------------------------------------ | ------------------- | ----------- | --------------------------------------------------------------------- |
-| `existsStudentByDni_Dni(String dni)` | `boolean`           | `public`    | Verifica si existe un estudiante registrado con el DNI proporcionado. |
-| `findByDni_Dni(String dni)`          | `Optional<Student>` | `public`    | Busca un estudiante específico a partir de su DNI.                    |
-
-
-#### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
-
-El Component Diagram muestra la arquitectura interna del bounded context Enrollment, detallando cómo se organizan e interactúan entre las capas de application, domain, infrastructure y interfaces.
-
-![Component Diagram](assets/diagrams/software-architecture/components/out/enrollment_software_architecture_component_diagram.png)
-
-#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
-
-En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de Enrollment. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
-
-#### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
-
-El diagrama de clases del Domain Layer del contexto de Enrollment ilustra las entities, value objects y services que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
-
-![Diagrama de Clases del Domain Layer del Contexto de Enrollment](assets/diagrams/uml/class/out/enrollment-domain-layer-class-diagram.png)
-
-#### 4.2.3.6.2. Bounded Context Database Design Diagram
-
-El diagrama de base de datos del contexto Enrollment muestra las tablas y relaciones que persisten los aggregates del dominio.
-
-![Diagrama de base de datos del bounded context Enrollment](assets/diagrams/database/erd/out/enrollment-database-diagram.png)
-
-### 4.2.5. Bounded Context: Scheduling
-
-#### 4.2.5.1. Domain Layer
-
-En esta sección se describen los elementos del Domain Layer del contexto de Scheduling, que encapsulan las reglas y lógica del dominio relacionadas con la programación de cursos, aulas y sesiones de clase.
-
----
-
-1. **`Schedule` (Aggregate Root)**
-
-Representa un horario académico que contiene múltiples sesiones de clase.
-
-**Atributos principales:**
-
-| Atributo        | Tipo                | Visibilidad   | Descripción                                                          |
-|-----------------|---------------------|---------------|----------------------------------------------------------------------|
-| `id`            | `Long`              | `private`     | Identificador único del horario.                                     |
-| `name`          | `String`            | `private`     | Nombre del horario.                                                  |
-| `academyId`     | `AcademyId`         | `private`     | Identificador de la academia asociada.                               |
-| `classSessions` | `Set<ClassSession>` | `private`     | Conjunto de sesiones de clase que forman parte del horario semanal.  |
-
-**Métodos principales:**
-
-| Método                                  | Tipo de Retorno | Visibilidad | Descripción                                                |
-|-----------------------------------------|-----------------|-------------|------------------------------------------------------------|
-| `Schedule()`                            | `Constructor`   | `protected` | Constructor protegido para uso por el repositorio.         |
-| `addClassSession(ClassSession session)` | `void`          | `public`    | Agrega una nueva sesión de clase al horario.               |
-| `removeClassSession(Long sessionId)`    | `void`          | `public`    | Elimina una sesión de clase del horario.                   |
-| `validateConflicts(): boolean`          | `boolean`       | `public`    | Verifica si hay conflictos de horarios entre las sesiones. |
-| `updateName(String name)`               | `void`          | `public`    | Actualiza el nombre del horario de clase.                  |
-
----
-
-2. **`Course` (Aggregate Root)**
-
-Representa un curso académico que puede tener múltiples sesiones de clase.
-
-**Atributos principales:**
-
-| Atributo      | Tipo         | Visibilidad | Descripción                            |
-|---------------|--------------|-------------|----------------------------------------|
-| `id`          | `Long`       | `private`   | Identificador único del curso.         |
-| `name`        | `String`     | `private`   | Nombre del curso.                      |
-| `courseCode`  | `CourseCode` | `private`   | Código único del curso.                |
-| `description` | `String`     | `private`   | Descripción del curso.                 |
-| `academyId`   | `AcademyId`  | `private`   | Identificador de la academia asociada. |
-
-**Métodos principales:**
-
-| Método                                                         | Tipo de Retorno | Visibilidad | Descripción                                        |
-|----------------------------------------------------------------|-----------------|-------------|----------------------------------------------------|
-| `Course()`                                                     | `Constructor`   | `protected` | Constructor protegido para uso por el repositorio. |
-| `updateCourse(String name, String code, String description)`   | `Course`        | `public`    | Actualiza los campos del curso correspondiente.    |
-
----
-
-
-3. **`Classroom` (Aggregate Root)**
-
-Representa un aula disponible para la programación de sesiones.
-
-**Atributos principales:**
-
-| Atributo       | Tipo          | Visibilidad | Descripción                       |
-|---------------|---------------|-------------|-----------------------------------|
-| `id`           | `Long`       | `private`   | Identificador único del aula.     |
-| `classroomCode`| `ClassroomCode` | `private` | Código del aula.                  |
-| `capacity`     | `Integer`    | `private`   | Capacidad máxima de estudiantes. |
-| `campus`       | `String`     | `private`   | Campus donde se ubica el aula.   |
-| `academyId`    | `AcademyId`  | `private`   | Identificador de la academia asociada.|
-
-**Métodos principales:**
-
-| Método                                                                   | Tipo de Retorno   | Visibilidad | Descripción                                              |
-|--------------------------------------------------------------------------|-------------------|-------------|----------------------------------------------------------|
-| `Classroom()`                                                            | `Constructor`     | `protected` | Constructor protegido para uso por el repositorio.       |
-| `updateClassroom(String classroomCode, Integer capacity, String campus)` | `Classroom`       | `public`    | Actualiza los campos del salon de clase correspondiente. |
-
----
-
-
-4. **`ClassSession` (Entity)**
-
-Representa una sesión de clase programada.
-
-**Atributos principales:**
-
-| Atributo       | Tipo           | Visibilidad | Descripción                               |
-|----------------|----------------|-------------|-------------------------------------------|
-| `id`           | `Long`         | `private`   | Identificador único de la sesión.         |
-| `courseId`     | `CourseId`     | `private`   | Referencia al curso asociado.             |
-| `classroomId`  | `ClassroomId`  | `private`   | Referencia al aula donde se dicta.        |
-| `teacherId`    | `TeacherId`    | `private`   | Identificador del docente asignado.       |
-| `dayOfWeek`    | `DayOfWeek`    | `private`   | Día de la semana en que ocurre la sesión. |
-| `timeRange`    | `TimeRange`    | `private`   | Intervalo horario de la sesión.           |
-
-**Métodos principales:**
-
-| Método            | Tipo de Retorno | Visibilidad   | Descripción                                         |
-|-------------------|-----------------|---------------|-----------------------------------------------------|
-| `ClassSession()`  | `Constructor`   | `protected`   | Constructor protegido para uso por el repositorio.  |
-
----
-
-
-5. **`DayOfWeek` (Value Object)**
-
-Representa un día de la semana.
-
-| Atributo    | Tipo   | Visibilidad | Descripción               |
-|------------|--------|-------------|---------------------------|
-| `MONDAY`    | Enum  | `public`    | Lunes                     |
-| `TUESDAY`   | Enum  | `public`    | Martes                    |
-| `WEDNESDAY` | Enum  | `public`    | Miércoles                 |
-| `THURSDAY`  | Enum  | `public`    | Jueves                    |
-| `FRIDAY`    | Enum  | `public`    | Viernes                   |
-| `SATURDAY`  | Enum  | `public`    | Sábado                    |
-| `SUNDAY`    | Enum  | `public`    | Domingo                   |
-
----
-
-6. **`TimeRange` (Value Object)**
-
-Representa un intervalo de tiempo.
-
-| Atributo    | Tipo       | Visibilidad | Descripción                    |
-|------------|------------|-------------|--------------------------------|
-| `startTime` | `LocalTime` | `private`  | Hora de inicio del intervalo.  |
-| `endTime`   | `LocalTime` | `private`  | Hora de fin del intervalo.     |
-
-**Métodos principales:**
-
-| Método                   | Tipo de Retorno | Visibilidad | Descripción                                         |
-|---------------------------|----------------|-------------|---------------------------------------------------|
-| `overlapsWith(TimeRange other)` | `boolean` | `public`    | Verifica si dos intervalos de tiempo se superponen.|
-
----
-
-7. **`ClassroomCommandService` (Domain Service)**
-
-Proporciona métodos para ejecutar comandos relacionados con la gestión de aulas.
-
-**Métodos principales:**
-
-| Método                                | Tipo de Retorno       | Visibilidad | Descripción                                     |
-|--------------------------------------|---------------------|-------------|------------------------------------------------|
-| `handle(CreateClassroomCommand command)` | `Long`             | `public`    | Crea una nueva aula y retorna su ID.           |
-| `handle(UpdateClassroomCommand command)` | `Optional<Classroom>` | `public` | Actualiza los datos de un aula existente.      |
-| `handle(DeleteClassroomCommand command)` | `void`             | `public`    | Elimina un aula existente.                     |
-
----
-
-8. **`ClassroomQueryService` (Domain Service)**
-
-Proporciona métodos para consultar información relacionada con las aulas.
-
-**Métodos principales:**
-
-| Método                           | Tipo de Retorno      | Visibilidad | Descripción                                     |
-|---------------------------------|--------------------|-------------|------------------------------------------------|
-| `handle(GetAllClassroomsQuery query)` | `List<Classroom>` | `public`    | Obtiene todas las aulas registradas.           |
-| `handle(GetClassroomByIdQuery query)` | `Optional<Classroom>` | `public` | Obtiene un aula específica por su ID.         |
-
----
-
-9. **`CourseCommandService` (Domain Service)**
-
-Proporciona métodos para ejecutar comandos relacionados con la gestión de cursos.
-
-**Métodos principales:**
-
-| Método                                | Tipo de Retorno       | Visibilidad | Descripción                                     |
-|--------------------------------------|---------------------|-------------|------------------------------------------------|
-| `handle(CreateCourseCommand command)` | `Long`              | `public`    | Crea un nuevo curso y retorna su ID.           |
-| `handle(UpdateCourseCommand command)` | `Optional<Course>`  | `public`    | Actualiza los datos de un curso existente.    |
-| `handle(DeleteCourseCommand command)` | `void`              | `public`    | Elimina un curso existente.                   |
-
----
-
-10. **`CourseQueryService` (Domain Service)**
-
-Proporciona métodos para consultar información relacionada con cursos.
-
-**Métodos principales:**
-
-| Método                               | Tipo de Retorno       | Visibilidad | Descripción                                     |
-|-------------------------------------|---------------------|-------------|------------------------------------------------|
-| `handle(GetAllCoursesQuery query)`   | `List<Course>`       | `public`    | Obtiene todos los cursos registrados.          |
-| `handle(GetCourseByIdQuery query)`   | `Optional<Course>`   | `public`    | Obtiene un curso específico por su ID.        |
-| `handle(GetCourseByCodeQuery query)` | `Optional<Course>`   | `public`    | Obtiene un curso por su código de curso.      |
-
-11. **`ScheduleCommandService` (Domain Service)**
-
-Proporciona métodos para ejecutar comandos relacionados con la gestión de horarios y sesiones.
-
-**Métodos principales:**
-
-| Método                                                  | Tipo de Retorno          | Visibilidad | Descripción                                               |
-|---------------------------------------------------------|--------------------------|-------------|-----------------------------------------------------------|
-| `handle(CreateScheduleCommand command)`                 | `Long`                   | `public`    | Crea un nuevo horario semanal y retorna su ID.            |
-| `handle(UpdateScheduleNameCommand command)`             | `Optional<Schedule>`     | `public`    | Actualiza el nombre de un horario semanal existente.      |
-| `handle(AddClassSessionToScheduleCommand command)`      | `Optional<Schedule>`     | `public`    | Agrega una sesión de clase al horario semanal.            |
-| `handle(RemoveClassSessionFromScheduleCommand command)` | `Optional<Schedule>`     | `public`    | Elimina una sesión de clase del horario semanal.          |
-| `handle(DeleteScheduleCommand command)`                 | `void`                   | `public`    | Elimina un horario semanal.                               |
-| `handle(UpdateClassSessionFromScheduleCommand command)` | `Optional<ClassSession>` | `public`    | Actualiza una sesión de clase dentro del horario semanal. |
-
----
-
-12. **`ScheduleQueryService` (Domain Service)**
-
-Proporciona métodos para consultar información relacionada con horarios y sesiones.
-
-**Métodos principales:**
-
-| Método                                       | Tipo de Retorno      | Visibilidad | Descripción                                                   |
-|----------------------------------------------|----------------------|-------------|---------------------------------------------------------------|
-| `handle(GetAllSchedulesQuery query)`         | `List<Schedule>`     | `public`    | Obtiene todos los horarios semanales registrados.             |
-| `handle(GetScheduleByIdQuery query)`         | `Optional<Schedule>` | `public`    | Obtiene un horario semanal específico por su ID.              |
-| `handle(GetScheduleByNameQuery query)`       | `Optional<Schedule>` | `public`    | Obtiene un horario semanal por su nombre.                     |
-| `handle(GetSchedulesByTeacherIdQuery query)` | `List<ClassSession>` | `public`    | Obtiene todos los horarios asignados a un docente específico. |
-
----
-
-#### 4.2.5.2. Interface Layer
-
-
-1. **`SchedulesController` (REST Controller)**
-
-Controlador REST que expone endpoints para gestionar **horarios** (Schedules) y las **sesiones de clase** (ClassSessions) asociadas.
-
-**Endpoints principales:**
-
-| Nombre del método                         | Ruta base típica                                      | Método HTTP | Descripción                                                                 |
-|-------------------------------------------|-------------------------------------------------------|-------------|-----------------------------------------------------------------------------|
-| `createSchedule`                          | `/api/v1/schedules`                                   | `POST`      | Crea un nuevo horario.                                                      |
-| `getAllSchedules`                         | `/api/v1/schedules`                                   | `GET`       | Obtiene todos los horarios registrados.                                     |
-| `getScheduleById`                         | `/api/v1/schedules/{scheduleId}`                      | `GET`       | Obtiene un horario por su ID.                                               |
-| `updateSchedule`                          | `/api/v1/schedules/{scheduleId}`                      | `PUT`       | Actualiza los datos de un horario existente.                                |
-| `deleteSchedule`                          | `/api/v1/schedules/{scheduleId}`                      | `DELETE`    | Elimina un horario existente.                                               |
-| `addClassSessionToSchedule`               | `/api/v1/schedules/{scheduleId}/sessions`             | `POST`      | Agrega una sesión de clase a un horario.                                    |
-| `removeClassSessionFromSchedule`          | `/api/v1/schedules/{scheduleId}/sessions/{sessionId}` | `DELETE`    | Elimina una sesión de clase de un horario.                                  |
-| `getSchedulesByTeacherId`                 | `/api/v1/schedules/by-teacher/{teacherId}`            | `GET`       | Obtiene todos los horarios de un docente específico.                        |
-| `updateClassSession`                      | `/api/v1/schedules/sessions/{sessionId}`              | `PUT`       | Actualiza los datos de una sesión de clase existente.                       |
-
----
-
-2. **`CoursesController` (REST Controller)**
-
-Controlador REST que expone endpoints para gestionar **cursos**.
-
-**Endpoints principales:**
-
-| Nombre del método           | Ruta base típica                   | Método HTTP | Descripción                                             |
-|-----------------------------|------------------------------------|-------------|---------------------------------------------------------|
-| `createCourse`              | `/api/v1/courses`                 | `POST`      | Crea un nuevo curso.                                    |
-| `getAllCourses`             | `/api/v1/courses`                 | `GET`       | Obtiene todos los cursos registrados.                   |
-| `getCourseById`             | `/api/v1/courses/{courseId}`      | `GET`       | Obtiene un curso por su ID.                             |
-| `updateCourse`              | `/api/v1/courses/{courseId}`      | `PUT`       | Actualiza los datos de un curso existente.              |
-| `deleteCourse`              | `/api/v1/courses/{courseId}`      | `DELETE`    | Elimina un curso existente.                             |
-
----
-
-3. **`ClassroomsController` (REST Controller)**
-
-Controlador REST que expone endpoints para gestionar **aulas**.
-
-**Endpoints principales:**
-
-| Nombre del método           | Ruta base típica                      | Método HTTP | Descripción                                             |
-|-----------------------------|---------------------------------------|-------------|---------------------------------------------------------|
-| `createClassroom`           | `/api/v1/classrooms`                 | `POST`      | Crea una nueva aula.                                    |
-| `getAllClassrooms`          | `/api/v1/classrooms`                 | `GET`       | Obtiene todas las aulas registradas.                    |
-| `getClassroomById`          | `/api/v1/classrooms/{classroomId}`   | `GET`       | Obtiene un aula por su ID.                              |
-| `updateClassroom`           | `/api/v1/classrooms/{classroomId}`   | `PUT`       | Actualiza los datos de un aula existente.               |
-| `deleteClassroom`           | `/api/v1/classrooms/{classroomId}`   | `DELETE`    | Elimina un aula existente.                              |
-
----
-
-#### 4.2.5.3. Application Layer
-
-
-1. **`ClassroomCommandServiceImpl` (Command Service Implementation)**
-
-Implementación del servicio de comandos para gestionar aulas.
-
-**Atributos principales:**
-
-| Atributo                | Tipo                    | Visibilidad | Descripción                                      |
-|-------------------------|-------------------------|-------------|--------------------------------------------------|
-| `classroomRepository`   | `ClassroomRepository`   | `private`   | Repositorio para acceder y gestionar aulas.      |
-
-**Métodos principales:**
-
-| Método                                         | Tipo de Retorno        | Visibilidad  | Descripción                                           |
-|------------------------------------------------|------------------------|--------------|-------------------------------------------------------|
-| `handle(CreateClassroomCommand command)`       | `Long`                 | `public`     | Crea una nueva aula y devuelve su ID.                 |
-| `handle(UpdateClassroomCommand command)`       | `Optional<Classroom>`  | `public`     | Actualiza una aula existente.                         |
-| `handle(DeleteClassroomCommand command)`       | `void`                 | `public`     | Elimina una aula existente.                           |
-
----
-
-2. **`CourseCommandServiceImpl` (Command Service Implementation)**
-
-Implementación del servicio de comandos para gestionar cursos.
-
-**Atributos principales:**
-
-| Atributo              | Tipo                 | Visibilidad  | Descripción                                   |
-|-----------------------|----------------------|--------------|-----------------------------------------------|
-| `courseRepository`    | `CourseRepository`   | `private`    | Repositorio para acceder y gestionar cursos.  |
-
-**Métodos principales:**
-
-| Método                                   | Tipo de Retorno     | Visibilidad | Descripción                              |
-|------------------------------------------|---------------------|-------------|------------------------------------------|
-| `handle(CreateCourseCommand command)`    | `Long`              | `public`    | Crea un curso nuevo y devuelve su ID.    |
-| `handle(UpdateCourseCommand command)`    | `Optional<Course>`  | `public`    | Actualiza los datos de un curso.         |
-| `handle(DeleteCourseCommand command)`    | `void`              | `public`    | Elimina un curso existente.              |
-
----
-
-3. **`ScheduleCommandServiceImpl` (Command Service Implementation)**
-
-Implementación del servicio de comandos para gestionar horarios semanales y sesiones de clase.
-
-**Atributos principales:**
-
-| Atributo                    | Tipo                       | Visibilidad | Descripción                                                        |
-|-----------------------------|---------------------------|-------------|--------------------------------------------------------------------|
-| `scheduleRepository`        | `ScheduleRepository`      | `private`   | Repositorio para acceder y gestionar horarios semanales.           |
-| `scheduleRepository`        | `ClassSessionRepository`  | `private`   | Repositorio para acceder y gestionar sesiones de clase.           |
-| `externalIamService`        | `ExternalIamService`      | `private`   | Servicio externo para validar docentes.                           |
-
-**Métodos principales:**
-
-| Método                                                    | Tipo de Retorno          | Visibilidad | Descripción                                                     |
-|-----------------------------------------------------------|--------------------------|-------------|-----------------------------------------------------------------|
-| `handle(CreateScheduleCommand command)`                   | `Long`                   | `public`    | Crea un nuevo horario semanal.                                  |
-| `handle(UpdateScheduleNameCommand command)`               | `Optional<Schedule>`     | `public`    | Actualiza el nombre de un horario semanal.                      |
-| `handle(AddClassSessionToScheduleCommand command)`        | `Optional<Schedule>`     | `public`    | Agrega una sesión de clase a un horario semanal.                |
-| `handle(RemoveClassSessionFromScheduleCommand command)`   | `Optional<Schedule>`     | `public`    | Elimina una sesión de clase de un horario semanal.              |
-| `handle(DeleteScheduleCommand command)`                   | `void`                   | `public`    | Elimina un horario semanal.                                     |
-| `handle(UpdateClassSessionCommand command)`               | `Optional<ClassSession>` | `public`    | Actualiza los datos de una sesión de clase.                     |
-
----
-
-4. **`ClassroomQueryServiceImpl` (Query Service Implementation)**
-
-Implementación del servicio de consultas para aulas.
-
-**Atributos principales:**
-
-| Atributo                | Tipo                    | Visibilidad | Descripción                                      |
-|-------------------------|-------------------------|-------------|--------------------------------------------------|
-| `classroomRepository`   | `ClassroomRepository`   | `private`   | Repositorio para acceder a las aulas.            |
-
-**Métodos principales:**
-
-| Método                                     | Tipo de Retorno         | Visibilidad | Descripción                                    |
-|--------------------------------------------|-------------------------|-------------|------------------------------------------------|
-| `handle(GetAllClassroomsQuery query)`      | `List<Classroom>`       | `public`    | Obtiene todas las aulas registradas.           |
-| `handle(GetClassroomByIdQuery query)`      | `Optional<Classroom>`   | `public`    | Obtiene un aula por su ID.                     |
-
----
-
-5. **`CourseQueryServiceImpl` (Query Service Implementation)**
-
-Implementación del servicio de consultas para cursos.
-
-**Atributos principales:**
-
-| Atributo              | Tipo                | Visibilidad | Descripción                                 |
-|-----------------------|---------------------|-------------|---------------------------------------------|
-| `courseRepository`    | `CourseRepository`  | `private`   | Repositorio para acceder a los cursos.      |
-
-**Métodos principales:**
-
-| Método                                  | Tipo de Retorno      | Visibilidad | Descripción                           |
-|-----------------------------------------|----------------------|-------------|---------------------------------------|
-| `handle(GetAllCoursesQuery query)`      | `List<Course>`       | `public`    | Obtiene todos los cursos registrados. |
-| `handle(GetCourseByIdQuery query)`      | `Optional<Course>`   | `public`    | Obtiene un curso por su ID.           |
-
----
-
-6. **`ScheduleQueryServiceImpl` (Query Service Implementation)**
-
-Implementación del servicio de consultas para horarios semanales y sesiones de clase.
-
-**Atributos principales:**
-
-| Atributo                    | Tipo                        | Visibilidad  | Descripción                                              |
-|-----------------------------|-----------------------------|--------------|----------------------------------------------------------|
-| `scheduleRepository`        | `ScheduleRepository`        | `private`    | Repositorio para acceder a los horarios semanales.       |
-| `classSessionRepository`    | `ClassSessionRepository`    | `private`    | Repositorio para acceder a las sesiones de clase.        |
-
-**Métodos principales:**
-
-| Método                                            | Tipo de Retorno        | Visibilidad | Descripción                                        |
-|---------------------------------------------------|------------------------|-------------|----------------------------------------------------|
-| `handle(GetAllSchedulesQuery query)`              | `List<Schedule>`       | `public`    | Obtiene todos los horarios semanales.              |
-| `handle(GetScheduleByIdQuery query)`              | `Optional<Schedule>`   | `public`    | Obtiene un horario semanal por su ID.              |
-| `handle(GetScheduleByNameQuery query)`            | `Optional<Schedule>`   | `public`    | Obtiene un horario semanal por su nombre.          |
-| `handle(GetClassSessionsByTeacherIdQuery query)`  | `List<ClassSession>`   | `public`    | Obtiene todas las sesiones de clase de un docente. |
-
-#### 4.2.5.4. Infrastructure Layer
-
-1. **`ScheduleRepository` (Repository Interface)**
-
-Interfaz del repositorio para acceder a los horarios semanales (schedules).
-
-**Métodos principales:**
-
-| Método                                       | Tipo de Retorno      | Visibilidad | Descripción                                                                              |
-|----------------------------------------------|----------------------|-------------|------------------------------------------------------------------------------------------|
-| `findByName(String name)`                    | `Optional<Schedule>` | `public`    | Busca un horario semanal por su nombre único.                                            |
-| `existsByName(String name)`                  | `boolean`            | `public`    | Verifica si existe un horario semanal con el nombre especificado.                        |
-| `existsByNameAndIdNot(String name, Long id)` | `boolean`            | `public`    | Verifica si existe un horario semanal con el nombre dado, excluyendo el ID especificado. |
-
----
-
-2. **`ClassSessionRepository` (Repository Interface)**
-
-Interfaz del repositorio para acceder a las sesiones de clase (class sessions).
-
-**Métodos principales:**
-
-| Método                                 | Tipo de Retorno           | Visibilidad | Descripción                                                                 |
-|----------------------------------------|---------------------------|-------------|-----------------------------------------------------------------------------|
-| `findByTeacherId(UserId teacherId)`    | `List<ClassSession>`      | `public`    | Busca todas las sesiones de clase asignadas a un profesor específico.       |
-
----
-
-3. **`CourseRepository` (Repository Interface)**
-
-Interfaz del repositorio para gestionar cursos.
-
-**Métodos principales:**
-
-| Método                                              | Tipo de Retorno | Visibilidad | Descripción                                                                           |
-|-----------------------------------------------------|-----------------|-------------|---------------------------------------------------------------------------------------|
-| `existsByName(String name)`                         | `boolean`       | `public`    | Verifica si existe un curso con el nombre especificado.                               |
-| `existsByNameAndIdNot(String name, Long id)`        | `boolean`       | `public`    | Verifica si existe un curso con el nombre dado, excluyendo el ID especificado.        |
-
----
-
-4. **`ClassroomRepository` (Repository Interface)**
-
-Interfaz del repositorio para gestionar aulas.
-
-**Métodos principales:**
-
-| Método                                              | Tipo de Retorno | Visibilidad | Descripción                                                                        |
-|-----------------------------------------------------|-----------------|-------------|------------------------------------------------------------------------------------|
-| `existsByCode(String code)`                         | `boolean`       | `public`    | Verifica si existe un aula con el código especificado.                             |
-| `existsByCodeAndIdNot(String code, Long id)`        | `boolean`       | `public`    | Verifica si existe un aula con el código dado, excluyendo el ID especificado.      |
-
-#### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
-
-En esta sección se presentan los diagramas de nivel componente que ilustran la arquitectura de software del contexto de **Scheduling**. Se muestra la interacción entre los diferentes componentes, servicios y capas que conforman este bounded context. Se integra con la base de datos relacional definida en el diagrama de contenedores.
-
-![Diagrama de Componentes del Contexto de Scheduling](./assets/diagrams/software-architecture/components/out/scheduling-component-level-diagram.png)
-
-Además, se incluye el [código fuente del diagrama de componentes de Scheduling](./assets/diagrams/software-architecture/components/src/scheduling-component-level-diagram.dsl).
-
-#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
-
-En esta sección se presentan los diagramas de nivel código que detallan la estructura interna del contexto de **Scheduling**. Se incluyen diagramas de clases y diseño de base de datos que reflejan cómo se implementan los elementos del dominio y cómo se gestionan las relaciones entre ellos.
-
-
-#### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
-
-
-El diagrama de clases del **Domain Layer** del contexto de Scheduling ilustra las entidades, objetos de valor y servicios que componen este bounded context. Se muestran las relaciones entre los diferentes elementos del dominio, así como sus atributos y métodos principales.
-
-![Diagrama de Clases del Domain Layer del Contexto de Scheduling](./assets/diagrams/uml/class/out/scheduling-domain-layer-class-diagram.png)
-
-Además, se incluye el [código fuente del diagrama de clases del Domain Layer de Scheduling](./assets/diagrams/uml/class/src/scheduling-domain-layer-class-diagram.puml).
-
-
-#### 4.2.5.6.2. Bounded Context Database Design Diagram
-
-El diagrama de diseño de base de datos del contexto de Scheduling muestra la estructura de las tablas y sus relaciones en la base de datos relacional. Se detallan las tablas principales, sus columnas, tipos de datos y claves primarias/foráneas que permiten gestionar la información relacionada con la programación de horarios académicos, la asignación de cursos, el uso de aulas y las sesiones de clase.
-
-![Diagrama de Diseño de Base de Datos del Contexto de Scheduling](./assets/diagrams/database/erd/out/scheduling-database-diagram.png)
-
-Además, se incluye el [esquema SQL del diagrama de base de datos de Scheduling](./assets/diagrams/database/schema/src/scheduling-database-diagram-create.sql).
 
 ## Conclusiones y Recomendaciones
 
@@ -4874,7 +4915,6 @@ Ministerio de Educación del Perú. (2021). Encuesta Nacional de Estudiantes de 
 
 Naranjo, J. E., Alban, J. S., Balseca, M. S., Bustamante Villagómez, D. F., Mancheno Falconi, M. G., & Garcia, M. V. (2025). Enhancing institutional sustainability through process optimization: A hybrid approach using FMEA and machine learning. Sustainability, 17(4), Artículo e1357. https://doi.org/10.3390/su17041357
 
-# Anexos
 # Anexos
 
 En esta sección se incluyen materiales adicionales que complementan el contenido del informe principal. Se proporciona información detallada sobre aspectos que no se abordaron en profundidad en las secciones anteriores, pero que son relevantes para una comprensión completa del proyecto.
