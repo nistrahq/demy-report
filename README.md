@@ -137,7 +137,7 @@ Análisis de cantidad de commits realizados por semana.
 
 # Contenido
 
-- [Capítulo I: Introducción](#capítulo-i-introducción)
+- [Capítulo I: Presentación](#capítulo-i-presentación)
     - [1.1. Startup Profile](#11-startup-profile)
         - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
         - [1.1.2. Perfiles de los integrantes del equipo](#112-perfiles-de-los-integrantes-del-equipo)
@@ -308,7 +308,7 @@ Al culminar mi carrera, conseguir un puesto como desarrollador web o móvil en u
 **Objetivo 2:**
 Iniciar una maestría en Arquitectura de Software en un plazo máximo de 3 años después de graduarme, complementado mi experiencia laboral. El objetivo es finalizar la maestría en 2 años y, posteriormente, postularme como docente universitario dentro de los 5 años posteriores a la graduación.
 
-# Capítulo I: Introducción
+# Capítulo I: Presentación
 
 ## 1.1. Startup Profile
 
