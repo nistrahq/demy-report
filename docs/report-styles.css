@@ -1,0 +1,26 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    text-align: left;
+    line-height: 1.5;
+    margin: 0;
+}
+
+p {
+    text-indent: 1.27cm;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-align: left;
+    margin-top: 12pt;
+    margin-bottom: 6pt;
+}
+
+.references p {
+    text-indent: -1.27cm;
+    margin-left: 1.27cm;
+    margin-bottom: 6pt;
+}
