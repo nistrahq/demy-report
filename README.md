@@ -6136,9 +6136,153 @@ Además, se incluye el [esquema SQL del diagrama de base de datos de Accounting 
 
 <hr class="page-break">
 
-## Conclusiones y Recomendaciones
+# Capítulo III: Solution UI/UX Design
+
+El capítulo presenta el diseño de la interfaz de usuario (UI) y la experiencia de usuario (UX) de la plataforma Demy. Se detallan los principios de diseño, la arquitectura de la información, los wireframes y prototipos de las principales pantallas de la aplicación. Además, se describen las herramientas y tecnologías utilizadas para el desarrollo del diseño UI/UX.
+
+## 3.1. Product design
+
+En esta sección se describe el diseño del producto, incluyendo los principios de diseño, la arquitectura de la información y los wireframes de las principales pantallas de la aplicación.
+
+### 3.1.1. Style Guidelines
+
+La guía de estilos sienta las bases de diseño para la plataforma Demy, asegurando una experiencia de usuario coherente y atractiva. En esta sección se detallan los colores, tipografías, iconografía y otros elementos visuales que conforman la identidad de la marca.
+
+#### 3.1.1.1. General Style Guidelines
+
+*Escribir aquí*
+
+### 3.1.2. Information Architecture
+
+En esta sección se describe la arquitectura de la información de la plataforma Demy, incluyendo la estructura de navegación, la organización del contenido, el sistema de etiquetas y búsqueda.
+
+#### 3.1.2.1. Organization Systems
+
+*Escribir aquí*
+
+#### 3.1.2.2. Labelling Systems
+
+*Escribir aquí*
+
+#### 3.1.2.3. SEO Tags and Meta Tags
+
+*Escribir aquí*
+
+#### 3.1.2.4. Searching Systems
+
+*Escribir aquí*
+
+#### 3.1.2.5. Navigation Systems
+
+*Escribir aquí*
+
+### 3.1.3. Landing Page UI Design
+
+En esta sección se presentan los wireframes y mock-ups de la página de inicio (landing page) de la plataforma Demy. Se describen las principales secciones, funcionalidades y elementos visuales que componen esta pantalla.
+
+#### 3.1.3.1. Landing Page Wireframe
+
+*Escribir aquí*
+
+#### 3.1.3.2. Landing Page Mock-up
+
+*Escribir aquí*
+
+### 3.1.4. Mobile Applications UX/UI Design
+
+En esta sección se presentan los wireframes y mock-ups de las aplicaciones móviles de la plataforma Demy. Se describen las principales pantallas, funcionalidades y elementos visuales que componen estas aplicaciones.
+
+#### 3.1.4.1. Mobile Applications Wireframes
+
+*Escribir aquí*
+
+#### 3.1.4.2. Mobile Applications Wireflow Diagrams
+
+*Escribir aquí*
+
+#### 3.1.4.3. Mobile Applications Mock-ups
+
+*Escribir aquí*
+
+#### 3.1.4.4. Mobile Applications User Flow Diagrams
+
+*Escribir aquí*
+
+#### 3.1.4.5. Mobile Applications Prototyping
+
+*Escribir aquí*
+
+# Capítulo IV: Product Implementation & Validation
+
+El capítulo presenta la implementación y validación de la plataforma Demy. Se describen las herramientas y tecnologías utilizadas para el desarrollo del software, así como los procesos de configuración y gestión del proyecto. Se presenta los sprints realizados, las funcionalidades implementadas y los resultados obtenidos.
+
+## 4.1. Software Configuration Management
+
+En esta sección se describen las herramientas y procesos utilizados para la gestión de la configuración del software, incluyendo el control de versiones, configuración de entornos y despliegue.
+
+### 4.1.1. Software Development Environment Configuration
+
+*Escribir aquí*
+
+### 4.1.2. Source Code Management
+
+*Escribir aquí*
+
+### 4.1.3. Source Code Style Guide & Conventions
+
+*Escribir aquí*
+
+### 4.1.4. Software Deployment Configuration
+
+*Escribir aquí*
+
+## 4.2. Landing Page & Mobile Application Implementation
+
+En esta sección se describen las herramientas y tecnologías utilizadas para el desarrollo de la página de inicio (landing page) y las aplicaciones móviles de la plataforma Demy. Se presentan los sprints realizados, las funcionalidades implementadas y los resultados obtenidos.
+
+### 4.2.1. Sprint 1
+
+Durante el primer sprint, el equipo se enfocó en la implementación de la página de inicio, de las funcionalidades básicas de la aplicación móvil y del servicio de REST API. Se establecieron los objetivos del sprint, se planificaron las tareas y se asignaron responsabilidades a los miembros del equipo.
+
+#### 4.2.1.1. Sprint Planning 1
+
+*Escribir aquí*
+
+#### 4.2.1.2. Sprint Backlog 1
+
+*Escribir aquí*
+
+#### 4.2.1.3. Development Evidence for Sprint Review
+
+*Escribir aquí*
+
+#### 4.2.1.4. Testing Suite Evidence for Sprint Review
+
+*Escribir aquí*
+
+#### 4.2.1.5. Execution Evidence for Sprint Review
+
+*Escribir aquí*
+
+#### 4.2.1.6. Services Documentation Evidence for Sprint Review
+
+*Escribir aquí*
+
+#### 4.2.1.7. Software Deployment Evidence for Sprint Review
+
+*Escribir aquí*
+
+#### 4.2.1.8. Team Collaboration Insights during Sprint
+
+*Escribir aquí*
+
+# Conclusiones
 
 En esta sección se presentan las conclusiones y recomendaciones derivadas del desarrollo del proyecto. Se analizan los resultados obtenidos, los desafíos enfrentados y las lecciones aprendidas durante el proceso. Además, se proponen acciones futuras para mejorar y optimizar la plataforma Demy.
+
+## Conclusiones y recomendaciones
+
+Se identificaron las siguientes conclusiones y recomendaciones basadas en el desarrollo del proyecto:
 
 ### Conclusiones
 
@@ -6163,6 +6307,10 @@ Estas acciones permitirán aumentar la adopción y satisfacción de los usuarios
 
 Finalmente, se sugiere explorar oportunidades de integración con otras herramientas y servicios utilizados por las academias, como sistemas de contabilidad, plataformas de comunicación y servicios de pago, para ofrecer una solución aún más completa y atractiva.
 Esto contribuirá a posicionar a Demy como una plataforma integral y líder en el mercado educativo.
+
+<hr class="page-break">
+
+# Glosario
 
 <hr class="page-break">
 
