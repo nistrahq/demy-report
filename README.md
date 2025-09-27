@@ -6312,6 +6312,140 @@ Esto contribuirá a posicionar a Demy como una plataforma integral y líder en e
 
 # Glosario
 
+En esta sección se definen los términos clave utilizados a lo largo del informe para facilitar la comprensión del contenido.
+
+**Aceptación (Criterios de aceptación)**  
+Condiciones verificables que una historia de usuario debe cumplir para considerarse terminada. Sirven como base de pruebas y alinean a equipo y stakeholders sobre el alcance.
+
+**API (Application Programming Interface)**  
+Conjunto de reglas y contratos que permiten la comunicación entre sistemas. En este proyecto habilita la integración entre la app móvil, backend y servicios externos (p. ej., pagos).
+
+**Arquitectura de Software**  
+Conjunto de decisiones de alto nivel sobre estructura, componentes, relaciones y principios de diseño. Guía la evolución del sistema y su calidad (rendimiento, seguridad, mantenibilidad).
+
+**Backlog del Producto (Product Backlog)**  
+Lista priorizada y dinámica de requerimientos (historias, épicas, mejoras). Es la fuente única de verdad del trabajo pendiente de producto.
+
+**Bounded Context (Contexto Delimitado)**  
+Límite explícito en DDD donde un modelo de dominio es coherente y tiene un lenguaje ubicuo propio. Reduce ambigüedades y dependencias entre subdominios.
+
+**C4 – Context Diagram (Diagrama de Contexto)**  
+Vista de más alto nivel que muestra el sistema y sus actores/vecinos. Responde “quién interactúa con qué” y “para qué”.
+
+**C4 – Container Diagram (Diagrama de Contenedores)**  
+Muestra los “contenedores” (aplicaciones, servicios, bases de datos) que componen el sistema y cómo se comunican. Aclara responsabilidades y tecnologías.
+
+**C4 – Component Diagram (Diagrama de Componentes)**  
+Descompone un contenedor en componentes y sus relaciones. Útil para delimitar módulos, interfaces y dependencias internas.
+
+**C4 – Code Diagram (Diagrama de Código)**  
+Nivel más detallado (clases, paquetes). Se utiliza con moderación para explicar diseños tácticos o fragmentos críticos.
+
+**Context Mapping (Mapa de Contextos)**  
+Técnica DDD para visualizar relaciones entre bounded contexts (p. ej., Partnership, Customer/Supplier, Conformist). Informa acuerdos y acoplamientos.
+
+**DDD (Domain-Driven Design)**  
+Enfoque que centra el desarrollo en el dominio del negocio y su lenguaje. Distingue niveles estratégico (contextos) y táctico (patrones como entidades, agregados).
+
+**Definición de Hecho (Definition of Done)**  
+Lista de criterios de calidad y cumplimiento (código, pruebas, docs, seguridad) que debe satisfacerse para considerar un ítem “hecho”.
+
+**Despliegue (Deployment)**  
+Proceso de publicar una versión en un ambiente objetivo. Incluye empaquetado, configuración, migraciones y verificación post-deploy.
+
+**Diagrama de Despliegue**  
+Representa la topología física/lógica (nodos, redes, balanceadores) donde se ejecuta el software. Es clave para performance, seguridad y disponibilidad.
+
+**Diseño de Información (Information Architecture)**  
+Estructura, organización, etiquetas y navegación de contenidos para facilitar encontrabilidad y uso. Incluye sistemas de organización, etiquetado, búsqueda y navegación.
+
+**DTO (Data Transfer Object)**  
+Objeto plano para transportar datos entre capas/servicios. Reduce acoplamiento y evita exponer el modelo de dominio.
+
+**Empathy Map (Mapa de Empatía)**  
+Artefacto UX que sintetiza qué ve, oye, piensa, siente y hace un usuario. Ayuda a comprender necesidades y motivaciones.
+
+**Entity (Entidad, DDD)**  
+Objeto del dominio con identidad estable a través del tiempo y cambios de estado. Se diferencia de un Value Object por su identidad.
+
+**Epic (Épica)**  
+Necesidad grande que se divide en historias de usuario más pequeñas. Mantiene una visión de valor de alto nivel.
+
+**EventStorming**  
+Taller colaborativo para explorar el dominio a través de eventos de dominio. Descubre flujos, comandos, políticas y contextos candidatos.
+
+**Hipótesis (Lean UX Hypothesis Statement)**  
+Declaración verificable que conecta una suposición con una métrica de éxito. Guía experimentos de producto.
+
+**Impact Mapping**  
+Técnica para alinear objetivos de negocio con impactos en actores y funcionalidades necesarias. Ayuda a priorizar por valor.
+
+**Interface Layer (Capa de Interfaz)**  
+Capa responsable de la interacción con el usuario o sistemas externos (UI, APIs). Traduce solicitudes al lenguaje de la aplicación/dominio.
+
+**Sprint Backlog**  
+El Sprint Backlog es el compromiso de trabajo para un sprint. Promueve la transparencia y foco.
+
+**Labeling System (Sistema de Etiquetado)**  
+Convenciones para nombrar contenidos y acciones en la UI. Debe ser consistente, comprensible y alineado al lenguaje del usuario.
+
+**Lean UX**  
+Enfoque que privilegia aprendizaje validado con usuarios mediante ciclos rápidos de hipótesis–experimento–insight. Reduce desperdicio y acelera decisiones de diseño.
+
+**Lenguaje Ubicuo (Ubiquitous Language)**  
+Vocabulario compartido y preciso entre negocio y equipo técnico dentro de un bounded context. Se refleja en código, conversaciones y documentos.
+
+**Mockup**  
+Representación visual de alta fidelidad de una interfaz (estática). Comunica look & feel antes del desarrollo.
+
+**Persona (User Persona)**  
+Arquetipo de usuario basado en investigación. Resume objetivos, frustraciones y contexto de uso.
+
+**Pila de Tecnología (Tech Stack)**  
+Conjunto de tecnologías utilizadas (lenguajes, frameworks, bases de datos, cloud). Debe justificar requisitos de calidad y ritmo de entrega.
+
+**Repositorio (Repository, DDD)**  
+Abstracción para acceder a agregados/entidades persistidas. Oculta detalles de almacenamiento y mantiene el lenguaje del dominio.
+
+**REST (Representational State Transfer)**  
+Estilo de arquitectura para APIs sobre HTTP usando recursos, verbos y estados. Favorece interoperabilidad y simplicidad.
+
+**SCM (Software Configuration Management)**  
+Prácticas y herramientas para controlar versiones, ramas y releases del software. Git y flujos como GitFlow/Trunk son ejemplos.
+
+**SEO/Meta Tags**  
+Metadatos (título, descripción, etiquetas) que mejoran visibilidad en buscadores y redes. Impactan descubribilidad y CTR.
+
+**Servicio de Aplicación (Application Service)**  
+Orquesta casos de uso, coordinando dominio, infraestructura y transacciones. No contiene reglas de negocio complejas.
+
+**Servicio de Dominio (Domain Service)**  
+Encapsula lógica de negocio que no pertenece naturalmente a una entidad o agregado específico.
+
+**Sprint / Sprint Review**  
+Iteración de tiempo fijo para entregar valor incrementable. La Sprint Review inspecciona el incremento con stakeholders para obtener feedback.
+
+**Story (Historia de Usuario)**  
+Requerimiento expresado desde el valor al usuario (Como [rol], Quiero [acción], Para [beneficio]). Debe ser negociable, estimable y testeable.
+
+**Tácticas DDD (Nivel Táctico)**  
+Patrones concretos (Entidades, Agregados, Value Objects, Domain Services, Repositorios, Factories) que implementan el modelo de dominio.
+
+**Testing Suite (Suite de Pruebas)**  
+Conjunto de pruebas automatizadas (unitarias, integración, e2e, contract). Sustenta calidad, refactors y despliegues frecuentes.
+
+**UI (User Interface) / UX (User Experience)**  
+UI es la capa visual e interactiva; UX es la experiencia completa (flujo, satisfacción, utilidad). Ambas deben alinearse a objetivos de negocio y usuarios.
+
+**Value Object (Objeto Valor, DDD)**  
+Objeto inmutable definido por sus atributos, sin identidad propia (p. ej., Dinero, Email). Facilita consistencia y expresividad del dominio.
+
+**Wireflow / User Flow**  
+Wireflow combina wireframes con flujo de navegación; User Flow modela pasos para lograr una tarea. Ayudan a validar caminos críticos.
+
+**Wireframe**  
+Boceto estructural de baja fidelidad de una pantalla. Útil para alinear contenido y jerarquía antes del diseño visual.
+
 <hr class="page-break">
 
 # Bibliografía
