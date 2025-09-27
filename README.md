@@ -253,8 +253,46 @@ Análisis de cantidad de commits realizados por semana.
                 - [2.6.7.6.1. Bounded Context Domain Layer Class Diagrams](#26761-bounded-context-domain-layer-class-diagrams)
                   - [2.6.7.6.2. Bounded Context Database Design Diagram](#26762-bounded-context-database-design-diagram)
 
+- [Capítulo III: Solution UI/UX Design](#capítulo-iii-solution-uiux-design)
+    - [3.1. Product design](#31-product-design)
+        - [3.1.1. Style Guidelines](#311-style-guidelines)
+            - [3.1.1.1. General Style Guidelines](#3111-general-style-guidelines)
+        - [3.1.2. Information Architecture](#312-information-architecture)
+            - [3.1.2.1. Organization Systems](#3121-organization-systems)
+            - [3.1.2.2. Labelling Systems](#3122-labelling-systems)
+            - [3.1.2.3. SEO Tags and Meta Tags](#3123-seo-tags-and-meta-tags)
+            - [3.1.2.4. Searching Systems](#3124-searching-systems)
+            - [3.1.2.5. Navigation Systems](#3125-navigation-systems)
+        - [3.1.3. Landing Page UI Design](#313-landing-page-ui-design)
+            - [3.1.3.1. Landing Page Wireframe](#3131-landing-page-wireframe)
+            - [3.1.3.2. Landing Page Mock-up](#3132-landing-page-mock-up)
+        - [3.1.4. Mobile Applications UX/UI Design](#314-mobile-applications-uxui-design)
+            - [3.1.4.1. Mobile Applications Wireframes](#3141-mobile-applications-wireframes)
+            - [3.1.4.2. Mobile Applications Wireflow Diagrams](#3142-mobile-applications-wireflow-diagrams)
+            - [3.1.4.3. Mobile Applications Mock-ups](#3143-mobile-applications-mock-ups)
+            - [3.1.4.4. Mobile Applications User Flow Diagrams](#3144-mobile-applications-user-flow-diagrams)
+            - [3.1.4.5. Mobile Applications Prototyping](#3145-mobile-applications-prototyping)
+
+- [Capítulo IV: Product Implementation & Validation](#capítulo-iv-product-implementation--validation)
+    - [4.1. Software Configuration Management](#41-software-configuration-management)
+        - [4.1.1. Software Development Environment Configuration](#411-software-development-environment-configuration)
+        - [4.1.2. Source Code Management](#412-source-code-management)
+        - [4.1.3. Source Code Style Guide & Conventions](#413-source-code-style-guide--conventions)
+        - [4.1.4. Software Deployment Configuration](#414-software-deployment-configuration)
+    - [4.2. Landing Page & Mobile Application Implementation](#42-landing-page--mobile-application-implementation)
+        - [4.2.1. Sprint 1](#421-sprint-1)
+            - [4.2.1.1. Sprint Planning 1](#4211-sprint-planning-1)
+            - [4.2.1.2. Sprint Backlog 1](#4212-sprint-backlog-1)
+            - [4.2.1.3. Development Evidence for Sprint Review](#4213-development-evidence-for-sprint-review)
+            - [4.2.1.4. Testing Suite Evidence for Sprint Review](#4214-testing-suite-evidence-for-sprint-review)
+            - [4.2.1.5. Execution Evidence for Sprint Review](#4215-execution-evidence-for-sprint-review)
+            - [4.2.1.6. Services Documentation Evidence for Sprint Review](#4216-services-documentation-evidence-for-sprint-review)
+            - [4.2.1.7. Software Deployment Evidence for Sprint Review](#4217-software-deployment-evidence-for-sprint-review)
+            - [4.2.1.8. Team Collaboration Insights during Sprint](#4218-team-collaboration-insights-during-sprint)
+
 - [Conclusiones](#conclusiones)
     - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+- [Glosario](#glosario)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
     - [Anexo A: Código Fuente](#anexo-a-código-fuente)
@@ -6098,9 +6136,155 @@ Además, se incluye el [esquema SQL del diagrama de base de datos de Accounting 
 
 <hr class="page-break">
 
-## Conclusiones y Recomendaciones
+# Capítulo III: Solution UI/UX Design
+
+El capítulo presenta el diseño de la interfaz de usuario (UI) y la experiencia de usuario (UX) de la plataforma Demy. Se detallan los principios de diseño, la arquitectura de la información, los wireframes y prototipos de las principales pantallas de la aplicación. Además, se describen las herramientas y tecnologías utilizadas para el desarrollo del diseño UI/UX.
+
+## 3.1. Product design
+
+En esta sección se describe el diseño del producto, incluyendo los principios de diseño, la arquitectura de la información y los wireframes de las principales pantallas de la aplicación.
+
+### 3.1.1. Style Guidelines
+
+La guía de estilos sienta las bases de diseño para la plataforma Demy, asegurando una experiencia de usuario coherente y atractiva. En esta sección se detallan los colores, tipografías, iconografía y otros elementos visuales que conforman la identidad de la marca.
+
+#### 3.1.1.1. General Style Guidelines
+
+*Escribir aquí*
+
+### 3.1.2. Information Architecture
+
+En esta sección se describe la arquitectura de la información de la plataforma Demy, incluyendo la estructura de navegación, la organización del contenido, el sistema de etiquetas y búsqueda.
+
+#### 3.1.2.1. Organization Systems
+
+*Escribir aquí*
+
+#### 3.1.2.2. Labelling Systems
+
+*Escribir aquí*
+
+#### 3.1.2.3. SEO Tags and Meta Tags
+
+*Escribir aquí*
+
+#### 3.1.2.4. Searching Systems
+
+*Escribir aquí*
+
+#### 3.1.2.5. Navigation Systems
+
+*Escribir aquí*
+
+### 3.1.3. Landing Page UI Design
+
+En esta sección se presentan los wireframes y mock-ups de la página de inicio (landing page) de la plataforma Demy. Se describen las principales secciones, funcionalidades y elementos visuales que componen esta pantalla.
+
+#### 3.1.3.1. Landing Page Wireframe
+
+*Escribir aquí*
+
+#### 3.1.3.2. Landing Page Mock-up
+
+*Escribir aquí*
+
+### 3.1.4. Mobile Applications UX/UI Design
+
+En esta sección se presentan los wireframes y mock-ups de las aplicaciones móviles de la plataforma Demy. Se describen las principales pantallas, funcionalidades y elementos visuales que componen estas aplicaciones.
+
+#### 3.1.4.1. Mobile Applications Wireframes
+
+*Escribir aquí*
+
+#### 3.1.4.2. Mobile Applications Wireflow Diagrams
+
+*Escribir aquí*
+
+#### 3.1.4.3. Mobile Applications Mock-ups
+
+*Escribir aquí*
+
+#### 3.1.4.4. Mobile Applications User Flow Diagrams
+
+*Escribir aquí*
+
+#### 3.1.4.5. Mobile Applications Prototyping
+
+*Escribir aquí*
+
+# Capítulo IV: Product Implementation & Validation
+
+El capítulo presenta la implementación y validación de la plataforma Demy. Se describen las herramientas y tecnologías utilizadas para el desarrollo del software, así como los procesos de configuración y gestión del proyecto. Se presenta los sprints realizados, las funcionalidades implementadas y los resultados obtenidos.
+
+## 4.1. Software Configuration Management
+
+En esta sección se describen las herramientas y procesos utilizados para la gestión de la configuración del software, incluyendo el control de versiones, configuración de entornos y despliegue.
+
+### 4.1.1. Software Development Environment Configuration
+
+*Escribir aquí*
+
+### 4.1.2. Source Code Management
+
+*Escribir aquí*
+
+### 4.1.3. Source Code Style Guide & Conventions
+
+*Escribir aquí*
+
+### 4.1.4. Software Deployment Configuration
+
+*Escribir aquí*
+
+## 4.2. Landing Page & Mobile Application Implementation
+
+En esta sección se describen las herramientas y tecnologías utilizadas para el desarrollo de la página de inicio (landing page) y las aplicaciones móviles de la plataforma Demy. Se presentan los sprints realizados, las funcionalidades implementadas y los resultados obtenidos.
+
+### 4.2.1. Sprint 1
+
+Durante el primer sprint, el equipo se enfocó en la implementación de la página de inicio, de las funcionalidades básicas de la aplicación móvil y del servicio de REST API. Se establecieron los objetivos del sprint, se planificaron las tareas y se asignaron responsabilidades a los miembros del equipo.
+
+#### 4.2.1.1. Sprint Planning 1
+
+*Escribir aquí*
+
+#### 4.2.1.2. Sprint Backlog 1
+
+*Escribir aquí*
+
+#### 4.2.1.3. Development Evidence for Sprint Review
+
+*Escribir aquí*
+
+#### 4.2.1.4. Testing Suite Evidence for Sprint Review
+
+*Escribir aquí*
+
+#### 4.2.1.5. Execution Evidence for Sprint Review
+
+*Escribir aquí*
+
+#### 4.2.1.6. Services Documentation Evidence for Sprint Review
+
+*Escribir aquí*
+
+#### 4.2.1.7. Software Deployment Evidence for Sprint Review
+
+*Escribir aquí*
+
+#### 4.2.1.8. Team Collaboration Insights during Sprint
+
+*Escribir aquí*
+
+<hr class="page-break">
+
+# Conclusiones
 
 En esta sección se presentan las conclusiones y recomendaciones derivadas del desarrollo del proyecto. Se analizan los resultados obtenidos, los desafíos enfrentados y las lecciones aprendidas durante el proceso. Además, se proponen acciones futuras para mejorar y optimizar la plataforma Demy.
+
+## Conclusiones y recomendaciones
+
+Se identificaron las siguientes conclusiones y recomendaciones basadas en el desarrollo del proyecto:
 
 ### Conclusiones
 
@@ -6125,6 +6309,141 @@ Estas acciones permitirán aumentar la adopción y satisfacción de los usuarios
 
 Finalmente, se sugiere explorar oportunidades de integración con otras herramientas y servicios utilizados por las academias, como sistemas de contabilidad, plataformas de comunicación y servicios de pago, para ofrecer una solución aún más completa y atractiva.
 Esto contribuirá a posicionar a Demy como una plataforma integral y líder en el mercado educativo.
+
+<hr class="page-break">
+
+# Glosario
+
+En esta sección se definen los términos clave utilizados a lo largo del informe para facilitar la comprensión del contenido.
+
+**Aceptación (Criterios de aceptación)**  
+Condiciones verificables que una historia de usuario debe cumplir para considerarse terminada. Sirven como base de pruebas y alinean a equipo y stakeholders sobre el alcance.
+
+**API (Application Programming Interface)**  
+Conjunto de reglas y contratos que permiten la comunicación entre sistemas. En este proyecto habilita la integración entre la app móvil, backend y servicios externos (p. ej., pagos).
+
+**Arquitectura de Software**  
+Conjunto de decisiones de alto nivel sobre estructura, componentes, relaciones y principios de diseño. Guía la evolución del sistema y su calidad (rendimiento, seguridad, mantenibilidad).
+
+**Backlog del Producto (Product Backlog)**  
+Lista priorizada y dinámica de requerimientos (historias, épicas, mejoras). Es la fuente única de verdad del trabajo pendiente de producto.
+
+**Bounded Context (Contexto Delimitado)**  
+Límite explícito en DDD donde un modelo de dominio es coherente y tiene un lenguaje ubicuo propio. Reduce ambigüedades y dependencias entre subdominios.
+
+**C4 – Context Diagram (Diagrama de Contexto)**  
+Vista de más alto nivel que muestra el sistema y sus actores/vecinos. Responde “quién interactúa con qué” y “para qué”.
+
+**C4 – Container Diagram (Diagrama de Contenedores)**  
+Muestra los “contenedores” (aplicaciones, servicios, bases de datos) que componen el sistema y cómo se comunican. Aclara responsabilidades y tecnologías.
+
+**C4 – Component Diagram (Diagrama de Componentes)**  
+Descompone un contenedor en componentes y sus relaciones. Útil para delimitar módulos, interfaces y dependencias internas.
+
+**C4 – Code Diagram (Diagrama de Código)**  
+Nivel más detallado (clases, paquetes). Se utiliza con moderación para explicar diseños tácticos o fragmentos críticos.
+
+**Context Mapping (Mapa de Contextos)**  
+Técnica DDD para visualizar relaciones entre bounded contexts (p. ej., Partnership, Customer/Supplier, Conformist). Informa acuerdos y acoplamientos.
+
+**DDD (Domain-Driven Design)**  
+Enfoque que centra el desarrollo en el dominio del negocio y su lenguaje. Distingue niveles estratégico (contextos) y táctico (patrones como entidades, agregados).
+
+**Definición de Hecho (Definition of Done)**  
+Lista de criterios de calidad y cumplimiento (código, pruebas, docs, seguridad) que debe satisfacerse para considerar un ítem “hecho”.
+
+**Despliegue (Deployment)**  
+Proceso de publicar una versión en un ambiente objetivo. Incluye empaquetado, configuración, migraciones y verificación post-deploy.
+
+**Diagrama de Despliegue**  
+Representa la topología física/lógica (nodos, redes, balanceadores) donde se ejecuta el software. Es clave para performance, seguridad y disponibilidad.
+
+**Diseño de Información (Information Architecture)**  
+Estructura, organización, etiquetas y navegación de contenidos para facilitar encontrabilidad y uso. Incluye sistemas de organización, etiquetado, búsqueda y navegación.
+
+**DTO (Data Transfer Object)**  
+Objeto plano para transportar datos entre capas/servicios. Reduce acoplamiento y evita exponer el modelo de dominio.
+
+**Empathy Map (Mapa de Empatía)**  
+Artefacto UX que sintetiza qué ve, oye, piensa, siente y hace un usuario. Ayuda a comprender necesidades y motivaciones.
+
+**Entity (Entidad, DDD)**  
+Objeto del dominio con identidad estable a través del tiempo y cambios de estado. Se diferencia de un Value Object por su identidad.
+
+**Epic (Épica)**  
+Necesidad grande que se divide en historias de usuario más pequeñas. Mantiene una visión de valor de alto nivel.
+
+**EventStorming**  
+Taller colaborativo para explorar el dominio a través de eventos de dominio. Descubre flujos, comandos, políticas y contextos candidatos.
+
+**Hipótesis (Lean UX Hypothesis Statement)**  
+Declaración verificable que conecta una suposición con una métrica de éxito. Guía experimentos de producto.
+
+**Impact Mapping**  
+Técnica para alinear objetivos de negocio con impactos en actores y funcionalidades necesarias. Ayuda a priorizar por valor.
+
+**Interface Layer (Capa de Interfaz)**  
+Capa responsable de la interacción con el usuario o sistemas externos (UI, APIs). Traduce solicitudes al lenguaje de la aplicación/dominio.
+
+**Sprint Backlog**  
+Es el compromiso de trabajo para un sprint. Promueve la transparencia y foco.
+
+**Labeling System (Sistema de Etiquetado)**  
+Convenciones para nombrar contenidos y acciones en la UI. Debe ser consistente, comprensible y alineado al lenguaje del usuario.
+
+**Lean UX**  
+Enfoque que privilegia aprendizaje validado con usuarios mediante ciclos rápidos de hipótesis–experimento–insight. Reduce desperdicio y acelera decisiones de diseño.
+
+**Lenguaje Ubicuo (Ubiquitous Language)**  
+Vocabulario compartido y preciso entre negocio y equipo técnico dentro de un bounded context. Se refleja en código, conversaciones y documentos.
+
+**Mockup**  
+Representación visual de alta fidelidad de una interfaz (estática). Comunica look & feel antes del desarrollo.
+
+**Persona (User Persona)**  
+Arquetipo de usuario basado en investigación. Resume objetivos, frustraciones y contexto de uso.
+
+**Pila de Tecnología (Tech Stack)**  
+Conjunto de tecnologías utilizadas (lenguajes, frameworks, bases de datos, cloud). Debe justificar requisitos de calidad y ritmo de entrega.
+
+**Repositorio (Repository, DDD)**  
+Abstracción para acceder a agregados/entidades persistidas. Oculta detalles de almacenamiento y mantiene el lenguaje del dominio.
+
+**REST (Representational State Transfer)**  
+Estilo de arquitectura para APIs sobre HTTP usando recursos, verbos y estados. Favorece interoperabilidad y simplicidad.
+
+**SEO/Meta Tags**  
+Metadatos (título, descripción, etiquetas) que mejoran visibilidad en buscadores y redes. Impactan descubribilidad y CTR.
+
+**Servicio de Aplicación (Application Service)**  
+Orquesta casos de uso, coordinando dominio, infraestructura y transacciones. No contiene reglas de negocio complejas.
+
+**Servicio de Dominio (Domain Service)**  
+Encapsula lógica de negocio que no pertenece naturalmente a una entidad o agregado específico.
+
+**Sprint / Sprint Review**  
+Iteración de tiempo fijo para entregar valor incrementable. La Sprint Review inspecciona el incremento con stakeholders para obtener feedback.
+
+**Story (Historia de Usuario)**  
+Requerimiento expresado desde el valor al usuario (Como [rol], Quiero [acción], Para [beneficio]). Debe ser negociable, estimable y testeable.
+
+**Tácticas DDD (Nivel Táctico)**  
+Patrones concretos (Entidades, Agregados, Value Objects, Domain Services, Repositorios, Factories) que implementan el modelo de dominio.
+
+**Testing Suite (Suite de Pruebas)**  
+Conjunto de pruebas automatizadas (unitarias, integración, e2e, contract). Sustenta calidad, refactors y despliegues frecuentes.
+
+**UI (User Interface) / UX (User Experience)**  
+UI es la capa visual e interactiva; UX es la experiencia completa (flujo, satisfacción, utilidad). Ambas deben alinearse a objetivos de negocio y usuarios.
+
+**Value Object (Objeto Valor, DDD)**  
+Objeto inmutable definido por sus atributos, sin identidad propia (p. ej., Dinero, Email). Facilita consistencia y expresividad del dominio.
+
+**Wireflow / User Flow**  
+Wireflow combina wireframes con flujo de navegación; User Flow modela pasos para lograr una tarea. Ayudan a validar caminos críticos.
+
+**Wireframe**  
+Boceto estructural de baja fidelidad de una pantalla. Útil para alinear contenido y jerarquía antes del diseño visual.
 
 <hr class="page-break">
 
