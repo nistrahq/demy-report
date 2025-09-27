@@ -6276,6 +6276,8 @@ Durante el primer sprint, el equipo se enfocó en la implementación de la pági
 
 *Escribir aquí*
 
+<hr class="page-break">
+
 # Conclusiones
 
 En esta sección se presentan las conclusiones y recomendaciones derivadas del desarrollo del proyecto. Se analizan los resultados obtenidos, los desafíos enfrentados y las lecciones aprendidas durante el proceso. Además, se proponen acciones futuras para mejorar y optimizar la plataforma Demy.
@@ -6384,7 +6386,7 @@ Técnica para alinear objetivos de negocio con impactos en actores y funcionalid
 Capa responsable de la interacción con el usuario o sistemas externos (UI, APIs). Traduce solicitudes al lenguaje de la aplicación/dominio.
 
 **Sprint Backlog**  
-El Sprint Backlog es el compromiso de trabajo para un sprint. Promueve la transparencia y foco.
+Es el compromiso de trabajo para un sprint. Promueve la transparencia y foco.
 
 **Labeling System (Sistema de Etiquetado)**  
 Convenciones para nombrar contenidos y acciones en la UI. Debe ser consistente, comprensible y alineado al lenguaje del usuario.
@@ -6409,9 +6411,6 @@ Abstracción para acceder a agregados/entidades persistidas. Oculta detalles de 
 
 **REST (Representational State Transfer)**  
 Estilo de arquitectura para APIs sobre HTTP usando recursos, verbos y estados. Favorece interoperabilidad y simplicidad.
-
-**SCM (Software Configuration Management)**  
-Prácticas y herramientas para controlar versiones, ramas y releases del software. Git y flujos como GitFlow/Trunk son ejemplos.
 
 **SEO/Meta Tags**  
 Metadatos (título, descripción, etiquetas) que mejoran visibilidad en buscadores y redes. Impactan descubribilidad y CTR.
