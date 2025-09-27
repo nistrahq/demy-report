@@ -33,6 +33,10 @@ li p {
     margin: 0;
 } */
 
+/* table {
+    page-break-inside: avoid;
+} */
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -63,9 +67,8 @@ hr.page-break {
     border: 0;
 }
 
-:not(pre) > code,
-pre code {
-    color: #7CB342 !important;
+:not(pre) > code, pre code {
+    color: inherit !important;
 }
 
 .ref {
