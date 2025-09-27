@@ -6176,6 +6176,8 @@ En esta sección se describe la arquitectura de la información de la plataforma
 
 *Escribir aquí*
 
+<hr class="page-break">
+
 ### 3.1.3. Landing Page UI Design
 
 En esta sección se presentan los wireframes y mock-ups de la página de inicio (landing page) de la plataforma Demy. Se describen las principales secciones, funcionalidades y elementos visuales que componen esta pantalla.
@@ -6187,6 +6189,8 @@ En esta sección se presentan los wireframes y mock-ups de la página de inicio 
 #### 3.1.3.2. Landing Page Mock-up
 
 *Escribir aquí*
+
+<hr class="page-break">
 
 ### 3.1.4. Mobile Applications UX/UI Design
 
@@ -6212,6 +6216,8 @@ En esta sección se presentan los wireframes y mock-ups de las aplicaciones móv
 
 *Escribir aquí*
 
+<hr class="page-break">
+
 # Capítulo IV: Product Implementation & Validation
 
 El capítulo presenta la implementación y validación de la plataforma Demy. Se describen las herramientas y tecnologías utilizadas para el desarrollo del software, así como los procesos de configuración y gestión del proyecto. Se presenta los sprints realizados, las funcionalidades implementadas y los resultados obtenidos.
@@ -6235,6 +6241,8 @@ En esta sección se describen las herramientas y procesos utilizados para la ges
 ### 4.1.4. Software Deployment Configuration
 
 *Escribir aquí*
+
+<hr class="page-break">
 
 ## 4.2. Landing Page & Mobile Application Implementation
 
