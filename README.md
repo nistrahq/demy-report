@@ -2919,7 +2919,7 @@ El Container Diagram descompone la solución en sus principales contenedores: un
 
 El Deployment Diagram muestra la distribución física del sistema en producción, detallando cómo se despliegan los contenedores y servicios en la infraestructura y cómo interactúan entre sí. Las aplicaciones móviles (iOS, Android y Flutter) se ejecutan en los dispositivos de los usuarios y son distribuidas mediante Firebase, mientras que el backend en Spring Boot y la base de datos MySQL se alojan en Railway PaaS. Asimismo, se incluyen sistemas externos como Stripe, PagoEfectivo y Gmail. En conjunto, el diagrama ofrece una visión clara de la ubicación de los componentes y de los protocolos de comunicación empleados.
 
-![Deployment Diagram](assets/diagrams/software-architecture/deployment/software_architecture_deployment_diagram.png)
+![Deployment Diagram](assets/diagrams/software-architecture/deployment/software-architecture-deployment-diagram.png)
 
 <hr class="page-break">
 
