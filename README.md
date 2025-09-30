@@ -2913,7 +2913,7 @@ El Context Diagram muestra como el sistema central que interactúa con tres usua
 
 El Container Diagram descompone la solución en sus principales contenedores: una Flutter App para coordinadores, una Android App para docentes y una iOS App para estudiantes, todas conectadas a un API Backend desarrollado en Spring Boot que concentra la lógica de negocio y accede a una base de datos MySQL para la información académica. El backend también se integra con Stripe y PagoEfectivo para pagos y con Gmail para notificaciones automáticas.
 
-![Container Diagram](assets/diagrams/software-architecture/containers/software_architecture_container_diagram.png)
+![Container Diagram](assets/diagrams/software-architecture/containers/software-architecture-container-diagram.png)
 
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 
