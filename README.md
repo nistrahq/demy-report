@@ -6282,6 +6282,12 @@ Permite buscar y visualizar el perfil de cada estudiante. Al seleccionar uno, se
 
 ![Admin Seguimiento Estudiantes](./assets/ux-ui/mockups/admin/admin_student_monitoring.png)
 
+**Componente Reutilizable: Modal de Confirmación**
+
+Este modal de advertencia aparece antes de realizar acciones destructivas, como eliminar datos. Su propósito es prevenir errores, forzando al usuario a confirmar su decisión.
+
+![Admin Modal Confirmación Eliminación](./assets/ux-ui/mockups/admin/admin_delete_confirmation_modal.png)
+
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
