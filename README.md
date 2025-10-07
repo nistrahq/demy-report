@@ -2558,13 +2558,13 @@ Primero, se preparó el espacio de trabajo con un mural digital (Miro) y se defi
 
 ![Aggregates](./assets/diagrams/ddd/event-storming/event-storming-step9-v1.JPG)
 
-10. **Bounded Contexts**: Finalmente, se delinearon los límites de los bounded contexts basados en los eventos, agregados y puntos clave identificados. Esta agrupación en clústeres permitirá discutir e identificar los contextos candidatos a modelar en las siguientes fases del diseño.
+10. **Bounded Contexts**: Finalmente, se delinearon los límites de los bounded contexts basados en los eventos, agregados y puntos clave identificados. Esta agrupación en clústeres permitirá discutir y clasificar los contexts en Core, Supporting y Generic.
 
 ![Bounded Contexts](./assets/diagrams/ddd/event-storming/event-storming-step10-v1.JPG)
 
 #### 2.5.1.1. Candidate Context Discovery
 
-En esta sección se presenta el proceso seguido por el equipo para la descubierta de bounded contexts candidatos a partir del Event Storming realizado previamente. El objetivo fue identificar los límites naturales del dominio, determinar cuáles son las partes core del negocio y cuáles cumplen roles de apoyo o genéricos, con el fin de priorizar los esfuerzos de diseño en aquellos elementos que aportan mayor valor estratégico.
+En esta sección se presenta el proceso seguido por el equipo para la descubierta de clasificación de bounded contexts candidatos a partir del Event Storming realizado previamente. El objetivo fue identificar los límites naturales del dominio, determinar cuáles son las partes core del negocio y cuáles cumplen roles de apoyo o genéricos, con el fin de priorizar los esfuerzos de diseño en aquellos elementos que aportan mayor valor estratégico.
 
 **Preparación de la sesión:**
 
