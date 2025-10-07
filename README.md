@@ -6279,7 +6279,7 @@ Gestionar de forma eficiente y organizada los recursos de la academia, incluyend
 ![Wireflow-Administrator-5](./assets/ux-ui/wireflows/administrator/Wireflow-Administrator-5.png)
 
 
-**Mobile Applications Wireflow: Flujo de Teacher**
+**Mobile Applications Wireflow: Flujo de Profesor**
 
 **User Goal** 
 Tener una vista clara y concisa de su horario semanal de clases y actividades, permitiendo una planificación eficiente de su tiempo y evitando conflictos o inasistencias.
@@ -6301,6 +6301,26 @@ Realizar la toma de asistencia de los alumnos de forma rápida y sencilla al ini
 Reportar la asistencia consolidada de un grupo o período al sistema, facilitando la gestión administrativa y la generación de informes finales de asistencia.
 
 ![Wireflow-Teacher-4](./assets/ux-ui/wireflows/teacher/Wireflow-Teacher-ViewSchedule.png)
+
+
+**Mobile Applications Wireflow: Flujo de Estudiante**
+
+**User Goal** 
+Consultar de forma rápida y clara su horario de clases completo, incluyendo el día, la hora, el nombre del curso y la ubicación (salón), para poder asistir puntualmente y planificar sus actividades académicas sin confusiones.
+
+![Wireflow-Student-1](./assets/ux-ui/wireflows/student/Wireflow-Student-ViewSchedule.png)
+
+
+**User Goal** 
+El estudiante necesita consultar el estado de sus pagos pendientes de forma clara y detallada, incluyendo el monto, la fecha de vencimiento y el concepto, para evitar cargos por mora y planificar sus finanzas.
+
+![Wireflow-Student-2](./assets/ux-ui/wireflows/student/Wireflow-Student-ViewDebts.png)
+
+
+**User Goal** 
+El estudiante debe recibir y consultar inmediatamente cualquier cambio o reprogramación de sus clases y confirmar que ha sido notificado, para evitar asistir a clases canceladas o llegar tarde a clases movidas.
+
+![Wireflow-Student-3](./assets/ux-ui/wireflows/student/Wireflow-Student-ViewScheduleChangues.png)
 
 #### 3.1.4.3. Mobile Applications Mock-ups
 
