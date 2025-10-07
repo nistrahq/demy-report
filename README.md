@@ -6206,11 +6206,34 @@ En esta sección se presentan los wireframes y mock-ups de las aplicaciones móv
 
 #### 3.1.4.3. Mobile Applications Mock-ups
 
-*Escribir aquí*
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
-*Escribir aquí*
+**User Goal**  
+Tener un control eficiente y organizado de los pagos de los alumnos, tanto por concepto de mensualidad como de matrícula, permitiendo un seguimiento claro del estado de cada pago y evitando retrasos o confusiones en la gestión administrativa.
+
+![UserFlow-1](./assets/ux-ui/userflows/userflow-admin-1.png)
+
+***User Goal***  
+Acceder de forma rápida y segura a los datos del alumno, incluyendo su información personal, académica y estado de pagos, para facilitar la gestión y toma de decisiones dentro del sistema.
+
+![UserFlow-2](./assets/ux-ui/userflows/userflow-admin-2.png)
+
+**User Goal**  
+Realizar de manera sencilla, rápida y satisfactoria el proceso de matrícula del alumno, asegurando que los datos ingresados sean correctos y que la inscripción quede correctamente registrada en el sistema.
+
+![UserFlow-3](./assets/ux-ui/userflows/userflow-admin-3.png)
+
+**User Goal**    
+Llevar un control claro y preciso de los ingresos y egresos de la academia, permitiendo supervisar el flujo económico, generar reportes financieros y optimizar la gestión administrativa.
+
+![UserFlow-4](./assets/ux-ui/userflows/userflow-admin-4.png)
+
+**User Goal**     
+Gestionar de forma eficiente y organizada los recursos de la academia, incluyendo cursos, salones, horarios y periodos, con el fin de optimizar su uso y garantizar el correcto funcionamiento de las actividades académicas y administrativas.
+
+![UserFlow-5](./assets/ux-ui/userflows/userflow-admin-5.png)
+
 
 #### 3.1.4.5. Mobile Applications Prototyping
 
