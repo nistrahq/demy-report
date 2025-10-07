@@ -6246,6 +6246,15 @@ Pantallas dedicadas para los **Términos y Condiciones** y la **Política de Pri
 ![Admin Términos y Condiciones](./assets/ux-ui/mockups/admin/admin_terminos_y_condiciones.png)
 ![Admin Política de Privacidad](./assets/ux-ui/mockups/admin/admin_politica_de_privacidad.png)
 
+**Suscripción y Configuración de Academia**
+
+Estas pantallas de onboarding que sigue al registro. Guía al administrador a través de la selección de un plan, el ingreso seguro de los datos de pago y la configuración inicial de la academia. El proceso está diseñado para ser rápido y motivador, finalizando con una pantalla de éxito que da la bienvenida al usuario y lo dirige al panel principal.
+
+![Admin Selección Plan](./assets/ux-ui/mockups/admin/admin_seleccion_plan.png)
+![Admin Formulario Pago](./assets/ux-ui/mockups/admin/admin_formulario_pago.png)
+![Admin Configuración Academia](./assets/ux-ui/mockups/admin/admin_configuracion_academia.png)
+![Admin Confirmación Éxito](./assets/ux-ui/mockups/admin/admin_confirmacion_exito.png)
+
 
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
