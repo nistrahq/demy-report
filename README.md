@@ -6256,6 +6256,12 @@ Estas pantallas de onboarding que sigue al registro. Guía al administrador a tr
 ![Admin Confirmación Éxito](./assets/ux-ui/mockups/admin/admin_confirmacion_exito.png)
 
 
+**Pantalla Principal (Dashboard)**
+
+Muestra un resumen visual del estado de la institución con métricas clave, gráficos de ingresos/gastos y datos importantes del periodo académico actual. Permite una visión general rápida.
+
+![Admin Dashboard](./assets/ux-ui/mockups/admin/admin_dashboard.png)
+
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
