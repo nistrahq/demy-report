@@ -6302,6 +6302,13 @@ Aquí se gestiona la oferta académica de la institución. Permite la creación,
 ![Admin Cursos Nuevo Formulario](./assets/ux-ui/mockups/admin/admin_courses_new_form.png)
 ![Admin Cursos Edición Formulario](./assets/ux-ui/mockups/admin/admin_courses_edit_form.png)
 
+**Gestión de Facturación (Billing)**
+
+Esta sección se centra en el control de las cuentas de facturación de los estudiantes. Permite buscar cuentas, ver su estado (activo, cancelado, suspendido) y gestionar facturas individuales. El administrador puede crear nuevas facturas directamente desde este módulo.
+
+![Admin Facturación Búsqueda](./assets/ux-ui/mockups/admin/admin_billing_search.png)
+![Admin Facturación Nueva Factura](./assets/ux-ui/mockups/admin/admin_billing_new_invoice.png)
+
 
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
