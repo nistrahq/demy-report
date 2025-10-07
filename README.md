@@ -3245,6 +3245,8 @@ Identificador único de un usuario dentro del sistema.
 
 1. **`AcademiesController` (REST Controller)**
 
+Representa los endpoints para gestionar academias.
+
 **Endpoints principales:**
 
 | Nombre del método | Ruta base típica    | Método HTTP | Descripción                  |
@@ -3255,6 +3257,8 @@ Identificador único de un usuario dentro del sistema.
 
 2. **`AdministratorsController` (REST Controller)**
 
+Representa los endpoints para gestionar administradores.
+
 **Endpoints principales:**
 
 | Nombre del método       | Ruta base típica         | Método HTTP | Descripción                       |
@@ -3264,6 +3268,8 @@ Identificador único de un usuario dentro del sistema.
 ---
 
 3. **`TeachersController` (REST Controller)**
+
+Representa los endpoints para gestionar docentes.
 
 **Endpoints principales:**
 
@@ -3791,6 +3797,8 @@ Maneja comandos relacionados con la gestión de roles.
 
 1. **`AuthenticationController` (REST Controller)**
 
+Representa el controlador REST que expone las funcionalidades de autenticación y gestión de usuarios a través de endpoints HTTP.
+
 **Endpoints principales:**
 
 | Nombre del método | Ruta base típica                     | Método HTTP | Descripción                                  |
@@ -3803,6 +3811,8 @@ Maneja comandos relacionados con la gestión de roles.
 ---
 
 2. **`Resources` (Resources)**
+
+Representan los DTOs que se utilizan para la comunicación a través de la API REST.
 
 | Resource                         | Atributos principales                                                       | Descripción                                   |
 |----------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------|
@@ -3817,6 +3827,8 @@ Maneja comandos relacionados con la gestión de roles.
 ---
 
 3. **`Transform` (Assemblers)**
+
+Responsables de convertir entre entidades del dominio y recursos REST, así como de transformar comandos y consultas desde y hacia los recursos.
 
 <div style="font-size:55%;">
 
@@ -4445,11 +4457,11 @@ Representa si un período académico se encuentra activo o inactivo.
 
 **Métodos principales:**
 
-| Método       | Tipo de Retorno | Visibilidad | Descripción                                          |
-| ------------ | --------------- | ----------- | ---------------------------------------------------- |
-| `active()`   | `PeriodStatus`  | `public`    | Crea un objeto con el período marcado como activo.   |
-| `inactive()` | `PeriodStatus`  | `public`    | Crea un objeto con el período marcado como inactivo. |
-| `isActive()` | `boolean`       | `public`    | Retorna `true` si el período se encuentra activo.    |
+| Método        | Tipo de Retorno | Visibilidad | Descripción                                          |
+|---------------|-----------------|-------------|------------------------------------------------------|
+| `active()`    | `PeriodStatus`  | `public`    | Crea un objeto con el período marcado como activo.   |
+| `inactive()`  | `PeriodStatus`  | `public`    | Crea un objeto con el período marcado como inactivo. |
+| `isActive()`  | `boolean`       | `public`    | Retorna `true` si el período se encuentra activo.    |
 
 ---
 
@@ -4461,11 +4473,11 @@ Proporciona métodos para ejecutar comandos relacionados con la gestión de matr
 
 <div style="font-size:80%;">
 
-| Método                                    | Tipo de Retorno        | Visibilidad | Descripción                                                    |
-|-------------------------------------------|------------------------|------------|----------------------------------------------------------------|
-| `handle(CreateEnrollmentCommand command)` | `Long`   | `public`   | Crea una nueva matricula en la academica a partir de un command. |
-| `handle(DeleteEnrollmentCommand command)` | `void`                 | `public`   | Asigna una nueva boleta a una cuenta de facturación.           |
-| `handle(UpdateEnrollmentCommand command)` | `Optional<Enrollment>` | `public`   | Registra un pago en una cuenta de facturación.                 |
+| Método                                     | Tipo de Retorno        | Visibilidad | Descripción                                                      |
+|--------------------------------------------|------------------------|-------------|------------------------------------------------------------------|
+| `handle(CreateEnrollmentCommand command)`  | `Long`                 | `public`    | Crea una nueva matricula en la academica a partir de un command. |
+| `handle(DeleteEnrollmentCommand command)`  | `void`                 | `public`    | Asigna una nueva boleta a una cuenta de facturación.             |
+| `handle(UpdateEnrollmentCommand command)`  | `Optional<Enrollment>` | `public`    | Registra un pago en una cuenta de facturación.                   |
 
 </div>
 
@@ -4480,7 +4492,7 @@ Proporciona métodos para consultar información de matrículas.
 <div style="font-size:60%;">
 
 | Método                                             | Tipo de Retorno        | Visibilidad | Descripción                                                       |
-| -------------------------------------------------- | ---------------------- | ----------- | ----------------------------------------------------------------- |
+|----------------------------------------------------|------------------------|-------------|-------------------------------------------------------------------|
 | `handle(GetAllEnrollmentsByStudentIdQuery query)`  | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas asociadas a un estudiante (por ID).  |
 | `handle(GetAllEnrollmentsQuery query)`             | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas del sistema.                         |
 | `handle(GetEnrollmentByIdQuery query)`             | `Optional<Enrollment>` | `public`    | Obtiene una matrícula específica por su identificador.            |
@@ -4496,11 +4508,11 @@ Proporciona métodos para ejecutar comandos relacionados con la gestión de per�
 
 **Metodos principales:**
 
-| Método                                        | Tipo de Retorno            | Visibilidad | Descripción                                             |
-| --------------------------------------------- | -------------------------- | ----------- |---------------------------------------------------------|
-| `handle(CreateAcademicPeriodCommand command)` | `Long` | `public`    | Crea un nuevo período académico a partir de un command. |
-| `handle(DeleteAcademicPeriodCommand command)` | `void`                     | `public`    | Elimina un período académico existente.                 |
-| `handle(UpdateAcademicPeriodCommand command)` | `Optional<AcademicPeriod>` | `public`    | Actualiza los datos de un período académico existente.  |
+| Método                                         | Tipo de Retorno            | Visibilidad | Descripción                                             |
+|------------------------------------------------|----------------------------|-------------|---------------------------------------------------------|
+| `handle(CreateAcademicPeriodCommand command)`  | `Long`                     | `public`    | Crea un nuevo período académico a partir de un command. |
+| `handle(DeleteAcademicPeriodCommand command)`  | `void`                     | `public`    | Elimina un período académico existente.                 |
+| `handle(UpdateAcademicPeriodCommand command)`  | `Optional<AcademicPeriod>` | `public`    | Actualiza los datos de un período académico existente.  |
 
 ---
 
@@ -4510,10 +4522,10 @@ Proporciona métodos para consultar información de los períodos académicos.
 
 **Metodos principales:**
 
-| Método                                     | Tipo de Retorno            | Visibilidad | Descripción                                        |
-| ------------------------------------------ | -------------------------- | ----------- | -------------------------------------------------- |
-| `handle(GetAcademicPeriodByIdQuery query)` | `Optional<AcademicPeriod>` | `public`    | Obtiene un período académico por su identificador. |
-| `handle(GetAllAcademicPeriodsQuery query)` | `List<AcademicPeriod>`     | `public`    | Obtiene la lista completa de períodos académicos.  |
+| Método                                      | Tipo de Retorno            | Visibilidad | Descripción                                         |
+|---------------------------------------------|----------------------------|-------------|-----------------------------------------------------|
+| `handle(GetAcademicPeriodByIdQuery query)`  | `Optional<AcademicPeriod>` | `public`    | Obtiene un período académico por su identificador.  |
+| `handle(GetAllAcademicPeriodsQuery query)`  | `List<AcademicPeriod>`     | `public`    | Obtiene la lista completa de períodos académicos.   |
 
 ---
 
@@ -4523,11 +4535,11 @@ Proporciona métodos para ejecutar comandos relacionados con la gestión de estu
 
 **Métodos principales:**
 
-| Método                                 | Tipo de Retorno     | Visibilidad | Descripción                                          |
-| -------------------------------------- | ------------------- | ----------- |------------------------------------------------------|
-| `handle(CreateStudentCommand command)` | `Long` | `public`    | Crea un nuevo estudiante a partir de un command.     |
-| `handle(DeleteStudentCommand command)` | `void`              | `public`    | Elimina un estudiante existente.                     |
-| `handle(UpdateStudentCommand command)` | `Optional<Student>` | `public`    | Actualiza la información de un estudiante existente. |
+| Método                                  | Tipo de Retorno     | Visibilidad | Descripción                                          |
+|-----------------------------------------|---------------------|-------------|------------------------------------------------------|
+| `handle(CreateStudentCommand command)`  | `Long`              | `public`    | Crea un nuevo estudiante a partir de un command.     |
+| `handle(DeleteStudentCommand command)`  | `void`              | `public`    | Elimina un estudiante existente.                     |
+| `handle(UpdateStudentCommand command)`  | `Optional<Student>` | `public`    | Actualiza la información de un estudiante existente. |
 
 ---
 
@@ -4537,40 +4549,42 @@ Proporciona métodos para consultar información de estudiantes.
 
 **Métodos principales:**
 
-| Método                               | Tipo de Retorno     | Visibilidad | Descripción                                           |
-| ------------------------------------ | ------------------- | ----------- | ----------------------------------------------------- |
-| `handle(GetStudentByIdQuery query)`  | `Optional<Student>` | `public`    | Obtiene un estudiante por su identificador.           |
-| `handle(GetAllStudentsQuery query)`  | `List<Student>`     | `public`    | Obtiene la lista completa de estudiantes registrados. |
-| `handle(GetStudentByDniQuery query)` | `Optional<Student>` | `public`    | Obtiene un estudiante a partir de su DNI.             |
+| Método                                | Tipo de Retorno     | Visibilidad  | Descripción                                           |
+|---------------------------------------|---------------------|--------------|-------------------------------------------------------|
+| `handle(GetStudentByIdQuery query)`   | `Optional<Student>` | `public`     | Obtiene un estudiante por su identificador.           |
+| `handle(GetAllStudentsQuery query)`   | `List<Student>`     | `public`     | Obtiene la lista completa de estudiantes registrados. |
+| `handle(GetStudentByDniQuery query)`  | `Optional<Student>` | `public`     | Obtiene un estudiante a partir de su DNI.             |
 
 #### 2.6.3.2. Interface Layer
 
 1. **`EnrollmentsController` (REST Controller)**
-   Controlador REST que expone endpoints para gestionar matrículas.
+
+Controlador REST que expone endpoints para gestionar matrículas.
 
 **Endpoints principales:**
 
 <div style="font-size:55%;">
 
-| Nombre del método            | Ruta base típica                        | Método HTTP | Descripción                                                        |
-| ---------------------------- | --------------------------------------- | ----------- | ------------------------------------------------------------------ |
-| `createEnrollment`           | `/api/v1/enrollments`                   | `POST`      | Crea una nueva matrícula.                                          |
-| `getAllEnrollments`          | `/api/v1/enrollments`                   | `GET`       | Obtiene la lista completa de matrículas.                           |
-| `getEnrollmentById`          | `/api/v1/enrollments/{id}`              | `GET`       | Obtiene una matrícula específica por su ID.                        |
-| `getEnrollmentsByStudentId`  | `/api/v1/enrollments/student/{id}`      | `GET`       | Obtiene todas las matrículas asociadas a un estudiante por su ID.  |
-| `getEnrollmentsByStudentDni` | `/api/v1/enrollments/student/dni/{dni}` | `GET`       | Obtiene todas las matrículas asociadas a un estudiante por su DNI. |
-| `updateEnrollment`           | `/api/v1/enrollments/{id}`              | `PUT`       | Actualiza los datos de una matrícula existente.                    |
-| `deleteEnrollment`           | `/api/v1/enrollments/{id}`              | `DELETE`    | Elimina una matrícula por su ID.                                   |
+| Nombre del método             | Ruta base típica                        | Método HTTP | Descripción                                                        |
+|-------------------------------|-----------------------------------------|-------------|--------------------------------------------------------------------|
+| `createEnrollment`            | `/api/v1/enrollments`                   | `POST`      | Crea una nueva matrícula.                                          |
+| `getAllEnrollments`           | `/api/v1/enrollments`                   | `GET`       | Obtiene la lista completa de matrículas.                           |
+| `getEnrollmentById`           | `/api/v1/enrollments/{id}`              | `GET`       | Obtiene una matrícula específica por su ID.                        |
+| `getEnrollmentsByStudentId`   | `/api/v1/enrollments/student/{id}`      | `GET`       | Obtiene todas las matrículas asociadas a un estudiante por su ID.  |
+| `getEnrollmentsByStudentDni`  | `/api/v1/enrollments/student/dni/{dni}` | `GET`       | Obtiene todas las matrículas asociadas a un estudiante por su DNI. |
+| `updateEnrollment`            | `/api/v1/enrollments/{id}`              | `PUT`       | Actualiza los datos de una matrícula existente.                    |
+| `deleteEnrollment`            | `/api/v1/enrollments/{id}`              | `DELETE`    | Elimina una matrícula por su ID.                                   |
 
 </div>
 
 2. **`AcademicPeriodsController` (REST Controller)**
+
 Controlador REST que expone endpoints para gestionar períodos académicos.
 
 **Endpoints principales:**
 
 | Nombre del método       | Ruta base típica                | Método HTTP | Descripción                                            |
-| ----------------------- | ------------------------------- | ----------- | ------------------------------------------------------ |
+|-------------------------|---------------------------------|-------------|--------------------------------------------------------|
 | `createAcademicPeriod`  | `/api/v1/academic-periods`      | `POST`      | Crea un nuevo período académico.                       |
 | `getAllAcademicPeriods` | `/api/v1/academic-periods`      | `GET`       | Obtiene la lista completa de períodos académicos.      |
 | `updateAcademicPeriod`  | `/api/v1/academic-periods/{id}` | `PUT`       | Actualiza los datos de un período académico existente. |
@@ -4579,12 +4593,13 @@ Controlador REST que expone endpoints para gestionar períodos académicos.
 ---
 
 3. **`StudentsController` (REST Controller)**
+
 Controlador REST que expone endpoints para gestionar estudiantes.
 
 **Endpoints principales:**
 
 | Nombre del método | Ruta base típica             | Método HTTP | Descripción                                           |
-| ----------------- | ---------------------------- | ----------- | ----------------------------------------------------- |
+|-------------------|------------------------------|-------------|-------------------------------------------------------|
 | `createStudent`   | `/api/v1/students`           | `POST`      | Crea un nuevo estudiante.                             |
 | `getAllStudents`  | `/api/v1/students`           | `GET`       | Obtiene la lista completa de estudiantes registrados. |
 | `getStudentById`  | `/api/v1/students/{id}`      | `GET`       | Obtiene un estudiante específico por su ID.           |
@@ -4601,17 +4616,17 @@ Implementación del servicio de comandos para gestionar matrículas.
 **Atributos principales:**
 
 | Atributo                    | Tipo                        | Visibilidad | Descripción                                                   |
-| --------------------------- | --------------------------- | ----------- | ------------------------------------------------------------- |
+|-----------------------------|-----------------------------|-------------|---------------------------------------------------------------|
 | `enrollmentRepository`      | `EnrollmentRepository`      | `private`   | Repositorio para acceder y persistir matrículas.              |
 | `externalSchedulingService` | `ExternalSchedulingService` | `private`   | Servicio externo para obtener horarios semanales disponibles. |
 
 **Métodos principales:**
 
-| Método                                    | Tipo de Retorno        | Visibilidad | Descripción                                                        |
-| ----------------------------------------- |------------------------| ----------- | ------------------------------------------------------------------ |
-| `handle(CreateEnrollmentCommand command)` | `Long`                 | `public`    | Maneja el comando para crear una nueva matrícula.                  |
-| `handle(DeleteEnrollmentCommand command)` | `void`                 | `public`    | Maneja el comando para eliminar una matrícula existente.           |
-| `handle(UpdateEnrollmentCommand command)` | `Optional<Enrollment>` | `public`    | Maneja el comando para actualizar la información de una matrícula. |
+| Método                                     | Tipo de Retorno        | Visibilidad | Descripción                                                        |
+|--------------------------------------------|------------------------|-------------|--------------------------------------------------------------------|
+| `handle(CreateEnrollmentCommand command)`  | `Long`                 | `public`    | Maneja el comando para crear una nueva matrícula.                  |
+| `handle(DeleteEnrollmentCommand command)`  | `void`                 | `public`    | Maneja el comando para eliminar una matrícula existente.           |
+| `handle(UpdateEnrollmentCommand command)`  | `Optional<Enrollment>` | `public`    | Maneja el comando para actualizar la información de una matrícula. |
 
 ---
 
@@ -4622,7 +4637,7 @@ Implementación del servicio de consultas para obtener información sobre matrí
 **Atributos principales:**
 
 | Atributo               | Tipo                   | Visibilidad | Descripción                                        |
-| ---------------------- | ---------------------- | ----------- | -------------------------------------------------- |
+|------------------------|------------------------|-------------|----------------------------------------------------|
 | `enrollmentRepository` | `EnrollmentRepository` | `private`   | Repositorio para acceder a las matrículas.         |
 | `studentRepository`    | `StudentRepository`    | `private`   | Repositorio para acceder a estudiantes vinculados. |
 
@@ -4631,7 +4646,7 @@ Implementación del servicio de consultas para obtener información sobre matrí
 <div style="font-size:80%;">
 
 | Método                                             | Tipo de Retorno        | Visibilidad | Descripción                                                           |
-| -------------------------------------------------- | ---------------------- | ----------- | --------------------------------------------------------------------- |
+|----------------------------------------------------|------------------------|-------------|-----------------------------------------------------------------------|
 | `handle(GetAllEnrollmentsByStudentIdQuery query)`  | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas de un estudiante por su ID.              |
 | `handle(GetAllEnrollmentsQuery query)`             | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas registradas en el sistema.               |
 | `handle(GetEnrollmentByIdQuery query)`             | `Optional<Enrollment>` | `public`    | Obtiene una matrícula específica por su ID.                           |
@@ -4647,17 +4662,17 @@ Implementación del servicio de comandos para gestionar períodos académicos.
 
 **Atributos principales:**
 
-| Atributo                   | Tipo                       | Visibilidad | Descripción                                    |
-| -------------------------- | -------------------------- | ----------- | ---------------------------------------------- |
-| `academicPeriodRepository` | `AcademicPeriodRepository` | `private`   | Repositorio para acceder y persistir períodos. |
+| Atributo                    | Tipo                        | Visibilidad | Descripción                                     |
+|-----------------------------|-----------------------------|-------------|-------------------------------------------------|
+| `academicPeriodRepository`  | `AcademicPeriodRepository`  | `private`   | Repositorio para acceder y persistir períodos.  |
 
 **Métodos principales:**
 
-| Método                                        | Tipo de Retorno            | Visibilidad | Descripción                                                       |
-| --------------------------------------------- |----------------------------| ----------- | ----------------------------------------------------------------- |
-| `handle(CreateAcademicPeriodCommand command)` | `Long`                     | `public`    | Maneja el comando para crear un nuevo período académico.          |
-| `handle(DeleteAcademicPeriodCommand command)` | `void`                     | `public`    | Maneja el comando para eliminar un período académico existente.   |
-| `handle(UpdateAcademicPeriodCommand command)` | `Optional<AcademicPeriod>` | `public`    | Maneja el comando para actualizar un período académico existente. |
+| Método                                         | Tipo de Retorno            | Visibilidad | Descripción                                                       |
+|------------------------------------------------|----------------------------|-------------|-------------------------------------------------------------------|
+| `handle(CreateAcademicPeriodCommand command)`  | `Long`                     | `public`    | Maneja el comando para crear un nuevo período académico.          |
+| `handle(DeleteAcademicPeriodCommand command)`  | `void`                     | `public`    | Maneja el comando para eliminar un período académico existente.   |
+| `handle(UpdateAcademicPeriodCommand command)`  | `Optional<AcademicPeriod>` | `public`    | Maneja el comando para actualizar un período académico existente. |
 
 ---
 
@@ -4667,16 +4682,16 @@ Implementación del servicio de consultas para obtener información sobre perío
 
 **Atributos principales:**
 
-| Atributo                   | Tipo                       | Visibilidad | Descripción                                         |
-| -------------------------- | -------------------------- | ----------- | --------------------------------------------------- |
-| `academicPeriodRepository` | `AcademicPeriodRepository` | `private`   | Repositorio para acceder a los períodos académicos. |
+| Atributo                    | Tipo                         | Visibilidad | Descripción                                          |
+|-----------------------------|------------------------------|-------------|------------------------------------------------------|
+| `academicPeriodRepository`  | `AcademicPeriodRepository`   | `private`   | Repositorio para acceder a los períodos académicos.  |
 
 **Métodos principales:**
 
-| Método                                     | Tipo de Retorno            | Visibilidad | Descripción                                        |
-| ------------------------------------------ | -------------------------- | ----------- | -------------------------------------------------- |
-| `handle(GetAllAcademicPeriodsQuery query)` | `List<AcademicPeriod>`     | `public`    | Obtiene todos los períodos académicos registrados. |
-| `handle(GetAcademicPeriodByIdQuery query)` | `Optional<AcademicPeriod>` | `public`    | Obtiene un período académico específico por su ID. |
+| Método                                      | Tipo de Retorno            | Visibilidad | Descripción                                         |
+|---------------------------------------------|----------------------------|-------------|-----------------------------------------------------|
+| `handle(GetAllAcademicPeriodsQuery query)`  | `List<AcademicPeriod>`     | `public`    | Obtiene todos los períodos académicos registrados.  |
+| `handle(GetAcademicPeriodByIdQuery query)`  | `Optional<AcademicPeriod>` | `public`    | Obtiene un período académico específico por su ID.  |
 
 ---
 
@@ -4686,17 +4701,17 @@ Implementación del servicio de comandos para gestionar estudiantes.
 
 **Atributos principales:**
 
-| Atributo            | Tipo                | Visibilidad | Descripción                                       |
-| ------------------- | ------------------- | ----------- | ------------------------------------------------- |
-| `studentRepository` | `StudentRepository` | `private`   | Repositorio para acceder y persistir estudiantes. |
+| Atributo             | Tipo                 | Visibilidad | Descripción                                        |
+|----------------------|----------------------|-------------|----------------------------------------------------|
+| `studentRepository`  | `StudentRepository`  | `private`   | Repositorio para acceder y persistir estudiantes.  |
 
 **Métodos principales:**
 
-| Método                                 | Tipo de Retorno     | Visibilidad | Descripción                                                        |
-| -------------------------------------- | ------------------- | ----------- | ------------------------------------------------------------------ |
-| `handle(CreateStudentCommand command)` | `Long`              | `public`    | Maneja el comando para crear un nuevo estudiante.                  |
-| `handle(DeleteStudentCommand command)` | `void`              | `public`    | Maneja el comando para eliminar un estudiante existente.           |
-| `handle(UpdateStudentCommand command)` | `Optional<Student>` | `public`    | Maneja el comando para actualizar la información de un estudiante. |
+| Método                                  | Tipo de Retorno     | Visibilidad | Descripción                                                        |
+|-----------------------------------------|---------------------|-------------|--------------------------------------------------------------------|
+| `handle(CreateStudentCommand command)`  | `Long`              | `public`    | Maneja el comando para crear un nuevo estudiante.                  |
+| `handle(DeleteStudentCommand command)`  | `void`              | `public`    | Maneja el comando para eliminar un estudiante existente.           |
+| `handle(UpdateStudentCommand command)`  | `Optional<Student>` | `public`    | Maneja el comando para actualizar la información de un estudiante. |
 
 ---
 
@@ -4706,17 +4721,17 @@ Implementación del servicio de consultas para obtener información sobre estudi
 
 **Atributos principales:**
 
-| Atributo            | Tipo                | Visibilidad | Descripción                                 |
-| ------------------- | ------------------- | ----------- | ------------------------------------------- |
-| `studentRepository` | `StudentRepository` | `private`   | Repositorio para acceder a los estudiantes. |
+| Atributo             | Tipo                 | Visibilidad | Descripción                                  |
+|----------------------|----------------------|-------------|----------------------------------------------|
+| `studentRepository`  | `StudentRepository`  | `private`   | Repositorio para acceder a los estudiantes.  |
 
 **Métodos principales:**
 
-| Método                               | Tipo de Retorno     | Visibilidad | Descripción                                            |
-| ------------------------------------ | ------------------- | ----------- | ------------------------------------------------------ |
-| `handle(GetStudentByIdQuery query)`  | `Optional<Student>` | `public`    | Obtiene un estudiante específico por su ID.            |
-| `handle(GetAllStudentsQuery query)`  | `List<Student>`     | `public`    | Obtiene la lista de todos los estudiantes registrados. |
-| `handle(GetStudentByDniQuery query)` | `Optional<Student>` | `public`    | Obtiene un estudiante a partir de su DNI.              |
+| Método                                | Tipo de Retorno     | Visibilidad | Descripción                                            |
+|---------------------------------------|---------------------|-------------|--------------------------------------------------------|
+| `handle(GetStudentByIdQuery query)`   | `Optional<Student>` | `public`    | Obtiene un estudiante específico por su ID.            |
+| `handle(GetAllStudentsQuery query)`   | `List<Student>`     | `public`    | Obtiene la lista de todos los estudiantes registrados. |
+| `handle(GetStudentByDniQuery query)`  | `Optional<Student>` | `public`    | Obtiene un estudiante a partir de su DNI.              |
 
 #### 2.6.3.4. Infrastructure Layer
 
@@ -4729,7 +4744,7 @@ Interfaz del repositorio para acceder y gestionar matrículas.
 <div style="font-size:70%;">
 
 | Método                                                                       | Tipo de Retorno        | Visibilidad | Descripción                                                              |
-| ---------------------------------------------------------------------------- | ---------------------- | ----------- | ------------------------------------------------------------------------ |
+|------------------------------------------------------------------------------|------------------------|-------------|--------------------------------------------------------------------------|
 | `findAllByStudentId(StudentId studentId)`                                    | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas asociadas a un estudiante por su ID.        |
 | `findAllByAcademicPeriodId(PeriodId periodId)`                               | `List<Enrollment>`     | `public`    | Obtiene todas las matrículas registradas en un período académico.        |
 | `findByStudentIdAndAcademicPeriodId(StudentId studentId, PeriodId periodId)` | `Optional<Enrollment>` | `public`    | Busca una matrícula específica por ID de estudiante y período académico. |
@@ -4747,7 +4762,7 @@ Interfaz del repositorio para acceder y gestionar períodos académicos.
 <div style="font-size:80%;">
 
 | Método                                                     | Tipo de Retorno            | Visibilidad | Descripción                                                                  |
-| ---------------------------------------------------------- | -------------------------- | ----------- | ---------------------------------------------------------------------------- |
+|------------------------------------------------------------|----------------------------|-------------|------------------------------------------------------------------------------|
 | `existsByPeriodName(String periodName)`                    | `boolean`                  | `public`    | Verifica si existe un período académico con el nombre especificado.          |
 | `findByPeriodName(String periodName)`                      | `Optional<AcademicPeriod>` | `public`    | Busca un período académico por su nombre.                                    |
 | `existsByPeriodNameAndIdIsNot(String periodName, Long id)` | `boolean`                  | `public`    | Verifica si existe otro período académico con el mismo nombre y distinto ID. |
@@ -4763,7 +4778,7 @@ Interfaz del repositorio para acceder y gestionar estudiantes.
 **Métodos principales:**
 
 | Método                               | Tipo de Retorno     | Visibilidad | Descripción                                                           |
-| ------------------------------------ | ------------------- | ----------- | --------------------------------------------------------------------- |
+|--------------------------------------|---------------------|-------------|-----------------------------------------------------------------------|
 | `existsStudentByDni_Dni(String dni)` | `boolean`           | `public`    | Verifica si existe un estudiante registrado con el DNI proporcionado. |
 | `findByDni_Dni(String dni)`          | `Optional<Student>` | `public`    | Busca un estudiante específico a partir de su DNI.                    |
 
@@ -4869,6 +4884,7 @@ Representa la asistencia de un solo estudiante.
 #### 2.6.4.2. Interface Layer
 
 1.**`ClassAttendanceController` (REST controller)**  
+
 Controlador REST que expone endpoints para registrar asistencia o obtenerlas.
 
 **Endpoints Principales:**
@@ -4881,6 +4897,7 @@ Controlador REST que expone endpoints para registrar asistencia o obtenerlas.
 #### 2.6.4.3. Application Layer
 
 1.**`ClassAttendanceCommandServiceImpl` (Command Service Implementation)**  
+
 Implementación del servicio de comandos para gestionar asistencias de una clase.
 
 **Atributos principales**
@@ -5018,13 +5035,13 @@ Representa un aula disponible para la programación de sesiones.
 
 **Atributos principales:**
 
-| Atributo       | Tipo          | Visibilidad | Descripción                       |
-|---------------|---------------|-------------|-----------------------------------|
-| `id`           | `Long`       | `private`   | Identificador único del aula.     |
-| `classroomCode`| `ClassroomCode` | `private` | Código del aula.                  |
-| `capacity`     | `Integer`    | `private`   | Capacidad máxima de estudiantes. |
-| `campus`       | `String`     | `private`   | Campus donde se ubica el aula.   |
-| `academyId`    | `AcademyId`  | `private`   | Identificador de la academia asociada.|
+| Atributo        | Tipo            | Visibilidad | Descripción                            |
+|-----------------|-----------------|-------------|----------------------------------------|
+| `id`            | `Long`          | `private`   | Identificador único del aula.          |
+| `classroomCode` | `ClassroomCode` | `private`   | Código del aula.                       |
+| `capacity`      | `Integer`       | `private`   | Capacidad máxima de estudiantes.       |
+| `campus`        | `String`        | `private`   | Campus donde se ubica el aula.         |
+| `academyId`     | `AcademyId`     | `private`   | Identificador de la academia asociada. |
 
 **Métodos principales:**
 
@@ -5062,15 +5079,15 @@ Representa una sesión de clase programada.
 
 Representa un día de la semana.
 
-| Atributo    | Tipo   | Visibilidad | Descripción               |
-|------------|--------|-------------|---------------------------|
-| `MONDAY`    | Enum  | `public`    | Lunes                     |
-| `TUESDAY`   | Enum  | `public`    | Martes                    |
-| `WEDNESDAY` | Enum  | `public`    | Miércoles                 |
-| `THURSDAY`  | Enum  | `public`    | Jueves                    |
-| `FRIDAY`    | Enum  | `public`    | Viernes                   |
-| `SATURDAY`  | Enum  | `public`    | Sábado                    |
-| `SUNDAY`    | Enum  | `public`    | Domingo                   |
+| Atributo    | Tipo   | Visibilidad  | Descripción           |
+|-------------|--------|--------------|-----------------------|
+| `MONDAY`    | Enum   | `public`     | Lunes                 |
+| `TUESDAY`   | Enum   | `public`     | Martes                |
+| `WEDNESDAY` | Enum   | `public`     | Miércoles             |
+| `THURSDAY ` | Enum   | `public`     | Jueves                |
+| `FRIDAY`    | Enum   | `public`     | Viernes               |
+| `SATURDAY`  | Enum   | `public`     | Sábado                |
+| `SUNDAY`    | Enum   | `public`     | Domingo               |
 
 ---
 
@@ -5078,16 +5095,16 @@ Representa un día de la semana.
 
 Representa un intervalo de tiempo.
 
-| Atributo    | Tipo       | Visibilidad | Descripción                    |
-|------------|------------|-------------|--------------------------------|
-| `startTime` | `LocalTime` | `private`  | Hora de inicio del intervalo.  |
-| `endTime`   | `LocalTime` | `private`  | Hora de fin del intervalo.     |
+| Atributo    | Tipo          | Visibilidad | Descripción                    |
+|-------------|---------------|-------------|--------------------------------|
+| `startTime` | `LocalTime`   | `private`   | Hora de inicio del intervalo.  |
+| `endTime`   | `LocalTime`   | `private`   | Hora de fin del intervalo.     |
 
 **Métodos principales:**
 
-| Método                   | Tipo de Retorno | Visibilidad | Descripción                                         |
-|---------------------------|----------------|-------------|---------------------------------------------------|
-| `overlapsWith(TimeRange other)` | `boolean` | `public`    | Verifica si dos intervalos de tiempo se superponen.|
+| Método                            | Tipo de Retorno | Visibilidad | Descripción                                          |
+|-----------------------------------|-----------------|-------------|------------------------------------------------------|
+| `overlapsWith(TimeRange other)`   | `boolean`       | `public`    | Verifica si dos intervalos de tiempo se superponen.  |
 
 ---
 
@@ -5097,11 +5114,11 @@ Proporciona métodos para ejecutar comandos relacionados con la gestión de aula
 
 **Métodos principales:**
 
-| Método                                | Tipo de Retorno       | Visibilidad | Descripción                                     |
-|--------------------------------------|---------------------|-------------|------------------------------------------------|
-| `handle(CreateClassroomCommand command)` | `Long`             | `public`    | Crea una nueva aula y retorna su ID.           |
-| `handle(UpdateClassroomCommand command)` | `Optional<Classroom>` | `public` | Actualiza los datos de un aula existente.      |
-| `handle(DeleteClassroomCommand command)` | `void`             | `public`    | Elimina un aula existente.                     |
+| Método                                    | Tipo de Retorno       | Visibilidad  | Descripción                               |
+|-------------------------------------------|-----------------------|--------------|-------------------------------------------|
+| `handle(CreateClassroomCommand command)`  | `Long`                | `public`     | Crea una nueva aula y retorna su ID.      |
+| `handle(UpdateClassroomCommand command)`  | `Optional<Classroom>` | `public`     | Actualiza los datos de un aula existente. |
+| `handle(DeleteClassroomCommand command)`  | `void`                | `public`     | Elimina un aula existente.                |
 
 ---
 
@@ -5111,10 +5128,10 @@ Proporciona métodos para consultar información relacionada con las aulas.
 
 **Métodos principales:**
 
-| Método                           | Tipo de Retorno      | Visibilidad | Descripción                                     |
-|---------------------------------|--------------------|-------------|------------------------------------------------|
-| `handle(GetAllClassroomsQuery query)` | `List<Classroom>` | `public`    | Obtiene todas las aulas registradas.           |
-| `handle(GetClassroomByIdQuery query)` | `Optional<Classroom>` | `public` | Obtiene un aula específica por su ID.         |
+| Método                                  | Tipo de Retorno         | Visibilidad | Descripción                                  |
+|-----------------------------------------|-------------------------|-------------|----------------------------------------------|
+| `handle(GetAllClassroomsQuery query)`   | `List<Classroom>`       | `public`    | Obtiene todas las aulas registradas.         |
+| `handle(GetClassroomByIdQuery query)`   | `Optional<Classroom>`   | `public`    | Obtiene un aula específica por su ID.        |
 
 ---
 
@@ -5124,11 +5141,11 @@ Proporciona métodos para ejecutar comandos relacionados con la gestión de curs
 
 **Métodos principales:**
 
-| Método                                | Tipo de Retorno       | Visibilidad | Descripción                                     |
-|--------------------------------------|---------------------|-------------|------------------------------------------------|
-| `handle(CreateCourseCommand command)` | `Long`              | `public`    | Crea un nuevo curso y retorna su ID.           |
-| `handle(UpdateCourseCommand command)` | `Optional<Course>`  | `public`    | Actualiza los datos de un curso existente.    |
-| `handle(DeleteCourseCommand command)` | `void`              | `public`    | Elimina un curso existente.                   |
+| Método                                  | Tipo de Retorno    | Visibilidad  | Descripción                                 |
+|-----------------------------------------|--------------------|--------------|---------------------------------------------|
+| `handle(CreateCourseCommand command)`   | `Long`             | `public`     | Crea un nuevo curso y retorna su ID.        |
+| `handle(UpdateCourseCommand command)`   | `Optional<Course>` | `public`     | Actualiza los datos de un curso existente.  |
+| `handle(DeleteCourseCommand command)`   | `void`             | `public`     | Elimina un curso existente.                 |
 
 ---
 
@@ -5138,11 +5155,11 @@ Proporciona métodos para consultar información relacionada con cursos.
 
 **Métodos principales:**
 
-| Método                               | Tipo de Retorno       | Visibilidad | Descripción                                     |
-|-------------------------------------|---------------------|-------------|------------------------------------------------|
-| `handle(GetAllCoursesQuery query)`   | `List<Course>`       | `public`    | Obtiene todos los cursos registrados.          |
-| `handle(GetCourseByIdQuery query)`   | `Optional<Course>`   | `public`    | Obtiene un curso específico por su ID.        |
-| `handle(GetCourseByCodeQuery query)` | `Optional<Course>`   | `public`    | Obtiene un curso por su código de curso.      |
+| Método                                | Tipo de Retorno    | Visibilidad  | Descripción                                |
+|---------------------------------------|--------------------|--------------|--------------------------------------------|
+| `handle(GetAllCoursesQuery query)`    | `List<Course>`     | `public`     | Obtiene todos los cursos registrados.      |
+| `handle(GetCourseByIdQuery query)`    | `Optional<Course>` | `public`     | Obtiene un curso específico por su ID.     |
+| `handle(GetCourseByCodeQuery query)`  | `Optional<Course>` | `public`     | Obtiene un curso por su código de curso.   |
 
 11. **`ScheduleCommandService` (Domain Service)**
 
@@ -5212,13 +5229,13 @@ Controlador REST que expone endpoints para gestionar **cursos**.
 
 **Endpoints principales:**
 
-| Nombre del método           | Ruta base típica                   | Método HTTP | Descripción                                             |
-|-----------------------------|------------------------------------|-------------|---------------------------------------------------------|
-| `createCourse`              | `/api/v1/courses`                 | `POST`      | Crea un nuevo curso.                                    |
-| `getAllCourses`             | `/api/v1/courses`                 | `GET`       | Obtiene todos los cursos registrados.                   |
-| `getCourseById`             | `/api/v1/courses/{courseId}`      | `GET`       | Obtiene un curso por su ID.                             |
-| `updateCourse`              | `/api/v1/courses/{courseId}`      | `PUT`       | Actualiza los datos de un curso existente.              |
-| `deleteCourse`              | `/api/v1/courses/{courseId}`      | `DELETE`    | Elimina un curso existente.                             |
+| Nombre del método | Ruta base típica             | Método HTTP | Descripción                                |
+|-------------------|------------------------------|-------------|--------------------------------------------|
+| `createCourse`    | `/api/v1/courses`            | `POST`      | Crea un nuevo curso.                       |
+| `getAllCourses`   | `/api/v1/courses`            | `GET`       | Obtiene todos los cursos registrados.      |
+| `getCourseById`   | `/api/v1/courses/{courseId}` | `GET`       | Obtiene un curso por su ID.                |
+| `updateCourse`    | `/api/v1/courses/{courseId}` | `PUT`       | Actualiza los datos de un curso existente. |
+| `deleteCourse`    | `/api/v1/courses/{courseId}` | `DELETE`    | Elimina un curso existente.                |
 
 ---
 
@@ -5228,13 +5245,13 @@ Controlador REST que expone endpoints para gestionar **aulas**.
 
 **Endpoints principales:**
 
-| Nombre del método           | Ruta base típica                      | Método HTTP | Descripción                                             |
-|-----------------------------|---------------------------------------|-------------|---------------------------------------------------------|
-| `createClassroom`           | `/api/v1/classrooms`                 | `POST`      | Crea una nueva aula.                                    |
-| `getAllClassrooms`          | `/api/v1/classrooms`                 | `GET`       | Obtiene todas las aulas registradas.                    |
-| `getClassroomById`          | `/api/v1/classrooms/{classroomId}`   | `GET`       | Obtiene un aula por su ID.                              |
-| `updateClassroom`           | `/api/v1/classrooms/{classroomId}`   | `PUT`       | Actualiza los datos de un aula existente.               |
-| `deleteClassroom`           | `/api/v1/classrooms/{classroomId}`   | `DELETE`    | Elimina un aula existente.                              |
+| Nombre del método   | Ruta base típica                   | Método HTTP | Descripción                               |
+|---------------------|------------------------------------|-------------|-------------------------------------------|
+| `createClassroom`   | `/api/v1/classrooms`               | `POST`      | Crea una nueva aula.                      |
+| `getAllClassrooms`  | `/api/v1/classrooms`               | `GET`       | Obtiene todas las aulas registradas.      |
+| `getClassroomById`  | `/api/v1/classrooms/{classroomId}` | `GET`       | Obtiene un aula por su ID.                |
+| `updateClassroom`   | `/api/v1/classrooms/{classroomId}` | `PUT`       | Actualiza los datos de un aula existente. |
+| `deleteClassroom`   | `/api/v1/classrooms/{classroomId}` | `DELETE`    | Elimina un aula existente.                |
 
 ---
 
@@ -5286,11 +5303,11 @@ Implementación del servicio de comandos para gestionar horarios semanales y ses
 
 **Atributos principales:**
 
-| Atributo                    | Tipo                       | Visibilidad | Descripción                                                        |
-|-----------------------------|---------------------------|-------------|--------------------------------------------------------------------|
-| `scheduleRepository`        | `ScheduleRepository`      | `private`   | Repositorio para acceder y gestionar horarios semanales.           |
-| `scheduleRepository`        | `ClassSessionRepository`  | `private`   | Repositorio para acceder y gestionar sesiones de clase.           |
-| `externalIamService`        | `ExternalIamService`      | `private`   | Servicio externo para validar docentes.                           |
+| Atributo              | Tipo                     | Visibilidad | Descripción                                              |
+|-----------------------|--------------------------|-------------|----------------------------------------------------------|
+| `scheduleRepository`  | `ScheduleRepository`     | `private`   | Repositorio para acceder y gestionar horarios semanales. |
+| `scheduleRepository`  | `ClassSessionRepository` | `private`   | Repositorio para acceder y gestionar sesiones de clase.  |
+| `externalIamService`  | `ExternalIamService`     | `private`   | Servicio externo para validar docentes.                  |
 
 **Métodos principales:**
 
@@ -6474,7 +6491,7 @@ En esta sección se presentan los wireframes y mock-ups de las aplicaciones móv
 
 **Mobile Applications Wireframes: Flujo de Administrador**
 
-A continuación, se presenta la sustentación de los mockups para la aplicación del **Administrador**. El diseño se enfoca en la seguridad, claridad y eficiencia, aplicando un Design System consistente para una experiencia de usuario intuitiva.
+A continuación, se presenta la sustentación de los wireframes para la aplicación del **Administrador**. El diseño se enfoca en la seguridad, claridad y eficiencia, aplicando un Design System consistente para una experiencia de usuario intuitiva.
 
 **Registro y Creación de Cuenta**
 
