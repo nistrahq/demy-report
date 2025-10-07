@@ -6628,7 +6628,33 @@ La sección de Ayuda centraliza los recursos de soporte, como información de co
 
 #### 3.1.4.5. Mobile Applications Prototyping
 
-*Escribir aquí*
+En esta sección se presentan los prototipos interactivos de las aplicaciones móviles de la plataforma Demy. Estos prototipos permiten simular la experiencia de usuario y validar el diseño antes de la implementación, facilitando la identificación de posibles mejoras y ajustes necesarios.
+
+A continuación, se presentan capturas y enlaces a los prototipos interactivos para cada tipo de usuario:
+
+**Android Native-Mobile App: Administrador**
+
+![Admin Prototipo](./assets/ux-ui/prototypes/mobile/admin/admin_prototype.png)
+
+Enlace para acceder al video del prototipo interactivo del Administrador: [Abrir en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/Ed7chq8B365KiHTYFYpKCu0BoIx1j6Zfy2sb557bVAUxlA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ec5GPS)
+
+Enlace para acceder al prototipo interactivo del Administrador: [Abrir en Figma](https://www.figma.com/proto/dxy4SyBNhaqOU8KWEg5iyT/Android---iOS?page-id=0%3A1&node-id=342-3088&p=f&viewport=201%2C127%2C0.09&t=SfUpqFSc50n0lcZK-1&scaling=contain&content-scaling=fixed)
+
+**Android Native-Mobile App: Teacher**
+
+![Teacher Prototipo](./assets/ux-ui/prototypes/mobile/teacher/teacher_prototype.png)
+
+Enlace para acceder al video del prototipo interactivo del Teacher: [Abrir en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EdfPOjWDG5BAje78fLFpmOQBRBtAZkTkZ8cx079QHRBPXg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=88eBoH)
+
+Enlace para acceder al prototipo interactivo del Teacher: [Abrir en Figma](https://www.figma.com/proto/dxy4SyBNhaqOU8KWEg5iyT/Android---iOS?page-id=22%3A2&node-id=500-11832&viewport=-1680%2C423%2C0.16&t=Acjxu5be6q8vxEMG-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=500%3A11832)
+
+**iOS Native-Mobile App: Student**
+
+![Student Prototipo](./assets/ux-ui/prototypes/mobile/student/student_prototype.png)
+
+Enlace para acceder al video del prototipo interactivo del Student: [Abrir en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EauAiSyzTXlEnPzg8sC7VJABSV6SRaHf-YseFnxp3xbACw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ENLqMs)
+
+Enlace para acceder al prototipo interactivo del Student: [Abrir en Figma](https://www.figma.com/proto/dxy4SyBNhaqOU8KWEg5iyT/Android---iOS?page-id=114%3A22&node-id=589-11102&p=f&viewport=56%2C339%2C0.06&t=He6yTJjLBTnc2htY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=589%3A11102&show-proto-sidebar=1)
 
 <hr class="page-break">
 
