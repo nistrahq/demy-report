@@ -6349,6 +6349,12 @@ Solicitar o ejecutar la reprogramación de una clase de manera eficiente, indica
 
 ![Userflow-Teacher-2](assets/ux-ui/userflows/teacher/Userflow-Teacher-RescheduleClass.png)
 
+*User Goal*
+Realizar la toma de asistencia de los alumnos de forma rápida y sencilla al inicio de cada clase, asegurando un registro preciso para fines académicos y administrativos.
+
+![Userflow-Teacher-3](assets/ux-ui/userflows/teacher/Userflow-Teacher-TakeAttendance.png)
+
+
 #### 3.1.4.5. Mobile Applications Prototyping
 
 *Escribir aquí*
