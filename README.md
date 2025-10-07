@@ -6255,12 +6255,32 @@ Estas pantallas de onboarding que sigue al registro. Guía al administrador a tr
 ![Admin Configuración Academia](./assets/ux-ui/mockups/admin/admin_configuracion_academia.png)
 ![Admin Confirmación Éxito](./assets/ux-ui/mockups/admin/admin_confirmacion_exito.png)
 
-
 **Pantalla Principal (Dashboard)**
 
 Muestra un resumen visual del estado de la institución con métricas clave, gráficos de ingresos/gastos y datos importantes del periodo académico actual. Permite una visión general rápida.
 
 ![Admin Dashboard](./assets/ux-ui/mockups/admin/admin_dashboard.png)
+
+**Gestión de Periodos Académicos**
+
+Permite crear, ver, editar y eliminar periodos académicos. Muestra el periodo actual de forma destacada y un listado completo para una gestión sencilla.
+
+![Admin Periodos Management](./assets/ux-ui/mockups/admin/admin_periods_management.png)
+![Admin Periodos Nuevo Formulario](./assets/ux-ui/mockups/admin/admin_periods_new_form.png)
+
+**Gestión de Profesores**
+
+Facilita la administración de profesores, permitiendo registrar, editar y eliminar sus perfiles. El diseño es consistente con otras secciones de gestión para optimizar el flujo de trabajo.
+
+![Admin Profesores Registro Formulario](./assets/ux-ui/mockups/admin/admin_teachers_register_form.png)
+![Admin Profesores Edición Formulario](./assets/ux-ui/mockups/admin/admin_teachers_edit_form.png)
+
+
+**Seguimiento de Estudiantes**
+
+Permite buscar y visualizar el perfil de cada estudiante. Al seleccionar uno, se muestra una tarjeta con su información principal para un seguimiento rápido y eficiente.
+
+![Admin Seguimiento Estudiantes](./assets/ux-ui/mockups/admin/admin_student_monitoring.png)
 
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
