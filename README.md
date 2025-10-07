@@ -6361,6 +6361,16 @@ Este flujo representa el centro de navegación de la aplicación. La Home actúa
 ![Profile](./assets/ux-ui/mockups/mobile/teacher/Profile.png)
 ![Settings](./assets/ux-ui/mockups/mobile/teacher/Settings.png)
 
+**Asistencia**
+
+El objetivo de este flujo es la toma de asistencia rápida y la generación estructurada de informes. El proceso de reporte está dividido en pantallas de elección para asegurar la precisión de los filtros.
+
+![HomeAttendanceModal](./assets/ux-ui/mockups/mobile/teacher/HomeAttendanceModal.png)
+![TakeAttendance](./assets/ux-ui/mockups/mobile/teacher/TakeAttendance.png)
+![TakeAttendanceWithoutMarks](./assets/ux-ui/mockups/mobile/teacher/TakeAttendance-Without-Marks.png)
+![AttendanceReport-ChooseDate](./assets/ux-ui/mockups/mobile/teacher/AttendanceReport-Choose-Date.png)
+![AttendanceReport-Modal](./assets/ux-ui/mockups/mobile/teacher/AttendanceReport-Modal.png)
+![AttendanceReport](./assets/ux-ui/mockups/mobile/teacher/AttendanceReport.png)
 
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
