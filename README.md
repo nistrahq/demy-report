@@ -6220,31 +6220,35 @@ Los wireframes permiten visualizar de manera clara la estructura, distribución 
 
 **Flujo de Acceso y Recuperación de Contraseña**
 Este grupo incluye las pantallas necesarias para que el profesor ingrese a la aplicación o recupere su cuenta si ha olvidado la contraseña. El flujo está diseñado en pasos discretos para minimizar la frustración del usuario.
+
 ![WireframeMobileTeacher9](./assets/ux-ui/wireframes/mobile/teacher/Loader.png)
 ![WireframeMobileTeacher10](./assets/ux-ui/wireframes/mobile/teacher/Login.png)
-![WireframeMobileTeacher4](./assets/ux-ui/wireframes/mobile/teacher/ForgotPassword-CreateNew.png)
-![WireframeMobileTeacher5](./assets/ux-ui/wireframes/mobile/teacher/ForgotPassword-ResetPass.png)
-![WireframeMobileTeacher6](./assets/ux-ui/wireframes/mobile/teacher/ForgotPassword-Verification.png)
+![WireframeMobileTeacher4](./assets/ux-ui/wireframes/mobile/teacher/ForgotPassword-CreateNewPassword.png)
+![WireframeMobileTeacher5](./assets/ux-ui/wireframes/mobile/teacher/ForgotPassword-ResetPassword.png)
+![WireframeMobileTeacher6](./assets/ux-ui/wireframes/mobile/teacher/ForgotPassword-VerificationCode.png)
 
 **Flujo Principal y Gestión de Cuenta**
 Este flujo representa el centro de navegación de la aplicación. La Home actúa como dashboard con acceso rápido a las funciones clave, mientras que Profile y Settings permiten la gestión de la identidad y las preferencias del profesor.
+
 ![WireframeMobileTeacher8](./assets/ux-ui/wireframes/mobile/teacher/Home.png)
 ![WireframeMobileTeacher11](./assets/ux-ui/wireframes/mobile/teacher/Profile.png)
 ![WireframeMobileTeacher12](./assets/ux-ui/wireframes/mobile/teacher/Settings.png)
 
 **Flujo de Asistencia**
 El objetivo de este flujo es la toma de asistencia rápida y la generación estructurada de informes. El proceso de reporte está dividido en pantallas de elección para asegurar la precisión de los filtros.
+
 ![WireframeMobileTeacher7](./assets/ux-ui/wireframes/mobile/teacher/HomeAttendanceModal.png)
 ![WireframeMobileTeacher13](./assets/ux-ui/wireframes/mobile/teacher/TakeAttendance.png)
-![WireframeMobileTeacher1](./assets/ux-ui/wireframes/mobile/teacher/AttencanceReport-Choose.png)
-![WireframeMobileTeacher2](./assets/ux-ui/wireframes/mobile/teacher/AttencanceReport-Choose2.png)
+![WireframeMobileTeacher1](./assets/ux-ui/wireframes/mobile/teacher/AttencanceReport-ChooseCourse.png)
+![WireframeMobileTeacher2](./assets/ux-ui/wireframes/mobile/teacher/AttencanceReport-ChooseDate.png)
 ![WireframeMobileTeacher3](./assets/ux-ui/wireframes/mobile/teacher/AttendanceReport.png)
 
 **Flujo de Horario y Reprogramación**
 Este grupo gestiona la visualización del horario del profesor y ofrece una funcionalidad guiada de reprogramación de clases a través de múltiples pasos de confirmación.
-![WireframeMobileTeacher14](./assets/ux-ui/wireframes/mobile/teacher/TeachingReschedule-Choose.png)
-![WireframeMobileTeacher15](./assets/ux-ui/wireframes/mobile/teacher/TeachingReschedule-Choose2.png)
-![WireframeMobileTeacher16](./assets/ux-ui/wireframes/mobile/teacher/TeachingReschedule-Choose3.png)
+
+![WireframeMobileTeacher14](./assets/ux-ui/wireframes/mobile/teacher/TeachingReschedule-ChooseStarTime.png)
+![WireframeMobileTeacher15](./assets/ux-ui/wireframes/mobile/teacher/TeachingReschedule-ChooseEndTime.png)
+![WireframeMobileTeacher16](./assets/ux-ui/wireframes/mobile/teacher/TeachingReschedule-ChooseDay.png)
 ![WireframeMobileTeacher18](./assets/ux-ui/wireframes/mobile/teacher/TeachingSchedule.png)
 ![WireframeMobileTeacher17](./assets/ux-ui/wireframes/mobile/teacher/TeachingReschedule.png)
 
