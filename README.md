@@ -6295,6 +6295,13 @@ Esta sección permite administrar la infraestructura de aulas. El administrador 
 ![Admin Aulas Nuevo Formulario](./assets/ux-ui/mockups/admin/admin_classrooms_new_form.png)
 ![Admin Aulas Edición Formulario](./assets/ux-ui/mockups/admin/admin_classrooms_edit_form.png)
 
+**Gestión de Cursos**
+
+Aquí se gestiona la oferta académica de la institución. Permite la creación, edición y eliminación de cursos, asignando nombre, código y descripción. El diseño sigue el patrón de las demás pantallas de gestión para una experiencia de usuario unificada y predecible.
+
+![Admin Cursos Nuevo Formulario](./assets/ux-ui/mockups/admin/admin_courses_new_form.png)
+![Admin Cursos Edición Formulario](./assets/ux-ui/mockups/admin/admin_courses_edit_form.png)
+
 
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
