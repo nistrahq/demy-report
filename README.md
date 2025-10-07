@@ -6412,6 +6412,15 @@ Reportar la asistencia consolidada de un grupo o período al sistema, facilitand
 ![Userflow-Teacher-4](assets/ux-ui/userflows/teacher/Userflow-Teacher-ViewSchedule.png)
 
 
+
+**SEGMENTO: STUDENTS**
+
+**User Goal**
+Visualizar de forma clara y ordenada su **horario semanal de clases**, incluyendo materias, docentes y aulas asignadas, para optimizar su organización y evitar confusiones o ausencias.
+
+![Userflow-Students-1](assets/ux-ui/userflows/students/Userflow-Students-ViewSchedule.png)
+
+
 #### 3.1.4.5. Mobile Applications Prototyping
 
 *Escribir aquí*
