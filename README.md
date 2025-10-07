@@ -6328,6 +6328,12 @@ Permite al administrador personalizar su experiencia en la aplicación. Incluye 
 
 ![Admin Configuración](./assets/ux-ui/mockups/admin/admin_settings.png)
 
+**Ayuda y Cierre de Sesión**
+
+La sección de Ayuda centraliza los recursos de soporte, como información de contacto y enlaces a documentos legales. El cierre de sesión se realiza de forma segura a través de un modal de confirmación para evitar salidas accidentales.
+
+![Admin Centro de Ayuda](./assets/ux-ui/mockups/admin/admin_help_center.png)
+![Admin Modal Cierre de Sesión](./assets/ux-ui/mockups/admin/admin_logout_modal.png)
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
