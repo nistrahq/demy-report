@@ -6354,6 +6354,10 @@ Realizar la toma de asistencia de los alumnos de forma rápida y sencilla al ini
 
 ![Userflow-Teacher-3](assets/ux-ui/userflows/teacher/Userflow-Teacher-TakeAttendance.png)
 
+*User Goal*
+Reportar la asistencia consolidada de un grupo o período al sistema, facilitando la gestión administrativa y la generación de informes finales de asistencia.
+
+![Userflow-Teacher-4](assets/ux-ui/userflows/teacher/Userflow-Teacher-ViewSchedule.png)
 
 #### 3.1.4.5. Mobile Applications Prototyping
 
