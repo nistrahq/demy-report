@@ -6426,8 +6426,10 @@ Consultar de manera rápida y segura **sus deudas o pagos pendientes** con la ac
 
 ![Userflow-Students-2](assets/ux-ui/userflows/student/Userflow-Students-ViewDebts.png)
 
+**User Goal**
+Visualizar en tiempo real **los cambios de horario o reprogramaciones de clases**, recibiendo notificaciones automáticas y actualizaciones inmediatas en su calendario personal.
 
-
+![Userflow-Students-3](assets/ux-ui/userflows/student/Userflow-Students-RealTimeChanges.png)
 
 #### 3.1.4.5. Mobile Applications Prototyping
 
