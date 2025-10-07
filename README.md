@@ -6239,6 +6239,12 @@ Solo el propietario de la cuenta pueda realizar cambios, ofreciendo una experien
 ![Admin Ingreso Nueva Password](./assets/ux-ui/mockups/admin/admin_ingreso_nueva_password.png)
 ![Admin Confirmación Cambio Password](./assets/ux-ui/mockups/admin/admin_confirmacion_cambio_password.png)
 
+**Documentación Legal**
+
+Pantallas dedicadas para los **Términos y Condiciones** y la **Política de Privacidad**. El diseño es limpio y se centra en la legibilidad del contenido, asegurando la transparencia y facilitando la consulta desde el flujo de registro.
+
+![Admin Términos y Condiciones](./assets/ux-ui/mockups/admin/admin_terminos_y_condiciones.png)
+![Admin Política de Privacidad](./assets/ux-ui/mockups/admin/admin_politica_de_privacidad.png)
 
 
 
