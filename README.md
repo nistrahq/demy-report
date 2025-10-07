@@ -6340,7 +6340,6 @@ La sección de Ayuda centraliza los recursos de soporte, como información de co
 A continuación, se presentan los mockups de la versión móvil destinados al perfil de docente. Estas pantallas muestran el flujo principal de interacción dentro de la aplicación, incluyendo el inicio de sesión, la gestión de asistencia, la visualización de horarios, la reprogramación de clases, el acceso al perfil del usuario, y la configuración de ajustes.
 
 Los mockups permiten visualizar de manera clara la estructura, distribución y funcionalidad de cada sección antes de la etapa de diseño visual definitivo.
-Perfecto. Aquí tienes el texto completo con los **nombres de archivo corregidos** (sin espacios y con guiones entre palabras) y los enlaces actualizados a la carpeta `/assets/ux-ui/mockups/mobile/teacher/`:
 
 
 **Acceso y Recuperación de Contraseña**
@@ -6353,6 +6352,14 @@ Este grupo incluye las pantallas necesarias para que el profesor ingrese a la ap
 ![ForgotPassword-ResetPass](./assets/ux-ui/mockups/mobile/teacher/ForgotPassword-ResetPass.png)
 ![ForgotPassword-Verification](./assets/ux-ui/mockups/mobile/teacher/ForgotPassword-Verification.png)
 
+
+**Principal y Gestión de Cuenta**
+
+Este flujo representa el centro de navegación de la aplicación. La Home actúa como dashboard con acceso rápido a las funciones clave, mientras que Profile y Settings permiten la gestión de la identidad y las preferencias del profesor.
+
+![Home](./assets/ux-ui/mockups/mobile/teacher/Home.png)
+![Profile](./assets/ux-ui/mockups/mobile/teacher/Profile.png)
+![Settings](./assets/ux-ui/mockups/mobile/teacher/Settings.png)
 
 
 
