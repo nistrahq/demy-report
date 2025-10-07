@@ -6666,11 +6666,213 @@ Para los mensajes de commit, se utilizará el estándar **Conventional Commits**
 
 ### 4.1.3. Source Code Style Guide & Conventions
 
-*Escribir aquí*
+Con el fin de asegurar un código limpio, mantenible y coherente entre todos los miembros del equipo, se han adoptado las siguientes convenciones de estilo y nomenclatura. Todas las variables, funciones, clases, archivos y elementos seguirán una **nomenclatura en inglés**.
+
+**Nomenclature General**
+
+- Se utilizará **inglés** como idioma único para nombres de variables, funciones, clases, comentarios y documentación.
+- Se evitarán abreviaciones innecesarias y nombres genéricos como `data1`, `temp`, `info`, etc.
+
+**HTML**
+
+Basado en las [Convenciones de Código de HTML](https://www.w3.org/TR/html52/) y las [Buenas Prácticas de HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started), se adoptan las siguientes reglas:
+
+- Atributos en minúsculas y nombres de clase con **kebab-case** (`section-title`, `main-container`).
+- Uso de comillas dobles para atributos (`class="example"`).
+- Estructura semántica clara: uso de etiquetas como `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`.
+- Sangría con 2 espacios.
+- Atributos ordenados de manera lógica: `id`, `class`, `type`, `name`, `placeholder`, `value`, `required`, etc.
+- Uso adecuado de etiquetas auto-cerradas (`<img />`, `<input />`).
+
+**CSS / Tailwind CSS**
+
+Basado en las [Convenciones de Código de CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) y las [Buenas Prácticas de Tailwind CSS](https://tailwindcss.com/docs/installation), se adoptan las siguientes reglas:
+
+- Nombres de clases en minúsculas.
+- Para clases personalizadas: usar **kebab-case**.
+- Se prioriza el uso de **Tailwind CSS** sobre CSS puro para la landing page.
+- Para clases de utilidad de Tailwind: usar **snake_case** (`text_center`, `bg_blue_500`).
+- Se agruparán clases de utilidad por orden lógico (layout -> spacing -> color -> typography).
+
+**Google JavaScript Style Guide**
+
+Basado en el [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html), se adoptan las siguientes reglas para mantener un código limpio y coherente:
+
+Nombres y sintaxis:
+- **camelCase** para variables, funciones y parámetros.
+- **PascalCase** para clases y constructores.
+- Constantes con `UPPER_CASE_WITH_UNDERSCORES` si son globales.
+
+Módulos y imports:
+- Preferir **imports explícitos y ordenados**: primero bibliotecas externas, luego internas.
+- Evitar `default exports`, usar siempre `export const` o `export class`.
+
+Buenas prácticas:
+- Preferir `const` sobre `let`, y evitar `var`.
+- Evitar usar `this` fuera de clases.
+- No mezclar funciones y lógica en componentes — delegar a servicios.
+
+**Java & Spring Boot**
+
+Basado en las [Convenciones de Código de Java](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html) y las [Buenas Prácticas de Spring](https://spring.io/guides/gs/spring-boot/), se adoptan las siguientes reglas:
+
+Nombres y sintaxis:
+- **camelCase** para variables, métodos y parámetros.
+- **PascalCase** para clases y interfaces.
+- Nombres de paquetes en minúsculas y separados por puntos (`com.example.project`).
+- Constantes en `UPPER_CASE_WITH_UNDERSCORES`.
+
+Estructura y organización:
+- Cada clase en su propio archivo.
+- Métodos cortos y enfocados en una sola responsabilidad.
+- Uso de anotaciones de Spring para inyección de dependencias y configuración.
+
+Buenas prácticas:
+- Evitar lógica de negocio en controladores; usar servicios.
+- Manejo adecuado de excepciones con `@ControllerAdvice`.
+- Documentar APIs REST con Swagger/OpenAPI.
+
+**Kotlin & Jetpack Compose**
+
+Basado en las [Convenciones de Código de Kotlin](https://kotlinlang.org/docs/coding-conventions.html) y las [Buenas Prácticas de Jetpack Compose](https://developer.android.com/jetpack/compose), se adoptan las siguientes reglas:
+
+Nombres y sintaxis:
+- **camelCase** para variables, funciones y parámetros.
+- **PascalCase** para clases y objetos.
+- Nombres de paquetes en minúsculas y separados por puntos (`com.example.project`).
+- Constantes en `UPPER_CASE_WITH_UNDERSCORES`.
+
+Estructura y organización:
+- Cada clase y objeto en su propio archivo.
+- Funciones cortas y enfocadas en una sola responsabilidad.
+- Uso de `@Composable` para funciones de UI.
+
+Buenas prácticas:
+- Evitar lógica de negocio en composables; usar ViewModels.
+- Manejo adecuado del estado con `State` y `MutableState`.
+- Documentar funciones públicas con KDoc.
+
+**Dart & Flutter**
+
+Basado en las [Convenciones de Código de Dart](https://dart.dev/guides/language/effective-dart/style) y las [Buenas Prácticas de Flutter](https://flutter.dev/docs/development/ui/advanced), se adoptan las siguientes reglas:
+
+Nombres y sintaxis:
+- **camelCase** para variables, funciones y parámetros.
+- **PascalCase** para clases y enums.
+- Nombres de paquetes en minúsculas y separados por guiones bajos (`my_package`).
+- Constantes en `lowercase_with_underscores`.
+
+Estructura y organización:
+- Cada clase en su propio archivo.
+- Widgets cortos y enfocados en una sola responsabilidad.
+- Uso de `StatelessWidget` y `StatefulWidget` según corresponda.
+
+Buenas prácticas:
+- Evitar lógica de negocio en widgets; usar Providers o Bloc.
+- Manejo adecuado del estado con `setState`, `Provider` o `Bloc`.
+- Documentar clases y métodos públicos con DartDoc.
+
+**Swift & SwiftUI**
+
+Basado en las [Convenciones de Código de Swift](https://swift.org/documentation/api-design-guidelines/) y las [Buenas Prácticas de SwiftUI](https://developer.apple.com/documentation/swiftui), se adoptan las siguientes reglas:
+
+Nombres y sintaxis:
+- **camelCase** para variables, funciones y parámetros.
+- **PascalCase** para clases, structs y enums.
+- Nombres de módulos en minúsculas y separados por puntos (`com.example.project`).
+- Constantes en `lowerCamelCase`.
+
+Estructura y organización:
+- Cada clase y struct en su propio archivo.
+- Funciones cortas y enfocadas en una sola responsabilidad.
+- Uso de `@State`, `@Binding` y `@Environment` para manejo de estado.
+
+Buenas prácticas:
+- Evitar lógica de negocio en vistas; usar ViewModels.
+- Manejo adecuado del estado con `@State` y `@ObservedObject`.
+- Documentar funciones públicas con SwiftDoc.
+
+**Pruebas / Gherkin**
+
+Basado en las [Buenas Prácticas de Gherkin](https://cucumber.io/docs/gherkin/reference/), se adoptan las siguientes reglas para la redacción de pruebas automatizadas:
+
+- Los archivos de características (`.feature`) se escribirán en inglés.
+- Cada escenario debe ser independiente y autocontenido.
+- Utilizar nombres descriptivos para características y escenarios.
+- Seguir la estructura Given-When-Then para claridad.
 
 ### 4.1.4. Software Deployment Configuration
 
-*Escribir aquí*
+Se utilizarán las siguientes plataformas para el despliegue de los diferentes productos del proyecto:
+
+| **Producto**                          | **Plataforma de Despliegue** | **Propósito**                                                                                     | **Enlace / Ruta de Acceso**                                            |
+|---------------------------------------|------------------------------|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
+| **Landing Page**                      | **Netlify**                  | Plataforma utilizada para el despliegue automático y gratuito de la landing page.                 | [https://www.netlify.com](https://www.netlify.com)                     |
+| **RESTful API**                       | **Railway**                  | Plataforma utilizada para el despliegue automático del servicio REST API, con prueba gratuita.    | [https://railway.app](https://railway.app)                             |
+| **Flutter Cross-Platform Mobile App** | **Firebase**                 | Plataforma utilizada para el despliegue automático de la aplicación móvil multiplataforma.        | [https://firebase.google.com](https://firebase.google.com)             |
+| **Android Native-Mobile App**         | **Google Play Console**      | Plataforma utilizada para la publicación y distribución de la aplicación móvil nativa en Android. | [https://play.google.com/console](https://play.google.com/console)     |
+| **iOS Native-Mobile App**             | **Apple App Store Connect**  | Plataforma utilizada para la publicación y distribución de la aplicación móvil nativa en iOS.     | [https://appstoreconnect.apple.com](https://appstoreconnect.apple.com) |
+
+**Netlify**
+
+Netlify es una plataforma de alojamiento y despliegue continuo para sitios web estáticos y aplicaciones frontend. Ofrece integración con repositorios GitHub, permitiendo despliegues automáticos al hacer push en ramas específicas.
+
+Para configurar el despliegue automático de la landing page en Netlify, se siguen los siguientes pasos:
+1. Crear una cuenta en [Netlify](https://www.netlify.com) y vincularla con el repositorio de GitHub que contiene el código de la landing page.
+2. Configurar un nuevo sitio en Netlify, seleccionando el repositorio correspondiente.
+3. Definir la rama de despliegue (por ejemplo, `main` o `develop`).
+4. Especificar los comandos de construcción y la carpeta de publicación (por ejemplo, `npm run build` y `dist/`).
+5. Guardar la configuración y permitir que Netlify realice el primer despliegue automático.
+
+**Railway**
+
+Railway es una plataforma de despliegue y gestión de aplicaciones backend que facilita la implementación de servicios REST API. Ofrece integración con repositorios GitHub y soporte para múltiples lenguajes y frameworks.
+
+Para configurar el despliegue automático del servicio REST API en Railway, se siguen los siguientes pasos:
+1. Crear una cuenta en [Railway](https://railway.app) y vincularla con el repositorio de GitHub que contiene el código del servicio REST API.
+2. Crear un nuevo proyecto en Railway, seleccionando el repositorio correspondiente.
+3. Definir la rama de despliegue (por ejemplo, `main` o `develop`).
+4. Configurar las variables de entorno necesarias para la aplicación.
+5. Guardar la configuración y permitir que Railway realice el primer despliegue automático.
+
+**Firebase**
+
+Firebase es una plataforma de desarrollo de aplicaciones móviles y web que ofrece servicios como autenticación, base de datos en tiempo real y alojamiento. También permite el despliegue automático de aplicaciones móviles multiplataforma desarrolladas con Flutter.
+
+Para configurar el despliegue automático de la aplicación móvil multiplataforma en Firebase, se siguen los siguientes pasos:
+1. Crear una cuenta en [Firebase](https://firebase.google.com) y crear un nuevo proyecto.
+2. Vincular el proyecto de Firebase con el repositorio de GitHub que contiene el código de la aplicación móvil.
+3. Configurar la integración continua utilizando GitHub Actions o Firebase CLI.
+4. Definir los comandos de construcción y despliegue (por ejemplo, `flutter build apk` y `firebase appdistribution:distribute`).
+5. Guardar la configuración y permitir que Firebase realice el primer despliegue automático.
+
+**Google Play Console**
+
+Google Play Console es la plataforma oficial para publicar y gestionar aplicaciones móviles nativas en Android. Permite la distribución de aplicaciones a través de Google Play Store, así como la gestión de versiones, análisis y monetización.
+
+Para publicar la aplicación móvil nativa en Android en Google Play Console, se siguen los siguientes pasos:
+1. Crear una cuenta de desarrollador en [Google Play Console](https://play.google.com/console) y pagar la tarifa de registro única.
+2. Crear un nuevo proyecto de aplicación, proporcionando la información básica como el nombre, la descripción y las capturas de pantalla.
+3. Subir el archivo APK o AAB generado por Android Studio.
+4. Completar los detalles de la ficha de la aplicación, incluyendo la categoría, el contenido y la política de privacidad.
+5. Enviar la aplicación para revisión y publicación en Google Play Store.
+
+**Apple App Store Connect**
+
+Apple App Store Connect es la plataforma oficial para publicar y gestionar aplicaciones móviles nativas en iOS. Permite la distribución de aplicaciones a través de Apple App Store, así como la gestión de versiones, análisis y monetización.
+
+Para publicar la aplicación móvil nativa en iOS en Apple App Store Connect, se siguen los siguientes pasos:
+1. Crear una cuenta de desarrollador en [Apple Developer](https://developer.apple.com/programs/) y pagar la tarifa de registro anual.
+2. Crear un nuevo proyecto de aplicación en Apple App Store Connect, proporcionando la información básica como el nombre, la descripción y las capturas de pantalla.
+3. Subir el archivo IPA generado por Xcode utilizando Transporter o Xcode.
+4. Completar los detalles de la ficha de la aplicación, incluyendo la categoría, el contenido y la política de privacidad.
+5. Enviar la aplicación para revisión y publicación en Apple App Store.
+
+> Nota: La publicación en Apple App Store está considerada fuera del alcance de este proyecto debido a limitaciones de recursos.
+
+Adicionalmente, se incluye el diagrama de despliegue de la arquitectura del sistema, que ilustra cómo los diferentes componentes del proyecto Demy interactúan entre sí y con las plataformas de despliegue.
+
+![Software Deployment Configuration: Deployment Diagram](./assets/diagrams/software-architecture/deployment/software-architecture-deployment-diagram.png)
 
 <hr class="page-break">
 
