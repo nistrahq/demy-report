@@ -7348,9 +7348,10 @@ El código fuente del proyecto está disponible en el siguiente repositorio de G
 
 ## Anexo B: Videos en Microsoft Streams
 
-Los videos de entrevistas para *needfinding*, *validation* y otros videos sobre avances del proyecto están disponibles en Microsoft Streams:
+Los videos de entrevistas para *needfinding*, exposiciones, y otros videos sobre avances del proyecto están disponibles en Microsoft Streams:
 
 1. [Entrevistas para Needfinding](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EUeBQObXSdZBvoolgyQ1JmcBRYnwPS0RfsU6kusFf0mfmw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BINKHX)
+2. [Exposición TP1](https://upcedupe-my.sharepoint.com/:f:/g/personal/u20201e843_upc_edu_pe/Ei7bZbP0zOFPu9Mj0THR5G4BYklW3JtHZAJSXpIzczUuAw?e=JFd3FZ)
 
 <hr class="page-break">
 
