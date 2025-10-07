@@ -6255,11 +6255,62 @@ En esta sección se describe la arquitectura de la información de la plataforma
 
 #### 3.1.2.1. Organization Systems
 
-*Escribir aquí*
+Se usarán diferentes sistemas de organización para estructurar y categorizar la información en la plataforma Demy, facilitando la navegación y el acceso a los contenidos por parte de los usuarios. A continuación, se describen los principales sistemas de organización que se implementarán:
+
+1. **Visual Organization *(organización visual del contenido):***
+    - Jerárquica *(visual hierarchy)*: La información se presenta en niveles de importancia, con los elementos más relevantes destacados visualmente mediante el uso de tamaños de fuente, colores y espacios en blanco. Por ejemplo, los títulos y encabezados serán más grandes y llamativos que el cuerpo del texto. Este sistema ayuda a los usuarios a identificar rápidamente la información clave y a comprender la estructura del contenido.
+    - Secuencial *(step-by-step to accomplish)*: La información se organiza en un orden lógico o cronológico, guiando a los usuarios a través de un proceso o flujo de trabajo. Por ejemplo, en la sección de creación de cursos, los usuarios serán guiados paso a paso desde la configuración inicial hasta la publicación del curso. Este sistema facilita la comprensión y el seguimiento de tareas complejas, asegurando que los usuarios no se pierdan en el proceso.
+    - Matricial *(matrix to show relationships)*: La información se presenta en una cuadrícula o tabla, permitiendo a los usuarios comparar y contrastar diferentes elementos de manera rápida y eficiente. Por ejemplo, en la sección de gestión de estudiantes, los usuarios podrán ver una tabla con información relevante como nombres o correos electrónicos. Este sistema es especialmente útil para organizar grandes cantidades de datos y facilitar la toma de decisiones.
+
+2. **Categorization Schemes *(esquemas de categorización)***
+    - Por tema *(by topic)*: La información se agrupa en categorías basadas en temas o áreas de interés. Por ejemplo, los recursos se organizan en categorías como "Salones de clase", "Cursos" y "Horarios". Este esquema facilita a los usuarios encontrar información relevante según sus intereses específicos.
+    - Por función *(by function)*: La información se clasifica según las funciones o tareas que los usuarios pueden realizar. Por ejemplo, las opciones de configuración se agrupan en categorías como "Perfil", "Configuración" y "Ayuda". Este esquema ayuda a los usuarios a localizar rápidamente las herramientas y opciones que necesitan para completar sus tareas.
+    - Por audiencia *(by audience)*: La información se segmenta según los diferentes tipos de usuarios que interactúan con la plataforma. Por ejemplo, se crean apartados específicos para "Administradores", "Profesores" y "Estudiantes". Este esquema asegura que cada grupo de usuarios tenga acceso a la información y funcionalidades relevantes para sus roles y necesidades.
 
 #### 3.1.2.2. Labelling Systems
 
-*Escribir aquí*
+Se implementarán sistemas de etiquetado claros y consistentes para facilitar la navegación y la comprensión del contenido en la plataforma Demy. A continuación, se describen los principales sistemas de etiquetado que se utilizarán, clasificados según el tipo de usuario:
+
+1. **Etiquetado para Administradores:** Los administradores tendrán acceso a una variedad de funciones y herramientas para gestionar la plataforma. Las etiquetas estarán diseñadas para ser intuitivas y descriptivas, facilitando la identificación rápida de las secciones y funcionalidades disponibles.
+
+| Etiqueta    | Qué comunica                           | Qué encontrará el usuario    |
+|-------------|----------------------------------------|------------------------------|
+| Dashboard   | Panel de control principal             | Resumen de la actividad      |
+| Teachers    | Gestión de profesores                  | Información y actividades    |
+| Students    | Gestión de estudiantes                 | Información y actividades    |
+| Classrooms  | Administración de salones de clase     | Crear y gestionar salones    |
+| Courses     | Gestión de cursos                      | Crear y gestionar cursos     |
+| Periods     | Administración de periodos académicos  | Definir y gestionar periodos |
+| Schedules   | Gestión de horarios                    | Crear y gestionar horarios   |
+| Enrollments | Gestión de inscripciones               | Inscribir estudiantes        |
+| Billing     | Administración de facturación          | Gestionar pagos              |
+| Finances    | Gestión de finanzas                    | Reportes económicos          |
+| Profile     | Información personal del administrador | Ver y editar información     |
+| Settings    | Configuración de la plataforma         | Ajustes y preferencias       |
+| Help        | Soporte y recursos                     | Resolver dudas y problemas   |
+| Logout      | Cerrar sesión de manera segura         | Salir de la plataforma       |
+
+2. **Etiquetado para Profesores:** Los profesores tendrán acceso a herramientas específicas para gestionar sus clases y estudiantes. Las etiquetas estarán diseñadas para ser claras y funcionales, facilitando la navegación y el acceso a las funcionalidades necesarias.
+
+| Etiqueta          | Qué comunica                      | Qué encontrará el usuario       |
+|-------------------|-----------------------------------|---------------------------------|
+| Home              | Página principal                  | Resumen de cursos y actividades |
+| Schedule          | Gestión de horario                | Ver y gestionar horario         |
+| Reschedule        | Solicitud de cambios en horario   | Cambiar horario                 |
+| Attendance        | Registro de asistencia            | Gestionar asistencia            |
+| Attendance Report | Reportes de asistencia            | Generar y ver reportes          |
+| Profile           | Información personal del profesor | Ver y editar información        |
+| Settings          | Configuración de la plataforma    | Ajustes y preferencias          |
+
+3. **Etiquetado para Estudiantes:** Los estudiantes tendrán acceso a herramientas para gestionar su aprendizaje y actividades. Las etiquetas estarán diseñadas para ser amigables y fáciles de entender, facilitando la navegación y el acceso a los recursos educativos.
+
+| Etiqueta | Qué comunica                     | Qué encontrará el usuario       |
+|----------|----------------------------------|---------------------------------|
+| Home     | Página principal                 | Resumen de cursos y actividades |
+| Schedule | Ver horario                      | Ver su horario de clases        |
+| Courses  | Gestión de cursos                | Ver y gestionar cursos          |
+| Profile  | Información personal del alumno  | Ver y editar información        |
+| Settings | Configuración de la plataforma   | Ajustes y preferencias          |
 
 #### 3.1.2.3. SEO Tags and Meta Tags
 
