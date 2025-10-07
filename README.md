@@ -6344,6 +6344,11 @@ Tener una vista clara y concisa de su horario semanal de clases y actividades, p
 
 ![Userflow-Teacher-1](assets/ux-ui/userflows/teacher/Userflow-Teacher-ReportAttendance.png)
 
+*User Goal*
+Solicitar o ejecutar la reprogramación de una clase de manera eficiente, indicando el motivo y proponiendo una nueva fecha/hora, con la aprobación administrativa correspondiente.
+
+![Userflow-Teacher-2](assets/ux-ui/userflows/teacher/Userflow-Teacher-RescheduleClass.png)
+
 #### 3.1.4.5. Mobile Applications Prototyping
 
 *Escribir aquí*
