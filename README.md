@@ -6502,11 +6502,167 @@ En esta sección se describen las herramientas y procesos utilizados para la ges
 
 ### 4.1.1. Software Development Environment Configuration
 
-*Escribir aquí*
+A continuación se presentan los productos de software seleccionados para apoyar cada etapa del ciclo de vida del producto digital. Se detallan sus nombres, propósitos específicos dentro del proyecto y enlaces para su acceso o descarga, diferenciando entre soluciones SaaS y software instalable.
+
+**Project Management**
+
+| **Herramienta**        | **Propósito**                                                                                   | **Enlace / Ruta de Acceso**                              |
+|------------------------|-------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+| **Trello**             | Gestión ágil de tareas y tableros para organizar entregables, tareas individuales y por módulo. | [https://trello.com](https://trello.com)                 |
+
+<br>
+
+**Requirements Management**
+
+| **Herramienta**   | **Propósito**                                                                             | **Enlace / Ruta de Acceso**                    |
+|-------------------|-------------------------------------------------------------------------------------------|------------------------------------------------|
+| **UXPressia**     | Creación de User Personas, Empathy Maps, Journey Maps e Impact Maps.                      | [https://uxpressia.com](https://uxpressia.com) |
+
+<br>
+
+**Domain-Driven Design Approach**
+
+| **Herramienta** | **Propósito**                                                                                                             | **Enlace / Ruta de Acceso**                    |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| **Miro**        | Creación de Event Storming, Candidate Context Discovery, Domain Message Flows, Bounded Context Canvases and Context Maps. | [https://miro.com](https://miro.com)           |
+
+<br>
+
+**Software Architecture Design**
+
+| **Herramienta**      | **Propósito**                                                                                             | **Enlace / Ruta de Acceso**                                |
+|----------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
+| **Structurizr DSL**  | Elaboración de diagramas de arquitectura siguiendo el C4 Model mediante código (Diagrams-as-Code).        | [https://structurizr.com/dsl](https://structurizr.com/dsl) |
+| **PlantUML**         | Creación de diagramas UML utilizando sintaxis de texto (compatible con Markdown y documentación técnica). | [https://plantuml.com](https://plantuml.com)               |
+| **Vertabelo**        | Diseño estructurado de bases de datos relacionales de forma visual y profesional.                         | [https://vertabelo.com](https://vertabelo.com)             |
+
+<br>
+
+**Product UX/UI Design**
+
+| **Herramienta**     | **Propósito**                                                         | **Enlace / Ruta de Acceso**                      |
+|---------------------|-----------------------------------------------------------------------|--------------------------------------------------|
+| **Figma**           | Diseño colaborativo de wireframes, mockups y prototipos interactivos. | [https://figma.com](https://figma.com)           |
+| **Lucidchart**      | Creación de wireflows y user flows.                                   | [https://lucidchart.com](https://lucidchart.com) |
+
+<br>
+
+**Software Development**
+
+| **Herramienta / Tecnología** | **Propósito**                                                                                                             | **Enlace / Ruta de Descarga**                                                                          |
+|------------------------------|---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| **WebStorm**                 | Desarrollo de la landing page del proyecto utilizando HTML5, CSS3, JavaScript y Tailwind CSS.                             | [https://www.jetbrains.com/webstorm](https://www.jetbrains.com/webstorm)                               |
+| **IntelliJ IDEA**            | Elaboración del servicio REST API utilizando Java y Spring Boot.                                                          | [https://www.jetbrains.com/idea](https://www.jetbrains.com/idea)                                       |
+| **Android Studio**           | Desarrollo de la aplicación móvil nativa para Android utilizando Kotlin y Jetpack Compose.                                | [https://developer.android.com/studio](https://developer.android.com/studio)                           |
+| **Visual Studio Code**       | Desarrollo de la aplicación móvil multiplataforma utilizando Dart y Flutter.                                              | [https://code.visualstudio.com](https://code.visualstudio.com)                                         |
+| **Xcode**                    | Desarrollo de la aplicación móvil nativa para iOS utilizando Swift y SwiftUI.                                             | [https://developer.apple.com/xcode](https://developer.apple.com/xcode)                                 |
+| **HTML5**                    | Lenguaje de marcado utilizado para definir la estructura semántica del contenido en la landing page.                      | [https://developer.mozilla.org/docs/Web/HTML](https://developer.mozilla.org/docs/Web/HTML)             |
+| **CSS3**                     | Lenguaje de estilos utilizado para definir la apariencia visual de la landing page.                                       | [https://developer.mozilla.org/docs/Web/CSS](https://developer.mozilla.org/docs/Web/CSS)               |
+| **JavaScript**               | Lenguaje de programación usado para manipular el DOM y permitir la internacionalización del contenido en la landing page. | [https://developer.mozilla.org/docs/Web/JavaScript](https://developer.mozilla.org/docs/Web/JavaScript) |
+| **Tailwind CSS**             | Framework de estilos CSS utilizado para construir visualmente la landing page de manera eficiente.                        | [https://tailwindcss.com](https://tailwindcss.com)                                                     |
+| **Java**                     | Lenguaje de programación utilizado para desarrollar el backend del servicio REST API.                                     | [https://www.oracle.com/java](https://www.oracle.com/java)                                             |
+| **Spring Boot**              | Framework basado en Java utilizado para construir el servicio REST API de manera rápida y eficiente.                      | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)                       |
+| **Kotlin**                   | Lenguaje de programación utilizado para desarrollar la aplicación móvil nativa para Android.                              | [https://kotlinlang.org](https://kotlinlang.org)                                                       |
+| **Jetpack Compose**          | Toolkit moderno para construir interfaces de usuario nativas en Android de manera declarativa.                            | [https://developer.android.com/jetpack/compose](https://developer.android.com/jetpack/compose)         |
+| **Dart**                     | Lenguaje de programación utilizado para desarrollar la aplicación móvil multiplataforma con Flutter.                      | [https://dart.dev](https://dart.dev)                                                                   |
+| **Flutter**                  | Framework UI de código abierto para construir aplicaciones nativas compiladas multiplataforma para móviles.               | [https://flutter.dev](https://flutter.dev)                                                             |
+| **Swift**                    | Lenguaje de programación utilizado para desarrollar la aplicación móvil nativa para iOS.                                  | [https://swift.org](https://swift.org)                                                                 |
+| **SwiftUI**                  | Framework de desarrollo de interfaces de usuario declarativas para aplicaciones iOS.                                      | [https://developer.apple.com/xcode/swiftui](https://developer.apple.com/xcode/swiftui)                 |
+
+<br>
+
+**Software Testing**
+
+| **Herramienta / Tecnología** | **Propósito**                                                                                                                                                  | **Enlace / Ruta de Descarga**                                        |
+|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| **Gherkin**                  | Lenguaje utilizado para escribir los criterios de aceptación de las **User Stories** de manera estructurada y comprensible para todos los miembros del equipo. | [https://cucumber.io/docs/gherkin](https://cucumber.io/docs/gherkin) |
+
+<br>
+
+**Software Deployment**
+
+| **Herramienta / Plataforma** | **Propósito**                                                                                     | **Enlace / Ruta de Acceso**                                        |
+|------------------------------|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
+| **Netlify**                  | Plataforma utilizada para el despliegue automático y gratuito de la landing page.                 | [https://www.netlify.com](https://www.netlify.com)                 |
+| **Railway**                  | Plataforma utilizada para el despliegue automático del servicio REST API, con prueba gratuita.    | [https://railway.app](https://railway.app)                         |
+| **Firebase**                 | Plataforma utilizada para el despliegue automático de la aplicación móvil multiplataforma.        | [https://firebase.google.com](https://firebase.google.com)         |
+| **Google Play Console**      | Plataforma utilizada para la publicación y distribución de la aplicación móvil nativa en Android. | [https://play.google.com/console](https://play.google.com/console) |
+
+<br>
+
+**Software Documentation**
+
+| **Herramienta / Recurso** | **Propósito**                                                                                                                                                                        | **Enlace / Ruta de Acceso**                                                                                        |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| **IntelliJ IDEA**         | Herramienta utilizada para redactar y editar el archivo README.md, relacionada a la documentación del proyecto. Incluye extensiones para visualización previa de diagramas PlantUML. | [https://www.jetbrains.com/idea](https://www.jetbrains.com/idea)                                                   |
+| **Visual Studio Code**    | Herramienta utilizada para redactar y editar el archivo README.md, relacionada a la documentación del proyecto. Incluye extensión para exportación formateada de Markdown a PDF.     | [https://code.visualstudio.com](https://code.visualstudio.com)                                                     |
+| **Markdown**              | Lenguaje de marcado ligero utilizado para escribir la documentación técnica del proyecto.                                                                                            | [https://www.markdownguide.org](https://www.markdownguide                                                          |
+| **Git**                   | Sistema de control de versiones distribuido utilizado para gestionar el código fuente del proyecto.                                                                                  | [https://git-scm.com](https://git-scm.com)                                                                         |
+| **GitHub**                | Repositorio con control de versiones que también sirve como canal de documentación técnica en issues y PRs.                                                                          | [https://github.com](https://github.com)                                                                           |
+| **GitFlow Workflow**      | Estrategia de ramificación utilizada para mantener la documentación y el código bien organizados.                                                                                    | [https://nvie.com/posts/a-successful-git-branching-model](https://nvie.com/posts/a-successful-git-branching-model) |
+| **Conventional Commits**  | Estándar de nombres de commits que ayuda a generar changelogs y mantener trazabilidad.                                                                                               | [https://www.conventionalcommits.org](https://www.conventionalcommits.org)                                         |
+| **Semantic Versioning**   | Sistema de versionado utilizado para asignar versiones a las releases del software de manera coherente.                                                                              | [https://semver.org](https://semver.org)                                                                           |
 
 ### 4.1.2. Source Code Management
 
-*Escribir aquí*
+El equipo utilizará **GitHub** como plataforma de alojamiento y **Git** como control de versiones para todos los productos del proyecto **Demy**, aplicando la estrategia de ramificación **GitFlow Workflow**, con estándares de versionado **Semantic Versioning** y mensajes estructurados mediante **Conventional Commits**.
+
+**Repositorios del Proyecto**
+
+| **Producto**                          | **Repositorio GitHub**                                                                 |
+|---------------------------------------|----------------------------------------------------------------------------------------|
+| **Organization**                      | [https://github.com/nistrahq](https://github.com/nistrahq)                             |
+| **Organization Profile**              | [https://github.com/nistrahq/.github](https://github.com/nistrahq/.github)             |                         
+| **Report**                            | [https://github.com/nistrahq/demy-report](https://github.com/nistrahq/demy-report)     |
+| **Landing Page**                      | [https://github.com/nistrahq/demy-landing](https://github.com/nistrahq/demy-landing)   |
+| **RESTful API**                       | [https://github.com/nistrahq/demy-api](https://github.com/nistrahq/demy-api)           |
+| **Android Native-Mobile App**         | [https://github.com/nistrahq/demy-admins](https://github.com/nistrahq/demy-admins)     |
+| **Flutter Cross-Platform Mobile App** | [https://github.com/nistrahq/demy-teachers](https://github.com/nistrahq/demy-teachers) |
+| **iOS Native-Mobile App**             | [https://github.com/nistrahq/demy-students](https://github.com/nistrahq/demy-students) |
+
+**GitFlow Workflow**
+
+![gitflow](assets/images/figures/gitflow-example.png)
+
+Se seguirá el modelo propuesto por Vincent Driessen, el cual define las siguientes ramas principales:
+
+- **main**: Rama principal, contiene las versiones estables en producción.
+- **develop**: Rama de desarrollo, donde se integran nuevas funcionalidades antes de pasar a producción.
+
+**Branches usados en GitFlow**
+
+| **Tipo de rama**   | **Propósito**                                         | **Convención de nombres**         | **Ejemplo**                  |
+|--------------------|-------------------------------------------------------|-----------------------------------|------------------------------|
+| **feature**        | Desarrollo de nuevas funcionalidades.                 | `feature/<nombre-descriptivo>`    | `feature/profile-management` |
+| **release**        | Preparación de una nueva versión de producción.       | `release/vX.Y.Z`                  | `release/v1.0.0`             |
+| **hotfix**         | Corrección urgente en producción.                     | `hotfix/<problema>`               | `hotfix/fix-crash-navbar`    |
+
+**Semantic Versioning**
+
+Se aplicará el esquema de **versionado semántico 2.0.0**, con el siguiente formato:
+
+`vMAJOR.MINOR.PATCH`
+
+- **MAJOR**: Cambios incompatibles con versiones anteriores.
+- **MINOR**: Nuevas funcionalidades compatibles con versiones anteriores.
+- **PATCH**: Correcciones de errores o mejoras menores.
+
+**Conventional Commits**
+
+Para los mensajes de commit, se utilizará el estándar **Conventional Commits**, que permite mayor trazabilidad y generación automática de changelogs.
+
+**Formato general**:
+
+`<tipo>(opcional-scope): descripción breve`
+
+**Tipos a usar**:
+- `feat`: una nueva funcionalidad
+- `fix`: corrección de errores
+- `docs`: cambios en documentación
+- `style`: formato (espacios, punto y coma, etc.)
+- `refactor`: cambios de código que no corrigen errores ni agregan funciones
+- `test`: agregar o modificar pruebas
+- `chore`: tareas generales o mantenimiento
 
 ### 4.1.3. Source Code Style Guide & Conventions
 
