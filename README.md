@@ -6206,7 +6206,25 @@ En esta sección se presentan los wireframes y mock-ups de las aplicaciones móv
 
 #### 3.1.4.3. Mobile Applications Mock-ups
 
-*Escribir aquí*
+**Mobile Applications Mock-ups: Flujo de Administrador**
+
+A continuación, se presenta la sustentación de los mockups para la aplicación del **Administrador**. El diseño se enfoca en la seguridad, claridad y eficiencia, aplicando un Design System consistente para una experiencia de usuario intuitiva.
+
+**Registro y Creación de Cuenta**
+
+Estas pantallas guían al nuevo administrador en tres pasos claros y seguros: registro, verificación por email y finalización del perfil. Se utiliza un diseño minimalista para no abrumar al usuario, pidiendo la información de manera progresiva y asegurando la cuenta a través de la verificación del correo electrónico.
+
+![Admin Registro](./assets/ux-ui/mockups/admin/admin_registro.png)
+![Admin Verificación Email](./assets/ux-ui/mockups/admin/admin_verificacion_email.png)
+![Admin Completar Perfil](./assets/ux-ui/mockups/admin/admin_completar_perfil.png)
+
+**Inicio de Sesión (Login)**
+
+Pantalla de acceso estándar y familiar diseñada para un ingreso rápido a la plataforma. Prioriza la usabilidad con campos claros y un enlace fácilmente accesible para la recuperación de contraseña, permitiendo la autogestión del usuario.
+
+![Admin Login](./assets/ux-ui/mockups/admin/admin_login.png)
+
+
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
