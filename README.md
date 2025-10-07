@@ -6316,6 +6316,11 @@ Funciona como el centro financiero general de la institución. Aquí, el adminis
 ![Admin Nueva Transacción](./assets/ux-ui/mockups/admin/admin_finance_new_transaction.png)
 ![Admin Lista de Transacciones](./assets/ux-ui/mockups/admin/admin_finance_transaction_list.png)
 
+**Perfil del Administrador**
+
+Pantalla donde el administrador puede ver y editar su información personal y los datos de la academia asociada a su cuenta. También muestra el estado de su cuenta de usuario (rol, estado de verificación).
+
+![Admin Perfil](./assets/ux-ui/mockups/admin/admin_profile.png)
 
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
