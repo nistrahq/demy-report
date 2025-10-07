@@ -6732,10 +6732,22 @@ Boceto estructural de baja fidelidad de una pantalla. Útil para alinear conteni
 # Bibliografía
 
 <p class="ref">
+  Brandemia. (2024).
+  <i>Arquetipos de marca: Los 12 perfiles de Jung</i>.
+  <a href="https://brandemia.org/arquetipos-de-marca">https://brandemia.org/arquetipos-de-marca</a>
+</p>
+
+<p class="ref">
   Díaz-García, V., Montero-Navarro, A., Rodríguez-Sánchez, J.-L., &amp; Gallego-Losada, R. (2023).
   Managing digital transformation: A case study in a higher education institution.
   <i>Electronics, 12</i>(11), Artículo e2522.
   <a href="https://doi.org/10.3390/electronics12112522">https://doi.org/10.3390/electronics12112522</a>
+</p>
+
+<p class="ref">
+  Holum Studio. (2022).
+  <i>7 Types of Logos for Your Brand and How to Use Them</i>.
+  <a href="https://www.holumstudio.com/resources/7-types-of-logos-for-your-brand-and-how-to-use-them">https://www.holumstudio.com/resources/7-types-of-logos-for-your-brand-and-how-to-use-them</a>
 </p>
 
 <p class="ref">
