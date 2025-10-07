@@ -6224,6 +6224,22 @@ Pantalla de acceso estándar y familiar diseñada para un ingreso rápido a la p
 
 ![Admin Login](./assets/ux-ui/mockups/admin/admin_login.png)
 
+**Recuperación de Contraseña**
+
+Estas pantallas garantizan el guiado en cuatro pasos simples para una recuperación de cuenta segura:
+1.  **Solicitud:** El usuario ingresa su email.
+2.  **Verificación:** Confirma su identidad con un código.
+3.  **Restablecimiento:** Crea una nueva contraseña.
+4.  **Confirmación:** Recibe una notificación de éxito.
+
+Solo el propietario de la cuenta pueda realizar cambios, ofreciendo una experiencia clara y sin fricciones.
+
+![Admin Recuperar Password Solicitud](./assets/ux-ui/mockups/admin/admin_recuperar_password_solicitud.png)
+![Admin Recuperar Password Verificación Código](./assets/ux-ui/mockups/admin/admin_recuperar_password_verificacion_codigo.png)
+![Admin Ingreso Nueva Password](./assets/ux-ui/mockups/admin/admin_ingreso_nueva_password.png)
+![Admin Confirmación Cambio Password](./assets/ux-ui/mockups/admin/admin_confirmacion_cambio_password.png)
+
+
 
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
