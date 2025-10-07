@@ -6337,7 +6337,12 @@ La sección de Ayuda centraliza los recursos de soporte, como información de co
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
-*Escribir aquí*
+*SEGMENTO: TEACHER*
+
+*User Goal* 
+Tener una vista clara y concisa de su horario semanal de clases y actividades, permitiendo una planificación eficiente de su tiempo y evitando conflictos o inasistencias.
+
+![Userflow-Teacher-1](assets/ux-ui/userflows/teacher/Userflow-Teacher-ReportAttendance.png)
 
 #### 3.1.4.5. Mobile Applications Prototyping
 
