@@ -6314,15 +6314,141 @@ Se implementarán sistemas de etiquetado claros y consistentes para facilitar la
 
 #### 3.1.2.3. SEO Tags and Meta Tags
 
-*Escribir aquí*
+Para mejorar la visibilidad y el posicionamiento de la plataforma Demy en los motores de búsqueda, se implementarán etiquetas SEO (Search Engine Optimization) y meta etiquetas adecuadas en todas las páginas web. Además, para las aplicaciones móviles, se optimizarán los títulos y descripciones de las aplicaciones en las tiendas de aplicaciones (App Store y Google Play) para atraer a más usuarios. Estas etiquetas ayudarán a los motores de búsqueda a comprender el contenido y la relevancia de cada página, mejorando así el tráfico orgánico hacia la plataforma. A continuación, se describen las principales etiquetas SEO y meta etiquetas que se utilizarán:
+
+**Landing Page SEO Tags and Meta Tags:**
+
+Se muestran a continuación las etiquetas SEO y meta etiquetas recomendadas para la página de inicio de la plataforma Demy:
+
+| Etiqueta         | Contenido                                                                                                                                                                           |
+|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Title            | Demy - Plataforma de Gestión para Academias Educativas                                                                                                                              |
+| Meta Description | Demy es una plataforma innovadora diseñada para ayudar a academias educativas a gestionar sus operaciones de manera eficiente y mejorar la experiencia de estudiantes y profesores. |
+| Meta Keywords    | gestión académica, plataforma educativa, administración de academias, herramientas para profesores, gestión de estudiantes                                                          |
+| Meta Author      | Nistra Team                                                                                                                                                                         |
+| Meta Viewport    | width=device-width, initial-scale=1.0                                                                                                                                               |
+| Meta Charset     | UTF-8                                                                                                                                                                               |
+| OG Title         | Demy - Plataforma de Gestión para Academias Educativas                                                                                                                              |
+| OG Description   | Demy es una plataforma innovadora diseñada para ayudar a academias educativas a gestionar sus operaciones de manera eficiente y mejorar la experiencia de estudiantes y profesores. |
+| OG Image         | URL del logo de la aplicación                                                                                                                                                       |
+| OG URL           | URL de la página web de la plataforma                                                                                                                                               |
+
+Se muestra también su representación en HTML:
+
+```html
+<title>Demy - Plataforma de Gestión para Academias Educativas</title>
+<meta name="description" content="Demy es una plataforma innovadora diseñada para ayudar a academias educativas a gestionar sus operaciones de manera eficiente y mejorar la experiencia de estudiantes y profesores.">
+<meta name="keywords" content="gestión académica, plataforma educativa, administración de academias, herramientas para profesores, gestión de estudiantes">
+<meta name="author" content="Nistra Team">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta property="og:title" content="Demy - Plataforma de Gestión para Academias Educativas">
+<meta property="og:description" content="Demy es una plataforma innovadora diseñada para ayudar a academias educativas a gestionar sus operaciones de manera eficiente y mejorar la experiencia de estudiantes y profesores.">
+<meta property="og:image" content="https://www.demy.nistra.com/assets/images/demy-logo.png">
+<meta property="og:url" content="https://www.demy.nistra.com">
+```
+
+**Android Native-Mobile Application ASO**:
+
+Se muestran a continuación las etiquetas recomendadas para la optimización en la tienda de Google Play para la aplicación móvil nativa de Demy:
+
+| Etiqueta          | Contenido                                                                                                                                                                                                                                                                            |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Title             | Demy - Gestión para Academias Educativas                                                                                                                                                                                                                                             |
+| Short Description | Demy es una plataforma para gestionar academias educativas de manera eficiente.                                                                                                                                                                                                      |
+| Full Description  | Demy es una plataforma innovadora diseñada para ayudar a academias educativas a gestionar sus operaciones de manera eficiente y mejorar la experiencia de estudiantes y profesores. Con Demy, podrás administrar cursos, horarios, inscripciones y mucho más, todo en un solo lugar. |
+| Keywords          | gestión académica, plataforma educativa, administración de academias, herramientas para profesores, gestión de estudiantes                                                                                                                                                           |
+| Developer Name    | Nistra Team                                                                                                                                                                                                                                                                          |
+| Category          | Educación                                                                                                                                                                                                                                                                            |
+| Icon              | Icono de la aplicación (512x512 PNG)                                                                                                                                                                                                                                                 |
+| Feature Graphic   | Gráfico destacado (1024x500 PNG)                                                                                                                                                                                                                                                     |
+| Screenshots       | Capturas de pantalla de la aplicación (mínimo 2, máximo 8)                                                                                                                                                                                                                           |
+
+**Cross-Platform Mobile Application ASO**:
+
+Se muestran a continuación las etiquetas recomendadas para la optimización en las tiendas de aplicaciones (App Store y Google Play) para la aplicación móvil multiplataforma de Demy, comenzando con la Google Play Store:
+
+| Etiqueta          | Contenido                                                                                                                                                                                                                                                                                   |
+|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Title             | Demy for Teachers - Gestión para Academias Educativas                                                                                                                                                                                                                                       |
+| Short Description | Demy for Teacehrs es una plataforma para profesores que facilita la gestión en academias educativas.                                                                                                                                                                                        |
+| Full Description  | Demy for Teachers es una plataforma innovadora diseñada para ayudar a profesores en academias educativas a gestionar sus clases, horarios y estudiantes de manera eficiente. Con Demy for Teachers, podrás administrar tus actividades diarias y mejorar la experiencia de tus estudiantes. |
+| Keywords          | gestión académica, plataforma educativa, administración de academias, herramientas para profesores, gestión de estudiantes                                                                                                                                                                  |
+| Developer Name    | Nistra Team                                                                                                                                                                                                                                                                                 |
+| Category          | Educación                                                                                                                                                                                                                                                                                   |
+| Icon              | Icono de la aplicación (512x512 PNG)                                                                                                                                                                                                                                                        |
+| Feature Graphic   | Gráfico destacado (1024x500 PNG)                                                                                                                                                                                                                                                            |
+| Screenshots       | Capturas de pantalla de la aplicación (mínimo 2, máximo 8)                                                                                                                                                                                                                                  |
+
+También se muestran las etiquetas recomendadas para la optimización en la App Store de Apple:
+
+| Etiqueta       | Contenido                                                                                                                                                                                                                                                                                   |
+|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| App Name       | Demy for Teachers - Gestión para Academias Educativas                                                                                                                                                                                                                                       |
+| Subtitle       | Plataforma para profesores en academias educativas                                                                                                                                                                                                                                          |
+| Description    | Demy for Teachers es una plataforma innovadora diseñada para ayudar a profesores en academias educativas a gestionar sus clases, horarios y estudiantes de manera eficiente. Con Demy for Teachers, podrás administrar tus actividades diarias y mejorar la experiencia de tus estudiantes. |
+| Keywords       | gestión académica, plataforma educativa, administración de academias, herramientas para profesores, gestión de estudiantes                                                                                                                                                                  |
+| Developer Name | Nistra Team                                                                                                                                                                                                                                                                                 |
+| Category       | Educación                                                                                                                                                                                                                                                                                   |
+| Icon           | Icono de la aplicación (1024x1024 PNG)                                                                                                                                                                                                                                                      |
+| Screenshots    | Capturas de pantalla de la aplicación (mínimo 2, máximo 10)                                                                                                                                                                                                                                 |
+
+**iOS Native-Mobile Application ASO**:
+
+Se muestran a continuación las etiquetas recomendadas para la optimización en la App Store de Apple para la aplicación móvil nativa de Demy:
+
+| Etiqueta       | Contenido                                                                                                                                                                                                                                                                |
+|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| App Name       | Demy for Students - Gestiona tus cursos y horarios                                                                                                                                                                                                                       |
+| Subtitle       | Plataforma para estudiantes en academias educativas                                                                                                                                                                                                                      |
+| Description    | Demy for Students es una plataforma innovadora diseñada para ayudar a estudiantes en academias educativas a gestionar sus cursos, horarios y actividades de manera eficiente. Con Demy for Students, podrás organizar tu aprendizaje y mejorar tu experiencia educativa. |
+| Keywords       | gestión académica, plataforma educativa, administración de academias, herramientas para estudiantes, gestión de cursos                                                                                                                                                   |
+| Developer Name | Nistra Team                                                                                                                                                                                                                                                              |
+| Category       | Educación                                                                                                                                                                                                                                                                |
+| Icon           | Icono de la aplicación (1024x1024 PNG)                                                                                                                                                                                                                                   |
+| Screenshots    | Capturas de pantalla de la aplicación (mínimo 2, máximo 10)                                                                                                                                                                                                              |
 
 #### 3.1.2.4. Searching Systems
 
-*Escribir aquí*
+A medida que se incrementa la cantidad de información almacenada en la plataforma, resulta esencial brindar herramientas que ayuden a los usuarios a encontrar lo que necesitan de forma ágil y precisa. Para evitar que se sientan abrumados por la cantidad de datos, se implementarán sistemas de búsqueda avanzados que permitan filtrar y localizar información específica de manera eficiente.
+
+**Búsqueda por palabras clave:**
+
+Se implementará un sistema de búsqueda que permita a los usuarios ingresar palabras clave relacionadas con la información que desean encontrar. El sistema analizará las palabras clave y mostrará resultados relevantes basados en coincidencias exactas o similares. Esto es esencial en secciones como "Cursos" o "Estudiantes", donde los usuarios pueden buscar por nombres, temas o categorías específicas, permitiendo que los usuarios encuentren rápidamente lo que necesitan sin tener que navegar por múltiples páginas.
+
+**Filtros por categoría:**
+
+Además de la búsqueda por palabras clave, se ofrecerán filtros que permitan a los usuarios refinar sus resultados según diferentes criterios. Por ejemplo, en la sección de "Transacciones", los usuarios podrán filtrar por rango de fechas, tipo de transacción o estado del pago. En la sección de "Asistencia", los profesores podrán filtrar por fecha, curso o estado de asistencia. Estos filtros ayudarán a los usuarios a reducir la cantidad de resultados y a encontrar la información más relevante para sus necesidades específicas.
+
+**Visualización de resultados:**
+
+Los resultados de búsqueda se presentarán de manera clara y organizada, utilizando listas o tarjetas que muestren información relevante como títulos, descripciones y fechas. Además, se destacarán las palabras clave coincidentes para facilitar la identificación rápida de los resultados más relevantes. En secciones con grandes volúmenes de datos, como "Estudiantes" o "Transacciones", se implementará paginación con tablas para mejorar la navegación y evitar la sobrecarga de información en una sola página.
+
+**Mensajes de ayuda:**
+
+En caso de que una búsqueda no arroje resultados, se mostrarán mensajes de ayuda que sugieran posibles soluciones, como verificar la ortografía, utilizar sinónimos o ampliar los criterios de búsqueda. Esto ayudará a los usuarios a ajustar sus búsquedas y a encontrar la información que necesitan sin frustrarse.
 
 #### 3.1.2.5. Navigation Systems
 
-*Escribir aquí*
+Para garantizar una experiencia de usuario fluida y eficiente en la plataforma Demy, se implementarán diversos sistemas de navegación que faciliten el acceso a las diferentes secciones y funcionalidades. A continuación, se describen los principales sistemas de navegación que se utilizarán:
+
+**Landing Page Navigation:**
+
+La página de inicio contará con un menú de navegación principal ubicado en la parte superior, que incluirá enlaces a las secciones clave de la plataforma, como "Inicio", "Características", "Precios", y "Contacto". Además, se incluirán botones de llamada a la acción (CTA) destacados para incentivar a los usuarios a registrarse o iniciar sesión. La navegación será intuitiva y accesible, permitiendo a los usuarios encontrar rápidamente la información que buscan.
+
+Se incluye también un *scroll* suave para mejorar la experiencia de navegación al desplazarse por la página, facilitando el acceso a diferentes secciones sin perder el contexto.
+
+**Mobile Navigation:**
+
+Para las versiones móviles de la plataforma, se usarán diferentes sistemas de navegación según el tipo de usuario:
+
+- Administradores: Se implementará un menú lateral (sidebar) que contenga los enlaces a las secciones principales, como "Dashboard", "Teachers", "Students", "Classrooms", "Courses", "Periods", "Schedules", "Enrollments", "Billing", "Finances", "Profile", "Settings", "Help" y "Logout". Este menú estará visible por defecto y no se ocultará al hacer *scroll*, asegurando un acceso rápido a las funcionalidades más importantes. No hará falta un botón de menú hamburguesa, ya que el menú lateral estará siempre accesible. Tampoco será necesario un menú superior ni inferior, ya que el menú lateral cubrirá todas las necesidades de navegación.
+- Profesores: Se implementará un menú inferior (bottom navigation) que contenga los enlaces a las secciones principales, como "Home", "Profile" y "Settings". Este menú estará visible por defecto y no se ocultará al hacer *scroll*, asegurando un acceso rápido a las funcionalidades más importantes. No hará falta un botón de menú hamburguesa, ya que el menú inferior estará siempre accesible. Tampoco será necesario un menú lateral ni superior, ya que el menú inferior cubrirá todas las necesidades de navegación.
+- Estudiantes: Al igual que para los profesores, se implementará un menú inferior (bottom navigation) que contenga los enlaces a las secciones principales, como "Home", "Profile" y "Settings". Este menú estará visible por defecto y no se ocultará al hacer *scroll*, asegurando un acceso rápido a las funcionalidades más importantes. No hará falta un botón de menú hamburguesa, ya que el menú inferior estará siempre accesible. Tampoco será necesario un menú lateral ni superior, ya que el menú inferior cubrirá todas las necesidades de navegación.
+
+Se incluirá también botones de navegación contextuales dentro de las diferentes secciones para facilitar el acceso a funcionalidades específicas, como "Agregar nuevo", "Editar" o "Eliminar". Estos botones estarán ubicados en lugares estratégicos para mejorar la usabilidad y la eficiencia en la realización de tareas.
+
+Finalmente, el flujo de navegación será coherente en todas las secciones, permitiendo a los usuarios moverse fácilmente entre diferentes áreas de la plataforma sin perder el contexto. Se implementarán enlaces de retroceso (back links) en lugares estratégicos para facilitar la navegación hacia páginas anteriores.
 
 <hr class="page-break">
 
