@@ -6309,6 +6309,13 @@ Esta sección se centra en el control de las cuentas de facturación de los estu
 ![Admin Facturación Búsqueda](./assets/ux-ui/mockups/admin/admin_billing_search.png)
 ![Admin Facturación Nueva Factura](./assets/ux-ui/mockups/admin/admin_billing_new_invoice.png)
 
+**Finanzas y Contabilidad (Finance & Accounting)**
+
+Funciona como el centro financiero general de la institución. Aquí, el administrador puede registrar todas las transacciones de ingresos y gastos, ver un historial detallado y analizar resúmenes visuales a través de gráficos para un mejor seguimiento contable.
+
+![Admin Nueva Transacción](./assets/ux-ui/mockups/admin/admin_finance_new_transaction.png)
+![Admin Lista de Transacciones](./assets/ux-ui/mockups/admin/admin_finance_transaction_list.png)
+
 
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
