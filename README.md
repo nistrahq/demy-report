@@ -6288,6 +6288,14 @@ Este modal de advertencia aparece antes de realizar acciones destructivas, como 
 
 ![Admin Modal Confirmación Eliminación](./assets/ux-ui/mockups/admin/admin_delete_confirmation_modal.png)
 
+**Gestión de Aulas (Classrooms)**
+
+Esta sección permite administrar la infraestructura de aulas. El administrador puede registrar nuevas aulas con detalles como código y capacidad, además de editar o eliminar las existentes. La interfaz mantiene la consistencia visual y funcional del resto de la aplicación para facilitar su uso.
+
+![Admin Aulas Nuevo Formulario](./assets/ux-ui/mockups/admin/admin_classrooms_new_form.png)
+![Admin Aulas Edición Formulario](./assets/ux-ui/mockups/admin/admin_classrooms_edit_form.png)
+
+
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
