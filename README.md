@@ -6322,6 +6322,12 @@ Pantalla donde el administrador puede ver y editar su información personal y lo
 
 ![Admin Perfil](./assets/ux-ui/mockups/admin/admin_profile.png)
 
+**Configuración (Settings)**
+
+Permite al administrador personalizar su experiencia en la aplicación. Incluye opciones de accesibilidad, configuración de tema (modo oscuro, alto contraste), gestión de notificaciones y cambio de contraseña.
+
+![Admin Configuración](./assets/ux-ui/mockups/admin/admin_settings.png)
+
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
