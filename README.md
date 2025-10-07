@@ -6188,7 +6188,21 @@ En esta sección se presentan los wireframes y mock-ups de la página de inicio 
 
 #### 3.1.3.2. Landing Page Mock-up
 
-*Escribir aquí*
+A continuación, se presenta la vista de la landing page en su versión para navegadores web de escritorio. En esta página se incluyen diferentes secciones relevantes para el usuario, donde se destacan los principales beneficios del producto, las alternativas de planes de pago y los perfiles del equipo de trabajo. Asimismo, se incorpora un apartado destinado a resolver las dudas más frecuentes de los usuarios.
+
+![LandingPageMockup9](./assets/ux-ui/mockups/landing-page/HeroSection.png)
+![LandingPageMockup5](./assets/ux-ui/mockups/landing-page/Features.png)
+![LandingPageMockup6](./assets/ux-ui/mockups/landing-page/Features2.png)
+![LandingPageMockup7](./assets/ux-ui/mockups/landing-page/Features3.png)
+![LandingPageMockup1](./assets/ux-ui/mockups/landing-page/AboutTheProduct.png)
+![LandingPageMockup2](./assets/ux-ui/mockups/landing-page/AboutTheTeam.png)
+![LandingPageMockup10](./assets/ux-ui/mockups/landing-page/HowItWorks.png)
+![LandingPageMockup11](./assets/ux-ui/mockups/landing-page/Pricing.png)
+![LandingPageMockup12](./assets/ux-ui/mockups/landing-page/Team.png)
+![LandingPageMockup13](./assets/ux-ui/mockups/landing-page/Testimonials.png)
+![LandingPageMockup3](./assets/ux-ui/mockups/landing-page/ContactUs.png)
+![LandingPageMockup4](./assets/ux-ui/mockups/landing-page/FAQ.png)
+![LandingPageMockup8](./assets/ux-ui/mockups/landing-page/Footer.png)
 
 <hr class="page-break">
 
