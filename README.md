@@ -59,11 +59,15 @@
 
 # Registro de Versiones del Informe
 
-| Versión | Fecha        | Autor                                                                 | Descripción de modificación                                                          |
-|---------|--------------|-----------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| 1.0     | 30/08/2025   | Salim Ramirez                                                         | Creación inicial de la estructura del informe                                        |
-| 2.0     | 06/09/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca | Se completó el Capítulo I: Presentación                                              |
-| 3.0     | 17/09/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca | Se completó el Capitulo II: : Requirements Development and Software Solution Design  |
+| Versión | Fecha       | Autor                                                                      | Descripción de modificación                                                       |
+|---------|-------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1.0     | 30/08/2025  | Salim Ramirez                                                              | Creación inicial de la estructura del informe                                     |
+| 2.0     | 06/09/2025  | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se completó el Capítulo I: Presentación                                           |
+| 3.0     | 17/09/2025  | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se completó el CapÍtulo II: Requirements Development and Software Solution Design |
+| 3.1     | 28/09/2025  | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se levantó las observaciones de la primera entrega                                |
+| 4.0     | 4/10/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se completó el CapÍtulo III:  Solution UI/UX Design                               |        
+| 5.0     | 7/10/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se completó el Capítulo IV: : Product Implementation & Validation                 |  
+
 
 <hr class="page-break">
 
