@@ -7129,7 +7129,7 @@ Secciones de navegación secundaria y enlaces a redes sociales.
 
 **Link de video de presentación sobre la Landing Page**  
 
-[Video Presentación](URL_DEL_VIDEO_AQUÍ)
+[Video Presentación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/ETc7aNcRPkFFjemzOPaGNdcBiUk3J5XXtV_2ySAeSECsrw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=NvoRXa)
 
 **Mobile Application**
 **Backend**
