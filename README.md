@@ -6198,7 +6198,81 @@ En esta sección se presentan los wireframes y mock-ups de las aplicaciones móv
 
 #### 3.1.4.1. Mobile Applications Wireframes
 
-*Escribir aquí*
+**Mobile Aplication Wireframes:** Flujo de estudiante
+A continuación se presenta la sustentación de los wireframes para la aplicación del estudiante. El diseño se enfoca en la seguridad, claridad y eficiencia, aplicando Human Interface Guidelines consistente para una experiencia de usuario intuitiva.
+
+**Estado de Carga (Loader)**
+
+Pantalla de transición que mantiene la percepción de respuesta del sistema mientras se inicia la aplicación.
+
+![Student Loader](./assets/ux-ui/wireframes/mobile/student/student_loader.png)
+
+**Inicio de sesión (Login)**
+
+Pantalla de acceso standard que permite al usuario ingresar a la plataforma en dos pasos seguros. Colocando email y contraseña.
+
+![Student Login](./assets/ux-ui/wireframes/mobile/student/student_login.png)
+
+
+**Términos y condiciones**
+
+Vista de los términos y condiciones establecidos por la app que se muestran en el inicio de sesión.
+
+![Student Términos y Condiciones](./assets/ux-ui/wireframes/mobile/student/student_termsandconditions.png)
+
+**Política de privacidad**
+
+Vista de las políticas de privacidad establecidas por la app que se muestran en el inicio de sesión.
+
+![Student Política de privacidad](./assets/ux-ui/wireframes/mobile/student/student_privacypolicy.png)
+
+**Inicio (Home)**
+
+Resumen del día: próximas clases, tareas y accesos rápidos a pagos y actualizaciones de la academia.
+
+![Student Home](./assets/ux-ui/wireframes/mobile/student/student_home.png)
+
+**Horario Académico**
+
+Consulta del horario por día/semana y detalle por curso. Incluye una acción directa para visualizar las **reprogramaciones** cuando las haya.
+
+![Student Calendario](./assets/ux-ui/wireframes/mobile/student/student_schedule.png)  
+![Student Calendario Detalle](./assets/ux-ui/wireframes/mobile/student/student_schedule_detail.png)  
+![Student Reprogramar](./assets/ux-ui/wireframes/mobile/student/student_reschedule.png)
+
+**Notificaciones**
+
+Centro unificado de avisos (clases, pagos, evaluaciones).
+
+![Student Notificaciones](./assets/ux-ui/wireframes/mobile/student/student_notifications.png)
+
+**Pagos y Comprobantes**
+
+Flujo seguro y claro para realizar pagos de matrículas o cuotas. El detalle muestra el desglose antes de confirmar. Tras completar, se presenta una **confirmación de éxito** con próxima acción sugerida.
+
+![Student Pago](./assets/ux-ui/wireframes/mobile/student/student_payment.png)  
+![Student Detalle de Pago](./assets/ux-ui/wireframes/mobile/student/student_payment_detail.png)  
+![Student Operación Exitosa](./assets/ux-ui/wireframes/mobile/student/student_successfull.png)
+
+**Perfil del Estudiante**
+
+Gestión de datos personales (foto, contacto, preferencias) y cierre de sesión. En esta sección el estudiante es capaz de colocar su fecha de cumpleaños, cambiar el idioma, entrar a los ajustes de privacidad y a la configuración de la app.
+
+![Student Perfil](./assets/ux-ui/wireframes/mobile/student/student_profile.png)
+![Student Cumpleaños](./assets/ux-ui/wireframes/mobile/student/student_datebirthday.png)
+
+**Configuración**
+
+Gestión de ajustes de la app (tema, notificaciones, privacidad). Se promueve la autogestión para reducir solicitudes de soporte.
+
+![Student Configuración](./assets/ux-ui/wireframes/mobile/student/student_configuration.png)
+
+**Componentes Reutilizables: Modales**
+
+Modales consistentes para confirmaciones, advertencias y acciones críticas. Refuerzan la prevención de errores y la claridad de decisiones.
+
+![Student Modal](./assets/ux-ui/wireframes/mobile/student/student_modal.png)  
+![Student Modal Variante](./assets/ux-ui/wireframes/mobile/student/student_modal_2.png)
 
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
