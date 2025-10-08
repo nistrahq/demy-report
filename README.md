@@ -6413,7 +6413,7 @@ Durante el primer sprint, el equipo se enfocó en la implementación de la pági
 
 Con el sprint 1 se avanzó con la creación del landing page para Demy, que incluyo estas secciones: testimonials, pricing, hero-section, footer, faq, contact, about-us y about-product. Además de
 
-<table border="1">
+<table>
   <thead>
     <tr>
       <th>Repository</th>
@@ -6768,10 +6768,175 @@ Con el sprint 1 se avanzó con la creación del landing page para Demy, que incl
     <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>beef0db</td><td>build(libs): update kotlin and composeBom version</td><td>-</td><td>05/09/2025</td></tr>
     <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>f9d4e87</td><td>build(libs): update agp version</td><td>-</td><td>05/09/2025</td></tr>
     <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>2e4ae1b</td><td>chore: initial commit</td><td>-</td><td>04/09/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2d43aa7</td><td>merge: integrate develop into main</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>afa4bf7</td><td>merge: update project documentation</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a475de7</td><td>docs(pr-template): add pull request template for consistent submissions</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>cbd33a7</td><td>docs(config): add configuration for issue templates and contact links</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>09d2046</td><td>docs(issues): add template for general issues</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d51cb3e</td><td>docs(issues): add template for improving technical documentation</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7dddc60</td><td>docs(issues): add API proposal template for contract changes</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>10e94d3</td><td>docs(issues): add security report template for reporting vulnerabilities</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0854a14</td><td>docs(issues): add template for documenting refactor and technical debt</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>e3fd2c3</td><td>docs(issues): add performance issue report template for tracking scalability problems</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0a6e6a9</td><td>docs(issues): add feature request template for backend RESTful API enhancements</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>319dd85</td><td>docs(issues): add bug report template for backend RESTful API issues</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f319fc3</td><td>docs(security): add security policy document outlining vulnerability reporting and supported versions</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>06f73fa</td><td>chore: add .gitkeep files to maintain empty directories</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>cdc3bdc</td><td>docs(changelog): add initial changelog file following Keep a Changelog conventions</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>db9c9c7</td><td>docs(contributing): add Spanish collaboration guide for project contributors</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>da18aa3</td><td>docs(contributing): add collaboration guide for project contributors</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9281481</td><td>docs(readme): add initial project documentation for Demy API</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f2b9d15</td><td>docs(class-diagram): add domain model diagram for Institution Management context</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>48e671f</td><td>merge: add i18n support for bounded contexts</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f2df5ae</td><td>feat(i18n): add administrator registration messages in English and Spanish for Institution Management</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>665d102</td><td>feat(i18n): add user not found message properties in English and Spanish for IAM</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>8a8a1e2</td><td>feat(i18n): add message properties for error handling in multiple languages for shared kernel</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f158303</td><td>merge: integrate feature/institution-management into develop</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9840ef4</td><td>feat(institution): add AdministratorsController for managing administrator registrations</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ffa1d1d</td><td>feat(institution): add TeachersController and AcademiesController for managing teachers and academies</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>25847a3</td><td>feat(institution): add TeachersController for managing teacher resources</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>3e4ba6a</td><td>feat(institution): add AdministratorAlreadyExistsException for handling duplicate administrators</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f3d69a4</td><td>feat(institution): add ExternalIamService for fetching current AcademyId from IamContextFacade</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0c91f7f</td><td>feat(institution): add RegisterAdministratorCommandFromResourceAssembler for transforming RegisterAdministratorResource to RegisterAdministratorCommand</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>dbed47f</td><td>feat(institution): add AdministratorResourceFromEntityAssembler for transforming Administrator entities to resources</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5a0be87</td><td>feat(institution): add AcademyResourceFromEntityAssembler for transforming Academy entities to resources</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>3c82740</td><td>feat(institution): add RegisterAcademyCommandFromResourceAssembler for transforming RegisterAcademyResource to RegisterAcademyCommand</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7e4cfd0</td><td>feat(institution): add TeacherResourceFromEntityAssembler for transforming Teacher entities to resources</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d39dcae</td><td>feat(institution): add AdministratorRegisteredEvent for handling administrator registration events</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f975ec2</td><td>feat(institution): add TeacherQueryServiceImpl for handling teacher retrieval queries</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>be8eae6</td><td>feat(institution): add AdministratorQueryServiceImpl for handling administrator retrieval queries</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>76ac639</td><td>feat(institution): add AdministratorCommandServiceImpl for handling administrator registration commands</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>cca8217</td><td>feat(institution): add AcademyQueryServiceImpl for handling academy retrieval queries</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ad0d53b</td><td>feat(institution): add AcademyCommandServiceImpl for handling academy registration commands</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b8b559c</td><td>feat(institution): add TeacherResource for transferring teacher data</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>23304ec</td><td>feat(institution): add AcademyResource for transferring academy data</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>3dceaf3</td><td>feat(institution): add AdministratorResource for transferring administrator data</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>69db01e</td><td>feat(institution): add RegisterAcademyResource for validating academy registration data</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5546728</td><td>feat(institution): add RegisterAdministratorResource for validating administrator registration data</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f8b9f11</td><td>feat(institution): add TeacherQueryService interface for handling teacher queries</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>6736c7f</td><td>feat(institution): add TeacherRepository for managing Teacher entities</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>444d57f</td><td>feat(institution): add RegisterAdministratorCommand for registering new administrators</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>1c00c83</td><td>feat(institution): add RegisterAcademyCommand for registering new academies</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>6554a61</td><td>feat(institution): add GetAllTeachersQuery for retrieving all teacher details</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>dfb4d6b</td><td>feat(institution): add GetAdministratorByDniNumberQuery for retrieving administrator details by DNI number</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a0ef705</td><td>feat(institution): add GetAcademyByIdQuery for retrieving academy details by ID</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>8777915</td><td>feat(institution): add AssignAdministratorToAcademyCommand for assigning administrators to academies</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>bf700ef</td><td>feat(institution): add AdministratorCommandService interface for handling administrator registration commands</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>3715668</td><td>feat(institution): add AdministratorQueryService interface for querying Administrator information</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d4d758b</td><td>feat(institution): add AdministratorRepository interface for managing Administrator entities</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>feee347</td><td>feat(institution): add AcademyRepository interface for managing Academy entities</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>bd09856</td><td>feat(institution): add AcademyCommandService interface for handling academy commands</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>92d0507</td><td>feat(institution): add AcademyQueryService interface for querying academy information</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2e1ca42</td><td>feat(institution): add Academy aggregate for managing academy information</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d1c6d65</td><td>feat(institution): add Teacher aggregate for managing teacher information</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>996a3d8</td><td>feat(institution): add AcademyName value object for academy name management</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>8d73839</td><td>feat(institution): add AcademyDescription value object for academy description management</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>48136e6</td><td>feat(institution): add UserId value object for user identification</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d46afb1</td><td>feat(institution): add RUC value object for unique taxpayer identification in Peru</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>3ba118b</td><td>feat(institution): add AdministratorId value object for unique administrator identification</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b3709af</td><td>feat(administrator): implement Administrator aggregate with registration and disassociation methods</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4d0a3a9</td><td>merge: integrate feature/identity-access-management into develop</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>3afd3d5</td><td>feat(internationalization): add configuration for message caching duration</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ba1572a</td><td>feat(authentication): implement AuthenticationController for user sign-in, sign-up, verification, and code resending</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>83c775b</td><td>feat(event-handling): implement AdministratorRegisteredEventHandler for processing administrator registration events</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>1dc998b</td><td>feat(exceptions): add UserNotFoundException for handling user retrieval errors</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2b3a7ad</td><td>feat(tenancy): add TenantAssignmentException for handling null tenant ID scenarios</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>778dbfb</td><td>feat(verification): implement UserVerificationCodeAssignedEventHandler for processing verification code events</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>fd8de7e</td><td>feat(verification): add UserVerificationCodeAssignedEvent for handling verification code assignments</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b1e3db7</td><td>feat(iam): implement IamContextFacadeImpl for fetching authenticated user tenant ID</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>6deebb3</td><td>feat(iam): implement CurrentUserProviderImpl for user details retrieval</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a4b5192</td><td>feat(iam): add SpringSecurityCurrentUserProvider interface extending IdentityService</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2a7143b</td><td>feat(iam): add IamContextFacade interface for fetching authenticated user tenant ID</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>dcdb341</td><td>feat(event): implement ApplicationReadyEventHandler for role seeding verification</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f776a8c</td><td>feat(authorization): implement BearerAuthorizationRequestFilter for token validation and user authentication</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>64e9457</td><td>feat(verification): add ResendVerificationCodeCommandFromResourceAssembler for command transformation</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a7f927e</td><td>feat(email): implement NotificationEmailServiceImpl for sending verification and password reset emails</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>09eed09</td><td>feat(email): add UserNotificationEmailService interface for user notification email handling</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d009b31</td><td>feat(verification): implement VerificationServiceImpl for OTP code generation and verification</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>11563db</td><td>feat(verification): add VerificationProperties class for OTP configuration</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4651386</td><td>feat(verification): add OtpSecureVerificationService interface for OTP verification</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>71e77a0</td><td>feat(tokens): implement TokenServiceImpl for JWT token generation and validation</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>57ead44</td><td>feat(tokens): add BearerTokenService interface for token generation and retrieval</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>bdd2379</td><td>feat(hashing): implement HashingServiceImpl for password encoding and matching</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5e3d1ed</td><td>feat(hashing): add BCryptHashingService interface for password encoding</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9d02afc</td><td>feat(security): add UnauthorizedRequestHandlerEntryPoint for handling unauthorized requests</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>210c25a</td><td>feat(authentication): add UsernamePasswordAuthenticationTokenBuilder for token creation</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>cbbe6a4</td><td>feat(user): implement UserDetailsService for loading user details by username</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4f08dd3</td><td>feat(user): implement UserDetailsImpl for user authentication details</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>516161b</td><td>feat(security): add WebSecurityConfiguration for authentication and authorization setup</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ba09f4b</td><td>feat(role): implement RoleCommandService for role seeding functionality</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>de31a87</td><td>feat(token): add TokenService interface for token generation and validation</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>51161f4</td><td>feat(email): add EmailService interface for sending verification and password reset emails</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ecd5b5f</td><td>feat(hashing): add HashingService interface for password encoding and verification</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>390f738</td><td>feat(identity): add IdentityService interface for user identity management</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>58d8a35</td><td>feat(verification): add VerificationService interface for code generation and verification</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>fe1b5fc</td><td>feat(user): implement UserCommandService for handling user commands</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f9bff05</td><td>feat(user): implement UserQueryService for handling authenticated user queries</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7a6eb6e</td><td>feat(user): add AuthenticatedUserResourceFromEntityAssembler for transforming User entities to AuthenticatedUser resources</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>102f35f</td><td>feat(roles): add RoleResourceFromEntityAssembler for transforming Role entities to Role resources</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>1cd46ac</td><td>feat(roles): add RoleCommandService interface for handling role commands</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5265630</td><td>feat(user): add SignUpCommandFromResourceAssembler for transforming SignUpResource to SignUpCommand</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4d877c0</td><td>feat(user): add SignInCommandFromResourceAssembler for transforming SignInResource to SignInCommand</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5957669</td><td>feat(user): add VerifyUserCommandFromResourceAssembler for transforming VerifyUserResource to VerifyUserCommand</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0a6d131</td><td>feat(user): add UserResourceFromEntityAssembler for transforming User entities to User resources</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7f887c4</td><td>feat(roles): add RoleRepository interface for role data persistence</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d0d46ee</td><td>feat(user): add UserRepository interface for user data persistence</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>c25e69a</td><td>feat(user): add UserCommandService interface for handling user commands</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>fe9d95b</td><td>feat(user): add UserQueryService interface for handling user queries</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ce8112c</td><td>feat(roles): add SeedRolesCommand record for seeding role data</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>dfdc03b</td><td>feat(verification): add VerifyUserResource record for user verification data</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2db71d1</td><td>feat(verification): add VerifyUserCommand record for user verification input</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>92e15d3</td><td>feat(verification): add VerificationCode record for handling verification codes</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4f30506</td><td>feat(user): add SignUpCommand record for user registration input</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>732412b</td><td>feat(authentication): add SignInCommand record for user sign-in input</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>e214ef9</td><td>feat(authentication): add SignInResource record for user sign-in data</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f1e5505</td><td>feat(user): add SignUpResource record for user registration data</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>104e584</td><td>feat(verification): add ResendVerificationCodeResource for email validation</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>6d64d1e</td><td>feat(verification): add ResendVerificationCodeCommand for resending verification codes</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a5a9faa</td><td>feat(query): add GetAuthenticatedUserTenantIdQuery record for retrieving authenticated user tenant ID</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>e81485e</td><td>feat(tenant): add AssignUserTenantId record for user-tenant association</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>88f6029</td><td>feat(user): add AuthenticatedUserResource record for authenticated user data representation</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ed824c7</td><td>feat(role): add RoleResource record for role data representation</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>e3e6d85</td><td>feat(verification): add VerificationStatus enum for user verification states</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4afb664</td><td>feat(user): add UserResource record for user data representation</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>da098c9</td><td>feat(tenant): add TenantId value object with validation and uniqueness constraint</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b189aaf</td><td>feat(role): add Roles enum for user access levels</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f9aa382</td><td>feat(role): add Role entity with validation and default role functionality</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ef523b9</td><td>feat(user): implement User aggregate with verification and tenant association features</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a28fdd7</td><td>feat(properties): add Spring DataSource and internationalization configurations</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>020bf7e</td><td>feat(application): enable asynchronous processing and JPA auditing</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>61924cf</td><td>feat(properties): add JWT, mail sender, verification, and internationalization properties</td><td>-</td><td>31/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>80c637e</td><td>feat(exception): implement GlobalExceptionHandler for centralized exception handling</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9c1599c</td><td>feat(error): create ErrorResourceFromExceptionAssembler for error resource transformation</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>40cc6dd</td><td>feat(error): add ErrorResource for structured error responses</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4b23b6d</td><td>feat(email): implement EmailServiceImpl for sending templated emails</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>c354bb1</td><td>feat(email): add TemplatedEmailService interface for sending templated emails</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>53a0859</td><td>feat(i18n): implement LocalizationServiceImpl for message retrieval and domain exception code mapping</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>db1581d</td><td>feat(i18n): add LocalizationConfiguration for locale resolution setup</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d938b9f</td><td>feat(i18n): add MessageSourceLocalizationService interface extending LocalizationService</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>af6ed28</td><td>feat(shared): add LocalizationService interface for resolving localized messages</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0c8b0ce</td><td>feat(shared): add DomainException class for handling domain-specific exceptions</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>39750b5</td><td>feat(shared): add StreetAddress value object for address encapsulation and validation</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>e78cfa1</td><td>feat(shared): add PhoneNumber value object for phone number validation and formatting</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>496f0d6</td><td>feat(shared): add PersonName value object for full name validation and encapsulation</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5472479</td><td>feat(shared): add EmailAddress value object for email validation and encapsulation</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2246809</td><td>feat(shared): add DniNumber value object for DNI number validation and encapsulation</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d025f48</td><td>feat(shared): add AccountStatus enum for user account state management</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>305c86b</td><td>feat(shared): add AcademyId value object for unique academy identification</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>1851145</td><td>merge: integrate feature/initial-structure into develop</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>3dc36ed</td><td>feat(shared): implement SnakeCaseWithPluralizedTablePhysicalNamingStrategy for entity naming</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>898d68f</td><td>feat(shared): add OpenApiConfiguration class for API documentation setup</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>caf15cf</td><td>feat(shared): add MessageResource record to encapsulate messages</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>e439a49</td><td>feat(shared): add AuditableModel base class for entity auditing</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9dc3ee0</td><td>feat(shared): add AuditableAbstractAggregateRoot class for auditing support</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2b23af5</td><td>build(properties): update application properties for Demy Platform configuration</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>1da81d9</td><td>build(pom): update springdoc-openapi-starter-webmvc-ui version to 2.8.11</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>da75f11</td><td>build(pom): add Spring Boot Mail and Thymeleaf dependencies</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>555d3ba</td><td>build(pom): add JWT and Spring Security dependencies</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d4c8047</td><td>build(pom): update project description and add new dependencies</td><td>-</td><td>30/08/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f333a73</td><td>chore: initial commit</td><td>-</td><td>30/08/2025</td></tr>
   </tbody>
 </table>
-
-
 
 #### 4.2.1.4. Testing Suite Evidence for Sprint Review
 
