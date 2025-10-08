@@ -6192,12 +6192,6 @@ Encabezado claro, subtítulo con propuesta de valor y dos capturas para descarga
 
 ![Landing Hero](./assets/ux-ui/wireframes/landing/landing_hero.png)
 
-**Sobre el Producto**
-
-Resumen breve del problema que resuelve y beneficios clave. Ideal para visitantes que necesitan contexto antes de explorar.
-
-![Landing Sobre el Producto](./assets/ux-ui/wireframes/landing/landing_abouttheproduct.png)
-
 **Cómo Funciona**
 
 Proceso en 3 pasos (descubre, configura y comienza). Refuerza la facilidad de adopción de la idea del producto.
@@ -6227,12 +6221,6 @@ Planes comparables (Essential/Pro/Elite) con lista de inclusiones y recomendacio
 Prueba social con citas verificables dados por usuarios clientes.
 
 ![Landing Testimonios](./assets/ux-ui/wireframes/landing/landing_testimonials.png)
-
-**Acerca del Equipo**
-
-Misión del equipo y por qué construimos este producto. Humaniza la marca y genera confianza.
-
-![Landing Acerca del Equipo](./assets/ux-ui/wireframes/landing/landing_abouttheteam.png)
 
 **Equipo**
 
@@ -6269,12 +6257,6 @@ Toolbar y texto con dos badges de descarga (App Store / Google Play). Imagen pri
 
 ![Landing Hero](./assets/ux-ui/mockups/landing/landing_herosection.png)
 
-**Sobre el Producto**
-
-Se presenta el contexto del problema y beneficios clave presentados en dos columnas.
-
-![Landing Sobre el Producto](./assets/ux-ui/mockups/landing/landing_abouttheproduct.png)
-
 **Cómo Funciona**
 
 Flujo en 3 pasos (descubre, configura, comienza) con numeración clara, íconos consistentes y tarjetas para separar etapas.
@@ -6304,12 +6286,6 @@ Comparativa de planes (Essential / Pro / Elite) con lista de inclusiones. El pla
 Testimonios con foto, nombre y rol; calificación visible. Opción de mostrar perfil de clientes para reforzar credibilidad.
 
 ![Landing Testimonios](./assets/ux-ui/mockups/landing/landing_testimonials.png)
-
-**Acerca del Equipo**
-
-Breve mensaje sobre misión y motivación del proyecto, alineado con el tono de marca y del equipo. Video incluido.
-
-![Landing Acerca del Equipo](./assets/ux-ui/mockups/landing/landing_abouttheteam.png)
 
 **Equipo**
 
@@ -7089,7 +7065,74 @@ Con el sprint 1 se avanzó con la creación del landing page para Demy, que incl
 
 #### 4.2.1.5. Execution Evidence for Sprint Review
 
-*Escribir aquí*
+**Landing Page**
+
+En el Sprint 1 se alcanzó el desarrollo de la landing page, mostrando las secciones principales para que el usuario acceda a información relevante del producto y del startup. A continuación, se presentan evidencias visuales:
+
+**Hero Section**  
+
+En esta sección el usuario visualiza una breve descripción de Demy y un botón para comenzar a usarlo.  
+
+![Landing Hero](./assets/ux-ui/evidences/landing/landing_herosection.png)
+
+**Features**  
+
+Descripción de características y detalles de Demy mostrados en tres vistas consecutivas.
+
+![Landing Benefits](./assets/ux-ui/evidences/landing/landing_features.png)
+
+![Landing Benefits](./assets/ux-ui/evidences/landing/landing_features_2.png)
+
+![Landing Benefits](./assets/ux-ui/evidences/landing/landing_features_3.png)
+
+**How it Works**
+
+Descripción en tres simples pasos del uso del producto.
+
+![Landing Testimonials](./assets/ux-ui/evidences/landing/landing_howitworks.png)
+
+**Testimonials**  
+
+Testimonios de usuarios con su calificación.  
+
+![Landing Testimonials](./assets/ux-ui/evidences/landing/landing_testimonials.png)
+
+**About Us**  
+
+Presentación del equipo que conforma Demy. 
+
+![Landing About Us](./assets/ux-ui/evidences/landing/landing_teams.png)
+
+**Plans & Pricing**  
+
+Visualización de los tres planes ofrecidos y sus beneficios.  
+
+![Landing Plans & Pricing](./assets/ux-ui/evidences/landing/landing_pricing.png)
+
+**Contact**  
+
+Formulario para contacto directo con el equipo.  
+
+![Landing Contact](./assets/ux-ui/evidences/landing/landing_contactus.png)
+
+**FAQs**  
+
+Preguntas frecuentes y sus respuestas.  
+
+![Landing FAQs](./assets/ux-ui/evidences/landing/landing_faq.png)
+
+**Footer**  
+
+Secciones de navegación secundaria y enlaces a redes sociales.  
+
+![Landing Footer](./assets/ux-ui/evidences/landing/landing_footer.png)
+
+**Link de video de presentación sobre la Landing Page**  
+
+[Video Presentación](URL_DEL_VIDEO_AQUÍ)
+
+**Mobile Application**
+**Backend**
 
 #### 4.2.1.6. Services Documentation Evidence for Sprint Review
 
