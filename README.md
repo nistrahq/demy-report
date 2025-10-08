@@ -6280,7 +6280,82 @@ Modales consistentes para confirmaciones, advertencias y acciones críticas. Ref
 
 #### 3.1.4.3. Mobile Applications Mock-ups
 
-*Escribir aquí*
+**Mobile Aplication MockUps:** Flujo de estudiante
+
+A continuación se presenta la sustentación de los mockups para la aplicación del estudiante. Aplicamos Human Interface Guidelines consistente para una experiencia de usuario intuitiva y consistencia del color para mejor visibilidad.
+
+**Estado de Carga (Loader)**
+
+Pantalla de transición que mantiene la percepción de respuesta del sistema mientras se inicia la aplicación. Muestra el logo de Demy
+
+![Student Loader](./assets/ux-ui/mockups/mobile/student/student_loader.png)
+
+**Inicio de sesión (Login)**
+
+Pantalla de acceso estándar que permite al usuario ingresar a la plataforma en dos pasos seguros: correo y contraseña.
+
+![Student Login](./assets/ux-ui/mockups/mobile/student/student_login.png)
+
+**Términos y condiciones**
+
+Modal de los términos y condiciones establecidos por la app que se muestran en el inicio de sesión.
+
+![Student Términos y Condiciones](./assets/ux-ui/mockups/mobile/student/student_terms_and_conditions.png)
+
+**Política de privacidad**
+
+Modal de las políticas de privacidad establecidas por la app que se muestran en el inicio de sesión.
+
+![Student Política de privacidad](./assets/ux-ui/mockups/mobile/student/student_privacy_policy.png)
+
+**Inicio (Home)**
+
+Resumen del día: próximas clases, tareas y accesos rápidos a pagos y actualizaciones de la academia. Se agregaron los colores principales de Demy más el uso de liquid glass como concepto de diseño de Apple.
+
+![Student Home](./assets/ux-ui/mockups/mobile/student/student_home.png)
+
+**Horario Académico**
+
+Consulta del horario por día/semana y detalle por curso. Incluye una acción directa para visualizar las **reprogramaciones** cuando las haya.
+
+![Student Calendario](./assets/ux-ui/mockups/mobile/student/student_schedule.png)  
+![Student Calendario Detalle](./assets/ux-ui/mockups/mobile/student/student_schedule_detail.png)  
+![Student Reprogramar](./assets/ux-ui/mockups/mobile/student/student_reschedule.png)
+
+**Notificaciones**
+
+Centro unificado de avisos (clases, pagos, evaluaciones). Se apertura en modo pop-up cuando el usuario presiona en el ícono.
+
+![Student Notificaciones](./assets/ux-ui/mockups/mobile/student/student_notifications.png)
+
+**Pagos y Comprobantes**
+
+Flujo seguro y claro para realizar pagos de matrículas o cuotas. El detalle muestra el desglose antes de confirmar. Tras completar, se presenta una **confirmación de éxito** con próxima acción sugerida.
+
+![Student Pago](./assets/ux-ui/mockups/mobile/student/student_payment.png)  
+![Student Detalle de Pago](./assets/ux-ui/mockups/mobile/student/student_payment_detail.png)  
+![Student Operación Exitosa](./assets/ux-ui/mockups/mobile/student/student_successfull.png)
+
+**Perfil del Estudiante**
+
+Gestión de datos personales (foto, contacto, preferencias) y cierre de sesión. En esta sección el estudiante es capaz de colocar su fecha de cumpleaños, cambiar el idioma, entrar a los ajustes de privacidad y a la configuración de la app.
+
+![Student Perfil](./assets/ux-ui/mockups/mobile/student/student_profile.png)  
+![Student Cumpleaños](./assets/ux-ui/mockups/mobile/student/student_birthday.png)
+
+**Configuración**
+
+Gestión de ajustes de la app (tema, contraste, notificaciones). Se promueve la autogestión para reducir solicitudes de soporte.
+
+![Student Configuración](./assets/ux-ui/mockups/mobile/student/student_configuration.png)
+
+**Componentes Reutilizables: Modales**
+
+Modales consistentes para confirmaciones, advertencias y acciones críticas. Refuerzan la prevención de errores y la claridad de decisiones.
+
+![Student Modal](./assets/ux-ui/mockups/mobile/student/student_modal.png)  
+![Student Modal Variante](./assets/ux-ui/mockups/mobile/student/student_modal_2.png)
+
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
