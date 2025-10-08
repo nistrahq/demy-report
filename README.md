@@ -6425,142 +6425,352 @@ Con el sprint 1 se avanzó con la creación del landing page para Demy, que incl
     </tr>
   </thead>
   <tbody>
-    <tr><td>demy-admins</td><td>develop</td><td>53d4259</td><td>Merge pull request #2 from nistrahq/feature/initial-structure</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>61ad787</td><td>feat(core): add new sections to AppShell for improved navigation</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>b0bbfa9</td><td>feat(core): restructure MainDrawer and MainDestination for improved navigation and add new sections</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>0c1697a</td><td>feat(dashboard): enhance DashboardScreen with new UI state management and components</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>48518b6</td><td>feat(dashboard): implement DashboardRepository and its implementation for fetching dashboard stats</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>5f5dd33</td><td>feat(dashboard): update package structure for Dashboard navigation components</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>5409ebc</td><td>feat(dashboard): add DashboardStats data class and DashboardViewModel for managing dashboard state</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>e00eddb</td><td>feat(core): add TopEdgeFade and BottomEdgeFade components for scroll edge indicators</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>e6951f6</td><td>feat(core): add new card components for academic period details, overloaded teacher, and classrooms and courses</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>8f409c9</td><td>feat(core): replace Card with OutlinedCard in SmallCard component for improved styling</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>d2cedf4</td><td>feat(core): add AcademicCard component with labeled value display and card container</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>be00702</td><td>feat(core): add SmallCard component for displaying label and value</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>fab68aa</td><td>feat(core): add MainLayoutPreviewDefaults and container for MainLayout composable</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>9c19037</td><td>feat(core): add TabletPreviewBoth annotation for dual theme previews on tablets</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>22ec8e0</td><td>feat(theme): refactor color management and add extended color scheme support</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>46fb63d</td><td>feat(core): update MainDrawer styling for selected item colors</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>7303062</td><td>feat(teachers): add Teachers navigation graph and screen for teacher management</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>67f9725</td><td>feat(auth): add AuthNavigation and AuthScreen for authentication flow</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>714d8cf</td><td>feat(dashboard): implement DashboardNavGraph and DashboardScreen for dashboard navigation and UI</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>eaf7cb6</td><td>feat(dashboard): add DashboardUiState and DashboardViewModel for managing dashboard state</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>eab56a0</td><td>feat(core): enhance MainDrawer and MainLayout with improved styling and layout adjustments</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>ecd5fa1</td><td>feat(core): replace RootNavGraph with AppShell for improved navigation structure</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>6dbb4d4</td><td>feat(core): add AppShell component for navigation and layout management</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>f54f17a</td><td>feat(core): add MainLayout component for application structure</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>f0b7c92</td><td>feat(core): add MainDrawer component for navigation layout</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>e67e49e</td><td>feat(core): add MainDestination sealed class for top-level navigation</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>fb393a4</td><td>feat(core): add DrawerModels for user interface layout management</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>fba5e58</td><td>refactor(test): rename Theme.kt package for improved structure</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>d112c85</td><td>feat(core): update TabletPreviewSamples to use MainLayout for light and dark mode previews</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>f888a1c</td><td>feat(core): add TabletPreviewSamples for demonstrating light and dark mode previews</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>0588215</td><td>feat(core): add UserChip composable for displaying user information</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>a7511de</td><td>feat(core): add annotations for tablet previews in dark and light modes</td><td></td><td>06/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>08e6bbf</td><td>feat(core): add RootNavGraph for managing navigation structure and start destination</td><td></td><td>05/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>d540ee7</td><td>feat(core): enhance navigateOnce function with popUpTo support and overload for Destination</td><td></td><td>05/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>56b715f</td><td>feat(core): add sealed interface for defining navigation destinations</td><td></td><td>05/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>552b2b1</td><td>feat(MainActivity): enhance entry point with navigation setup and documentation</td><td></td><td>05/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>aad3fa7</td><td>feat(app): restrict usage to tablets in landscape mode</td><td></td><td>05/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>5241f1a</td><td>feat(i18n): add tablet-only message for landscape mode support</td><td></td><td>05/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>9e94f99</td><td>build(manifest): configure screen support and set landscape orientation for MainActivity</td><td></td><td>05/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>991b0a1</td><td>build(manifest): add INTERNET permission for network access</td><td></td><td>05/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>d9990a4</td><td>build(dependencies): add Coil library and update Compose dependencies</td><td></td><td>05/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>0167a1b</td><td>feat(proguard): add ProGuard rules for Hilt, Retrofit, Moshi, and Room</td><td></td><td>01/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>8895f5f</td><td>feat(core): add Hilt dependency injection support in MainActivity</td><td></td><td>01/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>a09efe0</td><td>feat(core): add AppDatabase for Room database setup</td><td></td><td>01/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>1fd7857</td><td>feat(core): add StorageModule for database and data store provision</td><td></td><td>01/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>fcbcd13</td><td>feat(core): add RepositoryModule for dependency injection of ItemRepository</td><td></td><td>01/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>b8d81d3</td><td>build(dependencies): add moshi-kotlin-codegen dependency and clean up build.gradle.kts</td><td></td><td>01/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>5716c62</td><td>feat(core): add ItemRepository interface and ItemRepositoryImpl for data management</td><td></td><td>01/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>dd98e5e</td><td>feat(core): add ItemEntity and ItemDao for local data management</td><td></td><td>01/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>afbeb01</td><td>fix(core): update import for Named annotation in NetworkModule</td><td></td><td>01/10/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>6b0600d</td><td>feat(core): add ApiService interface and enhance NetworkModule documentation</td><td></td><td>30/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>9bde199</td><td>feat(core): add NetworkModule for Retrofit and OkHttp setup with Hilt</td><td></td><td>30/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>0354bac</td><td>feat(app): add application class for Hilt dependency injection</td><td></td><td>30/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>4a07011</td><td>build(gradle): update Gradle configuration for Java 17 and add API_BASE_URL and LOG_HTTP fields</td><td></td><td>30/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>55a0e44</td><td>build(dependencies): add Hilt, Retrofit, OkHttp, Moshi, Room, DataStore, and Coroutines dependencies</td><td></td><td>30/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>9cbd508</td><td>feat(config): add CODEOWNERS file for automatic review requests</td><td></td><td>29/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>55f65cc</td><td>feat(config): add .editorconfig for consistent code style and formatting</td><td></td><td>29/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>534b848</td><td>merge: integrate feature/initial-structure into develop</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>39f4aef</td><td>feat(docs): add initial README with project overview, features, and setup instructions</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>aaba0e1</td><td>feat(config): add configuration file with project resources and links</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>f5c52b0</td><td>feat(docs): add initial changelog for Sprint 1</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>1cd34d1</td><td>feat(docs): add initial documentation structure for Demy Android App</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>98deca2</td><td>feat(docs): add navigation diagram for Demy Android App (Admin)</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>907f3e3</td><td>feat(docs): add setup guide for local development of the Demy Android App</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>6f35a0c</td><td>feat(docs): add style guide for UI/UX design of the Demy Android App</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>9da4a80</td><td>feat(docs): add backend integration documentation for the Demy Android App</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>262934b</td><td>feat(docs): add bibliography to document references and resources for the Demy Android App</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>44ffa36</td><td>feat(docs): add MVVM overview documentation for the Demy Android App</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>8a6d737</td><td>feat(docs): add Spanish version of CONTRIBUTING.md to outline collaboration guidelines</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>a77900e</td><td>feat(docs): add CONTRIBUTING.md to outline collaboration guidelines and workflow</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>4205c7c</td><td>feat(authors): add Spanish version of the AUTHORS.md to recognize project contributors</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>275addc</td><td>feat(authors): add AUTHORS.md to acknowledge project contributors and team structure</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>69c6364</td><td>feat(conduct): add Spanish version of the Code of Conduct document</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>1952d8b</td><td>feat(conduct): add Code of Conduct document to establish team guidelines</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>4dcf74f</td><td>feat(security): add Spanish version of the security policy document</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>3cf4cc0</td><td>feat(security): add security policy document outlining vulnerability reporting and responsible disclosure</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>7a7950e</td><td>feat(github): update pull request template to include additional checklist items</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>7228086</td><td>feat(github): add general issue template for capturing miscellaneous issues</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>43f2729</td><td>feat(github): add documentation improvement template for enhancing project clarity</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>21a3ef5</td><td>feat(github): add refactor/technical debt template for improving maintainability</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>6579745</td><td>feat(github): add performance issue template for tracking app performance problems</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>a3535ca</td><td>feat(github): add UI/UX issue template for reporting design inconsistencies</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>88c4e9d</td><td>feat(github): add feature request template for structured enhancement suggestions</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>b5b98e1</td><td>feat(github): add bug report template for consistent issue reporting</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>develop</td><td>5059432</td><td>feat(github): add pull request template for consistent PR submissions</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>24e1c67</td><td>Merge pull request #1 from nistrahq/develop</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>534b848</td><td>merge: integrate feature/initial-structure into develop</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>39f4aef</td><td>feat(docs): add initial README with project overview, features, and setup instructions</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>aaba0e1</td><td>feat(config): add configuration file with project resources and links</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>f5c52b0</td><td>feat(docs): add initial changelog for Sprint 1</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>1cd34d1</td><td>feat(docs): add initial documentation structure for Demy Android App</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>98deca2</td><td>feat(docs): add navigation diagram for Demy Android App (Admin)</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>907f3e3</td><td>feat(docs): add setup guide for local development of the Demy Android App</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>6f35a0c</td><td>feat(docs): add style guide for UI/UX design of the Demy Android App</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>9da4a80</td><td>feat(docs): add backend integration documentation for the Demy Android App</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>262934b</td><td>feat(docs): add bibliography to document references and resources for the Demy Android App</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>44ffa36</td><td>feat(docs): add MVVM overview documentation for the Demy Android App</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>8a6d737</td><td>feat(docs): add Spanish version of CONTRIBUTING.md to outline collaboration guidelines</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>a77900e</td><td>feat(docs): add CONTRIBUTING.md to outline collaboration guidelines and workflow</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>4205c7c</td><td>feat(authors): add Spanish version of the AUTHORS.md to recognize project contributors</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>275addc</td><td>feat(authors): add AUTHORS.md to acknowledge project contributors and team structure</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>69c6364</td><td>feat(conduct): add Spanish version of the Code of Conduct document</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>1952d8b</td><td>feat(conduct): add Code of Conduct document to establish team guidelines</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>4dcf74f</td><td>feat(security): add Spanish version of the security policy document</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>3cf4cc0</td><td>feat(security): add security policy document outlining vulnerability reporting and responsible disclosure</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>7a7950e</td><td>feat(github): update pull request template to include additional checklist items</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>7228086</td><td>feat(github): add general issue template for capturing miscellaneous issues</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>43f2729</td><td>feat(github): add documentation improvement template for enhancing project clarity</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>21a3ef5</td><td>feat(github): add refactor/technical debt template for improving maintainability</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>6579745</td><td>feat(github): add performance issue template for tracking app performance problems</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>a3535ca</td><td>feat(github): add UI/UX issue template for reporting design inconsistencies</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>88c4e9d</td><td>feat(github): add feature request template for structured enhancement suggestions</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>b5b98e1</td><td>feat(github): add bug report template for consistent issue reporting</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>5059432</td><td>feat(github): add pull request template for consistent PR submissions</td><td></td><td>26/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>a76ae22</td><td>feat(main): refactor MainActivity to use navigation graph and remove Greeting composable</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>1af9201</td><td>feat(navigation): add sealed class for navigation destinations</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>add8fbc</td><td>feat(navigation): add navigation arguments and extension functions for NavController</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>4108fb3</td><td>feat(navigation): implement initial navigation graph and route definitions</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>5224fbf</td><td>feat(navigation): add androidx.navigation dependencies for runtime and compose</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>d228580</td><td>feat(theme): add ThemePreview and previews for light and dark modes</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>042dc6b</td><td>fix(theme): disable dynamic color in DemyTheme by default</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>b0865ba</td><td>feat(fonts): add local fallback fonts for Poppins and Montserrat</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>986981b</td><td>build(dependencies): add androidx.compose.ui.text library</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>c536423</td><td>feat(fonts): add montserrat and poppins fonts</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>ba9282e</td><td>build(fonts): add font certificates for Google Fonts integration</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>0bd7f66</td><td>build(dependencies): add androidx.compose.ui.text.google.fonts library</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>3bebb86</td><td>feat(theme): implement extended color schemes and typography</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>4630337</td><td>chore(theme): move theme package to core</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>f57cb82</td><td>chore: change MainActivity.kt package for root</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>d25b340</td><td>chore: change MainActivity.kt package for "app"</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>6c42126</td><td>build(libs): update package name for "com.nistra.demy.admins"</td><td></td><td>20/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>beef0db</td><td>build(libs): update kotlin and composeBom version</td><td></td><td>05/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>f9d4e87</td><td>build(libs): update agp version</td><td></td><td>05/09/2025</td></tr>
-    <tr><td>demy-admins</td><td>main</td><td>2e4ae1b</td><td>chore: initial commit</td><td></td><td>04/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>53d4259</td><td>Merge pull request #2 from nistrahq/feature/initial-structure</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>61ad787</td><td>feat(core): add new sections to AppShell for improved navigation</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>b0bbfa9</td><td>feat(core): restructure MainDrawer and MainDestination for improved navigation and add new sections</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>0c1697a</td><td>feat(dashboard): enhance DashboardScreen with new UI state management and components</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>48518b6</td><td>feat(dashboard): implement DashboardRepository and its implementation for fetching dashboard stats</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>5f5dd33</td><td>feat(dashboard): update package structure for Dashboard navigation components</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>5409ebc</td><td>feat(dashboard): add DashboardStats data class and DashboardViewModel for managing dashboard state</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>e00eddb</td><td>feat(core): add TopEdgeFade and BottomEdgeFade components for scroll edge indicators</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>e6951f6</td><td>feat(core): add new card components for academic period details, overloaded teacher, and classrooms and courses</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>8f409c9</td><td>feat(core): replace Card with OutlinedCard in SmallCard component for improved styling</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>d2cedf4</td><td>feat(core): add AcademicCard component with labeled value display and card container</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>be00702</td><td>feat(core): add SmallCard component for displaying label and value</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>fab68aa</td><td>feat(core): add MainLayoutPreviewDefaults and container for MainLayout composable</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>9c19037</td><td>feat(core): add TabletPreviewBoth annotation for dual theme previews on tablets</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>22ec8e0</td><td>feat(theme): refactor color management and add extended color scheme support</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>46fb63d</td><td>feat(core): update MainDrawer styling for selected item colors</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>7303062</td><td>feat(teachers): add Teachers navigation graph and screen for teacher management</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>67f9725</td><td>feat(auth): add AuthNavigation and AuthScreen for authentication flow</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>714d8cf</td><td>feat(dashboard): implement DashboardNavGraph and DashboardScreen for dashboard navigation and UI</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>eaf7cb6</td><td>feat(dashboard): add DashboardUiState and DashboardViewModel for managing dashboard state</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>eab56a0</td><td>feat(core): enhance MainDrawer and MainLayout with improved styling and layout adjustments</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>ecd5fa1</td><td>feat(core): replace RootNavGraph with AppShell for improved navigation structure</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>6dbb4d4</td><td>feat(core): add AppShell component for navigation and layout management</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>f54f17a</td><td>feat(core): add MainLayout component for application structure</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>f0b7c92</td><td>feat(core): add MainDrawer component for navigation layout</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>e67e49e</td><td>feat(core): add MainDestination sealed class for top-level navigation</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>fb393a4</td><td>feat(core): add DrawerModels for user interface layout management</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>fba5e58</td><td>refactor(test): rename Theme.kt package for improved structure</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>d112c85</td><td>feat(core): update TabletPreviewSamples to use MainLayout for light and dark mode previews</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>f888a1c</td><td>feat(core): add TabletPreviewSamples for demonstrating light and dark mode previews</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>0588215</td><td>feat(core): add UserChip composable for displaying user information</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>a7511de</td><td>feat(core): add annotations for tablet previews in dark and light modes</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>08e6bbf</td><td>feat(core): add RootNavGraph for managing navigation structure and start destination</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>d540ee7</td><td>feat(core): enhance navigateOnce function with popUpTo support and overload for Destination</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>56b715f</td><td>feat(core): add sealed interface for defining navigation destinations</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>552b2b1</td><td>feat(MainActivity): enhance entry point with navigation setup and documentation</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>aad3fa7</td><td>feat(app): restrict usage to tablets in landscape mode</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>5241f1a</td><td>feat(i18n): add tablet-only message for landscape mode support</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>9e94f99</td><td>build(manifest): configure screen support and set landscape orientation for MainActivity</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>991b0a1</td><td>build(manifest): add INTERNET permission for network access</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>d9990a4</td><td>build(dependencies): add Coil library and update Compose dependencies</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>0167a1b</td><td>feat(proguard): add ProGuard rules for Hilt, Retrofit, Moshi, and Room</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>8895f5f</td><td>feat(core): add Hilt dependency injection support in MainActivity</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>a09efe0</td><td>feat(core): add AppDatabase for Room database setup</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>1fd7857</td><td>feat(core): add StorageModule for database and data store provision</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>fcbcd13</td><td>feat(core): add RepositoryModule for dependency injection of ItemRepository</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>b8d81d3</td><td>build(dependencies): add moshi-kotlin-codegen dependency and clean up build.gradle.kts</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>5716c62</td><td>feat(core): add ItemRepository interface and ItemRepositoryImpl for data management</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>dd98e5e</td><td>feat(core): add ItemEntity and ItemDao for local data management</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>afbeb01</td><td>fix(core): update import for Named annotation in NetworkModule</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>6b0600d</td><td>feat(core): add ApiService interface and enhance NetworkModule documentation</td><td>-</td><td>30/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>9bde199</td><td>feat(core): add NetworkModule for Retrofit and OkHttp setup with Hilt</td><td>-</td><td>30/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>0354bac</td><td>feat(app): add application class for Hilt dependency injection</td><td>-</td><td>30/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>4a07011</td><td>build(gradle): update Gradle configuration for Java 17 and add API_BASE_URL and LOG_HTTP fields</td><td>-</td><td>30/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>55a0e44</td><td>build(dependencies): add Hilt, Retrofit, OkHttp, Moshi, Room, DataStore, and Coroutines dependencies</td><td>-</td><td>30/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>9cbd508</td><td>feat(config): add CODEOWNERS file for automatic review requests</td><td>-</td><td>29/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>55f65cc</td><td>feat(config): add .editorconfig for consistent code style and formatting</td><td>-</td><td>29/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>534b848</td><td>merge: integrate feature/initial-structure into develop</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>39f4aef</td><td>feat(docs): add initial README with project overview, features, and setup instructions</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>aaba0e1</td><td>feat(config): add configuration file with project resources and links</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>f5c52b0</td><td>feat(docs): add initial changelog for Sprint 1</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>1cd34d1</td><td>feat(docs): add initial documentation structure for Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>98deca2</td><td>feat(docs): add navigation diagram for Demy Android App (Admin)</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>907f3e3</td><td>feat(docs): add setup guide for local development of the Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>6f35a0c</td><td>feat(docs): add style guide for UI/UX design of the Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>9da4a80</td><td>feat(docs): add backend integration documentation for the Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>262934b</td><td>feat(docs): add bibliography to document references and resources for the Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>44ffa36</td><td>feat(docs): add MVVM overview documentation for the Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>8a6d737</td><td>feat(docs): add Spanish version of CONTRIBUTING.md to outline collaboration guidelines</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>a77900e</td><td>feat(docs): add CONTRIBUTING.md to outline collaboration guidelines and workflow</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>4205c7c</td><td>feat(authors): add Spanish version of the AUTHORS.md to recognize project contributors</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>275addc</td><td>feat(authors): add AUTHORS.md to acknowledge project contributors and team structure</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>69c6364</td><td>feat(conduct): add Spanish version of the Code of Conduct document</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>1952d8b</td><td>feat(conduct): add Code of Conduct document to establish team guidelines</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>4dcf74f</td><td>feat(security): add Spanish version of the security policy document</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>3cf4cc0</td><td>feat(security): add security policy document outlining vulnerability reporting and responsible disclosure</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>7a7950e</td><td>feat(github): update pull request template to include additional checklist items</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>7228086</td><td>feat(github): add general issue template for capturing miscellaneous issues</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>43f2729</td><td>feat(github): add documentation improvement template for enhancing project clarity</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>21a3ef5</td><td>feat(github): add refactor/technical debt template for improving maintainability</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>6579745</td><td>feat(github): add performance issue template for tracking app performance problems</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>a3535ca</td><td>feat(github): add UI/UX issue template for reporting design inconsistencies</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>88c4e9d</td><td>feat(github): add feature request template for structured enhancement suggestions</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>b5b98e1</td><td>feat(github): add bug report template for consistent issue reporting</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>5059432</td><td>feat(github): add pull request template for consistent PR submissions</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>a76ae22</td><td>feat(main): refactor MainActivity to use navigation graph and remove Greeting composable</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>1af9201</td><td>feat(navigation): add sealed class for navigation destinations</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>add8fbc</td><td>feat(navigation): add navigation arguments and extension functions for NavController</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>4108fb3</td><td>feat(navigation): implement initial navigation graph and route definitions</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>5224fbf</td><td>feat(navigation): add androidx.navigation dependencies for runtime and compose</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>d228580</td><td>feat(theme): add ThemePreview and previews for light and dark modes</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>042dc6b</td><td>fix(theme): disable dynamic color in DemyTheme by default</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>b0865ba</td><td>feat(fonts): add local fallback fonts for Poppins and Montserrat</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>986981b</td><td>build(dependencies): add androidx.compose.ui.text library</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>c536423</td><td>feat(fonts): add montserrat and poppins fonts</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>ba9282e</td><td>build(fonts): add font certificates for Google Fonts integration</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>0bd7f66</td><td>build(dependencies): add androidx.compose.ui.text.google.fonts library</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>3bebb86</td><td>feat(theme): implement extended color schemes and typography</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>4630337</td><td>chore(theme): move theme package to core</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>f57cb82</td><td>chore: change MainActivity.kt package for root</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>d25b340</td><td>chore: change MainActivity.kt package for "app"</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>6c42126</td><td>build(libs): update package name for "com.nistra.demy.admins"</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>beef0db</td><td>build(libs): update kotlin and composeBom version</td><td>-</td><td>05/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>f9d4e87</td><td>build(libs): update agp version</td><td>-</td><td>05/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/courses-management</td><td>2e4ae1b</td><td>chore: initial commit</td><td>-</td><td>04/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>53d4259</td><td>Merge pull request #2 from nistrahq/feature/initial-structure</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>61ad787</td><td>feat(core): add new sections to AppShell for improved navigation</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>b0bbfa9</td><td>feat(core): restructure MainDrawer and MainDestination for improved navigation and add new sections</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>0c1697a</td><td>feat(dashboard): enhance DashboardScreen with new UI state management and components</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>48518b6</td><td>feat(dashboard): implement DashboardRepository and its implementation for fetching dashboard stats</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>5f5dd33</td><td>feat(dashboard): update package structure for Dashboard navigation components</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>5409ebc</td><td>feat(dashboard): add DashboardStats data class and DashboardViewModel for managing dashboard state</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>e00eddb</td><td>feat(core): add TopEdgeFade and BottomEdgeFade components for scroll edge indicators</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>e6951f6</td><td>feat(core): add new card components for academic period details, overloaded teacher, and classrooms and courses</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>8f409c9</td><td>feat(core): replace Card with OutlinedCard in SmallCard component for improved styling</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>d2cedf4</td><td>feat(core): add AcademicCard component with labeled value display and card container</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>be00702</td><td>feat(core): add SmallCard component for displaying label and value</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>fab68aa</td><td>feat(core): add MainLayoutPreviewDefaults and container for MainLayout composable</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>9c19037</td><td>feat(core): add TabletPreviewBoth annotation for dual theme previews on tablets</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>22ec8e0</td><td>feat(theme): refactor color management and add extended color scheme support</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>46fb63d</td><td>feat(core): update MainDrawer styling for selected item colors</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>7303062</td><td>feat(teachers): add Teachers navigation graph and screen for teacher management</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>67f9725</td><td>feat(auth): add AuthNavigation and AuthScreen for authentication flow</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>714d8cf</td><td>feat(dashboard): implement DashboardNavGraph and DashboardScreen for dashboard navigation and UI</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>eaf7cb6</td><td>feat(dashboard): add DashboardUiState and DashboardViewModel for managing dashboard state</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>eab56a0</td><td>feat(core): enhance MainDrawer and MainLayout with improved styling and layout adjustments</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>ecd5fa1</td><td>feat(core): replace RootNavGraph with AppShell for improved navigation structure</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>6dbb4d4</td><td>feat(core): add AppShell component for navigation and layout management</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>f54f17a</td><td>feat(core): add MainLayout component for application structure</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>f0b7c92</td><td>feat(core): add MainDrawer component for navigation layout</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>e67e49e</td><td>feat(core): add MainDestination sealed class for top-level navigation</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>fb393a4</td><td>feat(core): add DrawerModels for user interface layout management</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>fba5e58</td><td>refactor(test): rename Theme.kt package for improved structure</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>53d4259</td><td>Merge pull request #2 from nistrahq/feature/initial-structure</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>61ad787</td><td>feat(core): add new sections to AppShell for improved navigation</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>b0bbfa9</td><td>feat(core): restructure MainDrawer and MainDestination for improved navigation and add new sections</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>0c1697a</td><td>feat(dashboard): enhance DashboardScreen with new UI state management and components</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>48518b6</td><td>feat(dashboard): implement DashboardRepository and its implementation for fetching dashboard stats</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>5f5dd33</td><td>feat(dashboard): update package structure for Dashboard navigation components</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>5409ebc</td><td>feat(dashboard): add DashboardStats data class and DashboardViewModel for managing dashboard state</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>e00eddb</td><td>feat(core): add TopEdgeFade and BottomEdgeFade components for scroll edge indicators</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>e6951f6</td><td>feat(core): add new card components for academic period details, overloaded teacher, and classrooms and courses</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>8f409c9</td><td>feat(core): replace Card with OutlinedCard in SmallCard component for improved styling</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>d2cedf4</td><td>feat(core): add AcademicCard component with labeled value display and card container</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>be00702</td><td>feat(core): add SmallCard component for displaying label and value</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>fab68aa</td><td>feat(core): add MainLayoutPreviewDefaults and container for MainLayout composable</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>9c19037</td><td>feat(core): add TabletPreviewBoth annotation for dual theme previews on tablets</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>22ec8e0</td><td>feat(theme): refactor color management and add extended color scheme support</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>46fb63d</td><td>feat(core): update MainDrawer styling for selected item colors</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>7303062</td><td>feat(teachers): add Teachers navigation graph and screen for teacher management</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>67f9725</td><td>feat(auth): add AuthNavigation and AuthScreen for authentication flow</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>714d8cf</td><td>feat(dashboard): implement DashboardNavGraph and DashboardScreen for dashboard navigation and UI</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>eaf7cb6</td><td>feat(dashboard): add DashboardUiState and DashboardViewModel for managing dashboard state</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>eab56a0</td><td>feat(core): enhance MainDrawer and MainLayout with improved styling and layout adjustments</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>ecd5fa1</td><td>feat(core): replace RootNavGraph with AppShell for improved navigation structure</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>6dbb4d4</td><td>feat(core): add AppShell component for navigation and layout management</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>f54f17a</td><td>feat(core): add MainLayout component for application structure</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>f0b7c92</td><td>feat(core): add MainDrawer component for navigation layout</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>e67e49e</td><td>feat(core): add MainDestination sealed class for top-level navigation</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>fb393a4</td><td>feat(core): add DrawerModels for user interface layout management</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>fba5e58</td><td>refactor(test): rename Theme.kt package for improved structure</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>d112c85</td><td>feat(core): update TabletPreviewSamples to use MainLayout for light and dark mode previews</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>f888a1c</td><td>feat(core): add TabletPreviewSamples for demonstrating light and dark mode previews</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>0588215</td><td>feat(core): add UserChip composable for displaying user information</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>a7511de</td><td>feat(core): add annotations for tablet previews in dark and light modes</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>08e6bbf</td><td>feat(core): add RootNavGraph for managing navigation structure and start destination</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>d540ee7</td><td>feat(core): enhance navigateOnce function with popUpTo support and overload for Destination</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>56b715f</td><td>feat(core): add sealed interface for defining navigation destinations</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>552b2b1</td><td>feat(MainActivity): enhance entry point with navigation setup and documentation</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>aad3fa7</td><td>feat(app): restrict usage to tablets in landscape mode</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>5241f1a</td><td>feat(i18n): add tablet-only message for landscape mode support</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>9e94f99</td><td>build(manifest): configure screen support and set landscape orientation for MainActivity</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>991b0a1</td><td>build(manifest): add INTERNET permission for network access</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>d9990a4</td><td>build(dependencies): add Coil library and update Compose dependencies</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>0167a1b</td><td>feat(proguard): add ProGuard rules for Hilt, Retrofit, Moshi, and Room</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>8895f5f</td><td>feat(core): add Hilt dependency injection support in MainActivity</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>a09efe0</td><td>feat(core): add AppDatabase for Room database setup</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>1fd7857</td><td>feat(core): add StorageModule for database and data store provision</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>fcbcd13</td><td>feat(core): add RepositoryModule for dependency injection of ItemRepository</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>b8d81d3</td><td>build(dependencies): add moshi-kotlin-codegen dependency and clean up build.gradle.kts</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>5716c62</td><td>feat(core): add ItemRepository interface and ItemRepositoryImpl for data management</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>dd98e5e</td><td>feat(core): add ItemEntity and ItemDao for local data management</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>afbeb01</td><td>fix(core): update import for Named annotation in NetworkModule</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>6b0600d</td><td>feat(core): add ApiService interface and enhance NetworkModule documentation</td><td>-</td><td>30/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>9bde199</td><td>feat(core): add NetworkModule for Retrofit and OkHttp setup with Hilt</td><td>-</td><td>30/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>0354bac</td><td>feat(app): add application class for Hilt dependency injection</td><td>-</td><td>30/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>4a07011</td><td>build(gradle): update Gradle configuration for Java 17 and add API_BASE_URL and LOG_HTTP fields</td><td>-</td><td>30/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>55a0e44</td><td>build(dependencies): add Hilt, Retrofit, OkHttp, Moshi, Room, DataStore, and Coroutines dependencies</td><td>-</td><td>30/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>9cbd508</td><td>feat(config): add CODEOWNERS file for automatic review requests</td><td>-</td><td>29/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>55f65cc</td><td>feat(config): add .editorconfig for consistent code style and formatting</td><td>-</td><td>29/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>534b848</td><td>merge: integrate feature/initial-structure into develop</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>39f4aef</td><td>feat(docs): add initial README with project overview, features, and setup instructions</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>aaba0e1</td><td>feat(config): add configuration file with project resources and links</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>f5c52b0</td><td>feat(docs): add initial changelog for Sprint 1</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>1cd34d1</td><td>feat(docs): add initial documentation structure for Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>98deca2</td><td>feat(docs): add navigation diagram for Demy Android App (Admin)</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>907f3e3</td><td>feat(docs): add setup guide for local development of the Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>6f35a0c</td><td>feat(docs): add style guide for UI/UX design of the Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>9da4a80</td><td>feat(docs): add backend integration documentation for the Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>262934b</td><td>feat(docs): add bibliography to document references and resources for the Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>44ffa36</td><td>feat(docs): add MVVM overview documentation for the Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>8a6d737</td><td>feat(docs): add Spanish version of CONTRIBUTING.md to outline collaboration guidelines</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>a77900e</td><td>feat(docs): add CONTRIBUTING.md to outline collaboration guidelines and workflow</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>4205c7c</td><td>feat(authors): add Spanish version of the AUTHORS.md to recognize project contributors</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>275addc</td><td>feat(authors): add AUTHORS.md to acknowledge project contributors and team structure</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>69c6364</td><td>feat(conduct): add Spanish version of the Code of Conduct document</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>1952d8b</td><td>feat(conduct): add Code of Conduct document to establish team guidelines</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>4dcf74f</td><td>feat(security): add Spanish version of the security policy document</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>3cf4cc0</td><td>feat(security): add security policy document outlining vulnerability reporting and responsible disclosure</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>7a7950e</td><td>feat(github): update pull request template to include additional checklist items</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>7228086</td><td>feat(github): add general issue template for capturing miscellaneous issues</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>43f2729</td><td>feat(github): add documentation improvement template for enhancing project clarity</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>21a3ef5</td><td>feat(github): add refactor/technical debt template for improving maintainability</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>6579745</td><td>feat(github): add performance issue template for tracking app performance problems</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>a3535ca</td><td>feat(github): add UI/UX issue template for reporting design inconsistencies</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>88c4e9d</td><td>feat(github): add feature request template for structured enhancement suggestions</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>b5b98e1</td><td>feat(github): add bug report template for consistent issue reporting</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>5059432</td><td>feat(github): add pull request template for consistent PR submissions</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>a76ae22</td><td>feat(main): refactor MainActivity to use navigation graph and remove Greeting composable</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>1af9201</td><td>feat(navigation): add sealed class for navigation destinations</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>add8fbc</td><td>feat(navigation): add navigation arguments and extension functions for NavController</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>4108fb3</td><td>feat(navigation): implement initial navigation graph and route definitions</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>5224fbf</td><td>feat(navigation): add androidx.navigation dependencies for runtime and compose</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>d228580</td><td>feat(theme): add ThemePreview and previews for light and dark modes</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>042dc6b</td><td>fix(theme): disable dynamic color in DemyTheme by default</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>b0865ba</td><td>feat(fonts): add local fallback fonts for Poppins and Montserrat</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>986981b</td><td>build(dependencies): add androidx.compose.ui.text library</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>c536423</td><td>feat(fonts): add montserrat and poppins fonts</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>ba9282e</td><td>build(fonts): add font certificates for Google Fonts integration</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>0bd7f66</td><td>build(dependencies): add androidx.compose.ui.text.google.fonts library</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>3bebb86</td><td>feat(theme): implement extended color schemes and typography</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>4630337</td><td>chore(theme): move theme package to core</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>f57cb82</td><td>chore: change MainActivity.kt package for root</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>d25b340</td><td>chore: change MainActivity.kt package for "app"</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>6c42126</td><td>build(libs): update package name for "com.nistra.demy.admins"</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>beef0db</td><td>build(libs): update kotlin and composeBom version</td><td>-</td><td>05/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>f9d4e87</td><td>build(libs): update agp version</td><td>-</td><td>05/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>courses-management</td><td>2e4ae1b</td><td>chore: initial commit</td><td>-</td><td>04/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>53d4259</td><td>Merge pull request #2 from nistrahq/feature/initial-structure</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>61ad787</td><td>feat(core): add new sections to AppShell for improved navigation</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>b0bbfa9</td><td>feat(core): restructure MainDrawer and MainDestination for improved navigation and add new sections</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>0c1697a</td><td>feat(dashboard): enhance DashboardScreen with new UI state management and components</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>48518b6</td><td>feat(dashboard): implement DashboardRepository and its implementation for fetching dashboard stats</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>5f5dd33</td><td>feat(dashboard): update package structure for Dashboard navigation components</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>5409ebc</td><td>feat(dashboard): add DashboardStats data class and DashboardViewModel for managing dashboard state</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>e00eddb</td><td>feat(core): add TopEdgeFade and BottomEdgeFade components for scroll edge indicators</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>e6951f6</td><td>feat(core): add new card components for academic period details, overloaded teacher, and classrooms and courses</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>8f409c9</td><td>feat(core): replace Card with OutlinedCard in SmallCard component for improved styling</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>d2cedf4</td><td>feat(core): add AcademicCard component with labeled value display and card container</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>be00702</td><td>feat(core): add SmallCard component for displaying label and value</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>fab68aa</td><td>feat(core): add MainLayoutPreviewDefaults and container for MainLayout composable</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>9c19037</td><td>feat(core): add TabletPreviewBoth annotation for dual theme previews on tablets</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>22ec8e0</td><td>feat(theme): refactor color management and add extended color scheme support</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>46fb63d</td><td>feat(core): update MainDrawer styling for selected item colors</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>7303062</td><td>feat(teachers): add Teachers navigation graph and screen for teacher management</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>67f9725</td><td>feat(auth): add AuthNavigation and AuthScreen for authentication flow</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>714d8cf</td><td>feat(dashboard): implement DashboardNavGraph and DashboardScreen for dashboard navigation and UI</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>eaf7cb6</td><td>feat(dashboard): add DashboardUiState and DashboardViewModel for managing dashboard state</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>eab56a0</td><td>feat(core): enhance MainDrawer and MainLayout with improved styling and layout adjustments</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>ecd5fa1</td><td>feat(core): replace RootNavGraph with AppShell for improved navigation structure</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>6dbb4d4</td><td>feat(core): add AppShell component for navigation and layout management</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>f54f17a</td><td>feat(core): add MainLayout component for application structure</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>f0b7c92</td><td>feat(core): add MainDrawer component for navigation layout</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>e67e49e</td><td>feat(core): add MainDestination sealed class for top-level navigation</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>fb393a4</td><td>feat(core): add DrawerModels for user interface layout management</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>fba5e58</td><td>refactor(test): rename Theme.kt package for improved structure</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>d112c85</td><td>feat(core): update TabletPreviewSamples to use MainLayout for light and dark mode previews</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>f888a1c</td><td>feat(core): add TabletPreviewSamples for demonstrating light and dark mode previews</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>0588215</td><td>feat(core): add UserChip composable for displaying user information</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>a7511de</td><td>feat(core): add annotations for tablet previews in dark and light modes</td><td>-</td><td>06/10/2025</td></tr>
+ <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>08e6bbf</td><td>feat(core): add RootNavGraph for managing navigation structure and start destination</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>d540ee7</td><td>feat(core): enhance navigateOnce function with popUpTo support and overload for Destination</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>56b715f</td><td>feat(core): add sealed interface for defining navigation destinations</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>552b2b1</td><td>feat(MainActivity): enhance entry point with navigation setup and documentation</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>aad3fa7</td><td>feat(app): restrict usage to tablets in landscape mode</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>5241f1a</td><td>feat(i18n): add tablet-only message for landscape mode support</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>9e94f99</td><td>build(manifest): configure screen support and set landscape orientation for MainActivity</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>991b0a1</td><td>build(manifest): add INTERNET permission for network access</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>d9990a4</td><td>build(dependencies): add Coil library and update Compose dependencies</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>0167a1b</td><td>feat(proguard): add ProGuard rules for Hilt, Retrofit, Moshi, and Room</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>8895f5f</td><td>feat(core): add Hilt dependency injection support in MainActivity</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>a09efe0</td><td>feat(core): add AppDatabase for Room database setup</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>1fd7857</td><td>feat(core): add StorageModule for database and data store provision</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>fcbcd13</td><td>feat(core): add RepositoryModule for dependency injection of ItemRepository</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>b8d81d3</td><td>build(dependencies): add moshi-kotlin-codegen dependency and clean up build.gradle.kts</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>5716c62</td><td>feat(core): add ItemRepository interface and ItemRepositoryImpl for data management</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>dd98e5e</td><td>feat(core): add ItemEntity and ItemDao for local data management</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>afbeb01</td><td>fix(core): update import for Named annotation in NetworkModule</td><td>-</td><td>01/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>6b0600d</td><td>feat(core): add ApiService interface and enhance NetworkModule documentation</td><td>-</td><td>30/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>9bde199</td><td>feat(core): add NetworkModule for Retrofit and OkHttp setup with Hilt</td><td>-</td><td>30/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>0354bac</td><td>feat(app): add application class for Hilt dependency injection</td><td>-</td><td>30/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>4a07011</td><td>build(gradle): update Gradle configuration for Java 17 and add API_BASE_URL and LOG_HTTP fields</td><td>-</td><td>30/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>55a0e44</td><td>build(dependencies): add Hilt, Retrofit, OkHttp, Moshi, Room, DataStore, and Coroutines dependencies</td><td>-</td><td>30/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>9cbd508</td><td>feat(config): add CODEOWNERS file for automatic review requests</td><td>-</td><td>29/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>55f65cc</td><td>feat(config): add .editorconfig for consistent code style and formatting</td><td>-</td><td>29/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>534b848</td><td>merge: integrate feature/initial-structure into develop</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>39f4aef</td><td>feat(docs): add initial README with project overview, features, and setup instructions</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>aaba0e1</td><td>feat(config): add configuration file with project resources and links</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>f5c52b0</td><td>feat(docs): add initial changelog for Sprint 1</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>1cd34d1</td><td>feat(docs): add initial documentation structure for Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>98deca2</td><td>feat(docs): add navigation diagram for Demy Android App (Admin)</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>907f3e3</td><td>feat(docs): add setup guide for local development of the Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>6f35a0c</td><td>feat(docs): add style guide for UI/UX design of the Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>9da4a80</td><td>feat(docs): add backend integration documentation for the Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>262934b</td><td>feat(docs): add bibliography to document references and resources for the Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>44ffa36</td><td>feat(docs): add MVVM overview documentation for the Demy Android App</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>8a6d737</td><td>feat(docs): add Spanish version of CONTRIBUTING.md to outline collaboration guidelines</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>a77900e</td><td>feat(docs): add CONTRIBUTING.md to outline collaboration guidelines and workflow</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>4205c7c</td><td>feat(authors): add Spanish version of the AUTHORS.md to recognize project contributors</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>275addc</td><td>feat(authors): add AUTHORS.md to acknowledge project contributors and team structure</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>69c6364</td><td>feat(conduct): add Spanish version of the Code of Conduct document</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>1952d8b</td><td>feat(conduct): add Code of Conduct document to establish team guidelines</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>4dcf74f</td><td>feat(security): add Spanish version of the security policy document</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>3cf4cc0</td><td>feat(security): add security policy document outlining vulnerability reporting and responsible disclosure</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>7a7950e</td><td>feat(github): update pull request template to include additional checklist items</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>7228086</td><td>feat(github): add general issue template for capturing miscellaneous issues</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>43f2729</td><td>feat(github): add documentation improvement template for enhancing project clarity</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>21a3ef5</td><td>feat(github): add refactor/technical debt template for improving maintainability</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>6579745</td><td>feat(github): add performance issue template for tracking app performance problems</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>a3535ca</td><td>feat(github): add UI/UX issue template for reporting design inconsistencies</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>88c4e9d</td><td>feat(github): add feature request template for structured enhancement suggestions</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>b5b98e1</td><td>feat(github): add bug report template for consistent issue reporting</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>5059432</td><td>feat(github): add pull request template for consistent PR submissions</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>a76ae22</td><td>feat(main): refactor MainActivity to use navigation graph and remove Greeting composable</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>1af9201</td><td>feat(navigation): add sealed class for navigation destinations</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>add8fbc</td><td>feat(navigation): add navigation arguments and extension functions for NavController</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>4108fb3</td><td>feat(navigation): implement initial navigation graph and route definitions</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>5224fbf</td><td>feat(navigation): add androidx.navigation dependencies for runtime and compose</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>d228580</td><td>feat(theme): add ThemePreview and previews for light and dark modes</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>042dc6b</td><td>fix(theme): disable dynamic color in DemyTheme by default</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>b0865ba</td><td>feat(fonts): add local fallback fonts for Poppins and Montserrat</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>986981b</td><td>build(dependencies): add androidx.compose.ui.text library</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>c536423</td><td>feat(fonts): add montserrat and poppins fonts</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>ba9282e</td><td>build(fonts): add font certificates for Google Fonts integration</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>0bd7f66</td><td>build(dependencies): add androidx.compose.ui.text.google.fonts library</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>3bebb86</td><td>feat(theme): implement extended color schemes and typography</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>4630337</td><td>chore(theme): move theme package to core</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>f57cb82</td><td>chore: change MainActivity.kt package for root</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>d25b340</td><td>chore: change MainActivity.kt package for "app"</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>6c42126</td><td>build(libs): update package name for "com.nistra.demy.admins"</td><td>-</td><td>20/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>beef0db</td><td>build(libs): update kotlin and composeBom version</td><td>-</td><td>05/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>f9d4e87</td><td>build(libs): update agp version</td><td>-</td><td>05/09/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>2e4ae1b</td><td>chore: initial commit</td><td>-</td><td>04/09/2025</td></tr>
   </tbody>
 </table>
+
 
 
 #### 4.2.1.4. Testing Suite Evidence for Sprint Review
