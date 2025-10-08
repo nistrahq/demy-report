@@ -7140,6 +7140,8 @@ Secciones de navegación secundaria y enlaces a redes sociales.
 
 #### 4.2.1.7. Software Deployment Evidence for Sprint Review
 
+**Landing Page:**
+
 En esta sección se describen los pasos realizados para desplegar la Landing Page utilizando Netlify con integración a GitHub. Se incluyen capturas de cada etapa como evidencia.
 
 Primero, se cuenta con una cuenta en GitHub con el repositorio de la landing organizado y público. De igual modo, cuenta en Netlify y permiso para integrarse con la organización de GitHub.
@@ -7192,6 +7194,154 @@ Queda habilitado el despliegue continuo; cada push a la rama configurada desenca
 
 **Repositorio de la Landing Page:** [Abrir en GitHub](https://github.com/nistrahq/demy-landing)  
 **Enlace público de la Landing Page:** [Abrir en el navegador](https://nistra-demy.netlify.app/)
+---
+**Backend**
+
+En esta sección se detallan los pasos realizados para desplegar el Backend utilizando Railway con integración a GitHub. Se incluyen capturas de cada etapa como evidencia del proceso completo de despliegue y configuración de la base de datos.
+
+Como prerrequisitos se cuenta con una cuenta en GitHub con el repositorio del backend correctamente estructurado y funcional. Además, una cuenta en Railway con permisos para integrarse con GitHub y haber proyecto backend previamente probado de manera local.
+
+**1) Ingresar a la página principal de Railway**  
+
+Accedemos a [https://railway.app](https://railway.app) para iniciar el proceso de despliegue.  
+
+![Railway Login](./assets/ux-ui/evidences/backend/backend-deploy-step-1.jpg)
+
+**2) Plan de uso**  
+
+Railway incluye una prueba gratuita, sin embargo, para este caso se procede con la compra de un plan.  
+
+![Seleccionar plan](./assets/ux-ui/evidences/backend/backend-deploy-step-2.jpg)
+
+**3) Compra del plan**  
+
+Se realiza la compra del plan seleccionado para habilitar los recursos necesarios del despliegue.  
+
+![Compra del plan](./assets/ux-ui/evidences/backend/backend-deploy-step-3.jpg)
+
+**4) Confirmación de plan adquirido**  
+
+Una vez completado el pago, Railway muestra el plan comprado con los recursos activos.  
+
+![Plan adquirido](./assets/ux-ui/evidences/backend/backend-deploy-step-4.jpg)
+
+**5) Permitir acceso a GitHub**  
+
+Autorizamos a Railway para acceder a nuestra cuenta de GitHub, lo que permitirá conectar el repositorio del backend.
+
+![Permitir acceso a GitHub](./assets/ux-ui/evidences/backend/backend-deploy-step-5.jpg)
+
+**6) Crear nuevo proyecto desde GitHub**  
+
+Seleccionamos la opción "New Project" y "Deploy from GitHub repo" para importar el proyecto existente. 
+
+![Crear nuevo proyecto](./assets/ux-ui/evidences/backend/backend-deploy-step-6.jpg)
+
+**7) Otorgar permisos a la organización**  
+
+Railway solicita permisos adicionales para acceder a la organización donde se encuentra el repositorio.  
+
+![Permitir acceso organización](./assets/ux-ui/evidences/backend/backend-deploy-step-7.jpg)
+
+**8) Seleccionar el repositorio del backend**  
+
+Elegimos el repositorio que contiene el código fuente del backend.  
+
+![Seleccionar repositorio backend](./assets/ux-ui/evidences/backend/backend-deploy-step-8.jpg)
+
+**9) Verificación de identidad**  
+
+Railway solicita confirmar la identidad del usuario antes de proceder con la conexión. 
+
+![Verificación identidad](./assets/ux-ui/evidences/backend/backend-deploy-step-9.jpg)
+
+**10) Confirmar el repositorio correcto**  
+
+Seleccionamos el repositorio definitivo del backend para iniciar la construcción.  
+
+![Confirmar repositorio](./assets/ux-ui/evidences/backend/backend-deploy-step-10.jpg)
+
+**11) Inicio del proceso de construcción**  
+
+Railway comienza la construcción automática del backend utilizando los parámetros por defecto. 
+
+![Construcción en curso](./assets/ux-ui/evidences/backend/backend-deploy-step-11.jpg)
+
+**12) Error inicial de despliegue**  
+
+La construcción falla debido a que no se encuentra una instancia activa de base de datos MySQL.  
+
+![Error por base de datos faltante](./assets/ux-ui/evidences/backend/backend-deploy-step-12.jpg)
+
+**13) Crear instancia de base de datos MySQL**  
+
+Desde Railway, creamos una nueva instancia de base de datos MySQL para el proyecto.  
+
+![Crear instancia MySQL](./assets/ux-ui/evidences/backend/backend-deploy-step-13.jpg)
+
+**14) Esperar la creación de la instancia**  
+
+Esperamos unos minutos a que Railway levante la base de datos completamente.  
+
+![Esperando instancia](./assets/ux-ui/evidences/backend/backend-deploy-step-14.jpg)
+
+**15) Base de datos levantada correctamente**  
+
+La instancia MySQL queda activa y lista para su uso en el backend.  
+
+![Base de datos lista](./assets/ux-ui/evidences/backend/backend-deploy-step-15.jpg)
+
+**16) Obtener variables de conexión**  
+
+Ingresamos a la pestaña Variables de la instancia y copiamos los valores de:  
+`MYSQLHOST`, `MYSQLPORT`, `MYSQLDATABASE`, `MYSQLUSER` y `MYSQLPASSWORD`.  
+
+![Copiar variables MySQL](./assets/ux-ui/evidences/backend/backend-deploy-step-16.jpg)
+
+**17) Configurar variables en el backend**  
+
+Accedemos al proyecto del backend en Railway y añadimos las variables copiadas, renombrándolas como:  
+`MYSQL_HOST`, `MYSQL_PORT`, `MYSQL_DATABASE`, `MYSQL_USER`, `MYSQL_PASSWORD`.  
+
+![Agregar variables backend](./assets/ux-ui/evidences/backend/backend-deploy-step-17.jpg)
+
+**18) Añadir variables adicionales de entorno**  
+
+Agregamos los valores definidos para:  
+`JWT_SECRET`, `JWT_EXPIRATION_DAYS`, `EMAIL_USER`, `EMAIL_PASS`  
+y la variable `SPRING_PROFILES_ACTIVE` con el valor `"prod"`.  
+
+![Agregar variables JWT y email](./assets/ux-ui/evidences/backend/backend-deploy-step-18.jpg)
+
+**19) Nuevo despliegue**  
+
+Reiniciamos el proceso de despliegue para aplicar las nuevas variables de entorno.  
+
+![Desplegando nuevamente](./assets/ux-ui/evidences/backend/backend-deploy-step-19.jpg)
+
+**20) Despliegue completado exitosamente**  
+
+El sistema se construye correctamente y Railway indica el estado Deployment successful.  
+
+![Despliegue exitoso](./assets/ux-ui/evidences/backend/backend-deploy-step-20.jpg)
+
+**21) Generar dominio público**  
+
+Desde Settings a Networking, presionamos "Generate Domain" para obtener una URL pública.  
+
+![Generar dominio](./assets/ux-ui/evidences/backend/backend-deploy-step-21.jpg)
+
+**22) Verificación final del despliegue**  
+
+Ingresamos a la URL generada y añadimos al final `/swagger-ui/index.html` para visualizar los endpoints del backend. 
+
+![Swagger activo](./assets/ux-ui/evidences/backend/backend-deploy-step-22.jpg)
+
+**Repositorio del Backend:** [Abrir en GitHub](https://github.com/nistrahq/demy-api)  
+**Enlace público del Backend:** [Abrir en el navegador](https://demy-api-production.up.railway.app/swagger-ui/index.html)
+
+---
+**Mobile**
 
 #### 4.2.1.8. Team Collaboration Insights during Sprint
 
