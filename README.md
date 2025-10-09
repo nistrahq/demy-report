@@ -7361,6 +7361,12 @@ El código fuente del proyecto está disponible en el siguiente repositorio de G
 1. [Organización de GitHub](https://github.com/nistrahq)
 2. [Repositorio del reporte en GitHub](https://github.com/nistrahq/demy-report)
 
+Además, se incluye la evidencia de despliegue:
+
+**Enlace para acceder a la landing page:** [https://nistra-demy.netlify.app/](https://nistra-demy.netlify.app/)
+
+**Enlace para acceder a la RESTful API:** [https://demy-api-production.up.railway.app/swagger-ui/index.html](https://demy-api-production.up.railway.app/swagger-ui/index.html)
+
 <hr class="page-break">
 
 ## Anexo B: Videos en Microsoft Streams
