@@ -9180,82 +9180,18 @@ Este enfoque combinó validaciones unitarias y de comportamiento, asegurando la 
 
 El propósito de estas pruebas fue validar la correcta creación y comportamiento del agregado `Academy` bajo diferentes condiciones, verificando la coherencia de sus value objects, la asignación controlada de administradores, la validación de identificadores y el manejo adecuado de excepciones en su lógica interna. Para ello, se emplearon herramientas como **JUnit 5** y las aserciones nativas de `org.junit.jupiter.api.Assertions`, siguiendo el patrón **Arrange–Act–Assert (AAA)**. Estas pruebas se relacionan directamente con la **User Story US-02**, la cual establece que, como administrador, se debe poder registrar una academia con su información básica para que pueda ser gestionada dentro del sistema.
 
-```java
-@Test
-@DisplayName("Should allow assigning an administrator only once and throw an exception if reassigned")
-void shouldAssignAdministratorAndThrowIfAlreadyAssigned() {
-    Academy academy = new Academy(
-        new AcademyName("Test Academy"),
-        new AcademyDescription("Academia de prueba."),
-        new StreetAddress("Calle Falsa 123", "Santiago", "Cusco", "Cusco"),
-        new EmailAddress("test@academy.com"),
-        new PhoneNumber("+51", "911111111"),
-        new Ruc("10765432109")
-    );
+![Unit Test 1](assets/tests/assign-administrator-unit-test.png)
 
-    AdministratorId admin1 = new AdministratorId(1L);
-
-    academy.assignAdministrator(admin1);
-
-    assertTrue(academy.getAdministratorId().isAssigned());
-    assertThrows(IllegalStateException.class, () ->
-        academy.assignAdministrator(new AdministratorId(2L))
-    );
-}
-```
 **Acceptance Test (BDD) – Administrator Registration**
 
 Para esta prueba de aceptación se simuló, desde la perspectiva del usuario, el flujo completo del registro de un administrador de academia, verificando el comportamiento del sistema ante solicitudes válidas e inválidas. El objetivo fue evaluar la lógica del bounded de Institution bajo un enfoque de Behavior-Driven Development (BDD), utilizando archivos .feature escritos en lenguaje Gherkin y sus correspondientes definiciones de pasos en Java mediante Cucumber.
 
-
-```gherkin
-Feature: Administrator Registration
-
-  Scenario: Successful administrator registration
-    Given the academy service is available
-    When the client sends a registration request with:
-      | firstName | lastName | phoneCountryCode | phoneNumber | dniNumber | academyId | userId |
-      | Paul      | Sulca    | +51              | 987654321   | 12345678  | 1         | 10     |
-    Then the response should have status code 201
-    And the body should contain "Administrator registered successfully"
-
-  Scenario: Failed registration with invalid data
-    Given the academy service is available
-    When the client sends a registration request with:
-      | firstName | lastName | phoneCountryCode | phoneNumber | dniNumber | academyId | userId |
-      | (empty)   | Sulca    | +51              | abcde       | 00000000  | 1         | 10     |
-    Then the response should have status code 400
-    And the response body should contain key "errors"
-    And the response body's "errors" should include "Invalid phone number format"
-```
+![Feature 1](assets/tests/administator-registration-feature.png)
 
 **Extracto del archivo Steps:**
 
-```java
-@When("the client sends a registration request with:")
-public void the_client_sends_a_registration_request_with(DataTable dataTable) {
-    Map<String, String> data = dataTable.asMaps().getFirst();
+![Steps 1](assets/tests/client-sents-registrations.png)
 
-    try {
-        RegisterAdministratorCommand command = new RegisterAdministratorCommand(
-                new PersonName(data.get("firstName"), data.get("lastName")),
-                new PhoneNumber(data.get("phoneCountryCode"), data.get("phoneNumber")),
-                new DniNumber(data.get("dniNumber")),
-                new AcademyId(),
-                new UserId()
-        );
-
-        Administrator administrator = new Administrator(command);
-        administrator.registerAdministrator(command.academyId().academyId(), command.userId().userId());
-
-        responseStatus = 201;
-        responseMessage = "Administrator registered successfully";
-    } catch (Exception e) {
-        responseStatus = 400;
-        responseMessage = e.getMessage();
-    }
-}
-```
 **Relación de Commits de Testing**
 
 | Repository              | Branch              | Commit Id | Commit Message                                                              | Committed on |
