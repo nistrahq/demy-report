@@ -8119,7 +8119,104 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
 
 #### 4.2.1.4. Testing Suite Evidence for Sprint Review
 
-*Escribir aquí*
+Durante el presente sprint se diseñó y ejecutó una suite de pruebas orientadas a validar los principales componentes del bounded *Institution*, garantizando el correcto funcionamiento de los agregados, value objects y servicios de dominio implementados bajo el enfoque de *Domain-Driven Design (DDD)* dentro de una arquitectura monolítica.
+
+Las pruebas se estructuraron en dos niveles complementarios:
+
+* **Unit Tests:** centrados en la verificación aislada de la lógica interna de los agregados (`Academy`, `Administrator`) y sus comandos (`RegisterAcademyCommand`, `RegisterAdministratorCommand`), empleando **JUnit** y el patrón **Arrange–Act–Assert (AAA)**.
+* **Behavior-Driven Development (BDD):** pruebas de aceptación funcional escritas en **Gherkin**, con sus definiciones de pasos implementadas en Java utilizando **Cucumber** y **JUnit**, simulando la interacción del cliente con los endpoints del servicio.
+
+Este enfoque combinó validaciones unitarias y de comportamiento, asegurando la correcta construcción de objetos de dominio, el manejo de excepciones y las respuestas esperadas ante escenarios de entrada válidos e inválidos.
+
+**Unit Test – AcademyTest**
+
+El propósito de estas pruebas fue validar la correcta creación y comportamiento del agregado `Academy` bajo diferentes condiciones, verificando la coherencia de sus value objects, la asignación controlada de administradores, la validación de identificadores y el manejo adecuado de excepciones en su lógica interna. Para ello, se emplearon herramientas como **JUnit 5** y las aserciones nativas de `org.junit.jupiter.api.Assertions`, siguiendo el patrón **Arrange–Act–Assert (AAA)**. Estas pruebas se relacionan directamente con la **User Story US-02**, la cual establece que, como administrador, se debe poder registrar una academia con su información básica para que pueda ser gestionada dentro del sistema.
+
+```java
+@Test
+@DisplayName("Should allow assigning an administrator only once and throw an exception if reassigned")
+void shouldAssignAdministratorAndThrowIfAlreadyAssigned() {
+    Academy academy = new Academy(
+        new AcademyName("Test Academy"),
+        new AcademyDescription("Academia de prueba."),
+        new StreetAddress("Calle Falsa 123", "Santiago", "Cusco", "Cusco"),
+        new EmailAddress("test@academy.com"),
+        new PhoneNumber("+51", "911111111"),
+        new Ruc("10765432109")
+    );
+
+    AdministratorId admin1 = new AdministratorId(1L);
+
+    academy.assignAdministrator(admin1);
+
+    assertTrue(academy.getAdministratorId().isAssigned());
+    assertThrows(IllegalStateException.class, () ->
+        academy.assignAdministrator(new AdministratorId(2L))
+    );
+}
+```
+**Acceptance Test (BDD) – Administrator Registration**
+
+Para esta prueba de aceptación se simuló, desde la perspectiva del usuario, el flujo completo del registro de un administrador de academia, verificando el comportamiento del sistema ante solicitudes válidas e inválidas. El objetivo fue evaluar la lógica del bounded de Institution bajo un enfoque de Behavior-Driven Development (BDD), utilizando archivos .feature escritos en lenguaje Gherkin y sus correspondientes definiciones de pasos en Java mediante Cucumber.
+
+
+```gherkin
+Feature: Administrator Registration
+
+  Scenario: Successful administrator registration
+    Given the academy service is available
+    When the client sends a registration request with:
+      | firstName | lastName | phoneCountryCode | phoneNumber | dniNumber | academyId | userId |
+      | Paul      | Sulca    | +51              | 987654321   | 12345678  | 1         | 10     |
+    Then the response should have status code 201
+    And the body should contain "Administrator registered successfully"
+
+  Scenario: Failed registration with invalid data
+    Given the academy service is available
+    When the client sends a registration request with:
+      | firstName | lastName | phoneCountryCode | phoneNumber | dniNumber | academyId | userId |
+      | (empty)   | Sulca    | +51              | abcde       | 00000000  | 1         | 10     |
+    Then the response should have status code 400
+    And the response body should contain key "errors"
+    And the response body's "errors" should include "Invalid phone number format"
+```
+
+**Extracto del archivo Steps:**
+
+```java
+@When("the client sends a registration request with:")
+public void the_client_sends_a_registration_request_with(DataTable dataTable) {
+    Map<String, String> data = dataTable.asMaps().getFirst();
+
+    try {
+        RegisterAdministratorCommand command = new RegisterAdministratorCommand(
+                new PersonName(data.get("firstName"), data.get("lastName")),
+                new PhoneNumber(data.get("phoneCountryCode"), data.get("phoneNumber")),
+                new DniNumber(data.get("dniNumber")),
+                new AcademyId(),
+                new UserId()
+        );
+
+        Administrator administrator = new Administrator(command);
+        administrator.registerAdministrator(command.academyId().academyId(), command.userId().userId());
+
+        responseStatus = 201;
+        responseMessage = "Administrator registered successfully";
+    } catch (Exception e) {
+        responseStatus = 400;
+        responseMessage = e.getMessage();
+    }
+}
+```
+**Relación de Commits de Testing**
+
+| Repository              | Branch              | Commit Id | Commit Message                                                              | Committed on |
+|-------------------------|---------------------|-----------|-----------------------------------------------------------------------------|--------------|
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `84d2b8a` | test(academy): add unit tests for Academy aggregate using AAA pattern       | 2025-10-08   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `cb7bfd3` | test(bdd): add Cucumber tests for administrator registration scenarios      | 2025-10-08   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `9b8ad85` | refactor(bdd): simplify variable declarations in RegisterAdministratorSteps | 2025-10-08   |
+
+
 
 #### 4.2.1.5. Execution Evidence for Sprint Review
 
