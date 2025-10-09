@@ -401,7 +401,7 @@ La startup **Nistra**, es un equipo conformado por estudiantes de la carrera de 
 
 El principal desafío identificado es la ausencia de un sistema centralizado para la gestión administrativa en academias educativas presenciales del Perú. Actualmente, muchas de estas instituciones dependen de hojas de cálculo, documentos físicos o plataformas no integradas, lo que incrementa la carga operativa, favorece errores recurrentes, provoca pérdida de información y reduce la eficiencia en el uso del tiempo. 
 
-Según Naranjo et al. (2025), “the lack of clarity in some procedures, duplication of tasks, and long response times represent obstacles that affect both student satisfaction and administrative staff productivity” (p. 3), lo que evidencia que los procesos administrativos manuales no solo retrasan las operaciones internas, sino que también impactan negativamente en la experiencia del estudiante y en la productividad del personal. De igual manera, Díaz-García et al. (2023) enfatizan que “digitalisation is necessary to implement a data-driven management model. It is necessary to develop systems that provide real-time information to facilitate control, management and decision-making processes” (p. 10), resaltando la necesidad de adoptar soluciones tecnológicas que permitan centralizar la información y facilitar la toma de decisiones estratégicas. Ambos estudios coinciden en que la digitalización y optimización de los procesos administrativos son esenciales para mejorar la eficiencia institucional y la calidad del servicio educativo.
+Según Naranjo et al. (2025), los procesos administrativos manuales, con su falta de claridad, duplicación de tareas y largos tiempos de respuesta, son obstáculos que reducen la satisfacción del estudiante y la productividad del personal (p. 3). Esta ineficiencia subraya la necesidad de un cambio. De igual manera, Díaz-García et al. (2023) enfatizan que la digitalización es esencial para implementar un modelo de gestión basado en datos, lo cual requiere sistemas que provean información en tiempo real para facilitar el control, la administración y la toma de decisiones estratégicas (p. 10). Ambos estudios coinciden en que digitalizar y optimizar los procesos administrativos es un paso indispensable para mejorar la eficiencia institucional y elevar la calidad del servicio educativo.
 
 #### When (Cuando)
 
@@ -6191,7 +6191,21 @@ En esta sección se presentan los wireframes y mock-ups de la página de inicio 
 
 #### 3.1.3.2. Landing Page Mock-up
 
-*Escribir aquí*
+A continuación, se presenta la vista de la landing page en su versión para navegadores web de escritorio. En esta página se incluyen diferentes secciones relevantes para el usuario, donde se destacan los principales beneficios del producto, las alternativas de planes de pago y los perfiles del equipo de trabajo. Asimismo, se incorpora un apartado destinado a resolver las dudas más frecuentes de los usuarios.
+
+![LandingPageMockup9](./assets/ux-ui/mockups/landing-page/HeroSection.png)
+![LandingPageMockup5](./assets/ux-ui/mockups/landing-page/Features.png)
+![LandingPageMockup6](./assets/ux-ui/mockups/landing-page/Features2.png)
+![LandingPageMockup7](./assets/ux-ui/mockups/landing-page/Features3.png)
+![LandingPageMockup1](./assets/ux-ui/mockups/landing-page/AboutTheProduct.png)
+![LandingPageMockup2](./assets/ux-ui/mockups/landing-page/AboutTheTeam.png)
+![LandingPageMockup10](./assets/ux-ui/mockups/landing-page/HowItWorks.png)
+![LandingPageMockup11](./assets/ux-ui/mockups/landing-page/Pricing.png)
+![LandingPageMockup12](./assets/ux-ui/mockups/landing-page/Team.png)
+![LandingPageMockup13](./assets/ux-ui/mockups/landing-page/Testimonials.png)
+![LandingPageMockup3](./assets/ux-ui/mockups/landing-page/ContactUs.png)
+![LandingPageMockup4](./assets/ux-ui/mockups/landing-page/FAQ.png)
+![LandingPageMockup8](./assets/ux-ui/mockups/landing-page/Footer.png)
 
 <hr class="page-break">
 
@@ -6201,11 +6215,119 @@ En esta sección se presentan los wireframes y mock-ups de las aplicaciones móv
 
 #### 3.1.4.1. Mobile Applications Wireframes
 
-*Escribir aquí*
+**Mobile Applications Wireframes: Flujo de Profesor**
+
+A continuación, se presentan los wireframes de la versión móvil destinados al perfil de docente. Estas pantallas muestran el flujo principal de interacción dentro de la aplicación, incluyendo el inicio de sesión, la gestión de asistencia, la visualización de horarios, la reprogramación de clases, el acceso al perfil del usuario, y la configuración de ajustes.
+
+Los wireframes permiten visualizar de manera clara la estructura, distribución y funcionalidad de cada sección antes de la etapa de diseño visual definitivo.
+
+**Flujo de Acceso y Recuperación de Contraseña**
+Este grupo incluye las pantallas necesarias para que el profesor ingrese a la aplicación o recupere su cuenta si ha olvidado la contraseña. El flujo está diseñado en pasos discretos para minimizar la frustración del usuario.
+
+![WireframeMobileTeacher9](./assets/ux-ui/wireframes/mobile/teacher/Loader.png)
+![WireframeMobileTeacher10](./assets/ux-ui/wireframes/mobile/teacher/Login.png)
+![WireframeMobileTeacher4](./assets/ux-ui/wireframes/mobile/teacher/ForgotPassword-CreateNewPassword.png)
+![WireframeMobileTeacher5](./assets/ux-ui/wireframes/mobile/teacher/ForgotPassword-ResetPassword.png)
+![WireframeMobileTeacher6](./assets/ux-ui/wireframes/mobile/teacher/ForgotPassword-VerificationCode.png)
+
+**Flujo Principal y Gestión de Cuenta**
+Este flujo representa el centro de navegación de la aplicación. La Home actúa como dashboard con acceso rápido a las funciones clave, mientras que Profile y Settings permiten la gestión de la identidad y las preferencias del profesor.
+
+![WireframeMobileTeacher8](./assets/ux-ui/wireframes/mobile/teacher/Home.png)
+![WireframeMobileTeacher11](./assets/ux-ui/wireframes/mobile/teacher/Profile.png)
+![WireframeMobileTeacher12](./assets/ux-ui/wireframes/mobile/teacher/Settings.png)
+
+**Flujo de Asistencia**
+El objetivo de este flujo es la toma de asistencia rápida y la generación estructurada de informes. El proceso de reporte está dividido en pantallas de elección para asegurar la precisión de los filtros.
+
+![WireframeMobileTeacher7](./assets/ux-ui/wireframes/mobile/teacher/HomeAttendanceModal.png)
+![WireframeMobileTeacher13](./assets/ux-ui/wireframes/mobile/teacher/TakeAttendance.png)
+![WireframeMobileTeacher1](./assets/ux-ui/wireframes/mobile/teacher/AttencanceReport-ChooseCourse.png)
+![WireframeMobileTeacher2](./assets/ux-ui/wireframes/mobile/teacher/AttencanceReport-ChooseDate.png)
+![WireframeMobileTeacher3](./assets/ux-ui/wireframes/mobile/teacher/AttendanceReport.png)
+
+**Flujo de Horario y Reprogramación**
+Este grupo gestiona la visualización del horario del profesor y ofrece una funcionalidad guiada de reprogramación de clases a través de múltiples pasos de confirmación.
+
+![WireframeMobileTeacher14](./assets/ux-ui/wireframes/mobile/teacher/TeachingReschedule-ChooseStarTime.png)
+![WireframeMobileTeacher15](./assets/ux-ui/wireframes/mobile/teacher/TeachingReschedule-ChooseEndTime.png)
+![WireframeMobileTeacher16](./assets/ux-ui/wireframes/mobile/teacher/TeachingReschedule-ChooseDay.png)
+![WireframeMobileTeacher18](./assets/ux-ui/wireframes/mobile/teacher/TeachingSchedule.png)
+![WireframeMobileTeacher17](./assets/ux-ui/wireframes/mobile/teacher/TeachingReschedule.png)
 
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
-*Escribir aquí*
+
+**Mobile Applications Wireflow: Flujo de Administrador**
+
+**User Goal**  
+Tener un control eficiente y organizado de los pagos de los alumnos, tanto por concepto de mensualidad como de matrícula, permitiendo un seguimiento claro del estado de cada pago y evitando retrasos o confusiones en la gestión administrativa.
+
+![Wireflow-Administrator-1](./assets/ux-ui/wireflows/administrator/Wireflow-Administrator-1.png)
+
+**User Goal**  
+Acceder de forma rápida y segura a los datos del alumno, incluyendo su información personal, académica y estado de pagos, para facilitar la gestión y toma de decisiones dentro del sistema.
+
+![Wireflow-Administrator-2](./assets/ux-ui/wireflows/administrator/Wireflow-Administrator-2.png)
+
+**User Goal**  
+Realizar de manera sencilla, rápida y satisfactoria el proceso de matrícula del alumno, asegurando que los datos ingresados sean correctos y que la inscripción quede correctamente registrada en el sistema.
+
+![Wireflow-Administrator-3](./assets/ux-ui/wireflows/administrator/Wireflow-Administrator-3.png)
+
+**User Goal**  
+Llevar un control claro y preciso de los ingresos y egresos de la academia, permitiendo supervisar el flujo económico, generar reportes financieros y optimizar la gestión administrativa.
+
+![Wireflow-Administrator-4](./assets/ux-ui/wireflows/administrator/Wireflow-Administrator-4.png)
+
+**User Goal**  
+Gestionar de forma eficiente y organizada los recursos de la academia, incluyendo cursos, salones, horarios y periodos, con el fin de optimizar su uso y garantizar el correcto funcionamiento de las actividades académicas y administrativas.
+
+![Wireflow-Administrator-5](./assets/ux-ui/wireflows/administrator/Wireflow-Administrator-5.png)
+
+
+**Mobile Applications Wireflow: Flujo de Profesor**
+
+**User Goal** 
+Tener una vista clara y concisa de su horario semanal de clases y actividades, permitiendo una planificación eficiente de su tiempo y evitando conflictos o inasistencias.
+
+![Wireflow-Teacher-1](./assets/ux-ui/wireflows/teacher/Wireflow-Teacher-ReportAttendance.png)
+
+**User Goal** 
+Solicitar o ejecutar la reprogramación de una clase de manera eficiente, indicando el motivo y proponiendo una nueva fecha/hora, con la aprobación administrativa correspondiente.
+
+![Wireflow-Teacher-2](./assets/ux-ui/wireflows/teacher/Wireflow-Teacher-RescheduleClass.png)
+
+**User Goal** 
+Realizar la toma de asistencia de los alumnos de forma rápida y sencilla al inicio de cada clase, asegurando un registro preciso para fines académicos y administrativos.
+
+![Wireflow-Teacher-3](./assets/ux-ui/wireflows/teacher/Wireflow-Teacher-TakeAttendance.png)
+
+
+**User Goal** 
+Reportar la asistencia consolidada de un grupo o período al sistema, facilitando la gestión administrativa y la generación de informes finales de asistencia.
+
+![Wireflow-Teacher-4](./assets/ux-ui/wireflows/teacher/Wireflow-Teacher-ViewSchedule.png)
+
+
+**Mobile Applications Wireflow: Flujo de Estudiante**
+
+**User Goal** 
+Consultar de forma rápida y clara su horario de clases completo, incluyendo el día, la hora, el nombre del curso y la ubicación (salón), para poder asistir puntualmente y planificar sus actividades académicas sin confusiones.
+
+![Wireflow-Student-1](./assets/ux-ui/wireflows/student/Wireflow-Student-ViewSchedule.png)
+
+
+**User Goal** 
+El estudiante necesita consultar el estado de sus pagos pendientes de forma clara y detallada, incluyendo el monto, la fecha de vencimiento y el concepto, para evitar cargos por mora y planificar sus finanzas.
+
+![Wireflow-Student-2](./assets/ux-ui/wireflows/student/Wireflow-Student-ViewDebts.png)
+
+
+**User Goal** 
+El estudiante debe recibir y consultar inmediatamente cualquier cambio o reprogramación de sus clases y confirmar que ha sido notificado, para evitar asistir a clases canceladas o llegar tarde a clases movidas.
+
+![Wireflow-Student-3](./assets/ux-ui/wireflows/student/Wireflow-Student-ViewScheduleChangues.png)
 
 #### 3.1.4.3. Mobile Applications Mock-ups
 
@@ -8115,7 +8237,105 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
 
 #### 4.2.1.3. Development Evidence for Sprint Review
 
-*Escribir aquí*
+
+**Development Evidence - Landing Page**
+
+<table>
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit ID</th>
+      <th>Commit Message</th>
+      <th>Commit Body</th>
+      <th>Committed On</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>demy-landing</td><td>main</td><td>c63f5f6</td><td>Merge branch 'release/v1.0.0'</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>release/v1.0.0</td><td>499fb3d</td><td>chore(release): add logo images in public folder</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>release/v1.0.0</td><td>f098359</td><td>Merge pull request #11 from nistrahq/release/v1.0.0</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>release/v1.0.0</td><td>56591c8</td><td>chore(release): prepare v1.0.0</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>0dcaf11</td><td>feat: add mobile anchors and improve navigation in JSON and HTML files</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>2712a48</td><td>Merge remote-tracking branch 'origin/develop' into develop</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>0c4474c</td><td>feat: enhance messaging in en.json for clarity and improved user engagement</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>9efd307</td><td>feat: update hero section and testimonials for improved messaging and clarity</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>95df6f5</td><td>feat: update hero section and testimonials for improved messaging and clarity</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>68e0102</td><td>feat: update navigation and pricing section anchors in JSON and HTML files</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>732d77a</td><td>Merge pull request #10 from nistrahq/feature/about-us-section</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/about-us-section</td><td>be72b3a</td><td>Merge remote-tracking branch 'origin/develop' into feature/about-us-section</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/about-us-section</td><td>5aaf6af</td><td>feat: enhance about us section with new styles and member role updates</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>e5ec849</td><td>Merge remote-tracking branch 'origin/develop' into develop</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>e86763d</td><td>Merge pull request #9 from nistrahq/feature/pricing-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/pricing-section</td><td>f61524e</td><td>feat: add pricing section with plans and descriptions</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/pricing-section</td><td>7ab2f3a</td><td>Merge remote-tracking branch 'origin/develop' into feature/pricing-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/pricing-section</td><td>7a703a6</td><td>refactor: update pricing section layout and styles for improved clarity and aesthetics</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/pricing-section</td><td>eba0acb</td><td>refactor: remove unused button texts from hero section in English and Spanish translations</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/pricing-section</td><td>b010522</td><td>Merge pull request #8 from nistrahq/feature/language-support</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/language-support</td><td>7ad1c5e</td><td>Merge remote-tracking branch 'origin/develop' into feature/language-support</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>70fbf0c</td><td>Merge pull request #6 from nistrahq/feature/about-us-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>9840420</td><td>Merge pull request #5 from nistrahq/feature/contact-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/contact-section</td><td>f189ffa</td><td>Merge remote-tracking branch 'origin/develop' into feature/contact-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/contact-section</td><td>e8944ad</td><td>Merge pull request #4 from nistrahq/feature/faq-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/faq-section</td><td>6d4d80f</td><td>Merge remote-tracking branch 'origin/develop' into feature/faq-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>e0b0721</td><td>Merge pull request #3 from nistrahq/feature/footer-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>b2759ec</td><td>Merge pull request #2 from nistrahq/feature/hero-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/about-us-section</td><td>8eddc8a</td><td>fix: correct css style for about us section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/about-us-section</td><td>80e9ae1</td><td>feat: update images of feature section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/about-us-section</td><td>e573b25</td><td>feat: update dom.js and index.html</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/about-us-section</td><td>477bfbd</td><td>feat: update en and es json for language</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/hero-section</td><td>97cb09e</td><td>feat: update session buttons and add app store links in index.html</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/faq-section</td><td>2928256</td><td>feat(i18n): add English and Spanish languages for FAQ section</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/faq-section</td><td>1845ec0</td><td>feat: add FAQ section with accordion functionality and styles</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/faq-section</td><td>3a23153</td><td>fix(html): add missing IDs to labels for pricing section</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/pricing-section</td><td>cd590d0</td><td>feat: add pricing details and update DOM manipulation for pricing section in en.json, es.json, and update-dom.js</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/pricing-section</td><td>6ad6935</td><td>feat: update pricing section layout and styles in index.html and pricing-section.css</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/footer-section</td><td>e262c96</td><td>feat(i18n): add translations for footer section</td><td>-</td><td>28/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/footer-section</td><td>d09f82e</td><td>feat(footer): add modal structure and styles for terms and conditions</td><td>-</td><td>28/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/footer-section</td><td>73214ec</td><td>feat(footer): add component styles for footer section</td><td>-</td><td>28/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/footer-section</td><td>7b017f7</td><td>feat(footer): build initial html structure for footer section</td><td>-</td><td>28/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/contact-section</td><td>29f0615</td><td>feat(i18n): add translations for contact section</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/contact-section</td><td>23b2690</td><td>feat(contact): implement form validation</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/contact-section</td><td>efe427d</td><td>style(contact): add component styles for contact section</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/contact-section</td><td>6269d89</td><td>feat(assets): add illustration for contact section</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/contact-section</td><td>9890d52</td><td>feat(contact): build initial html structure for contact section</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>09aab85</td><td>Merge pull request #1 from nistrahq/feature/initial-structure</td><td>-</td><td>24/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>7151ede</td><td>feat: update primary, secondary, and accent color variables in main.css</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>89bc5b9</td><td>feat: add new SVG branding assets for the project</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>03976cf</td><td>feat: add new SVG logo and update logo reference in index.html</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>ed05de8</td><td>feat: add new SVG logo files for branding</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>0e92d9f</td><td>refactor: update image paths to use new icons directory structure</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>06dfd62</td><td>feat: update favicon and add site webmanifest with new logo</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>a8316c2</td><td>fix(i18n): update language loading path to correct directory structure</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>a662f83</td><td>feat: update favicon path to use assets directory</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>bfe5cc8</td><td>feat: add English and Spanish localization first version files for hero and navigation sections</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>4f83430</td><td>feat: add FAQ, contact, and footer sections placeholders to index.html</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>44fad06</td><td>feat: add pricing section with plans, descriptions, and styling</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>9d93fa9</td><td>feat: add about team section with team story and video</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>5bf7a72</td><td>feat: add about us section with team member profiles and styling</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>9191e16</td><td>feat: add testimonials section with content, styling, and responsive layout</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>ba5244b</td><td>feat: add about product section with video and descriptive content</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>c937bd7</td><td>feat: add highlighted message section with content and styling</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>11ec6b3</td><td>feat: add 'how it works' section with content and styling</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>a0533ad</td><td>feat: add features section with content and styling</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>bd5d6da</td><td>feat: add hero section with responsive layout and styling</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>f2b9186</td><td>feat: enhance index.html with responsive navigation and language selector</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>accae7b</td><td>feat: update index.html with new title and Google Fonts integration</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>0023ca8</td><td>styles: integrate Tailwind CSS and establish theme configuration</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>8a751d6</td><td>styles: add base, components, layout, and utilities CSS for initial styling structure</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>87efa19</td><td>feat: restructure main.js to initialize language selector, menu toggle, and tilt effects</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>334fae7</td><td>chore: rename style.css to main.css</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>5fbef16</td><td>build(package): add vanilla-tilt for enhanced UI effects</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>5fe5771</td><td>feat(ui): add tilt effect to testimonial cards using VanillaTilt</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>d1562e1</td><td>feat(i18n): add language selection functionality with dynamic text updates</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>79a89fc</td><td>feat: implement menu toggle functionality for mobile navigation</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>9b295b4</td><td>feat: add getElement function to retrieve DOM elements by ID</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>5a0d3bf</td><td>refactor: update file paths for main.js and style.css</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>b8c41ec</td><td>build: add Vite configuration with Tailwind CSS plugin</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>1c59756</td><td>chore: initial commit</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>46c13fa</td><td>chore: add Tailwind CSS and Vite dependencies</td><td>-</td><td>23/09/2025</td></tr>
+  </tbody>
+</table>
 
 #### 4.2.1.4. Testing Suite Evidence for Sprint Review
 
