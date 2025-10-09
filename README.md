@@ -7136,6 +7136,18 @@ Secciones de navegación secundaria y enlaces a redes sociales.
 
 En esta sección se expone como ejemplo los endpoints implementados para este sprint junto con el video de su prueba y ejecución. El detalle de los mismos se encuentra fundamentado en la siguiente sección.
 
+**1) Comprobación en Swagger de los endpoints**  
+Se accede a `/swagger-ui/index.html` para revisar que los endpoints se encuentren correctamente operativos.
+
+![Swagger endpoints](./assets/ux-ui/evidences/backend/backend-doc-step-1.png)
+
+**2) Registro inicial**
+
+Desde el endpoint `/auth/signup`, se realiza el registro de un nuevo usuario proporcionando los datos básicos.
+
+![Registro usuario - parte 1](./assets/ux-ui/evidences/backend/backend-doc-step-2.1.png)  
+![Registro usuario - parte 2](./assets/ux-ui/evidences/backend/backend-doc-step-2.2.png)
+
 [Video Presentación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EZ5yW8uJgABHibKhmIZArtMBJxqjBOr6YGwCYldmBtB3Pw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=IfJ1WB)
 **Timestamp: 05:10 - 11:31**
 
