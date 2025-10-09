@@ -10523,7 +10523,22 @@ Ingresamos a la URL generada y añadimos al final `/swagger-ui/index.html` para 
 
 #### 4.2.1.8. Team Collaboration Insights during Sprint
 
-*Escribir aquí*
+| Alumno                           | Actividad                    |
+|----------------------------------|------------------------------|
+| Crispin Ramos; Daniel Franco     | Api, Mobile, Landing         |
+| Aponte Cruzado, Andrea Marielena | UX/UI, Landing               |
+| Ramírez Mestanza, Salim Ignacio  | Api, Mobile, Landing , UX/UI |
+| Sulca Gonzales, Paúl Fernando    | Api, Mobile, Landing , UX/UI |
+| Vilca Saboya, Diego Alejandro    | Api, Mobile, Landing         |
+
+![Git Evidence — Mobile 1](./assets/ux-ui/evidences/git/git-mobile1.png)
+![Git Evidence — Mobile 2](./assets/ux-ui/evidences/git/git-mobile2.png)
+
+![Git Evidence — Landing 1](./assets/ux-ui/evidences/git/git-landing1.png)
+![Git Evidence — Landing 2](./assets/ux-ui/evidences/git/git-landing2.png)
+
+![Git Evidence — API 1](./assets/ux-ui/evidences/git/git-api1.png)
+![Git Evidence — API 2](./assets/ux-ui/evidences/git/git-api2.png)
 
 <hr class="page-break">
 
