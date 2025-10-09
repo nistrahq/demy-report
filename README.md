@@ -6816,7 +6816,7 @@ Con el sprint 1 se avanzó con la creación del landing page para Demy, que incl
     <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>f888a1c</td><td>feat(core): add TabletPreviewSamples for demonstrating light and dark mode previews</td><td>-</td><td>06/10/2025</td></tr>
     <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>0588215</td><td>feat(core): add UserChip composable for displaying user information</td><td>-</td><td>06/10/2025</td></tr>
     <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>a7511de</td><td>feat(core): add annotations for tablet previews in dark and light modes</td><td>-</td><td>06/10/2025</td></tr>
- <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>08e6bbf</td><td>feat(core): add RootNavGraph for managing navigation structure and start destination</td><td>-</td><td>05/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>08e6bbf</td><td>feat(core): add RootNavGraph for managing navigation structure and start destination</td><td>-</td><td>05/10/2025</td></tr>
     <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>d540ee7</td><td>feat(core): enhance navigateOnce function with popUpTo support and overload for Destination</td><td>-</td><td>05/10/2025</td></tr>
     <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>56b715f</td><td>feat(core): add sealed interface for defining navigation destinations</td><td>-</td><td>05/10/2025</td></tr>
     <tr><td>demy-admins</td><td>feature/enrollments-management</td><td>552b2b1</td><td>feat(MainActivity): enhance entry point with navigation setup and documentation</td><td>-</td><td>05/10/2025</td></tr>
@@ -7224,6 +7224,59 @@ Mediante el endpoint `/teachers`, se listan todos los profesores registrados en 
 ![Listar profesores](./assets/ux-ui/evidences/backend/backend-doc-step-12.png)
 
 **Tabla de documentación**
+<style>
+.doc-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.doc-table th, .doc-table td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 13px;
+}
+.doc-table th:nth-child(1) { width: 8%; }   /* Endpoint */
+.doc-table th:nth-child(2) { width: 7%; }   /* Acción */
+.doc-table th:nth-child(3) { width: 13%; }  /* Path */
+.doc-table th:nth-child(4) { width: 15%; }  /* Parámetros */
+.doc-table th:nth-child(5) { width: 15%; }  /* Descripción */
+.doc-table th:nth-child(6) { width: 5%; }  /* Ejemplo Request */
+.doc-table th:nth-child(7) { width: 5%; }  /* Ejemplo Response */
+.doc-table th:nth-child(8) { width: 12%; }  /* URL */
+</style>
+<table class="doc-table">
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Acción (HTTP)</th>
+      <th>Path</th>
+      <th>Parámetros</th>
+      <th>Descripción</th>
+      <th>Ejemplo de Request</th>
+      <th>Ejemplo de Response</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Sign-up</td><td>POST</td><td>/api/v1/authentication/sign-up</td><td>Headers: Content-Type: application/json</td><td>Registra un nuevo usuario en el sistema.</td><td>{"firstName":"Ana",
+                                                                                                                                                                                    "lastName":"Rojas",
+                                                                                                                                                                                    "email":"ana@demo.com",
+                                                                                                                                                                                    "password":"Secret123"}</td>
+                                                                                                                                                                                    <td>201 Created: {"userId":"usr_1",
+                                                                                                                                                                                                        "email":"ana@demo.com",
+                                                                                                                                                                                                     "createdAt":"2025-10-08T12:00:00Z"}</td><td>https://demy-api-production.up.railway.app/api/v1/authentication/sign-up</td></tr>
+    <tr><td>Sign-in</td><td>POST</td><td>/api/v1/authentication/sign-in</td><td>Headers: Content-Type: application/json</td><td>Autentica un usuario registrado.</td><td>{"email":"ana@demo.com","password":"Secret123"}</td><td>200 OK: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI...","expiresIn":"86400"}</td><td>https://demy-api-production.up.railway.app/api/v1/authentication/sign-in</td></tr>
+    <tr><td>Verify Account</td><td>POST</td><td>/api/v1/authentication/verify</td><td>Headers: Content-Type: application/json</td><td>Verifica la cuenta del usuario mediante código.</td><td>{"email":"ana@demo.com","verificationCode":"123456"}</td><td>200 OK: {"message":"Account verified successfully"}</td><td>https://demy-api-production.up.railway.app/api/v1/authentication/verify</td></tr>
+    <tr><td>Resend Code</td><td>POST</td><td>/api/v1/authentication/resend-code</td><td>Headers: Content-Type: application/json</td><td>Reenvía el código de verificación al correo registrado.</td><td>{"email":"ana@demo.com"}</td><td>200 OK: {"message":"Verification code resent successfully"}</td><td>https://demy-api-production.up.railway.app/api/v1/authentication/resend-code</td></tr>
+    <tr><td>Create Academy</td><td>POST</td><td>/api/v1/academies</td><td>Headers: Authorization: Bearer &lt;token&gt;</td><td>Crea una nueva academia vinculada a un administrador.</td><td>{"name":"Academia Innovate","description":"Formación digital moderna"}</td><td>201 Created: {"academyId":"acd_101","name":"Academia Innovate","createdAt":"2025-10-08T13:00:00Z"}</td><td>https://demy-api-production.up.railway.app/api/v1/academies</td></tr>
+    <tr><td>Create Administrator</td><td>POST</td><td>/api/v1/administrators</td><td>Headers: Authorization: Bearer &lt;token&gt;</td><td>Registra un usuario con rol administrador.</td><td>{"userId":"usr_1","academyId":"acd_101"}</td><td>201 Created: {"adminId":"adm_1","linkedAcademy":"acd_101"}</td><td>https://demy-api-production.up.railway.app/api/v1/administrators</td></tr>
+    <tr><td>Get Teachers</td><td>GET</td><td>/api/v1/teachers</td><td>Headers: Authorization: Bearer &lt;token&gt;</td><td>Obtiene el listado de profesores registrados en la academia.</td><td>-</td><td>200 OK: [{"teacherId":"tch_1","name":"Carlos Pérez","email":"carlos@academy.com"}]</td><td>https://demy-api-production.up.railway.app/api/v1/teachers</td></tr>
+  </tbody>
+</table>
 
 #### 4.2.1.7. Software Deployment Evidence for Sprint Review
 
