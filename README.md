@@ -7129,14 +7129,101 @@ Secciones de navegación secundaria y enlaces a redes sociales.
 
 **Link de video de presentación sobre la Landing Page**  
 
-[Video Presentación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/ETc7aNcRPkFFjemzOPaGNdcBiUk3J5XXtV_2ySAeSECsrw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=NvoRXa)
+[Video Presentación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EZ5yW8uJgABHibKhmIZArtMBJxqjBOr6YGwCYldmBtB3Pw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=IfJ1WB)
+**Timestamp: 00:00 - 05:10**
+
+**Backend**
+
+En esta sección se expone como ejemplo los endpoints implementados para este sprint junto con el video de su prueba y ejecución. El detalle de los mismos se encuentra fundamentado en la siguiente sección.
+
+[Video Presentación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EZ5yW8uJgABHibKhmIZArtMBJxqjBOr6YGwCYldmBtB3Pw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=IfJ1WB)
+**Timestamp: 05:10 - 11:31**
 
 **Mobile Application**
-**Backend**
 
 #### 4.2.1.6. Services Documentation Evidence for Sprint Review
 
-*Escribir aquí*
+En esta sección se presentan las evidencias de funcionamiento de los principales endpoints del backend desplegado en Railway, verificando su correcto comportamiento mediante Swagger UI. Se documentan las pruebas realizadas para la creación, autenticación y gestión de usuarios dentro del sistema Demy, incluyendo las respuestas del servidor y el flujo completo de validación por correo electrónico.
+
+**1) Comprobación en Swagger de los endpoints**  
+Se accede a `/swagger-ui/index.html` para revisar que los controladores y endpoints se encuentren correctamente documentados y operativos.  
+
+![Swagger endpoints](./assets/ux-ui/evidences/backend/backend-doc-step-1.png)
+
+**2) Crear una cuenta en Demy (registro inicial)**  
+
+Desde el endpoint `/auth/signup`, se realiza el registro de un nuevo usuario proporcionando los datos básicos.  
+
+![Registro usuario - parte 1](./assets/ux-ui/evidences/backend/backend-doc-step-2.1.png)  
+![Registro usuario - parte 2](./assets/ux-ui/evidences/backend/backend-doc-step-2.2.png)
+
+**3) Revisión de correo electrónico para verificación**  
+
+Se comprueba el correo electrónico asociado a la cuenta creada, donde se recibe el código de verificación y un enlace directo a la Landing Page.  
+
+![Correo recibido - código](./assets/ux-ui/evidences/backend/backend-doc-step-3.1.png)  
+![Correo recibido - enlace Landing Page](./assets/ux-ui/evidences/backend/backend-doc-step-3.2.png)
+
+**4) Verificar el código de confirmación**  
+
+Utilizando el endpoint `/auth/verify`, se ingresa el código recibido para validar la cuenta.  
+
+![Verificación de código](./assets/ux-ui/evidences/backend/backend-doc-step-4.png)
+
+**5) Ingreso a Demy con credenciales (Sign In)**  
+
+Se utiliza el endpoint `/auth/signin` para autenticarse con el correo y contraseña previamente registrados. 
+
+![Sign in - parte 1](./assets/ux-ui/evidences/backend/backend-doc-step-5.1.png)  
+![Sign in - parte 2](./assets/ux-ui/evidences/backend/backend-doc-step-5.2.png)
+
+**6) Uso del token de autenticación**  
+
+Se copia el token JWT obtenido tras el inicio de sesión para acceder a los endpoints protegidos.  
+
+![Token JWT](./assets/ux-ui/evidences/backend/backend-doc-step-6.png)
+
+**7) Creación de usuario administrador**  
+
+Con el token de autenticación, se ejecuta el endpoint `/users` para crear un usuario con rol administrador.  
+
+![Crear usuario admin - parte 1](./assets/ux-ui/evidences/backend/backend-doc-step-7.1.png)  
+![Crear usuario admin - parte 2](./assets/ux-ui/evidences/backend/backend-doc-step-7.2.png)
+
+**8) Creación de academia asociada al administrador**  
+
+Desde el endpoint `/academies`, se crea una nueva academia vinculada al usuario administrador.  
+
+![Crear academia - parte 1](./assets/ux-ui/evidences/backend/backend-doc-step-8.1.png)  
+![Crear academia - parte 2](./assets/ux-ui/evidences/backend/backend-doc-step-8.2.png)
+
+**9) Envío de código a una nueva cuenta tipo Teacher**  
+
+Se crea un nuevo usuario con rol Teacher y se envía su código de verificación al correo registrado. 
+
+![Enviar código Teacher - parte 1](./assets/ux-ui/evidences/backend/backend-doc-step-9.1.png)  
+![Enviar código Teacher - parte 2](./assets/ux-ui/evidences/backend/backend-doc-step-9.2.png)
+
+**10) Recepción del código de verificación del nuevo usuario**  
+
+Se muestra el correo recibido por el nuevo usuario Teacher con su código de verificación.  
+
+![Correo nuevo Teacher](./assets/ux-ui/evidences/backend/backend-doc-step-10.png)
+
+**11) Autenticación del nuevo usuario Teacher**  
+
+El nuevo usuario Teacher ingresa sus credenciales en `/auth/signin` y obtiene su token de autenticación.  
+
+![Sign in Teacher - parte 1](./assets/ux-ui/evidences/backend/backend-doc-step-11.1.png)  
+![Sign in Teacher - parte 2](./assets/ux-ui/evidences/backend/backend-doc-step-11.2.png)
+
+**12) Visualización de profesores en la academia**  
+
+Mediante el endpoint `/teachers`, se listan todos los profesores registrados en la academia, confirmando la correcta integración del flujo.  
+
+![Listar profesores](./assets/ux-ui/evidences/backend/backend-doc-step-12.png)
+
+**Tabla de documentación**
 
 #### 4.2.1.7. Software Deployment Evidence for Sprint Review
 
