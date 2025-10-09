@@ -10074,6 +10074,52 @@ Desde el endpoint `/auth/signup`, se realiza el registro de un nuevo usuario pro
 
 **Mobile Application**
 
+A continuación se describen brevemente las vistas capturadas de la aplicación. Las pantallas mantienen una línea visual limpia con tarjetas, tipografía legible y acciones primarias claramente diferenciadas.
+
+**Administrator — Dashboard**  
+Formulario de alta con campos básicos y selector de género; a la derecha, buscador y listado con acciones de edición/eliminación.  
+![Mobile 1](./assets/ux-ui/evidences/mobile/mobile-1.jpeg)
+
+**Courses — Visor semanal**  
+Calendario semanal con bloques por curso, descripcion y codigo para una lectura rápida del horario académico.  
+![Mobile 2](./assets/ux-ui/evidences/mobile/mobile-2.jpeg)
+
+**Courses — Editar sesión**  
+Formulario para editar la sesión con validaciones básicas.  
+![Mobile 3](./assets/ux-ui/evidences/mobile/mobile-3.jpeg)
+
+**Classrooms — Editar horario**  
+Edición del nombre del horario y gestión de sesiones existentes con acciones rápidas para escribir sobre el aula, sede y capacidad.  
+![Mobile 4](./assets/ux-ui/evidences/mobile/mobile-4.jpeg)
+
+**Classrooms — Registrar aula**  
+Vista para crear un contenedor de horario a partir de un nombre y capacidad.  
+![Mobile 5](./assets/ux-ui/evidences/mobile/mobile-5.jpeg)
+
+**Schedules — Registrar un nuevo horario**  
+Actualización de datos del aula y nombre del horario.
+![Mobile 6](./assets/ux-ui/evidences/mobile/mobile-6.jpeg)
+
+**Schedules — Periodo**  
+Formulario de registro de campos esenciales y confirmación visual del nombre del periodo.
+![Mobile 7](./assets/ux-ui/evidences/mobile/mobile-7.jpeg)
+
+**Schedules — Registrar curso**  
+Edición de curso con nombre, código y descripción, dia de la semana, horas, el curso que está disponible, el aula y el profesor.
+![Mobile 8](./assets/ux-ui/evidences/mobile/mobile-8.jpeg)
+
+**Schedules viewer — Horario**  
+Horario de curso con campos mínimos y jerarquía clara para facilitar la visualizacion.  
+![Mobile 9](./assets/ux-ui/evidences/mobile/mobile-9.jpeg)
+
+**Teachers — Registrar new teacher**  
+Registrar profesor con nombres, email, numero  y contraseña.
+![Mobile 10](./assets/ux-ui/evidences/mobile/mobile-10.jpeg)
+
+**Teachers — Búsqueda y acciones rápidas**  
+Campo de búsqueda con filtrado en tiempo real sobre el listado de docentes; permite editar o eliminar desde la tarjeta del resultado.
+![Mobile 11](./assets/ux-ui/evidences/mobile/mobile-11.jpeg)
+
 #### 4.2.1.6. Services Documentation Evidence for Sprint Review
 
 En esta sección se presentan las evidencias de funcionamiento de los principales endpoints del backend desplegado en Railway, verificando su correcto comportamiento mediante Swagger UI. Se documentan las pruebas realizadas para la creación, autenticación y gestión de usuarios dentro del sistema Demy, incluyendo las respuestas del servidor y el flujo completo de validación por correo electrónico.
