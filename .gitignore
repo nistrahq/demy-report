@@ -37,3 +37,6 @@ Thumbs.db        # Windows Explorer metadata
 # JVM crash logs
 hs_err_pid*
 replay_pid*
+
+# Ignore Windows system files
+desktop.ini
