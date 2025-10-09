@@ -146,6 +146,64 @@ Análisis de cantidad de commits realizados por semana.
 
 </div>
 
+## TP1
+
+**Tareas**
+
+Para el desarrollo del TP1, cada participante del equipo realizó las siguientes tareas:
+
+| Integrantes                      | Tarea asignada                                                                                                                                                                               |
+|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Aponte Cruzado, Andrea Marielena | - Wireframes y Mock-ups de la Landing Page <br> - Wireframes y Mock-ups de la App para Estudiantes <br> - Wireflow y User Flow Diagrams de la App para Estudiantes                           |
+| Crispin Ramos, Daniel Franco     | - Wireframes y Mock-ups de la App para Docentes <br> - Wireflow y User Flow Diagrams de la App para Docentes <br> - Prototipo de Alta Fidelidad de la App para Docentes                      |
+| Ramirez Mestanza, Salim Ignacio  | - Style guidelines general <br> - Protitipos de alta fidelidad de las aplicaciones para estudiantes y docentes <br> - Presentación final del TP1                                             |
+| Sulca Gonzales, Paúl Fernando    | - Source code management en GitHub <br> - Documentación del proyecto en GitHub <br> - Presentación final del TP1                                                                             |
+| Vilca Saboya, Diego Alejandro    | - Wireframes y Mock-ups de la App para Administradores <br> - Wireflow y User Flow Diagrams de la App para Administradores <br> - Prototipo de Alta Fidelidad de la App para Administradores |
+
+**GitHub Collaboration Insights**
+
+Se puede observar la colaboración del equipo en el desarrollo del proyecto a través de la plataforma GitHub. Esta sección destaca las contribuciones individuales y colectivas de los miembros del equipo, así como la gestión del código fuente mediante ramas y merges.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Gráfico de Pulse Insights del repositorio de GitHub.
+
+![Insights - Pulse](./assets/images/screenshots/insights-pulse-tp1.png)
+
+</div>
+
+En GitHub se presenta un timeline de las principales ramas creadas por cada integrante del equipo, así como los procesos de merge realizados.  
+Todas las ramas fueron gestionadas siguiendo el flujo de trabajo **GitFlow**, adaptado para una organización que utiliza un sistema de control de versiones.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Gráfico de red (*network graph*) de ramas en el repositorio de GitHub.
+
+![Insights - Network Graph](./assets/images/screenshots/insights-network-graph-tp1.png)
+
+</div>
+
+A continuación, se presentan los gráficos que muestran el análisis de los commits en el repositorio correspondiente al informe.  
+Estos gráficos detallan la cantidad de líneas de código añadidas por cada miembro del equipo y la actividad de commits registrada.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Análisis de líneas de código añadidas por contribuyente.
+
+![Insights - Contributors](./assets/images/screenshots/insights-contributors-tp1.png)
+
+</div>
+
+El siguiente gráfico muestra la cantidad de commits realizados en la semana con mayor actividad en el proyecto.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Análisis de cantidad de commits realizados por semana.
+
+![Insights - Commits](./assets/images/screenshots/insights-commits-tp1.png)
+
+</div>
+
 <hr class="page-break">
 
 # Contenido
