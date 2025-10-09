@@ -68,7 +68,6 @@
 | 4.0     | 4/10/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se completó el CapÍtulo III:  Solution UI/UX Design                               |        
 | 5.0     | 7/10/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se completó el Capítulo IV: : Product Implementation & Validation                 |  
 
-
 <hr class="page-break">
 
 # Project Report Collaboration Insights
@@ -2917,13 +2916,13 @@ El Context Diagram muestra como el sistema central que interactúa con tres usua
 
 El Container Diagram descompone la solución en sus principales contenedores: una Flutter App para coordinadores, una Android App para docentes y una iOS App para estudiantes, todas conectadas a un API Backend desarrollado en Spring Boot que concentra la lógica de negocio y accede a una base de datos MySQL para la información académica. El backend también se integra con Stripe y PagoEfectivo para pagos y con Gmail para notificaciones automáticas.
 
-![Container Diagram](assets/diagrams/software-architecture/containers/software_architecture_container_diagram.png)
+![Container Diagram](assets/diagrams/software-architecture/containers/software-architecture-container-diagram.png)
 
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 
 El Deployment Diagram muestra la distribución física del sistema en producción, detallando cómo se despliegan los contenedores y servicios en la infraestructura y cómo interactúan entre sí. Las aplicaciones móviles (iOS, Android y Flutter) se ejecutan en los dispositivos de los usuarios y son distribuidas mediante Firebase, mientras que el backend en Spring Boot y la base de datos MySQL se alojan en Railway PaaS. Asimismo, se incluyen sistemas externos como Stripe, PagoEfectivo y Gmail. En conjunto, el diagrama ofrece una visión clara de la ubicación de los componentes y de los protocolos de comunicación empleados.
 
-![Deployment Diagram](assets/diagrams/software-architecture/deployment/software_architecture_deployment_diagram.png)
+![Deployment Diagram](assets/diagrams/software-architecture/deployment/software-architecture-deployment-diagram.png)
 
 <hr class="page-break">
 
@@ -6210,8 +6209,185 @@ En esta sección se presentan los wireframes y mock-ups de las aplicaciones móv
 
 #### 3.1.4.3. Mobile Applications Mock-ups
 
+**Mobile Applications Mock-ups: Administrador**
+
+A continuación, se presenta la sustentación de los mockups para la aplicación del **Administrador**. El diseño se enfoca en la seguridad, claridad y eficiencia, aplicando un Design System consistente para una experiencia de usuario intuitiva.
+
+**Registro y Creación de Cuenta**
+
+Estas pantallas guían al nuevo administrador en tres pasos claros y seguros: registro, verificación por email y finalización del perfil. Se utiliza un diseño minimalista para no abrumar al usuario, pidiendo la información de manera progresiva y asegurando la cuenta a través de la verificación del correo electrónico.
+
+![Admin Registro](assets/ux-ui/mockups/mobile/admin/admin_registro.png)
+![Admin Verificación Email](assets/ux-ui/mockups/mobile/admin/admin_verificacion_email.png)
+![Admin Completar Perfil](assets/ux-ui/mockups/mobile/admin/admin_completar_perfil.png)
+
+**Inicio de Sesión (Login)**
+
+Pantalla de acceso estándar y familiar diseñada para un ingreso rápido a la plataforma. Prioriza la usabilidad con campos claros y un enlace fácilmente accesible para la recuperación de contraseña, permitiendo la autogestión del usuario.
+
+![Admin Login](assets/ux-ui/mockups/mobile/admin/admin_login.png)
+
+**Recuperación de Contraseña**
+
+Estas pantallas garantizan el guiado en cuatro pasos simples para una recuperación de cuenta segura:
+1.  **Solicitud:** El usuario ingresa su email.
+2.  **Verificación:** Confirma su identidad con un código.
+3.  **Restablecimiento:** Crea una nueva contraseña.
+4.  **Confirmación:** Recibe una notificación de éxito.
+
+Solo el propietario de la cuenta pueda realizar cambios, ofreciendo una experiencia clara y sin fricciones.
+
+![Admin Recuperar Password Solicitud](assets/ux-ui/mockups/mobile/admin/admin_recuperar_password_solicitud.png)
+![Admin Recuperar Password Verificación Código](assets/ux-ui/mockups/mobile/admin/admin_recuperar_password_verificacion_codigo.png)
+![Admin Ingreso Nueva Password](assets/ux-ui/mockups/mobile/admin/admin_ingreso_nueva_password.png)
+![Admin Confirmación Cambio Password](assets/ux-ui/mockups/mobile/admin/admin_confirmacion_cambio_password.png)
+
+**Documentación Legal**
+
+Pantallas dedicadas para los **Términos y Condiciones** y la **Política de Privacidad**. El diseño es limpio y se centra en la legibilidad del contenido, asegurando la transparencia y facilitando la consulta desde el flujo de registro.
+
+![Admin Términos y Condiciones](assets/ux-ui/mockups/mobile/admin/admin_terminos_y_condiciones.png)
+![Admin Política de Privacidad](assets/ux-ui/mockups/mobile/admin/admin_politica_de_privacidad.png)
+
+**Suscripción y Configuración de Academia**
+
+Estas pantallas de onboarding que sigue al registro. Guía al administrador a través de la selección de un plan, el ingreso seguro de los datos de pago y la configuración inicial de la academia. El proceso está diseñado para ser rápido y motivador, finalizando con una pantalla de éxito que da la bienvenida al usuario y lo dirige al panel principal.
+
+![Admin Selección Plan](assets/ux-ui/mockups/mobile/admin/admin_seleccion_plan.png)
+![Admin Formulario Pago](assets/ux-ui/mockups/mobile/admin/admin_formulario_pago.png)
+![Admin Configuración Academia](assets/ux-ui/mockups/mobile/admin/admin_configuracion_academia.png)
+![Admin Confirmación Éxito](assets/ux-ui/mockups/mobile/admin/admin_confirmacion_exito.png)
+
+**Pantalla Principal (Dashboard)**
+
+Muestra un resumen visual del estado de la institución con métricas clave, gráficos de ingresos/gastos y datos importantes del periodo académico actual. Permite una visión general rápida.
+
+![Admin Dashboard](assets/ux-ui/mockups/mobile/admin/admin_dashboard.png)
+
+**Gestión de Periodos Académicos**
+
+Permite crear, ver, editar y eliminar periodos académicos. Muestra el periodo actual de forma destacada y un listado completo para una gestión sencilla.
+
+![Admin Periodos Management](assets/ux-ui/mockups/mobile/admin/admin_periods_management.png)
+![Admin Periodos Nuevo Formulario](assets/ux-ui/mockups/mobile/admin/admin_periods_new_form.png)
+
+**Gestión de Profesores**
+
+Facilita la administración de profesores, permitiendo registrar, editar y eliminar sus perfiles. El diseño es consistente con otras secciones de gestión para optimizar el flujo de trabajo.
+
+![Admin Profesores Registro Formulario](assets/ux-ui/mockups/mobile/admin/admin_teachers_register_form.png)
+![Admin Profesores Edición Formulario](assets/ux-ui/mockups/mobile/admin/admin_teachers_edit_form.png)
+
+**Seguimiento de Estudiantes**
+
+Permite buscar y visualizar el perfil de cada estudiante. Al seleccionar uno, se muestra una tarjeta con su información principal para un seguimiento rápido y eficiente.
+
+![Admin Seguimiento Estudiantes](assets/ux-ui/mockups/mobile/admin/admin_student_monitoring.png)
+
+**Componente Reutilizable: Modal de Confirmación**
+
+Este modal de advertencia aparece antes de realizar acciones destructivas, como eliminar datos. Su propósito es prevenir errores, forzando al usuario a confirmar su decisión.
+
+![Admin Modal Confirmación Eliminación](assets/ux-ui/mockups/mobile/admin/admin_delete_confirmation_modal.png)
+
+**Gestión de Aulas (Classrooms)**
+
+Esta sección permite administrar la infraestructura de aulas. El administrador puede registrar nuevas aulas con detalles como código y capacidad, además de editar o eliminar las existentes. La interfaz mantiene la consistencia visual y funcional del resto de la aplicación para facilitar su uso.
+
+![Admin Aulas Nuevo Formulario](assets/ux-ui/mockups/mobile/admin/admin_classrooms_new_form.png)
+![Admin Aulas Edición Formulario](assets/ux-ui/mockups/mobile/admin/admin_classrooms_edit_form.png)
+
+**Gestión de Cursos**
+
+Aquí se gestiona la oferta académica de la institución. Permite la creación, edición y eliminación de cursos, asignando nombre, código y descripción. El diseño sigue el patrón de las demás pantallas de gestión para una experiencia de usuario unificada y predecible.
+
+![Admin Cursos Nuevo Formulario](assets/ux-ui/mockups/mobile/admin/admin_courses_new_form.png)
+![Admin Cursos Edición Formulario](assets/ux-ui/mockups/mobile/admin/admin_courses_edit_form.png)
+
+**Gestión de Facturación (Billing)**
+
+Esta sección se centra en el control de las cuentas de facturación de los estudiantes. Permite buscar cuentas, ver su estado (activo, cancelado, suspendido) y gestionar facturas individuales. El administrador puede crear nuevas facturas directamente desde este módulo.
+
+![Admin Facturación Búsqueda](assets/ux-ui/mockups/mobile/admin/admin_billing_search.png)
+![Admin Facturación Nueva Factura](assets/ux-ui/mockups/mobile/admin/admin_billing_new_invoice.png)
+
+**Finanzas y Contabilidad (Finance & Accounting)**
+
+Funciona como el centro financiero general de la institución. Aquí, el administrador puede registrar todas las transacciones de ingresos y gastos, ver un historial detallado y analizar resúmenes visuales a través de gráficos para un mejor seguimiento contable.
+
+![Admin Nueva Transacción](assets/ux-ui/mockups/mobile/admin/admin_finance_new_transaction.png)
+![Admin Lista de Transacciones](assets/ux-ui/mockups/mobile/admin/admin_finance_transaction_list.png)
+
+**Perfil del Administrador**
+
+Pantalla donde el administrador puede ver y editar su información personal y los datos de la academia asociada a su cuenta. También muestra el estado de su cuenta de usuario (rol, estado de verificación).
+
+![Admin Perfil](assets/ux-ui/mockups/mobile/admin/admin_profile.png)
+
+**Configuración (Settings)**
+
+Permite al administrador personalizar su experiencia en la aplicación. Incluye opciones de accesibilidad, configuración de tema (modo oscuro, alto contraste), gestión de notificaciones y cambio de contraseña.
+
+![Admin Configuración](assets/ux-ui/mockups/mobile/admin/admin_settings.png)
+
+**Ayuda y Cierre de Sesión**
+
+La sección de Ayuda centraliza los recursos de soporte, como información de contacto y enlaces a documentos legales. El cierre de sesión se realiza de forma segura a través de un modal de confirmación para evitar salidas accidentales.
+
+![Admin Centro de Ayuda](assets/ux-ui/mockups/mobile/admin/admin_help_center.png)
+![Admin Modal Cierre de Sesión](assets/ux-ui/mockups/mobile/admin/admin_logout_modal.png)
+
+**Mobile Applications Mock-ups: Profesor**
+
+A continuación, se presentan los mockups de la versión móvil destinados al perfil de docente. Estas pantallas muestran el flujo principal de interacción dentro de la aplicación, incluyendo el inicio de sesión, la gestión de asistencia, la visualización de horarios, la reprogramación de clases, el acceso al perfil del usuario, y la configuración de ajustes.
+
+Los mockups permiten visualizar de manera clara la estructura, distribución y funcionalidad de cada sección antes de la etapa de diseño visual definitivo.
+
+**Acceso y Recuperación de Contraseña**
+
+Este grupo incluye las pantallas necesarias para que el profesor ingrese a la aplicación o recupere su cuenta si ha olvidado la contraseña. El flujo está diseñado en pasos discretos para minimizar la frustración del usuario.
+
+![Loader](./assets/ux-ui/mockups/mobile/teacher/Loader.png)
+![Login](./assets/ux-ui/mockups/mobile/teacher/Login.png)
+![ForgotPassword-CreateNew](./assets/ux-ui/mockups/mobile/teacher/ForgotPassword-CreateNew.png)
+![ForgotPassword-ResetPass](./assets/ux-ui/mockups/mobile/teacher/ForgotPassword-ResetPass.png)
+![ForgotPassword-Verification](./assets/ux-ui/mockups/mobile/teacher/ForgotPassword-Verification.png)
+
+**Principal y Gestión de Cuenta**
+
+Este flujo representa el centro de navegación de la aplicación. La Home actúa como dashboard con acceso rápido a las funciones clave, mientras que Profile y Settings permiten la gestión de la identidad y las preferencias del profesor.
+
+![Home](./assets/ux-ui/mockups/mobile/teacher/Home.png)
+![Profile](./assets/ux-ui/mockups/mobile/teacher/Profile.png)
+![Settings](./assets/ux-ui/mockups/mobile/teacher/Settings.png)
+
+**Asistencia**
+
+El objetivo de este flujo es la toma de asistencia rápida y la generación estructurada de informes. El proceso de reporte está dividido en pantallas de elección para asegurar la precisión de los filtros.
+
+![HomeAttendanceModal](./assets/ux-ui/mockups/mobile/teacher/HomeAttendanceModal.png)
+![TakeAttendance](./assets/ux-ui/mockups/mobile/teacher/TakeAttendance.png)
+![TakeAttendanceWithoutMarks](./assets/ux-ui/mockups/mobile/teacher/TakeAttendance-Without-Marks.png)
+![AttendanceReport-ChooseDate](./assets/ux-ui/mockups/mobile/teacher/AttendanceReport-Choose-Date.png)
+![AttendanceReport-Modal](./assets/ux-ui/mockups/mobile/teacher/AttendanceReport-Modal.png)
+![AttendanceReport](./assets/ux-ui/mockups/mobile/teacher/AttendanceReport.png)
+
+**Horario y Reprogramación**
+
+Este grupo gestiona la visualización del horario del profesor y ofrece una funcionalidad guiada de reprogramación de clases a través de múltiples pasos de confirmación.
+
+![TeachingSchedule](./assets/ux-ui/mockups/mobile/teacher/Teaching-Schedule.png)
+![TeachingSchedule-1](./assets/ux-ui/mockups/mobile/teacher/Teaching-Schedule-1.png)
+![TeachingSchedule-2](./assets/ux-ui/mockups/mobile/teacher/Teaching-Schedule-2.png)
+![TeachingReschedule](./assets/ux-ui/mockups/mobile/teacher/Teaching-Reschedule.png)
+![TeachingReschedule-ModalSave](./assets/ux-ui/mockups/mobile/teacher/Teaching-Reschedule-Modal-Save.png)
+![TeachingReschedule-ChooseDate](./assets/ux-ui/mockups/mobile/teacher/Teaching-Reschedule-Choose-Date.png)
+![TeachingReschedule-ChooseStartTime](./assets/ux-ui/mockups/mobile/teacher/Teaching-Reschedule-Choose-Start-Time.png)
+![TeachingReschedule-ChooseEndTime](./assets/ux-ui/mockups/mobile/teacher/Teaching-Reschedule-Choose-End-Time.png)
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
+
+**SEGMENTO: ADMIN**
 
 **User Goal**  
 Tener un control eficiente y organizado de los pagos de los alumnos, tanto por concepto de mensualidad como de matrícula, permitiendo un seguimiento claro del estado de cada pago y evitando retrasos o confusiones en la gestión administrativa.
@@ -6238,6 +6414,45 @@ Gestionar de forma eficiente y organizada los recursos de la academia, incluyend
 
 ![UserFlow-5](./assets/ux-ui/userflows/userflow-admin-5.png)
 
+**SEGMENTO: TEACHER**
+
+**User Goal** 
+Tener una vista clara y concisa de su horario semanal de clases y actividades, permitiendo una planificación eficiente de su tiempo y evitando conflictos o inasistencias.
+
+![Userflow-Teacher-1](assets/ux-ui/userflows/teacher/Userflow-Teacher-ReportAttendance.png)
+
+**User Goal**
+Solicitar o ejecutar la reprogramación de una clase de manera eficiente, indicando el motivo y proponiendo una nueva fecha/hora, con la aprobación administrativa correspondiente.
+
+![Userflow-Teacher-2](assets/ux-ui/userflows/teacher/Userflow-Teacher-RescheduleClass.png)
+
+**User Goal**
+Realizar la toma de asistencia de los alumnos de forma rápida y sencilla al inicio de cada clase, asegurando un registro preciso para fines académicos y administrativos.
+
+![Userflow-Teacher-3](assets/ux-ui/userflows/teacher/Userflow-Teacher-TakeAttendance.png)
+
+**User Goal**
+Reportar la asistencia consolidada de un grupo o período al sistema, facilitando la gestión administrativa y la generación de informes finales de asistencia.
+
+![Userflow-Teacher-4](assets/ux-ui/userflows/teacher/Userflow-Teacher-ViewSchedule.png)
+
+**SEGMENTO: STUDENTS**
+
+**User Goal**
+Visualizar de forma clara y ordenada su **horario semanal de clases**, incluyendo materias, docentes y aulas asignadas, para optimizar su organización y evitar confusiones o ausencias.
+
+![Userflow-Students-1](assets/ux-ui/userflows/student/Userflow-Students-ViewSchedule.png)
+
+
+**User Goal**
+Consultar de manera rápida y segura **sus deudas o pagos pendientes** con la academia, visualizando montos, fechas límite y opciones de pago disponibles.
+
+![Userflow-Students-2](assets/ux-ui/userflows/student/Userflow-Students-ViewDebts.png)
+
+**User Goal**
+Visualizar en tiempo real **los cambios de horario o reprogramaciones de clases**, recibiendo notificaciones automáticas y actualizaciones inmediatas en su calendario personal.
+
+![Userflow-Students-3](assets/ux-ui/userflows/student/Userflow-Students-RealTimeChanges.png)
 
 #### 3.1.4.5. Mobile Applications Prototyping
 
@@ -6613,7 +6828,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>US019</td>
   <td>Creación de Horarios</td>
@@ -6654,7 +6868,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>US037</td>
   <td>Activación de cuenta</td>
@@ -6675,7 +6888,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Salim</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>US038</td>
   <td>Inicio de sesión</td>
@@ -6736,7 +6948,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>TS002</td>
   <td>Exponer endpoint para actualizar academias</td>
@@ -6757,7 +6968,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS003</td>
   <td>Exponer endpoint para eliminar academias</td>
@@ -6778,7 +6988,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS004</td>
   <td>Exponer endpoint para listar academias</td>
@@ -6799,7 +7008,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS005</td>
   <td>Exponer endpoint para obtener detalles de una academia</td>
@@ -6820,7 +7028,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS006</td>
   <td>Exponer endpoint para registrar administrador</td>
@@ -6841,7 +7048,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS007</td>
   <td>Exponer endpoint para actualizar administrador</td>
@@ -6862,7 +7068,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>TS008</td>
   <td>Exponer endpoint para eliminar administrador</td>
@@ -6883,7 +7088,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS009</td>
   <td>Exponer endpoint para listar administradores</td>
@@ -6904,7 +7108,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Paul</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS010</td>
   <td>Exponer endpoint para obtener detalles de un administrador</td>
@@ -6945,7 +7148,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Daniel</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>TS012</td>
   <td>Exponer endpoint para actualizar matrículas</td>
@@ -6966,7 +7168,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS013</td>
   <td>Exponer endpoint para eliminar matrículas</td>
@@ -6987,7 +7188,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Salim</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS014</td>
   <td>Exponer endpoint para listar matrículas</td>
@@ -7008,7 +7208,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Paul</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>TS015</td>
   <td>Exponer endpoint para obtener detalles de una matrícula</td>
@@ -7029,7 +7228,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Diego</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS016</td>
   <td>Exponer endpoint para registrar periodos académicos</td>
@@ -7050,7 +7248,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS017</td>
   <td>Exponer endpoint para actualizar periodos académicos</td>
@@ -7071,7 +7268,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Diego</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS018</td>
   <td>Exponer endpoint para eliminar periodos académicos</td>
@@ -7092,7 +7288,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Salim</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS019</td>
   <td>Exponer endpoint para listar periodos académicos</td>
@@ -7113,7 +7308,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Paul</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>TS020</td>
   <td>Exponer endpoint para obtener detalles de un periodo académico</td>
@@ -7154,7 +7348,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>TS022</td>
   <td>Exponer endpoint para actualizar salones de clase</td>
@@ -7175,7 +7368,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Diego</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS023</td>
   <td>Exponer endpoint para eliminar salones de clase</td>
@@ -7196,7 +7388,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Salim</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS024</td>
   <td>Exponer endpoint para listar salones de clase</td>
@@ -7217,7 +7408,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Paul</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>TS025</td>
   <td>Exponer endpoint para obtener detalles de un salón de clase</td>
@@ -7238,7 +7428,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Daniel</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS026</td>
   <td>Exponer endpoint para registrar cursos</td>
@@ -7259,7 +7448,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS027</td>
   <td>Exponer endpoint para actualizar cursos</td>
@@ -7280,7 +7468,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Diego</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS028</td>
   <td>Exponer endpoint para eliminar cursos</td>
@@ -7301,7 +7488,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Salim</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS029</td>
   <td>Exponer endpoint para listar cursos</td>
@@ -7322,7 +7508,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Paul</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>TS030</td>
   <td>Exponer endpoint para obtener detalles de un curso</td>
@@ -7363,7 +7548,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>TS032</td>
   <td>Exponer endpoint para actualizar horarios</td>
@@ -7384,7 +7568,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Diego</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS033</td>
   <td>Exponer endpoint para eliminar horarios</td>
@@ -7405,7 +7588,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Salim</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS034</td>
   <td>Exponer endpoint para listar horarios</td>
@@ -7426,7 +7608,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Paul</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>TS035</td>
   <td>Exponer endpoint para obtener detalles de un horario</td>
@@ -7447,7 +7628,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Daniel</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS036</td>
   <td>Exponer endpoint para eliminar horarios antiguos</td>
@@ -7468,7 +7648,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Diego</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS037</td>
   <td>Exponer endpoint para obtener horarios por profesor</td>
@@ -7489,7 +7668,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Salim</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS038</td>
   <td>Exponer endpoint para obtener horarios por aula</td>
@@ -7510,7 +7688,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS039</td>
   <td>Exponer endpoint para obtener horarios por curso</td>
@@ -7531,7 +7708,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Paul</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS040</td>
   <td>Exponer endpoint para obtener todos los horarios</td>
@@ -7572,7 +7748,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>TS042</td>
   <td>Exponer endpoint para actualizar cuentas de cobro</td>
@@ -7593,7 +7768,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Diego</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS043</td>
   <td>Exponer endpoint para eliminar cuentas de cobro</td>
@@ -7614,7 +7788,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Salim</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS044</td>
   <td>Exponer endpoint para listar cuentas de cobro</td>
@@ -7635,7 +7808,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Paul</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>TS045</td>
   <td>Exponer endpoint para obtener detalles de una cuenta de cobro</td>
@@ -7656,7 +7828,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Daniel</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS046</td>
   <td>Exponer endpoint para asignar boletas de pago</td>
@@ -7677,7 +7848,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS047</td>
   <td>Exponer endpoint para actualizar boletas asignadas</td>
@@ -7698,7 +7868,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Diego</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS048</td>
   <td>Exponer endpoint para listar boletas de pago asignadas</td>
@@ -7719,7 +7888,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Salim</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>TS049</td>
   <td>Exponer endpoint para eliminar boletas asignadas</td>
@@ -7740,7 +7908,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Paul</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS050</td>
   <td>Exponer endpoint para registrar transacciones</td>
@@ -7761,7 +7928,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Daniel</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>TS051</td>
   <td>Exponer endpoint para actualizar transacciones</td>
@@ -7782,7 +7948,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS052</td>
   <td>Exponer endpoint para eliminar transacciones</td>
@@ -7803,7 +7968,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Salim</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS053</td>
   <td>Exponer endpoint para generar reportes financieros</td>
@@ -7824,7 +7988,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Paul</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>TS056</td>
   <td>Exponer endpoint para registrar cuenta de usuario</td>
@@ -7845,7 +8008,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Daniel</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS058</td>
   <td>Exponer endpoint para eliminar cuenta de usuario</td>
@@ -7866,7 +8028,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Diego</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS059</td>
   <td>Exponer endpoint para activar cuenta de usuario</td>
@@ -7887,7 +8048,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Salim</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS060</td>
   <td>Exponer endpoint para reenviar código de verificación</td>
@@ -7908,7 +8068,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Andrea</td>
   <td>To-do</td>
 </tr>
-
 <tr>
   <td>TS062</td>
   <td>Exponer endpoint para iniciar sesión de usuario</td>
@@ -7929,7 +8088,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Diego</td>
   <td>In-Process</td>
 </tr>
-
 <tr>
   <td>TS064</td>
   <td>Exponer endpoint para manejo de CORS y métodos permitidos</td>
@@ -7961,7 +8119,104 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
 
 #### 4.2.1.4. Testing Suite Evidence for Sprint Review
 
-*Escribir aquí*
+Durante el presente sprint se diseñó y ejecutó una suite de pruebas orientadas a validar los principales componentes del bounded *Institution*, garantizando el correcto funcionamiento de los agregados, value objects y servicios de dominio implementados bajo el enfoque de *Domain-Driven Design (DDD)* dentro de una arquitectura monolítica.
+
+Las pruebas se estructuraron en dos niveles complementarios:
+
+* **Unit Tests:** centrados en la verificación aislada de la lógica interna de los agregados (`Academy`, `Administrator`) y sus comandos (`RegisterAcademyCommand`, `RegisterAdministratorCommand`), empleando **JUnit** y el patrón **Arrange–Act–Assert (AAA)**.
+* **Behavior-Driven Development (BDD):** pruebas de aceptación funcional escritas en **Gherkin**, con sus definiciones de pasos implementadas en Java utilizando **Cucumber** y **JUnit**, simulando la interacción del cliente con los endpoints del servicio.
+
+Este enfoque combinó validaciones unitarias y de comportamiento, asegurando la correcta construcción de objetos de dominio, el manejo de excepciones y las respuestas esperadas ante escenarios de entrada válidos e inválidos.
+
+**Unit Test – AcademyTest**
+
+El propósito de estas pruebas fue validar la correcta creación y comportamiento del agregado `Academy` bajo diferentes condiciones, verificando la coherencia de sus value objects, la asignación controlada de administradores, la validación de identificadores y el manejo adecuado de excepciones en su lógica interna. Para ello, se emplearon herramientas como **JUnit 5** y las aserciones nativas de `org.junit.jupiter.api.Assertions`, siguiendo el patrón **Arrange–Act–Assert (AAA)**. Estas pruebas se relacionan directamente con la **User Story US-02**, la cual establece que, como administrador, se debe poder registrar una academia con su información básica para que pueda ser gestionada dentro del sistema.
+
+```java
+@Test
+@DisplayName("Should allow assigning an administrator only once and throw an exception if reassigned")
+void shouldAssignAdministratorAndThrowIfAlreadyAssigned() {
+    Academy academy = new Academy(
+        new AcademyName("Test Academy"),
+        new AcademyDescription("Academia de prueba."),
+        new StreetAddress("Calle Falsa 123", "Santiago", "Cusco", "Cusco"),
+        new EmailAddress("test@academy.com"),
+        new PhoneNumber("+51", "911111111"),
+        new Ruc("10765432109")
+    );
+
+    AdministratorId admin1 = new AdministratorId(1L);
+
+    academy.assignAdministrator(admin1);
+
+    assertTrue(academy.getAdministratorId().isAssigned());
+    assertThrows(IllegalStateException.class, () ->
+        academy.assignAdministrator(new AdministratorId(2L))
+    );
+}
+```
+**Acceptance Test (BDD) – Administrator Registration**
+
+Para esta prueba de aceptación se simuló, desde la perspectiva del usuario, el flujo completo del registro de un administrador de academia, verificando el comportamiento del sistema ante solicitudes válidas e inválidas. El objetivo fue evaluar la lógica del bounded de Institution bajo un enfoque de Behavior-Driven Development (BDD), utilizando archivos .feature escritos en lenguaje Gherkin y sus correspondientes definiciones de pasos en Java mediante Cucumber.
+
+
+```gherkin
+Feature: Administrator Registration
+
+  Scenario: Successful administrator registration
+    Given the academy service is available
+    When the client sends a registration request with:
+      | firstName | lastName | phoneCountryCode | phoneNumber | dniNumber | academyId | userId |
+      | Paul      | Sulca    | +51              | 987654321   | 12345678  | 1         | 10     |
+    Then the response should have status code 201
+    And the body should contain "Administrator registered successfully"
+
+  Scenario: Failed registration with invalid data
+    Given the academy service is available
+    When the client sends a registration request with:
+      | firstName | lastName | phoneCountryCode | phoneNumber | dniNumber | academyId | userId |
+      | (empty)   | Sulca    | +51              | abcde       | 00000000  | 1         | 10     |
+    Then the response should have status code 400
+    And the response body should contain key "errors"
+    And the response body's "errors" should include "Invalid phone number format"
+```
+
+**Extracto del archivo Steps:**
+
+```java
+@When("the client sends a registration request with:")
+public void the_client_sends_a_registration_request_with(DataTable dataTable) {
+    Map<String, String> data = dataTable.asMaps().getFirst();
+
+    try {
+        RegisterAdministratorCommand command = new RegisterAdministratorCommand(
+                new PersonName(data.get("firstName"), data.get("lastName")),
+                new PhoneNumber(data.get("phoneCountryCode"), data.get("phoneNumber")),
+                new DniNumber(data.get("dniNumber")),
+                new AcademyId(),
+                new UserId()
+        );
+
+        Administrator administrator = new Administrator(command);
+        administrator.registerAdministrator(command.academyId().academyId(), command.userId().userId());
+
+        responseStatus = 201;
+        responseMessage = "Administrator registered successfully";
+    } catch (Exception e) {
+        responseStatus = 400;
+        responseMessage = e.getMessage();
+    }
+}
+```
+**Relación de Commits de Testing**
+
+| Repository              | Branch              | Commit Id | Commit Message                                                              | Committed on |
+|-------------------------|---------------------|-----------|-----------------------------------------------------------------------------|--------------|
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `84d2b8a` | test(academy): add unit tests for Academy aggregate using AAA pattern       | 2025-10-08   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `cb7bfd3` | test(bdd): add Cucumber tests for administrator registration scenarios      | 2025-10-08   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `9b8ad85` | refactor(bdd): simplify variable declarations in RegisterAdministratorSteps | 2025-10-08   |
+
+
 
 #### 4.2.1.5. Execution Evidence for Sprint Review
 
