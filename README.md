@@ -146,6 +146,8 @@ Análisis de cantidad de commits realizados por semana.
 
 </div>
 
+<hr class="page-break">
+
 ## TP1
 
 **Tareas**
@@ -10261,30 +10263,7 @@ Mediante el endpoint `/teachers`, se listan todos los profesores registrados en 
 ![Listar profesores](./assets/ux-ui/evidences/backend/backend-doc-step-12.png)
 
 **Tabla de documentación**
-<style>
-.doc-table {
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-  word-wrap: break-word;
-  white-space: normal;
-}
-.doc-table th, .doc-table td {
-  border: 1px solid #ccc;
-  padding: 6px;
-  text-align: left;
-  vertical-align: top;
-  font-size: 13px;
-}
-.doc-table th:nth-child(1) { width: 8%; }   /* Endpoint */
-.doc-table th:nth-child(2) { width: 7%; }   /* Acción */
-.doc-table th:nth-child(3) { width: 13%; }  /* Path */
-.doc-table th:nth-child(4) { width: 15%; }  /* Parámetros */
-.doc-table th:nth-child(5) { width: 15%; }  /* Descripción */
-.doc-table th:nth-child(6) { width: 5%; }  /* Ejemplo Request */
-.doc-table th:nth-child(7) { width: 5%; }  /* Ejemplo Response */
-.doc-table th:nth-child(8) { width: 12%; }  /* URL */
-</style>
+
 <table class="doc-table">
   <thead>
     <tr>
@@ -10299,13 +10278,7 @@ Mediante el endpoint `/teachers`, se listan todos los profesores registrados en 
     </tr>
   </thead>
   <tbody>
-    <tr><td>Sign-up</td><td>POST</td><td>/api/v1/authentication/sign-up</td><td>Headers: Content-Type: application/json</td><td>Registra un nuevo usuario en el sistema.</td><td>{"firstName":"Ana",
-                                                                                                                                                                                    "lastName":"Rojas",
-                                                                                                                                                                                    "email":"ana@demo.com",
-                                                                                                                                                                                    "password":"Secret123"}</td>
-                                                                                                                                                                                    <td>201 Created: {"userId":"usr_1",
-                                                                                                                                                                                                        "email":"ana@demo.com",
-                                                                                                                                                                                                     "createdAt":"2025-10-08T12:00:00Z"}</td><td>https://demy-api-production.up.railway.app/api/v1/authentication/sign-up</td></tr>
+    <tr><td>Sign-up</td><td>POST</td><td>/api/v1/authentication/sign-up</td><td>Headers: Content-Type: application/json</td><td>Registra un nuevo usuario en el sistema.</td><td>{"firstName":"Ana", "lastName":"Rojas", "email":"ana@demo.com", "password":"Secret123"}</td><td>201 Created: {"userId":"usr_1", "email":"ana@demo.com", "createdAt":"2025-10-08T12:00:00Z"}</td><td>https://demy-api-production.up.railway.app/api/v1/authentication/sign-up</td></tr>
     <tr><td>Sign-in</td><td>POST</td><td>/api/v1/authentication/sign-in</td><td>Headers: Content-Type: application/json</td><td>Autentica un usuario registrado.</td><td>{"email":"ana@demo.com","password":"Secret123"}</td><td>200 OK: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI...","expiresIn":"86400"}</td><td>https://demy-api-production.up.railway.app/api/v1/authentication/sign-in</td></tr>
     <tr><td>Verify Account</td><td>POST</td><td>/api/v1/authentication/verify</td><td>Headers: Content-Type: application/json</td><td>Verifica la cuenta del usuario mediante código.</td><td>{"email":"ana@demo.com","verificationCode":"123456"}</td><td>200 OK: {"message":"Account verified successfully"}</td><td>https://demy-api-production.up.railway.app/api/v1/authentication/verify</td></tr>
     <tr><td>Resend Code</td><td>POST</td><td>/api/v1/authentication/resend-code</td><td>Headers: Content-Type: application/json</td><td>Reenvía el código de verificación al correo registrado.</td><td>{"email":"ana@demo.com"}</td><td>200 OK: {"message":"Verification code resent successfully"}</td><td>https://demy-api-production.up.railway.app/api/v1/authentication/resend-code</td></tr>
@@ -10370,8 +10343,11 @@ En Project overview se confirma el estado deployed (indicador verde). Desde aqu�
 Queda habilitado el despliegue continuo; cada push a la rama configurada desencadena automáticamente un nuevo build y publicación.
 
 **Repositorio de la Landing Page:** [Abrir en GitHub](https://github.com/nistrahq/demy-landing)  
+
 **Enlace público de la Landing Page:** [Abrir en el navegador](https://nistra-demy.netlify.app/)
+
 ---
+
 **Backend**
 
 En esta sección se detallan los pasos realizados para desplegar el Backend utilizando Railway con integración a GitHub. Se incluyen capturas de cada etapa como evidencia del proceso completo de despliegue y configuración de la base de datos.
@@ -10523,7 +10499,22 @@ Ingresamos a la URL generada y añadimos al final `/swagger-ui/index.html` para 
 
 #### 4.2.1.8. Team Collaboration Insights during Sprint
 
-*Escribir aquí*
+| Alumno                           | Actividad                    |
+|----------------------------------|------------------------------|
+| Crispin Ramos; Daniel Franco     | Api, Mobile, Landing         |
+| Aponte Cruzado, Andrea Marielena | UX/UI, Landing               |
+| Ramírez Mestanza, Salim Ignacio  | Api, Mobile, Landing , UX/UI |
+| Sulca Gonzales, Paúl Fernando    | Api, Mobile, Landing , UX/UI |
+| Vilca Saboya, Diego Alejandro    | Api, Mobile, Landing         |
+
+![Git Evidence — Mobile 1](./assets/ux-ui/evidences/git/git-mobile1.png)
+![Git Evidence — Mobile 2](./assets/ux-ui/evidences/git/git-mobile2.png)
+
+![Git Evidence — Landing 1](./assets/ux-ui/evidences/git/git-landing1.png)
+![Git Evidence — Landing 2](./assets/ux-ui/evidences/git/git-landing2.png)
+
+![Git Evidence — API 1](./assets/ux-ui/evidences/git/git-api1.png)
+![Git Evidence — API 2](./assets/ux-ui/evidences/git/git-api2.png)
 
 <hr class="page-break">
 
