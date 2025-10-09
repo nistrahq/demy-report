@@ -59,11 +59,14 @@
 
 # Registro de Versiones del Informe
 
-| Versión | Fecha        | Autor                                                                 | Descripción de modificación                                                          |
-|---------|--------------|-----------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| 1.0     | 30/08/2025   | Salim Ramirez                                                         | Creación inicial de la estructura del informe                                        |
-| 2.0     | 06/09/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca | Se completó el Capítulo I: Presentación                                              |
-| 3.0     | 17/09/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca | Se completó el Capitulo II: : Requirements Development and Software Solution Design  |
+| Versión | Fecha       | Autor                                                                      | Descripción de modificación                                                       |
+|---------|-------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1.0     | 30/08/2025  | Salim Ramirez                                                              | Creación inicial de la estructura del informe                                     |
+| 2.0     | 06/09/2025  | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se completó el Capítulo I: Presentación                                           |
+| 3.0     | 17/09/2025  | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se completó el CapÍtulo II: Requirements Development and Software Solution Design |
+| 3.1     | 28/09/2025  | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se levantó las observaciones de la primera entrega                                |
+| 4.0     | 4/10/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se completó el CapÍtulo III:  Solution UI/UX Design                               |        
+| 5.0     | 7/10/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se completó el Capítulo IV: : Product Implementation & Validation                 |  
 
 <hr class="page-break">
 
@@ -305,10 +308,10 @@ Análisis de cantidad de commits realizados por semana.
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7
 
-| Criterio específico                                                                                                                                             | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Conclusiones                                                                                                                                                                                                                                |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Actualiza conceptos y<br> conocimientos necesarios <br> para su desarrollo<br> profesional y en especial <br> para su proyecto en <br> soluciones de software.  | Aponte Cruzado, Andrea Marielena <br> *TB1*:Agregue artefactos UX <br> del nuevo segmento objetivo <br>  Crispin Ramos, Daniel Franco <br> *TB1*: Investigué los nuevos posibles competidores <br> de la aplicación en un ecosistema móvil  <br> Ramirez Mestanza, Salim Ignacio <br> *TB1*: Actualizé user stories <br> Sulca Gonzales, Paúl Fernando <br> *TB1*: Actualizé la arquitectura del software <br> en base al nuevo entorno móvil <br>  Vilca Saboya, Diego Alejandro <br> *TB1*: Actualizé mis conocimientos sobre la <br> parte táctica de DDD | Creemos que hemos logrado un buen desempeño en este aspecto, <br> ya que tuvimos que actualizar en algunos aspectos una <br> idea que utilizamos en un curso previo de desarrollo web.                                                      |
-| Reconoce la necesidad del <br> aprendizaje permamente <br> para el desempeño <br> profesional y el desarrollo de <br> proyectos en soluciones de <br> software. | Aponte Cruzado, Andrea Marielena <br> *TB1*:Agregue artefactos UX <br> del nuevo segmento objetivo <br>  Crispin Ramos, Daniel Franco <br> *TB1*: Investigué los nuevos posibles competidores <br> de la aplicación en un ecosistema móvil  <br> Ramirez Mestanza, Salim Ignacio <br> *TB1*: Actualizé user stories <br> Sulca Gonzales, Paúl Fernando <br> *TB1*: Actualizé la arquitectura del software <br> en base al nuevo entorno móvil <br>  Vilca Saboya, Diego Alejandro <br> *TB1*: Actualizé mis conocimientos sobre la <br> parte táctica de DDD | Consideramos que logramos cumplir este aspecto, ya que reconocemos la <br> necesidad de tener un aprendizaje permanente sobre nuevos entornos,<br> en este caso móvil, para reestructurar o actualizar<br> ideas de soluciones de software. |              
+| Criterio específico                                                                                                                                             | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Actualiza conceptos y<br> conocimientos necesarios <br> para su desarrollo<br> profesional y en especial <br> para su proyecto en <br> soluciones de software.  | Aponte Cruzado, Andrea Marielena <br> *TB1*: Agregue artefactos UX <br> del nuevo segmento objetivo <br> *TP1*: Diseñe en Figma la vista de <br> la aplicación para el segmento de estudiantes <br>  Crispin Ramos, Daniel Franco <br> *TB1*: Investigué los nuevos posibles competidores <br> de la aplicación en un ecosistema móvil  <br>  *TP1*: Diseñe en Figma la aplicación para <br> el segmento de profesores <br> Ramirez Mestanza, Salim Ignacio <br> *TB1*: Actualizé user stories <br> *TP1*: Diseñe en Figma la aplicación <br> para el segmento de Admins <br> Sulca Gonzales, Paúl Fernando <br> *TB1*: Actualizé la arquitectura del software <br> en base al nuevo entorno móvil <br> *TP1*: Diseñe en Figma la aplicación para <br> el segmento de Profesores <br>  Vilca Saboya, Diego Alejandro <br> *TB1*: Actualizé mis conocimientos sobre la <br> parte táctica de DDD <br> *TP1*: Diseñe en Figma la aplicación <br> para el segmento de Admins | *TB1*:Creemos que hemos logrado un buen desempeño en este aspecto, <br> ya que tuvimos que actualizar en algunos aspectos una <br> idea que utilizamos en un curso previo de desarrollo web. <br> *TP1*: Consideramos que si logramos cumplir esta competencia ya que <br> tuvimos que actualizar conceptos de diseño que vimos <br>en un curso anterior para el prototipado de nuestras soluciones móviles                                                   |
+| Reconoce la necesidad del <br> aprendizaje permamente <br> para el desempeño <br> profesional y el desarrollo de <br> proyectos en soluciones de <br> software. | Aponte Cruzado, Andrea Marielena <br> *TB1*: Agregue artefactos UX <br> del nuevo segmento objetivo <br> *TP1*: Diseñe en Figma la vista de <br> la aplicación para el segmento de estudiantes <br>  Crispin Ramos, Daniel Franco <br> *TB1*: Investigué los nuevos posibles competidores <br> de la aplicación en un ecosistema móvil  <br>  *TP1*: Diseñe en Figma la aplicación para <br> el segmento de profesores <br> Ramirez Mestanza, Salim Ignacio <br> *TB1*: Actualizé user stories <br> *TP1*: Diseñe en Figma la aplicación <br> para el segmento de Admins <br> Sulca Gonzales, Paúl Fernando <br> *TB1*: Actualizé la arquitectura del software <br> en base al nuevo entorno móvil <br> *TP1*: Diseñe en Figma la aplicación para <br> el segmento de Profesores <br>  Vilca Saboya, Diego Alejandro <br> *TB1*: Actualizé mis conocimientos sobre la <br> parte táctica de DDD <br> *TP1*: Diseñe en Figma la aplicación <br> para el segmento de Admins | *TB1*:Consideramos que logramos cumplir este aspecto, ya que reconocemos la <br> necesidad de tener un aprendizaje permanente sobre nuevos entornos,<br> en este caso móvil, para reestructurar o actualizar<br> ideas de soluciones de software.  <br> *TP1*: Consideramos que si cumplimos esta competencia ya que <br> reconocimos la necesidad de actualizar nuestros conocimientos  en UX/UI para ofrecer <br> una buena experiencia a nuestros usuarios |                                                                                                                                                                                             |           
 
 <hr class="page-break">
 
@@ -398,7 +401,7 @@ La startup **Nistra**, es un equipo conformado por estudiantes de la carrera de 
 
 El principal desafío identificado es la ausencia de un sistema centralizado para la gestión administrativa en academias educativas presenciales del Perú. Actualmente, muchas de estas instituciones dependen de hojas de cálculo, documentos físicos o plataformas no integradas, lo que incrementa la carga operativa, favorece errores recurrentes, provoca pérdida de información y reduce la eficiencia en el uso del tiempo. 
 
-Según Naranjo et al. (2025), “the lack of clarity in some procedures, duplication of tasks, and long response times represent obstacles that affect both student satisfaction and administrative staff productivity” (p. 3), lo que evidencia que los procesos administrativos manuales no solo retrasan las operaciones internas, sino que también impactan negativamente en la experiencia del estudiante y en la productividad del personal. De igual manera, Díaz-García et al. (2023) enfatizan que “digitalisation is necessary to implement a data-driven management model. It is necessary to develop systems that provide real-time information to facilitate control, management and decision-making processes” (p. 10), resaltando la necesidad de adoptar soluciones tecnológicas que permitan centralizar la información y facilitar la toma de decisiones estratégicas. Ambos estudios coinciden en que la digitalización y optimización de los procesos administrativos son esenciales para mejorar la eficiencia institucional y la calidad del servicio educativo.
+Según Naranjo et al. (2025), los procesos administrativos manuales, con su falta de claridad, duplicación de tareas y largos tiempos de respuesta, son obstáculos que reducen la satisfacción del estudiante y la productividad del personal (p. 3). Esta ineficiencia subraya la necesidad de un cambio. De igual manera, Díaz-García et al. (2023) enfatizan que la digitalización es esencial para implementar un modelo de gestión basado en datos, lo cual requiere sistemas que provean información en tiempo real para facilitar el control, la administración y la toma de decisiones estratégicas (p. 10). Ambos estudios coinciden en que digitalizar y optimizar los procesos administrativos es un paso indispensable para mejorar la eficiencia institucional y elevar la calidad del servicio educativo.
 
 #### When (Cuando)
 
@@ -2913,13 +2916,13 @@ El Context Diagram muestra como el sistema central que interactúa con tres usua
 
 El Container Diagram descompone la solución en sus principales contenedores: una Flutter App para coordinadores, una Android App para docentes y una iOS App para estudiantes, todas conectadas a un API Backend desarrollado en Spring Boot que concentra la lógica de negocio y accede a una base de datos MySQL para la información académica. El backend también se integra con Stripe y PagoEfectivo para pagos y con Gmail para notificaciones automáticas.
 
-![Container Diagram](assets/diagrams/software-architecture/containers/software_architecture_container_diagram.png)
+![Container Diagram](assets/diagrams/software-architecture/containers/software-architecture-container-diagram.png)
 
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 
 El Deployment Diagram muestra la distribución física del sistema en producción, detallando cómo se despliegan los contenedores y servicios en la infraestructura y cómo interactúan entre sí. Las aplicaciones móviles (iOS, Android y Flutter) se ejecutan en los dispositivos de los usuarios y son distribuidas mediante Firebase, mientras que el backend en Spring Boot y la base de datos MySQL se alojan en Railway PaaS. Asimismo, se incluyen sistemas externos como Stripe, PagoEfectivo y Gmail. En conjunto, el diagrama ofrece una visión clara de la ubicación de los componentes y de los protocolos de comunicación empleados.
 
-![Deployment Diagram](assets/diagrams/software-architecture/deployment/software_architecture_deployment_diagram.png)
+![Deployment Diagram](assets/diagrams/software-architecture/deployment/software-architecture-deployment-diagram.png)
 
 <hr class="page-break">
 
@@ -6479,7 +6482,21 @@ En esta sección se presentan los wireframes y mock-ups de la página de inicio 
 
 #### 3.1.3.2. Landing Page Mock-up
 
-*Escribir aquí*
+A continuación, se presenta la vista de la landing page en su versión para navegadores web de escritorio. En esta página se incluyen diferentes secciones relevantes para el usuario, donde se destacan los principales beneficios del producto, las alternativas de planes de pago y los perfiles del equipo de trabajo. Asimismo, se incorpora un apartado destinado a resolver las dudas más frecuentes de los usuarios.
+
+![LandingPageMockup9](./assets/ux-ui/mockups/landing-page/HeroSection.png)
+![LandingPageMockup5](./assets/ux-ui/mockups/landing-page/Features.png)
+![LandingPageMockup6](./assets/ux-ui/mockups/landing-page/Features2.png)
+![LandingPageMockup7](./assets/ux-ui/mockups/landing-page/Features3.png)
+![LandingPageMockup1](./assets/ux-ui/mockups/landing-page/AboutTheProduct.png)
+![LandingPageMockup2](./assets/ux-ui/mockups/landing-page/AboutTheTeam.png)
+![LandingPageMockup10](./assets/ux-ui/mockups/landing-page/HowItWorks.png)
+![LandingPageMockup11](./assets/ux-ui/mockups/landing-page/Pricing.png)
+![LandingPageMockup12](./assets/ux-ui/mockups/landing-page/Team.png)
+![LandingPageMockup13](./assets/ux-ui/mockups/landing-page/Testimonials.png)
+![LandingPageMockup3](./assets/ux-ui/mockups/landing-page/ContactUs.png)
+![LandingPageMockup4](./assets/ux-ui/mockups/landing-page/FAQ.png)
+![LandingPageMockup8](./assets/ux-ui/mockups/landing-page/Footer.png)
 
 <hr class="page-break">
 
@@ -6631,17 +6648,365 @@ La sección de Ayuda centraliza los recursos de soporte, como información de co
 ![Admin Centro de Ayuda](./assets/ux-ui/wireframes/mobile/admin/admin_help_center.png)
 ![Admin Modal Cierre de Sesión](./assets/ux-ui/wireframes/mobile/admin/admin_logout_modal.png)
 
+**Mobile Applications Wireframes: Flujo de Profesor**
+
+A continuación, se presentan los wireframes de la versión móvil destinados al perfil de docente. Estas pantallas muestran el flujo principal de interacción dentro de la aplicación, incluyendo el inicio de sesión, la gestión de asistencia, la visualización de horarios, la reprogramación de clases, el acceso al perfil del usuario, y la configuración de ajustes.
+
+Los wireframes permiten visualizar de manera clara la estructura, distribución y funcionalidad de cada sección antes de la etapa de diseño visual definitivo.
+
+**Flujo de Acceso y Recuperación de Contraseña**
+Este grupo incluye las pantallas necesarias para que el profesor ingrese a la aplicación o recupere su cuenta si ha olvidado la contraseña. El flujo está diseñado en pasos discretos para minimizar la frustración del usuario.
+
+![WireframeMobileTeacher9](./assets/ux-ui/wireframes/mobile/teacher/Loader.png)
+![WireframeMobileTeacher10](./assets/ux-ui/wireframes/mobile/teacher/Login.png)
+![WireframeMobileTeacher4](./assets/ux-ui/wireframes/mobile/teacher/ForgotPassword-CreateNewPassword.png)
+![WireframeMobileTeacher5](./assets/ux-ui/wireframes/mobile/teacher/ForgotPassword-ResetPassword.png)
+![WireframeMobileTeacher6](./assets/ux-ui/wireframes/mobile/teacher/ForgotPassword-VerificationCode.png)
+
+**Flujo Principal y Gestión de Cuenta**
+Este flujo representa el centro de navegación de la aplicación. La Home actúa como dashboard con acceso rápido a las funciones clave, mientras que Profile y Settings permiten la gestión de la identidad y las preferencias del profesor.
+
+![WireframeMobileTeacher8](./assets/ux-ui/wireframes/mobile/teacher/Home.png)
+![WireframeMobileTeacher11](./assets/ux-ui/wireframes/mobile/teacher/Profile.png)
+![WireframeMobileTeacher12](./assets/ux-ui/wireframes/mobile/teacher/Settings.png)
+
+**Flujo de Asistencia**
+El objetivo de este flujo es la toma de asistencia rápida y la generación estructurada de informes. El proceso de reporte está dividido en pantallas de elección para asegurar la precisión de los filtros.
+
+![WireframeMobileTeacher7](./assets/ux-ui/wireframes/mobile/teacher/HomeAttendanceModal.png)
+![WireframeMobileTeacher13](./assets/ux-ui/wireframes/mobile/teacher/TakeAttendance.png)
+![WireframeMobileTeacher1](./assets/ux-ui/wireframes/mobile/teacher/AttencanceReport-ChooseCourse.png)
+![WireframeMobileTeacher2](./assets/ux-ui/wireframes/mobile/teacher/AttencanceReport-ChooseDate.png)
+![WireframeMobileTeacher3](./assets/ux-ui/wireframes/mobile/teacher/AttendanceReport.png)
+
+**Flujo de Horario y Reprogramación**
+Este grupo gestiona la visualización del horario del profesor y ofrece una funcionalidad guiada de reprogramación de clases a través de múltiples pasos de confirmación.
+
+![WireframeMobileTeacher14](./assets/ux-ui/wireframes/mobile/teacher/TeachingReschedule-ChooseStarTime.png)
+![WireframeMobileTeacher15](./assets/ux-ui/wireframes/mobile/teacher/TeachingReschedule-ChooseEndTime.png)
+![WireframeMobileTeacher16](./assets/ux-ui/wireframes/mobile/teacher/TeachingReschedule-ChooseDay.png)
+![WireframeMobileTeacher18](./assets/ux-ui/wireframes/mobile/teacher/TeachingSchedule.png)
+![WireframeMobileTeacher17](./assets/ux-ui/wireframes/mobile/teacher/TeachingReschedule.png)
+
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
-*Escribir aquí*
+
+**Mobile Applications Wireflow: Flujo de Administrador**
+
+**User Goal**  
+Tener un control eficiente y organizado de los pagos de los alumnos, tanto por concepto de mensualidad como de matrícula, permitiendo un seguimiento claro del estado de cada pago y evitando retrasos o confusiones en la gestión administrativa.
+
+![Wireflow-Administrator-1](./assets/ux-ui/wireflows/administrator/Wireflow-Administrator-1.png)
+
+**User Goal**  
+Acceder de forma rápida y segura a los datos del alumno, incluyendo su información personal, académica y estado de pagos, para facilitar la gestión y toma de decisiones dentro del sistema.
+
+![Wireflow-Administrator-2](./assets/ux-ui/wireflows/administrator/Wireflow-Administrator-2.png)
+
+**User Goal**  
+Realizar de manera sencilla, rápida y satisfactoria el proceso de matrícula del alumno, asegurando que los datos ingresados sean correctos y que la inscripción quede correctamente registrada en el sistema.
+
+![Wireflow-Administrator-3](./assets/ux-ui/wireflows/administrator/Wireflow-Administrator-3.png)
+
+**User Goal**  
+Llevar un control claro y preciso de los ingresos y egresos de la academia, permitiendo supervisar el flujo económico, generar reportes financieros y optimizar la gestión administrativa.
+
+![Wireflow-Administrator-4](./assets/ux-ui/wireflows/administrator/Wireflow-Administrator-4.png)
+
+**User Goal**  
+Gestionar de forma eficiente y organizada los recursos de la academia, incluyendo cursos, salones, horarios y periodos, con el fin de optimizar su uso y garantizar el correcto funcionamiento de las actividades académicas y administrativas.
+
+![Wireflow-Administrator-5](./assets/ux-ui/wireflows/administrator/Wireflow-Administrator-5.png)
+
+
+**Mobile Applications Wireflow: Flujo de Profesor**
+
+**User Goal** 
+Tener una vista clara y concisa de su horario semanal de clases y actividades, permitiendo una planificación eficiente de su tiempo y evitando conflictos o inasistencias.
+
+![Wireflow-Teacher-1](./assets/ux-ui/wireflows/teacher/Wireflow-Teacher-ReportAttendance.png)
+
+**User Goal** 
+Solicitar o ejecutar la reprogramación de una clase de manera eficiente, indicando el motivo y proponiendo una nueva fecha/hora, con la aprobación administrativa correspondiente.
+
+![Wireflow-Teacher-2](./assets/ux-ui/wireflows/teacher/Wireflow-Teacher-RescheduleClass.png)
+
+**User Goal** 
+Realizar la toma de asistencia de los alumnos de forma rápida y sencilla al inicio de cada clase, asegurando un registro preciso para fines académicos y administrativos.
+
+![Wireflow-Teacher-3](./assets/ux-ui/wireflows/teacher/Wireflow-Teacher-TakeAttendance.png)
+
+
+**User Goal** 
+Reportar la asistencia consolidada de un grupo o período al sistema, facilitando la gestión administrativa y la generación de informes finales de asistencia.
+
+![Wireflow-Teacher-4](./assets/ux-ui/wireflows/teacher/Wireflow-Teacher-ViewSchedule.png)
+
+
+**Mobile Applications Wireflow: Flujo de Estudiante**
+
+**User Goal** 
+Consultar de forma rápida y clara su horario de clases completo, incluyendo el día, la hora, el nombre del curso y la ubicación (salón), para poder asistir puntualmente y planificar sus actividades académicas sin confusiones.
+
+![Wireflow-Student-1](./assets/ux-ui/wireflows/student/Wireflow-Student-ViewSchedule.png)
+
+
+**User Goal** 
+El estudiante necesita consultar el estado de sus pagos pendientes de forma clara y detallada, incluyendo el monto, la fecha de vencimiento y el concepto, para evitar cargos por mora y planificar sus finanzas.
+
+![Wireflow-Student-2](./assets/ux-ui/wireflows/student/Wireflow-Student-ViewDebts.png)
+
+
+**User Goal** 
+El estudiante debe recibir y consultar inmediatamente cualquier cambio o reprogramación de sus clases y confirmar que ha sido notificado, para evitar asistir a clases canceladas o llegar tarde a clases movidas.
+
+![Wireflow-Student-3](./assets/ux-ui/wireflows/student/Wireflow-Student-ViewScheduleChangues.png)
 
 #### 3.1.4.3. Mobile Applications Mock-ups
 
-*Escribir aquí*
+**Mobile Applications Mock-ups: Administrador**
+
+A continuación, se presenta la sustentación de los mockups para la aplicación del **Administrador**. El diseño se enfoca en la seguridad, claridad y eficiencia, aplicando un Design System consistente para una experiencia de usuario intuitiva.
+
+**Registro y Creación de Cuenta**
+
+Estas pantallas guían al nuevo administrador en tres pasos claros y seguros: registro, verificación por email y finalización del perfil. Se utiliza un diseño minimalista para no abrumar al usuario, pidiendo la información de manera progresiva y asegurando la cuenta a través de la verificación del correo electrónico.
+
+![Admin Registro](assets/ux-ui/mockups/mobile/admin/admin_registro.png)
+![Admin Verificación Email](assets/ux-ui/mockups/mobile/admin/admin_verificacion_email.png)
+![Admin Completar Perfil](assets/ux-ui/mockups/mobile/admin/admin_completar_perfil.png)
+
+**Inicio de Sesión (Login)**
+
+Pantalla de acceso estándar y familiar diseñada para un ingreso rápido a la plataforma. Prioriza la usabilidad con campos claros y un enlace fácilmente accesible para la recuperación de contraseña, permitiendo la autogestión del usuario.
+
+![Admin Login](assets/ux-ui/mockups/mobile/admin/admin_login.png)
+
+**Recuperación de Contraseña**
+
+Estas pantallas garantizan el guiado en cuatro pasos simples para una recuperación de cuenta segura:
+1.  **Solicitud:** El usuario ingresa su email.
+2.  **Verificación:** Confirma su identidad con un código.
+3.  **Restablecimiento:** Crea una nueva contraseña.
+4.  **Confirmación:** Recibe una notificación de éxito.
+
+Solo el propietario de la cuenta pueda realizar cambios, ofreciendo una experiencia clara y sin fricciones.
+
+![Admin Recuperar Password Solicitud](assets/ux-ui/mockups/mobile/admin/admin_recuperar_password_solicitud.png)
+![Admin Recuperar Password Verificación Código](assets/ux-ui/mockups/mobile/admin/admin_recuperar_password_verificacion_codigo.png)
+![Admin Ingreso Nueva Password](assets/ux-ui/mockups/mobile/admin/admin_ingreso_nueva_password.png)
+![Admin Confirmación Cambio Password](assets/ux-ui/mockups/mobile/admin/admin_confirmacion_cambio_password.png)
+
+**Documentación Legal**
+
+Pantallas dedicadas para los **Términos y Condiciones** y la **Política de Privacidad**. El diseño es limpio y se centra en la legibilidad del contenido, asegurando la transparencia y facilitando la consulta desde el flujo de registro.
+
+![Admin Términos y Condiciones](assets/ux-ui/mockups/mobile/admin/admin_terminos_y_condiciones.png)
+![Admin Política de Privacidad](assets/ux-ui/mockups/mobile/admin/admin_politica_de_privacidad.png)
+
+**Suscripción y Configuración de Academia**
+
+Estas pantallas de onboarding que sigue al registro. Guía al administrador a través de la selección de un plan, el ingreso seguro de los datos de pago y la configuración inicial de la academia. El proceso está diseñado para ser rápido y motivador, finalizando con una pantalla de éxito que da la bienvenida al usuario y lo dirige al panel principal.
+
+![Admin Selección Plan](assets/ux-ui/mockups/mobile/admin/admin_seleccion_plan.png)
+![Admin Formulario Pago](assets/ux-ui/mockups/mobile/admin/admin_formulario_pago.png)
+![Admin Configuración Academia](assets/ux-ui/mockups/mobile/admin/admin_configuracion_academia.png)
+![Admin Confirmación Éxito](assets/ux-ui/mockups/mobile/admin/admin_confirmacion_exito.png)
+
+**Pantalla Principal (Dashboard)**
+
+Muestra un resumen visual del estado de la institución con métricas clave, gráficos de ingresos/gastos y datos importantes del periodo académico actual. Permite una visión general rápida.
+
+![Admin Dashboard](assets/ux-ui/mockups/mobile/admin/admin_dashboard.png)
+
+**Gestión de Periodos Académicos**
+
+Permite crear, ver, editar y eliminar periodos académicos. Muestra el periodo actual de forma destacada y un listado completo para una gestión sencilla.
+
+![Admin Periodos Management](assets/ux-ui/mockups/mobile/admin/admin_periods_management.png)
+![Admin Periodos Nuevo Formulario](assets/ux-ui/mockups/mobile/admin/admin_periods_new_form.png)
+
+**Gestión de Profesores**
+
+Facilita la administración de profesores, permitiendo registrar, editar y eliminar sus perfiles. El diseño es consistente con otras secciones de gestión para optimizar el flujo de trabajo.
+
+![Admin Profesores Registro Formulario](assets/ux-ui/mockups/mobile/admin/admin_teachers_register_form.png)
+![Admin Profesores Edición Formulario](assets/ux-ui/mockups/mobile/admin/admin_teachers_edit_form.png)
+
+**Seguimiento de Estudiantes**
+
+Permite buscar y visualizar el perfil de cada estudiante. Al seleccionar uno, se muestra una tarjeta con su información principal para un seguimiento rápido y eficiente.
+
+![Admin Seguimiento Estudiantes](assets/ux-ui/mockups/mobile/admin/admin_student_monitoring.png)
+
+**Componente Reutilizable: Modal de Confirmación**
+
+Este modal de advertencia aparece antes de realizar acciones destructivas, como eliminar datos. Su propósito es prevenir errores, forzando al usuario a confirmar su decisión.
+
+![Admin Modal Confirmación Eliminación](assets/ux-ui/mockups/mobile/admin/admin_delete_confirmation_modal.png)
+
+**Gestión de Aulas (Classrooms)**
+
+Esta sección permite administrar la infraestructura de aulas. El administrador puede registrar nuevas aulas con detalles como código y capacidad, además de editar o eliminar las existentes. La interfaz mantiene la consistencia visual y funcional del resto de la aplicación para facilitar su uso.
+
+![Admin Aulas Nuevo Formulario](assets/ux-ui/mockups/mobile/admin/admin_classrooms_new_form.png)
+![Admin Aulas Edición Formulario](assets/ux-ui/mockups/mobile/admin/admin_classrooms_edit_form.png)
+
+**Gestión de Cursos**
+
+Aquí se gestiona la oferta académica de la institución. Permite la creación, edición y eliminación de cursos, asignando nombre, código y descripción. El diseño sigue el patrón de las demás pantallas de gestión para una experiencia de usuario unificada y predecible.
+
+![Admin Cursos Nuevo Formulario](assets/ux-ui/mockups/mobile/admin/admin_courses_new_form.png)
+![Admin Cursos Edición Formulario](assets/ux-ui/mockups/mobile/admin/admin_courses_edit_form.png)
+
+**Gestión de Facturación (Billing)**
+
+Esta sección se centra en el control de las cuentas de facturación de los estudiantes. Permite buscar cuentas, ver su estado (activo, cancelado, suspendido) y gestionar facturas individuales. El administrador puede crear nuevas facturas directamente desde este módulo.
+
+![Admin Facturación Búsqueda](assets/ux-ui/mockups/mobile/admin/admin_billing_search.png)
+![Admin Facturación Nueva Factura](assets/ux-ui/mockups/mobile/admin/admin_billing_new_invoice.png)
+
+**Finanzas y Contabilidad (Finance & Accounting)**
+
+Funciona como el centro financiero general de la institución. Aquí, el administrador puede registrar todas las transacciones de ingresos y gastos, ver un historial detallado y analizar resúmenes visuales a través de gráficos para un mejor seguimiento contable.
+
+![Admin Nueva Transacción](assets/ux-ui/mockups/mobile/admin/admin_finance_new_transaction.png)
+![Admin Lista de Transacciones](assets/ux-ui/mockups/mobile/admin/admin_finance_transaction_list.png)
+
+**Perfil del Administrador**
+
+Pantalla donde el administrador puede ver y editar su información personal y los datos de la academia asociada a su cuenta. También muestra el estado de su cuenta de usuario (rol, estado de verificación).
+
+![Admin Perfil](assets/ux-ui/mockups/mobile/admin/admin_profile.png)
+
+**Configuración (Settings)**
+
+Permite al administrador personalizar su experiencia en la aplicación. Incluye opciones de accesibilidad, configuración de tema (modo oscuro, alto contraste), gestión de notificaciones y cambio de contraseña.
+
+![Admin Configuración](assets/ux-ui/mockups/mobile/admin/admin_settings.png)
+
+**Ayuda y Cierre de Sesión**
+
+La sección de Ayuda centraliza los recursos de soporte, como información de contacto y enlaces a documentos legales. El cierre de sesión se realiza de forma segura a través de un modal de confirmación para evitar salidas accidentales.
+
+![Admin Centro de Ayuda](assets/ux-ui/mockups/mobile/admin/admin_help_center.png)
+![Admin Modal Cierre de Sesión](assets/ux-ui/mockups/mobile/admin/admin_logout_modal.png)
+
+**Mobile Applications Mock-ups: Profesor**
+
+A continuación, se presentan los mockups de la versión móvil destinados al perfil de docente. Estas pantallas muestran el flujo principal de interacción dentro de la aplicación, incluyendo el inicio de sesión, la gestión de asistencia, la visualización de horarios, la reprogramación de clases, el acceso al perfil del usuario, y la configuración de ajustes.
+
+Los mockups permiten visualizar de manera clara la estructura, distribución y funcionalidad de cada sección antes de la etapa de diseño visual definitivo.
+
+**Acceso y Recuperación de Contraseña**
+
+Este grupo incluye las pantallas necesarias para que el profesor ingrese a la aplicación o recupere su cuenta si ha olvidado la contraseña. El flujo está diseñado en pasos discretos para minimizar la frustración del usuario.
+
+![Loader](./assets/ux-ui/mockups/mobile/teacher/Loader.png)
+![Login](./assets/ux-ui/mockups/mobile/teacher/Login.png)
+![ForgotPassword-CreateNew](./assets/ux-ui/mockups/mobile/teacher/ForgotPassword-CreateNew.png)
+![ForgotPassword-ResetPass](./assets/ux-ui/mockups/mobile/teacher/ForgotPassword-ResetPass.png)
+![ForgotPassword-Verification](./assets/ux-ui/mockups/mobile/teacher/ForgotPassword-Verification.png)
+
+**Principal y Gestión de Cuenta**
+
+Este flujo representa el centro de navegación de la aplicación. La Home actúa como dashboard con acceso rápido a las funciones clave, mientras que Profile y Settings permiten la gestión de la identidad y las preferencias del profesor.
+
+![Home](./assets/ux-ui/mockups/mobile/teacher/Home.png)
+![Profile](./assets/ux-ui/mockups/mobile/teacher/Profile.png)
+![Settings](./assets/ux-ui/mockups/mobile/teacher/Settings.png)
+
+**Asistencia**
+
+El objetivo de este flujo es la toma de asistencia rápida y la generación estructurada de informes. El proceso de reporte está dividido en pantallas de elección para asegurar la precisión de los filtros.
+
+![HomeAttendanceModal](./assets/ux-ui/mockups/mobile/teacher/HomeAttendanceModal.png)
+![TakeAttendance](./assets/ux-ui/mockups/mobile/teacher/TakeAttendance.png)
+![TakeAttendanceWithoutMarks](./assets/ux-ui/mockups/mobile/teacher/TakeAttendance-Without-Marks.png)
+![AttendanceReport-ChooseDate](./assets/ux-ui/mockups/mobile/teacher/AttendanceReport-Choose-Date.png)
+![AttendanceReport-Modal](./assets/ux-ui/mockups/mobile/teacher/AttendanceReport-Modal.png)
+![AttendanceReport](./assets/ux-ui/mockups/mobile/teacher/AttendanceReport.png)
+
+**Horario y Reprogramación**
+
+Este grupo gestiona la visualización del horario del profesor y ofrece una funcionalidad guiada de reprogramación de clases a través de múltiples pasos de confirmación.
+
+![TeachingSchedule](./assets/ux-ui/mockups/mobile/teacher/Teaching-Schedule.png)
+![TeachingSchedule-1](./assets/ux-ui/mockups/mobile/teacher/Teaching-Schedule-1.png)
+![TeachingSchedule-2](./assets/ux-ui/mockups/mobile/teacher/Teaching-Schedule-2.png)
+![TeachingReschedule](./assets/ux-ui/mockups/mobile/teacher/Teaching-Reschedule.png)
+![TeachingReschedule-ModalSave](./assets/ux-ui/mockups/mobile/teacher/Teaching-Reschedule-Modal-Save.png)
+![TeachingReschedule-ChooseDate](./assets/ux-ui/mockups/mobile/teacher/Teaching-Reschedule-Choose-Date.png)
+![TeachingReschedule-ChooseStartTime](./assets/ux-ui/mockups/mobile/teacher/Teaching-Reschedule-Choose-Start-Time.png)
+![TeachingReschedule-ChooseEndTime](./assets/ux-ui/mockups/mobile/teacher/Teaching-Reschedule-Choose-End-Time.png)
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
-*Escribir aquí*
+**SEGMENTO: ADMIN**
+
+**User Goal**  
+Tener un control eficiente y organizado de los pagos de los alumnos, tanto por concepto de mensualidad como de matrícula, permitiendo un seguimiento claro del estado de cada pago y evitando retrasos o confusiones en la gestión administrativa.
+
+![UserFlow-1](./assets/ux-ui/userflows/userflow-admin-1.png)
+
+***User Goal***  
+Acceder de forma rápida y segura a los datos del alumno, incluyendo su información personal, académica y estado de pagos, para facilitar la gestión y toma de decisiones dentro del sistema.
+
+![UserFlow-2](./assets/ux-ui/userflows/userflow-admin-2.png)
+
+**User Goal**  
+Realizar de manera sencilla, rápida y satisfactoria el proceso de matrícula del alumno, asegurando que los datos ingresados sean correctos y que la inscripción quede correctamente registrada en el sistema.
+
+![UserFlow-3](./assets/ux-ui/userflows/userflow-admin-3.png)
+
+**User Goal**    
+Llevar un control claro y preciso de los ingresos y egresos de la academia, permitiendo supervisar el flujo económico, generar reportes financieros y optimizar la gestión administrativa.
+
+![UserFlow-4](./assets/ux-ui/userflows/userflow-admin-4.png)
+
+**User Goal**     
+Gestionar de forma eficiente y organizada los recursos de la academia, incluyendo cursos, salones, horarios y periodos, con el fin de optimizar su uso y garantizar el correcto funcionamiento de las actividades académicas y administrativas.
+
+![UserFlow-5](./assets/ux-ui/userflows/userflow-admin-5.png)
+
+**SEGMENTO: TEACHER**
+
+**User Goal** 
+Tener una vista clara y concisa de su horario semanal de clases y actividades, permitiendo una planificación eficiente de su tiempo y evitando conflictos o inasistencias.
+
+![Userflow-Teacher-1](assets/ux-ui/userflows/teacher/Userflow-Teacher-ReportAttendance.png)
+
+**User Goal**
+Solicitar o ejecutar la reprogramación de una clase de manera eficiente, indicando el motivo y proponiendo una nueva fecha/hora, con la aprobación administrativa correspondiente.
+
+![Userflow-Teacher-2](assets/ux-ui/userflows/teacher/Userflow-Teacher-RescheduleClass.png)
+
+**User Goal**
+Realizar la toma de asistencia de los alumnos de forma rápida y sencilla al inicio de cada clase, asegurando un registro preciso para fines académicos y administrativos.
+
+![Userflow-Teacher-3](assets/ux-ui/userflows/teacher/Userflow-Teacher-TakeAttendance.png)
+
+**User Goal**
+Reportar la asistencia consolidada de un grupo o período al sistema, facilitando la gestión administrativa y la generación de informes finales de asistencia.
+
+![Userflow-Teacher-4](assets/ux-ui/userflows/teacher/Userflow-Teacher-ViewSchedule.png)
+
+**SEGMENTO: STUDENTS**
+
+**User Goal**
+Visualizar de forma clara y ordenada su **horario semanal de clases**, incluyendo materias, docentes y aulas asignadas, para optimizar su organización y evitar confusiones o ausencias.
+
+![Userflow-Students-1](assets/ux-ui/userflows/student/Userflow-Students-ViewSchedule.png)
+
+**User Goal**
+Consultar de manera rápida y segura **sus deudas o pagos pendientes** con la academia, visualizando montos, fechas límite y opciones de pago disponibles.
+
+![Userflow-Students-2](assets/ux-ui/userflows/student/Userflow-Students-ViewDebts.png)
+
+**User Goal**
+Visualizar en tiempo real **los cambios de horario o reprogramaciones de clases**, recibiendo notificaciones automáticas y actualizaciones inmediatas en su calendario personal.
+
+![Userflow-Students-3](assets/ux-ui/userflows/student/Userflow-Students-RealTimeChanges.png)
 
 #### 3.1.4.5. Mobile Applications Prototyping
 
@@ -7086,15 +7451,1818 @@ A continuación se presentará el sprint planning para esta entrega, detallando 
 
 #### 4.2.1.2. Sprint Backlog 1
 
-*Escribir aquí*
+El objetivo de este Sprint es presentar la Landing Page para que los usuarios tengan un primer acercamiento a lo que es Demy y todo lo que ofrecemos. Así mismo, presentar la primera versión de nuestra app móvil nativa en Android que represente el core del negocio.  
+A continuación se presenta una captura de pantalla de nuestro tablero en Trello:  
+![Captura  Sprint 1 de Trello](./assets/images/screenshots/trello-sprint-1.png)  
+[Enlace del Trello](https://trello.com/b/7y3R3AOk/sprint-1-app-moviles)  
+
+<div style="font-size:80%; overflow-x:auto;">
+  <table border="1" cellspacing="0" cellpadding="5">
+    <thead>
+      <tr>
+        <th colspan="2">Sprint #</th>
+        <th colspan="6">Sprint 1</th>
+      </tr>
+      <tr>
+        <th colspan="2">User Story</th>
+        <th colspan="6">Work-Item / Task</th>
+      </tr>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Estimation (Hours)</th>
+        <th>Assigned To</th>
+        <th>Status (To-do / In-Process / To-Review / Done)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>SWS001</td>
+        <td>Ver sección Hero</td>
+        <td>SWS001a</td>
+        <td>Maquetar Hero Section</td>
+        <td>Diseñar estructura con título, descripción y CTA principal</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS001</td>
+        <td>Ver sección Hero</td>
+        <td>SWS001b</td>
+        <td>Aplicar contenido y responsive</td>
+        <td>Agregar textos finales y adaptar vista móvil/tablet</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS002</td>
+        <td>Ver sección Features</td>
+        <td>SWS002a</td>
+        <td>Maquetar estructura base</td>
+        <td>Crear contenedor con título y colocar las features</td>
+        <td>2</td>
+        <td>Diego</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS002</td>
+        <td>Ver sección Features</td>
+        <td>SWS002b</td>
+        <td>Agregar iconos y estilos</td>
+        <td>Implementar título y descripción y una imagen, de manera alineada</td>
+        <td>2</td>
+        <td>Diego</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS003</td>
+        <td>Ver sección How It Works</td>
+        <td>SWS003a</td>
+        <td>Estructurar pasos del flujo</td>
+        <td>Maquetar pasos del proceso con íconos y descripciones</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS003</td>
+        <td>Ver sección How It Works</td>
+        <td>SWS003b</td>
+        <td>Optimizar interactividad</td>
+        <td>Agregar animaciones y responsividad del bloque</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS004</td>
+        <td>Ver sección About The Product</td>
+        <td>SWS004a</td>
+        <td>Diseñar encabezado</td>
+        <td>Agregar título, subtítulo y descripción general</td>
+        <td>1</td>
+        <td>Daniel</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS004</td>
+        <td>Ver sección About The Product</td>
+        <td>SWS004b</td>
+        <td>Agregar características visuales</td>
+        <td>Incluir iconos y texto explicativo por característica</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS005</td>
+        <td>Ver sección Testimonials</td>
+        <td>SWS005a</td>
+        <td>Maquetar Cards de Testimonios</td>
+        <td>Agregar nombre, foto y texto de testimonio</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS005</td>
+        <td>Ver sección Testimonials</td>
+        <td>SWS005b</td>
+        <td>Aplicar estilo y responsive</td>
+        <td>Agregar puntuación de estrellas y adaptar vista móvil</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS006</td>
+        <td>Ver sección About Us</td>
+        <td>SWS006a</td>
+        <td>Maquetar contenido</td>
+        <td>Agregar título, subtítulo e imagen del equipo</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS006</td>
+        <td>Ver sección About Us</td>
+        <td>SWS006b</td>
+        <td>Optimizar presentación</td>
+        <td>Aplicar estilos visuales y distribución responsive</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS007</td>
+        <td>Ver sección About The Team</td>
+        <td>SWS007a</td>
+        <td>Diseñar cards del equipo</td>
+        <td>Agregar nombre, rol y foto de cada integrante</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS007</td>
+        <td>Ver sección About The Team</td>
+        <td>SWS007b</td>
+        <td>Aplicar efectos y responsive</td>
+        <td>Ajustar alineación, hover y vista móvil</td>
+        <td>1</td>
+        <td>Paul</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS008</td>
+        <td>Ver sección Pricing</td>
+        <td>SWS008a</td>
+        <td>Maquetar estructura de planes</td>
+        <td>Crear layout con 3 pricing cards básicas</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS008</td>
+        <td>Ver sección Pricing</td>
+        <td>SWS008b</td>
+        <td>Agregar detalles y CTA</td>
+        <td>Aplicar botones de compra y diseño responsive</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS009</td>
+        <td>Ver sección FAQ</td>
+        <td>SWS009a</td>
+        <td>Diseñar estructura de preguntas</td>
+        <td>Maquetar lista de preguntas con comportamiento expandible</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS009</td>
+        <td>Ver sección FAQ</td>
+        <td>SWS009b</td>
+        <td>Optimizar visual y responsive</td>
+        <td>Aplicar estilos visuales y transiciones de apertura</td>
+        <td>1</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS010</td>
+        <td>Ver sección Contact</td>
+        <td>SWS010a</td>
+        <td>Maquetar formulario</td>
+        <td>Agregar inputs de Name, Email, Phone y Message</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS010</td>
+        <td>Ver sección Contact</td>
+        <td>SWS010b</td>
+        <td>Aplicar estilos y responsive</td>
+        <td>Agregar imagen lateral y validaciones visuales</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS011</td>
+        <td>Ver sección Footer</td>
+        <td>SWS011a</td>
+        <td>Estructurar Footer</td>
+        <td>Agregar logo, links y derechos reservados</td>
+        <td>1</td>
+        <td>Paul</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>SWS011</td>
+        <td>Ver sección Footer</td>
+        <td>SWS011b</td>
+        <td>Agregar redes y responsive</td>
+        <td>Incluir iconos de redes y diseño adaptable</td>
+        <td>1</td>
+        <td>Paul</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US001</td>
+        <td>Registrar nueva academia</td>
+        <td>US001a</td>
+        <td>Crear formulario de registro</td>
+        <td>Inputs, validaciones y envío al backend</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>In-Process</td>
+      </tr>
+      <tr>
+        <td>US001</td>
+        <td>Registrar nueva academia</td>
+        <td>US001b</td>
+        <td>Diseñar layout y feedback visual</td>
+        <td>Diseño responsive con snackbar y alerts</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>In-Process</td>
+      </tr>
+      <tr>
+        <td>US004</td>
+        <td>Registrar profesor</td>
+        <td>US004a</td>
+        <td>Formulario de registro</td>
+        <td>Inputs, validaciones y envío</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>In-Process</td>
+      </tr>
+      <tr>
+        <td>US004</td>
+        <td>Registrar profesor</td>
+        <td>US004b</td>
+        <td>Feedback visual</td>
+        <td>Diseño responsive y alerts de confirmación</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>In-Process</td>
+      </tr>
+      <tr>
+        <td>US007</td>
+        <td>Matricular alumno</td>
+        <td>US007a</td>
+        <td>Formulario matrícula</td>
+        <td>Campos alumno, periodo y clase</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>In-Process</td>
+      </tr>
+      <tr>
+        <td>US007</td>
+        <td>Matricular alumno</td>
+        <td>US007b</td>
+        <td>Validaciones visuales</td>
+        <td>Mensajes de éxito/error</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>In-Process</td>
+      </tr>
+<tr>
+  <td>US016</td>
+  <td>Creación de Salones de Clase</td>
+  <td>US016a</td>
+  <td>Diseñar formulario de creación</td>
+  <td>Implementar vista y formulario con campos de nombre, capacidad y descripción, usando React Hook Form + Zod para validaciones</td>
+  <td>4</td>
+  <td>Andrea</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>US016</td>
+  <td>Creación de Salones de Clase</td>
+  <td>US016b</td>
+  <td>Integrar con API de salones</td>
+  <td>Conectar formulario al endpoint POST /api/classrooms y mostrar feedback visual (éxito/error) con snackbar o modal</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>US019</td>
+  <td>Creación de Horarios</td>
+  <td>US019a</td>
+  <td>Diseñar formulario de creación de horarios</td>
+  <td>Crear formulario con campos de curso, profesor, salón, hora de inicio y fin, y formato horario</td>
+  <td>4</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>US019</td>
+  <td>Creación de Horarios</td>
+  <td>US019b</td>
+  <td>Integrar con API de horarios</td>
+  <td>Conectar formulario al endpoint POST /api/schedules, manejar validaciones y mostrar confirmación de registro</td>
+  <td>3</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>US036</td>
+  <td>Registro de cuenta</td>
+  <td>US036a</td>
+  <td>Diseñar e implementar formulario de registro</td>
+  <td>Crear vista de registro con campos de nombre, correo, contraseña y validaciones usando React Hook Form + Zod</td>
+  <td>4</td>
+  <td>Andrea</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>US036</td>
+  <td>Registro de cuenta</td>
+  <td>US036b</td>
+  <td>Integrar con API de registro</td>
+  <td>Conectar el formulario al endpoint POST /api/auth/sign-up y mostrar mensajes de éxito o error</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>US037</td>
+  <td>Activación de cuenta</td>
+  <td>US037a</td>
+  <td>Implementar vista de activación</td>
+  <td>Diseñar pantalla de activación que consuma el endpoint POST /api/users/{id}/activate y muestre mensajes de confirmación</td>
+  <td>3</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>US037</td>
+  <td>Activación de cuenta</td>
+  <td>US037b</td>
+  <td>Diseñar feedback visual</td>
+  <td>Agregar notificaciones visuales (alert o snackbar) de activación exitosa y redirección automática al login</td>
+  <td>2</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>US038</td>
+  <td>Inicio de sesión</td>
+  <td>US038a</td>
+  <td>Diseñar e implementar formulario de login</td>
+  <td>Crear vista de login con campos de correo y contraseña y feedback de errores</td>
+  <td>4</td>
+  <td>Diego</td>
+  <td>Done</td>
+</tr>
+<tr>
+  <td>US038</td>
+  <td>Inicio de sesión</td>
+  <td>US038b</td>
+  <td>Integrar con API de autenticación</td>
+  <td>Conectar al endpoint POST /api/auth/login, almacenar token JWT y redirigir al dashboard</td>
+  <td>3</td>
+  <td>Diego</td>
+  <td>Done</td>
+</tr>
+<tr>
+  <td>US040</td>
+  <td>Registro de Curso</td>
+  <td>US040a</td>
+  <td>Diseñar formulario de registro de curso</td>
+  <td>Implementar vista y formulario con campos de nombre, código, descripción y créditos usando React Hook Form + Zod para validaciones</td>
+  <td>4</td>
+  <td>Andrea</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>US040</td>
+  <td>Registro de Curso</td>
+  <td>US040b</td>
+  <td>Integrar con API de cursos</td>
+  <td>Conectar formulario al endpoint POST /api/courses, manejar respuestas y mostrar mensajes de éxito o error en UI</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS001</td>
+  <td>Exponer endpoint para registrar academias</td>
+  <td>TS001a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear entidad Academy, interfaz de repositorio y caso de uso RegisterAcademyCommand en la capa Application</td>
+  <td>4</td>
+  <td>Andrea</td>
+  <td>In-Process</td>
+  </tr>
+<tr>
+  <td>TS001</td>
+  <td>Exponer endpoint para registrar academias</td>
+  <td>TS001b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Crear repositorio concreto, controlador POST /api/academies y configuración de dependencias</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS002</td>
+  <td>Exponer endpoint para actualizar academias</td>
+  <td>TS002a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Agregar  UpdateAcademyCommandHandler y lógica de validación de cambios</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS002</td>
+  <td>Exponer endpoint para actualizar academias</td>
+  <td>TS002b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar método PUT /api/academies/{id}, resource de actualización y manejo de errores</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS003</td>
+  <td>Exponer endpoint para eliminar academias</td>
+  <td>TS003a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear DeleteAcademyCommandHandler con validaciones de existencia y reglas de negocio</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS003</td>
+  <td>Exponer endpoint para eliminar academias</td>
+  <td>TS003b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Configurar controlador DELETE /api/academies/{id} con respuesta estandarizada</td>
+  <td>2</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS004</td>
+  <td>Exponer endpoint para listar academias</td>
+  <td>TS004a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear consulta GetAllAcademiesQuery</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS004</td>
+  <td>Exponer endpoint para listar academias</td>
+  <td>TS004b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar endpoint GET /api/academies con parámetros de búsqueda y respuesta JSON</td>
+  <td>2</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS005</td>
+  <td>Exponer endpoint para obtener detalles de una academia</td>
+  <td>TS005a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear GetAcademyByIdQueryHandler con validaciones y resource de salida</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS005</td>
+  <td>Exponer endpoint para obtener detalles de una academia</td>
+  <td>TS005b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar GET /api/academies/{id} con manejo de errores y mapping de dominio con un assembler</td>
+  <td>2</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS006</td>
+  <td>Exponer endpoint para registrar administrador</td>
+  <td>TS006a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Definir entidad Admin, repositorio y  RegisterAdminCommand</td>
+  <td>4</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS006</td>
+  <td>Exponer endpoint para registrar administrador</td>
+  <td>TS006b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Configurar POST /api/admins y mapeo de resource a entidad con un assembler</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS007</td>
+  <td>Exponer endpoint para actualizar administrador</td>
+  <td>TS007a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Agregar UpdateAdminCommandHandler y validaciones de datos únicos</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS007</td>
+  <td>Exponer endpoint para actualizar administrador</td>
+  <td>TS007b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar PUT /api/admins/{id} con control de errores y respuesta uniforme</td>
+  <td>2</td>
+  <td>Andrea</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS008</td>
+  <td>Exponer endpoint para eliminar administrador</td>
+  <td>TS008a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear DeleteAdminCommandHandler con validación de existencia y restricciones</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS008</td>
+  <td>Exponer endpoint para eliminar administrador</td>
+  <td>TS008b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar DELETE /api/admins/{id} con manejo de excepciones</td>
+  <td>2</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS009</td>
+  <td>Exponer endpoint para listar administradores</td>
+  <td>TS009a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Definir GetAllAdminsQueryHandler </td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS009</td>
+  <td>Exponer endpoint para listar administradores</td>
+  <td>TS009b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar GET /api/admins con parámetros de búsqueda y respuesta estandarizada</td>
+  <td>2</td>
+  <td>Paul</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS010</td>
+  <td>Exponer endpoint para obtener detalles de un administrador</td>
+  <td>TS010a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear GetAdminByIdQueryHandler y resource de salida con validaciones</td>
+  <td>3</td>
+  <td>Daniel</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS010</td>
+  <td>Exponer endpoint para obtener detalles de un administrador</td>
+  <td>TS010b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar GET /api/admins/{id} y mapear entidad Admin a resource</td>
+  <td>2</td>
+  <td>Daniel</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS011</td>
+  <td>Exponer endpoint para registrar matrículas</td>
+  <td>TS011a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear entidad Enrollment, repositorio y caso de uso RegisterEnrollmentCommand con validaciones de alumno y periodo</td>
+  <td>4</td>
+  <td>Daniel</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS011</td>
+  <td>Exponer endpoint para registrar matrículas</td>
+  <td>TS011b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar POST /api/enrollments con mapeo resource y manejo de respuestas</td>
+  <td>3</td>
+  <td>Daniel</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS012</td>
+  <td>Exponer endpoint para actualizar matrículas</td>
+  <td>TS012a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Agregar UpdateEnrollmentCommandHandler con validación de estado y consistencia de datos</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS012</td>
+  <td>Exponer endpoint para actualizar matrículas</td>
+  <td>TS012b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar PUT /api/enrollments/{id} con respuestas estandarizadas</td>
+  <td>2</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS013</td>
+  <td>Exponer endpoint para eliminar matrículas</td>
+  <td>TS013a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear DeleteEnrollmentCommandHandler verificando integridad referencial antes de eliminar</td>
+  <td>3</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS013</td>
+  <td>Exponer endpoint para eliminar matrículas</td>
+  <td>TS013b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Configurar DELETE /api/enrollments/{id} con manejo de excepciones controladas</td>
+  <td>2</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS014</td>
+  <td>Exponer endpoint para listar matrículas</td>
+  <td>TS014a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear GetAllEnrollmentsQueryHandler con soporte de filtros por alumno, clase y periodo</td>
+  <td>3</td>
+  <td>Paul</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS014</td>
+  <td>Exponer endpoint para listar matrículas</td>
+  <td>TS014b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar GET /api/enrollments con paginación y parámetros de búsqueda</td>
+  <td>2</td>
+  <td>Paul</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS015</td>
+  <td>Exponer endpoint para obtener detalles de una matrícula</td>
+  <td>TS015a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Definir GetEnrollmentByIdQueryHandler y resource con información del alumno y clase</td>
+  <td>3</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS015</td>
+  <td>Exponer endpoint para obtener detalles de una matrícula</td>
+  <td>TS015b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar GET /api/enrollments/{id} y mapear entidades a la respuesta</td>
+  <td>2</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS016</td>
+  <td>Exponer endpoint para registrar periodos académicos</td>
+  <td>TS016a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear entidad AcademicPeriod y caso de uso RegisterPeriodCommandHandler con validaciones de fechas</td>
+  <td>4</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS016</td>
+  <td>Exponer endpoint para registrar periodos académicos</td>
+  <td>TS016b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Configurar POST /api/academic-periods con validación de fechas y formato de respuesta</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS017</td>
+  <td>Exponer endpoint para actualizar periodos académicos</td>
+  <td>TS017a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Agregar UpdatePeriodCommandHandler con validación de solapamiento de fechas</td>
+  <td>3</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS017</td>
+  <td>Exponer endpoint para actualizar periodos académicos</td>
+  <td>TS017b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar PUT /api/academic-periods/{id} con respuesta estructurada</td>
+  <td>2</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS018</td>
+  <td>Exponer endpoint para eliminar periodos académicos</td>
+  <td>TS018a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear DeletePeriodCommandHandler con reglas para evitar eliminar periodos activos</td>
+  <td>3</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS018</td>
+  <td>Exponer endpoint para eliminar periodos académicos</td>
+  <td>TS018b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar DELETE /api/academic-periods/{id} con manejo de estados HTTP</td>
+  <td>2</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS019</td>
+  <td>Exponer endpoint para listar periodos académicos</td>
+  <td>TS019a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Definir GetAllPeriodsQueryHandler con filtros por año y estado</td>
+  <td>3</td>
+  <td>Paul</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS019</td>
+  <td>Exponer endpoint para listar periodos académicos</td>
+  <td>TS019b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar GET /api/academic-periods con paginación y respuesta JSON</td>
+  <td>2</td>
+  <td>Paul</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS020</td>
+  <td>Exponer endpoint para obtener detalles de un periodo académico</td>
+  <td>TS020a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear GetPeriodByIdQueryHandler con validación de existencia y resource detallado</td>
+  <td>3</td>
+  <td>Daniel</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS020</td>
+  <td>Exponer endpoint para obtener detalles de un periodo académico</td>
+  <td>TS020b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar GET /api/academic-periods/{id} con manejo de errores controlados</td>
+  <td>2</td>
+  <td>Daniel</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS021</td>
+  <td>Exponer endpoint para registrar salones de clase</td>
+  <td>TS021a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear entidad Classroom, interfaz de repositorio y caso de uso RegisterClassroomCommand con validaciones de capacidad</td>
+  <td>4</td>
+  <td>Andrea</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS021</td>
+  <td>Exponer endpoint para registrar salones de clase</td>
+  <td>TS021b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar POST /api/classrooms y configurar mapeo entre resource y entidad Classroom</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS022</td>
+  <td>Exponer endpoint para actualizar salones de clase</td>
+  <td>TS022a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Agregar UpdateClassroomCommandHandler con validación de disponibilidad y capacidad</td>
+  <td>3</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS022</td>
+  <td>Exponer endpoint para actualizar salones de clase</td>
+  <td>TS022b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar PUT /api/classrooms/{id} con respuestas estructuradas</td>
+  <td>2</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS023</td>
+  <td>Exponer endpoint para eliminar salones de clase</td>
+  <td>TS023a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear DeleteClassroomCommandHandler con validación de uso en horarios activos</td>
+  <td>3</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS023</td>
+  <td>Exponer endpoint para eliminar salones de clase</td>
+  <td>TS023b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Configurar DELETE /api/classrooms/{id} con manejo de códigos HTTP</td>
+  <td>2</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS024</td>
+  <td>Exponer endpoint para listar salones de clase</td>
+  <td>TS024a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Definir GetAllClassroomsQueryHandler con soporte de filtros por ubicación y capacidad</td>
+  <td>3</td>
+  <td>Paul</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS024</td>
+  <td>Exponer endpoint para listar salones de clase</td>
+  <td>TS024b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar GET /api/classrooms con paginación y formato JSON</td>
+  <td>2</td>
+  <td>Paul</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS025</td>
+  <td>Exponer endpoint para obtener detalles de un salón de clase</td>
+  <td>TS025a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear GetClassroomByIdQueryHandler y resource con datos del aula y capacidad</td>
+  <td>3</td>
+  <td>Daniel</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS025</td>
+  <td>Exponer endpoint para obtener detalles de un salón de clase</td>
+  <td>TS025b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar GET /api/classrooms/{id} con validación de existencia</td>
+  <td>2</td>
+  <td>Daniel</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS026</td>
+  <td>Exponer endpoint para registrar cursos</td>
+  <td>TS026a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear entidad Course, interfaz de repositorio y caso RegisterCourseCommandHandler</td>
+  <td>4</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS026</td>
+  <td>Exponer endpoint para registrar cursos</td>
+  <td>TS026b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Configurar POST /api/courses con validación de datos de entrada</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS027</td>
+  <td>Exponer endpoint para actualizar cursos</td>
+  <td>TS027a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Agregar UpdateCourseCommandHandler y validaciones de unicidad</td>
+  <td>3</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS027</td>
+  <td>Exponer endpoint para actualizar cursos</td>
+  <td>TS027b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar PUT /api/courses/{id} con respuestas uniformes</td>
+  <td>2</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS028</td>
+  <td>Exponer endpoint para eliminar cursos</td>
+  <td>TS028a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear DeleteCourseCommandHandler con control de dependencias activas</td>
+  <td>3</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS028</td>
+  <td>Exponer endpoint para eliminar cursos</td>
+  <td>TS028b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Configurar DELETE /api/courses/{id} con manejo de excepciones</td>
+  <td>2</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS029</td>
+  <td>Exponer endpoint para listar cursos</td>
+  <td>TS029a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Definir GetAllCoursesQueryHandler con soporte de paginación y filtros por categoría</td>
+  <td>3</td>
+  <td>Paul</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS029</td>
+  <td>Exponer endpoint para listar cursos</td>
+  <td>TS029b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar GET /api/courses con parámetros de búsqueda y respuesta JSON</td>
+  <td>2</td>
+  <td>Paul</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS030</td>
+  <td>Exponer endpoint para obtener detalles de un curso</td>
+  <td>TS030a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear GetCourseByIdQueryHandler con resource completo de datos del curso</td>
+  <td>3</td>
+  <td>Daniel</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS030</td>
+  <td>Exponer endpoint para obtener detalles de un curso</td>
+  <td>TS030b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar GET /api/courses/{id} con validaciones y respuesta uniforme</td>
+  <td>2</td>
+  <td>Daniel</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS031</td>
+  <td>Exponer endpoint para registrar horarios</td>
+  <td>TS031a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear entidad Schedule, interfaz de repositorio y caso RegisterScheduleCommandHandler con validaciones de solapamiento</td>
+  <td>4</td>
+  <td>Andrea</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS031</td>
+  <td>Exponer endpoint para registrar horarios</td>
+  <td>TS031b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar POST /api/schedules con mapeo resources y validación de horas duplicadas</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS032</td>
+  <td>Exponer endpoint para actualizar horarios</td>
+  <td>TS032a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Agregar UpdateScheduleCommandHandler con validaciones de superposición y formato de horas</td>
+  <td>3</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS032</td>
+  <td>Exponer endpoint para actualizar horarios</td>
+  <td>TS032b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar PUT /api/schedules/{id} con manejo de estados HTTP y respuesta estandarizada</td>
+  <td>2</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS033</td>
+  <td>Exponer endpoint para eliminar horarios</td>
+  <td>TS033a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear DeleteScheduleCommandHandler con validaciones para evitar eliminación de clases activas</td>
+  <td>3</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS033</td>
+  <td>Exponer endpoint para eliminar horarios</td>
+  <td>TS033b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Configurar DELETE /api/schedules/{id} con manejo de excepciones</td>
+  <td>2</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS034</td>
+  <td>Exponer endpoint para listar horarios</td>
+  <td>TS034a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Definir GetAllSchedulesQueryHandler con filtros por curso, profesor y aula</td>
+  <td>3</td>
+  <td>Paul</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS034</td>
+  <td>Exponer endpoint para listar horarios</td>
+  <td>TS034b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar GET /api/schedules con soporte de paginación y filtros</td>
+  <td>2</td>
+  <td>Paul</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS035</td>
+  <td>Exponer endpoint para obtener detalles de un horario</td>
+  <td>TS035a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear GetScheduleByIdQueryHandler con resource detallado (curso, aula, docente, horas)</td>
+  <td>3</td>
+  <td>Daniel</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS035</td>
+  <td>Exponer endpoint para obtener detalles de un horario</td>
+  <td>TS035b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar GET /api/schedules/{id} con manejo de errores controlado</td>
+  <td>2</td>
+  <td>Daniel</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS036</td>
+  <td>Exponer endpoint para eliminar horarios antiguos</td>
+  <td>TS036a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Desarrollar CleanUpOldSchedulesJob y repositorio para eliminar registros caducados</td>
+  <td>3</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS036</td>
+  <td>Exponer endpoint para eliminar horarios antiguos</td>
+  <td>TS036b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Configurar DELETE /api/schedules/old con manejo de ejecución programada</td>
+  <td>2</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS037</td>
+  <td>Exponer endpoint para obtener horarios por profesor</td>
+  <td>TS037a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear GetSchedulesByTeacherQueryHandler con validación de rango de fechas</td>
+  <td>3</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS037</td>
+  <td>Exponer endpoint para obtener horarios por profesor</td>
+  <td>TS037b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar GET /api/schedules/teacher/{id} con parámetros de fecha y formato JSON</td>
+  <td>2</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS038</td>
+  <td>Exponer endpoint para obtener horarios por aula</td>
+  <td>TS038a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Definir GetSchedulesByClassroomQueryHandler con validación de disponibilidad</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS038</td>
+  <td>Exponer endpoint para obtener horarios por aula</td>
+  <td>TS038b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar GET /api/schedules/classroom/{id} con manejo de excepciones</td>
+  <td>2</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS039</td>
+  <td>Exponer endpoint para obtener horarios por curso</td>
+  <td>TS039a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear GetSchedulesByCourseQueryHandler con validación de relación curso–profesor</td>
+  <td>3</td>
+  <td>Paul</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS039</td>
+  <td>Exponer endpoint para obtener horarios por curso</td>
+  <td>TS039b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar GET /api/schedules/course/{id} con respuesta estandarizada</td>
+  <td>2</td>
+  <td>Paul</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS040</td>
+  <td>Exponer endpoint para obtener todos los horarios</td>
+  <td>TS040a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Desarrollar GetAllSchedulesQueryHandler con filtros avanzados y paginación</td>
+  <td>3</td>
+  <td>Daniel</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS040</td>
+  <td>Exponer endpoint para obtener todos los horarios</td>
+  <td>TS040b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar GET /api/schedules con parámetros dinámicos y formato JSON</td>
+  <td>2</td>
+  <td>Daniel</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS041</td>
+  <td>Exponer endpoint para registrar cuentas de cobro</td>
+  <td>TS041a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear entidad BillingAccount, repositorio y caso RegisterBillingAccountCommandHandler con validaciones de duplicidad</td>
+  <td>4</td>
+  <td>Andrea</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS041</td>
+  <td>Exponer endpoint para registrar cuentas de cobro</td>
+  <td>TS041b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar POST /api/billing-accounts y configurar resource de entrada/salida</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS042</td>
+  <td>Exponer endpoint para actualizar cuentas de cobro</td>
+  <td>TS042a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Agregar UpdateBillingAccountCommandHandler con validación de estado y consistencia</td>
+  <td>3</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS042</td>
+  <td>Exponer endpoint para actualizar cuentas de cobro</td>
+  <td>TS042b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar PUT /api/billing-accounts/{id} con respuesta estandarizada y manejo de errores</td>
+  <td>2</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS043</td>
+  <td>Exponer endpoint para eliminar cuentas de cobro</td>
+  <td>TS043a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear DeleteBillingAccountCommandHandler con verificación de dependencias activas</td>
+  <td>3</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS043</td>
+  <td>Exponer endpoint para eliminar cuentas de cobro</td>
+  <td>TS043b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar DELETE /api/billing-accounts/{id} con control de excepciones</td>
+  <td>2</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS044</td>
+  <td>Exponer endpoint para listar cuentas de cobro</td>
+  <td>TS044a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Definir GetAllBillingAccountsQueryHandler con filtros por comercio o estado</td>
+  <td>3</td>
+  <td>Paul</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS044</td>
+  <td>Exponer endpoint para listar cuentas de cobro</td>
+  <td>TS044b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar GET /api/billing-accounts con paginación y formato JSON</td>
+  <td>2</td>
+  <td>Paul</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS045</td>
+  <td>Exponer endpoint para obtener detalles de una cuenta de cobro</td>
+  <td>TS045a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear GetBillingAccountByIdQueryHandler y resource con información de referencia bancaria</td>
+  <td>3</td>
+  <td>Daniel</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS045</td>
+  <td>Exponer endpoint para obtener detalles de una cuenta de cobro</td>
+  <td>TS045b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar GET /api/billing-accounts/{id} con manejo de errores controlado</td>
+  <td>2</td>
+  <td>Daniel</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS046</td>
+  <td>Exponer endpoint para asignar boletas de pago</td>
+  <td>TS046a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Definir AssignInvoiceToAccountCommandHandler con validación de duplicidad</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS046</td>
+  <td>Exponer endpoint para asignar boletas de pago</td>
+  <td>TS046b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar POST /api/billing-accounts/invoices con validaciones y respuesta uniforme</td>
+  <td>2</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS047</td>
+  <td>Exponer endpoint para actualizar boletas asignadas</td>
+  <td>TS047a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Agregar UpdateAssignedInvoiceCommandHandler con control de estado de pago</td>
+  <td>3</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS047</td>
+  <td>Exponer endpoint para actualizar boletas asignadas</td>
+  <td>TS047b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar PUT /api/billing-accounts/{accountId}/invoices/{invoiceId} con validación de acceso</td>
+  <td>2</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS048</td>
+  <td>Exponer endpoint para listar boletas de pago asignadas</td>
+  <td>TS048a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear GetInvoicesByBillingAccountQueryHandler con soporte de filtros por estado</td>
+  <td>3</td>
+  <td>Salim</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS048</td>
+  <td>Exponer endpoint para listar boletas de pago asignadas</td>
+  <td>TS048b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar GET /api/billing-accounts/{id}/invoices con respuesta JSON paginada</td>
+  <td>2</td>
+  <td>Salim</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS049</td>
+  <td>Exponer endpoint para eliminar boletas asignadas</td>
+  <td>TS049a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Definir DeleteAssignedInvoiceCommandHandler con validaciones de estado</td>
+  <td>3</td>
+  <td>Paul</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS049</td>
+  <td>Exponer endpoint para eliminar boletas asignadas</td>
+  <td>TS049b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar DELETE /api/billing-accounts/{accountId}/invoices/{invoiceId} con control de errores</td>
+  <td>2</td>
+  <td>Paul</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS050</td>
+  <td>Exponer endpoint para registrar transacciones</td>
+  <td>TS050a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear entidad Transaction, repositorio y RegisterTransactionCommandHandler</td>
+  <td>4</td>
+  <td>Daniel</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS050</td>
+  <td>Exponer endpoint para registrar transacciones</td>
+  <td>TS050b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar POST /api/transactions y configurar resource con validación de monto</td>
+  <td>3</td>
+  <td>Daniel</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS051</td>
+  <td>Exponer endpoint para actualizar transacciones</td>
+  <td>TS051a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Agregar UpdateTransactionCommandHandler con reglas de estado de pago</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS051</td>
+  <td>Exponer endpoint para actualizar transacciones</td>
+  <td>TS051b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar PUT /api/transactions/{id} con manejo de respuestas</td>
+  <td>2</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS052</td>
+  <td>Exponer endpoint para eliminar transacciones</td>
+  <td>TS052a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear DeleteTransactionCommandHandler con validaciones de registros conciliados</td>
+  <td>3</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS052</td>
+  <td>Exponer endpoint para eliminar transacciones</td>
+  <td>TS052b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Configurar DELETE /api/transactions/{id} con manejo de excepciones</td>
+  <td>2</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS053</td>
+  <td>Exponer endpoint para generar reportes financieros</td>
+  <td>TS053a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Desarrollar GenerateFinancialReportQueryHandler con agregaciones y métricas</td>
+  <td>4</td>
+  <td>Paul</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS053</td>
+  <td>Exponer endpoint para generar reportes financieros</td>
+  <td>TS053b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar GET /api/reports/financial con filtros de fechas y exportación CSV</td>
+  <td>3</td>
+  <td>Paul</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS056</td>
+  <td>Exponer endpoint para registrar cuenta de usuario</td>
+  <td>TS056a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear entidad User, caso SignUpUserCommandHandler con validación de correo único y cifrado</td>
+  <td>4</td>
+  <td>Daniel</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS056</td>
+  <td>Exponer endpoint para registrar cuenta de usuario</td>
+  <td>TS056b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Configurar POST /api/auth/sign-up con validaciones y respuesta estandarizada</td>
+  <td>3</td>
+  <td>Daniel</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS058</td>
+  <td>Exponer endpoint para eliminar cuenta de usuario</td>
+  <td>TS058a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Agregar DeleteUserCommandHandler con validación de estado inactivo</td>
+  <td>3</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS058</td>
+  <td>Exponer endpoint para eliminar cuenta de usuario</td>
+  <td>TS058b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Desarrollar DELETE /api/users/{id} con manejo de errores controlados</td>
+  <td>2</td>
+  <td>Diego</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS059</td>
+  <td>Exponer endpoint para activar cuenta de usuario</td>
+  <td>TS059a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Crear ActivateUserCommandHandler con verificación de token de activación</td>
+  <td>3</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS059</td>
+  <td>Exponer endpoint para activar cuenta de usuario</td>
+  <td>TS059b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar POST /api/users/{id}/activate con validación de token</td>
+  <td>2</td>
+  <td>Salim</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS060</td>
+  <td>Exponer endpoint para reenviar código de verificación</td>
+  <td>TS060a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Definir ResendVerificationCodeCommandHandler y lógica de envío de correo</td>
+  <td>3</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS060</td>
+  <td>Exponer endpoint para reenviar código de verificación</td>
+  <td>TS060b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Configurar POST /api/users/{id}/resend-verification y servicio de correo</td>
+  <td>2</td>
+  <td>Andrea</td>
+  <td>To-do</td>
+</tr>
+<tr>
+  <td>TS062</td>
+  <td>Exponer endpoint para iniciar sesión de usuario</td>
+  <td>TS062a</td>
+  <td>Implementar capa de dominio y aplicación</td>
+  <td>Desarrollar LoginUserCommandHandler con validación de credenciales y generación de JWT</td>
+  <td>4</td>
+  <td>Diego</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS062</td>
+  <td>Exponer endpoint para iniciar sesión de usuario</td>
+  <td>TS062b</td>
+  <td>Implementar capa de infraestructura e interfaces REST</td>
+  <td>Implementar POST /api/auth/login con retorno de token y roles</td>
+  <td>3</td>
+  <td>Diego</td>
+  <td>In-Process</td>
+</tr>
+<tr>
+  <td>TS064</td>
+  <td>Exponer endpoint para manejo de CORS y métodos permitidos</td>
+  <td>TS064a</td>
+  <td>Implementar capa de infraestructura</td>
+  <td>Configurar middleware global para manejo de CORS, dominios y cabeceras</td>
+  <td>3</td>
+  <td>Salim</td>
+  <td>Done</td>
+</tr>
+<tr>
+  <td>TS064</td>
+  <td>Exponer endpoint para manejo de CORS y métodos permitidos</td>
+  <td>TS064b</td>
+  <td>Implementar capa de interfaces REST</td>
+  <td>Implementar OPTIONS /api/resource con respuesta de métodos permitidos (GET, POST, PUT, DELETE)</td>
+  <td>2</td>
+  <td>Salim</td>
+  <td>Done</td>
+</tr>
+    </tbody>
+  </table>
+</div>
+
 
 #### 4.2.1.3. Development Evidence for Sprint Review
 
-*Escribir aquí*
+**Development Evidence - Landing Page**
+
+<table>
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit ID</th>
+      <th>Commit Message</th>
+      <th>Commit Body</th>
+      <th>Committed On</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>demy-landing</td><td>main</td><td>c63f5f6</td><td>Merge branch 'release/v1.0.0'</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>release/v1.0.0</td><td>499fb3d</td><td>chore(release): add logo images in public folder</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>release/v1.0.0</td><td>f098359</td><td>Merge pull request #11 from nistrahq/release/v1.0.0</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>release/v1.0.0</td><td>56591c8</td><td>chore(release): prepare v1.0.0</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>0dcaf11</td><td>feat: add mobile anchors and improve navigation in JSON and HTML files</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>2712a48</td><td>Merge remote-tracking branch 'origin/develop' into develop</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>0c4474c</td><td>feat: enhance messaging in en.json for clarity and improved user engagement</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>9efd307</td><td>feat: update hero section and testimonials for improved messaging and clarity</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>95df6f5</td><td>feat: update hero section and testimonials for improved messaging and clarity</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>68e0102</td><td>feat: update navigation and pricing section anchors in JSON and HTML files</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>732d77a</td><td>Merge pull request #10 from nistrahq/feature/about-us-section</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/about-us-section</td><td>be72b3a</td><td>Merge remote-tracking branch 'origin/develop' into feature/about-us-section</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/about-us-section</td><td>5aaf6af</td><td>feat: enhance about us section with new styles and member role updates</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>e5ec849</td><td>Merge remote-tracking branch 'origin/develop' into develop</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>e86763d</td><td>Merge pull request #9 from nistrahq/feature/pricing-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/pricing-section</td><td>f61524e</td><td>feat: add pricing section with plans and descriptions</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/pricing-section</td><td>7ab2f3a</td><td>Merge remote-tracking branch 'origin/develop' into feature/pricing-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/pricing-section</td><td>7a703a6</td><td>refactor: update pricing section layout and styles for improved clarity and aesthetics</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/pricing-section</td><td>eba0acb</td><td>refactor: remove unused button texts from hero section in English and Spanish translations</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/pricing-section</td><td>b010522</td><td>Merge pull request #8 from nistrahq/feature/language-support</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/language-support</td><td>7ad1c5e</td><td>Merge remote-tracking branch 'origin/develop' into feature/language-support</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>70fbf0c</td><td>Merge pull request #6 from nistrahq/feature/about-us-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>9840420</td><td>Merge pull request #5 from nistrahq/feature/contact-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/contact-section</td><td>f189ffa</td><td>Merge remote-tracking branch 'origin/develop' into feature/contact-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/contact-section</td><td>e8944ad</td><td>Merge pull request #4 from nistrahq/feature/faq-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/faq-section</td><td>6d4d80f</td><td>Merge remote-tracking branch 'origin/develop' into feature/faq-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>e0b0721</td><td>Merge pull request #3 from nistrahq/feature/footer-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>develop</td><td>b2759ec</td><td>Merge pull request #2 from nistrahq/feature/hero-section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/about-us-section</td><td>8eddc8a</td><td>fix: correct css style for about us section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/about-us-section</td><td>80e9ae1</td><td>feat: update images of feature section</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/about-us-section</td><td>e573b25</td><td>feat: update dom.js and index.html</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/about-us-section</td><td>477bfbd</td><td>feat: update en and es json for language</td><td>-</td><td>07/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/hero-section</td><td>97cb09e</td><td>feat: update session buttons and add app store links in index.html</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/faq-section</td><td>2928256</td><td>feat(i18n): add English and Spanish languages for FAQ section</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/faq-section</td><td>1845ec0</td><td>feat: add FAQ section with accordion functionality and styles</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/faq-section</td><td>3a23153</td><td>fix(html): add missing IDs to labels for pricing section</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/pricing-section</td><td>cd590d0</td><td>feat: add pricing details and update DOM manipulation for pricing section in en.json, es.json, and update-dom.js</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/pricing-section</td><td>6ad6935</td><td>feat: update pricing section layout and styles in index.html and pricing-section.css</td><td>-</td><td>06/10/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/footer-section</td><td>e262c96</td><td>feat(i18n): add translations for footer section</td><td>-</td><td>28/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/footer-section</td><td>d09f82e</td><td>feat(footer): add modal structure and styles for terms and conditions</td><td>-</td><td>28/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/footer-section</td><td>73214ec</td><td>feat(footer): add component styles for footer section</td><td>-</td><td>28/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/footer-section</td><td>7b017f7</td><td>feat(footer): build initial html structure for footer section</td><td>-</td><td>28/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/contact-section</td><td>29f0615</td><td>feat(i18n): add translations for contact section</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/contact-section</td><td>23b2690</td><td>feat(contact): implement form validation</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/contact-section</td><td>efe427d</td><td>style(contact): add component styles for contact section</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/contact-section</td><td>6269d89</td><td>feat(assets): add illustration for contact section</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/contact-section</td><td>9890d52</td><td>feat(contact): build initial html structure for contact section</td><td>-</td><td>26/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>09aab85</td><td>Merge pull request #1 from nistrahq/feature/initial-structure</td><td>-</td><td>24/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>7151ede</td><td>feat: update primary, secondary, and accent color variables in main.css</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>89bc5b9</td><td>feat: add new SVG branding assets for the project</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>03976cf</td><td>feat: add new SVG logo and update logo reference in index.html</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>ed05de8</td><td>feat: add new SVG logo files for branding</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>0e92d9f</td><td>refactor: update image paths to use new icons directory structure</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>06dfd62</td><td>feat: update favicon and add site webmanifest with new logo</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>a8316c2</td><td>fix(i18n): update language loading path to correct directory structure</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>a662f83</td><td>feat: update favicon path to use assets directory</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>bfe5cc8</td><td>feat: add English and Spanish localization first version files for hero and navigation sections</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>4f83430</td><td>feat: add FAQ, contact, and footer sections placeholders to index.html</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>44fad06</td><td>feat: add pricing section with plans, descriptions, and styling</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>9d93fa9</td><td>feat: add about team section with team story and video</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>5bf7a72</td><td>feat: add about us section with team member profiles and styling</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>9191e16</td><td>feat: add testimonials section with content, styling, and responsive layout</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>ba5244b</td><td>feat: add about product section with video and descriptive content</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>c937bd7</td><td>feat: add highlighted message section with content and styling</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>11ec6b3</td><td>feat: add 'how it works' section with content and styling</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>a0533ad</td><td>feat: add features section with content and styling</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>bd5d6da</td><td>feat: add hero section with responsive layout and styling</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>f2b9186</td><td>feat: enhance index.html with responsive navigation and language selector</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>accae7b</td><td>feat: update index.html with new title and Google Fonts integration</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>0023ca8</td><td>styles: integrate Tailwind CSS and establish theme configuration</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>8a751d6</td><td>styles: add base, components, layout, and utilities CSS for initial styling structure</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>87efa19</td><td>feat: restructure main.js to initialize language selector, menu toggle, and tilt effects</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>334fae7</td><td>chore: rename style.css to main.css</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>5fbef16</td><td>build(package): add vanilla-tilt for enhanced UI effects</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>5fe5771</td><td>feat(ui): add tilt effect to testimonial cards using VanillaTilt</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>d1562e1</td><td>feat(i18n): add language selection functionality with dynamic text updates</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>79a89fc</td><td>feat: implement menu toggle functionality for mobile navigation</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>9b295b4</td><td>feat: add getElement function to retrieve DOM elements by ID</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>5a0d3bf</td><td>refactor: update file paths for main.js and style.css</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>b8c41ec</td><td>build: add Vite configuration with Tailwind CSS plugin</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>1c59756</td><td>chore: initial commit</td><td>-</td><td>23/09/2025</td></tr>
+    <tr><td>demy-landing</td><td>feature/initial-structure</td><td>46c13fa</td><td>chore: add Tailwind CSS and Vite dependencies</td><td>-</td><td>23/09/2025</td></tr>
+  </tbody>
+</table>
 
 #### 4.2.1.4. Testing Suite Evidence for Sprint Review
 
-*Escribir aquí*
+Durante el presente sprint se diseñó y ejecutó una suite de pruebas orientadas a validar los principales componentes del bounded *Institution*, garantizando el correcto funcionamiento de los agregados, value objects y servicios de dominio implementados bajo el enfoque de *Domain-Driven Design (DDD)* dentro de una arquitectura monolítica.
+
+Las pruebas se estructuraron en dos niveles complementarios:
+
+* **Unit Tests:** centrados en la verificación aislada de la lógica interna de los agregados (`Academy`, `Administrator`) y sus comandos (`RegisterAcademyCommand`, `RegisterAdministratorCommand`), empleando **JUnit** y el patrón **Arrange–Act–Assert (AAA)**.
+* **Behavior-Driven Development (BDD):** pruebas de aceptación funcional escritas en **Gherkin**, con sus definiciones de pasos implementadas en Java utilizando **Cucumber** y **JUnit**, simulando la interacción del cliente con los endpoints del servicio.
+
+Este enfoque combinó validaciones unitarias y de comportamiento, asegurando la correcta construcción de objetos de dominio, el manejo de excepciones y las respuestas esperadas ante escenarios de entrada válidos e inválidos.
+
+**Unit Test – AcademyTest**
+
+El propósito de estas pruebas fue validar la correcta creación y comportamiento del agregado `Academy` bajo diferentes condiciones, verificando la coherencia de sus value objects, la asignación controlada de administradores, la validación de identificadores y el manejo adecuado de excepciones en su lógica interna. Para ello, se emplearon herramientas como **JUnit 5** y las aserciones nativas de `org.junit.jupiter.api.Assertions`, siguiendo el patrón **Arrange–Act–Assert (AAA)**. Estas pruebas se relacionan directamente con la **User Story US-02**, la cual establece que, como administrador, se debe poder registrar una academia con su información básica para que pueda ser gestionada dentro del sistema.
+
+```java
+@Test
+@DisplayName("Should allow assigning an administrator only once and throw an exception if reassigned")
+void shouldAssignAdministratorAndThrowIfAlreadyAssigned() {
+    Academy academy = new Academy(
+        new AcademyName("Test Academy"),
+        new AcademyDescription("Academia de prueba."),
+        new StreetAddress("Calle Falsa 123", "Santiago", "Cusco", "Cusco"),
+        new EmailAddress("test@academy.com"),
+        new PhoneNumber("+51", "911111111"),
+        new Ruc("10765432109")
+    );
+
+    AdministratorId admin1 = new AdministratorId(1L);
+
+    academy.assignAdministrator(admin1);
+
+    assertTrue(academy.getAdministratorId().isAssigned());
+    assertThrows(IllegalStateException.class, () ->
+        academy.assignAdministrator(new AdministratorId(2L))
+    );
+}
+```
+**Acceptance Test (BDD) – Administrator Registration**
+
+Para esta prueba de aceptación se simuló, desde la perspectiva del usuario, el flujo completo del registro de un administrador de academia, verificando el comportamiento del sistema ante solicitudes válidas e inválidas. El objetivo fue evaluar la lógica del bounded de Institution bajo un enfoque de Behavior-Driven Development (BDD), utilizando archivos .feature escritos en lenguaje Gherkin y sus correspondientes definiciones de pasos en Java mediante Cucumber.
+
+
+```gherkin
+Feature: Administrator Registration
+
+  Scenario: Successful administrator registration
+    Given the academy service is available
+    When the client sends a registration request with:
+      | firstName | lastName | phoneCountryCode | phoneNumber | dniNumber | academyId | userId |
+      | Paul      | Sulca    | +51              | 987654321   | 12345678  | 1         | 10     |
+    Then the response should have status code 201
+    And the body should contain "Administrator registered successfully"
+
+  Scenario: Failed registration with invalid data
+    Given the academy service is available
+    When the client sends a registration request with:
+      | firstName | lastName | phoneCountryCode | phoneNumber | dniNumber | academyId | userId |
+      | (empty)   | Sulca    | +51              | abcde       | 00000000  | 1         | 10     |
+    Then the response should have status code 400
+    And the response body should contain key "errors"
+    And the response body's "errors" should include "Invalid phone number format"
+```
+
+**Extracto del archivo Steps:**
+
+```java
+@When("the client sends a registration request with:")
+public void the_client_sends_a_registration_request_with(DataTable dataTable) {
+    Map<String, String> data = dataTable.asMaps().getFirst();
+
+    try {
+        RegisterAdministratorCommand command = new RegisterAdministratorCommand(
+                new PersonName(data.get("firstName"), data.get("lastName")),
+                new PhoneNumber(data.get("phoneCountryCode"), data.get("phoneNumber")),
+                new DniNumber(data.get("dniNumber")),
+                new AcademyId(),
+                new UserId()
+        );
+
+        Administrator administrator = new Administrator(command);
+        administrator.registerAdministrator(command.academyId().academyId(), command.userId().userId());
+
+        responseStatus = 201;
+        responseMessage = "Administrator registered successfully";
+    } catch (Exception e) {
+        responseStatus = 400;
+        responseMessage = e.getMessage();
+    }
+}
+```
+**Relación de Commits de Testing**
+
+| Repository              | Branch              | Commit Id | Commit Message                                                              | Committed on |
+|-------------------------|---------------------|-----------|-----------------------------------------------------------------------------|--------------|
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `84d2b8a` | test(academy): add unit tests for Academy aggregate using AAA pattern       | 2025-10-08   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `cb7bfd3` | test(bdd): add Cucumber tests for administrator registration scenarios      | 2025-10-08   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `9b8ad85` | refactor(bdd): simplify variable declarations in RegisterAdministratorSteps | 2025-10-08   |
 
 #### 4.2.1.5. Execution Evidence for Sprint Review
 
