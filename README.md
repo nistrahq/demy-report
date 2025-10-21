@@ -2258,7 +2258,7 @@ Se incluyen diferentes tipos de historias, tales como:
 <td>EP011</td>
 </tr>
 <tr>
-<td>TS053</td>
+<td>TS054</td>
 <td>Developer</td>
 <td>Exponer endpoint para visualizar horarios de un profesor</td>
 <td>Como developer, quiero exponer GET /api/teachers/{id}/schedules para permitir la visualización de los horarios asignados a un profesor específico en el sistema.</td>
@@ -2267,7 +2267,7 @@ Se incluyen diferentes tipos de historias, tales como:
 <td>EP011</td>
 </tr>
 <tr>
-<td>TS054</td>
+<td>TS055</td>
 <td>Developer</td>
 <td>Exponer endpoint para reprogramar una sesión de clases de un horario</td>
 <td>Como developer, quiero exponer PUT /api/schedules/{id}/reschedule para permitir la reprogramación de una sesión de clases en un horario específico en el sistema.</td>
@@ -2276,7 +2276,7 @@ Se incluyen diferentes tipos de historias, tales como:
 <td>EP011</td>
 </tr>
 <tr>
-<td>TS055</td>
+<td>TS056</td>
 <td>Developer</td>
 <td>Exponer endpoint para visualizar horarios de un alumno</td>
 <td>Como developer, quiero exponer GET /api/students/{id}/schedules para permitir la visualización de los horarios asignados a un alumno específico en el sistema.</td>
@@ -2285,7 +2285,7 @@ Se incluyen diferentes tipos de historias, tales como:
 <td>EP011</td>
 </tr>
 <tr>
-<td>TS056</td>
+<td>TS057</td>
 <td>Developer</td>
 <td>Exponer endpoint para registrar cuenta de usuario</td>
 <td>Como developer, quiero exponer POST /api/auth/sign-up para permitir el registro de nuevas cuentas de usuario en el sistema.</td>
@@ -2294,7 +2294,7 @@ Se incluyen diferentes tipos de historias, tales como:
 <td>EP011</td>
 </tr>
 <tr>
-<td>TS057</td>
+<td>TS058</td>
 <td>Developer</td>
 <td>Exponer endpoint para actualizar cuenta de usuario</td>
 <td>Como developer, quiero exponer PUT /api/users/{id} para permitir la actualización de cuentas de usuario existentes en el sistema.</td>
@@ -2303,7 +2303,7 @@ Se incluyen diferentes tipos de historias, tales como:
 <td>EP011</td>
 </tr>
 <tr>
-<td>TS058</td>
+<td>TS059</td>
 <td>Developer</td>
 <td>Exponer endpoint para eliminar cuenta de usuario</td>
 <td>Como developer, quiero exponer DELETE /api/users/{id} para permitir la eliminación de cuentas de usuario existentes en el sistema.</td>
@@ -2312,7 +2312,7 @@ Se incluyen diferentes tipos de historias, tales como:
 <td>EP011</td>
 </tr>
 <tr>
-<td>TS059</td>
+<td>TS060</td>
 <td>Developer</td>
 <td>Exponer endpoint para activar cuenta de usuario</td>
 <td>Como developer, quiero exponer POST /api/users/{id}/activate para permitir la activación de cuentas de usuario en el sistema.</td>
@@ -2321,7 +2321,7 @@ Se incluyen diferentes tipos de historias, tales como:
 <td>EP011</td>
 </tr>
 <tr>
-<td>TS060</td>
+<td>TS061</td>
 <td>Developer</td>
 <td>Exponer endpoint para reenviar código de verificación de usuario</td>
 <td>Como developer, quiero exponer POST /api/users/{id}/resend-verification para permitir el reenvío del código de verificación a la cuenta de usuario en el sistema.</td>
@@ -2330,7 +2330,7 @@ Se incluyen diferentes tipos de historias, tales como:
 <td>EP011</td>
 </tr>
 <tr>
-<td>TS061</td>
+<td>TS062</td>
 <td>Developer</td>
 <td>Exponer endpoint para cambiar contraseña mediante código de verificación</td>
 <td>Como developer, quiero exponer POST /api/users/{id}/change-password para permitir el cambio de contraseña de la cuenta de usuario mediante un código de verificación en el sistema.</td>
@@ -2339,7 +2339,7 @@ Se incluyen diferentes tipos de historias, tales como:
 <td>EP011</td>
 </tr>
 <tr>
-<td>TS062</td>
+<td>TS063</td>
 <td>Developer</td>
 <td>Exponer endpoint para iniciar sesión de usuario</td>
 <td>Como developer, quiero exponer POST /api/auth/login para permitir a los usuarios iniciar sesión en el sistema.</td>
@@ -2348,7 +2348,7 @@ Se incluyen diferentes tipos de historias, tales como:
 <td>EP011</td>
 </tr>
 <tr>
-<td>TS063</td>
+<td>TS064</td>
 <td>Developer</td>
 <td>Exponer endpoint para validación de recursos</td>
 <td>Como developer, quiero exponer HEAD /api/resource/{id} para permitir la validación de la existencia de recursos específicos en el sistema.</td>
@@ -2357,7 +2357,7 @@ Se incluyen diferentes tipos de historias, tales como:
 <td>EP011</td>
 </tr>
 <tr>
-<td>TS064</td>
+<td>TS065</td>
 <td>Developer</td>
 <td>Exponer endpoint para manejo de CORS y métodos permitidos</td>
 <td>Como developer, quiero exponer OPTIONS /api/resource para permitir la gestión de CORS y definir los métodos HTTP permitidos para un recurso específico en el sistema.</td>
@@ -2461,7 +2461,7 @@ La priorización se ha realizado considerando el valor que cada ítem aporta al 
 | 15      | US030         | Visualización de Horario de Clases                                                 | 3            |
 | 16      | TS036         | Exponer *endpoint* para registrar horarios                                         | 3            |
 | 17      | US031         | Reprogramación de Clase                                                            | 5            |
-| 18      | TS054         | Exponer *endpoint* para reprogramar una sesión de clases de un horario             | 2            |
+| 18      | TS055         | Exponer *endpoint* para reprogramar una sesión de clases de un horario             | 2            |
 | 19      | US022         | Generación de Boletas de Pago                                                      | 5            |
 | 20      | TS041         | Exponer *endpoint* para registrar cuentas de cobro                                 | 3            |
 | 21      | TS046         | Exponer *endpoint* para asignar boletas de pago                                    | 2            |
@@ -2471,18 +2471,18 @@ La priorización se ha realizado considerando el valor que cada ítem aporta al 
 | 25      | US029         | Generación de Reportes Financieros                                                 | 8            |
 | 26      | TS053         | Exponer *endpoint* para generar reportes financieros                               | 5            |
 | 27      | US032         | Visualización de Horario de Clases                                                 | 3            |
-| 28      | TS053         | Exponer *endpoint* para visualizar horarios de un profesor                         | 3            |
-| 29      | TS055         | Exponer *endpoint* para visualizar horarios de un alumno                           | 3            |
+| 28      | TS054         | Exponer *endpoint* para visualizar horarios de un profesor                         | 3            |
+| 29      | TS056         | Exponer *endpoint* para visualizar horarios de un alumno                           | 3            |
 | 30      | US033         | Visualizar detalles de los Profesores                                              | 2            |
 | 31      | US034         | Visualizar detalles de los Cursos                                                  | 2            |
 | 32      | US035         | Recibir alertas por cambio de horario                                              | 5            |
 | 33      | US036         | Registro de Cuenta                                                                 | 3            |
-| 34      | TS056         | Exponer *endpoint* para registrar cuenta de usuario                                | 2            |
+| 34      | TS057         | Exponer *endpoint* para registrar cuenta de usuario                                | 2            |
 | 35      | US037         | Activación de Cuenta                                                               | 3            |
-| 36      | TS059         | Exponer *endpoint* para activar cuenta de usuario                                  | 3            |
-| 37      | TS060         | Exponer *endpoint* para reenviar código de verificación de usuario                 | 3            |
+| 36      | TS060         | Exponer *endpoint* para activar cuenta de usuario                                  | 3            |
+| 37      | TS061         | Exponer *endpoint* para reenviar código de verificación de usuario                 | 3            |
 | 38      | US038         | Inicio de Sesión                                                                   | 2            |
-| 39      | TS062         | Exponer *endpoint* para iniciar sesión de usuario                                  | 2            |
+| 39      | TS063         | Exponer *endpoint* para iniciar sesión de usuario                                  | 2            |
 | 40      | US002         | Actualización de Academia                                                          | 2            |
 | 41      | US003         | Eliminación de Academia                                                            | 2            |
 | 42      | TS002         | Exponer *endpoint* para actualizar academias                                       | 3            |
@@ -2544,9 +2544,9 @@ La priorización se ha realizado considerando el valor que cada ítem aporta al 
 | 98      | TS052         | Exponer *endpoint* para eliminar transacciones                                     | 2            |
 | 99      | TS051         | Exponer *endpoint* para listar transacciones                                       | 2            |
 | 100     | TS052         | Exponer *endpoint* para obtener detalles de una transacción                        | 2            |
-| 101     | TS057         | Exponer *endpoint* para actualizar cuenta de usuario                               | 3            |
-| 102     | TS058         | Exponer *endpoint* para eliminar cuenta de usuario                                 | 1            |
-| 103     | TS061         | Exponer *endpoint* para cambiar contraseña mediante código de verificación         | 5            |
+| 101     | TS058         | Exponer *endpoint* para actualizar cuenta de usuario                               | 3            |
+| 102     | TS059         | Exponer *endpoint* para eliminar cuenta de usuario                                 | 1            |
+| 103     | TS062         | Exponer *endpoint* para cambiar contraseña mediante código de verificación         | 5            |
 | 104     | SWS001        | Ver sección *Hero*                                                                 | 5            |
 | 105     | SWS002        | Ver sección *Features*                                                             | 3            |
 | 106     | SWS003        | Ver sección *How It Works*                                                         | 3            |
@@ -2564,8 +2564,8 @@ La priorización se ha realizado considerando el valor que cada ítem aporta al 
 | 118     | SS004         | Probar bibliotecas de generación de archivos PDF y Excel                           | 8            |
 | 119     | SS005         | Probar bibliotecas de generación de gráficos                                       | 8            |
 | 120     | SS006         | Probar bibliotecas de generación de códigos QR                                     | 8            |
-| 121     | TS063         | Exponer *endpoint* para validación de recursos                                     | 1            |
-| 122     | TS064         | Exponer *endpoint* para manejo de CORS y métodos permitidos                        | 2            |
+| 121     | TS064         | Exponer *endpoint* para validación de recursos                                     | 1            |
+| 122     | TS065         | Exponer *endpoint* para manejo de CORS y métodos permitidos                        | 2            |
 
 <hr class="page-break">
 
@@ -9255,9 +9255,9 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>In-Process</td>
 </tr>
 <tr>
-  <td>TS056</td>
+  <td>TS057</td>
   <td>Exponer endpoint para registrar cuenta de usuario</td>
-  <td>TS056a</td>
+  <td>TS057a</td>
   <td>Implementar capa de dominio y aplicación</td>
   <td>Crear entidad User, caso SignUpUserCommandHandler con validación de correo único y cifrado</td>
   <td>4</td>
@@ -9265,9 +9265,9 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>To-do</td>
 </tr>
 <tr>
-  <td>TS056</td>
+  <td>TS057</td>
   <td>Exponer endpoint para registrar cuenta de usuario</td>
-  <td>TS056b</td>
+  <td>TS057b</td>
   <td>Implementar capa de infraestructura e interfaces REST</td>
   <td>Configurar POST /api/auth/sign-up con validaciones y respuesta estandarizada</td>
   <td>3</td>
@@ -9275,9 +9275,9 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>To-do</td>
 </tr>
 <tr>
-  <td>TS058</td>
+  <td>TS059</td>
   <td>Exponer endpoint para eliminar cuenta de usuario</td>
-  <td>TS058a</td>
+  <td>TS059a</td>
   <td>Implementar capa de dominio y aplicación</td>
   <td>Agregar DeleteUserCommandHandler con validación de estado inactivo</td>
   <td>3</td>
@@ -9285,9 +9285,9 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>To-do</td>
 </tr>
 <tr>
-  <td>TS058</td>
+  <td>TS059</td>
   <td>Exponer endpoint para eliminar cuenta de usuario</td>
-  <td>TS058b</td>
+  <td>TS059b</td>
   <td>Implementar capa de infraestructura e interfaces REST</td>
   <td>Desarrollar DELETE /api/users/{id} con manejo de errores controlados</td>
   <td>2</td>
@@ -9295,9 +9295,9 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>To-do</td>
 </tr>
 <tr>
-  <td>TS059</td>
+  <td>TS060</td>
   <td>Exponer endpoint para activar cuenta de usuario</td>
-  <td>TS059a</td>
+  <td>TS060a</td>
   <td>Implementar capa de dominio y aplicación</td>
   <td>Crear ActivateUserCommandHandler con verificación de token de activación</td>
   <td>3</td>
@@ -9305,9 +9305,9 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>To-do</td>
 </tr>
 <tr>
-  <td>TS059</td>
+  <td>TS060</td>
   <td>Exponer endpoint para activar cuenta de usuario</td>
-  <td>TS059b</td>
+  <td>TS060b</td>
   <td>Implementar capa de infraestructura e interfaces REST</td>
   <td>Implementar POST /api/users/{id}/activate con validación de token</td>
   <td>2</td>
@@ -9315,9 +9315,9 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>To-do</td>
 </tr>
 <tr>
-  <td>TS060</td>
+  <td>TS061</td>
   <td>Exponer endpoint para reenviar código de verificación</td>
-  <td>TS060a</td>
+  <td>TS061a</td>
   <td>Implementar capa de dominio y aplicación</td>
   <td>Definir ResendVerificationCodeCommandHandler y lógica de envío de correo</td>
   <td>3</td>
@@ -9325,9 +9325,9 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>To-do</td>
 </tr>
 <tr>
-  <td>TS060</td>
+  <td>TS061</td>
   <td>Exponer endpoint para reenviar código de verificación</td>
-  <td>TS060b</td>
+  <td>TS061b</td>
   <td>Implementar capa de infraestructura e interfaces REST</td>
   <td>Configurar POST /api/users/{id}/resend-verification y servicio de correo</td>
   <td>2</td>
@@ -9335,9 +9335,9 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>To-do</td>
 </tr>
 <tr>
-  <td>TS062</td>
+  <td>TS063</td>
   <td>Exponer endpoint para iniciar sesión de usuario</td>
-  <td>TS062a</td>
+  <td>TS063a</td>
   <td>Implementar capa de dominio y aplicación</td>
   <td>Desarrollar LoginUserCommandHandler con validación de credenciales y generación de JWT</td>
   <td>4</td>
@@ -9345,9 +9345,9 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>In-Process</td>
 </tr>
 <tr>
-  <td>TS062</td>
+  <td>TS063</td>
   <td>Exponer endpoint para iniciar sesión de usuario</td>
-  <td>TS062b</td>
+  <td>TS063b</td>
   <td>Implementar capa de infraestructura e interfaces REST</td>
   <td>Implementar POST /api/auth/login con retorno de token y roles</td>
   <td>3</td>
@@ -9355,9 +9355,9 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>In-Process</td>
 </tr>
 <tr>
-  <td>TS064</td>
+  <td>TS065</td>
   <td>Exponer endpoint para manejo de CORS y métodos permitidos</td>
-  <td>TS064a</td>
+  <td>TS065a</td>
   <td>Implementar capa de infraestructura</td>
   <td>Configurar middleware global para manejo de CORS, dominios y cabeceras</td>
   <td>3</td>
@@ -9365,9 +9365,9 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
   <td>Done</td>
 </tr>
 <tr>
-  <td>TS064</td>
+  <td>TS065</td>
   <td>Exponer endpoint para manejo de CORS y métodos permitidos</td>
-  <td>TS064b</td>
+  <td>TS065b</td>
   <td>Implementar capa de interfaces REST</td>
   <td>Implementar OPTIONS /api/resource con respuesta de métodos permitidos (GET, POST, PUT, DELETE)</td>
   <td>2</td>
