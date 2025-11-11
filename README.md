@@ -10507,7 +10507,7 @@ Ingresamos a la URL generada y añadimos al final `/swagger-ui/index.html` para 
 ![Swagger activo](./assets/ux-ui/evidences/backend/backend-deploy-step-22.jpg)
 
 **Repositorio del Backend:** [Abrir en GitHub](https://github.com/nistrahq/demy-api)  
-**Enlace público del Backend:** [Abrir en el navegador](https://demy-api-production.up.railway.app/swagger-ui/index.html)
+**Enlace público del Backend:** [Abrir en el navegador](https://nistra-demy.up.railway.app/swagger-ui/index.html)
 
 ---
 
@@ -10837,7 +10837,7 @@ Además, se incluye la evidencia de despliegue:
 
 **Enlace para acceder a la landing page:** [https://nistra-demy.netlify.app/](https://nistra-demy.netlify.app/)
 
-**Enlace para acceder a la RESTful API:** [https://demy-api-production.up.railway.app/swagger-ui/index.html](https://demy-api-production.up.railway.app/swagger-ui/index.html)
+**Enlace para acceder a la RESTful API:** [https://nistra-demy.up.railway.app/swagger-ui/index.html](https://nistra-demy.up.railway.app/swagger-ui/index.html)
 
 <hr class="page-break">
 
