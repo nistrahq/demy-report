@@ -53,7 +53,7 @@
   </table>
 </div>
 
-<h5 style="text-align: center"> Ciclo 2025-20 </h5>
+<h5 style="text-align: center"> Periodo 2025-20 </h5>
 
 <hr class="page-break">
 
@@ -162,6 +162,66 @@ Para el desarrollo del TP1, cada participante del equipo realizó las siguientes
 | Ramirez Mestanza, Salim Ignacio  | - Style guidelines general <br> - Protitipos de alta fidelidad de las aplicaciones para estudiantes y docentes <br> - Presentación final del TP1                                             |
 | Sulca Gonzales, Paúl Fernando    | - Source code management en GitHub <br> - Documentación del proyecto en GitHub <br> - Presentación final del TP1                                                                             |
 | Vilca Saboya, Diego Alejandro    | - Wireframes y Mock-ups de la App para Administradores <br> - Wireflow y User Flow Diagrams de la App para Administradores <br> - Prototipo de Alta Fidelidad de la App para Administradores |
+
+**GitHub Collaboration Insights**
+
+Se puede observar la colaboración del equipo en el desarrollo del proyecto a través de la plataforma GitHub. Esta sección destaca las contribuciones individuales y colectivas de los miembros del equipo, así como la gestión del código fuente mediante ramas y merges.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Gráfico de Pulse Insights del repositorio de GitHub.
+
+![Insights - Pulse](./assets/images/screenshots/insights-pulse-tp1.png)
+
+</div>
+
+En GitHub se presenta un timeline de las principales ramas creadas por cada integrante del equipo, así como los procesos de merge realizados.  
+Todas las ramas fueron gestionadas siguiendo el flujo de trabajo **GitFlow**, adaptado para una organización que utiliza un sistema de control de versiones.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Gráfico de red (*network graph*) de ramas en el repositorio de GitHub.
+
+![Insights - Network Graph](./assets/images/screenshots/insights-network-graph-tp1.png)
+
+</div>
+
+A continuación, se presentan los gráficos que muestran el análisis de los commits en el repositorio correspondiente al informe.  
+Estos gráficos detallan la cantidad de líneas de código añadidas por cada miembro del equipo y la actividad de commits registrada.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Análisis de líneas de código añadidas por contribuyente.
+
+![Insights - Contributors](./assets/images/screenshots/insights-contributors-tp1.png)
+
+</div>
+
+El siguiente gráfico muestra la cantidad de commits realizados en la semana con mayor actividad en el proyecto.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Análisis de cantidad de commits realizados por semana.
+
+![Insights - Commits](./assets/images/screenshots/insights-commits-tp1.png)
+
+</div>
+
+<hr class="page-break">
+
+## TB2
+
+**Tareas**
+
+Para el desarrollo del TP1, cada participante del equipo realizó las siguientes tareas:
+
+| Integrantes                      | Tarea asignada                                                                    |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| Aponte Cruzado, Andrea Marielena | - Execution Evidence <br> - Development evidence                                  |
+| Crispin Ramos, Daniel Franco     | - Development evidence                                                            |
+| Ramirez Mestanza, Salim Ignacio  | - Sprint Planning <br> - Team Collaboration Insights                              |
+| Sulca Gonzales, Paúl Fernando    | - Services Documentation <br> - Testing Suite Evidence <br> - Deployment Evidence |
+| Vilca Saboya, Diego Alejandro    | - Sprint Backlog 2                                                                |
 
 **GitHub Collaboration Insights**
 
@@ -380,10 +440,10 @@ Análisis de cantidad de commits realizados por semana.
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7
 
-| Criterio específico                                                                                                                                             | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Actualiza conceptos y<br> conocimientos necesarios <br> para su desarrollo<br> profesional y en especial <br> para su proyecto en <br> soluciones de software.  | Aponte Cruzado, Andrea Marielena <br> *TB1*: Agregue artefactos UX <br> del nuevo segmento objetivo <br> *TP1*: Diseñe en Figma la vista de <br> la aplicación para el segmento de estudiantes <br>  Crispin Ramos, Daniel Franco <br> *TB1*: Investigué los nuevos posibles competidores <br> de la aplicación en un ecosistema móvil  <br>  *TP1*: Diseñe en Figma la aplicación para <br> el segmento de profesores <br> Ramirez Mestanza, Salim Ignacio <br> *TB1*: Actualizé user stories <br> *TP1*: Diseñe en Figma la aplicación <br> para el segmento de Admins <br> Sulca Gonzales, Paúl Fernando <br> *TB1*: Actualizé la arquitectura del software <br> en base al nuevo entorno móvil <br> *TP1*: Diseñe en Figma la aplicación para <br> el segmento de Profesores <br>  Vilca Saboya, Diego Alejandro <br> *TB1*: Actualizé mis conocimientos sobre la <br> parte táctica de DDD <br> *TP1*: Diseñe en Figma la aplicación <br> para el segmento de Admins | *TB1*:Creemos que hemos logrado un buen desempeño en este aspecto, <br> ya que tuvimos que actualizar en algunos aspectos una <br> idea que utilizamos en un curso previo de desarrollo web. <br> *TP1*: Consideramos que si logramos cumplir esta competencia ya que <br> tuvimos que actualizar conceptos de diseño que vimos <br>en un curso anterior para el prototipado de nuestras soluciones móviles                                                   |
-| Reconoce la necesidad del <br> aprendizaje permamente <br> para el desempeño <br> profesional y el desarrollo de <br> proyectos en soluciones de <br> software. | Aponte Cruzado, Andrea Marielena <br> *TB1*: Agregue artefactos UX <br> del nuevo segmento objetivo <br> *TP1*: Diseñe en Figma la vista de <br> la aplicación para el segmento de estudiantes <br>  Crispin Ramos, Daniel Franco <br> *TB1*: Investigué los nuevos posibles competidores <br> de la aplicación en un ecosistema móvil  <br>  *TP1*: Diseñe en Figma la aplicación para <br> el segmento de profesores <br> Ramirez Mestanza, Salim Ignacio <br> *TB1*: Actualizé user stories <br> *TP1*: Diseñe en Figma la aplicación <br> para el segmento de Admins <br> Sulca Gonzales, Paúl Fernando <br> *TB1*: Actualizé la arquitectura del software <br> en base al nuevo entorno móvil <br> *TP1*: Diseñe en Figma la aplicación para <br> el segmento de Profesores <br>  Vilca Saboya, Diego Alejandro <br> *TB1*: Actualizé mis conocimientos sobre la <br> parte táctica de DDD <br> *TP1*: Diseñe en Figma la aplicación <br> para el segmento de Admins | *TB1*:Consideramos que logramos cumplir este aspecto, ya que reconocemos la <br> necesidad de tener un aprendizaje permanente sobre nuevos entornos,<br> en este caso móvil, para reestructurar o actualizar<br> ideas de soluciones de software.  <br> *TP1*: Consideramos que si cumplimos esta competencia ya que <br> reconocimos la necesidad de actualizar nuestros conocimientos  en UX/UI para ofrecer <br> una buena experiencia a nuestros usuarios |                                                                                                                                                                                             |           
+| Criterio específico                                                                                                                                             | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Actualiza conceptos y<br> conocimientos necesarios <br> para su desarrollo<br> profesional y en especial <br> para su proyecto en <br> soluciones de software.  | Aponte Cruzado, Andrea Marielena <br> *TB1*: Agregué artefactos UX <br> del nuevo segmento objetivo <br> *TP1*: Diseñé en Figma la vista de <br> la aplicación para el segmento de estudiantes <br> *TB2*: Actualicé conceptos de UX/UI aplicados al rediseño para estudiantes <br>  Crispin Ramos, Daniel Franco <br> *TB1*: Investigué los nuevos posibles competidores <br> de la aplicación en un ecosistema móvil <br> *TP1*: Diseñé en Figma la aplicación para <br> el segmento de profesores <br> *TB2*: Reforcé criterios de diseño móvil revisando referentes educativos actuales <br>  Ramirez Mestanza, Salim Ignacio <br> *TB1*: Actualicé user stories <br> *TP1*: Diseñé en Figma la aplicación <br> para el segmento de Admins <br> *TB2*: Actualicé conocimientos sobre buenas prácticas de gestión y redacción de historias de usuario <br> Sulca Gonzales, Paúl Fernando <br> *TB1*: Actualicé la arquitectura del software <br> en base al nuevo entorno móvil <br> *TP1*: Diseñé en Figma la aplicación para <br> el segmento de Profesores <br> *TB2*: Reforcé conceptos de arquitectura para adecuar la solución al contexto móvil <br>  Vilca Saboya, Diego Alejandro <br> *TB1*: Actualicé mis conocimientos sobre la <br> parte táctica de DDD <br> *TP1*: Diseñé en Figma la aplicación <br> para el segmento de Admins <br> *TB2*: Profundicé en principios tácticos y patrones aplicados al modelado de dominios móviles                                                                                                                                                                                                                                                                                          | *TB1*:Creemos que hemos logrado un buen desempeño en este aspecto, <br> ya que tuvimos que actualizar en algunos aspectos una <br> idea que utilizamos en un curso previo de desarrollo web. <br> *TP1*: Consideramos que sí logramos cumplir esta competencia ya que <br> tuvimos que actualizar conceptos de diseño que vimos <br> en un curso anterior para el prototipado de nuestras soluciones móviles. <br> *TB2*: Consideramos que cumplimos adecuadamente este criterio, ya que durante el sprint reforzamos y actualizamos los conocimientos necesarios para el desarrollo de nuestras soluciones móviles. Cada integrante profundizó en conceptos clave —ya sea de UX/UI, arquitectura, tácticas de DDD o gestión de requisitos— aplicándolos directamente en la mejora de prototipos, modelados y definiciones del proyecto. Esto nos permitió elevar la calidad del trabajo, adaptar nuestras ideas al nuevo contexto móvil y sostener un proceso de aprendizaje continuo orientado al desarrollo profesional. |
+| Reconoce la necesidad del <br> aprendizaje permamente <br> para el desempeño <br> profesional y el desarrollo de <br> proyectos en soluciones de <br> software. | Aponte Cruzado, Andrea Marielena <br> *TB1*: Agregué artefactos UX <br> del nuevo segmento objetivo <br> *TP1*: Diseñé en Figma la vista de <br> la aplicación para el segmento de estudiantes <br> *TB2*: Reconocí la necesidad de seguir aprendiendo sobre patrones de UX y enfoques de diseño para mejorar continuamente las vistas dirigidas a estudiantes <br>  Crispin Ramos, Daniel Franco <br> *TB1*: Investigué los nuevos posibles competidores <br> de la aplicación en un ecosistema móvil <br> *TP1*: Diseñé en Figma la aplicación para <br> el segmento de profesores <br> *TB2*: Identifiqué la importancia de actualizarme en tendencias móviles y referentes educativos para mantener un diseño competitivo y actual <br> Ramirez Mestanza, Salim Ignacio <br> *TB1*: Actualicé user stories <br> *TP1*: Diseñé en Figma la aplicación <br> para el segmento de Admins <br> *TB2*: Reconocí la necesidad de revisar y mejorar continuamente mis conocimientos en gestión de requisitos y diseño centrado en el usuario <br> Sulca Gonzales, Paúl Fernando <br> *TB1*: Actualicé la arquitectura del software <br> en base al nuevo entorno móvil <br> *TP1*: Diseñé en Figma la aplicación para <br> el segmento de Profesores <br> *TB2*: Comprendí la importancia de actualizarme en arquitectura móvil para sostener soluciones escalables y alineadas con entornos cambiantes <br>  Vilca Saboya, Diego Alejandro <br> *TB1*: Actualicé mis conocimientos sobre la <br> parte táctica de DDD <br> *TP1*: Diseñé en Figma la aplicación <br> para el segmento de Admins <br> *TB2*: Reconocí la necesidad de seguir fortaleciendo conceptos tácticos y patrones para mejorar el modelado del dominio en contextos móviles | *TB1*:Consideramos que logramos cumplir este aspecto, ya que reconocemos la <br> necesidad de tener un aprendizaje permanente sobre nuevos entornos,<br> en este caso móvil, para reestructurar o actualizar <br> ideas de soluciones de software.  <br> *TP1*: Consideramos que sí cumplimos esta competencia ya que <br> reconocimos la necesidad de actualizar nuestros conocimientos en UX/UI para ofrecer <br> una buena experiencia a nuestros usuarios <br> *TB2*: De manera grupal, reforzamos nuestra conciencia sobre la importancia del aprendizaje permanente, ya que cada integrante identificó áreas que necesitaban actualización —como diseño, arquitectura, dominio o análisis de requisitos— y aplicó nuevos conocimientos para mejorar las soluciones móviles desarrolladas en este sprint. Esto nos permitió avanzar con mayor solidez profesional y adaptarnos mejor a los cambios del proyecto.                                                                                                       |
 
 <hr class="page-break">
 
@@ -10503,7 +10563,7 @@ Ingresamos a la URL generada y añadimos al final `/swagger-ui/index.html` para 
 ![Swagger activo](./assets/ux-ui/evidences/backend/backend-deploy-step-22.jpg)
 
 **Repositorio del Backend:** [Abrir en GitHub](https://github.com/nistrahq/demy-api)  
-**Enlace público del Backend:** [Abrir en el navegador](https://demy-api-production.up.railway.app/swagger-ui/index.html)
+**Enlace público del Backend:** [Abrir en el navegador](https://nistra-demy.up.railway.app/swagger-ui/index.html)
 
 ---
 
@@ -10532,11 +10592,24 @@ Ingresamos a la URL generada y añadimos al final `/swagger-ui/index.html` para 
 
 ### 4.2.2. Sprint 2
 
-
+Durante el segundo sprint, el equipo se enfocó en la implementación de las aplicaciones móviles y la finalización del servicio de REST API. Se establecieron los objetivos del sprint, se planificaron las tareas y se asignaron responsabilidades a los miembros del equipo.
 
 #### 4.2.2.1. Sprint Planning 2
 
+A continuación se presentará el sprint planning para esta entrega, detallando los objetivos, las historias de usuario y la velocidad del sprint.
 
+| Sprint #                        | Sprint 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background**  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Date                            | 2025-10-20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Time                            | 03:00 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Location                        | Llamada grupal en la plataforma Discord                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Prepared By                     | Salim Ramirez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Attendees (to planning meeting) | Paúl Sulca, Daniel Crispin, Diego Vilca, Andrea Aponte                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Sprint Goal & User Stories**  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Sprint 1 Goal                   | Nos centramos en presentar las funcionalidades completas de la aplicación móvil android y el funcionamiento parcial de la aplicación multiplataforma flutter, así como la finalización del servicio REST API. Creemos que esto entregará una versión funcional y verificable de la plataforma a los usuarios. Esto se confirmará cuando todas las funcionalidades de la aplicación nativa android y la aplicación multiplataforma estén accesibles a través de la interfaz móvil, y con funcionalidades básicas y probadas mediante Swagger y emulador. |
+| Sprint 1 Velocity               | 96                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Sum of Story Points             | 96                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 #### 4.2.2.2. Sprint Backlog 2
 
@@ -14836,8 +14909,37 @@ En la sección de verificadores se observa el estado de cada invitado, pudiéndo
 
 #### 4.2.2.8. Team Collaboration Insights during Sprint
 
+| Alumno                           | Actividad                       |
+|----------------------------------|---------------------------------|
+| Crispin Ramos, Daniel Franco     | REST API, Android, Flutter      |
+| Aponte Cruzado, Andrea Marielena | REST API, Android, iOS          |
+| Ramírez Mestanza, Salim Ignacio  | REST API, Android, Flutter, iOS |
+| Sulca Gonzales, Paúl Fernando    | REST API, Android, Flutter      |
+| Vilca Saboya, Diego Alejandro    | REST API, Android, Flutter      |
 
+**REST API**
 
+![Git Evidence — API 1](./assets/ux-ui/evidences/git/git-api3.png)
+![Git Evidence — API 2](./assets/ux-ui/evidences/git/git-api4.png)
+![Git Evidence — API 3](./assets/ux-ui/evidences/git/git-api5.png)
+![Git Evidence — API 4](./assets/ux-ui/evidences/git/git-api6.png)
+![Git Evidence — API 5](./assets/ux-ui/evidences/git/git-api7.png)
+
+**Android Application**
+
+![Git Evidence — Android 3](./assets/ux-ui/evidences/git/git-android3.png)
+![Git Evidence — Android 4](./assets/ux-ui/evidences/git/git-android4.png)
+![Git Evidence — Android 5](./assets/ux-ui/evidences/git/git-android5.png)
+![Git Evidence — Android 6](./assets/ux-ui/evidences/git/git-android6.png)
+![Git Evidence — Android 7](./assets/ux-ui/evidences/git/git-android7.png)
+
+**Flutter Application**
+
+![Git Evidence — Flutter 1](./assets/ux-ui/evidences/git/git-flutter1.png)
+![Git Evidence — Flutter 2](./assets/ux-ui/evidences/git/git-flutter2.png)
+![Git Evidence — Flutter 3](./assets/ux-ui/evidences/git/git-flutter3.png)
+![Git Evidence — Flutter 4](./assets/ux-ui/evidences/git/git-flutter4.png)
+![Git Evidence — Flutter 5](./assets/ux-ui/evidences/git/git-flutter5.png)
 
 <hr class="page-break">
 
@@ -14879,10 +14981,12 @@ Esto contribuirá a posicionar a Demy como una plataforma integral y líder en e
 
 A continuación se presenta el video About the product, que empieza desde el aterrizaje del usuario en la landing page, hasta el uso y presentación de la aplicación.  
 ![Video About the Product Sprint 2](./assets/images/screenshots/about-the-product-screenshot.png)  
-[Enlace al video About the Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQCaIYKx-d9rT7PsOq9eHuUJAReoPRAGqAjJcORqbqS1j4o?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gid1Rt)
+
+Enlace al video about the product: [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQCaIYKx-d9rT7PsOq9eHuUJAYy2xZ1zk0qQUf9KyOKWRTM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pfNQMQ)
 
 # Video About the team
 
+Enlace al video about the team: [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQDYqO8gD7_vS4vQbzTOLVkLAXduvXLHaJn2p1xIraN2S70?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=V1ccMT)
 
 # Glosario
 
@@ -15101,7 +15205,7 @@ Además, se incluye la evidencia de despliegue:
 
 **Enlace para acceder a la landing page:** [https://nistra-demy.netlify.app/](https://nistra-demy.netlify.app/)
 
-**Enlace para acceder a la RESTful API:** [https://demy-api-production.up.railway.app/swagger-ui/index.html](https://demy-api-production.up.railway.app/swagger-ui/index.html)
+**Enlace para acceder a la RESTful API:** [https://nistra-demy.up.railway.app/swagger-ui/index.html](https://nistra-demy.up.railway.app/swagger-ui/index.html)
 
 <hr class="page-break">
 
