@@ -10594,7 +10594,7 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 1. ¿Qué tan fácil fue navegar por la aplicación o entender las secciones?
 2. ¿Lograste identificar rápidamente dónde registrar matrículas o pagos?
 3. ¿Te pareció intuitiva la interfaz o tuviste que pensar demasiado para realizar una acción?
-4. ¿Hay alguna función que esperabas encontrar y no viste?
+4. ¿Hay alguna función que esperabas encontrar y no viste
 5. ¿Qué te generó confianza o desconfianza mientras probabas la herramienta?
 
 **C. App Movil (Propuesta de valor)**
