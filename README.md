@@ -12696,6 +12696,832 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
 
 #### 4.2.2.3. Development Evidence for Sprint Review
 
+Con el sprint 2 se culminó la aplicación de Demy para administrativos, se avanzó con la aplicación para profesores y la creación de la estructura para la aplicación de estudiantes.
+
+**Development Evidence - Administrators Mobile**
+
+<table>
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit ID</th>
+      <th>Commit Message</th>
+      <th>Commit Body</th>
+      <th>Committed On</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>demy-admins</td><td>develop</td><td>f064d33</td><td>feat(auth): add localized strings for sign-in screen</td><td>-</td><td>16/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>437d972</td><td>feat(auth): add SignInScreen composable</td><td>-</td><td>16/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6d8a3e5</td><td>feat(auth): enhance authentication screens</td><td>-</td><td>16/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>70fd370</td><td>feat(auth): add UI components for sign-in</td><td>-</td><td>16/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>8c8af93</td><td>refactor(app): rename application class</td><td>-</td><td>16/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>dc61162</td><td>refactor(app): rename navigation components</td><td>-</td><td>16/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>118dcda</td><td>build(manifest): add ACCESS_NETWORK_STATE permission</td><td>-</td><td>16/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>cf9533b</td><td>feat(auth): restructure navigation</td><td>-</td><td>16/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e69824f</td><td>feat(auth): refactor navigation structure</td><td>-</td><td>16/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>c10c43f</td><td>feat(auth): add BaseDao, BaseUiState, SignInUseCase</td><td>-</td><td>16/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>c822924</td><td>feat(auth): add navigation & layout components</td><td>-</td><td>16/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>01502e0</td><td>feat(auth): add AuthRepository</td><td>-</td><td>16/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>c7f453a</td><td>feat(auth): implement AuthRemoteDataSource</td><td>-</td><td>16/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>d205726</td><td>feat(auth): add SignInRequestDto & ResponseDto</td><td>-</td><td>16/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>f825be2</td><td>feat(core): add safeApiCall and error handling</td><td>-</td><td>16/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>fb1e6b6</td><td>feat(auth): add AuthApi & UserSession</td><td>-</td><td>16/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>38f1361</td><td>feat(auth): add SignUpForm and VerifyEmailScreen</td><td>-</td><td>19/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>c0cfb36</td><td>feat(auth): remove tenantId from response</td><td>-</td><td>19/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>fc4f8b1</td><td>feat(auth): enhance sign-up UI</td><td>-</td><td>19/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>63e2fb8</td><td>feat(auth): update string resources</td><td>-</td><td>19/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>f3519ba</td><td>feat(auth): rename navigation destinations</td><td>-</td><td>19/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>9aab236</td><td>feat(auth): implement sign-up state & use case</td><td>-</td><td>19/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>9e43cf2</td><td>feat(auth): add DTOs and update UserSession</td><td>-</td><td>19/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>01dbfb2</td><td>feat(auth): implement sign-up functionality</td><td>-</td><td>19/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>80562f8</td><td>feat(auth): add Dagger modules</td><td>-</td><td>19/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>280e810</td><td>feat(auth): refactor sign-in flow</td><td>-</td><td>19/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>fd55e06</td><td>feat(auth): update sign-in request/response</td><td>-</td><td>19/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>18faa6c</td><td>feat(auth): update network security & API base URL</td><td>-</td><td>19/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>db9d75f</td><td>refactor(api): improve safeApiCall</td><td>-</td><td>19/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>3755b9c</td><td>feat(auth): add VerifyAccountScreen</td><td>-</td><td>20/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>bc8ce65</td><td>feat(auth): implement VerifyAccount</td><td>-</td><td>20/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>653039b</td><td>feat(auth): add VerifyAccount DTOs</td><td>-</td><td>20/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>11079a6</td><td>feat(auth): enhance error handling</td><td>-</td><td>20/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e23172e</td><td>feat(auth): add verifyAccount functionality</td><td>-</td><td>20/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>bd427f7</td><td>feat(auth): update verification strings</td><td>-</td><td>20/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0c74f18</td><td>feat(auth): integrate session mgmt</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>a2e07ab</td><td>refactor(auth): update package structure</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>f8db40f</td><td>refactor(features): update package structure</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>cbf2308</td><td>feat(navigation): add Students & Teachers screens</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>41660a2</td><td>refactor(layout): update main layout</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>a225bba</td><td>refactor(navigation): update Students & Teachers modules</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6175ff9</td><td>refactor(dashboard): improve structure</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>b256bbc</td><td>docs(navigation): improve documentation</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0d5c72b</td><td>Merge PR #3 (auth)</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>5b2f849</td><td>Merge develop into courses-management</td><td>-</td><td>23/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>ee7c4c3</td><td>refactor(build): update Compose & Navigation refs</td><td>-</td><td>23/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>d72a9a0</td><td>docs: add DB class documentation</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>9262bd8</td><td>merge: integrate authentication into develop</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>250ff6e</td><td>feat(teachers): rename remote data source classes</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>32ad089</td><td>feat(teachers): update addTeacher to accept DTO</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>84fa562</td><td>feat(teachers): rename modules & add repository module</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>713c9c5</td><td>feat(teachers): implement repository & mapper</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>17c60d3</td><td>feat(teachers): add Teacher data class</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>9a51849</td><td>feat(teachers): update DTO with country code</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>a8ed0f5</td><td>feat(teachers): add Dagger modules</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>71c7366</td><td>feat(teachers): implement remote data source</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>c301f14</td><td>feat(teachers): add API & DTOs</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>8610541</td><td>feat(teachers): add UI state & form data</td><td>-</td><td>25/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>fad374d</td><td>feat(teachers): enhance ViewModel</td><td>-</td><td>25/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>44367ef</td><td>Merge origin/develop into feature/courses-management</td><td>-</td><td>25/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>9b8fe56</td><td>feat(teachers): enhance MainTopBar visuals</td><td>-</td><td>25/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>7aaf150</td><td>feat(teachers): adjust UI spacing</td><td>-</td><td>25/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0a3d9c4</td><td>feat(teachers): update UI components</td><td>-</td><td>25/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>55619d7</td><td>feat(teachers): update titles and colors</td><td>-</td><td>25/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>9ff2881</td><td>feat(teachers): implement form and search components</td><td>-</td><td>25/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>06af110</td><td>feat(teachers): add SectionHeader component</td><td>-</td><td>25/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>20a96ca</td><td>feat(splash): enhance splash with logo & tagline</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>f03ba7f</td><td>Merge PR #9 (finance-management)</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e7fd0a0</td><td>refactor(navigation): adjust profile, settings, help</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>42abe69</td><td>feat(navigation): add finance & accounting to drawer</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>d0dc45e</td><td>feat(finance): add finance screen</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>bf91a13</td><td>feat(accounting): add accounting screen</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>665c466</td><td>Merge PR #8 (billing-management)</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>67a99bb</td><td>feat(navigation): add billing & invoices</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>82f2352</td><td>feat(invoicing): add invoices navigation</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>3c56f6f</td><td>feat(billing): add billing screen</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>cee7c50</td><td>feat(navigation): add profile, settings, help</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>9fd49e8</td><td>Merge PR #7 (help-center)</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>713358c</td><td>feat(help): integrate Help screen</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>aa5f5f3</td><td>feat(help): add Help screen</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>8ac4661</td><td>Merge PR #6 (settings)</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>ef7022d</td><td>feat(settings): integrate settings screen</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>19fe090</td><td>feat(settings): add UI for settings</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>76d1c70</td><td>Merge PR #5 (admin profile)</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>d8bca04</td><td>feat(profile): add isProfileSelected</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>85358a9</td><td>feat(profile): add user chip click</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>bccd604</td><td>feat(profile): add navigation titles ES/EN</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>2f25bb6</td><td>feat(profile): integrate profile into main graph</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>7723b06</td><td>Merge PR #10 (splash)</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>a5a0ba4</td><td>feat(app): update launcher icons</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0e5f128</td><td>feat(classrooms): add Classroom model</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6fe1ebf</td><td>feat(classrooms): add use cases</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>793486c</td><td>feat(classrooms): implement repository & API</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6b02b24</td><td>feat(classrooms): add Dagger modules</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>890699e</td><td>feat(classrooms): implement remote data source</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>37fd9a0</td><td>feat(classrooms): add DTOs</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>701c461</td><td>Merge feature/courses into schedules</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>195e9f5</td><td>Merge classrooms into schedules</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>cc63d03</td><td>chore: comment addClassSession</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>4c686bc</td><td>feat(navigation): integrate schedules module</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>52eb0ee</td><td>feat(schedules): create initial SchedulesScreen</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>1bb96d2</td><td>feat(schedules): add RegisterSchedule</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>19ff620</td><td>feat(schedules): add ScheduleList components</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>8aac716</td><td>feat(schedules): implement ScheduleViewer</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>a541ca5</td><td>feat(schedules): add navigation graph</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>b5670e6</td><td>feat(schedules): add ViewModels</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6a89d0f</td><td>feat(schedules): implement domain use cases</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>d733712</td><td>feat(schedules): add domain models</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>2599e58</td><td>feat(schedules): add ScheduleRepository</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>75decca</td><td>feat(schedules): implement data layer</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>919958b</td><td>feat(schedules): add SchedulesApi CRUD</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>924cf98</td><td>feat(schedules): add DTOs</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6995a29</td><td>fix(schedules): correct teacher selection</td><td>-</td><td>30/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>ac69280</td><td>refactor(schedules): package structure</td><td>-</td><td>30/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>9b6623d</td><td>refactor(schedules): improve state mgmt</td><td>-</td><td>30/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>bf57186</td><td>feat(schedules): integrate state mgmt</td><td>-</td><td>30/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>1a8a945</td><td>refactor(schedules): rename field</td><td>-</td><td>30/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>ceafa89</td><td>feat(schedules): update API endpoints</td><td>-</td><td>30/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>18a6f9b</td><td>feat(schedules): add UiStates</td><td>-</td><td>30/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>3874176</td><td>feat(schedules): add form components</td><td>-</td><td>30/10/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>b92bdeb</td><td>refactor(schedules): optimize state management and UI components</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>50057c2</td><td>feat(schedules): update schedule viewer UI components</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>706d3cc</td><td>feat(schedules): add string resources</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>48034ab</td><td>feat(courses): add string resources</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>4ab3cbd</td><td>feat(classrooms): add string resources</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>7ea4bee</td><td>refactor(schedules): remove unnecessary menuAnchor modifier</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>b6c9b48</td><td>feat(schedules): add SchedulesHeader and SchedulesViewerHeader</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>4a06cf0</td><td>feat(schedules): add viewer & class session card components</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>2a7fbd5</td><td>feat(courses): add CoursesHeader component</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6c7fc5f</td><td>feat(classrooms): add ClassroomsHeader</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>fc53c9c</td><td>refactor(schedules): refactor viewer screen and add headers</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>87a460c</td><td>refactor(schedules): update ScheduleMapper to nested models</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>5241cd6</td><td>refactor(schedules): extract strings to resources</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>4565c8f</td><td>refactor(schedules): remove unnecessary comments</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>d223304</td><td>refactor(courses): replace hardcoded strings with resources</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0e46b63</td><td>refactor(classrooms): replace hardcoded strings</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>ee50682</td><td>feat(schedules): update ClassSession to nested objects</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>315eea5</td><td>feat(assets): add schedules header photos</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e982bdf</td><td>feat(assets): add courses header photo</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>fcf694b</td><td>feat(assets): add classroom header photo</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>2600f43</td><td>feat(billing): update register screen</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>b9dccc3</td><td>feat(billing): update strings for i18n</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0778af9</td><td>feat(invoice): add strings for i18n</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>1b1980b</td><td>feat(invoice): update dto</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>a1c9e78</td><td>feat(invoice): add invoice form</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>5c548ba</td><td>feat(invoice): add invoice item card</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>9b7586d</td><td>feat(invoice): add invoice repository</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e8f3ac5</td><td>feat(invoice): add invoice mapper</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>7376290</td><td>feat(billing): add form data</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>3748725</td><td>feat(billing): add use case</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0b5c2ce</td><td>feat(billing): update dto</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>41ff18c</td><td>feat(billing): update destination</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>9698586</td><td>feat(billing): update search panel</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>8d2cba9</td><td>feat(billing): update navigation</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>3d503ef</td><td>feat(billing): add billing account details & view model</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>cef792e</td><td>feat(billing): update repository contract</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>a21bc56</td><td>feat(billing): update api service</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>576419d</td><td>feat(billing): update repository implementation</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>b3e09e6</td><td>feat(billing): update remote data source</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>4cba8f0</td><td>feat(billing): update mapper</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>043866a</td><td>feat(billing): add use case</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>ed64fdb</td><td>feat(billing): move invoice domain model</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>f05ce47</td><td>feat(billing): change invoice mapper</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>5acef42</td><td>feat(billing): update domain model</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>506c159</td><td>fix: container colors in help section</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>babbad7</td><td>feat: add profile photos</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>caba74e</td><td>fix: correct profile screens</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0816216</td><td>fix: settings section</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>5979562</td><td>fix: correct settings screen</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6c17de4</td><td>fix: delete comments in help section</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>07f9db9</td><td>Merge feature/help-center</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>f2394a3</td><td>fix: edit colors in help section</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>2533687</td><td>feat: add help page and common component</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>74a2704</td><td>feat: add initial help structure</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>1190783</td><td>Merge feature/app-settings</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>14472c4</td><td>feat: add settings structure and functionality</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>a28ad87</td><td>feat(billing): update view model</td><td>-</td><td>03/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6412042</td><td>feat(billing): update screen</td><td>-</td><td>03/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e91ea5b</td><td>feat(billing): update strings</td><td>-</td><td>03/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>5d7b3f8</td><td>feat(billing): update nav graph</td><td>-</td><td>03/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>4ca831d</td><td>feat(billing): add screen</td><td>-</td><td>03/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>b21b6fc</td><td>feat(billing): add form data</td><td>-</td><td>03/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>be8b305</td><td>feat(billing): add components</td><td>-</td><td>03/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>bc17145</td><td>feat(billing): add view model</td><td>-</td><td>03/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0ca38fa</td><td>feat(billing): add ui state</td><td>-</td><td>03/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>161c52b</td><td>feat(billing): add strings for i18n</td><td>-</td><td>03/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>273a2b0</td><td>feat(billing): add header photos</td><td>-</td><td>03/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>b4c17e9</td><td>Merge administrator-profile</td><td>-</td><td>02/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>c8bfae1</td><td>feat: add profile working with backend</td><td>-</td><td>02/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>a34042f</td><td>feat(billing): add remote data source</td><td>-</td><td>01/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>886f64e</td><td>feat(billing): add DI modules</td><td>-</td><td>01/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>46afd38</td><td>feat(billing): add mapper</td><td>-</td><td>01/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>bb4b961</td><td>feat(billing): add api service</td><td>-</td><td>01/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>4a4b21d</td><td>feat(billing): add repository implementation</td><td>-</td><td>01/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>73e20a2</td><td>feat(billing): add mapper</td><td>-</td><td>01/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>02cff98</td><td>feat(billing): add dtos</td><td>-</td><td>01/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>b8f91c6</td><td>feat(billing): add use cases</td><td>-</td><td>01/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>bbe899c</td><td>feat(billing): add repository contract</td><td>-</td><td>01/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>5f961ac</td><td>feat(billing): add domain models</td><td>-</td><td>01/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>2a90474</td><td>i18n(students): shorten birthdate label text in Spanish translation</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>cf2e18a</td><td>feat(enrollments): disable enrollment dropdowns when editing</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>97df5f4</td><td>refactor(enrollments): adjust amount and currency fields layout and fix dropdowns</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>fc4028b</td><td>feat(navigation): add enrollmentsGraph to MainNavHost</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0cdb841</td><td>feat(navigation): add Enrollments destination to MainDestination</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>311465d</td><td>feat(core): add Enrollments destination to DrawerConfig</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>51445f5</td><td>feat(core): add Enrollments destination to DrawerConfig</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>3b67f91</td><td>feat(core): add Enrollments destination to DrawerConfig</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>dc7ae45</td><td>feat(core): add Enrollments destination to DrawerConfig</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>58893ea</td><td>feat(core): add Enrollments destination to DrawerConfig</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>23305a0</td><td>feat(core): add Enrollments destination to DrawerConfig</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>4f62207</td><td>Merge branch 'feature/periods-management' into feature/enrollments-management</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>622a4d0</td><td>Merge remote-tracking branch 'origin/feature/schedules-management' into feature/enrollments-management</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>c9546c1</td><td>Merge branch 'feature/students-management' into feature/enrollments-management</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>54c1d0f</td><td>feat(enrollments): add string resources English and Spanish for enrollment management</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e3ca9cc</td><td>feat(enrollments): add EnrollmentsViewModel to manage UI state and user interactions</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>442afbb</td><td>feat(enrollments): add EnrollmentsScreen with two-pane layout</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e7cc2ac</td><td>feat(enrollments): add components for enrollment registration and listing</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6bd96b4</td><td>feat(enrollments): add EnrollmentUiState for managing UI layer state</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>4f6fc6e</td><td>feat(enrollments): add navigation graph and destination for enrollments feature</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>2e89ab4</td><td>feat(enrollments): add EnrollmentFormData data class</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>1a3a835</td><td>feat(enrollments): add domain use cases for enrollment CRUD operations</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>27e4d6e</td><td>feat(enrollments): add EnrollmentRepository interface</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0eb0f7d</td><td>feat(enrollments): add domain models for enrollments</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>bb97d50</td><td>feat(enrollments): implement EnrollmentRepository</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0b6196c</td><td>feat(enrollments): add DTOs for enrollment management</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>23e3acf</td><td>feat(enrollments): add EnrollmentApi for network requests</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>ba8e95a</td><td>feat(enrollments): add mappers for DTO ↔ domain conversion</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>1f49952</td><td>feat(enrollments): add Hilt modules for data layer dependencies</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>dd306d3</td><td>feat(enrollments): add remote data source for enrollments</td><td>-</td><td>09/11/2025</td></tr> 
+    <tr><td>demy-admins</td><td>develop</td><td>c5aefa0</td><td>refactor(schedules): adjust button weight in RegisterSchedule component</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e478826</td><td>chore(students): remove unused imports from StudentsNavGraph</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>aadb3d7</td><td>feat(invoices): add list panel</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6c9a203</td><td>feat(invoices): update list item card</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>83de4a1</td><td>feat(invoices): update screen</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>81a2927</td><td>feat(invoices): add view model</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>ec9219e</td><td>feat(invoices): add ui state</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>a6ec010</td><td>feat(invoices): add repository implementation</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>7724a57</td><td>feat(invoices): add repository module</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>014e196</td><td>feat(invoices): update repository</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>87b360e</td><td>feat(core): add listing card component</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>be466fa</td><td>feat(billing): update search panel</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e1f5112</td><td>feat(invoicing): update strings for i18n</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0ab5735</td><td>feat(billing): add use case</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>df0007e</td><td>feat(billing): update details view model</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>2c7ed67</td><td>feat(billing): update api</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>7bf411a</td><td>feat(billing): update remote data source</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>bdd4a71</td><td>feat(billing): update strings for i18n</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>60779e2</td><td>Merge remote-tracking branch 'origin/feature/enrollments-management' into feature/enrollments-management</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6a441c5</td><td>feat(i18n): add English and Spanish strings for Academic Periods</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6712c99</td><td>feat(core): add Moshi type adapter for LocalDate</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>37686af</td><td>feat(navigation): add periods graph to MainNavHost</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>235f7dc</td><td>feat(main): add AcademicPeriods to MainDestination</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e9299f0</td><td>refactor(core): update periods drawer destination</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>3495d28</td><td>feat(periods): add AcademicPeriodsViewModel</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>61f90dc</td><td>feat(periods): add AcademicPeriodsViewModel</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>68c92ff</td><td>feat(periods): add AcademicPeriodsScreen</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>7ba97ab</td><td>feat(periods): add components for academic period management</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>396e650</td><td>feat(periods): add AcademicPeriodUiState</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>938c818</td><td>feat(periods): add navigation graph and destination</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>07714ec</td><td>feat(periods): add AcademicPeriodFormData</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>7383529</td><td>feat(periods): add domain use cases</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>58fd1ab</td><td>feat(periods): add AcademicPeriodRepository interface</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e4aee3e</td><td>feat(periods): add AcademicPeriod domain model</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>d40b12f</td><td>feat(periods): implement AcademicPeriodRepository</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>2b02746</td><td>feat(periods): add academic period DTOs</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e6ed3f1</td><td>feat(periods): add AcademicPeriodApi</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>b3897e7</td><td>feat(periods): add mappers for academic period DTOs</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>55a03e2</td><td>feat(periods): add Hilt modules</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>ec79c7b</td><td>feat(periods): add AcademicPeriodRemoteDataSource</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e728ddc</td><td>feat(i18n): add English and Spanish strings for students</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>f6a5837</td><td>feat(students): add StudentsViewModel</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e67da07</td><td>feat(students): implement StudentsScreen</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>db5f287</td><td>feat(students): add UI components</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6d360ad</td><td>feat(students): add StudentUiState</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>55a3612</td><td>feat(students): rename StudentsDestination (Register → Overview)</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>3b05107</td><td>feat(students): add data models for student form</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>c0103e8</td><td>feat(students): add domain use cases</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>ab77ec3</td><td>feat(students): add StudentRepository interface</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>ee2d3ea</td><td>feat(students): add Student domain model</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>05b36a5</td><td>feat(students): implement StudentRepository</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>695b130</td><td>feat(students): add remote data models</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>7d67cb7</td><td>feat(students): define StudentApi</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>f64ca0e</td><td>refactor(students): rename StudentApi in module</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>9a4ae04</td><td>refactor(students): rename StudentsApi → StudentRemoteDataSourceImpl</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>a73965e</td><td>feat(students): add mappers</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>5c8d4be</td><td>feat(students): add DI module for StudentRepository</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>267724a</td><td>feat(students): add StudentRemoteDataModule</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>5b234b8</td><td>feat(students): add Hilt module for student data sources</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>569b0f6</td><td>feat(students): add StudentRemoteDataSource and implementation</td><td>-</td><td>08/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>c34c077</td><td>feat: resolve conflicts in settings</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>3013dcd</td><td>feat: add new screens and components</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>77bb189</td><td>feat: add theme card</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>9e7b641</td><td>merge: integrate feature/billing-management into feature/finance-management</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>3deec04</td><td>feat: add settings card</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>4c9994f</td><td>feat: add general settings card</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>2be7289</td><td>feat: add accessibility card</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>95f6ab1</td><td>feat: add common card with no title</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>026a31f</td><td>feat:add screens for settings</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>db5c747</td><td>feat(finance): update header colors in FinanceAnalyticsPanel for improved visibility</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>3a1468b</td><td>feat(finance): enhance IncomeExpenseLineChart to combine and sort unique dates for improved data alignment</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>381df88</td><td>feat(finance): add horizontal divider between charts for improved layout</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>4785173</td><td>merge: resolve conflicts and integrate administrator profile updates</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>5c48be7</td><td>fix: general things</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>dbfb7ba</td><td>feat: erase spaces from texts</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e19749a</td><td>feat(finance): replace custom pie chart implementation with Ehsan Narmani PieChart</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>ce60f39</td><td>feat(finance): implement pie chart visualization for expense categories</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e87083c</td><td>feat(finance): replace ByteBeats chart library with Ehsan Narmani charts</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>512ada4</td><td>Merge pull request #11 from nistrahq/feature/administrator-profile</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>aabbdef</td><td>Merge branch 'develop' into feature/administrator-profile</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>3edee9a</td><td>feat: add modifications in profile fonts</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6017ceb</td><td>feat(finance): refactor IncomeExpenseLineChart to use new Vico chart components</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>a05f13e</td><td>feat(finance): update Vico and ByteBeats chart libraries</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>559e956</td><td>feat(finance): add Vico and ByteBeats chart libraries</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>5d64d95</td><td>feat(finance): integrate FinanceAnalyticsPanel into RegisterTransactionScreen</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>fd94c64</td><td>feat(finance): add ChartData model and processor</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>d5fc4f9</td><td>feat(finance): add ExpenseCategoriesPieChart component</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>3966f0f</td><td>feat(finance): add FinanceAnalyticsPanel component</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e81df13</td><td>feat(finance): add IncomeExpenseLineChart component</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>511da57</td><td>feat(finance): add localized strings for analytics</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>1c43e78</td><td>feat: add photos in drawable</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6a095a6</td><td>feat: add profile screen</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0685ae2</td><td>feat: add profile card component</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>1ddbf15</td><td>feat: add motivation card component</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>1f4c27b</td><td>feat: add account status card</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>4dfb17c</td><td>feat: add inline value component</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>f4c93c9</td><td>feat: add new distribution for profile presentation</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0294eaf</td><td>feat(assets): add students management header photo</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6f145b8</td><td>feat(assets): add students management header photo</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>bf480c6</td><td>feat(finance): update RegisterTransactionViewModel to handle nullable form data</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>f5ac8d6</td><td>feat(finance): implement dropdown menus for transaction type, category, method, and currency</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>367ddcc</td><td>feat(finance): update TransactionFormData to use enums</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>fb922ec</td><td>feat(finance): add enums and extension functions</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>b8fdb1c</td><td>feat(finance): add localized strings for transaction types</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>bfa9b07</td><td>feat(periods): update header background image</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>20c0527</td><td>feat(assets): add academic periods header images</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>811e4f8</td><td>feat(enrollments): update screen title and description</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>1ca2b2e</td><td>feat(enrollments): add header to EnrollmentsScreen</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>2026b8e</td><td>feat(enrollments): add EnrollmentsHeader component</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>cded739</td><td>feat(assets): add enrollments management header photo</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>4057d54</td><td>feat(finance): rename FinanceScreen to RegisterTransactionScreen</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>733996f</td><td>feat(finance): implement RegisterTransactionViewModel</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>1f38c70</td><td>feat(finance): add TransactionRegistrationForm component</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>682e03b</td><td>feat(finance): add FinanceHeader component and model</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>93d41e6</td><td>feat(finance): add localized strings for finance screens</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>65de103</td><td>refactor(periods): update titles and descriptions</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>08e8d26</td><td>feat(periods): add header to AcademicPeriodsScreen</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>5512c5f</td><td>feat(periods): add AcademicPeriodsHeader component</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>b9e518f</td><td>feat(finance): add FinanceViewModel</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>f08f5f6</td><td>feat(finance): add transaction use cases</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>427603a</td><td>feat(finance): add UpdateTransactionRequestDto</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>d4c3cfa</td><td>feat(finance): add TransactionRepository and implementation</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>f5468c2</td><td>feat(finance): add data models and mappers</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>58d931b</td><td>feat(finance): implement remote data source</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>61308ee</td><td>feat(finance): add FinanceApi and remote data module</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>a94e6f7</td><td>feat(finance): add DTOs for registering transactions</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>a752d08</td><td>feat(students): add screen header to StudentsScreen</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>8de1ddb</td><td>feat(i18n): add title and description strings for Students screen</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>378285e</td><td>feat(i18n): add title and description strings for Students screen</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>ec1e19f</td><td>feat(scheduling): add delete action strings for common and schedules</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>2253e4d</td><td>Merge pull request #16 from nistrahq/feature/schedules-management</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>c983bbf</td><td>Merge pull request #15 from nistrahq/feature/finance-management</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>b6e12ab</td><td>feat(finance): update header background image for finance management</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>031e4c7</td><td>Merge pull request #14 from nistrahq/feature/enrollments-management</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>e8da62b</td><td>Merge remote-tracking branch 'origin/develop' into feature/enrollments-management</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>5f82f02</td><td>feat(accounting): add TableHeader and TableRow components for structured data display</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>2b617c2</td><td>feat(accounting): implement AccountingViewModel and TransactionsListScreen for managing transactions</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>168ed2b</td><td>feat(accounting): add UI components for transaction management including header, dialogs, search section, and transactions table</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0ccb983</td><td>feat(accounting): add extension functions for localized string conversion of transaction types, categories, payment methods, and currencies</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>c20e39e</td><td>feat(accounting): add AccountingUiState for managing transactions UI state</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0f2ad61</td><td>feat(accounting): add use cases for transaction management (CRUD operations)</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>ff2f675</td><td>feat(accounting): add TransactionMapper for DTO to domain model conversion</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>2cfe9dc</td><td>feat(accounting): add Dagger modules for accounting data sources and repositories</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>dd691a7</td><td>feat(accounting): implement TransactionRepository and TransactionRepositoryImpl for transaction management</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>03e0aa2</td><td>feat(accounting): implement AccountingRemoteDataSource for transaction operations</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>08b7ae2</td><td>feat(accounting): add AccountingApi interface for transaction management</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>79c4cab</td><td>feat(accounting): add DTOs for transaction resource and update request</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>c03d5d1</td><td>feat(accounting): add domain model for transactions</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>d9f77ec</td><td>feat(accounting): add localization strings for accounting management screen</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>2aca2a7</td><td>Merge pull request #13 from nistrahq/feature/students-management</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>89c8ed1</td><td>Merge pull request #12 from nistrahq/feature/periods-management</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>7ef007e</td><td>feat: create merge for help section</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>0144a1a</td><td>fix:terms and privacy policy final</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>39f244f</td><td>fix:terms and privacy policy font</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>b69f78b</td><td>fix:terms and privacy policy colors</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>dd84940</td><td>feat: add terms and privacy policy</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>b43b3d2</td><td>feat: add presentation complete for help</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6051fd2</td><td>feat: add new font and color</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>3cc081f</td><td>feat: add new font for we are here to help you</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>a3b91e2</td><td>feat: add new division for components in help section</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>4fd9495</td><td>Merge pull request #17 from nistrahq/feature/billing-management</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>8e0e4b1</td><td>Merge remote-tracking branch 'origin/develop' into feature/billing-management</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>91b38b7</td><td>feat(app): add .gitattributes to manage line endings and executable permissions</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>3f0452a</td><td>feat(billing): integrate snackbar for error messages and update invoice display</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>3163f66</td><td>feat(billing): delete old components</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>cc5388d</td><td>feat(billing): update view model</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>85efe6d</td><td>feat(invoices): update repository implementation</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>065b92d</td><td>feat(invoices): update resource</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>73264e7</td><td>feat(invoices): update mapper</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>76210a5</td><td>feat(invoices): add request dto</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>a18ecff</td><td>feat(billing): update navigation</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>c035dd4</td><td>feat(billing): update dto</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>46d5a9b</td><td>feat(billing): update api</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>c08334c</td><td>feat(billing): update repository implementation</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>f3d5c85</td><td>feat(billing): update remote data source</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>39c8dbc</td><td>feat(billing): update mapper</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>f5e275f</td><td>feat(billing): update view model</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>56c88df</td><td>feat(billing): update components</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>182a515</td><td>feat(billing): update domain model</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>afb0454</td><td>feat(billing): update i18n</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>fad467c</td><td>feat(billing): update component and screen</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>6205026</td><td>feat(billing): update api</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>16acb4b</td><td>feat(billing): update remote data source</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>fa14287</td><td>feat(billing): update view model</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>8a01691</td><td>feat(invoices): update use case</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>d98d94b</td><td>feat(invoices): update mapper</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>8f576c0</td><td>feat(invoices): update view model</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>bc8c654</td><td>feat(invoices): update components and screen</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>058d256</td><td>feat(invoices): update dto</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>2317ce5</td><td>feat(invoices): update repository implementation</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>45b9fef</td><td>feat(invoices): update repository</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>f968764</td><td>feat(invoices): add use case</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-admins</td><td>develop</td><td>8bd248b</td><td>feat(invoices): update i18n</td><td>-</td><td>12/11/2025</td></tr>
+  </tbody>
+</table>
+
+**Development Evidence - Backend**
+
+<table>
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit ID</th>
+      <th>Commit Message</th>
+      <th>Commit Body</th>
+      <th>Committed On</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>demy-api</td><td>main</td><td>3457f1d</td><td>Merge branch 'release/v1.0.0'</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f19898a</td><td>Merge branch 'develop' into release/v1.0.0</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>15d5c84</td><td>Merge branch 'feature/enrollment-management' into develop</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2020eb7</td><td>Merge branch 'develop' into feature/enrollment-management</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>1f54e59</td><td>feat(enrollment): rename ExternalIamService bean for clarity</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0d4ab4c</td><td>feat(enrollment): add ExternalIamService for fetching current academy ID</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9f6f42b</td><td>feat(enrollment): add UpdateAcademicPeriodResource for academic period updates</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>33da736</td><td>feat(enrollment): add UpdateAcademicPeriodCommandFromResourceAssembler</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7927fee</td><td>feat(enrollment): add UpdateAcademicPeriodCommand</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>55f1efa</td><td>feat(enrollment): add queries and value objects for academic periods management</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>dd26404</td><td>feat(enrollment): add DeleteAcademicPeriodCommand</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5fbae73</td><td>feat(enrollment): add CreateAcademicPeriodCommandFromResourceAssembler</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5397a96</td><td>feat(enrollment): add CreateAcademicPeriodCommandFromResourceAssembler</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>729b6ee</td><td>feat(enrollment): add CreateAcademicPeriodCommand</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>95bf0fb</td><td>feat(enrollment): add ActiveStatus value object</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>3209143</td><td>feat(enrollment): add AcademicPeriodResourceFromEntityAssembler</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>edf7b9b</td><td>feat(enrollment): add AcademicPeriodResourceFromEntityAssembler</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ce67a44</td><td>feat(enrollment): add AcademicPeriodResource record</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b7c19f1</td><td>feat(enrollment): add AcademicPeriodRepository interface</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7e7e7e7</td><td>feat(enrollment): implement AcademicPeriodQueryServiceImpl</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>fe8b281</td><td>feat(enrollment): add AcademicPeriodQueryService interface</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7f80eca</td><td>feat(enrollment): add AcademicPeriodCommandServiceImpl (CRUD)</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>07f0c9c</td><td>feat(enrollment): add AcademicPeriodCommandService interface</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>58b5956</td><td>feat(enrollment): add AcademicPeriod aggregate root</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b156729</td><td>feat(scheduling): initial structure for courses, classroom and scheduling</td><td>-</td><td>09/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4eb93fb</td><td>Merge branch 'release/v1.0.0'</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>be1e226</td><td>Merge branch 'develop' into release/v1.0.0</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>dc20dc2</td><td>Merge remote-tracking branch 'origin/develop' into develop</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>70d8042</td><td>chore: clean up SECURITY.md</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>fcf18c4</td><td>docs: update project structure contributing document</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>27c4b89</td><td>chore: update contributing.md</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>de752c8</td><td>docs: update information</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ad3c81f</td><td>docs: correct information about project status</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>568c55c</td><td>docs: update documentation with details about the main structure</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>271ea5d</td><td>Merge branch 'release/v1.0.0'</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>94559a2</td><td>feat(openapi): add server URL configuration</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ae2fb58</td><td>Merge branch 'release/v1.0.0'</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>48515f8</td><td>build(config): add Spring DataSource configuration for MySQL</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>6b2f930</td><td>Merge branch 'release/v1.0.0'</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>fbec657</td><td>feat(deploy): add Dockerfile and .dockerignore</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>6090c56</td><td>Merge branch 'feature/institution-management' into develop</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>acb768d</td><td>feat(iam): enhance user verification process</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>caabdbc</td><td>feat(institution): add user ID to administrator registration</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b6a5161</td><td>feat(institution): integrate administrator ID into academy registration</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>68c6fc8</td><td>feat(institution): remove academy ID from admin registration process</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>38ab544</td><td>feat(institution): add administrator ID to Academy entity</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d0dfde7</td><td>Merge branch 'feature/identity-access-management' into develop</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>36f25ac</td><td>feat(email): add verification email and Spanish localization</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9b8ad85</td><td>refactor(bdd): simplify variable declarations</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>cb7bfd3</td><td>test(bdd): add Cucumber tests for administrator registration</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>84d2b8a</td><td>test(academy): add unit tests for Academy aggregate</td><td>-</td><td>08/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>251697b</td><td>Merge remote-tracking branch 'origin/develop' into feature/scheduling-management</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b654845</td><td>Merge remote-tracking branch 'origin/feature/institution-management' into feature/institution-management</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9639a3d</td><td>feat(institution): add CORS preflight request handling in AcademiesController</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>e89bf5a</td><td>feat(institution): add CORS preflight request handling in AcademiesController</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5708558</td><td>feat(institution): add Swagger documentation for academy registration and existence check methods</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9dc4cb4</td><td>feat(institution): add academy head method for existence check functionality</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2f88681</td><td>Merge pull request #2 from nistrahq/feature/institution-management</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>110e424</td><td>chore: update pull request template to remove unnecessary header</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>c132ef2</td><td>chore: add TODO for rename in VerificationServiceImpl</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>751adcc</td><td>feat(email): enhance styling of verification email code block</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b620be8</td><td>feat(institution): add teacher registration endpoint in TeachersController</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>bc336b9</td><td>feat(institution): add event handling for user sign-up and activation</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f735de0</td><td>feat(institution): implement sign-up handling for verified users</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>976e720</td><td>feat(institution): add registration in interfaces layer functionality for teachers</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>c575867</td><td>feat(email): add functionality to send temporary password email</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4dda93e</td><td>feat(verification): add password length configuration and random password generation</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>573fad2</td><td>feat(institution): add teacher registration functionality in acl</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>cffbfd8</td><td>feat(institution): implement teacher registration command handling</td><td>-</td><td>24/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9a18b51</td><td>Merge pull request #1 from nistrahq/feature/institution-management</td><td>-</td><td>23/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>301a72f</td><td>feat(openapi): add contact information to OpenAPI configuration</td><td>-</td><td>23/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a603d34</td><td>feat(configuration): add contact information and mail sender details to application properties</td><td>-</td><td>23/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5e92518</td><td>feat(email): update verification email template with improved accessibility and additional information</td><td>-</td><td>23/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0032018</td><td>feat(email): enhance email service with configurable sender details and logging</td><td>-</td><td>23/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>97bbf7a</td><td>Merge branch 'refs/heads/develop' into feature/enrollment-management</td><td>-</td><td>23/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4e9f39a</td><td>feat(enrollment): include academyId in AcademicPeriod resource assembler</td><td>-</td><td>23/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2ba62d0</td><td>feat(enrollment): add academyId to AcademicPeriod resources for multitenancy support</td><td>-</td><td>23/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2f9d898</td><td>feat(enrollment): add method to find all AcademicPeriods by AcademyId</td><td>-</td><td>23/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2e3d086</td><td>feat(enrollment): add ExternalIamService to fetch current academyId in AcademicPeriodQueryServiceImpl</td><td>-</td><td>23/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>e0455db</td><td>feat(enrollment): add AcademyId to AcademicPeriod for multitenancy support</td><td>-</td><td>23/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>47c27c1</td><td>feat(scheduling): enhance WeeklyScheduleRepository with AcademyId for context-aware queries</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>02ba622</td><td>feat(scheduling): integrate AcademyId into WeeklySchedule service for improved academy context handling</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>61f5e68</td><td>feat(scheduling): integrate AcademyId into WeeklySchedule for enhanced context handling</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>94e828a</td><td>feat(course): extend CourseRepository with AcademyId for enhanced course queries</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>6bde347</td><td>feat(course): extend CourseRepository with AcademyId for enhanced course queries</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>61ac193</td><td>feat(course): integrate AcademyId into Course model and related services for improved context handling</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f1e7c13</td><td>feat(classroom): integrate ExternalIamService for academy context in classroom operations</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>fdf8293</td><td>feat(classroom): enhance Classroom repository with AcademyId for improved queries</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>1e7f951</td><td>feat(classroom): add AcademyId to Classroom model for better association</td><td>-</td><td>22/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>11e6f21</td><td>Merge branch 'feature/institution-management' into feature/scheduling-management</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>1f25e20</td><td>feat: Update teacher-related files in institution context</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>162a7e2</td><td>Merge pull request #5 from nistrahq/feature/institution-management</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b629ab4</td><td>fix(openapi): comment out production server URL in OpenApiConfiguration</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2b13166</td><td>feat(authentication): add OpenAPI documentation for account verification and resend code endpoints</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>8f35d7a</td><td>feat(teachers): add OpenAPI documentation for teacher registration and retrieval endpoints</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7302329</td><td>docs(openapi): add OpenAPI documentation for AdministratorsController and AcademiesController endpoints</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>1a9691c</td><td>feat(institution): add endpoint to retrieve current academy details</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>34ef3ed</td><td>feat(institution): add method to retrieve current academy details</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>6c063cb</td><td>feat(institution): add endpoint to retrieve current administrator details</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>135ca41</td><td>feat(institution): implement methods to fetch current administrator and email address by user ID</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>8ee6a3a</td><td>feat(institution): add queries to retrieve current administrator and email address by user ID</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>15de513</td><td>feat(institution): add method to find administrator by user ID</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>c860920</td><td>feat(iam): add method to fetch authenticated user ID</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>8451b6e</td><td>feat(iam): add query for retrieving authenticated user ID</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>3dcb20c</td><td>Merge pull request #4 from nistrahq/feature/billing-management</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>93ef0f3</td><td>feat(billing): enhance API documentation for billing account and invoice operations</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>acc1251</td><td>feat(billing): add endpoint to mark invoices as paid in billing accounts</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ffe8b64</td><td>feat(billing): add handler for marking invoices as paid in billing account service</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ea3319b</td><td>feat(billing): add functionality to mark invoices as paid and retrieve invoices by ID</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>e7a5798</td><td>refactor(billing): rename resource conversion methods for consistency</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d747580</td><td>feat(billing): edit endpoint for retrieving all billing accounts and corresponding resource assembler</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>230bb8c</td><td>feat(billing): add endpoint for retrieving all billing accounts and corresponding resource assembler</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9c8e011</td><td>feat(billing): add query for retrieving billing accounts by academy ID</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>68a5742</td><td>feat(billing): add query and implementation for retrieving all billing accounts</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f3a66bd</td><td>feat(billing): add endpoint for retrieving billing account by ID in BillingAccountsController</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>936ed57</td><td>feat(billing): add query for retrieving billing account by ID</td><td>-</td><td>28/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>cc2f19b</td><td>refactor(billing): rename AssignInvoiceCommand to AssignInvoiceToBillingAccountCommand and update references</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7a785e2</td><td>feat(billing): add endpoint for retrieving invoices by student ID in BillingAccountsController</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7075513</td><td>feat(billing): add handle method for retrieving invoices by student ID in BillingAccountQueryServiceImpl</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>c4277c5</td><td>feat(billing): add GetAllInvoicesByStudentIdQuery for invoice retrieval by student ID</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a208cf1</td><td>feat(billing): add getAllInvoicesByAccount method to BillingAccountsController for invoice retrieval</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>da78de3</td><td>feat(billing): implement BillingAccountQueryService for invoice retrieval by billing account ID</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a0dcb5a</td><td>feat(billing): add BillingAccountQueryService and GetAllInvoicesByBillingAccountIdQuery for invoice retrieval</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ec076b1</td><td>feat(billing): add assignInvoice method to BillingAccountsController for invoice assignment</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>94cccea</td><td>feat(billing): refactor BillingAccount to use List for invoices and update command handling</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>26402bd</td><td>feat(billing): add AssignInvoiceResource and AssignInvoiceCommandFromResourceAssembler for invoice assignment</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>c22529b</td><td>feat(billing): enhance AssignInvoiceCommand and BillingAccount to support billing account ID and return assigned invoice</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4fb80fc</td><td>feat(billing): add AssignInvoiceCommand and assignInvoice method to BillingAccount</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b0aaff1</td><td>feat(billing): implement BillingAccountsController for creating billing accounts</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>c6798ba</td><td>feat(billing): add assemblers for transforming BillingAccount and Invoice entities to resources</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>50140c9</td><td>feat(billing): add BillingAccountResource and CreateBillingAccountResource records</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>26aa2f9</td><td>feat(billing): add InvoiceResource record for invoice data representation</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ea41bdf</td><td>feat(billing): establish bidirectional relationship between BillingAccount and Invoice entities</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7845984</td><td>feat(billing): implement BillingAccountCommandService for handling account creation</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>6fa1ddf</td><td>feat(billing): add BillingAccountRepository for JPA persistence</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9524672</td><td>feat(billing): add ExternalIamService for fetching current AcademyId</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>de00283</td><td>feat(billing): implement CreateBillingAccountCommand and update BillingAccount constructor</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>fd01cd2</td><td>feat(billing): add AccountStatus enum and update BillingAccount with invoices and status</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a98aecf</td><td>feat(billing): introduce Invoice entity with value objects and status management</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>20468cc</td><td>feat(attendance): update class attendance inbound service</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>02e969a</td><td>feat(attendance): update command service implementation</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4e4734f</td><td>feat(attendance): update service contract</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4ad3183</td><td>feat(attendance): add delete command</td><td>-</td><td>27/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>eaea705</td><td>feat(attendance): update inbound service</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>74907c2</td><td>feat(attendance): update repository</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>706a318</td><td>feat(attendance): add update command</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d4ce699</td><td>feat(attendance): add domain queries</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5c807bc</td><td>feat(attendance): add query service implementation</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a62c8d0</td><td>feat(attendance): update command service impl</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5cc07f0</td><td>feat(attendance): add query service contract</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>47641e3</td><td>feat(attendance): update command contract documentation</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>3aa643b</td><td>feat(attendance): update aggregate root</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>868385f</td><td>feat(attendance): add class attendance inbound service</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>be73d38</td><td>feat(attendance): add resources and assemblers for rest interfaces layer</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9375cdc</td><td>feat(attendance): add command</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4ef9d59</td><td>feat(attendance): add acl for current academyId</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>30262d7</td><td>feat(attendance): add command implementation</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>dd03852</td><td>feat(attendance): add ClassAttendanceRepository repository</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>1605bbd</td><td>feat(attendance): add ClassAttendanceCommandService contract</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a460e27</td><td>feat(attendance): add ClassSessionId value object</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>57b0c7a</td><td>feat(attendance): add AttendanceStatus value object</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>30a5725</td><td>feat(attendance): add AttendanceInput value object</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>025b287</td><td>feat(attendance): add AttendanceRecord entity</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a72a420</td><td>feat(attendance): add ClassAttendance aggregate root</td><td>-</td><td>26/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4d3cd4d</td><td>Merge branch 'refs/heads/develop' into feature/enrollment-management</td><td>-</td><td>25/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0c645f1</td><td>feat(billing): add BillingAccount and Invoice entities with value objects</td><td>-</td><td>25/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>6285401</td><td>Merge pull request #3 from nistrahq/feature/institution-management</td><td>-</td><td>25/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0c0e9f6</td><td>feat(institution): enhance TeacherResource assembly with email address retrieval</td><td>-</td><td>25/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>312ecdc</td><td>feat(institution): add fetchEmailAddressByUserId method and update TeacherQueryService for email retrieval</td><td>-</td><td>25/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f082233</td><td>feat(iam): add fetchUserEmailAddressByUserId method and GetTeacherEmailAddressByUserIdQuery</td><td>-</td><td>25/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9def779</td><td>feat(institution): add GetUserByIdQuery and update UserQueryService for user retrieval</td><td>-</td><td>25/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>8749b23</td><td>feat(enrollment): add existsScheduleById method to WeeklySchedulesContextFacade</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>523cacf</td><td>feat(enrollment): add ExternalSchedulingService for fetching schedules by ID</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>c498ffe</td><td>feat(enrollment): implement EnrollmentsContextFacade for student name retrieval by DNI</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>13ad14b</td><td>feat(enrollment): add existsByDniAndIdNotAndAcademyId method to StudentRepository</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4eb0393</td><td>feat(enrollment): add query models for retrieving enrollments</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>549400d</td><td>feat(enrollment): add EnrollmentRepository for enrollment bounded context</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ddf2b36</td><td>feat(enrollment): add EnrollmentRepository for enrollment bounded context</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>60a1836</td><td>feat(enrollment): add CreateEnrollmentCommand for managing enrollment creation</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ab51fd4</td><td>feat(enrollment): add academy-based filtering and domain exceptions for Student services</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>6588c14</td><td>feat(enrollment): add academy-based filtering and domain exceptions for Student services</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>8eb6199</td><td>feat(enrollment): add implementation command and query services for managing enrollments</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>8324451</td><td>feat(enrollment): add command and query services for enrollment bounded context</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>8a40557</td><td>feat(enrollment): add Enrollment aggregate</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>8c75637</td><td>feat(enrollment): add resources for creating and updating enrollment data</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5792174</td><td>refactor(enrollment): remove isActive mapping from CreateAcademicPeriodResource</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5b515b4</td><td>refactor(enrollment): remove isActive mapping from CreateAcademicPeriodCommand assembler</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b4845d1</td><td>feat(enrollment): add resource assemblers for creating and updating enrollment commands</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>656d914</td><td>feat(enrollment): add commands for creating, updating, and deleting enrollments</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ec0cf14</td><td>refactor(enrollment): encapsulate AcademicPeriod creation with factory method</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b2e7b9f</td><td>fix(enrollment): filter academic period by current academyId in query service</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>20f11be</td><td>feat(enrollment): add custom exceptions for enrollment bounded context</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>fab1b6c</td><td>feat: add put billing invoice</td><td>-</td><td>05/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2dbb9e2</td><td>feat: add delete billing invoice</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>68735a7</td><td>feat(accounting-finance): enhance getAllTransactions endpoint with Swagger documentation and optional filtering parameters</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>73299c1</td><td>feat(accounting-finance): add endpoint to retrieve all transactions with optional filters</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>024f059</td><td>feat(accounting-finance): add resource assemblers for converting string inputs to TransactionCategory, TransactionMethod, and TransactionType value objects</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2150093</td><td>feat(accounting-finance): validate input for TransactionCategory, TransactionMethod, and TransactionType fromString methods</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>885fee7</td><td>feat(accounting-finance): implement TransactionQueryService for handling GetAllTransactionsQuery</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>186a2ce</td><td>feat(accounting-finance): add GetAllTransactionsQuery record for transaction retrieval</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>004d1a4</td><td>feat(accounting-finance): add method to convert a collection of Transaction entities to TransactionResource</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>141af4b</td><td>feat(accounting-finance): enable dynamic transaction filtering by extending JpaSpecificationExecutor in TransactionRepository</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>93dc2a6</td><td>feat(accounting-finance): add TransactionSpecificationsBuilder for dynamic transaction filtering</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>315a55e</td><td>feat(accounting-finance): add TransactionSpecification class for transaction filtering</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>db0fcb8</td><td>chore(accounting-finance): format internationalization configuration for better readability</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5e0fbf2</td><td>feat(accounting-finance): add accounting-finance messages to internationalization configuration</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>8d70f65</td><td>feat(accounting-finance): rename message properties files for localization</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>8012d6d</td><td>feat(accounting-finance): update custom exceptions to include category, method, and type in messages</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>262d2fe</td><td>feat(accounting-finance): replace IllegalArgumentException with custom exceptions for transaction categories, methods, and types</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a514d27</td><td>feat(accounting-finance): add localization messages for invalid transaction categories, methods, and types</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5d19357</td><td>feat(accounting-finance): add custom exceptions for invalid transaction categories, methods, and types</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7d6a9e6</td><td>feat(accounting-finance): add TransactionsController for managing transaction registrations</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5760cf9</td><td>feat(accounting-finance): add assemblers for converting transaction resources and entities</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>53efa9a</td><td>feat(accounting-finance): add RegisterTransactionResource and TransactionResource for transaction data handling</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a6a6108</td><td>feat(accounting-finance): add ExternalIamService for fetching current AcademyId</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4e84550</td><td>feat(accounting-finance): implement TransactionCommandService for handling transaction registration</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4e37195</td><td>feat(accounting-finance): add TransactionRepository for transaction persistence</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>597de39</td><td>feat(accounting-finance): add RegisterTransactionCommand for transaction registration</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f1b5330</td><td>feat(accounting-finance): add enums for TransactionCategory, TransactionMethod, and TransactionType</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d782339</td><td>feat(accounting-finance): add Transaction entity with necessary fields and constructor</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5e6d634</td><td>Merge branch 'refs/heads/feature/scheduling-management' into feature/enrollment-management</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5d3240a</td><td>feat(enrollment): add StudentsController for managing student records</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>89d6160</td><td>feat(enrollment): implement command and query services implementation for student management</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d713d98</td><td>feat(enrollment): add methods for student registration in ExternalIamService</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>e898669</td><td>feat(enrollment): add value objects for enrollment bounded</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>244640a</td><td>feat(enrollment): add StudentResource and UpdateStudentResource for student data handling</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>00d15fd</td><td>feat(enrollment): add StudentRepository for managing student data</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2c06aae</td><td>feat(enrollment): add command and query services for student management</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>c99874e</td><td>feat(enrollment): add Student Aggregate</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0786497</td><td>feat(enrollment): add query records for retrieving student information</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>26ee58b</td><td>feat(enrollment): add CreateStudentResource for student creation</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f2c637c</td><td>feat(enrollment): add resource assemblers for creating and updating students</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>133767d</td><td>feat(enrollment): implement commands for student management (Create, Update, Delete)</td><td>-</td><td>04/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>923d849</td><td>docs(i18n): Add Spanish and English messages for Scheduling context</td><td>-</td><td>03/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5795c44</td><td>refactor(scheduling): Use specific Domain Exceptions in Command Services</td><td>-</td><td>03/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>57c75ce</td><td>feat(scheduling): Add specific Domain Exceptions for resource management</td><td>-</td><td>03/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2b4ad0f</td><td>feat(scheduling): Register resource assemblers as Spring components</td><td>-</td><td>02/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>583a436</td><td>feat: Add ClassroomResourceFromEntity assembler</td><td>-</td><td>02/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0349168</td><td>feat: Add CourseResource and CourseResourceFromEntityAssembler</td><td>-</td><td>02/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5fd7eda</td><td>chore: rename schedules field to classSessions in WeeklyScheduleResource</td><td>-</td><td>30/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>19925fc</td><td>feat(attendance): update class session id value object</td><td>-</td><td>30/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7f331c9</td><td>feat(attendance): add domain exceptions</td><td>-</td><td>30/10/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>673bb7f</td><td>docs(accounting-finance): enhance ReportCommandServiceImpl with detailed method documentation for report generation</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d6fbb22</td><td>docs(accounting-finance): update PoiExcelReportService documentation for clarity on infrastructure role</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d5e316b</td><td>docs(accounting-finance): add documentation for ExcelReportingService interface and its generateTransactionsExcelReport method</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>00e105f</td><td>feat(accounting-finance): refactor PoiExcelReportServiceAdapter for improved structure and functionality</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0e8dcbe</td><td>feat(accounting-finance): add ColumnSizeAdjuster for dynamic Excel column sizing and rename TransactionExcelDataFormatter to DataFormatter</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>02060a4</td><td>feat(accounting-finance): add TableBuilder for unified Excel table building operations</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>72ddfcf</td><td>feat(accounting-finance): add HeaderBuilder, RowBuilder, and TransactionRowMapper for Excel transaction reporting</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>1c94e3f</td><td>feat(accounting-finance): rename ExcelTableBuilder to SummaryTableBuilder and enhance currency summary table functionality</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>c4a7635</td><td>feat(accounting-finance): implement WorkbookBuilder, WorkbookFactory, and WorkbookWriter for Excel report generation</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a66bf56</td><td>feat(accounting-finance): add CellStyleFactory and CurrencyFormatProvider for Excel reporting styles</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7c66fd9</td><td>docs(accounting-finance): add Swagger tag for ReportsController to enhance API documentation</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a4c55ca</td><td>feat(accounting-finance): enhance PDF reporting interfaces with detailed documentation and method contract for transaction report generation</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>3fba46a</td><td>feat(accounting-finance): add ITextPdfReportServiceAdapter for generating transaction PDF reports with headers, tables, and charts</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>6ff8276</td><td>feat(accounting-finance): add TimeSeriesCalculator for transaction time series data calculations and rename TransactionPdfDataFormatter to TransactionAggregator</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>775cc1f</td><td>feat(accounting-finance): add chart generation components including ChartGeneratorFacade, PieChartBuilder, TimeSeriesChartBuilder, ChartStyler, and ImageConverter for PDF reports</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>57bb225</td><td>feat(accounting-finance): implement PDF document creation components including ContentWriter, DocumentBuilder, DocumentFactory, FontProvider, and ImageWriter</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>28a4fa8</td><td>feat(accounting-finance): add DataFormatterFacade and ValueFormatter for PDF report data formatting</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>34d8eaf</td><td>feat(accounting-finance): add builders for PDF report sections including charts, headers, and tables</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b9f54ae</td><td>feat(accounting-finance): add PDF table builders for transaction details and currency summaries with styled cells</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f7fddb2</td><td>feat(accounting-finance): refactor Excel report generation to use constant media type and streamline response handling</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ea29ca5</td><td>feat(accounting-finance): implement multi-currency support in Excel report generation</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b44a2c6</td><td>feat(accounting-finance): add method to generate totals by currency in Excel report</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>26a2537</td><td>feat(accounting-finance): add currency style creation methods for Excel workbook</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>130813f</td><td>feat(accounting-finance): enhance Excel data formatter with currency totals and unique currency extraction</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>fdda141</td><td>feat(accounting-finance): add dependencies for PDF generation and charting</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>27795af</td><td>feat(accounting-finance): enhance PDF report with additional sections and descriptions</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>e27b87a</td><td>feat(accounting-finance): enhance PDF document generation with new formatting options</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>748c603</td><td>feat(accounting-finance): add currency summary table to PDF reporting</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>8213ddd</td><td>fix: refactor billing update and delete</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4ab8c64</td><td>feat(accounting-finance): enhance PDF reporting with expense and income charts</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>c461aae</td><td>refactor(accounting-finance): rename and reorganize reporting service packages</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ec999c9</td><td>feat(accounting-finance): integrate ExcelReportingService for generating Excel reports of transactions</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>6e57f1a</td><td>feat(accounting-finance): add ExcelReportingService interface for generating Excel reports of transactions</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4f89543</td><td>feat(accounting-finance): implement PoiExcelReportServiceAdapter for generating Excel reports of transactions</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>99b8fad</td><td>feat(accounting-finance): add ExcelTableBuilder for constructing Excel tables with transaction data</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>16abba6</td><td>feat(accounting-finance): add ExcelWorkbookBuilder for creating and managing Excel workbooks</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>66f18fa</td><td>feat(accounting-finance): add TransactionExcelDataFormatter for formatting transaction data in Excel reports</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>6ca818f</td><td>feat(accounting-finance): add PoiExcelReportService interface for Excel reporting</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5d98a5f</td><td>feat(accounting-finance): implement ITextPdfReportServiceAdapter for generating transaction PDF reports</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f5b94cd</td><td>feat(accounting-finance): add PdfDocumentBuilder for creating and managing PDF documents</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>c775b17</td><td>feat(accounting-finance): add PdfTableBuilder for constructing transaction tables in PDF reports</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>08defde</td><td>feat(accounting-finance): add PdfChartGenerator for generating pie and time series charts</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>8f77986</td><td>feat(accounting-finance): add TransactionPdfDataFormatter for transaction data processing</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ef0f66b</td><td>feat(accounting-finance): add ReportsController for generating transaction PDF and Excel reports</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>e8700d9</td><td>feat(accounting-finance): implement ReportCommandServiceImpl for generating transaction PDF reports</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d2bca68</td><td>feat(accounting-finance): introduce ITextPdfReportService interface and rename PdfReportGenerator to PdfReportServiceImpl</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>607fabb</td><td>feat(accounting-finance): add PdfReportingService and ReportCommandService interfaces for report generation</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b7d8c1b</td><td>feat(accounting-finance): add PdfReportGenerator for generating transaction reports</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>cd503ee</td><td>refactor(enrollment): improve exception messages for existing enrollments and students</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f13dc76</td><td>feat(enrollment): add enrollment message properties to internationalization configuration</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>77506b4</td><td>feat(enrollment): add message properties for academic periods, enrollments, and students</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>1008fc6</td><td>feat(accounting-finance): enhance API documentation for transaction endpoints with detailed responses</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>e26d89c</td><td>fix(accounting-finance): correct parameter order in MarkInvoiceAsPaidCommand instantiation</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2d9dc66</td><td>feat(accounting-finance): implement InvoicePaidEventHandler to register transactions on invoice payment</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0d40a24</td><td>feat(accounting-finance): trigger InvoicePaidEvent when an invoice is marked as paid</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d915145</td><td>feat(accounting-finance): add InvoicePaidEvent class for handling invoice payment events</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>6c98033</td><td>chore(accounting-finance): update tag description in TransactionsController for clarity</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>cc61a82</td><td>feat(accounting-finance): add getTransactionById endpoint to retrieve a transaction by ID</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>bddbd8b</td><td>feat(accounting-finance): add deleteTransaction endpoint to TransactionsController for transaction deletion</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>3a41ef2</td><td>feat(accounting-finance): add handle method for DeleteTransactionCommand in TransactionCommandService</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>42bcbcc</td><td>feat(accounting-finance): add DeleteTransactionCommand for transaction deletion with validation</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0821523</td><td>feat(accounting-finance): add updateTransaction method to update existing transactions by ID</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>3f5ded6</td><td>feat(accounting-finance): add UpdateTransactionResource and UpdateTransactionCommandFromResourceAssembler for transaction updates</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7b71887</td><td>feat(accounting-finance): add handle method for UpdateTransactionCommand in TransactionCommandService</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>da18fdd</td><td>feat(accounting-finance): add UpdateTransactionCommand and handle method for updating transactions with validation</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>fe32b8d</td><td>feat(accounting-finance): add handle method for GetTransactionByIdQuery to retrieve transaction by ID with academy validation</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>5eab2d6</td><td>feat(accounting-finance): add updateTransaction method to modify transaction details</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>17ef741</td><td>feat(accounting-finance): add GetTransactionByIdQuery for retrieving a transaction by ID with validation</td><td>-</td><td>09/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2c2b019</td><td>feat(scheduling): Update getClassSessionsByTeacherId to use userId and handle teacher retrieval</td><td>-</td><td>07/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2073ef6</td><td>feat(scheduling): Add handler for GetTeacherByUserIdQuery in TeacherQueryService</td><td>-</td><td>07/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0f28968</td><td>feat(scheduling): Add method to find Teacher by UserId in TeacherRepository</td><td>-</td><td>07/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9066fa3</td><td>feat(scheduling): Implement GetTeacherByUserIdQuery with validation</td><td>-</td><td>07/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>bbc5ef7</td><td>Merge pull request #11 from nistrahq/feature/billing-management</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>cfb8d73</td><td>feat(billing): add endpoint to retrieve invoices by student DNI number</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>85e5f56</td><td>feat(billing): add service to fetch student invoice ID by DNI number</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>14e8fbc</td><td>feat(enrollment): add method to fetch student ID by DNI number</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9802260</td><td>feat(student): add query for retrieving student ID by DNI number</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>bcffd4f</td><td>feat(enrollment): add query for retrieving student ID by DNI number</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0544e1b</td><td>feat(billing): add query for retrieving invoices by student DNI number</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>6cb7180</td><td>feat(attendance): update class attendance exceptions</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7de9afa</td><td>Merge branch 'develop', remote-tracking branch 'origin' into feature/billing-management</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0d31d8c</td><td>Merge branch 'release/v2.0.0' to main branch for deployment</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>3bfbac8</td><td>Merge remote-tracking branch 'origin/release/v2.0.0' into release/v2.0.0</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9dcf4a2</td><td>fix(api): update server URL for staging environment</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>56f7899</td><td>Merge branch 'release/v2.0.0'</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>0f20b1c</td><td>fix(api): update server URL for staging environment</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>29b4350</td><td>Merge pull request #10 from nistrahq/release/v2.0.0</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>21a2e8a</td><td>Merge pull request #9 from nistrahq/feature/accounting-finance-management</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>46bb541</td><td>Merge remote-tracking branch 'origin/develop' into feature/accounting-finance-management</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>dbacab9</td><td>Merge branch 'develop' into feature/bdd-tests</td><td>-</td><td>11/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>b157bca</td><td>Merge pull request #8 from nistrahq/feature/enrollment-management</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>55d53de</td><td>fix(i18n): correct spelling and accentuation in Spanish message properties</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>a950870</td><td>Merge pull request #7 from nistrahq/feature/scheduling-management</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>47fc63e</td><td>Merge pull request #6 from nistrahq/feature/attendance-management</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2a90335</td><td>feat(billing): add update and delete invoice functionality</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>9f14ab4</td><td>feat(billing): add UpdateInvoice command and resource classes</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>cf85163</td><td>feat(billing): add delete billing invoice functionality</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ed9bc46</td><td>fix(enrollment): comment out not found response for empty enrollment queries</td><td>-</td><td>10/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ba866f2</td><td>Merge branch 'release/v2.1.0' into main branch for deploy</td><td>-</td><td>13/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>2a1da0a</td><td>Merge branch 'develop' into release/v2.1.0</td><td>-</td><td>13/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>ee4d74c</td><td>Merge branch 'feature/bdd-tests' into develop</td><td>-</td><td>13/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>20573f8</td><td>Merge branch 'feature/attendance-management' into develop</td><td>-</td><td>13/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>237a9f4</td><td>Merge branch 'develop' into feature/bdd-tests</td><td>-</td><td>13/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>3cc0240</td><td>Merge branch 'develop' into feature/attendance-management</td><td>-</td><td>13/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>458ba2b</td><td>Merge pull request #14 from nistrahq/release/v2.1.0</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>158d432</td><td>Merge branch 'main' into release/v2.1.0</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>fefefdc</td><td>feat(api): update server URL for OpenAPI configuration</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>3b01029</td><td>Merge pull request #13 from nistrahq/feature/billing-management</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>32dfa13</td><td>test(unit): add unit tests for Student aggregate with validation and update scenarios</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7d35def</td><td>test(bdd): add integration tests for StudentRepository with various scenarios</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>c5e7654</td><td>test(unit): add comprehensive ScheduleTest with AAA pattern and validation scenarios</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>78bdca6</td><td>test(bdd): update RegisterAdministratorSteps to remove academyId and improve command construction</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>4971c43</td><td>test(bdd): add Enrollment registration feature with scenario outline and validation cases</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>bb56521</td><td>test(bdd): remove academyId column from administrator registration scenarios</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>dc26fd4</td><td>chore(pom): update Cucumber dependencies, remove duplicates and clean POM structure</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>fff1aab</td><td>feat(bdd): add Cucumber steps for enrollment registration scenarios</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>823ff6e</td><td>fix(enrollment): validate enrollment amount to be positive</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>7f1ab73</td><td>feat(bdd): add Cucumber test runner for acceptance tests</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>43564c8</td><td>feat(bdd): add Cucumber Spring configuration for acceptance tests</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>127cbb7</td><td>feat(test): add H2 database configuration for StudentRepositoryTest</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>02e5292</td><td>feat(bdd): add Cucumber tests for enrollment and administrator registration</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f831c42</td><td>fix(academy): prevent assigning an already assigned administrator</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>f869553</td><td>feat(billing): add DNI number to billing account creation and related resources</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>d2b6b58</td><td>feat(enrollment): add event handling for student enrollment and billing account creation</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>e9c5178</td><td>Merge pull request #12 from nistrahq/feature/institution-management</td><td>-</td><td>12/11/2025</td></tr>
+    <tr><td>demy-api</td><td>main</td><td>78256c5</td><td>feat(institution): add endpoint to retrieve current teacher information</td><td>-</td><td>12/11/2025</td></tr>
+  </tbody>
+</table>
+
 **Development Evidence - Teachers Mobile**
 
 <table>
@@ -12860,7 +13686,6 @@ Los escenarios de aceptación desarrollados con **Cucumber** permiten validar el
 ![Feature Enrollment](assets/tests/enrollment-feature-scenario.png)
 ![Enrollment Steps](assets/tests/enrollment-step-definitions.png)
 
-
 **Unit Test – ScheduleTest**
 
 Las pruebas unitarias de la entidad **Schedule** validaron la construcción de horarios mediante rangos de tiempo (`TimeRange`), el cumplimiento de restricciones (como hora inicial < hora final), la correcta asociación con `WeeklySchedule` y, especialmente, la detección de conflictos entre horarios superpuestos en el mismo día y aula. También se probó la actualización parcial de horario, preservando los invariantes del dominio.
@@ -12883,12 +13708,59 @@ Las pruebas unitarias de la entidad **Schedule** validaron la construcción de h
 
 #### 4.2.2.5. Execution Evidence for Sprint Review
 
+**Backend**
+En esta sección se expone la evidencia total de los endpoints implementados en el backend para el proyecto. El detalle de los mismos se encuentra fundamentado en la siguiente sección.
+
+## 1) Comprobación en Swagger de los endpoints
+
+Se accede a `/swagger-ui/index.html` para revisar que los endpoints se encuentren correctamente operativos.
+
+**Teachers Endpoints**
+![Teachers Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-1.png)
+
+**Reports Endpoints & Class Attendances Endpoints**
+![Reports and Class Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-2.png)
+
+**Academies Endpoints**
+![Academies Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-3.png)
+
+**Schedules Endpoints**
+![Schedules Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-4.png)
+
+**Courses and Administrators Endpoints**
+![Courses and Administrators Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-5.png)
+
+**Academic Periods Endpoints**
+![Academic Periods Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-6.png)
+
+**Billing Accounts Endpoints**
+![Billing Accounts Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-7.png)
+
+**Enrollments and Authentication Endpoints**
+![Enrollments and Authentication Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-8.png)
+
+**Classrooms and Transactions Endpoints**
+![Classrooms and Transactions Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-9.png)
+
+**Students Endpoints**
+![Students Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-10.png)
+
+**2) Registro inicial**
+
+Desde el endpoint `/auth/signup`, se realiza el registro de un nuevo usuario proporcionando los datos básicos.
+
+![Registro usuario - parte 1](./assets/ux-ui/evidences/backend/backend-doc-step-2.1.png)  
+![Registro usuario - parte 2](./assets/ux-ui/evidences/backend/backend-doc-step-2.2.png)
+
+**Administrator Mobile Application**
+
+A continuación se describen brevemente las vistas capturadas de la aplicación completa. Las pantallas mantienen una línea visual limpia con tarjetas, tipografía legible y acciones primarias claramente diferenciadas.
+
 
 
 #### 4.2.2.6. Services Documentation Evidence for Sprint Review
 
 En esta sección se presentan las evidencias de funcionamiento de los principales endpoints del backend desplegado en Railway, verificando su correcto comportamiento mediante Swagger UI. Se documentan las pruebas realizadas para la creación, autenticación y gestión de usuarios dentro del sistema Demy, incluyendo las respuestas del servidor y el flujo completo de validación por correo electrónico.
-
 
 **registerTeacher (POST /teachers)**
 Este endpoint permite registrar un nuevo profesor dentro del sistema Demy.
@@ -13610,7 +14482,6 @@ La respuesta confirma la operación con **200 OK**.
 
   </tbody>
 </table>
-
 
 #### 4.2.2.7. Software Deployment Evidence for Sprint Review
 
