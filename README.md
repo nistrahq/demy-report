@@ -361,14 +361,9 @@ Análisis de cantidad de commits realizados por semana.
             - [4.2.2.6. Services Documentation Evidence for Sprint Review](#4226-services-documentation-evidence-for-sprint-review)
             - [4.2.2.7. Software Deployment Evidence for Sprint Review](#4227-software-deployment-evidence-for-sprint-review)
             - [4.2.2.8. Team Collaboration Insights during Sprint](#4228-team-collaboration-insights-during-sprint)
-        - [4.3. Validation Interviews](#43-validation-interviews)
-            - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
-            - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
-            - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 
 - [Conclusiones](#conclusiones)
     - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
-    - [Video App Validation](#video-app-validation)
     - [Video About the product](#video-about-the-product)
     - [Video About the team](#video-about-the-team)
 - [Glosario](#glosario)
@@ -10570,7 +10565,6 @@ Ingresamos a la URL generada y añadimos al final `/swagger-ui/index.html` para 
 
 
 
-
 <hr class="page-break">
 
 # Conclusiones
@@ -10607,16 +10601,11 @@ Esto contribuirá a posicionar a Demy como una plataforma integral y líder en e
 
 <hr class="page-break">
 
-# Video App Validation
-
-
-
 # Video About the product
 
-
+Enlace al video about the product: [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQCaIYKx-d9rT7PsOq9eHuUJAYy2xZ1zk0qQUf9KyOKWRTM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pfNQMQ)
 
 # Video About the team
-
 
 
 
