@@ -11381,7 +11381,102 @@ Con el sprint 2 se culminó la aplicación de Demy para administrativos, se avan
 
 #### 4.2.2.5. Execution Evidence for Sprint Review
 
+**Backend**
+En esta sección se expone la evidencia total de los endpoints implementados en el backend para el proyecto. El detalle de los mismos se encuentra fundamentado en la siguiente sección.
 
+## 1) Comprobación en Swagger de los endpoints
+
+Se accede a `/swagger-ui/index.html` para revisar que los endpoints se encuentren correctamente operativos.
+
+**Teachers Endpoints**
+![Teachers Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-1.png)
+
+**Reports Endpoints & Class Attendances Endpoints**
+![Reports and Class Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-2.png)
+
+**Academies Endpoints**
+![Academies Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-3.png)
+
+**Schedules Endpoints**
+![Schedules Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-4.png)
+
+**Courses and Administrators Endpoints**
+![Courses and Administrators Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-5.png)
+
+**Academic Periods Endpoints**
+![Academic Periods Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-6.png)
+
+**Billing Accounts Endpoints**
+![Billing Accounts Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-7.png)
+
+**Enrollments and Authentication Endpoints**
+![Enrollments and Authentication Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-8.png)
+
+**Classrooms and Transactions Endpoints**
+![Classrooms and Transactions Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-9.png)
+
+**Students Endpoints**
+![Students Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-10.png)
+
+**2) Registro inicial**
+
+Desde el endpoint `/auth/signup`, se realiza el registro de un nuevo usuario proporcionando los datos básicos.
+
+![Registro usuario - parte 1](./assets/ux-ui/evidences/backend/backend-doc-step-2.1.png)  
+![Registro usuario - parte 2](./assets/ux-ui/evidences/backend/backend-doc-step-2.2.png)
+
+**Administrator Mobile Application**
+
+A continuación se describen brevemente las vistas capturadas de la aplicación completa. Las pantallas mantienen una línea visual limpia con tarjetas, tipografía legible y acciones primarias claramente diferenciadas.
+
+**Administrator — Dashboard**  
+Formulario de alta con campos básicos y selector de género; a la derecha, buscador y listado con acciones de edición/eliminación.  
+![Mobile 1](./assets/ux-ui/evidences/mobile/mobile-1.jpeg)
+
+**Courses — Visor semanal**  
+Calendario semanal con bloques por curso, descripcion y codigo para una lectura rápida del horario académico.  
+![Mobile 2](./assets/ux-ui/evidences/mobile/mobile-2.jpeg)
+
+**Courses — Editar sesión**  
+Formulario para editar la sesión con validaciones básicas.  
+![Mobile 3](./assets/ux-ui/evidences/mobile/mobile-3.jpeg)
+
+**Classrooms — Editar horario**  
+Edición del nombre del horario y gestión de sesiones existentes con acciones rápidas para escribir sobre el aula, sede y capacidad.  
+![Mobile 4](./assets/ux-ui/evidences/mobile/mobile-4.jpeg)
+
+**Classrooms — Registrar aula**  
+Vista para crear un contenedor de horario a partir de un nombre y capacidad.  
+![Mobile 5](./assets/ux-ui/evidences/mobile/mobile-5.jpeg)
+
+**Schedules — Registrar un nuevo horario**  
+Actualización de datos del aula y nombre del horario.
+![Mobile 6](./assets/ux-ui/evidences/mobile/mobile-6.jpeg)
+
+**Schedules — Periodo**  
+Formulario de registro de campos esenciales y confirmación visual del nombre del periodo.
+![Mobile 7](./assets/ux-ui/evidences/mobile/mobile-7.jpeg)
+
+**Schedules — Registrar curso**  
+Edición de curso con nombre, código y descripción, dia de la semana, horas, el curso que está disponible, el aula y el profesor.
+![Mobile 8](./assets/ux-ui/evidences/mobile/mobile-8.jpeg)
+
+**Schedules viewer — Horario**  
+Horario de curso con campos mínimos y jerarquía clara para facilitar la visualizacion.  
+![Mobile 9](./assets/ux-ui/evidences/mobile/mobile-9.jpeg)
+
+**Teachers — Registrar new teacher**  
+Registrar profesor con nombres, email, numero  y contraseña.
+![Mobile 10](./assets/ux-ui/evidences/mobile/mobile-10.jpeg)
+
+**Teachers — Búsqueda y acciones rápidas**  
+Campo de búsqueda con filtrado en tiempo real sobre el listado de docentes; permite editar o eliminar desde la tarjeta del resultado.
+![Mobile 11](./assets/ux-ui/evidences/mobile/mobile-11.jpeg)
+
+**Link de video de presentación sobre la Landing Page**
+
+[Video Presentación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EZ5yW8uJgABHibKhmIZArtMBJxqjBOr6YGwCYldmBtB3Pw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=IfJ1WB)
+**Timestamp: 00:00 - 05:10**
 
 #### 4.2.2.6. Services Documentation Evidence for Sprint Review
 
