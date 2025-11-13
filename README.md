@@ -12696,7 +12696,143 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
 
 #### 4.2.2.3. Development Evidence for Sprint Review
 
+**Development Evidence - Teachers Mobile**
 
+<table>
+    <thead>
+    <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit ID</th>
+    <th>Commit Message</th>
+    <th>Commit Body</th>
+    <th>Committed On</th>
+    </tr>
+    </thead>
+<tbody>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>852ec84</td><td>feat(schedules): Redesigns schedule card layout for improved clarity</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>b15b83d</td><td>feat(schedules): Improves day selection bar with localization and UI updates</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>018eb1f</td><td>feat(schedules): Enhances app bar with custom styling and navigation</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>c7e21e2</td><td>feat(attendance): add pages</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>ac4f5e6</td><td>feat(attendance): add widgets</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>52f34b8</td><td>feat(attendance): add navigation</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>150cd24</td><td>feat(attendance): add blocs</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>b1dfa36</td><td>feat(attendance): add use case</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>39745f0</td><td>feat(attendance): add domain models</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>4acd7a4</td><td>feat(attendance): add repository</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>f30b2de</td><td>feat(attendance): add endpoints constants</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>612c9e9</td><td>feat(attendance): add mappers</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>1bbe852</td><td>feat(attendance): add dtos</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>40855dc</td><td>feat(attendance): add module</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>eeef351</td><td>feat(attendance): add remote data source</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>4122b25</td><td>feat(attendance): add local data source</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>106f2ef</td><td>feat(attendance): update core</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>082a51e</td><td>feat(attendance): update api constants</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>ad563ac</td><td>feat(attendance): update router</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>ba6a382</td><td>feat(attendance): update I10n</td><td>-</td><td>13/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>4124da5</td><td>chore(deps): update package versions in pubspec.lock</td><td>-</td><td>12/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>e05c4e5</td><td>feat(profile): add ProfileBloc with LoadProfileRequested event handling</td><td>-</td><td>12/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>04386ea</td><td>feat(profile): add GetCurrentTeacherUseCase for retrieving current teacher data</td><td>-</td><td>12/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>651beaf</td><td>feat(profile): create ProfileRepository for retrieving current teacher data</td><td>-</td><td>12/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>b2c9d15</td><td>feat(profile): add Teacher entity for managing teacher data</td><td>-</td><td>12/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>901ada4</td><td>feat(profile): implement ProfileRepository for managing teacher data retrieval</td><td>-</td><td>12/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>a48d7e9</td><td>feat(profile): add ProfileMapper for converting TeacherResponseDto to Teacher entity</td><td>-</td><td>12/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>df2a26f</td><td>feat(profile): add profiles endpoints</td><td>-</td><td>12/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>8f00330</td><td>feat(profile): Create TeacherResponseDto for handling teacher data</td><td>-</td><td>12/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>1fc59f9</td><td>feat(profile): Add ProfileModule for dependency injection of profile-related components</td><td>-</td><td>12/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>56d369b</td><td>feat(profile): Implement ProfileRemoteDataSource and its implementation for fetching current teacher data</td><td>-</td><td>12/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>d7d3119</td><td>refactor(today_schedule_home): Improve layout and styling of schedule card</td><td>-</td><td>12/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>35fd1f8</td><td>fix(quick_access_card): Import 'flutter/services.dart' for potential future use</td><td>-</td><td>12/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>7cae427</td><td>feat(home): Integrate ProfileBloc for dynamic teacher name display and adjust layout</td><td>-</td><td>12/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>5cfefb1</td><td>feat(profile): Add Profile module and integrate ProfileBloc for teacher data</td><td>-</td><td>12/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>86d11a9</td><td>feat(schedule): Integrate ProfileBloc into app router for profile loading</td><td>-</td><td>12/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>8d780ae</td><td>feat(schedule): Add teaching schedule page</td><td>-</td><td>09/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>d36c663</td><td>feat(schedule): Revamps home page layout with profile and quick access</td><td>-</td><td>09/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>bf174cc</td><td>feat(schedule): Add home schedule and quick access UI widgets</td><td>-</td><td>09/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>c919d6c</td><td>feat(schedule): Add schedule UI with card-based class session display</td><td>-</td><td>09/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>914fe52</td><td>feat(schedule): Adds BLoC and navigation for teaching schedule feature</td><td>-</td><td>09/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>5247187</td><td>feat(schedule): Adds dependency injection setup for schedule feature</td><td>-</td><td>09/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>7361db0</td><td>feat(schedule): Add use case for retrieving teacher schedules</td><td>-</td><td>09/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>a1665cb</td><td>feat(schedule): Adds endpoints for schedule-related API calls</td><td>-</td><td>09/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>a39e569</td><td>feat(schedule): Adds mapping logic from DTOs to schedule domain entities</td><td>-</td><td>09/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>5b92c7f</td><td>feat(schedule): Add schedule repository abstraction and implementation</td><td>-</td><td>09/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>8106048</td><td>feat(schedule): Add core entities for schedule domain</td><td>-</td><td>09/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>5fa607f</td><td>feat(schedule): Add remote data source for fetching class sessions</td><td>-</td><td>09/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>ec6e59c</td><td>feat(schedule): Adds DTOs for schedule-related API responses</td><td>-</td><td>09/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>9bf723d</td><td>feat(schedule): Adds active user provider and schedule DI wiring</td><td>-</td><td>09/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>87c1212</td><td>feat(schedule): Adds schedule feature routes to app navigation</td><td>-</td><td>09/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>40150b0</td><td>Merge pull request #5 from nistrahq/feature/authentication</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>4861036</td><td>feat(ui): update color opacity handling in HomePage, ProfilePage, and SettingsPage</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>e4db56a</td><td>feat(sign-in): refactor SignInPage and SignInForm for improved layout and localization</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>b7b928e</td><td>feat(bottom-navigation): add color scheme support for indicator color</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>302fc62</td><td>feat(localization): add home, profile, and settings strings with titles and placeholders</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>5aacbf3</td><td>feat(router): add StatefulShellRoute with navigation for profile, home, and settings</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>2c12966</td><td>feat(settings): add SettingsPage and define settings route</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>da0ae61</td><td>feat(profile): add ProfilePage and define profile route</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>8ac0866</td><td>feat(home): add HomePage and define home route</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>a70cf22</td><td>feat(widgets): export BottomNavigationBarWidget and MainScaffold</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>22077bf</td><td>feat(navigation): add BottomNavigationBarWidget and integrate it into MainScaffold</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>2caf3c2</td><td>feat(interceptors): register LanguageInterceptor in dependency injection and add to Dio interceptors</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>500287b</td><td>feat(interceptor): add LanguageInterceptor to set Accept-Language header</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>6c47a3e</td><td>feat(logging): enhance LoggingInterceptor to log headers in development mode</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>a2f5a09</td><td>feat(errors): simplify constructors in failure classes to use super.message</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>828f465</td><td>feat(splash): update splash logic to check for cached user entity instead of token</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>2b25e00</td><td>feat(auth): add user management methods in AuthRepository and AuthRepositoryImpl</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>19d3711</td><td>feat(auth): implement user data management in AuthLocalDataSource</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>eabaa8d</td><td>feat(auth): refactor signIn method in AuthRepositoryImpl to use safeCall for error handling</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>4e6824c</td><td>feat(utils): add safeCall utility for handling asynchronous calls with error management</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>c08f831</td><td>feat(interceptors): add AuthInterceptor and LoggingInterceptor for request/response handling</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>4d170f5</td><td>feat(dependencies): move flutter_launcher_icons and flutter_native_splash to dev_dependencies</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>dd7f594</td><td>feat(auth): refactor signIn use case and bloc for error handling with Either type</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>c2170dd</td><td>feat(auth): implement error handling in signIn methods and update return types</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>30e9125</td><td>feat(dependencies): add dartz package for functional programming support</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>10743ed</td><td>feat(errors): add ErrorResource model for structured error handling</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>389e3bc</td><td>feat(errors): add DioExceptionMapper and Failure classes for error handling</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>dfc88bd</td><td>feat(auth): rename SignInUser to SignInUseCase and update dependencies</td><td>-</td><td>02/11/2025</td></tr><tr><td>demy-teachers</td><td>develop</td><td>b25ff7f</td><td>Merge pull request #4 from nistrahq/feature/authentication</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>df819a3</td><td>feat(auth): add SignInPage and SignInForm for user authentication</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>4744b9c</td><td>feat(auth): add authentication routes for signing in</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>8004560</td><td>feat(auth): implement AuthBloc, AuthEvent, and AuthState for user authentication flow</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>95bb732</td><td>feat(auth): implement SignInUser use case for user authentication</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>244901b</td><td>feat(auth): add AuthModule for dependency injection of authentication components</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>f2e349b</td><td>feat(auth): implement AuthRepository and AuthTokenProvider for authentication management</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>1cc4bd0</td><td>feat(auth): implement AuthLocalDataSource and AuthLocalDataSourceImpl for local token management</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>8f68877</td><td>feat(auth): implement AuthRemoteDataSource and AuthRemoteDataSourceImpl for user authentication</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>d766b3a</td><td>feat(auth): add SignInRequestDto and SignInResponseDto classes with JSON serialization</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>ca3c109</td><td>feat(user): add User class with required properties</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>c245422</td><td>Merge pull request #3 from nistrahq/feature/initial-structure</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>b40d2cb</td><td>feat: implement main application entry point and structure for DemyTeachersApp</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>ad01689</td><td>feat(scripts): add development and production run scripts for Flutter</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>8fe7834</td><td>feat(injectable): add configuration file for dependency injection code generation</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>061a3dc</td><td>feat: Update app icons and launch screen assets</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>33d23bc</td><td>feat(splash): add SplashPage and routing for splash screen functionality</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>8233a78</td><td>feat(splash): implement SplashBloc, events, and states for splash screen functionality</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>a11b268</td><td>feat(core): implement session storage and token provider abstractions</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>7933072</td><td>feat(core): add API client, response handling, authentication interceptor, and network connectivity checks</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>4f56e50</td><td>feat: implement localization support with English and Spanish translations; add configuration files and documentation</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>540f0a8</td><td>feat: remove unused environment and logger configuration files; add new dependency injection setup</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>95d2836</td><td>feat: add ApiConstants class and documentation for reusable API endpoint constants</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>2f9baf4</td><td>feat: update base URLs in AppConfig and add configuration documentation</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>a155475</td><td>feat: add environment and logger configuration classes for improved application structure</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>5984137</td><td>feat: update pubspec.lock to include new transitive dependencies and improve version constraints</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>fc964d7</td><td>feat: update pubspec.yaml to add new dependencies and configuration</td><td>-</td><td>02/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>3e3608e</td><td>feat: add MaterialTheme and utility functions for text theme creation</td><td>-</td><td>01/11/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>adda2be</td><td>feat: add dio and dio_web_adapter dependencies for enhanced HTTP requests</td><td>-</td><td>31/10/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>a57bb88</td><td>feat: update dependencies in pubspec.yaml and pubspec.lock for improved functionality</td><td>-</td><td>31/10/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>73c2789</td><td>feat: add AppConfig and LoggerConfig for environment-specific configurations and logging</td><td>-</td><td>31/10/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>b0da774</td><td>docs: update pubspec.yaml and pubspec.lock to include go_router and logger dependencies</td><td>-</td><td>31/10/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>9cac1ad</td><td>docs: add .editorconfig and .gitattributes for consistent coding styles and line endings</td><td>-</td><td>31/10/2025</td></tr>
+<tr><td>demy-teachers</td><td>main</td><td>2ad69aa</td><td>Merge pull request #2 from nistrahq/develop</td><td>-</td><td>31/10/2025</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>811b39e</td><td>Merge pull request #1 from nistrahq/feature/initial-structure</td><td>-</td><td>31/10/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>0fd8f75</td><td>docs: add pull request template for consistent contributions</td><td>-</td><td>31/10/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>2f517ba</td><td>docs: add issue template configuration with contact links and resources</td><td>-</td><td>31/10/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>1d15206</td><td>docs: add issue templates</td><td>-</td><td>31/10/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>7ae8d6a</td><td>docs: update README.md to provide detailed project description, features, architecture, installation instructions, and contribution guidelines</td><td>-</td><td>31/10/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>eb59679</td><td>docs: add CODEOWNERS file to define default code owners for the repository</td><td>-</td><td>31/10/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>ccc2b69</td><td>docs: add initial documentation in spanish</td><td>-</td><td>31/10/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>acfa80e</td><td>docs: add initial AUTHORS, CODE OF CONDUCT, CONTRIBUTING, and SECURITY documents</td><td>-</td><td>31/10/2025</td></tr>
+<tr><td>demy-teachers</td><td>feature/initial-structure</td><td>a26b7c4</td><td>chore: initial commit</td><td>-</td><td>31/10/2025</td></tr>
+</tbody>
+</table>
 
 #### 4.2.2.4. Testing Suite Evidence for Sprint Review
 
