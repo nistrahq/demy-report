@@ -12712,6 +12712,13 @@ Esto contribuirá a posicionar a Demy como una plataforma integral y líder en e
 
 <hr class="page-break">
 
+## Video About The product
+A continuación se presenta el video About the product, que empieza desde el aterrizaje del usuario en la landing page, hasta el uso y presentación de la aplicación.  
+![Video About the Product Sprint 2](./assets/images/screenshots/about-the-product-screenshot.png)  
+[Enlace al video About the Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQCaIYKx-d9rT7PsOq9eHuUJAReoPRAGqAjJcORqbqS1j4o?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gid1Rt)
+
+
+
 # Glosario
 
 En esta sección se definen los términos clave utilizados a lo largo del informe para facilitar la comprensión del contenido.
