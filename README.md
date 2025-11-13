@@ -11382,40 +11382,51 @@ Con el sprint 2 se culminó la aplicación de Demy para administrativos, se avan
 #### 4.2.2.5. Execution Evidence for Sprint Review
 
 **Backend**
+
 En esta sección se expone la evidencia total de los endpoints implementados en el backend para el proyecto. El detalle de los mismos se encuentra fundamentado en la siguiente sección.
 
-## 1) Comprobación en Swagger de los endpoints
+**1) Comprobación en Swagger de los endpoints**
 
 Se accede a `/swagger-ui/index.html` para revisar que los endpoints se encuentren correctamente operativos.
 
 **Teachers Endpoints**
+
 ![Teachers Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-1.png)
 
 **Reports Endpoints & Class Attendances Endpoints**
+
 ![Reports and Class Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-2.png)
 
 **Academies Endpoints**
+
 ![Academies Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-3.png)
 
 **Schedules Endpoints**
+
 ![Schedules Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-4.png)
 
 **Courses and Administrators Endpoints**
+
 ![Courses and Administrators Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-5.png)
 
 **Academic Periods Endpoints**
+
 ![Academic Periods Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-6.png)
 
 **Billing Accounts Endpoints**
+
 ![Billing Accounts Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-7.png)
 
 **Enrollments and Authentication Endpoints**
+
 ![Enrollments and Authentication Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-8.png)
 
 **Classrooms and Transactions Endpoints**
+
 ![Classrooms and Transactions Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-9.png)
 
 **Students Endpoints**
+
 ![Students Endpoints](./assets/ux-ui/evidences/backend/backend-exe-step-10.png)
 
 **2) Registro inicial**
@@ -11430,83 +11441,121 @@ Desde el endpoint `/auth/signup`, se realiza el registro de un nuevo usuario pro
 A continuación se describen brevemente las vistas capturadas de la aplicación completa. Las pantallas mantienen una línea visual limpia, con jerarquías claras, tarjetas, tipografía legible y acciones rápidas bien diferenciadas.
 
 **Dashboard — Vista principal del administrador**
+
 Acceso rápido a métricas, navegación y tarjetas principales del sistema.
+
 ![Dashboard](./assets/ux-ui/evidences/mobile/mobile-exe-dashboard.png)
 
 **Students — Gestión de estudiantes**
+
 Listado general con información esencial del estudiante y accesos a edición.
+
 ![Students](./assets/ux-ui/evidences/mobile/mobile-exe-student.png)
 
 **Teachers — Gestión de docentes**
+
 Registro, búsqueda y administración de profesores.
+
 ![Teachers](./assets/ux-ui/evidences/mobile/mobile-exe-teacher.png)
 
 **Courses — Gestión de cursos**
+
 Visualización y edición de cursos con nombre, código y descripción.
+
 ![Courses](./assets/ux-ui/evidences/mobile/mobile-exe-course.png)
 
 **Classrooms — Gestión de aulas**
+
 Administración de aulas, capacidad y ubicación.
+
 ![Classrooms](./assets/ux-ui/evidences/mobile/mobile-exe-classroom.png)
 
 **Schedules — Vista semanal de horarios**
+
 Visualización organizada de sesiones por calendario.
+
 ![Weekly Schedule](./assets/ux-ui/evidences/mobile/mobile-exe-schedule.png)
 
 **Schedules — Sesiones detalladas**
+
 Vista complementaria del horario semanal con sesiones más específicas.
+
 ![Schedule 2](./assets/ux-ui/evidences/mobile/mobile-exe-schedule-2.png)
 
 **Enrollment — Gestión de matrículas**
+
 Registro y administración de matrículas del estudiante.
+
 ![Enrollment](./assets/ux-ui/evidences/mobile/mobile-exe-enrollment.png)
 
 **Periods — Gestión de periodos académicos**
+
 Formulario para crear y editar periodos con validaciones básicas.
+
 ![Period](./assets/ux-ui/evidences/mobile/mobile-exe-period.png)
 
 **Billing — Gestión de cuentas de cobro**
+
 Pantalla que consolida datos de facturación por estudiante.
+
 ![Billing](./assets/ux-ui/evidences/mobile/mobile-exe-billing.png)
 
 **Finance — Resumen financiero general**
+
 Vista con indicadores contables y transacciones.
+
 ![Finance](./assets/ux-ui/evidences/mobile/mobile-exe-finance.png)
 
 **Finance — Detalle extendido**
+
 Detalle y distribución del estado financiero.
+
 ![Finance 2](./assets/ux-ui/evidences/mobile/mobile-exe-finance-2.png)
 
 **Accounting — Gestión contable**
 Opciones de consulta y administración de reportes contables.
+
 ![Accounting](./assets/ux-ui/evidences/mobile/mobile-exe-accounting.png)
 
 **Settings — Configuración general**
+
 Preferencias del administrador con opciones de personalización.
+
 ![Settings](./assets/ux-ui/evidences/mobile/mobile-exe-settings.png)
 
 **Settings — Vista extendida**
+
 Más opciones dentro del módulo de configuración.
+
 ![Settings 2](./assets/ux-ui/evidences/mobile/mobile-exe-settings-2.png)
 
 **Profile — Información del administrador**
+
 Datos personales del usuario con accesos directos a edición.
+
 ![Profile](./assets/ux-ui/evidences/mobile/mobile-exe-profile.png)
 
 **Help — Centro de ayuda**
 Acceso a documentación, soporte y preguntas frecuentes.
+
 ![Help](./assets/ux-ui/evidences/mobile/mobile-exe-help.png)
 
 **Help — Vista extendida**
+
 Sección adicional del módulo de soporte.
+
 ![Help 2](./assets/ux-ui/evidences/mobile/mobile-exe-help-2.png)
 
 **Privacy — Políticas de privacidad**
+
 Sección dedicada al manejo de datos personales del usuario.
+
 ![Privacy](./assets/ux-ui/evidences/mobile/mobile-exe-privacy.png)
 
 **Terms — Términos y condiciones**
+
 Documento con las normas de uso de la plataforma.
+
 ![Terms](./assets/ux-ui/evidences/mobile/mobile-exe-terms.png)
 
 
