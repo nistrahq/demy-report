@@ -59,14 +59,15 @@
 
 # Registro de Versiones del Informe
 
-| Versión | Fecha       | Autor                                                                      | Descripción de modificación                                                       |
-|---------|-------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| 1.0     | 30/08/2025  | Salim Ramirez                                                              | Creación inicial de la estructura del informe                                     |
-| 2.0     | 06/09/2025  | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se completó el Capítulo I: Presentación                                           |
-| 3.0     | 17/09/2025  | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se completó el CapÍtulo II: Requirements Development and Software Solution Design |
-| 3.1     | 28/09/2025  | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se levantó las observaciones de la primera entrega                                |
-| 4.0     | 4/10/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se completó el CapÍtulo III:  Solution UI/UX Design                               |        
-| 5.0     | 7/10/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca      | Se completó el Capítulo IV: : Product Implementation & Validation                 |  
+| Versión | Fecha       | Autor                                                                  | Descripción de modificación                                                       |
+|---------|-------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1.0     | 30/08/2025  | Salim Ramirez                                                          | Creación inicial de la estructura del informe                                     |
+| 2.0     | 06/09/2025  | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se completó el Capítulo I: Presentación                                           |
+| 3.0     | 17/09/2025  | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se completó el CapÍtulo II: Requirements Development and Software Solution Design |
+| 3.1     | 28/09/2025  | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se levantó las observaciones de la primera entrega                                |
+| 4.0     | 4/10/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se completó el CapÍtulo III:  Solution UI/UX Design                               |        
+| 5.0     | 7/10/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se completó el Capítulo IV: : Product Implementation & Validation                 |  
+| 6.0     | 13/11/2025  |  Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca | Se añadió toda la sección del Sprint 2                                            |
 
 <hr class="page-break">
 
@@ -361,14 +362,9 @@ Análisis de cantidad de commits realizados por semana.
             - [4.2.2.6. Services Documentation Evidence for Sprint Review](#4226-services-documentation-evidence-for-sprint-review)
             - [4.2.2.7. Software Deployment Evidence for Sprint Review](#4227-software-deployment-evidence-for-sprint-review)
             - [4.2.2.8. Team Collaboration Insights during Sprint](#4228-team-collaboration-insights-during-sprint)
-        - [4.3. Validation Interviews](#43-validation-interviews)
-            - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
-            - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
-            - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 
 - [Conclusiones](#conclusiones)
     - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
-    - [Video App Validation](#video-app-validation)
     - [Video About the product](#video-about-the-product)
     - [Video About the team](#video-about-the-team)
 - [Glosario](#glosario)
@@ -10544,7 +10540,2159 @@ Ingresamos a la URL generada y añadimos al final `/swagger-ui/index.html` para 
 
 #### 4.2.2.2. Sprint Backlog 2
 
+El objetivo de este Sprint es presentar nuestra aplicación nativa en Android completa en su totalidad Así mismo, presentar la primera versión de nuestra app móvil multiplataforma desarrollada con flutter.  
+A continuación se presenta una captura de pantalla de nuestro tablero en Trello:  
+![Captura  Sprint 2 de Trello](./assets/images/screenshots/trello-sprint-2.png)  
+[Enlace del Trello](https://trello.com/b/al4VOMSy/sprint-2-nistra-demy)
 
+<div style="font-size:80%; overflow-x:auto;">
+  <table border="1" cellspacing="0" cellpadding="5">
+    <thead>
+      <tr>
+        <th colspan="2">Sprint #</th>
+        <th colspan="6">Sprint 2</th>
+      </tr>
+      <tr>
+        <th colspan="2">User Story</th>
+        <th colspan="6">Work-Item / Task</th>
+      </tr>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Estimation (Hours)</th>
+        <th>Assigned To</th>
+        <th>Status (To-do / In-Process / To-Review / Done)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- US002 -->
+      <tr>
+        <td>US002</td>
+        <td>Actualización de Academia</td>
+        <td>US002a</td>
+        <td>Diseñar formulario de actualización</td>
+        <td>Actualizar campos de academy y validaciones con feedback visual</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US002</td>
+        <td>Actualización de Academia</td>
+        <td>US002b</td>
+        <td>Integración con API</td>
+        <td>Conectar PUT /api/academies/{id} y manejar estados de carga/errores</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- US003 -->
+      <tr>
+        <td>US003</td>
+        <td>Eliminación de Academia</td>
+        <td>US003a</td>
+        <td>Confirmación y UI de borrado</td>
+        <td>Modal de confirmación y mensajes de éxito/error</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US003</td>
+        <td>Eliminación de Academia</td>
+        <td>US003b</td>
+        <td>Integración con API</td>
+        <td>Conectar DELETE /api/academies/{id} y refrescar listados</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- US005 -->
+      <tr>
+        <td>US005</td>
+        <td>Actualización de Profesor</td>
+        <td>US005a</td>
+        <td>Editar datos del profesor</td>
+        <td>Formulario de edición con validaciones y estados</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US005</td>
+        <td>Actualización de Profesor</td>
+        <td>US005b</td>
+        <td>Integración con API</td>
+        <td>Conectar PUT /api/teachers/{id} con manejo de errores</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US006</td>
+        <td>Eliminación de Profesor</td>
+        <td>US006a</td>
+        <td>UI de confirmación</td>
+        <td>Modal de confirmación y lógica de deshabilitado si tiene clases activas</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US006</td>
+        <td>Eliminación de Profesor</td>
+        <td>US006b</td>
+        <td>Integración con API</td>
+        <td>Conectar DELETE /api/teachers/{id} y actualizar listado</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- US007 -->
+      <tr>
+        <td>US007</td>
+        <td>Matricular alumno</td>
+        <td>US007a</td>
+        <td>Formulario de matrícula</td>
+        <td>Campos de alumno, periodo, curso/clase con validaciones</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US007</td>
+        <td>Matricular alumno</td>
+        <td>US007b</td>
+        <td>Integración con API</td>
+        <td>Conectar POST /api/enrollments y feedback visual</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <!-- US008 -->
+      <tr>
+        <td>US008</td>
+        <td>Actualización de Matrícula</td>
+        <td>US008a</td>
+        <td>Editar datos de matrícula</td>
+        <td>UI para cambiar sección/horario con validaciones</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US008</td>
+        <td>Actualización de Matrícula</td>
+        <td>US008b</td>
+        <td>Integración con API</td>
+        <td>Conectar PUT /api/enrollments/{id} y mensajes de resultado</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <!-- US009 -->
+      <tr>
+        <td>US009</td>
+        <td>Cancelación de Matrícula</td>
+        <td>US009a</td>
+        <td>Flujo de confirmación</td>
+        <td>UI de confirmación y regla de negocio (periodo activo)</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US009</td>
+        <td>Cancelación de Matrícula</td>
+        <td>US009b</td>
+        <td>Integración con API</td>
+        <td>Conectar PATCH /api/enrollments/{id}/cancel</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <!-- US010 -->
+      <tr>
+        <td>US010</td>
+        <td>Registro de asistencia</td>
+        <td>US010a</td>
+        <td>UI de toma de asistencia</td>
+        <td>Lista de alumnos por clase con marcación (P/A/T)</td>
+        <td>3</td>
+        <td>Diego</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US010</td>
+        <td>Registro de asistencia</td>
+        <td>US010b</td>
+        <td>Integración con API</td>
+        <td>POST /api/attendances con validaciones por horario</td>
+        <td>3</td>
+        <td>Diego</td>
+        <td>To do</td>
+      </tr>
+      <!-- US011 -->
+      <tr>
+        <td>US011</td>
+        <td>Actualización de asistencia</td>
+        <td>US011a</td>
+        <td>Editar registro</td>
+        <td>UI para editar marcas existentes con control de permisos</td>
+        <td>2</td>
+        <td>Diego</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US011</td>
+        <td>Actualización de asistencia</td>
+        <td>US011b</td>
+        <td>Integración con API</td>
+        <td>PUT /api/attendances/{id} y actualización en vivo</td>
+        <td>2</td>
+        <td>Diego</td>
+        <td>To do</td>
+      </tr>
+      <!-- US012 -->
+      <tr>
+        <td>US012</td>
+        <td>Visualización de Reportes de Asistencia</td>
+        <td>US012a</td>
+        <td>Tabla y filtros</td>
+        <td>Vista con filtros por curso, fecha y alumno</td>
+        <td>3</td>
+        <td>Diego</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US012</td>
+        <td>Visualización de Reportes de Asistencia</td>
+        <td>US012b</td>
+        <td>Consumo de API</td>
+        <td>GET /api/reports/attendance con paginación</td>
+        <td>2</td>
+        <td>Diego</td>
+        <td>To do</td>
+      </tr>
+      <!-- US013 -->
+      <tr>
+        <td>US013</td>
+        <td>Creación de Periodo Académico</td>
+        <td>US013a</td>
+        <td>Formulario de periodo</td>
+        <td>Campos: nombre, fecha inicio/fin con validaciones</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US013</td>
+        <td>Creación de Periodo Académico</td>
+        <td>US013b</td>
+        <td>Integración con API</td>
+        <td>POST /api/academic-periods y feedback de éxito/error</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <!-- US014 -->
+      <tr>
+        <td>US014</td>
+        <td>Actualización de Periodo Académico</td>
+        <td>US014a</td>
+        <td>Editar periodo</td>
+        <td>UI de actualización con validación de solapamiento</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US014</td>
+        <td>Actualización de Periodo Académico</td>
+        <td>US014b</td>
+        <td>Integración con API</td>
+        <td>PUT /api/academic-periods/{id} con mensajes claros</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <!-- US022 -->
+      <tr>
+        <td>US022</td>
+        <td>Generación de Boletas de Pago</td>
+        <td>US022a</td>
+        <td>UI de generación</td>
+        <td>Selección de alumno/periodo y plantilla de boleta</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US022</td>
+        <td>Generación de Boletas de Pago</td>
+        <td>US022b</td>
+        <td>Integración con API</td>
+        <td>POST /api/invoices/generate y manejo de estados</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- US023 -->
+      <tr>
+        <td>US023</td>
+        <td>Actualización de Boletas de Pago</td>
+        <td>US023a</td>
+        <td>Editar boleta</td>
+        <td>UI para monto, descripción y estado de pago</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US023</td>
+        <td>Actualización de Boletas de Pago</td>
+        <td>US023b</td>
+        <td>Integración con API</td>
+        <td>PUT /api/invoices/{id} con validaciones</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- US024 -->
+      <tr>
+        <td>US024</td>
+        <td>Eliminación de Boletas de Pago</td>
+        <td>US024a</td>
+        <td>Flujo de confirmación</td>
+        <td>Modal de confirmación con reglas por estado de pago</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US024</td>
+        <td>Eliminación de Boletas de Pago</td>
+        <td>US024b</td>
+        <td>Integración con API</td>
+        <td>DELETE /api/invoices/{id} y actualización de listado</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- US026 -->
+      <tr>
+        <td>US026</td>
+        <td>Actualización de Ingreso/Egreso</td>
+        <td>US026a</td>
+        <td>Editar registro financiero</td>
+        <td>UI para actualizar categoría, monto y fecha</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US026</td>
+        <td>Actualización de Ingreso/Egreso</td>
+        <td>US026b</td>
+        <td>Integración con API</td>
+        <td>PUT /api/financial-records/{id} con validaciones</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- US027 -->
+      <tr>
+        <td>US027</td>
+        <td>Eliminación de Ingreso/Egreso</td>
+        <td>US027a</td>
+        <td>UI de confirmación</td>
+        <td>Confirmar eliminación y mostrar feedback</td>
+        <td>1</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US027</td>
+        <td>Eliminación de Ingreso/Egreso</td>
+        <td>US027b</td>
+        <td>Integración con API</td>
+        <td>DELETE /api/financial-records/{id} y refresco de datos</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- US028 -->
+      <tr>
+        <td>US028</td>
+        <td>Visualización de Resumen de Finanzas</td>
+        <td>US028a</td>
+        <td>Dashboard financiero</td>
+        <td>Tarjetas de totales, gráficos y filtros</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US028</td>
+        <td>Visualización de Resumen de Finanzas</td>
+        <td>US028b</td>
+        <td>Consumo de API</td>
+        <td>GET /api/reports/financial/summary con rango de fechas</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- US029 -->
+      <tr>
+        <td>US029</td>
+        <td>Generación de Reportes Financieros</td>
+        <td>US029a</td>
+        <td>UI de filtros y exportación</td>
+        <td>Filtros por fecha/curso y botón exportar (CSV/PDF)</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US029</td>
+        <td>Generación de Reportes Financieros</td>
+        <td>US029b</td>
+        <td>Integración con API</td>
+        <td>GET /api/reports/financial con descarga de archivo</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- US030 -->
+      <tr>
+        <td>US030</td>
+        <td>Visualización de Horario de Clases (profesor)</td>
+        <td>US030a</td>
+        <td>Calendario por docente</td>
+        <td>Vista semanal con detalle de cursos y aulas</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US030</td>
+        <td>Visualización de Horario de Clases (profesor)</td>
+        <td>US030b</td>
+        <td>Consumo de API</td>
+        <td>GET /api/schedules/teacher/{id} con filtros por fecha</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To do</td>
+      </tr>
+      <!-- US031 -->
+      <tr>
+        <td>US031</td>
+        <td>Reprogramación de Clase</td>
+        <td>US031a</td>
+        <td>Flujo de reprogramación</td>
+        <td>Seleccionar nueva fecha/hora con validaciones</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US031</td>
+        <td>Reprogramación de Clase</td>
+        <td>US031b</td>
+        <td>Integración con API</td>
+        <td>PATCH /api/schedules/{id}/reschedule y notificaciones</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To do</td>
+      </tr>
+      <!-- US032 -->
+      <tr>
+        <td>US032</td>
+        <td>Visualización de Horario de Clases (alumno)</td>
+        <td>US032a</td>
+        <td>Calendario del alumno</td>
+        <td>Vista semanal con detalle de materias y aulas</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US032</td>
+        <td>Visualización de Horario de Clases (alumno)</td>
+        <td>US032b</td>
+        <td>Consumo de API</td>
+        <td>GET /api/schedules/student/{id} con filtros</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <!-- US033 -->
+      <tr>
+        <td>US033</td>
+        <td>Visualizar detalles de los Profesores</td>
+        <td>US033a</td>
+        <td>Vista de detalle</td>
+        <td>Foto, bio, cursos dictados y contacto</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US033</td>
+        <td>Visualizar detalles de los Profesores</td>
+        <td>US033b</td>
+        <td>Consumo de API</td>
+        <td>GET /api/teachers/{id} y manejo de estados</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <!-- US034 -->
+      <tr>
+        <td>US034</td>
+        <td>Visualizar detalles de los Cursos</td>
+        <td>US034a</td>
+        <td>Vista de detalle</td>
+        <td>Descripción, sílabo y créditos</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US034</td>
+        <td>Visualizar detalles de los Cursos</td>
+        <td>US034b</td>
+        <td>Consumo de API</td>
+        <td>GET /api/courses/{id} con manejo de errores</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <!-- US035 -->
+      <tr>
+        <td>US035</td>
+        <td>Recibir alertas por cambio de horario</td>
+        <td>US035a</td>
+        <td>Suscripción a notificaciones</td>
+        <td>UI para suscribirse a alertas (email/app)</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>US035</td>
+        <td>Recibir alertas por cambio de horario</td>
+        <td>US035b</td>
+        <td>Consumo/escucha de eventos</td>
+        <td>Integración con endpoint de notificaciones/stream</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS002 -->
+      <tr>
+        <td>TS002</td>
+        <td>Exponer endpoint para actualizar academias</td>
+        <td>TS002a</td>
+        <td>App/Domain Handler</td>
+        <td>Implementar UpdateAcademyCommandHandler con validaciones</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS002</td>
+        <td>Exponer endpoint para actualizar academias</td>
+        <td>TS002b</td>
+        <td>Controller & Tests</td>
+        <td>PUT /api/academies/{id}, DTOs/Assembler y pruebas</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS003 -->
+      <tr>
+        <td>TS003</td>
+        <td>Exponer endpoint para eliminar academia</td>
+        <td>TS003a</td>
+        <td>App/Domain Handler</td>
+        <td>DeleteAcademyCommandHandler con reglas de negocio</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS003</td>
+        <td>Exponer endpoint para eliminar academia</td>
+        <td>TS003b</td>
+        <td>Controller & Tests</td>
+        <td>DELETE /api/academies/{id} y pruebas de integración</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS004 -->
+      <tr>
+        <td>TS004</td>
+        <td>Exponer endpoint para listar academias</td>
+        <td>TS004a</td>
+        <td>Query Handler</td>
+        <td>GetAllAcademiesQueryHandler con filtros/paginación</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS004</td>
+        <td>Exponer endpoint para listar academias</td>
+        <td>TS004b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/academies, DTOs y validación de parámetros</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS005 -->
+      <tr>
+        <td>TS005</td>
+        <td>Exponer endpoint para obtener detalles de una academia</td>
+        <td>TS005a</td>
+        <td>Query Handler</td>
+        <td>GetAcademyByIdQueryHandler con manejo de inexistencia</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS005</td>
+        <td>Exponer endpoint para obtener detalles de una academia</td>
+        <td>TS005b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/academies/{id} con assembler a resource</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS007 -->
+      <tr>
+        <td>TS007</td>
+        <td>Exponer endpoint para actualizar administrador</td>
+        <td>TS007a</td>
+        <td>App/Domain Handler</td>
+        <td>UpdateAdminCommandHandler con validación de unicidad</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS007</td>
+        <td>Exponer endpoint para actualizar administrador</td>
+        <td>TS007b</td>
+        <td>Controller & Tests</td>
+        <td>PUT /api/admins/{id} y pruebas</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS008 -->
+      <tr>
+        <td>TS008</td>
+        <td>Exponer endpoint para eliminar administrador</td>
+        <td>TS008a</td>
+        <td>App/Domain Handler</td>
+        <td>DeleteAdminCommandHandler con control de dependencias</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS008</td>
+        <td>Exponer endpoint para eliminar administrador</td>
+        <td>TS008b</td>
+        <td>Controller & Tests</td>
+        <td>DELETE /api/admins/{id} y pruebas de integración</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS009 -->
+      <tr>
+        <td>TS009</td>
+        <td>Exponer endpoint para listar administrador</td>
+        <td>TS009a</td>
+        <td>Query Handler</td>
+        <td>GetAllAdminsQueryHandler con filtros y paginación</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS009</td>
+        <td>Exponer endpoint para listar administrador</td>
+        <td>TS009b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/admins con validaciones de parámetros</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS010 -->
+      <tr>
+        <td>TS010</td>
+        <td>Exponer endpoint para obtener detalles de un administrador</td>
+        <td>TS010a</td>
+        <td>Query Handler</td>
+        <td>GetAdminByIdQueryHandler con manejo de inexistencia</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS010</td>
+        <td>Exponer endpoint para obtener detalles de un administrador</td>
+        <td>TS010b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/admins/{id} con assembler a resource</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS013 -->
+      <tr>
+        <td>TS013</td>
+        <td>Exponer endpoint para eliminar matrícula</td>
+        <td>TS013a</td>
+        <td>App/Domain Handler</td>
+        <td>DeleteEnrollmentCommandHandler con validaciones</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS013</td>
+        <td>Exponer endpoint para eliminar matrícula</td>
+        <td>TS013b</td>
+        <td>Controller & Tests</td>
+        <td>DELETE /api/enrollments/{id} y pruebas</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS012 -->
+      <tr>
+        <td>TS012</td>
+        <td>Exponer endpoint para actualizar matrículas</td>
+        <td>TS012a</td>
+        <td>App/Domain Handler</td>
+        <td>UpdateEnrollmentCommandHandler con reglas de consistencia</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS012</td>
+        <td>Exponer endpoint para actualizar matrículas</td>
+        <td>TS012b</td>
+        <td>Controller & Tests</td>
+        <td>PUT /api/enrollments/{id} y pruebas</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS014 -->
+      <tr>
+        <td>TS014</td>
+        <td>Exponer endpoint para listar matrículas</td>
+        <td>TS014a</td>
+        <td>Query Handler</td>
+        <td>GetAllEnrollmentsQueryHandler con filtros y paginación</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS014</td>
+        <td>Exponer endpoint para listar matrículas</td>
+        <td>TS014b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/enrollments con validación de parámetros</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS015 -->
+      <tr>
+        <td>TS015</td>
+        <td>Exponer endpoint para obtener detalles de una matrícula</td>
+        <td>TS015a</td>
+        <td>Query Handler</td>
+        <td>GetEnrollmentByIdQueryHandler con manejo de inexistencia</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS015</td>
+        <td>Exponer endpoint para obtener detalles de una matrícula</td>
+        <td>TS015b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/enrollments/{id} con assembler</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS036 -->
+      <tr>
+        <td>TS036</td>
+        <td>Validar conflictos de horario al registrar o actualizar</td>
+        <td>TS036a</td>
+        <td>Servicio de validación</td>
+        <td>Reglas de solapamiento por aula/docente/curso</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS036</td>
+        <td>Validar conflictos de horario al registrar o actualizar</td>
+        <td>TS036b</td>
+        <td>Integración en comandos</td>
+        <td>Invocar validación en Register/UpdateSchedule y pruebas</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS042 -->
+      <tr>
+        <td>TS042</td>
+        <td>Exponer endpoint para actualizar cuentas de cobro</td>
+        <td>TS042a</td>
+        <td>App/Domain Handler</td>
+        <td>UpdateBillingAccountCommandHandler con reglas de estado</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS042</td>
+        <td>Exponer endpoint para actualizar cuentas de cobro</td>
+        <td>TS042b</td>
+        <td>Controller & Tests</td>
+        <td>PUT /api/billing-accounts/{id} con pruebas</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS043 -->
+      <tr>
+        <td>TS043</td>
+        <td>Exponer endpoint para eliminar cuentas de cobro</td>
+        <td>TS043a</td>
+        <td>App/Domain Handler</td>
+        <td>DeleteBillingAccountCommandHandler con verificación de dependencias</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS043</td>
+        <td>Exponer endpoint para eliminar cuentas de cobro</td>
+        <td>TS043b</td>
+        <td>Controller & Tests</td>
+        <td>DELETE /api/billing-accounts/{id} con pruebas</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS047 -->
+      <tr>
+        <td>TS047</td>
+        <td>Exponer endpoint para actualizar boletas de pago asignadas a una cuenta de cobro</td>
+        <td>TS047a</td>
+        <td>App/Domain Handler</td>
+        <td>UpdateAssignedInvoiceCommandHandler con control de estado</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS047</td>
+        <td>Exponer endpoint para actualizar boletas de pago asignadas a una cuenta de cobro</td>
+        <td>TS047b</td>
+        <td>Controller & Tests</td>
+        <td>PUT /api/billing-accounts/{accountId}/invoices/{invoiceId}</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS049 (sin Assigned ni Status) -->
+      <tr>
+        <td>TS049</td>
+        <td>Exponer endpoint para eliminar boletas de pago asignadas a una cuenta de cobro</td>
+        <td>TS049a</td>
+        <td>App/Domain Handler</td>
+        <td>DeleteAssignedInvoiceCommandHandler con validaciones de estado</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS049</td>
+        <td>Exponer endpoint para eliminar boletas de pago asignadas a una cuenta de cobro</td>
+        <td>TS049b</td>
+        <td>Controller & Tests</td>
+        <td>DELETE /api/billing-accounts/{accountId}/invoices/{invoiceId}</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <!-- TS051 -->
+      <tr>
+        <td>TS051</td>
+        <td>Exponer endpoint para actualizar transacciones</td>
+        <td>TS051a</td>
+        <td>App/Domain Handler</td>
+        <td>Implementar UpdateTransactionCommandHandler con reglas de estado</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS051</td>
+        <td>Exponer endpoint para actualizar transacciones</td>
+        <td>TS051b</td>
+        <td>Controller & Tests</td>
+        <td>PUT /api/transactions/{id} con validaciones y pruebas</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS052 -->
+      <tr>
+        <td>TS052</td>
+        <td>Exponer endpoint para eliminar transacciones</td>
+        <td>TS052a</td>
+        <td>App/Domain Handler</td>
+        <td>DeleteTransactionCommandHandler con verificación de conciliación</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS052</td>
+        <td>Exponer endpoint para eliminar transacciones</td>
+        <td>TS052b</td>
+        <td>Controller & Tests</td>
+        <td>DELETE /api/transactions/{id} y pruebas de integración</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS056 -->
+      <tr>
+        <td>TS056</td>
+        <td>Exponer endpoint para visualizar horarios de un alumno</td>
+        <td>TS056a</td>
+        <td>Query Handler</td>
+        <td>GetStudentSchedulesQueryHandler con filtros por rango de fechas</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS056</td>
+        <td>Exponer endpoint para visualizar horarios de un alumno</td>
+        <td>TS056b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/schedules/student/{id} con paginación</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS059 -->
+      <tr>
+        <td>TS059</td>
+        <td>Exponer endpoint para eliminar cuenta de usuario</td>
+        <td>TS059a</td>
+        <td>App/Domain Handler</td>
+        <td>DeleteUserCommandHandler con reglas de inactividad/estado</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS059</td>
+        <td>Exponer endpoint para eliminar cuenta de usuario</td>
+        <td>TS059b</td>
+        <td>Controller & Tests</td>
+        <td>DELETE /api/users/{id} y pruebas de integración</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS058 -->
+      <tr>
+        <td>TS058</td>
+        <td>Exponer endpoint para actualizar cuenta de usuario</td>
+        <td>TS058a</td>
+        <td>App/Domain Handler</td>
+        <td>UpdateUserCommandHandler con validación de unicidad (email)</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS058</td>
+        <td>Exponer endpoint para actualizar cuenta de usuario</td>
+        <td>TS058b</td>
+        <td>Controller & Tests</td>
+        <td>PUT /api/users/{id} con DTOs y pruebas</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS061 -->
+      <tr>
+        <td>TS061</td>
+        <td>Exponer endpoint para reenviar código de verificación de usuario</td>
+        <td>TS061a</td>
+        <td>App Service</td>
+        <td>ResendVerificationCodeCommandHandler + throttling</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS061</td>
+        <td>Exponer endpoint para reenviar código de verificación de usuario</td>
+        <td>TS061b</td>
+        <td>Controller & Mailer</td>
+        <td>POST /api/users/{id}/resend-verification y envío de email</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS062 -->
+      <tr>
+        <td>TS062</td>
+        <td>Exponer endpoint para cambiar contraseña mediante código de verificación</td>
+        <td>TS062a</td>
+        <td>App/Domain Handler</td>
+        <td>ResetPasswordWithCodeHandler con expiración y hash</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS062</td>
+        <td>Exponer endpoint para cambiar contraseña mediante código de verificación</td>
+        <td>TS062b</td>
+        <td>Controller & Tests</td>
+        <td>POST /api/auth/reset-password-by-code con pruebas</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS011 (override) -->
+      <tr>
+        <td>TS011</td>
+        <td>Exponer endpoint para registrar matrículas</td>
+        <td>TS011a</td>
+        <td>App/Domain Handler</td>
+        <td>RegisterEnrollmentCommandHandler con validaciones</td>
+        <td>4</td>
+        <td>Paul</td>
+        <td>In Process</td>
+      </tr>
+      <tr>
+        <td>TS011</td>
+        <td>Exponer endpoint para registrar matrículas</td>
+        <td>TS011b</td>
+        <td>Controller & Mapping</td>
+        <td>POST /api/enrollments con DTOs y pruebas</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>In Process</td>
+      </tr>
+      <!-- TS050 (override) -->
+      <tr>
+        <td>TS050</td>
+        <td>Exponer endpoint para registrar transacciones</td>
+        <td>TS050a</td>
+        <td>App/Domain Handler</td>
+        <td>RegisterTransactionCommandHandler con validación de monto</td>
+        <td>4</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <tr>
+        <td>TS050</td>
+        <td>Exponer endpoint para registrar transacciones</td>
+        <td>TS050b</td>
+        <td>Controller & Mapping</td>
+        <td>POST /api/transactions y pruebas de integración</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To do</td>
+      </tr>
+      <!-- TS053 (override) -->
+      <tr>
+        <td>TS053</td>
+        <td>Exponer endpoint para generar reportes financieros</td>
+        <td>TS053a</td>
+        <td>Query Aggregator</td>
+        <td>GenerateFinancialReportQueryHandler (agregaciones)</td>
+        <td>4</td>
+        <td>Salim</td>
+        <td>In Process</td>
+      </tr>
+      <tr>
+        <td>TS053</td>
+        <td>Exponer endpoint para generar reportes financieros</td>
+        <td>TS053b</td>
+        <td>Controller & Export</td>
+        <td>GET /api/reports/financial con export (CSV/PDF)</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>In Process</td>
+      </tr>
+      <!-- US004 -->
+      <tr>
+        <td>US004</td>
+        <td>Registrar profesor</td>
+        <td>US004a</td>
+        <td>Formulario de registro</td>
+        <td>Inputs, validaciones, feedback visual</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>US004</td>
+        <td>Registrar profesor</td>
+        <td>US004b</td>
+        <td>Integración con API</td>
+        <td>POST /api/teachers y mensajes de éxito/error</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To review</td>
+      </tr>
+      <!-- US019 -->
+      <tr>
+        <td>US019</td>
+        <td>Creación de Horarios</td>
+        <td>US019a</td>
+        <td>Formulario de horario</td>
+        <td>Curso, profesor, aula, hora inicio/fin</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>US019</td>
+        <td>Creación de Horarios</td>
+        <td>US019b</td>
+        <td>Integración con API</td>
+        <td>POST /api/schedules con validaciones</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- US039 -->
+      <tr>
+        <td>US039</td>
+        <td>Exponer endpoint para listar horarios</td>
+        <td>US039a</td>
+        <td>Query Handler</td>
+        <td>GetAllSchedulesQueryHandler con filtros</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>US039</td>
+        <td>Exponer endpoint para listar horarios</td>
+        <td>US039b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/schedules con paginación</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- US055 -->
+      <tr>
+        <td>US055</td>
+        <td>Exponer endpoint para reprogramar una sesión de clases de un horario</td>
+        <td>US055a</td>
+        <td>App Service</td>
+        <td>RescheduleSessionHandler con validaciones de solapamiento</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>US055</td>
+        <td>Exponer endpoint para reprogramar una sesión de clases de un horario</td>
+        <td>US055b</td>
+        <td>Controller & Events</td>
+        <td>PATCH /api/schedules/{id}/reschedule + notificación</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS054 -->
+      <tr>
+        <td>TS054</td>
+        <td>Exponer endpoint para visualizar horarios de un profesor</td>
+        <td>TS054a</td>
+        <td>Query Handler</td>
+        <td>GetTeacherSchedulesQueryHandler con filtros</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS054</td>
+        <td>Exponer endpoint para visualizar horarios de un profesor</td>
+        <td>TS054b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/schedules/teacher/{id} con paginación</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS038 -->
+      <tr>
+        <td>TS038</td>
+        <td>Exponer endpoint para eliminar horarios</td>
+        <td>TS038a</td>
+        <td>App/Domain Handler</td>
+        <td>DeleteScheduleCommandHandler con reglas de uso</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS038</td>
+        <td>Exponer endpoint para eliminar horarios</td>
+        <td>TS038b</td>
+        <td>Controller & Tests</td>
+        <td>DELETE /api/schedules/{id} y pruebas</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS040 (Assigned To faltante) -->
+      <tr>
+        <td>TS040</td>
+        <td>Exponer endpoint para obtener detalles de un horario</td>
+        <td>TS040a</td>
+        <td>Query Handler</td>
+        <td>GetScheduleByIdQueryHandler con validaciones</td>
+        <td>3</td>
+        <td></td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS040</td>
+        <td>Exponer endpoint para obtener detalles de un horario</td>
+        <td>TS040b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/schedules/{id} con assembler</td>
+        <td>2</td>
+        <td></td>
+        <td>To review</td>
+      </tr>
+      <!-- TS033 (horarios de clase) -->
+      <tr>
+        <td>TS033</td>
+        <td>Exponer endpoint para eliminar horarios de clase</td>
+        <td>TS033a</td>
+        <td>App/Domain Handler</td>
+        <td>DeleteScheduleCommandHandler con validación de sesiones</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS033</td>
+        <td>Exponer endpoint para eliminar horarios de clase</td>
+        <td>TS033b</td>
+        <td>Controller & Tests</td>
+        <td>DELETE /api/schedules/{id} con pruebas</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS037 -->
+      <tr>
+        <td>TS037</td>
+        <td>Exponer endpoint para actualizar horarios</td>
+        <td>TS037a</td>
+        <td>App/Domain Handler</td>
+        <td>UpdateScheduleCommandHandler con validación de solapamiento</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS037</td>
+        <td>Exponer endpoint para actualizar horarios</td>
+        <td>TS037b</td>
+        <td>Controller & Tests</td>
+        <td>PUT /api/schedules/{id} y pruebas</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- US021 -->
+      <tr>
+        <td>US021</td>
+        <td>Eliminación de horarios</td>
+        <td>US021a</td>
+        <td>Flujo de confirmación</td>
+        <td>UI de confirmación y reglas por sesiones futuras</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>US021</td>
+        <td>Eliminación de horarios</td>
+        <td>US021b</td>
+        <td>Integración con API</td>
+        <td>DELETE /api/schedules/{id} y refresco</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- US020 -->
+      <tr>
+        <td>US020</td>
+        <td>Actualización de Horarios</td>
+        <td>US020a</td>
+        <td>Formulario de edición</td>
+        <td>Editar curso, aula, horas con validaciones</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>US020</td>
+        <td>Actualización de Horarios</td>
+        <td>US020b</td>
+        <td>Integración con API</td>
+        <td>PUT /api/schedules/{id} y mensajes de resultado</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS041 -->
+      <tr>
+        <td>TS041</td>
+        <td>Exponer endpoint para registrar cuentas de cobro</td>
+        <td>TS041a</td>
+        <td>App/Domain Handler</td>
+        <td>RegisterBillingAccountCommandHandler con validaciones</td>
+        <td>4</td>
+        <td>Salim</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS041</td>
+        <td>Exponer endpoint para registrar cuentas de cobro</td>
+        <td>TS041b</td>
+        <td>Controller & Mapping</td>
+        <td>POST /api/billing-accounts con DTOs y pruebas</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS030 (faltan Assigned y Status en origen) -->
+      <tr>
+        <td>TS030</td>
+        <td>Exponer endpoint para obtener detalles de un salón de clase</td>
+        <td>TS030a</td>
+        <td>Query Handler</td>
+        <td>GetClassroomByIdQueryHandler con validación de existencia</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS030</td>
+        <td>Exponer endpoint para obtener detalles de un salón de clase</td>
+        <td>TS030b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/classrooms/{id} con assembler</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td> To review</td>
+      </tr>
+      <!-- TS029 -->
+      <tr>
+        <td>TS029</td>
+        <td>Exponer endpoint para listar salones de clase</td>
+        <td>TS029a</td>
+        <td>Query Handler</td>
+        <td>GetAllClassroomsQueryHandler con filtros/capacidad</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS029</td>
+        <td>Exponer endpoint para listar salones de clase</td>
+        <td>TS029b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/classrooms con paginación</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS028 -->
+      <tr>
+        <td>TS028</td>
+        <td>Exponer endpoint para eliminar salones de clase</td>
+        <td>TS028a</td>
+        <td>App/Domain Handler</td>
+        <td>DeleteClassroomCommandHandler con validaciones</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS028</td>
+        <td>Exponer endpoint para eliminar salones de clase</td>
+        <td>TS028b</td>
+        <td>Controller & Tests</td>
+        <td>DELETE /api/classrooms/{id} y pruebas</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS027 -->
+      <tr>
+        <td>TS027</td>
+        <td>Exponer endpoint para actualizar salones de clase</td>
+        <td>TS027a</td>
+        <td>App/Domain Handler</td>
+        <td>UpdateClassroomCommandHandler (capacidad/ubicación)</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS027</td>
+        <td>Exponer endpoint para actualizar salones de clase</td>
+        <td>TS027b</td>
+        <td>Controller & Tests</td>
+        <td>PUT /api/classrooms/{id} con DTOs</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS026 -->
+      <tr>
+        <td>TS026</td>
+        <td>Exponer endpoint para registrar salones de clase</td>
+        <td>TS026a</td>
+        <td>App/Domain Handler</td>
+        <td>RegisterClassroomCommandHandler con validaciones</td>
+        <td>4</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS026</td>
+        <td>Exponer endpoint para registrar salones de clase</td>
+        <td>TS026b</td>
+        <td>Controller & Mapping</td>
+        <td>POST /api/classrooms y pruebas</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- US018 -->
+      <tr>
+        <td>US018</td>
+        <td>Eliminación de salones de Clase</td>
+        <td>US018a</td>
+        <td>Flujo de confirmación</td>
+        <td>Confirmar borrado y validar dependencias</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>US018</td>
+        <td>Eliminación de salones de Clase</td>
+        <td>US018b</td>
+        <td>Integración con API</td>
+        <td>DELETE /api/classrooms/{id} y feedback</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- US017 -->
+      <tr>
+        <td>US017</td>
+        <td>Actualización de Salones de Clase</td>
+        <td>US017a</td>
+        <td>Formulario de edición</td>
+        <td>Editar nombre/capacidad/ubicación</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>US017</td>
+        <td>Actualización de Salones de Clase</td>
+        <td>US017b</td>
+        <td>Integración con API</td>
+        <td>PUT /api/classrooms/{id} y validaciones</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- US016 -->
+      <tr>
+        <td>US016</td>
+        <td>Creación de Salones de CLase</td>
+        <td>US016a</td>
+        <td>Formulario de creación</td>
+        <td>Nombre, capacidad, descripción con validaciones</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>US016</td>
+        <td>Creación de Salones de CLase</td>
+        <td>US016b</td>
+        <td>Integración con API</td>
+        <td>POST /api/classrooms y feedback de éxito/error</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS044 -->
+      <tr>
+        <td>TS044</td>
+        <td>Exponer endpoint para listar cuentas de cobro</td>
+        <td>TS044a</td>
+        <td>Query Handler</td>
+        <td>GetAllBillingAccountsQueryHandler con filtros</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS044</td>
+        <td>Exponer endpoint para listar cuentas de cobro</td>
+        <td>TS044b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/billing-accounts con paginación</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS045 -->
+      <tr>
+        <td>TS045</td>
+        <td>Exponer endpoint para obtener detalles de una cuenta de cobro</td>
+        <td>TS045a</td>
+        <td>Query Handler</td>
+        <td>GetBillingAccountByIdQueryHandler con manejo de inexistencia</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS045</td>
+        <td>Exponer endpoint para obtener detalles de una cuenta de cobro</td>
+        <td>TS045b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/billing-accounts/{id} con assembler</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS046 -->
+      <tr>
+        <td>TS046</td>
+        <td>Exponer endpoint para listar boletas de pago asignadas a una cuenta de cobro</td>
+        <td>TS046a</td>
+        <td>Query Handler</td>
+        <td>GetInvoicesByBillingAccountQueryHandler con filtros por estado</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS046</td>
+        <td>Exponer endpoint para listar boletas de pago asignadas a una cuenta de cobro</td>
+        <td>TS046b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/billing-accounts/{id}/invoices con paginación</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS021 -->
+      <tr>
+        <td>TS021</td>
+        <td>Exponer endpoint para registrar periodos académicos</td>
+        <td>TS021a</td>
+        <td>App/Domain Handler</td>
+        <td>RegisterPeriodCommandHandler con validaciones de fechas</td>
+        <td>4</td>
+        <td>Paul</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS021</td>
+        <td>Exponer endpoint para registrar periodos académicos</td>
+        <td>TS021b</td>
+        <td>Controller & Mapping</td>
+        <td>POST /api/academic-periods con DTOs</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS022 -->
+      <tr>
+        <td>TS022</td>
+        <td>Exponer endpoint para actualizar periodos académicos</td>
+        <td>TS022a</td>
+        <td>App/Domain Handler</td>
+        <td>UpdatePeriodCommandHandler con validación de solapamientos</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS022</td>
+        <td>Exponer endpoint para actualizar periodos académicos</td>
+        <td>TS022b</td>
+        <td>Controller & Tests</td>
+        <td>PUT /api/academic-periods/{id} y pruebas</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS023 -->
+      <tr>
+        <td>TS023</td>
+        <td>Exponer endpoint para eliminar periodos académicos</td>
+        <td>TS023a</td>
+        <td>App/Domain Handler</td>
+        <td>DeletePeriodCommandHandler y reglas de periodo activo</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS023</td>
+        <td>Exponer endpoint para eliminar periodos académicos</td>
+        <td>TS023b</td>
+        <td>Controller & Tests</td>
+        <td>DELETE /api/academic-periods/{id} y pruebas</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS024 -->
+      <tr>
+        <td>TS024</td>
+        <td>Exponer endpoint para listar periodos académicos</td>
+        <td>TS024a</td>
+        <td>Query Handler</td>
+        <td>GetAllPeriodsQueryHandler con filtros</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS024</td>
+        <td>Exponer endpoint para listar periodos académicos</td>
+        <td>TS024b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/academic-periods con paginación</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS025 -->
+      <tr>
+        <td>TS025</td>
+        <td>Exponer endpoint para obtener detalles de un periodo académico</td>
+        <td>TS025a</td>
+        <td>Query Handler</td>
+        <td>GetPeriodByIdQueryHandler con validación de existencia</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS025</td>
+        <td>Exponer endpoint para obtener detalles de un periodo académico</td>
+        <td>TS025b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/academic-periods/{id} con assembler</td>
+        <td>2</td>
+        <td>Paul</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS035 -->
+      <tr>
+        <td>TS035</td>
+        <td>Exponer endpoint para obtener detalles de un curso</td>
+        <td>TS035a</td>
+        <td>Query Handler</td>
+        <td>GetCourseByIdQueryHandler con manejo de inexistencia</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS035</td>
+        <td>Exponer endpoint para obtener detalles de un curso</td>
+        <td>TS035b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/courses/{id} con assembler</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS034 -->
+      <tr>
+        <td>TS034</td>
+        <td>Exponer endpoint para listar cursos</td>
+        <td>TS034a</td>
+        <td>Query Handler</td>
+        <td>GetAllCoursesQueryHandler con filtros</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS034</td>
+        <td>Exponer endpoint para listar cursos</td>
+        <td>TS034b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/courses con paginación</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS031 -->
+      <tr>
+        <td>TS031</td>
+        <td>Exponer endpoint para registrar cursos</td>
+        <td>TS031a</td>
+        <td>App/Domain Handler</td>
+        <td>RegisterCourseCommandHandler con validaciones</td>
+        <td>4</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS031</td>
+        <td>Exponer endpoint para registrar cursos</td>
+        <td>TS031b</td>
+        <td>Controller & Mapping</td>
+        <td>POST /api/courses y pruebas</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS033 (cursos) -->
+      <tr>
+        <td>TS033</td>
+        <td>Exponer endpoint para eliminar cursos</td>
+        <td>TS033a</td>
+        <td>App/Domain Handler</td>
+        <td>DeleteCourseCommandHandler con verificación de dependencias</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS033</td>
+        <td>Exponer endpoint para eliminar cursos</td>
+        <td>TS033b</td>
+        <td>Controller & Tests</td>
+        <td>DELETE /api/courses/{id} y pruebas</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS016 -->
+      <tr>
+        <td>TS016</td>
+        <td>Exponer endpoint para registrar asistencias de clase</td>
+        <td>TS016a</td>
+        <td>App/Domain Handler</td>
+        <td>RegisterAttendanceCommandHandler con reglas por sesión</td>
+        <td>4</td>
+        <td>Diego</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS016</td>
+        <td>Exponer endpoint para registrar asistencias de clase</td>
+        <td>TS016b</td>
+        <td>Controller & Mapping</td>
+        <td>POST /api/attendances y pruebas</td>
+        <td>3</td>
+        <td>Diego</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS017 -->
+      <tr>
+        <td>TS017</td>
+        <td>Exponer endpoint para actualizar asistencias de clase</td>
+        <td>TS017a</td>
+        <td>App/Domain Handler</td>
+        <td>UpdateAttendanceCommandHandler con permisos/estado</td>
+        <td>3</td>
+        <td>Diego</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS017</td>
+        <td>Exponer endpoint para actualizar asistencias de clase</td>
+        <td>TS017b</td>
+        <td>Controller & Tests</td>
+        <td>PUT /api/attendances/{id} y pruebas</td>
+        <td>2</td>
+        <td>Diego</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS019 -->
+      <tr>
+        <td>TS019</td>
+        <td>Exponer endpoint para listar asistencias de clase</td>
+        <td>TS019a</td>
+        <td>Query Handler</td>
+        <td>GetAllAttendancesQueryHandler con filtros por curso/alumno</td>
+        <td>3</td>
+        <td>Diego</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS019</td>
+        <td>Exponer endpoint para listar asistencias de clase</td>
+        <td>TS019b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/attendances con paginación</td>
+        <td>2</td>
+        <td>Diego</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS020 -->
+      <tr>
+        <td>TS020</td>
+        <td>Exponer endpoint para obtener detalles de una asistencia de clase</td>
+        <td>TS020a</td>
+        <td>Query Handler</td>
+        <td>GetAttendanceByIdQueryHandler con validación de existencia</td>
+        <td>3</td>
+        <td>Diego</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS020</td>
+        <td>Exponer endpoint para obtener detalles de una asistencia de clase</td>
+        <td>TS020b</td>
+        <td>Controller & Mapping</td>
+        <td>GET /api/attendances/{id} con assembler</td>
+        <td>2</td>
+        <td>Diego</td>
+        <td>To review</td>
+      </tr>
+      <!-- TS018 -->
+      <tr>
+        <td>TS018</td>
+        <td>Exponer endpoint para eliminar asistencias de clase</td>
+        <td>TS018a</td>
+        <td>App/Domain Handler</td>
+        <td>DeleteAttendanceCommandHandler con reglas por periodo</td>
+        <td>3</td>
+        <td>Diego</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>TS018</td>
+        <td>Exponer endpoint para eliminar asistencias de clase</td>
+        <td>TS018b</td>
+        <td>Controller & Tests</td>
+        <td>DELETE /api/attendances/{id} y pruebas</td>
+        <td>2</td>
+        <td>Diego</td>
+        <td>To review</td>
+      </tr>
+      <!-- US025 -->
+      <tr>
+        <td>US025</td>
+        <td>Registro de Ingreso/Egreso</td>
+        <td>US025a</td>
+        <td>Formulario y validaciones</td>
+        <td>Tipo (ingreso/egreso), monto, categoría y fecha</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>To review</td>
+      </tr>
+      <tr>
+        <td>US025</td>
+        <td>Registro de Ingreso/Egreso</td>
+        <td>US025b</td>
+        <td>Integración con API</td>
+        <td>POST /api/financial-records y feedback</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>To review</td>
+      </tr>
+      <!-- US001 (Done) -->
+      <tr>
+        <td>US001</td>
+        <td>Registrar nueva acdemia</td>
+        <td>US001a</td>
+        <td>Formulario de registro</td>
+        <td>Inputs, validaciones y feedback</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US001</td>
+        <td>Registrar nueva acdemia</td>
+        <td>US001b</td>
+        <td>Integración con API</td>
+        <td>POST /api/academies y manejo de errores</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <!-- US036 (Done) -->
+      <tr>
+        <td>US036</td>
+        <td>Registro de cuenta</td>
+        <td>US036a</td>
+        <td>Formulario de registro</td>
+        <td>Correo, contraseña, validaciones</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US036</td>
+        <td>Registro de cuenta</td>
+        <td>US036b</td>
+        <td>Integración API</td>
+        <td>POST /api/auth/sign-up con feedback</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <!-- US037 (Done) -->
+      <tr>
+        <td>US037</td>
+        <td>Activación de cuenta</td>
+        <td>US037a</td>
+        <td>Vista de activación</td>
+        <td>Consumo de endpoint de activación y confirmación</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US037</td>
+        <td>Activación de cuenta</td>
+        <td>US037b</td>
+        <td>Notificación y redirección</td>
+        <td>Feedback visual y redirect a login</td>
+        <td>1</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <!-- US038 (Done) -->
+      <tr>
+        <td>US038</td>
+        <td>Inicio de sesión</td>
+        <td>US038a</td>
+        <td>Formulario de login</td>
+        <td>Campos de correo/contraseña y errores</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US038</td>
+        <td>Inicio de sesión</td>
+        <td>US038b</td>
+        <td>Integración API</td>
+        <td>POST /api/auth/login, guardar token y redirect</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <!-- TS001 (Done) -->
+      <tr>
+        <td>TS001</td>
+        <td>Exponer endpoint para registrar academias</td>
+        <td>TS001a</td>
+        <td>App/Domain Handler</td>
+        <td>RegisterAcademyCommandHandler</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>TS001</td>
+        <td>Exponer endpoint para registrar academias</td>
+        <td>TS001b</td>
+        <td>Controller & Mapping</td>
+        <td>POST /api/academies con pruebas</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <!-- TS006 (Done) -->
+      <tr>
+        <td>TS006</td>
+        <td>Exponer endpoint para registrar administrador</td>
+        <td>TS006a</td>
+        <td>App/Domain Handler</td>
+        <td>RegisterAdminCommandHandler</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>TS006</td>
+        <td>Exponer endpoint para registrar administrador</td>
+        <td>TS006b</td>
+        <td>Controller & Mapping</td>
+        <td>POST /api/admins y pruebas</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <!-- TS057 (Done) -->
+      <tr>
+        <td>TS057</td>
+        <td>Exponer endpoint para registrar cuenta de usuario</td>
+        <td>TS057a</td>
+        <td>App/Domain Handler</td>
+        <td>SignUpUserCommandHandler con cifrado</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>TS057</td>
+        <td>Exponer endpoint para registrar cuenta de usuario</td>
+        <td>TS057b</td>
+        <td>Controller & Mapping</td>
+        <td>POST /api/auth/sign-up con pruebas</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <!-- TS060 (Done) -->
+      <tr>
+        <td>TS060</td>
+        <td>Exponer endpoint para activar cuenta de usuario</td>
+        <td>TS060a</td>
+        <td>App/Domain Handler</td>
+        <td>ActivateUserCommandHandler con token</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>TS060</td>
+        <td>Exponer endpoint para activar cuenta de usuario</td>
+        <td>TS060b</td>
+        <td>Controller & Mapping</td>
+        <td>POST /api/users/{id}/activate y pruebas</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <!-- TS063 (Done) -->
+      <tr>
+        <td>TS063</td>
+        <td>Exponer endpoint para iniciar sesión de usuario</td>
+        <td>TS063a</td>
+        <td>App/Domain Handler</td>
+        <td>LoginUserCommandHandler + JWT</td>
+        <td>3</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>TS063</td>
+        <td>Exponer endpoint para iniciar sesión de usuario</td>
+        <td>TS063b</td>
+        <td>Controller & Mapping</td>
+        <td>POST /api/auth/login con pruebas</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <!-- TS064 (Done) -->
+      <tr>
+        <td>TS064</td>
+        <td>Exponer endpoint para validación de recursos</td>
+        <td>TS064a</td>
+        <td>Infra Config</td>
+        <td>Middleware global de validación</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>TS064</td>
+        <td>Exponer endpoint para validación de recursos</td>
+        <td>TS064b</td>
+        <td>Endpoint OPTIONS</td>
+        <td>Respuesta de métodos permitidos por recurso</td>
+        <td>1</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <!-- TS065 (Done) -->
+      <tr>
+        <td>TS065</td>
+        <td>Exponer endpoint para manejo de CORS y métodos permitidos</td>
+        <td>TS065a</td>
+        <td>Infra Config</td>
+        <td>Policies CORS por dominio y cabeceras</td>
+        <td>2</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>TS065</td>
+        <td>Exponer endpoint para manejo de CORS y métodos permitidos</td>
+        <td>TS065b</td>
+        <td>Verificación</td>
+        <td>Pruebas manuales/automáticas de preflight</td>
+        <td>1</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr class="page-break">
 
 #### 4.2.2.3. Development Evidence for Sprint Review
 
@@ -10607,17 +12755,13 @@ Esto contribuirá a posicionar a Demy como una plataforma integral y líder en e
 
 <hr class="page-break">
 
-# Video App Validation
-
-
-
 # Video About the product
 
-
+A continuación se presenta el video About the product, que empieza desde el aterrizaje del usuario en la landing page, hasta el uso y presentación de la aplicación.  
+![Video About the Product Sprint 2](./assets/images/screenshots/about-the-product-screenshot.png)  
+[Enlace al video About the Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQCaIYKx-d9rT7PsOq9eHuUJAReoPRAGqAjJcORqbqS1j4o?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gid1Rt)
 
 # Video About the team
-
-
 
 
 # Glosario
