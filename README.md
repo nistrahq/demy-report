@@ -14674,52 +14674,52 @@ La respuesta confirma la operación con **200 OK**.
 
 **Generación del APK Firmado (Signed Release) — Evidencias de Deployment**
 
-**1) — Inicio del asistente de firmado en Android Studio**
+**1) Inicio del asistente de firmado en Android Studio**
 
 Se accedió a la opción **Build → Generate Signed App Bundle / APK** dentro de Android Studio para iniciar el proceso de creación del archivo firmado para la distribución interna del aplicativo.
 
-![Generate Signed APK](./assets/ux-ui/evidences/deployment/android-signing-step-1.jpg)
+![Generate Signed APK](./assets/ux-ui/evidences/deployments/android-signing-step-1.jpeg)
 
 ---
 
-**2) — Selección del tipo de artefacto a generar**
+**2) Selección del tipo de artefacto a generar**
 
 En el asistente, se seleccionó la opción **APK**, dado que este formato facilita la distribución interna rápida y la instalación directa en dispositivos de testing.
 
-![Select APK](./assets/ux-ui/evidences/deployment/android-signing-step-2.jpg)
+![Select APK](./assets/ux-ui/evidences/deployments/android-signing-step-2.jpeg)
 
 ---
 
-**3) — Creación o selección del Keystore**
+**3) Creación o selección del Keystore**
 
 Se creó un **keystore propio del proyecto**, el cual incluye la clave criptográfica necesaria para firmar el APK. Este keystore garantiza autenticidad y seguridad durante el deployment.
 
-![Keystore Setup](./assets/ux-ui/evidences/deployment/android-signing-step-3.jpg)
+![Keystore Setup](./assets/ux-ui/evidences/deployments/android-signing-step-3.jpeg)
 
 ---
 
-**4) — Configuración de credenciales del KeyStore**
+**4) Configuración de credenciales del KeyStore**
 
 En esta etapa se definieron las credenciales del keystore (contraseña, alias y validez), además de la información del certificado del proyecto, asegurando que todas las firmas cumplan el estándar requerido para las releases.
 
-![Keystore Credentials](./assets/ux-ui/evidences/deployment/android-signing-step-4.jpg)
+![Keystore Credentials](./assets/ux-ui/evidences/deployments/android-signing-step-4.jpeg)
 
 ---
 
-**5) — Selección de la variante de compilación (release)**
+**5) Selección de la variante de compilación (release)**
 
 Se eligió la variante **release**, correspondiente a la versión optimizada y lista para distribución. Esta versión incluye optimizaciones de tamaño, seguridad y rendimiento.
 
-![Select Release Variant](./assets/ux-ui/evidences/deployment/android-signing-step-5.jpg)
+![Select Release Variant](./assets/ux-ui/evidences/deployments/android-signing-step-5.jpeg)
 
 ---
 
-**6) — Generación del APK firmado**
+**6) Generación del APK firmado**
 
 Luego de confirmar la configuración del keystore y la variante release, Android Studio procedió a compilar y generar el archivo **app-release.apk**, mostrando una notificación de éxito.
 Finalmente, el APK firmado se generó correctamente dentro de la carpeta `/app/release/`, quedando listo para ser subido a Firebase App Distribution e instalado por los testers designados.
 
-![APK Generated](./assets/ux-ui/evidences/deployment/android-signing-step-6.jpg)
+![APK Generated](./assets/ux-ui/evidences/deployments/android-signing-step-6.jpeg)
 
 
 **Firebase Deployment for Android – Sprint Review**
