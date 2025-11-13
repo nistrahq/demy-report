@@ -361,10 +361,10 @@ Análisis de cantidad de commits realizados por semana.
             - [4.2.2.6. Services Documentation Evidence for Sprint Review](#4226-services-documentation-evidence-for-sprint-review)
             - [4.2.2.7. Software Deployment Evidence for Sprint Review](#4227-software-deployment-evidence-for-sprint-review)
             - [4.2.2.8. Team Collaboration Insights during Sprint](#4228-team-collaboration-insights-during-sprint)
-        - [4.3. Validation Interviews](#43-validation-interviews)
-            - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
-            - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
-            - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
+    - [4.3. Validation Interviews](#43-validation-interviews)
+        - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
+        - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
+        - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 
 - [Conclusiones](#conclusiones)
     - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
@@ -10551,6 +10551,52 @@ Ingresamos a la URL generada y añadimos al final `/swagger-ui/index.html` para 
 
 
 #### 4.2.2.4. Testing Suite Evidence for Sprint Review
+
+**Unit Test – StudentTest**
+
+Las pruebas unitarias del agregado **Student** se enfocaron en validar la construcción correcta del estudiante mediante diferentes formas de inicialización: utilizando valores primitivos, utilizando Value Objects y a través de un comando de creación (`CreateStudentCommand`). Asimismo, se verificó la actualización controlada de la información del estudiante y la correcta propagación de excepciones ante valores inválidos como DNI incorrecto o identificadores no permitidos. Estas pruebas aplicaron el enfoque **Arrange–Act–Assert (AAA)** y garantizan que las invariantes del dominio se cumplan de manera estricta.
+
+![Student Unit Test 1](assets/tests/student-main-constructor-test.png)
+![Student Unit Test 2](assets/tests/student-update-information-test.png)
+![Student Unit Test 3](assets/tests/dni-validation-error-test.png)
+
+
+**Integration Test – StudentRepositoryTest**
+
+Las pruebas de integración del repositorio **StudentRepository** verificaron la persistencia real de la entidad utilizando **Spring Boot Data JPA** y un contexto de base de datos configurado exclusivamente para testing. Se evaluaron operaciones clave como persistencia, actualización, búsqueda por DNI, búsqueda por academyId, validación de duplicados excluyendo el propio ID, y eliminación de estudiantes. Estas pruebas confirman la correcta interacción entre la capa de dominio y la infraestructura JPA.
+
+![Repository Test 1](assets/tests/studentrepository-persist-and-retrieve.png)
+![Repository Test 2](assets/tests/studentrepository-find-by-dni.png)
+
+
+**Acceptance Test (BDD) – EnrollmentSteps**
+
+Los escenarios de aceptación desarrollados con **Cucumber** permiten validar el proceso completo de creación de una matrícula desde una perspectiva orientada al comportamiento. El escenario Given–When–Then verifica la correcta creación de la entidad `Enrollment` mediante la función de dominio `createEnrollmentActive`, validando la composición con StudentId, PeriodId, WeeklyScheduleId, AcademyId y Money. Además, los Steps verifican que el resultado final coincida con los valores definidos en la tabla Gherkin, asegurando consistencia entre ejecución y expectativa del negocio.
+
+![Feature Enrollment](assets/tests/enrollment-feature-scenario.png)
+![Enrollment Steps](assets/tests/enrollment-step-definitions.png)
+
+
+**Unit Test – ScheduleTest**
+
+Las pruebas unitarias de la entidad **Schedule** validaron la construcción de horarios mediante rangos de tiempo (`TimeRange`), el cumplimiento de restricciones (como hora inicial < hora final), la correcta asociación con `WeeklySchedule` y, especialmente, la detección de conflictos entre horarios superpuestos en el mismo día y aula. También se probó la actualización parcial de horario, preservando los invariantes del dominio.
+
+![Schedule Unit Test 1](assets/tests/schedule-conflict-detection-test.png)
+
+| Repository              | Branch              | Commit Id | Commit Message                                                                                    | Committed on |
+| ----------------------- | ------------------- | --------- | ------------------------------------------------------------------------------------------------- | ------------ |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `32dfa13` | test(unit): add unit tests for Student aggregate with validation and update scenarios             | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `7d35def` | test(bdd): add integration tests for StudentRepository with various scenarios                     | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `c5e7654` | test(unit): add comprehensive ScheduleTest with AAA pattern and validation scenarios              | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `78bdca6` | test(bdd): update RegisterAdministratorSteps to remove academyId and improve command construction | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `4971c43` | test(bdd): add Enrollment registration feature with scenario outline and validation cases         | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `bb56521` | test(bdd): remove academyId column from administrator registration scenarios                      | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `fff1aab` | feat(bdd): add Cucumber steps for enrollment registration scenarios                               | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `7f1ab73` | feat(bdd): add Cucumber test runner for acceptance tests                                          | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `43564c8` | feat(bdd): add Cucumber Spring configuration for acceptance tests                                 | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `127cbb7` | feat(test): add H2 database configuration for StudentRepositoryTest                               | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `02e5292` | feat(bdd): add Cucumber tests for enrollment and administrator registration                       | 2025-11-12   |
+
 
 
 
