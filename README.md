@@ -14504,8 +14504,6 @@ La respuesta confirma la operación con **200 OK**.
     </tr>
   </thead>
   <tbody>
-
-<!-- Register Teacher -->
 <tr>
   <td>Register Teacher</td>
   <td>POST</td>
@@ -14540,8 +14538,6 @@ La respuesta confirma la operación con **200 OK**.
   </td>
   <td>https://demy-api-production.up.railway.app/api/v1/teachers</td>
 </tr>
-
-<!-- Get Current Teacher -->
 <tr>
   <td>Get Current Teacher</td>
   <td>GET</td>
@@ -14562,12 +14558,6 @@ La respuesta confirma la operación con **200 OK**.
   </td>
   <td>https://demy-api-production.up.railway.app/api/v1/teachers/me</td>
 </tr>
-
-<!-- ========================== -->
-<!--       COURSES CRUD        -->
-<!-- ========================== -->
-
-<!-- Create Course -->
 <tr>
   <td>Create Course</td>
   <td>POST</td>
@@ -14594,8 +14584,6 @@ La respuesta confirma la operación con **200 OK**.
   </td>
   <td>https://demy-api-production.up.railway.app/api/v1/courses</td>
 </tr>
-
-<!-- Get All Courses -->
 <tr>
   <td>Get All Courses</td>
   <td>GET</td>
@@ -14622,8 +14610,6 @@ La respuesta confirma la operación con **200 OK**.
   </td>
   <td>https://demy-api-production.up.railway.app/api/v1/courses</td>
 </tr>
-
-<!-- Get Course by ID -->
 <tr>
   <td>Get Course by ID</td>
   <td>GET</td>
@@ -14642,8 +14628,6 @@ La respuesta confirma la operación con **200 OK**.
   </td>
   <td>https://demy-api-production.up.railway.app/api/v1/courses/1</td>
 </tr>
-
-<!-- Update Course -->
 <tr>
   <td>Update Course</td>
   <td>PUT</td>
@@ -14668,8 +14652,6 @@ La respuesta confirma la operación con **200 OK**.
   </td>
   <td>https://demy-api-production.up.railway.app/api/v1/courses/1</td>
 </tr>
-
-<!-- Delete Course -->
 <tr>
   <td>Delete Course</td>
   <td>DELETE</td>
@@ -14685,7 +14667,6 @@ La respuesta confirma la operación con **200 OK**.
   </td>
   <td>https://demy-api-production.up.railway.app/api/v1/courses/1</td>
 </tr>
-
   </tbody>
 </table>
 
@@ -14984,9 +14965,13 @@ A continuación se presenta el video About the product, que empieza desde el ate
 
 Enlace al video about the product: [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQCaIYKx-d9rT7PsOq9eHuUJAYy2xZ1zk0qQUf9KyOKWRTM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pfNQMQ)
 
+<hr class="page-break">
+
 # Video About the team
 
 Enlace al video about the team: [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQDYqO8gD7_vS4vQbzTOLVkLAXduvXLHaJn2p1xIraN2S70?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=V1ccMT)
+
+<hr class="page-break">
 
 # Glosario
 
