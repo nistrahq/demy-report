@@ -10569,7 +10569,44 @@ Ingresamos a la URL generada y añadimos al final `/swagger-ui/index.html` para 
 #### 4.2.2.8. Team Collaboration Insights during Sprint
 
 
+## 4.3. Validation Interviews
 
+En esta sección se presentan las entrevistas de validación realizadas con los representantes de los segmentos objetivo del proyecto: administrativos, docentes y alumnos de academias educativas. El propósito de esta fase fue evaluar la claridad de la propuesta de valor, la usabilidad del prototipo y la aceptación de las funcionalidades planteadas, contrastando las hipótesis iniciales con la percepción real de los usuarios.
+
+### 4.3.1. Diseño de Entrevistas
+
+Para el diseño de las entrevistas de validación se elaboraron guías diferenciadas por segmento. Las preguntas se centraron en dos dimensiones principales: propuesta de valor y usabilidad.
+
+**Segmento 1:** Administrativos de academias
+
+**A. Landing Page (Propuesta de valor)**
+
+1. ¿Qué fue lo primero que entendiste al ver la página?
+2. ¿Te queda claro qué problema buscamos resolver o ayudar?
+3. ¿El mensaje principal te parece relevante para tu trabajo diario?
+4. ¿Te quedan claras las secciones de la página? ¿Agregarías alguna?
+5. ¿Qué parte del contenido te pareció más útil o atractiva?
+6. ¿Te parece que el precio y la propuesta de valor son los adecuados?
+7. ¿Qué mejorarías para que la información sea más clara o persuasiva?
+
+**B. App Movil (Interfaz)**
+
+1. ¿Qué tan fácil fue navegar por la aplicación o entender las secciones?
+2. ¿Lograste identificar rápidamente dónde registrar matrículas o pagos?
+3. ¿Te pareció intuitiva la interfaz o tuviste que pensar demasiado para realizar una acción?
+4. ¿Hay alguna función que esperabas encontrar y no viste?
+5. ¿Qué te generó confianza o desconfianza mientras probabas la herramienta?
+
+**C. App Movil (Propuesta de valor)**
+
+1. ¿Qué tan útil consideras esta herramienta para mejorar tu organización diaria?
+2. ¿Qué tarea específica crees que te ahorraría más tiempo o esfuerzo?
+3. Si tuvieras que reemplazar tu sistema actual por este, ¿qué necesitaría tener para convencerte?
+4. ¿Qué tan probable sería que recomendaras esta herramienta a otro administrativo?
+
+### 4.3.2. Registro de Entrevistas
+
+### 4.3.3. Evaluaciones según heurísticas
 
 <hr class="page-break">
 
