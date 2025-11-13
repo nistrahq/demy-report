@@ -10811,6 +10811,7 @@ Si el administrador existe en el contexto del token actual, retorna **200 OK** c
 ---
 
 **createAcademicPeriod (POST /api/v1/academic-periods)**
+
 Este endpoint permite crear un nuevo periodo académico registrando su información principal.
 Si el recurso se crea correctamente, la respuesta retorna **201 Created** con el AcademicPeriodResource generado.
 
@@ -10819,6 +10820,7 @@ Si el recurso se crea correctamente, la respuesta retorna **201 Created** con el
 ---
 
 **getAllAcademicPeriods (GET /api/v1/academic-periods)**
+
 Este endpoint devuelve la lista completa de periodos académicos registrados.
 La respuesta retorna **200 OK** con una colección de AcademicPeriodResource.
 
@@ -10923,6 +10925,7 @@ Una actualización exitosa retorna **200 OK** con el InvoiceResource actualizado
 ---
 
 **createEnrollment (POST /api/v1/enrollments)**
+
 Este endpoint registra una nueva matrícula dentro del sistema.
 Si el registro es exitoso, retorna **201 Created** junto con el EnrollmentResource generado.
 
@@ -10931,6 +10934,7 @@ Si el registro es exitoso, retorna **201 Created** junto con el EnrollmentResour
 ---
 
 **getAllEnrollments (GET /api/v1/enrollments)**
+
 Este endpoint devuelve el listado completo de matrículas registradas.
 La respuesta es **200 OK** con una lista de EnrollmentResource.
 
@@ -10939,6 +10943,7 @@ La respuesta es **200 OK** con una lista de EnrollmentResource.
 ---
 
 **getEnrollmentById (GET /api/v1/enrollments/{enrollmentId})**
+
 Este endpoint obtiene una matrícula específica según su ID.
 Si existe, retorna **200 OK**; si no, **404 Not Found**.
 
@@ -10947,6 +10952,7 @@ Si existe, retorna **200 OK**; si no, **404 Not Found**.
 ---
 
 **getEnrollmentsByStudentId (GET /api/v1/enrollments/student/{studentId})**
+
 Este endpoint recupera todas las matrículas asociadas a un estudiante mediante su identificador interno.
 La respuesta devuelve **200 OK** con la lista correspondiente.
 
@@ -10955,6 +10961,7 @@ La respuesta devuelve **200 OK** con la lista correspondiente.
 ---
 
 **getEnrollmentsByStudentDni (GET /api/v1/enrollments/student/dni/{dni})**
+
 Este endpoint obtiene todas las matrículas registradas para un estudiante utilizando su DNI.
 Si no existen registros, retorna **404 Not Found**.
 
@@ -10963,6 +10970,7 @@ Si no existen registros, retorna **404 Not Found**.
 ---
 
 **updateEnrollment (PUT /api/v1/enrollments/{enrollmentId})**
+
 Este endpoint actualiza la información de una matrícula existente.
 La operación devuelve **200 OK** con el recurso actualizado.
 
@@ -10971,6 +10979,7 @@ La operación devuelve **200 OK** con el recurso actualizado.
 ---
 
 **deleteEnrollment (DELETE /api/v1/enrollments/{enrollmentId})**
+
 Este endpoint elimina una matrícula según su ID.
 La respuesta confirma la operación con **200 OK**.
 
@@ -10979,6 +10988,7 @@ La respuesta confirma la operación con **200 OK**.
 ---
 
 **createClassroom (POST /api/v1/classrooms)**
+
 Este endpoint permite crear un nuevo salón de clases registrando su información principal.
 Cuando la creación es correcta, retorna **201 Created** con el ClassroomResource generado.
 
@@ -10987,6 +10997,7 @@ Cuando la creación es correcta, retorna **201 Created** con el ClassroomResourc
 ---
 
 **getAllClassrooms (GET /api/v1/classrooms)**
+
 Este endpoint devuelve la lista completa de salones registrados en el sistema.
 La respuesta retorna **200 OK** con un arreglo de ClassroomResource.
 
@@ -10995,6 +11006,7 @@ La respuesta retorna **200 OK** con un arreglo de ClassroomResource.
 ---
 
 **getClassroomById (GET /api/v1/classrooms/{classroomId})**
+
 Este endpoint obtiene un salón específico según su ID.
 Si existe, retorna **200 OK**; de lo contrario, **404 Not Found**.
 
@@ -11011,6 +11023,7 @@ La operación devuelve **200 OK** con el recurso modificado.
 ---
 
 **deleteClassroom (DELETE /api/v1/classrooms/{classroomId})**
+
 Este endpoint elimina un salón de clases según su ID.
 La respuesta confirma la operación con **200 OK**.
 
@@ -11019,6 +11032,7 @@ La respuesta confirma la operación con **200 OK**.
 ---
 
 **registerTransaction (POST /api/v1/transactions)**
+
 Este endpoint registra una nueva transacción financiera, incluyendo tipo, categoría, método, monto, descripción y fecha.
 Si la operación es válida, retorna **201 Created** con el TransactionResource generado.
 
@@ -11027,6 +11041,7 @@ Si la operación es válida, retorna **201 Created** con el TransactionResource 
 ---
 
 **updateTransaction (PUT /api/v1/transactions/{transactionId})**
+
 Este endpoint actualiza los datos de una transacción existente, siempre que pertenezca a la academia activa.
 Si la actualización es exitosa, retorna **200 OK** con el recurso actualizado.
 
@@ -11035,6 +11050,7 @@ Si la actualización es exitosa, retorna **200 OK** con el recurso actualizado.
 ---
 
 **getTransactionById (GET /api/v1/transactions/{transactionId})**
+
 Este endpoint recupera una transacción específica según su ID.
 Si existe, retorna **200 OK**; de lo contrario, **404 Not Found**.
 
@@ -11043,6 +11059,7 @@ Si existe, retorna **200 OK**; de lo contrario, **404 Not Found**.
 ---
 
 **getAllTransactions (GET /api/v1/transactions)**
+
 Este endpoint lista todas las transacciones registradas, permitiendo usar filtros opcionales por categoría, método o tipo.
 La operación retorna **200 OK** con una lista de TransactionResource.
 
@@ -11051,6 +11068,7 @@ La operación retorna **200 OK** con una lista de TransactionResource.
 ---
 
 **deleteTransaction (DELETE /api/v1/transactions/{transactionId})**
+
 Este endpoint elimina una transacción por su ID.
 Cuando se elimina correctamente, retorna **204 No Content**.
 
@@ -11060,6 +11078,7 @@ Cuando se elimina correctamente, retorna **204 No Content**.
 
 
 **createStudent (POST /api/v1/students)**
+
 Este endpoint crea un nuevo estudiante registrando sus datos básicos y vinculándolo a un usuario del sistema.
 Si la creación se realiza correctamente, retorna **201 Created** con el StudentResource generado.
 
@@ -11068,6 +11087,7 @@ Si la creación se realiza correctamente, retorna **201 Created** con el Student
 ---
 
 **getAllStudents (GET /api/v1/students)**
+
 Este endpoint lista todos los estudiantes registrados, incluyendo la obtención de sus correos asociados.
 La respuesta retorna **200 OK** con una colección de StudentResource.
 
@@ -11076,6 +11096,7 @@ La respuesta retorna **200 OK** con una colección de StudentResource.
 ---
 
 **getStudentById (GET /api/v1/students/{studentId})**
+
 Este endpoint obtiene un estudiante según su identificador interno.
 Si existe, retorna **200 OK**; si no, **404 Not Found**.
 
@@ -11084,6 +11105,7 @@ Si existe, retorna **200 OK**; si no, **404 Not Found**.
 ---
 
 **getStudentByDni (GET /api/v1/students/dni/{dni})**
+
 Este endpoint recupera un estudiante utilizando su número de DNI.
 Cuando se encuentra, retorna **200 OK** con su información.
 
@@ -11092,6 +11114,7 @@ Cuando se encuentra, retorna **200 OK** con su información.
 ---
 
 **updateStudent (PUT /api/v1/students/{studentId})**
+
 Este endpoint actualiza los datos de un estudiante existente.
 La operación correcta retorna **200 OK** con el recurso actualizado.
 
@@ -11100,6 +11123,7 @@ La operación correcta retorna **200 OK** con el recurso actualizado.
 ---
 
 **deleteStudent (DELETE /api/v1/students/{studentId})**
+
 Este endpoint elimina un estudiante por su ID.
 La respuesta confirma la operación con **200 OK**.
 
@@ -11309,6 +11333,220 @@ La respuesta confirma la operación con **200 OK**.
 
 #### 4.2.2.7. Software Deployment Evidence for Sprint Review
 
+**Firebase Deployment for Android – Sprint Review**
+
+En esta sección se documentan los pasos realizados para configurar y desplegar la aplicación móvil **Demy Admins** dentro de Firebase, habilitando los servicios necesarios para su funcionamiento, como Analytics, autenticación, gestión del proyecto y preparación para futuros procesos de CI/CD.
+Como prerrequisitos se considera contar con la aplicación Android desarrollada en Kotlin y un entorno de Firebase accesible con permisos de creación de proyectos.
+
+**1) Ingresar a la consola principal de Firebase**
+
+Accedemos a la página oficial de Firebase en
+[https://console.firebase.google.com](https://console.firebase.google.com)
+para iniciar la creación del nuevo proyecto asociado a la aplicación.
+
+![Firebase Home](./assets/ux-ui/evidences/deployments/firebase-deploy-step-1.jpeg)
+
+---
+
+**2) Crear un nuevo proyecto de Firebase**
+
+En la pantalla principal seleccionamos la opción **“Crear un proyecto de Firebase nuevo”**, lo cual inicia el flujo para registrar el proyecto en la plataforma.
+
+![Crear proyecto Firebase](./assets/ux-ui/evidences/deployments/firebase-deploy-step-2.jpeg)
+
+
+---
+
+**3) Asignar nombre al proyecto**
+
+Definimos el nombre oficial del proyecto, en este caso:
+**Nistra Demy Admins**
+Firebase genera automáticamente un identificador único para el proyecto en Google Cloud.
+
+![Nombre del proyecto](./assets/ux-ui/evidences/deployments/firebase-deploy-step-3.jpeg)
+
+---
+
+**4) Configuración de asistencia de IA (Gemini en Firebase)**
+
+Firebase ofrece la posibilidad de habilitar **Gemini Assistance**, la cual puede ayudar a depurar apps, generar datos, analizar errores y optimizar el proceso de desarrollo.
+En esta etapa revisamos la información y continuamos con el flujo de configuración.
+
+![Asistencia de IA](./assets/ux-ui/evidences/deployments/firebase-deploy-step-4.jpeg)
+
+---
+
+**5) Continuar configuración del proyecto e integración con análisis**
+
+Firebase muestra la opción de habilitar Google Analytics. Esta configuración se completa posteriormente dependiendo de los servicios requeridos, pero se continúa avanzando con la creación del proyecto.
+
+![Continuar configuración](./assets/ux-ui/evidences/deployments/firebase-deploy-step-5.jpeg)
+
+
+---
+
+**6) Habilitar o deshabilitar Google Analytics**
+
+Firebase ofrece habilitar Google Analytics para obtener métricas, pruebas A/B, auditorías de navegación y eventos.
+En esta etapa configuramos según los requisitos del proyecto antes de crear el entorno definitivo.
+
+![Google Analytics configuración](./assets/ux-ui/evidences/deployments/firebase-deploy-step-10.jpeg)
+
+---
+
+**7) Confirmación de proyecto creado**
+
+Firebase finaliza la creación del proyecto mostrando un mensaje de confirmación indicando que el entorno está listo para continuar con la configuración de la aplicación.
+
+![Proyecto listo](./assets/ux-ui/evidences/deployments/firebase-deploy-step-6.jpeg)
+
+---
+
+**8) Seleccionar agregar una nueva app al proyecto**
+
+Una vez creado el proyecto de Firebase, accedemos al panel principal donde se muestra el nombre del proyecto y las opciones iniciales. Seleccionamos el botón **“Agregar app”** para iniciar el proceso de registro de la aplicación Android.
+
+![Agregar app](./assets/ux-ui/evidences/deployments/firebase-deploy-step-7.jpeg)
+
+---
+
+**9) Seleccionar la plataforma Android**
+
+Entre las plataformas disponibles (iOS, Android, Web y Flutter), elegimos la opción **Android**, que corresponde al tipo de aplicación que será desplegada.
+
+![Seleccionar plataforma Android](./assets/ux-ui/evidences/deployments/firebase-deploy-step-8.jpeg)
+
+---
+
+**10) Registrar paquete de la aplicación Android**
+
+Firebase solicita el **Nombre del paquete** (applicationId) de la app Android.
+Ingresamos:
+
+**com.nistra.demy.admins**
+
+Además, añadimos un sobrenombre descriptivo para la aplicación. Luego seleccionamos **“Registrar app”**.
+
+![Registrar aplicación Android](./assets/ux-ui/evidences/deployments/firebase-deploy-step-9.jpeg)
+
+
+---
+
+**11) Descargar y agregar el archivo de configuración google-services.json**
+
+Firebase indica descargar el archivo de configuración **google-services.json**, el cual debe añadirse en el directorio raíz del módulo **app** dentro del proyecto Android.
+Este archivo permite enlazar la aplicación Android con los servicios de Firebase.
+
+![Descargar google-services.json](./assets/ux-ui/evidences/deployments/firebase-deploy-step-11.jpeg)
+
+
+---
+
+**12) Agregar el SDK de Firebase en los archivos Gradle**
+
+Firebase indica añadir el complemento de Google Services en el archivo `build.gradle.kts` de nivel de proyecto.
+Se incluyen las instrucciones necesarias para habilitar los servicios de Firebase dentro del entorno de compilación.
+
+![Agregar SDK Firebase](./assets/ux-ui/evidences/deployments/firebase-deploy-step-12.jpeg)
+
+---
+
+**13) Configurar plugins y dependencias en el módulo app**
+
+En el archivo `build.gradle.kts` del módulo app se agregan los plugins y dependencias necesarios, incluyendo el Firebase BoM y los complementos de Google Services, permitiendo integrar cualquier servicio adicional de Firebase.
+
+![Configurar Gradle módulo app](./assets/ux-ui/evidences/deployments/firebase-deploy-step-13.jpeg)
+
+---
+
+**14) Finalizar la configuración e ir a la consola**
+
+Una vez completados los pasos de integración del SDK y sincronización del proyecto en Android Studio, Firebase muestra el mensaje final indicando que la configuración se realizó correctamente y que se puede regresar a la consola para continuar.
+
+![Configuración finalizada](./assets/ux-ui/evidences/deployments/firebase-deploy-step-14.jpeg)
+
+---
+
+
+**15) Iniciar configuración de App Distribution**
+
+Firebase muestra una pantalla introductoria con información sobre la distribución interna de aplicaciones. Seleccionamos **Comenzar** para habilitar esta funcionalidad en el proyecto.
+
+![Pantalla comenzar distribución](./assets/ux-ui/evidences/deployments/firebase-deploy-step-15.jpeg)
+
+
+---
+
+**16) Generar archivo APK de la app**
+
+Desde el explorador de archivos del sistema se ubica el paquete generado por Android Studio, específicamente el archivo **app-release.apk**, ubicado dentro de la carpeta *release* del proyecto.
+
+![APK generado](./assets/ux-ui/evidences/deployments/firebase-deploy-step-16.jpeg)
+
+---
+
+
+**18) Subir el archivo APK a Firebase App Distribution**
+
+Arrastramos y soltamos el archivo **app-release.apk** en la zona habilitada dentro de App Distribution para crear una nueva versión de la aplicación.
+Firebase procesa el archivo y prepara la versión inicial.
+
+![Subida de APK](./assets/ux-ui/evidences/deployments/firebase-deploy-step-18.jpeg)
+
+---
+
+**19) Versión creada exitosamente**
+
+Firebase registra la versión **1.0** de la aplicación, mostrando las opciones para copiar el enlace de distribución, descargar el archivo, eliminar la versión o continuar agregando verificadores y notas de lanzamiento.
+
+![Versión creada](./assets/ux-ui/evidences/deployments/firebase-deploy-step-19.jpeg)
+
+---
+
+**20) Continuar con la asignación de verificadores**
+
+Después de crear la versión, Firebase solicita agregar verificadores o grupos que recibirán la aplicación para pruebas internas.
+Seleccionamos **Siguiente** para avanzar en el proceso de entrega.
+
+![Asignar verificadores](./assets/ux-ui/evidences/deployments/firebase-deploy-step-20.jpeg)
+
+
+---
+
+**21) Agregar verificadores a la versión distribuida**
+
+Firebase permite seleccionar qué usuarios recibirán la build para pruebas internas.
+Agregamos los correos electrónicos de los verificadores correspondientes, quienes podrán instalar y evaluar la aplicación.
+
+![Agregar verificadores](./assets/ux-ui/evidences/deployments/firebase-deploy-step-21.jpeg)
+
+---
+
+**22) Añadir notas de la versión**
+
+Se redactan las notas descriptivas para la versión **1.0**, indicando que corresponde al primer build firmado y preparado para pruebas internas, incluyendo el módulo administrativo, manejo de login, roles y conexión con la API en producción.
+Seleccionamos la opción **Distribuir a verificadores**, lo que envía la versión directamente a los usuarios agregados y habilita la descarga desde sus dispositivos.
+
+
+![Notas de versión](./assets/ux-ui/evidences/deployments/firebase-deploy-step-22.jpeg)
+
+---
+
+
+**23) Distribución completada correctamente**
+
+Firebase muestra el mensaje que confirma que la distribución fue realizada con éxito.
+La versión ya se encuentra disponible para los verificadores y se puede monitorear su estado de aceptación, descarga y comentarios.
+
+![Distribución completada](./assets/ux-ui/evidences/deployments/firebase-deploy-step-23.jpeg)
+
+---
+
+**24) Verificación de estado de los verificadores**
+
+En la sección de verificadores se observa el estado de cada invitado, pudiéndose visualizar si aceptaron la invitación, descargaron la app o dejaron comentarios relacionados a la prueba.
+
+![Estado de verificadores](./assets/ux-ui/evidences/deployments/firebase-deploy-step-24.jpeg)
 
 
 #### 4.2.2.8. Team Collaboration Insights during Sprint
