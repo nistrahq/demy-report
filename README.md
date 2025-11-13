@@ -10576,7 +10576,37 @@ A continuación se presentará el sprint planning para esta entrega, detallando 
 
 #### 4.2.2.8. Team Collaboration Insights during Sprint
 
+| Alumno                           | Actividad                       |
+|----------------------------------|---------------------------------|
+| Crispin Ramos, Daniel Franco     | REST API, Android, Flutter      |
+| Aponte Cruzado, Andrea Marielena | REST API, Android, iOS          |
+| Ramírez Mestanza, Salim Ignacio  | REST API, Android, Flutter, iOS |
+| Sulca Gonzales, Paúl Fernando    | REST API, Android, Flutter      |
+| Vilca Saboya, Diego Alejandro    | REST API, Android, Flutter      |
 
+**REST API**
+
+![Git Evidence — API 1](./assets/ux-ui/evidences/git/git-api3.png)
+![Git Evidence — API 2](./assets/ux-ui/evidences/git/git-api4.png)
+![Git Evidence — API 3](./assets/ux-ui/evidences/git/git-api5.png)
+![Git Evidence — API 4](./assets/ux-ui/evidences/git/git-api6.png)
+![Git Evidence — API 5](./assets/ux-ui/evidences/git/git-api7.png)
+
+**Android Application**
+
+![Git Evidence — Android 3](./assets/ux-ui/evidences/git/git-android3.png)
+![Git Evidence — Android 4](./assets/ux-ui/evidences/git/git-android4.png)
+![Git Evidence — Android 5](./assets/ux-ui/evidences/git/git-android5.png)
+![Git Evidence — Android 6](./assets/ux-ui/evidences/git/git-android6.png)
+![Git Evidence — Android 7](./assets/ux-ui/evidences/git/git-android7.png)
+
+**Flutter Application**
+
+![Git Evidence — Flutter 1](./assets/ux-ui/evidences/git/git-flutter1.png)
+![Git Evidence — Flutter 2](./assets/ux-ui/evidences/git/git-flutter2.png)
+![Git Evidence — Flutter 3](./assets/ux-ui/evidences/git/git-flutter3.png)
+![Git Evidence — Flutter 4](./assets/ux-ui/evidences/git/git-flutter4.png)
+![Git Evidence — Flutter 5](./assets/ux-ui/evidences/git/git-flutter5.png)
 
 <hr class="page-break">
 
