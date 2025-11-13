@@ -53,7 +53,7 @@
   </table>
 </div>
 
-<h5 style="text-align: center"> Ciclo 2025-20 </h5>
+<h5 style="text-align: center"> Periodo 2025-20 </h5>
 
 <hr class="page-break">
 
@@ -10710,7 +10710,7 @@ Enlace al video about the product: [Ver en Microsoft Stream](https://upcedupe-my
 
 # Video About the team
 
-
+Enlace al video about the team: [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQDYqO8gD7_vS4vQbzTOLVkLAXduvXLHaJn2p1xIraN2S70?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=V1ccMT)
 
 # Glosario
 
