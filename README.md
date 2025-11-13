@@ -12836,7 +12836,50 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
 
 #### 4.2.2.4. Testing Suite Evidence for Sprint Review
 
+**Unit Test – StudentTest**
 
+Las pruebas unitarias del agregado **Student** se enfocaron en validar la construcción correcta del estudiante mediante diferentes formas de inicialización: utilizando valores primitivos, utilizando Value Objects y a través de un comando de creación (`CreateStudentCommand`). Asimismo, se verificó la actualización controlada de la información del estudiante y la correcta propagación de excepciones ante valores inválidos como DNI incorrecto o identificadores no permitidos. Estas pruebas aplicaron el enfoque **Arrange–Act–Assert (AAA)** y garantizan que las invariantes del dominio se cumplan de manera estricta.
+
+![Student Unit Test 1](assets/tests/student-main-constructor-test.png)
+![Student Unit Test 2](assets/tests/student-update-information-test.png)
+![Student Unit Test 3](assets/tests/dni-validation-error-test.png)
+
+
+**Integration Test – StudentRepositoryTest**
+
+Las pruebas de integración del repositorio **StudentRepository** verificaron la persistencia real de la entidad utilizando **Spring Boot Data JPA** y un contexto de base de datos configurado exclusivamente para testing. Se evaluaron operaciones clave como persistencia, actualización, búsqueda por DNI, búsqueda por academyId, validación de duplicados excluyendo el propio ID, y eliminación de estudiantes. Estas pruebas confirman la correcta interacción entre la capa de dominio y la infraestructura JPA.
+
+![Repository Test 1](assets/tests/studentrepository-persist-and-retrieve.png)
+![Repository Test 2](assets/tests/studentrepository-find-by-dni.png)
+
+
+**Acceptance Test (BDD) – EnrollmentSteps**
+
+Los escenarios de aceptación desarrollados con **Cucumber** permiten validar el proceso completo de creación de una matrícula desde una perspectiva orientada al comportamiento. El escenario Given–When–Then verifica la correcta creación de la entidad `Enrollment` mediante la función de dominio `createEnrollmentActive`, validando la composición con StudentId, PeriodId, WeeklyScheduleId, AcademyId y Money. Además, los Steps verifican que el resultado final coincida con los valores definidos en la tabla Gherkin, asegurando consistencia entre ejecución y expectativa del negocio.
+
+![Feature Enrollment](assets/tests/enrollment-feature-scenario.png)
+![Enrollment Steps](assets/tests/enrollment-step-definitions.png)
+
+
+**Unit Test – ScheduleTest**
+
+Las pruebas unitarias de la entidad **Schedule** validaron la construcción de horarios mediante rangos de tiempo (`TimeRange`), el cumplimiento de restricciones (como hora inicial < hora final), la correcta asociación con `WeeklySchedule` y, especialmente, la detección de conflictos entre horarios superpuestos en el mismo día y aula. También se probó la actualización parcial de horario, preservando los invariantes del dominio.
+
+![Schedule Unit Test 1](assets/tests/schedule-conflict-detection-test.png)
+
+| Repository              | Branch              | Commit Id | Commit Message                                                                                    | Committed on |
+| ----------------------- | ------------------- | --------- | ------------------------------------------------------------------------------------------------- | ------------ |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `32dfa13` | test(unit): add unit tests for Student aggregate with validation and update scenarios             | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `7d35def` | test(bdd): add integration tests for StudentRepository with various scenarios                     | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `c5e7654` | test(unit): add comprehensive ScheduleTest with AAA pattern and validation scenarios              | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `78bdca6` | test(bdd): update RegisterAdministratorSteps to remove academyId and improve command construction | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `4971c43` | test(bdd): add Enrollment registration feature with scenario outline and validation cases         | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `bb56521` | test(bdd): remove academyId column from administrator registration scenarios                      | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `fff1aab` | feat(bdd): add Cucumber steps for enrollment registration scenarios                               | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `7f1ab73` | feat(bdd): add Cucumber test runner for acceptance tests                                          | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `43564c8` | feat(bdd): add Cucumber Spring configuration for acceptance tests                                 | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `127cbb7` | feat(test): add H2 database configuration for StudentRepositoryTest                               | 2025-11-12   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `02e5292` | feat(bdd): add Cucumber tests for enrollment and administrator registration                       | 2025-11-12   |
 
 #### 4.2.2.5. Execution Evidence for Sprint Review
 
@@ -12844,10 +12887,947 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
 
 #### 4.2.2.6. Services Documentation Evidence for Sprint Review
 
+En esta sección se presentan las evidencias de funcionamiento de los principales endpoints del backend desplegado en Railway, verificando su correcto comportamiento mediante Swagger UI. Se documentan las pruebas realizadas para la creación, autenticación y gestión de usuarios dentro del sistema Demy, incluyendo las respuestas del servidor y el flujo completo de validación por correo electrónico.
+
+
+**registerTeacher (POST /teachers)**
+Este endpoint permite registrar un nuevo profesor dentro del sistema Demy.
+Desde Swagger UI se envía el cuerpo JSON con la información correspondiente, validando la creación del recurso y la respuesta **201 Created**.
+
+![registerTeacher](./assets/ux-ui/evidences/backend/backend-doc-registerTeacher.png)
+
+---
+
+**getCurrentTeacher (GET /teachers/me)**
+Este endpoint retorna los datos del profesor actualmente autenticado.
+Utilizando el token JWT en la cabecera `Authorization`, se valida la recuperación de la entidad del docente junto con su correo asociado.
+
+![getCurrentTeacher](./assets/ux-ui/evidences/backend/backend-doc-getCurrentTeacher.png)
+
+---
+
+**getCurrentAcademy (GET /academies/current)**
+Este endpoint devuelve la academia asociada al administrador autenticado.
+Se verifica que la respuesta **200 OK** contiene la información de la institución vinculada al usuario actual.
+
+![getCurrentAcademy](./assets/ux-ui/evidences/backend/backend-doc-getCurrentAcademy.png)
+
+---
+
+**checkAcademyExists (HEAD /academies/{id})**
+Este endpoint permite verificar si una academia existe sin devolver contenido en el cuerpo.
+Se prueba con un ID existente confirmando la respuesta **200 OK** o **404 Not Found** según corresponda.
+
+![checkAcademyExists](./assets/ux-ui/evidences/backend/backend-doc-checkAcademyExists.png)
+
+---
+
+**handleOptions (OPTIONS /academies)**
+Este endpoint atiende solicitudes de preflight CORS, especificando los métodos permitidos, los headers admitidos y la configuración general de acceso.
+La respuesta válida devuelve **200 OK** junto con los encabezados de política CORS.
+
+![handleOptions](./assets/ux-ui/evidences/backend/backend-doc-handleOptions.png)
+
+---
+
+**createClassAttendance (POST /api/v1/class-attendances)**
+Este endpoint permite crear un registro de asistencia para una clase, recibiendo la lista de asistencias por estudiante, el `classSessionId` y la fecha.
+La respuesta válida retorna **201 Created**, indicando que la asistencia fue registrada correctamente.
+
+![createClassAttendance](./assets/ux-ui/evidences/backend/backend-doc-createClassAttendance.png)
+
+---
+
+**patchStatus (PATCH /api/v1/class-attendances/{id}/attendance/{dni}/status)**
+Este endpoint actualiza el estado de asistencia de un estudiante identificado por su DNI dentro de un registro de clase existente.
+Permite modificar el estado a PRESENT, ABSENT o EXCUSED.
+Una actualización correcta devuelve **200 OK**, mientras que entradas inválidas o inexistentes retornan errores 400 o 404.
+
+![patchStatus](./assets/ux-ui/evidences/backend/backend-doc-patchStatus.png)
+
+---
+
+**listAllByAcademy (GET /api/v1/class-attendances/all)**
+Este endpoint lista todas las asistencias registradas en la academia asociada al usuario autenticado.
+La operación devuelve una colección de registros en formato **200 OK**, representando todas las sesiones de asistencia disponibles.
+
+![listAllByAcademy](./assets/ux-ui/evidences/backend/backend-doc-class-attendance-listAllByAcademy.png)
+
+---
+
+**getById (GET /api/v1/class-attendances/{id})**
+Este endpoint obtiene un registro de asistencia específico según su ID, limitado al contexto de la academia del usuario.
+Si el registro existe se retorna **200 OK** con su información; de lo contrario, **404 Not Found**.
+
+![getById](./assets/ux-ui/evidences/backend/backend-doc-class-attendance-getById.png)
+
+---
+
+**deleteById (DELETE /api/v1/class-attendances/{id})**
+Este endpoint elimina un registro de asistencia por su ID dentro del alcance de la academia autenticada.
+Una eliminación exitosa retorna **204 No Content**, mientras que un ID inexistente produce **404 Not Found**.
+
+![deleteById](./assets/ux-ui/evidences/backend/backend-doc-class-attendance-deleteById.png)
+
+---
+
+**createSchedule (POST /api/v1/schedules)**
+Este endpoint permite crear un horario semanal (WeeklySchedule) registrando su información principal.
+La operación retorna **201 Created** al generarse correctamente el horario.
+
+![weeklyScheduleCreate](./assets/ux-ui/evidences/backend/backend-doc-weekly-schedule-create.png)
+
+---
+
+**getAllSchedules (GET /api/v1/schedules)**
+Este endpoint obtiene la lista completa de horarios semanales registrados.
+La respuesta devuelve **200 OK** con un arreglo de WeeklyScheduleResource.
+
+![weeklyScheduleGetAll](./assets/ux-ui/evidences/backend/backend-doc-weekly-schedule-getAll.png)
+
+---
+
+**getScheduleById (GET /api/v1/schedules/{scheduleId})**
+Este endpoint recupera un horario semanal específico según su ID.
+Si existe, retorna **200 OK**; si no existe, **404 Not Found**.
+
+![weeklyScheduleGetById](./assets/ux-ui/evidences/backend/backend-doc-weekly-schedule-getById.png)
+
+---
+
+**updateSchedule (PUT /api/v1/schedules/{scheduleId})**
+Este endpoint actualiza el nombre o información principal de un horario semanal existente.
+Una actualización correcta devuelve **200 OK** con el recurso actualizado.
+
+![weeklyScheduleUpdate](./assets/ux-ui/evidences/backend/backend-doc-weekly-schedule-update.png)
+
+---
+
+**deleteSchedule (DELETE /api/v1/schedules/{scheduleId})**
+Este endpoint elimina un horario semanal por su ID.
+La eliminación retorna **200 OK** confirmando la operación.
+
+![weeklyScheduleDelete](./assets/ux-ui/evidences/backend/backend-doc-weekly-schedule-delete.png)
+
+---
+
+**addClassSessionToSchedule (POST /api/v1/schedules/{scheduleId}/class-sessions)**
+Este endpoint agrega una clase (ClassSession) a un horario semanal existente.
+Cuando la operación es exitosa, retorna **200 OK** con el horario actualizado.
+
+![scheduleAddClassSession](./assets/ux-ui/evidences/backend/backend-doc-weekly-schedule-add-class-session.png)
+
+---
+
+**removeClassSessionFromSchedule (DELETE /api/v1/schedules/{scheduleId}/class-sessions/{classSessionId})**
+Este endpoint elimina una clase (ClassSession) específica del horario semanal.
+Una vez removida, retorna **200 OK** con la versión actualizada del horario.
+
+![scheduleRemoveClassSession](./assets/ux-ui/evidences/backend/backend-doc-weekly-schedule-remove-class-session.png)
+
+---
+
+**getClassSessionsByTeacherId (GET /api/v1/schedules/by-teacher/{userId})**
+Este endpoint obtiene todas las clases asignadas al profesor identificado por `userId`.
+Si existen clases, la respuesta incluye **200 OK** con una lista de ScheduleResource.
+
+![scheduleByTeacher](./assets/ux-ui/evidences/backend/backend-doc-schedule-by-teacher.png)
+
+---
+
+**updateClassSession (PUT /api/v1/schedules/class-sessions/{classSessionId})**
+Este endpoint actualiza la información de una clase (ClassSession): aula, día, hora de inicio y fin.
+Si el registro existe, retorna **200 OK** con la clase actualizada.
+
+![classSessionUpdate](./assets/ux-ui/evidences/backend/backend-doc-class-session-update.png)
+
+---
+
+**createCourse (POST /api/v1/courses)**
+Este endpoint permite crear un nuevo curso registrando su información principal.
+Una creación exitosa devuelve **201 Created** junto con el recurso generado.
+
+![courseCreate](./assets/ux-ui/evidences/backend/backend-doc-course-create.png)
+
+---
+
+**getAllCourses (GET /api/v1/courses)**
+Este endpoint retorna la lista completa de cursos registrados en el sistema.
+La operación responde con **200 OK** y una colección de CourseResource.
+
+![courseGetAll](./assets/ux-ui/evidences/backend/backend-doc-course-getAll.png)
+
+---
+
+**getCourseById (GET /api/v1/courses/{courseId})**
+Este endpoint obtiene un curso específico según su ID.
+Si el recurso existe, retorna **200 OK** con el curso; de lo contrario, **404 Not Found**.
+
+![courseGetById](./assets/ux-ui/evidences/backend/backend-doc-course-getById.png)
+
+---
+
+**updateCourse (PUT /api/v1/courses/{courseId})**
+Este endpoint actualiza los datos de un curso previamente registrado.
+La actualización correcta devuelve **200 OK** con el recurso actualizado.
+
+![courseUpdate](./assets/ux-ui/evidences/backend/backend-doc-course-update.png)
+
+---
+
+**deleteCourse (DELETE /api/v1/courses/{courseId})**
+Este endpoint elimina un curso por su ID.
+La respuesta confirma la operación con **200 OK**.
+
+![courseDelete](./assets/ux-ui/evidences/backend/backend-doc-course-delete.png)
+
+---
+
+**getCurrentAdministrator (GET /administrators/me)**
+Este endpoint obtiene la información del administrador autenticado, incluyendo su correo electrónico asociado.
+Si el administrador existe en el contexto del token actual, retorna **200 OK** con el recurso correspondiente; de lo contrario, **404 Not Found**.
+
+![administratorGetCurrent](./assets/ux-ui/evidences/backend/backend-doc-administrator-getCurrent.png)
+
+---
+
+**createAcademicPeriod (POST /api/v1/academic-periods)**
+
+Este endpoint permite crear un nuevo periodo académico registrando su información principal.
+Si el recurso se crea correctamente, la respuesta retorna **201 Created** con el AcademicPeriodResource generado.
+
+![academicPeriodCreate](./assets/ux-ui/evidences/backend/backend-doc-academic-period-create.png)
+
+---
+
+**getAllAcademicPeriods (GET /api/v1/academic-periods)**
+
+Este endpoint devuelve la lista completa de periodos académicos registrados.
+La respuesta retorna **200 OK** con una colección de AcademicPeriodResource.
+
+![academicPeriodGetAll](./assets/ux-ui/evidences/backend/backend-doc-academic-period-getAll.png)
+
+---
+
+**updateAcademicPeriod (PUT /api/v1/academic-periods/{academicPeriodId})**
+Este endpoint actualiza un periodo académico existente según su ID.
+Una actualización válida retorna **200 OK** con el periodo actualizado.
+
+![academicPeriodUpdate](./assets/ux-ui/evidences/backend/backend-doc-academic-period-update.png)
+
+---
+
+**deleteAcademicPeriod (DELETE /api/v1/academic-periods/{academicPeriodId})**
+Este endpoint elimina un periodo académico por su ID.
+La operación exitosa devuelve **200 OK** indicando que el registro fue eliminado.
+
+![academicPeriodDelete](./assets/ux-ui/evidences/backend/backend-doc-academic-period-delete.png)
+
+---
+
+**createBillingAccount (POST /api/v1/billing-accounts)**
+Este endpoint crea una nueva cuenta de facturación vinculada a un estudiante y a una academia.
+Cuando la operación es exitosa, retorna **201 Created** con el BillingAccountResource generado.
+
+![billingAccountCreate](./assets/ux-ui/evidences/backend/backend-doc-billing-account-create.png)
+
+---
+
+**assignInvoiceToBillingAccount (POST /api/v1/billing-accounts/{billingAccountId}/invoices)**
+Este endpoint asigna una nueva factura (Invoice) a una cuenta de facturación existente.
+Si la asignación es correcta, retorna **201 Created** con la cuenta de facturación actualizada.
+
+![billingAccountAssignInvoice](./assets/ux-ui/evidences/backend/backend-doc-billing-account-assign-invoice.png)
+
+---
+
+**markInvoiceAsPaid (POST /api/v1/billing-accounts/{billingAccountId}/invoices/{invoiceId}/mark-as-paid)**
+Este endpoint marca una factura específica como pagada dentro de la cuenta de facturación indicada.
+Si la factura existe y se actualiza correctamente, la respuesta es **200 OK** con el InvoiceResource actualizado.
+
+![billingAccountInvoiceMarkAsPaid](./assets/ux-ui/evidences/backend/backend-doc-billing-account-invoice-markAsPaid.png)
+
+---
+
+**getBillingAccountById (GET /api/v1/billing-accounts/{billingAccountId})**
+Este endpoint obtiene una cuenta de facturación según su ID.
+Si el recurso existe, retorna **200 OK** con su información; en caso contrario, **404 Not Found**.
+
+![billingAccountGetById](./assets/ux-ui/evidences/backend/backend-doc-billing-account-getById.png)
+
+
+
+**getAllBillingAccounts (GET /api/v1/billing-accounts)**
+Este endpoint obtiene la lista completa de cuentas de facturación registradas en el sistema.
+Si no existen registros, retorna una lista vacía con **200 OK**.
+
+![billingAccountGetAll](./assets/ux-ui/evidences/backend/backend-doc-billing-account-getAll.png)
+
+---
+
+**getAllInvoicesByAccountId (GET /api/v1/billing-accounts/{billingAccountId}/invoices)**
+Este endpoint devuelve todas las facturas asociadas a una cuenta de facturación específica.
+Si no existen facturas, la respuesta retorna una lista vacía con **200 OK**.
+
+![billingAccountInvoicesGetAllByAccountId](./assets/ux-ui/evidences/backend/backend-doc-billing-account-invoices-getAllByAccountId.png)
+
+---
+
+**getAllInvoicesByStudentId (GET /api/v1/billing-accounts/invoices/by-student-id/{studentId})**
+Este endpoint recupera todas las facturas de un estudiante a partir de su identificador interno (studentId).
+Si no existen facturas, retorna una lista vacía con **200 OK**.
+
+![billingAccountInvoicesGetAllByStudentId](./assets/ux-ui/evidences/backend/backend-doc-billing-account-invoices-getAllByStudentId.png)
+
+---
+
+**getAllInvoicesByStudentDniNumber (GET /api/v1/billing-accounts/invoices/by-student-dni/{dniNumber})**
+Este endpoint devuelve todas las facturas de un estudiante a partir de su DNI.
+Si no se encuentran facturas, la respuesta es una lista vacía con **200 OK**.
+
+![billingAccountInvoicesGetAllByStudentDni](./assets/ux-ui/evidences/backend/backend-doc-billing-account-invoices-getAllByStudentDni.png)
+
+---
+
+**deleteInvoice (DELETE /api/v1/billing-accounts/{billingAccountId}/invoices/{invoiceId})**
+Este endpoint elimina una factura específica de una cuenta de facturación, siempre que no esté pagada.
+Una eliminación válida retorna **204 No Content**.
+
+![billingAccountInvoiceDelete](./assets/ux-ui/evidences/backend/backend-doc-billing-account-invoice-delete.png)
+
+---
+
+**updateInvoice (PUT /api/v1/billing-accounts/{billingAccountId}/invoices/{invoiceId})**
+Este endpoint actualiza los campos editables de una factura (tipo, monto, descripción y estado), siempre que no se trate de una factura pagada.
+Una actualización exitosa retorna **200 OK** con el InvoiceResource actualizado.
+
+![billingAccountInvoiceUpdate](./assets/ux-ui/evidences/backend/backend-doc-billing-account-invoice-update.png)
+
+---
+
+**createEnrollment (POST /api/v1/enrollments)**
+
+Este endpoint registra una nueva matrícula dentro del sistema.
+Si el registro es exitoso, retorna **201 Created** junto con el EnrollmentResource generado.
+
+![enrollmentCreate](./assets/ux-ui/evidences/backend/backend-doc-enrollment-create.png)
+
+---
+
+**getAllEnrollments (GET /api/v1/enrollments)**
+
+Este endpoint devuelve el listado completo de matrículas registradas.
+La respuesta es **200 OK** con una lista de EnrollmentResource.
+
+![enrollmentGetAll](./assets/ux-ui/evidences/backend/backend-doc-enrollment-getAll.png)
+
+---
+
+**getEnrollmentById (GET /api/v1/enrollments/{enrollmentId})**
+
+Este endpoint obtiene una matrícula específica según su ID.
+Si existe, retorna **200 OK**; si no, **404 Not Found**.
+
+![enrollmentGetById](./assets/ux-ui/evidences/backend/backend-doc-enrollment-getById.png)
+
+---
+
+**getEnrollmentsByStudentId (GET /api/v1/enrollments/student/{studentId})**
+
+Este endpoint recupera todas las matrículas asociadas a un estudiante mediante su identificador interno.
+La respuesta devuelve **200 OK** con la lista correspondiente.
+
+![enrollmentByStudentId](./assets/ux-ui/evidences/backend/backend-doc-enrollment-byStudentId.png)
+
+---
+
+**getEnrollmentsByStudentDni (GET /api/v1/enrollments/student/dni/{dni})**
+
+Este endpoint obtiene todas las matrículas registradas para un estudiante utilizando su DNI.
+Si no existen registros, retorna **404 Not Found**.
+
+![enrollmentByStudentDni](./assets/ux-ui/evidences/backend/backend-doc-enrollment-byStudentDni.png)
+
+---
+
+**updateEnrollment (PUT /api/v1/enrollments/{enrollmentId})**
+
+Este endpoint actualiza la información de una matrícula existente.
+La operación devuelve **200 OK** con el recurso actualizado.
+
+![enrollmentUpdate](./assets/ux-ui/evidences/backend/backend-doc-enrollment-update.png)
+
+---
+
+**deleteEnrollment (DELETE /api/v1/enrollments/{enrollmentId})**
+
+Este endpoint elimina una matrícula según su ID.
+La respuesta confirma la operación con **200 OK**.
+
+![enrollmentDelete](./assets/ux-ui/evidences/backend/backend-doc-enrollment-delete.png)
+
+---
+
+**createClassroom (POST /api/v1/classrooms)**
+
+Este endpoint permite crear un nuevo salón de clases registrando su información principal.
+Cuando la creación es correcta, retorna **201 Created** con el ClassroomResource generado.
+
+![classroomCreate](./assets/ux-ui/evidences/backend/backend-doc-classroom-create.png)
+
+---
+
+**getAllClassrooms (GET /api/v1/classrooms)**
+
+Este endpoint devuelve la lista completa de salones registrados en el sistema.
+La respuesta retorna **200 OK** con un arreglo de ClassroomResource.
+
+![classroomGetAll](./assets/ux-ui/evidences/backend/backend-doc-classroom-getAll.png)
+
+---
+
+**getClassroomById (GET /api/v1/classrooms/{classroomId})**
+
+Este endpoint obtiene un salón específico según su ID.
+Si existe, retorna **200 OK**; de lo contrario, **404 Not Found**.
+
+![classroomGetById](./assets/ux-ui/evidences/backend/backend-doc-classroom-getById.png)
+
+---
+
+**updateClassroom (PUT /api/v1/classrooms/{classroomId})**
+Este endpoint actualiza los datos de un salón existente.
+La operación devuelve **200 OK** con el recurso modificado.
+
+![classroomUpdate](./assets/ux-ui/evidences/backend/backend-doc-classroom-update.png)
+
+---
+
+**deleteClassroom (DELETE /api/v1/classrooms/{classroomId})**
+
+Este endpoint elimina un salón de clases según su ID.
+La respuesta confirma la operación con **200 OK**.
+
+![classroomDelete](./assets/ux-ui/evidences/backend/backend-doc-classroom-delete.png)
+
+---
+
+**registerTransaction (POST /api/v1/transactions)**
+
+Este endpoint registra una nueva transacción financiera, incluyendo tipo, categoría, método, monto, descripción y fecha.
+Si la operación es válida, retorna **201 Created** con el TransactionResource generado.
+
+![transactionCreate](./assets/ux-ui/evidences/backend/backend-doc-transaction-create.png)
+
+---
+
+**updateTransaction (PUT /api/v1/transactions/{transactionId})**
+
+Este endpoint actualiza los datos de una transacción existente, siempre que pertenezca a la academia activa.
+Si la actualización es exitosa, retorna **200 OK** con el recurso actualizado.
+
+![transactionUpdate](./assets/ux-ui/evidences/backend/backend-doc-transaction-update.png)
+
+---
+
+**getTransactionById (GET /api/v1/transactions/{transactionId})**
+
+Este endpoint recupera una transacción específica según su ID.
+Si existe, retorna **200 OK**; de lo contrario, **404 Not Found**.
+
+![transactionGetById](./assets/ux-ui/evidences/backend/backend-doc-transaction-getById.png)
+
+---
+
+**getAllTransactions (GET /api/v1/transactions)**
+
+Este endpoint lista todas las transacciones registradas, permitiendo usar filtros opcionales por categoría, método o tipo.
+La operación retorna **200 OK** con una lista de TransactionResource.
+
+![transactionGetAll](./assets/ux-ui/evidences/backend/backend-doc-transaction-getAll.png)
+
+---
+
+**deleteTransaction (DELETE /api/v1/transactions/{transactionId})**
+
+Este endpoint elimina una transacción por su ID.
+Cuando se elimina correctamente, retorna **204 No Content**.
+
+![transactionDelete](./assets/ux-ui/evidences/backend/backend-doc-transaction-delete.png)
+
+---
+
+
+**createStudent (POST /api/v1/students)**
+
+Este endpoint crea un nuevo estudiante registrando sus datos básicos y vinculándolo a un usuario del sistema.
+Si la creación se realiza correctamente, retorna **201 Created** con el StudentResource generado.
+
+![studentCreate](./assets/ux-ui/evidences/backend/backend-doc-student-create.png)
+
+---
+
+**getAllStudents (GET /api/v1/students)**
+
+Este endpoint lista todos los estudiantes registrados, incluyendo la obtención de sus correos asociados.
+La respuesta retorna **200 OK** con una colección de StudentResource.
+
+![studentGetAll](./assets/ux-ui/evidences/backend/backend-doc-student-getAll.png)
+
+---
+
+**getStudentById (GET /api/v1/students/{studentId})**
+
+Este endpoint obtiene un estudiante según su identificador interno.
+Si existe, retorna **200 OK**; si no, **404 Not Found**.
+
+![studentGetById](./assets/ux-ui/evidences/backend/backend-doc-student-getById.png)
+
+---
+
+**getStudentByDni (GET /api/v1/students/dni/{dni})**
+
+Este endpoint recupera un estudiante utilizando su número de DNI.
+Cuando se encuentra, retorna **200 OK** con su información.
+
+![studentGetByDni](./assets/ux-ui/evidences/backend/backend-doc-student-getByDni.png)
+
+---
+
+**updateStudent (PUT /api/v1/students/{studentId})**
+
+Este endpoint actualiza los datos de un estudiante existente.
+La operación correcta retorna **200 OK** con el recurso actualizado.
+
+![studentUpdate](./assets/ux-ui/evidences/backend/backend-doc-student-update.png)
+
+---
+
+**deleteStudent (DELETE /api/v1/students/{studentId})**
+
+Este endpoint elimina un estudiante por su ID.
+La respuesta confirma la operación con **200 OK**.
+
+![studentDelete](./assets/ux-ui/evidences/backend/backend-doc-student-delete.png)
+
+
+
+<table class="doc-table">
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Acción (HTTP)</th>
+      <th>Path</th>
+      <th>Parámetros</th>
+      <th>Descripción</th>
+      <th>Ejemplo de Request</th>
+      <th>Ejemplo de Response</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+
+<!-- Register Teacher -->
+<tr>
+  <td>Register Teacher</td>
+  <td>POST</td>
+  <td>/api/v1/teachers</td>
+  <td>
+    Headers: Authorization: Bearer &lt;token&gt;<br>
+    Content-Type: application/json
+  </td>
+  <td>Registra un nuevo profesor en el sistema.</td>
+  <td>
+    {
+      "firstName": "Carlos",
+      "lastName": "Pérez",
+      "emailAddress": "carlos@academy.com",
+      "countryCode": "+51",
+      "phoneNumber": "987654321",
+      "userId": 12,
+      "academyId": 5
+    }
+  </td>
+  <td>
+    201 Created:<br>
+    {
+      "id": 1,
+      "firstName": "Carlos",
+      "lastName": "Pérez",
+      "emailAddress": "carlos@academy.com",
+      "countryCode": "+51",
+      "phoneNumber": "987654321",
+      "academyId": 5
+    }
+  </td>
+  <td>https://demy-api-production.up.railway.app/api/v1/teachers</td>
+</tr>
+
+<!-- Get Current Teacher -->
+<tr>
+  <td>Get Current Teacher</td>
+  <td>GET</td>
+  <td>/api/v1/teachers/me</td>
+  <td>Headers: Authorization: Bearer &lt;token&gt;</td>
+  <td>Obtiene la información del profesor actualmente autenticado.</td>
+  <td>-</td>
+  <td>
+    200 OK:<br>
+    {
+      "id": 1,
+      "firstName": "Carlos",
+      "lastName": "Pérez",
+      "emailAddress": "carlos@academy.com",
+      "phoneNumber": "987654321",
+      "userId": 12
+    }
+  </td>
+  <td>https://demy-api-production.up.railway.app/api/v1/teachers/me</td>
+</tr>
+
+<!-- ========================== -->
+<!--       COURSES CRUD        -->
+<!-- ========================== -->
+
+<!-- Create Course -->
+<tr>
+  <td>Create Course</td>
+  <td>POST</td>
+  <td>/api/v1/courses</td>
+  <td>
+    Headers: Content-Type: application/json
+  </td>
+  <td>Crea un nuevo curso en el sistema.</td>
+  <td>
+    {
+      "name": "Matemáticas",
+      "code": "MAT101",
+      "description": "Curso básico de matemáticas."
+    }
+  </td>
+  <td>
+    201 Created:<br>
+    {
+      "id": 1,
+      "name": "Matemáticas",
+      "code": "MAT101",
+      "description": "Curso básico de matemáticas."
+    }
+  </td>
+  <td>https://demy-api-production.up.railway.app/api/v1/courses</td>
+</tr>
+
+<!-- Get All Courses -->
+<tr>
+  <td>Get All Courses</td>
+  <td>GET</td>
+  <td>/api/v1/courses</td>
+  <td>-</td>
+  <td>Obtiene la lista completa de cursos.</td>
+  <td>-</td>
+  <td>
+    200 OK:<br>
+    [
+      {
+        "id": 1,
+        "name": "Matemáticas",
+        "code": "MAT101",
+        "description": "Curso básico."
+      },
+      {
+        "id": 2,
+        "name": "Física",
+        "code": "FIS201",
+        "description": "Curso de mecánica."
+      }
+    ]
+  </td>
+  <td>https://demy-api-production.up.railway.app/api/v1/courses</td>
+</tr>
+
+<!-- Get Course by ID -->
+<tr>
+  <td>Get Course by ID</td>
+  <td>GET</td>
+  <td>/api/v1/courses/{courseId}</td>
+  <td>-</td>
+  <td>Obtiene un curso por su ID.</td>
+  <td>-</td>
+  <td>
+    200 OK:<br>
+    {
+      "id": 1,
+      "name": "Matemáticas",
+      "code": "MAT101",
+      "description": "Curso básico."
+    }
+  </td>
+  <td>https://demy-api-production.up.railway.app/api/v1/courses/1</td>
+</tr>
+
+<!-- Update Course -->
+<tr>
+  <td>Update Course</td>
+  <td>PUT</td>
+  <td>/api/v1/courses/{courseId}</td>
+  <td>Headers: Content-Type: application/json</td>
+  <td>Actualiza información de un curso.</td>
+  <td>
+    {
+      "name": "Matemáticas II",
+      "code": "MAT102",
+      "description": "Curso avanzado."
+    }
+  </td>
+  <td>
+    200 OK:<br>
+    {
+      "id": 1,
+      "name": "Matemáticas II",
+      "code": "MAT102",
+      "description": "Curso avanzado."
+    }
+  </td>
+  <td>https://demy-api-production.up.railway.app/api/v1/courses/1</td>
+</tr>
+
+<!-- Delete Course -->
+<tr>
+  <td>Delete Course</td>
+  <td>DELETE</td>
+  <td>/api/v1/courses/{courseId}</td>
+  <td>-</td>
+  <td>Elimina un curso por su ID.</td>
+  <td>-</td>
+  <td>
+    200 OK:<br>
+    {
+      "message": "Course deleted successfully"
+    }
+  </td>
+  <td>https://demy-api-production.up.railway.app/api/v1/courses/1</td>
+</tr>
+
+  </tbody>
+</table>
 
 
 #### 4.2.2.7. Software Deployment Evidence for Sprint Review
 
+**Firebase Deployment for Android – Sprint Review**
+
+En esta sección se documentan los pasos realizados para configurar y desplegar la aplicación móvil **Demy Admins** dentro de Firebase, habilitando los servicios necesarios para su funcionamiento, como Analytics, autenticación, gestión del proyecto y preparación para futuros procesos de CI/CD.
+Como prerrequisitos se considera contar con la aplicación Android desarrollada en Kotlin y un entorno de Firebase accesible con permisos de creación de proyectos.
+
+**1) Ingresar a la consola principal de Firebase**
+
+Accedemos a la página oficial de Firebase en
+[https://console.firebase.google.com](https://console.firebase.google.com)
+para iniciar la creación del nuevo proyecto asociado a la aplicación.
+
+![Firebase Home](./assets/ux-ui/evidences/deployments/firebase-deploy-step-1.jpeg)
+
+---
+
+**2) Crear un nuevo proyecto de Firebase**
+
+En la pantalla principal seleccionamos la opción **“Crear un proyecto de Firebase nuevo”**, lo cual inicia el flujo para registrar el proyecto en la plataforma.
+
+![Crear proyecto Firebase](./assets/ux-ui/evidences/deployments/firebase-deploy-step-2.jpeg)
+
+
+---
+
+**3) Asignar nombre al proyecto**
+
+Definimos el nombre oficial del proyecto, en este caso:
+**Nistra Demy Admins**
+Firebase genera automáticamente un identificador único para el proyecto en Google Cloud.
+
+![Nombre del proyecto](./assets/ux-ui/evidences/deployments/firebase-deploy-step-3.jpeg)
+
+---
+
+**4) Configuración de asistencia de IA (Gemini en Firebase)**
+
+Firebase ofrece la posibilidad de habilitar **Gemini Assistance**, la cual puede ayudar a depurar apps, generar datos, analizar errores y optimizar el proceso de desarrollo.
+En esta etapa revisamos la información y continuamos con el flujo de configuración.
+
+![Asistencia de IA](./assets/ux-ui/evidences/deployments/firebase-deploy-step-4.jpeg)
+
+---
+
+**5) Continuar configuración del proyecto e integración con análisis**
+
+Firebase muestra la opción de habilitar Google Analytics. Esta configuración se completa posteriormente dependiendo de los servicios requeridos, pero se continúa avanzando con la creación del proyecto.
+
+![Continuar configuración](./assets/ux-ui/evidences/deployments/firebase-deploy-step-5.jpeg)
+
+
+---
+
+**6) Habilitar o deshabilitar Google Analytics**
+
+Firebase ofrece habilitar Google Analytics para obtener métricas, pruebas A/B, auditorías de navegación y eventos.
+En esta etapa configuramos según los requisitos del proyecto antes de crear el entorno definitivo.
+
+![Google Analytics configuración](./assets/ux-ui/evidences/deployments/firebase-deploy-step-10.jpeg)
+
+---
+
+**7) Confirmación de proyecto creado**
+
+Firebase finaliza la creación del proyecto mostrando un mensaje de confirmación indicando que el entorno está listo para continuar con la configuración de la aplicación.
+
+![Proyecto listo](./assets/ux-ui/evidences/deployments/firebase-deploy-step-6.jpeg)
+
+---
+
+**8) Seleccionar agregar una nueva app al proyecto**
+
+Una vez creado el proyecto de Firebase, accedemos al panel principal donde se muestra el nombre del proyecto y las opciones iniciales. Seleccionamos el botón **“Agregar app”** para iniciar el proceso de registro de la aplicación Android.
+
+![Agregar app](./assets/ux-ui/evidences/deployments/firebase-deploy-step-7.jpeg)
+
+---
+
+**9) Seleccionar la plataforma Android**
+
+Entre las plataformas disponibles (iOS, Android, Web y Flutter), elegimos la opción **Android**, que corresponde al tipo de aplicación que será desplegada.
+
+![Seleccionar plataforma Android](./assets/ux-ui/evidences/deployments/firebase-deploy-step-8.jpeg)
+
+---
+
+**10) Registrar paquete de la aplicación Android**
+
+Firebase solicita el **Nombre del paquete** (applicationId) de la app Android.
+Ingresamos:
+
+**com.nistra.demy.admins**
+
+Además, añadimos un sobrenombre descriptivo para la aplicación. Luego seleccionamos **“Registrar app”**.
+
+![Registrar aplicación Android](./assets/ux-ui/evidences/deployments/firebase-deploy-step-9.jpeg)
+
+
+---
+
+**11) Descargar y agregar el archivo de configuración google-services.json**
+
+Firebase indica descargar el archivo de configuración **google-services.json**, el cual debe añadirse en el directorio raíz del módulo **app** dentro del proyecto Android.
+Este archivo permite enlazar la aplicación Android con los servicios de Firebase.
+
+![Descargar google-services.json](./assets/ux-ui/evidences/deployments/firebase-deploy-step-11.jpeg)
+
+
+---
+
+**12) Agregar el SDK de Firebase en los archivos Gradle**
+
+Firebase indica añadir el complemento de Google Services en el archivo `build.gradle.kts` de nivel de proyecto.
+Se incluyen las instrucciones necesarias para habilitar los servicios de Firebase dentro del entorno de compilación.
+
+![Agregar SDK Firebase](./assets/ux-ui/evidences/deployments/firebase-deploy-step-12.jpeg)
+
+---
+
+**13) Configurar plugins y dependencias en el módulo app**
+
+En el archivo `build.gradle.kts` del módulo app se agregan los plugins y dependencias necesarios, incluyendo el Firebase BoM y los complementos de Google Services, permitiendo integrar cualquier servicio adicional de Firebase.
+
+![Configurar Gradle módulo app](./assets/ux-ui/evidences/deployments/firebase-deploy-step-13.jpeg)
+
+---
+
+**14) Finalizar la configuración e ir a la consola**
+
+Una vez completados los pasos de integración del SDK y sincronización del proyecto en Android Studio, Firebase muestra el mensaje final indicando que la configuración se realizó correctamente y que se puede regresar a la consola para continuar.
+
+![Configuración finalizada](./assets/ux-ui/evidences/deployments/firebase-deploy-step-14.jpeg)
+
+---
+
+
+**15) Iniciar configuración de App Distribution**
+
+Firebase muestra una pantalla introductoria con información sobre la distribución interna de aplicaciones. Seleccionamos **Comenzar** para habilitar esta funcionalidad en el proyecto.
+
+![Pantalla comenzar distribución](./assets/ux-ui/evidences/deployments/firebase-deploy-step-15.jpeg)
+
+
+---
+
+**16) Generar archivo APK de la app**
+
+Desde el explorador de archivos del sistema se ubica el paquete generado por Android Studio, específicamente el archivo **app-release.apk**, ubicado dentro de la carpeta *release* del proyecto.
+
+![APK generado](./assets/ux-ui/evidences/deployments/firebase-deploy-step-16.jpeg)
+
+---
+
+
+**18) Subir el archivo APK a Firebase App Distribution**
+
+Arrastramos y soltamos el archivo **app-release.apk** en la zona habilitada dentro de App Distribution para crear una nueva versión de la aplicación.
+Firebase procesa el archivo y prepara la versión inicial.
+
+![Subida de APK](./assets/ux-ui/evidences/deployments/firebase-deploy-step-18.jpeg)
+
+---
+
+**19) Versión creada exitosamente**
+
+Firebase registra la versión **1.0** de la aplicación, mostrando las opciones para copiar el enlace de distribución, descargar el archivo, eliminar la versión o continuar agregando verificadores y notas de lanzamiento.
+
+![Versión creada](./assets/ux-ui/evidences/deployments/firebase-deploy-step-19.jpeg)
+
+---
+
+**20) Continuar con la asignación de verificadores**
+
+Después de crear la versión, Firebase solicita agregar verificadores o grupos que recibirán la aplicación para pruebas internas.
+Seleccionamos **Siguiente** para avanzar en el proceso de entrega.
+
+![Asignar verificadores](./assets/ux-ui/evidences/deployments/firebase-deploy-step-20.jpeg)
+
+
+---
+
+**21) Agregar verificadores a la versión distribuida**
+
+Firebase permite seleccionar qué usuarios recibirán la build para pruebas internas.
+Agregamos los correos electrónicos de los verificadores correspondientes, quienes podrán instalar y evaluar la aplicación.
+
+![Agregar verificadores](./assets/ux-ui/evidences/deployments/firebase-deploy-step-21.jpeg)
+
+---
+
+**22) Añadir notas de la versión**
+
+Se redactan las notas descriptivas para la versión **1.0**, indicando que corresponde al primer build firmado y preparado para pruebas internas, incluyendo el módulo administrativo, manejo de login, roles y conexión con la API en producción.
+Seleccionamos la opción **Distribuir a verificadores**, lo que envía la versión directamente a los usuarios agregados y habilita la descarga desde sus dispositivos.
+
+
+![Notas de versión](./assets/ux-ui/evidences/deployments/firebase-deploy-step-22.jpeg)
+
+---
+
+
+**23) Distribución completada correctamente**
+
+Firebase muestra el mensaje que confirma que la distribución fue realizada con éxito.
+La versión ya se encuentra disponible para los verificadores y se puede monitorear su estado de aceptación, descarga y comentarios.
+
+![Distribución completada](./assets/ux-ui/evidences/deployments/firebase-deploy-step-23.jpeg)
+
+---
+
+**24) Verificación de estado de los verificadores**
+
+En la sección de verificadores se observa el estado de cada invitado, pudiéndose visualizar si aceptaron la invitación, descargaron la app o dejaron comentarios relacionados a la prueba.
+
+![Estado de verificadores](./assets/ux-ui/evidences/deployments/firebase-deploy-step-24.jpeg)
 
 
 #### 4.2.2.8. Team Collaboration Insights during Sprint
