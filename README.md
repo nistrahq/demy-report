@@ -11450,11 +11450,11 @@ Administración de aulas, capacidad y ubicación.
 ![Classrooms](./assets/ux-ui/evidences/mobile/mobile-exe-classroom.png)
 
 **Schedules — Vista semanal de horarios**
-Visualización organizada de sesiones por día.
+Visualización organizada de sesiones por calendario.
 ![Weekly Schedule](./assets/ux-ui/evidences/mobile/mobile-exe-schedule.png)
 
 **Schedules — Sesiones detalladas**
-Vista complementaria con sesiones más específicas.
+Vista complementaria del horario semanal con sesiones más específicas.
 ![Schedule 2](./assets/ux-ui/evidences/mobile/mobile-exe-schedule-2.png)
 
 **Enrollment — Gestión de matrículas**
@@ -11510,9 +11510,9 @@ Documento con las normas de uso de la plataforma.
 ![Terms](./assets/ux-ui/evidences/mobile/mobile-exe-terms.png)
 
 
-**Link de video de presentación sobre la Landing Page**
+**Link de video de presentación sobre la aplicación de Administradores**
 
-[Video Presentación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/EZ5yW8uJgABHibKhmIZArtMBJxqjBOr6YGwCYldmBtB3Pw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=IfJ1WB)
+[Video Presentación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQBXpR3iW0eFTZ_zbhqKIa3cAV8v6hjXrXdC31mfIJSoOEo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=i6qERE)
 **Timestamp: 00:00 - 10:19**
 
 #### 4.2.2.6. Services Documentation Evidence for Sprint Review
