@@ -1,59 +1,40 @@
-<h2 style="text-align: center;"> Universidad Peruana de Ciencias Aplicadas </h2>
-
 <div style="text-align: center;">
   <img src="./assets/logos/upc-logo.png" alt="UPC Logo" style="width: 250px; height: auto;">
 </div>
 
+<h2 style="text-align: center;"> Universidad Peruana de Ciencias Aplicadas </h2>
+
 <h4 style="text-align: center"> Ingeniería de Software </h4>
 
-<h4 style="text-align: center"> 1ACC0238 - Aplicaciones para Dispositivos Móviles </h4>
+<h4 style="text-align: center"> Periodo: 202520 </h4>
+
+<h4 style="text-align: center"> 1ACC0238 | Aplicaciones para Dispositivos Móviles </h4>
 
 <h4 style="text-align: center"> NRC: 1798  </h4>
 
 <h4 style="text-align: center"> Docente: Jorge Luis Mayta Guillermo </h4>
 
-<h4 style="text-align: center;"> Informe del Trabajo Final </h4>
+<br>
+
+<h3 style="text-align: center;"> Informe del Trabajo Final </h3>
 
 <h4 style="text-align: center"> Startup: Nistra </h4>
 
 <h4 style="text-align: center"> Producto: Demy </h4>
 
-<h4 style="text-align: center">Team members:</h4>
+<h4 style="text-align: center">Integrantes:</h4>
 
-<div style="text-align:center; margin: 20px 0; font-size: 90%;">
-  <table style="display:inline-table; border-collapse:collapse; text-align:center; width:550px;">
-    <thead>
-      <tr>
-        <th style="padding:6px 12px;">Código</th>
-        <th style="padding:6px 12px;">Nombre</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="padding:6px 12px;">U202224135</td>
-        <td style="padding:6px 12px;">Aponte Cruzado, Andrea Marielena</td>
-      </tr>
-      <tr>
-        <td style="padding:6px 12px;">U20221G120</td>
-        <td style="padding:6px 12px;">Crispin Ramos, Daniel Franco</td>
-      </tr>
-      <tr>
-        <td style="padding:6px 12px;">U20201E843</td>
-        <td style="padding:6px 12px;">Ramirez Mestanza, Salim Ignacio</td>
-      </tr>
-      <tr>
-        <td style="padding:6px 12px;">U20221C486</td>
-        <td style="padding:6px 12px;">Sulca Gonzales, Paúl Fernando</td>
-      </tr>
-      <tr>
-        <td style="padding:6px 12px;">U20231A778</td>
-        <td style="padding:6px 12px;">Vilca Saboya, Diego Alejandro</td>
-      </tr>
-    </tbody>
-  </table>
+<div style="text-align:center; margin-top: 10px; font-size: 90%; line-height: 1.6;">
+  <p>U202224135 — Aponte Cruzado, Andrea Marielena</p>
+  <p>U20221G120 — Crispin Ramos, Daniel Franco</p>
+  <p>U20201E843 — Ramirez Mestanza, Salim Ignacio</p>
+  <p>U20221C486 — Sulca Gonzales, Paúl Fernando</p>
+  <p>U20231A778 — Vilca Saboya, Diego Alejandro</p>
 </div>
 
-<h5 style="text-align: center"> Periodo 2025-20 </h5>
+<br>
+
+<h5 style="text-align: center; font-style: italic;"> Diciembre 2025 </h5>
 
 <hr class="page-break">
 
