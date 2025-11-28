@@ -403,9 +403,23 @@ Análisis de cantidad de commits realizados por semana.
             - [4.2.2.6. Services Documentation Evidence for Sprint Review](#4226-services-documentation-evidence-for-sprint-review)
             - [4.2.2.7. Software Deployment Evidence for Sprint Review](#4227-software-deployment-evidence-for-sprint-review)
             - [4.2.2.8. Team Collaboration Insights during Sprint](#4228-team-collaboration-insights-during-sprint)
+        - [4.2.3. Sprint 2](#423-sprint-3)
+            - [4.2.3.1. Sprint Planning 2](#4231-sprint-planning-3)
+            - [4.2.3.2. Sprint Backlog 2](#4232-sprint-backlog-3)
+            - [4.2.3.3. Development Evidence for Sprint Review](#4233-development-evidence-for-sprint-review)
+            - [4.2.3.4. Testing Suite Evidence for Sprint Review](#4234-testing-suite-evidence-for-sprint-review)
+            - [4.2.3.5. Execution Evidence for Sprint Review](#4235-execution-evidence-for-sprint-review)
+            - [4.2.3.6. Services Documentation Evidence for Sprint Review](#4236-services-documentation-evidence-for-sprint-review)
+            - [4.2.3.7. Software Deployment Evidence for Sprint Review](#4237-software-deployment-evidence-for-sprint-review)
+            - [4.2.3.8. Team Collaboration Insights during Sprint](#4238-team-collaboration-insights-during-sprint)
+        - [4.3. Validation Interviews](#43-validation-interviews)
+            - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
+            - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
+            - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 
 - [Conclusiones](#conclusiones)
     - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+    - [Video App Validation](#video-app-validation)
     - [Video About the product](#video-about-the-product)
     - [Video About the team](#video-about-the-team)
 - [Glosario](#glosario)
@@ -14955,6 +14969,216 @@ En la sección de verificadores se observa el estado de cada invitado, pudiéndo
 
 <hr class="page-break">
 
+### 4.2.3. Sprint 3
+
+
+
+#### 4.2.3.1. Sprint Planning 3
+
+
+
+#### 4.2.3.2. Sprint Backlog 3
+
+
+
+#### 4.2.3.3. Development Evidence for Sprint Review
+
+
+
+#### 4.2.3.4. Testing Suite Evidence for Sprint Review
+
+
+
+#### 4.2.3.5. Execution Evidence for Sprint Review
+
+
+
+#### 4.2.3.6. Services Documentation Evidence for Sprint Review
+
+
+
+#### 4.2.3.7. Software Deployment Evidence for Sprint Review
+
+
+
+#### 4.2.3.8. Team Collaboration Insights during Sprint
+
+
+
+<hr class="page-break">
+
+## 4.3. Validation Interviews
+
+En esta sección se presentan las entrevistas de validación realizadas con los representantes de los segmentos objetivo del proyecto: administrativos, docentes y alumnos de academias educativas. El propósito de esta fase fue evaluar la claridad de la propuesta de valor, la usabilidad del prototipo y la aceptación de las funcionalidades planteadas, contrastando las hipótesis iniciales con la percepción real de los usuarios.
+
+### 4.3.1. Diseño de Entrevistas
+
+Para el diseño de las entrevistas de validación se elaboraron guías diferenciadas por segmento. Las preguntas se centraron en dos dimensiones principales: propuesta de valor y usabilidad.
+
+**Segmento 1:** Administrativos de academias
+
+**A. Landing Page (Propuesta de valor)**
+
+1. ¿Qué fue lo primero que entendiste al ver la página?
+2. ¿Te queda claro qué problema buscamos resolver o ayudar?
+3. ¿El mensaje principal te parece relevante para tu trabajo diario?
+4. ¿Te quedan claras las secciones de la página? ¿Agregarías alguna?
+5. ¿Qué parte del contenido te pareció más útil o atractiva?
+6. ¿Te parece que el precio y la propuesta de valor son los adecuados?
+7. ¿Qué mejorarías para que la información sea más clara o persuasiva?
+
+**B. App Movil (Interfaz)**
+
+1. ¿Qué tan fácil fue navegar por la aplicación o entender las secciones?
+2. ¿Lograste identificar rápidamente dónde registrar matrículas o pagos?
+3. ¿Te pareció intuitiva la interfaz o tuviste que pensar demasiado para realizar una acción?
+4. ¿Hay alguna función que esperabas encontrar y no viste
+5. ¿Qué te generó confianza o desconfianza mientras probabas la herramienta?
+
+**C. App Movil (Propuesta de valor)**
+
+1. ¿Qué tan útil consideras esta herramienta para mejorar tu organización diaria?
+2. ¿Qué tarea específica crees que te ahorraría más tiempo o esfuerzo?
+3. Si tuvieras que reemplazar tu sistema actual por este, ¿qué necesitaría tener para convencerte?
+4. ¿Qué tan probable sería que recomendaras esta herramienta a otro administrativo?
+
+### 4.3.2. Registro de Entrevistas
+
+#### Segmento: Administrativo - Entrevistado 1
+
+| Atributo                | Detalle                                                                                                 |
+|-------------------------|---------------------------------------------------------------------------------------------------------|
+| **Nombre**              | ...                                                                                                     |
+| **Edad**                | ...                                                                                                     |
+| **Sexo**                | ...                                                                                                     |
+| **Distrito**            | ...                                                                                                     |
+| **Ocupación**           | ...                                                                                                     |
+| **Fecha de entrevista** | ...                                                                                                     |
+| **Timing**              | ...                                                                                                     |
+| **Video**               | [Ver en Microsoft Stream]()                                                                             |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-administrator-1.png) |
+| **Resumen**             | ...                                                                                                     |
+
+### 4.3.3. Evaluaciones según heurísticas
+
+#### UX Heuristics & Principles Evaluation
+#### Usability – Inclusive Design – Information Architecture
+
+**CARRERA** : Ingeniería de Software
+
+**CURSO** : 1ACC0238 - Aplicaciones para Dispositivos Móviles
+
+**NRC** : 1798
+
+**PROFESOR** : Jorge Luis Mayta Guillermo
+
+**AUDITOR** : Nistra
+
+**CLIENTES** : ---
+
+#### SITE o APP A EVALUAR:
+
+**Demy**
+
+#### TAREAS A EVALUAR:
+
+El alcance de esta evaluación incluye la revisión de usabilidad de las siguientes tareas:
+
+**Landing Page**:
+1. ...
+2. ...
+
+**Native Android Mobile Application**:
+1. ...
+2. ...
+3. ...
+
+**Cross-Platform Mobile Application**:
+1. ...
+2. ...
+3. ...
+
+**Native iOS Mobile Application**:
+1. ...
+2. ...
+3. ...
+
+#### FUERA DE ALCANCE:
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+**Landing Page**
+1. Redes sociales asociadas a la startup
+2. Política de privacidad y condiciones de uso
+
+**Mobile Applications**
+1. Recuperación de contraseña
+2. Política de privacidad y condiciones de uso
+3. ...
+4. ...
+
+#### ESCALA DE SEVERIDAD:
+
+| Nivel   | Descripción                                                                                                                                                                                         |
+|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1       | **Problema superficial**: puede ser fácilmente superador por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.                   |
+| 2       | **Problema menor**: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase. |
+| 3       | **Problema mayor**: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.                                 |
+| 4       | **Problema muy grave**: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.                               |
+
+#### TABLA RESUMEN:
+
+**Landing Page**
+
+| # | Problema | Escala de severidad | Heurística/ Principio Violado |
+|---|----------|---------------------|-------------------------------|
+| 1 | ...      |                     |                               |
+| 2 | ...      |                     |                               |
+| 3 | ...      |                     |                               |
+
+**Native Android Mobile Application**
+
+| # | Problema | Escala de severidad | Heurística/ Principio Violado |
+|---|----------|---------------------|-------------------------------|
+| 1 | ...      |                     |                               |
+| 2 | ...      |                     |                               |
+| 3 | ...      |                     |                               |
+
+**Cross-Platform Mobile Application**
+
+| # | Problema | Escala de severidad | Heurística/ Principio Violado |
+|---|----------|---------------------|-------------------------------|
+| 1 | ...      |                     |                               |
+| 2 | ...      |                     |                               |
+| 3 | ...      |                     |                               |
+
+**Native iOS Mobile Application**
+
+| # | Problema | Escala de severidad | Heurística/ Principio Violado |
+|---|----------|---------------------|-------------------------------|
+| 1 | ...      |                     |                               |
+| 2 | ...      |                     |                               |
+| 3 | ...      |                     |                               |
+
+#### DESCRIPCIÓN DE PROBLEMAS:
+
+**PROBLEMA #1:** ...
+
+**Severidad: ...**  
+**Heurística violada:** ...
+
+**Problema:**
+...
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-landing.png)
+
+**Recomendación:**
+...
+
+**PROBLEMA #2:** ...
+
+<hr class="page-break">
+
 # Conclusiones
 
 En esta sección se presentan las conclusiones y recomendaciones derivadas del desarrollo del proyecto. Se analizan los resultados obtenidos, los desafíos enfrentados y las lecciones aprendidas durante el proceso. Además, se proponen acciones futuras para mejorar y optimizar la plataforma Demy.
@@ -14986,6 +15210,16 @@ Estas acciones permitirán aumentar la adopción y satisfacción de los usuarios
 
 Finalmente, se sugiere explorar oportunidades de integración con otras herramientas y servicios utilizados por las academias, como sistemas de contabilidad, plataformas de comunicación y servicios de pago, para ofrecer una solución aún más completa y atractiva.
 Esto contribuirá a posicionar a Demy como una plataforma integral y líder en el mercado educativo.
+
+<hr class="page-break">
+
+# Video App Validation
+
+El video de App Validation muestra la evaluación de la aplicación a través de la prueba de usuarios reales. Para lograrlo, el equipo usó Firebase App Distribution con el fin de distribuir versiones preliminares de la aplicación a un grupo selecto de probadores. Estos probadores proporcionaron comentarios valiosos sobre la funcionalidad, la usabilidad y el rendimiento de la aplicación.
+
+A continuación, se muestra el video que documenta este proceso de validación de la aplicación:
+
+Enlace al video app validation: [Ver en Microsoft Stream]()
 
 <hr class="page-break">
 
