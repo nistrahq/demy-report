@@ -15219,7 +15219,7 @@ El video de App Validation muestra la evaluación de la aplicación a través de
 
 A continuación, se muestra el video que documenta este proceso de validación de la aplicación:
 
-Enlace al video app validation: [Ver en Microsoft Stream]()
+Enlace al video app validation: [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQBYPi7O3KEoRK1opNbEf7WHARstT62C5_QoyfR_Aw4YcXs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6cc3Nb)
 
 <hr class="page-break">
 
