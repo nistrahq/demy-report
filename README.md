@@ -15091,7 +15091,7 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 
 **AUDITOR** : Nistra
 
-**CLIENTES** : ---
+**CLIENTES** : Nataly Rodriguez, 
 
 #### SITE o APP A EVALUAR:
 
@@ -15102,23 +15102,42 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 El alcance de esta evaluación incluye la revisión de usabilidad de las siguientes tareas:
 
 **Landing Page**:
-1. ...
-2. ...
+1. Explorar la propuesta de valor principal de Demy (Seccion hero, mensaje clave).
+2. Feature Section.
+3. How it works Section.
+4. Testimonials Section.
+5. About Us Section.
+6. Pricing Section.
+7. FAQ Section.
+8. Contact Section.
 
 **Native Android Mobile Application**:
-1. ...
-2. ...
-3. ...
+1. Home Section
+2. Schedule Section
+3. Reschedule Section
+4. Attendance Section
+5. Profile Section
 
 **Cross-Platform Mobile Application**:
-1. ...
-2. ...
-3. ...
+1. Dashboard
+2. Teachers Section
+3. Students Section
+4. Periods Section
+5. Courses Section
+6. Classsrooms Section
+7. Schedules Section
+8. Enrollments Section
+9. Scheduling Section
+10. Billing Section
+11. Finance Section
+12. Accounting Section
+13. Profile Section
 
 **Native iOS Mobile Application**:
-1. ...
-2. ...
-3. ...
+1. Home Section
+2. Schedule Section
+3. Settings Section
+4. Profile Section
 
 #### FUERA DE ALCANCE:
 
@@ -15130,9 +15149,9 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 
 **Mobile Applications**
 1. Recuperación de contraseña
-2. Política de privacidad y condiciones de uso
-3. ...
-4. ...
+2. Política de privacidad y condiciones de uso 
+3. Reportes de bugs
+4. Configuraciones generales del sistema del dispositivo.
 
 #### ESCALA DE SEVERIDAD:
 
@@ -15147,11 +15166,28 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 
 **Landing Page**
 
-| # | Problema | Escala de severidad | Heurística/ Principio Violado |
-|---|----------|---------------------|-------------------------------|
-| 1 | ...      |                     |                               |
-| 2 | ...      |                     |                               |
-| 3 | ...      |                     |                               |
+| # | Problema                                                                                                  | Escala de severidad | Heurística/ Principio Violado     |
+| - | --------------------------------------------------------------------------------------------------------- | ------------------- | --------------------------------- |
+| 1 | La landing no incluye un chat/chatbot de soporte ni indica claramente los horarios de atención del mismo. | 1                   | Usability: Help and documentation |
+| 2 | ...                                                                                                       |                     |                                   |
+| 3 | ...                                                                                                       |                     |                                   |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1:** Falta de chat o chatbot de soporte con horarios visibles
+
+**Severidad: 1**  
+**Heurística violada:** Usability – Help and documentation
+
+**Problema:**
+En la landing page de Demy no se visualiza ningún chat o chatbot de soporte que permita a los usuarios resolver dudas rápidas sobre el producto. Además, tampoco se indican horarios de atención ni disponibilidad del equipo de soporte. Esto genera incertidumbre en potenciales clientes (como administradores de academias) que podrían necesitar aclarar preguntas antes de tomar una decisión, y los obliga a buscar otros medios de contacto menos inmediatos.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-landing.png)
+
+**Recomendación:**
+Incorporar un chat o chatbot de soporte visible en la landing (por ejemplo, en la esquina inferior derecha), junto con un mensaje claro de disponibilidad, indicando los horarios de atención y el tiempo estimado de respuesta. En caso de estar fuera de horario, el chat podría cambiar a un modo “déjanos tu mensaje” para mantener expectativas realistas y mejorar la confianza en el servicio.
+
+<hr class="page-break">
 
 **Native Android Mobile Application**
 
@@ -15161,23 +15197,7 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 | 2 | ...      |                     |                               |
 | 3 | ...      |                     |                               |
 
-**Cross-Platform Mobile Application**
-
-| # | Problema | Escala de severidad | Heurística/ Principio Violado |
-|---|----------|---------------------|-------------------------------|
-| 1 | ...      |                     |                               |
-| 2 | ...      |                     |                               |
-| 3 | ...      |                     |                               |
-
-**Native iOS Mobile Application**
-
-| # | Problema | Escala de severidad | Heurística/ Principio Violado |
-|---|----------|---------------------|-------------------------------|
-| 1 | ...      |                     |                               |
-| 2 | ...      |                     |                               |
-| 3 | ...      |                     |                               |
-
-#### DESCRIPCIÓN DE PROBLEMAS:
+**DESCRIPCIÓN DE PROBLEMAS:**
 
 **PROBLEMA #1:** ...
 
@@ -15187,7 +15207,57 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 **Problema:**
 ...
 
-![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-landing.png)
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-mobile.png)
+
+**Recomendación:**
+...
+
+<hr class="page-break">
+
+**Cross-Platform Mobile Application**
+
+| # | Problema                                                                                                                                        | Escala de severidad | Heurística/ Principio Violado                  |
+| - | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ---------------------------------------------- |
+| 1 | No existe una opción de dictado por voz para registrar o gestionar grandes cantidades de alumnos, lo que dificulta el registro masivo de datos. | 1                   | Usability: Flexibilidad y eficiencia en el uso |
+| 2 | ...                                                                                                                                             |                     |                                                |
+| 3 | ...                                                                                                                                             |                     |                                                |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1:** Ausencia de dictado por voz para registrar alumnos en flujos masivos
+
+**Severidad: 1**  
+**Heurística violada:** Usability – Flexibilidad y eficiencia en el uso
+
+**Problema:**
+En la aplicación móvil cross-platform (vista administrativa), el registro y la gestión de alumnos en secciones como Attendance, Enrollments o Students se realiza únicamente mediante interacción táctil y escritura manual. Para perfiles como Nataly, que gestionan grupos grandes de alumnos, esto implica muchas pulsaciones y tiempo invertido al registrar asistencias o realizar operaciones repetitivas. La falta de una opción de dictado por voz limita el aprovechamiento de atajos para usuarios frecuentes y reduce la eficiencia del flujo, especialmente en contextos de alta carga operativa.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-cross-platform.jpeg)
+
+**Recomendación:**
+Incorporar una opción de entrada por voz en los formularios o listas donde se realizan acciones repetitivas (por ejemplo, registrar asistencia o buscar alumnos), permitiendo que el usuario dicte nombres, estados o comandos básicos. Esto puede implementarse como un ícono de micrófono en los campos relevantes, aprovechando las APIs de reconocimiento de voz del sistema operativo. De esta forma, se mejora la eficiencia para usuarios expertos y se ofrece un modo de interacción alternativo más práctico en contextos con muchos alumnos.
+
+<hr class="page-break">
+
+**Native iOS Mobile Application**
+
+| # | Problema | Escala de severidad | Heurística/ Principio Violado |
+|---|----------|---------------------|-------------------------------|
+| 1 | ...      |                     |                               |
+| 2 | ...      |                     |                               |
+| 3 | ...      |                     |                               |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1:** ...
+
+**Severidad: ...**  
+**Heurística violada:** ...
+
+**Problema:**
+...
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-ios.png)
 
 **Recomendación:**
 ...
