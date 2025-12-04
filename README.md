@@ -15076,6 +15076,81 @@ En la sección de verificadores se observa el estado de cada invitado, pudiéndo
 </table>
 
 
+**Development Evidence - Students Mobile**
+
+<table>
+    <thead>
+    <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit ID</th>
+    <th>Commit Message</th>
+    <th>Commit Body</th>
+    <th>Committed On</th>
+    </tr>
+    </thead>
+<tbody>
+<tr><td>demy-students</td><td>develop</td><td>b528e04</td><td>Merge pull request #5 from nistrahq/feature/settings</td><td></td><td>03/12/2025 14:50</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>5265518</td><td>Merge branch 'develop' into feature/settings</td><td></td><td>03/12/2025 14:50</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>7d55e13</td><td>Merge pull request #4 from nistrahq/feature/schedule</td><td></td><td>03/12/2025 14:47</td></tr>
+<tr><td>demy-students</td><td>feature/settings</td><td>f0fcf25</td><td>feat: add new settings features</td><td></td><td>03/12/2025 14:44</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>3734ebb</td><td>feat(profile): enhance student profile with birthdate handling and loading state</td><td></td><td>03/12/2025 14:22</td></tr>
+<tr><td>demy-students</td><td>feature/home</td><td>7976c14</td><td>feat(home): simplify layout in HomeView and UpdatesSection</td><td></td><td>03/12/2025 14:09</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>2532890</td><td>feat(schedule): normalize date handling in ScheduleViewModel and ScheduleView</td><td></td><td>03/12/2025 13:32</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>dc36ba3</td><td>feat(schedule): enhance schedule management with session updates and localization support</td><td></td><td>03/12/2025 13:23</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>b8c217f</td><td>feat(schedule): implement schedule feature with data sources, repositories, and view model</td><td></td><td>03/12/2025 13:03</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>4e88789</td><td>Merge pull request #3 from nistrahq/feature/schedule</td><td></td><td>03/12/2025 12:12</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>f96f3d5</td><td>feat(schedule): import Combine in ScheduleViewModel for reactive programming</td><td></td><td>03/12/2025 12:11</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>c47df05</td><td>feat(schedule): add ScheduleView and integrate navigation from HomeView</td><td></td><td>03/12/2025 11:12</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>1ffe530</td><td>feat: add new feature for schedule</td><td></td><td>03/12/2025 09:55</td></tr>
+<tr><td>demy-students</td><td>feature/home</td><td>38241eb</td><td>feat: Implement Home feature with student data retrieval</td><td></td><td>02/12/2025 15:59</td></tr>
+<tr><td>demy-students</td><td>feature/settings</td><td>d07b6c4</td><td>feat(i18n): add new localized strings for permissions and actions</td><td></td><td>01/12/2025 09:48</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>6e0fdce</td><td>Merge pull request #2 from nistrahq/feature/home</td><td></td><td>01/12/2025 09:41</td></tr>
+<tr><td>demy-students</td><td>feature/home</td><td>7f145c1</td><td>feat(i18n): enhance localization for Home, Profile, and Settings views</td><td></td><td>01/12/2025 08:24</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>931cbb8</td><td>fea(i18n)t: add localization support for Home, Profile, and Settings views</td><td></td><td>01/12/2025 08:07</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>20a68a0</td><td>feat: add home remote data source, update API endpoints, and enhance profile/settings views layout</td><td></td><td>01/12/2025 07:50</td></tr>
+<tr><td>demy-students</td><td>feature/home</td><td>a4baf90</td><td>feat(home): implement getCurrentStudent use case and update HomeViewModel to load student data</td><td></td><td>01/12/2025 07:49</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>00687d1</td><td>feat(auth): refactor signIn method to include field validation and loading state management</td><td></td><td>30/11/2025 10:35</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>0713014</td><td>fix: profile view AGAINn</td><td></td><td>28/11/2025 02:03</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>d20077d</td><td>fix: profile view AGAIN</td><td></td><td>28/11/2025 01:58</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>72cfd33</td><td>fix: profile view</td><td></td><td>28/11/2025 01:53</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>6d4745d</td><td>feat: add modals for profile</td><td></td><td>26/11/2025 01:42</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>0d2eac2</td><td>feat: add birthday and password modal and section in profile</td><td></td><td>26/11/2025 01:30</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>1fd40b3</td><td>feat: add navbar plus two views to try it</td><td></td><td>26/11/2025 00:26</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>67c9fb9</td><td>feat: add real views for home page</td><td></td><td>25/11/2025 22:09</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>ec30e3c</td><td>feat: add views for profile</td><td></td><td>25/11/2025 01:12</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>2006b8c</td><td>feat: add scenario 3 for cards</td><td></td><td>24/11/2025 20:39</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>744d779</td><td>feat: add scenarios 2 for cards</td><td></td><td>24/11/2025 20:21</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>8387728</td><td>feat: add scenarios for cards to try how do they look</td><td></td><td>24/11/2025 19:43</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>f0d127f</td><td>feat: add gradients for schedule cards</td><td></td><td>24/11/2025 18:58</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>4519fd8</td><td>feat: add view models for students home page</td><td></td><td>24/11/2025 18:06</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>5c281d5</td><td>feat: add topbar for app students</td><td></td><td>24/11/2025 17:59</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>c320d02</td><td>Merge pull request #1 from nistrahq/feature/authentication-management</td><td></td><td>24/11/2025 12:01</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>0adab5d</td><td>chore(auth): add temporary method to clear access token on app initialization</td><td></td><td>24/11/2025 11:59</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>4f067a3</td><td>styles(assets): add app icons and logo assets, update accent color definitions</td><td></td><td>24/11/2025 11:59</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>6a3acee</td><td>feat(auth): update authentication endpoints and improve error handling in sign-in process</td><td></td><td>23/11/2025 17:55</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>f08c7f6</td><td>feat(i18n): add localized strings for authentication and general UI elements</td><td></td><td>23/11/2025 17:54</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>e8efbcb</td><td>feat(auth): implement SignInView and SignInViewModel for user authentication</td><td></td><td>23/11/2025 15:04</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>89a0727</td><td></td><td></td><td>23/11/2025 15:03</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>4f6ef3e</td><td>styles(shared): add design system components including colors, typography, spacing, radii, and shadows</td><td></td><td>23/11/2025 13:05</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>73a4d4b</td><td>feat(auth): enhance DIContainer with auth repository and update app entry point to use AppRouter</td><td></td><td>22/11/2025 18:05</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>81a14d3</td><td>feat(auth): implement authentication data source and repository with sign-in functionality</td><td></td><td>22/11/2025 18:05</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>ad2422d</td><td>feat(auth): add user entity and authentication repository with sign-in use case</td><td></td><td>22/11/2025 18:04</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>2b820d1</td><td>feat: implement initial app structure with environment configuration, session management, and API endpoints</td><td></td><td>22/11/2025 17:37</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>e82760d</td><td>docs: add issue and pull request templates for better contribution guidelines</td><td></td><td>22/11/2025 17:34</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>9fae5a3</td><td>chore: add initial project documentation, including security policy, and contribution guidelines</td><td></td><td>22/11/2025 17:31</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>256d37d</td><td>chore: organize App folder structure for cowork with team members</td><td></td><td>18/11/2025 18:12</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>5554388</td><td>chore: new initial iOS project structure + gitignore + gitattributes</td><td></td><td>16/11/2025 14:16</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>1e16de3</td><td>chore: clean repository for new project</td><td></td><td>16/11/2025 13:34</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>3efb24a</td><td>chore(vscode): add workspace settings for consistent LF and formatting</td><td></td><td>30/10/2025 12:05</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>d1365cb</td><td>chore: enforce LF line endings via .gitattributes</td><td></td><td>30/10/2025 11:49</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>a5e2a97</td><td>chore(gitignore): add xcshareddata exclusion for Xcode user settings</td><td></td><td>18/10/2025 02:10</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>ab49ecd</td><td>chore: remove duplicate .gitignore</td><td></td><td>13/09/2025 12:39</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>4d6ef6b</td><td>fix: remove xcuserdata folders</td><td></td><td>13/09/2025 12:33</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>f42830f</td><td>chore: add .gitignore file</td><td></td><td>13/09/2025 12:31</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>b9a85a9</td><td>Initial Commit</td><td></td><td>13/09/2025 09:31</td></tr>
+</tbody>
+</table>
 
 #### 4.2.3.4. Testing Suite Evidence for Sprint Review
 
