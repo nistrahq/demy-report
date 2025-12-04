@@ -15333,7 +15333,7 @@ Ampliar y reorganizar las secciones de la landing para describir explícitamente
 La aplicación móvil para profesores no cuenta con opciones de personalización visual como ajustar tamaño de fuente, nivel de contraste o paleta de colores. Para profesores como Martín, estas opciones mejoran significativamente la comodidad visual durante sesiones largas de registro de asistencia, revisión de pagos o consulta de clases.
 La ausencia de estas configuraciones reduce la accesibilidad general de la aplicación y puede generar fatiga visual, especialmente en contextos de baja luz o uso frecuente.
 
-![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-mobile.png)
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-mobile.jpeg)
 
 
 **Recomendación:**
@@ -15348,7 +15348,7 @@ Agregar un módulo de “Accesibilidad” dentro de la configuración que permit
 Profesores como José esperan que una aplicación académica incluya acceso rápido y directo a las calificaciones de los estudiantes. Sin embargo, la app actual no cuenta con una sección dedicada a consultar notas, lo que genera incompletitud en la experiencia y obliga al docente a acudir a otros sistemas o métodos informales (mensajes, cuadernos, Excel).
 Esta ausencia no coincide con el modelo mental del profesor sobre qué debe ofrecer una app de gestión académica, afectando la percepción de utilidad general.
 
-![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-2-mobile.png)
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-2-mobile.jpeg)
 
 **Recomendación:**
 Implementar una vista o módulo de “Notas de alumnos” accesible desde el dashboard principal o desde cada curso. Esta debe mostrar calificaciones, promedios y progreso del alumno. Así se complementa la experiencia docente y se alinea la app con las expectativas reales del usuario.
@@ -15361,7 +15361,7 @@ Implementar una vista o módulo de “Notas de alumnos” accesible desde el das
 **Problema:**
 El docente indicó que prefiere visualizar sus horarios únicamente en formato semanal, ya que así organiza mejor sus clases. La app no ofrece esta vista, lo que no se alinea con su modelo mental ni con prácticas comunes en calendarios académicos. Esto dificulta la planificación y puede generar confusión al navegar entre fechas.
 
-![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-3-mobile.png)
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-3-mobile.jpeg)
 
 **Recomendación:**
 Agregar un “Weekly View” con estructura de calendario docente, permitiendo alternar entre vista diaria, semanal y mensual según preferencia.
