@@ -250,6 +250,66 @@ Análisis de cantidad de commits realizados por semana.
 
 <hr class="page-break">
 
+## TF1
+
+**Tareas**
+
+Para el desarrollo del TP1, cada participante del equipo realizó las siguientes tareas:
+
+| Integrantes                      | Tarea asignada                                                                    |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| Aponte Cruzado, Andrea Marielena | - Execution Evidence <br> - Development evidence                                  |
+| Crispin Ramos, Daniel Franco     | - Development evidence                                                            |
+| Ramirez Mestanza, Salim Ignacio  | - Sprint Planning <br> - Team Collaboration Insights                              |
+| Sulca Gonzales, Paúl Fernando    | - Services Documentation <br> - Testing Suite Evidence <br> - Deployment Evidence |
+| Vilca Saboya, Diego Alejandro    | - Sprint Backlog 3                                                                |
+
+**GitHub Collaboration Insights**
+
+Se puede observar la colaboración del equipo en el desarrollo del proyecto a través de la plataforma GitHub. Esta sección destaca las contribuciones individuales y colectivas de los miembros del equipo, así como la gestión del código fuente mediante ramas y merges.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Gráfico de Pulse Insights del repositorio de GitHub.
+
+![img_2.png](assets/images/screenshots/img_2.png)
+
+</div>
+
+En GitHub se presenta un timeline de las principales ramas creadas por cada integrante del equipo, así como los procesos de merge realizados.  
+Todas las ramas fueron gestionadas siguiendo el flujo de trabajo **GitFlow**, adaptado para una organización que utiliza un sistema de control de versiones.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Gráfico de red (*network graph*) de ramas en el repositorio de GitHub.
+
+![img_3.png](assets/images/screenshots/img_3.png)
+
+</div>
+
+A continuación, se presentan los gráficos que muestran el análisis de los commits en el repositorio correspondiente al informe.  
+Estos gráficos detallan la cantidad de líneas de código añadidas por cada miembro del equipo y la actividad de commits registrada.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Análisis de líneas de código añadidas por contribuyente.
+
+![img.png](assets/images/screenshots/img.png)
+
+</div>
+
+El siguiente gráfico muestra la cantidad de commits realizados en la semana con mayor actividad en el proyecto.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Análisis de cantidad de commits realizados por semana.
+
+![img_1.png](assets/images/screenshots/img_1.png)
+
+</div>
+
+<hr class="page-break">
+
 # Contenido
 
 - [Capítulo I: Presentación](#capítulo-i-presentación)
