@@ -15042,6 +15042,42 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 3. Si tuvieras que reemplazar tu sistema actual por este, ¿qué necesitaría tener para convencerte?
 4. ¿Qué tan probable sería que recomendaras esta herramienta a otro administrativo?
 
+**Segmento 2:**  Profesores de academia
+
+**A. App Movil (Interfaz)**
+
+1. ¿Qué tan fácil te resultó ubicar tus cursos y sesiones programadas desde la pantalla principal?
+2. ¿Pudiste registrar asistencia sin dificultad? ¿Qué parte del flujo te pareció más clara y cuál más confusa?
+3. ¿Algún botón, icono o sección te resultó poco intuitiva o no entendiste para qué servía?
+4. ¿Te tomó más tiempo del esperado realizar alguna acción? ¿Cuál?
+5. ¿Hubo algo en la experiencia que te generó confianza (o desconfianza)?
+
+**B. App Movil (Propuesta de valor)**
+
+1. ¿Qué tan útil te parece esta herramienta para organizar tus clases y controlar asistencia?
+2. ¿Qué tarea docente sientes que esta app te ayudaría a automatizar o simplificar más?
+3. Comparado con la forma en que trabajas hoy, ¿qué ventaja le encuentras?
+4. Si tuvieras que usar Demy como herramienta principal, ¿qué funcionalidades adicionales necesitarías para comprometerte al 100%?
+5. ¿Qué tan probable sería que recomendaras esta app a otros profesores de tu academia?
+
+**Segmento 3:**  Estudiantes de academia
+
+**A. App Movil (Interfaz)**
+
+1. ¿Qué tan fácil fue entender la vista principal y encontrar tus clases o horarios?
+2. ¿Pudiste navegar sin perderte entre secciones como “Mis cursos”, “Horarios”?
+3. ¿Hubo algo en la interfaz que te resultara confuso, poco visible o innecesario?
+4. ¿Qué tan rápido entendiste cómo ver tus próximas clases?
+5. ¿Hubo algo en la experiencia que te transmitiera seguridad o inseguridad?
+
+**B. App Movil (Propuesta de valor)**
+
+1. ¿Qué tan útil crees que sería esta app para mantenerte organizado con tus clases y pagos?
+2. ¿Qué funcionalidad te ahorraría más estrés o tiempo en tu día a día?
+3. Si comparas esta app con tu forma actual de organizar tus clases, ¿qué mejora más te llamó la atención?
+4. Para que realmente prefieras esta app antes que otros medios, ¿qué cosa indispensable debería incluir?
+5. ¿Qué tan probable es que recomiendes esta aplicación a otros estudiantes de tu academia?
+
 ### 4.3.2. Registro de Entrevistas
 
 
@@ -15058,7 +15094,21 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 | **Timing**              | 00:00 - 16:45                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQCaITrguqS0TqjmeFV7CYsiAR49maoMCayFXMj9WVLqczw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=R51Vxz)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-administrator-1.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| **Resumen**             | Nataly es una administradora de 30 años que trabaja en Lima gestionando academias en el rubro de salud. Considera que la aplicación mostrada cumple muy bien con lo que necesita y la describe como “perfecta”, pero sugiere incorporar una herramienta de dictado por voz para registrar asistencia de muchos alumnos de forma más rápida y práctica. Además, señala que la landing page debería incluir un chat de soporte visible y especificar claramente los horarios de atención para que los usuarios sepan cuándo pueden recibir ayuda. |
+| **Resumen**             | Nataly es una administradora de 30 años que trabaja en Lima gestionando academias en el rubro de salud. Considera que la aplicación mostrada cumple muy bien con lo que necesita y la describe como “perfecta”, pero sugiere incorporar una herramienta de dictado por voz para registrar asistencia de muchos alumnos de forma más rápida y práctica. Además, señala que la landing page debería incluir un chat de soporte visible y especificar claramente los horarios de atención para que los usuarios sepan cuándo pueden recibir ayuda. |                                                                                                                                                                                                                                                                        
+#### Segmento: Administrativo - Entrevistado 2
+
+| Atributo                | Detalle                                                                                                 |
+|-------------------------|---------------------------------------------------------------------------------------------------------|
+| **Nombre**              | Germán Rivera                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Edad**                | 35 años                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Distrito**            | Lima                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Ocupación**           | Especialista en marketing académico                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Fecha de entrevista** | 30/11/25                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Timing**              | 16:46 – 14:32                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Video**               |  [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQCaITrguqS0TqjmeFV7CYsiAR49maoMCayFXMj9WVLqczw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=R51Vxz)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-administrator-2.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Resumen**             | Germán es un profesional de 35 años que gestiona el área de marketing en academias de Lima. Percibe la aplicación como profesionalmente impecable y destaca que su diseño y organización transmiten confianza desde el primer momento. Como sugerencia principal para la landing page, recomienda aclarar mejor qué herramientas y funcionalidades ofrece Demy en cada sección, evitando mensajes ambiguos. En cuanto a la versión web del dashboard, señala que los cuadros o tarjetas dentro del panel deberían redirigir directamente a cada sección correspondiente, lo cual haría la navegación más fluida y directa para los usuarios administradores. |
 
 
 #### Segmento: Administrativo - Entrevistado 3
@@ -15091,7 +15141,7 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 
 **AUDITOR** : Nistra
 
-**CLIENTES** : Nataly Rodriguez, 
+**CLIENTES** : Nataly Rodriguez, German Rivera
 
 #### SITE o APP A EVALUAR:
 
@@ -15169,7 +15219,7 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 | # | Problema                                                                                                  | Escala de severidad | Heurística/ Principio Violado     |
 | - | --------------------------------------------------------------------------------------------------------- | ------------------- | --------------------------------- |
 | 1 | La landing no incluye un chat/chatbot de soporte ni indica claramente los horarios de atención del mismo. | 1                   | Usability: Help and documentation |
-| 2 | ...                                                                                                       |                     |                                   |
+| 2 | La landing no explica con suficiente claridad qué herramientas ofrece cada sección. | 2                    | Match between system and the real world |
 | 3 | ...                                                                                                       |                     |                                   |
 
 **DESCRIPCIÓN DE PROBLEMAS:**
@@ -15186,6 +15236,19 @@ En la landing page de Demy no se visualiza ningún chat o chatbot de soporte que
 
 **Recomendación:**
 Incorporar un chat o chatbot de soporte visible en la landing (por ejemplo, en la esquina inferior derecha), junto con un mensaje claro de disponibilidad, indicando los horarios de atención y el tiempo estimado de respuesta. En caso de estar fuera de horario, el chat podría cambiar a un modo “déjanos tu mensaje” para mantener expectativas realistas y mejorar la confianza en el servicio.
+
+**PROBLEMA #2:** Falta de claridad en la explicación de las herramientas y secciones de la landing
+**Severidad: 2**
+**Heurística violada:** Match between system and the real world
+
+**Problema:**
+La landing page de Demy no explica con suficiente claridad qué herramientas o funcionalidades incluye cada sección del sistema. El contenido presenta descripciones generales, pero no especifica de manera directa y concreta qué obtiene el usuario en cada módulo (por ejemplo: gestión de horarios, registros de asistencia, control de pagos, panel para profesores, vista de estudiantes, etc.).
+Esto provoca que los usuarios —especialmente perfiles administrativos como Germán— tengan dificultades para formarse un entendimiento claro de la propuesta de valor real del producto. La falta de precisión genera dudas, afecta la confianza y exige un esfuerzo cognitivo adicional para interpretar lo que Demy realmente ofrece.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-2-landing.png)
+
+Recomendación:
+Ampliar y reorganizar las secciones de la landing para describir explícitamente cada herramienta o funcionalidad, utilizando lenguaje claro, ejemplos y bullets concretos. Incluir pequeñas visualizaciones (íconos, screenshots o micro-demos) que ayuden a los usuarios a relacionar cada sección con su utilidad real dentro de una academia. Esto mejora la comprensión inmediata, reduce la ambigüedad y alinea el contenido con los modelos mentales del usuario.
 
 <hr class="page-break">
 
@@ -15216,11 +15279,12 @@ Incorporar un chat o chatbot de soporte visible en la landing (por ejemplo, en l
 
 **Cross-Platform Mobile Application**
 
-| # | Problema                                                                                                                                        | Escala de severidad | Heurística/ Principio Violado                  |
-| - | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ---------------------------------------------- |
-| 1 | No existe una opción de dictado por voz para registrar o gestionar grandes cantidades de alumnos, lo que dificulta el registro masivo de datos. | 1                   | Usability: Flexibilidad y eficiencia en el uso |
-| 2 | ...                                                                                                                                             |                     |                                                |
-| 3 | ...                                                                                                                                             |                     |                                                |
+| # | Problema                                                                                                                                        | Escala de severidad | Heurística/ Principio Violado       |
+| - | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------------------------------- |
+| 1 | No existe una opción de dictado por voz para registrar o gestionar grandes cantidades de alumnos, lo que dificulta el registro masivo de datos. | 1                   | Flexibilidad y eficiencia en el uso |
+| 2 | Algunas tarjetas o secciones del dashboard no redirigen correctamente, lo que genera confusión en la navegación.                                | 2                   | Consistency and standards           |
+| 3 | ...                                                                                                                                             |                     |                                     |
+
 
 **DESCRIPCIÓN DE PROBLEMAS:**
 
@@ -15237,6 +15301,19 @@ En la aplicación móvil cross-platform (vista administrativa), el registro y la
 **Recomendación:**
 Incorporar una opción de entrada por voz en los formularios o listas donde se realizan acciones repetitivas (por ejemplo, registrar asistencia o buscar alumnos), permitiendo que el usuario dicte nombres, estados o comandos básicos. Esto puede implementarse como un ícono de micrófono en los campos relevantes, aprovechando las APIs de reconocimiento de voz del sistema operativo. De esta forma, se mejora la eficiencia para usuarios expertos y se ofrece un modo de interacción alternativo más práctico en contextos con muchos alumnos.
 
+**PROBLEMA #2:** Tarjetas del dashboard que no redirigen correctamente
+
+**Severidad: 2**
+**Heurística violada:** Consistency and standards
+
+**Problema:**
+En la aplicación móvil, algunas tarjetas o secciones del dashboard visual parecen ser elementos pulsables que deberían llevar al usuario a un módulo específico (por ejemplo, asistencia, cursos, pagos o alumnos). Sin embargo, al presionarlas, no redirigen o no realizan ninguna acción, lo que rompe con el comportamiento estándar de interfaces móviles.
+Este tipo de inconsistencia genera confusión, ya que el usuario asume —por su forma, tamaño y estilo— que estos elementos deberían cumplir una función navegable. La falta de respuesta afecta la fluidez del uso y provoca una experiencia de exploración frustrante, especialmente para usuarios nuevos.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-2-cross-platform.jpeg)
+
+**Recomendación:**
+Asegurar que todas las tarjetas del dashboard tengan un comportamiento consistente: si un componente luce como un acceso directo, debe redirigir al módulo correspondiente. También se recomienda aplicar retroalimentación visual (como animación de “tap”, cambio de opacidad o ripple effect) para reforzar la sensación de acción. En caso de que una tarjeta aún no tenga funcionalidad implementada, es preferible ocultarla temporalmente o mostrar un estado “Próximamente” para evitar confusiones.
 <hr class="page-break">
 
 **Native iOS Mobile Application**
