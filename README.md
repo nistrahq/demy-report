@@ -14972,13 +14972,203 @@ En la sección de verificadores se observa el estado de cada invitado, pudiéndo
 ### 4.2.3. Sprint 3
 
 
-
 #### 4.2.3.1. Sprint Planning 3
 
 
 
 #### 4.2.3.2. Sprint Backlog 3
 
+El objetivo de este Sprint es presentar la versión final de nuestra aplicación para profesores, desarrollada en flutter y la versión para estudiantes, desarrollada en swift.  
+A continuación se presenta una captura de pantalla de nuestro tablero en Trello:  
+![Captura  Sprint 3 de Trello](./assets/images/screenshots/trello-sprint-3.png)  
+[Enlace del Trello](https://trello.com/b/bJNC9cpu/sprint-3-nistra-demy)
+
+<div style="font-size:80%; overflow-x:auto;">
+  <table border="1" cellspacing="0" cellpadding="5">
+    <thead>
+      <tr>
+        <th colspan="2">Sprint #</th>
+        <th colspan="6">Sprint 3</th>
+      </tr>
+      <tr>
+        <th colspan="2">User Story</th>
+        <th colspan="6">Work-Item / Task</th>
+      </tr>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Estimation (Hours)</th>
+        <th>Assigned To</th>
+        <th>Status (To-do / In-Process / To-Review / Done)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>US033</td>
+        <td>Visualizar detalles de los Profesores</td>
+        <td>US033a</td>
+        <td>Pantalla de detalle de profesor (Swift)</td>
+        <td>Implementar TeacherDetailPage en Swift con foto, nombre completo, experiencia, especialidades y lista de cursos usando widgets como Card y ListView.</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US033</td>
+        <td>Visualizar detalles de los Profesores</td>
+        <td>US033b</td>
+        <td>Consumo de API de profesor</td>
+        <td>Conectar TeacherDetailPage al endpoint correspondiente, mapear el JSON al modelo Teacher y manejar estados de carga, error y reintento.</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US010</td>
+        <td>Registro de asistencia</td>
+        <td>US010a</td>
+        <td>UI de toma de asistencia en Flutter</td>
+        <td>Diseñar AttendancePage con ListView.builder de alumnos, controles P/A/T (por ejemplo ToggleButtons o ChoiceChips) y cabecera con datos de la clase.</td>
+        <td>4</td>
+        <td>Diego</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US010</td>
+        <td>Registro de asistencia</td>
+        <td>US010b</td>
+        <td>Integración API registro asistencia</td>
+        <td>Enviar la lista de asistencias al endpoint correspondiente desde Flutter, construyendo el payload con classSessionId y marcas por alumno, mostrando estados de “guardando”, éxito y error.</td>
+        <td>3</td>
+        <td>Diego</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US012</td>
+        <td>Visualización de Reportes de Asistencia</td>
+        <td>US012a</td>
+        <td>Pantalla de reportes de asistencia</td>
+        <td>Crear AttendanceReportPage en Flutter con filtros por curso, alumno y rango de fechas (DropdownButton, DatePicker) y sección para listar o resumir porcentajes de asistencia.</td>
+        <td>4</td>
+        <td>Diego</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US012</td>
+        <td>Visualización de Reportes de Asistencia</td>
+        <td>US012b</td>
+        <td>Consumo API reportes de asistencia</td>
+        <td>Conectar los filtros al endpoint correspondiente, mapear la respuesta a modelos en Dart, manejar paginación (scroll) y estados de carga/error.</td>
+        <td>3</td>
+        <td>Diego</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US029</td>
+        <td>Generación de Reportes Financieros</td>
+        <td>US029a</td>
+        <td>UI de filtros y resultados financieros</td>
+        <td>Diseñar FinancialReportPage en Flutter con filtros por rango de fechas, tipo de registro y botones de acción (generar/exportar), mostrando cards/resumen con totales.</td>
+        <td>4</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US029</td>
+        <td>Generación de Reportes Financieros</td>
+        <td>US029b</td>
+        <td>Integración API reportes financieros</td>
+        <td>Consumir el endpoint correspondiente desde Flutter, mostrar los resultados en tabla o lista, y manejar la descarga de archivo (CSV/PDF) cuando el backend la exponga.</td>
+        <td>4</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US030</td>
+        <td>Visualización de Horario de Clases (profesor)</td>
+        <td>US030a</td>
+        <td>Pantalla horario del profesor</td>
+        <td>Implementar TeacherSchedulePage en Flutter con vista semanal o lista agrupada por día, mostrando bloques de clase con curso, aula y rango horario.</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US030</td>
+        <td>Visualización de Horario de Clases (profesor)</td>
+        <td>US030b</td>
+        <td>Consumo API horario profesor</td>
+        <td>Conectar TeacherSchedulePage al endpoint correspondiente con filtros por fecha, mapear JSON a modelos Schedule y manejar estados de carga/error.</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US031</td>
+        <td>Reprogramación de Clase</td>
+        <td>US031a</td>
+        <td>UI para reprogramar clase</td>
+        <td>Crear pantalla o modal RescheduleClassPage en Flutter que permita seleccionar nueva fecha y hora con DatePicker/TimePicker, mostrando detalles de la clase original.</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US031</td>
+        <td>Reprogramación de Clase</td>
+        <td>US031b</td>
+        <td>Integración API reprogramación</td>
+        <td>Consumir el endpoint correspondiente desde Flutter, enviando la nueva fecha/hora, actualizando la UI del horario y mostrando mensajes de éxito o error.</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US032</td>
+        <td>Visualización de Horario de Clases (alumno)</td>
+        <td>US032a</td>
+        <td>Calendario de clases del alumno</td>
+        <td>Crear StudentSchedulePage en Swift para mostrar el horario semanal del alumno con lista o calendario, incluyendo curso, aula y nombre del profesor.</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US032</td>
+        <td>Visualización de Horario de Clases (alumno)</td>
+        <td>US032b</td>
+        <td>Consumo API horario alumno</td>
+        <td>Conectar StudentSchedulePage al endpoint correspondiente, aplicar filtros por fecha y manejar estados de carga, error y vacío (sin clases).</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US034</td>
+        <td>Visualizar detalles de los Cursos</td>
+        <td>US034a</td>
+        <td>Pantalla detalle de curso</td>
+        <td>Implementar CourseDetailPage en Swift con título del curso, descripción, resumen del sílabo y créditos, usando secciones scrollables y diseño responsive.</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US034</td>
+        <td>Visualizar detalles de los Cursos</td>
+        <td>US034b</td>
+        <td>Consumo API detalle curso</td>
+        <td>Conectar CourseDetailPage al endpoint correspondiente, parsear el JSON al modelo Course y manejar estados de loading, error y reintento.</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 
 #### 4.2.3.3. Development Evidence for Sprint Review
