@@ -15266,7 +15266,7 @@ Ventana de diálogo que se despliega al seleccionar los campos Start Time o End 
 
 **Link de video de presentación sobre la aplicación de Administradores**
 
-[Video Presentación]()
+[Video Presentación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g120_upc_edu_pe/IQBDpFRGjtaOSbBDEkfNEGV_AYJIvI2hIBRoIxSQVp2WNXU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=WA85Vt)
 **Timestamp: 00:00 - 7:47**
 
 
@@ -15318,6 +15318,18 @@ Documento que el estudiante debe aceptar al usar la plataforma, detallando la Ac
 
 #### 4.2.3.6. Services Documentation Evidence for Sprint Review
 
+En esta sección se presentan las evidencias de funcionamiento de los nuevos endpoints del backend desplegado en Railway, verificando su correcto comportamiento mediante Swagger UI
+
+**getScheduleByStudent (GET /schedules/by-student/{userId})**
+Este endpoint permite obtener el horario de clases asociado a un estudiante específico, utilizando su userId como parámetro de ruta.
+
+![getScheduleByStudent](./assets/ux-ui/evidences/backend/backend-doc-get-schedule-by-id.png)
+
+
+**getCurrentStudent (GET /students/me)**
+Este endpoint retorna los datos del estudiante actualmente autenticado.
+
+![getCurrentStudent](./assets/ux-ui/evidences/backend/backend-doc-get-current-student.png)
 
 
 #### 4.2.3.7. Software Deployment Evidence for Sprint Review
