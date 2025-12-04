@@ -14983,6 +14983,98 @@ En la sección de verificadores se observa el estado de cada invitado, pudiéndo
 
 #### 4.2.3.3. Development Evidence for Sprint Review
 
+**Development Evidence - Teachers Mobile**
+
+<table>
+    <thead>
+        <tr>
+            <th>Repository</th>
+            <th>Branch</th>
+            <th>Commit ID</th>
+            <th>Commit Message</th>
+            <th>Commit Body</th>
+            <th>Committed On</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr><td>demy-teachers</td><td>develop</td><td>7a98bba</td><td>feat(localization): add teaching schedule and reschedule localization strings in English and Spanish</td><td></td><td>02/12/2025 08:44</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>f313bc6</td><td>feat(notifications): add notifications page and integrate with localization</td><td></td><td>02/12/2025 08:37</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>12970cd</td><td>feat(theme): update background color to primaryContainer in attendance and schedule pages</td><td></td><td>02/12/2025 08:28</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>4c45580</td><td>feat(attendance): refactor attendance bloc and update localization files</td><td></td><td>02/12/2025 08:22</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>2145686</td><td>Merge pull request #14 from nistrahq/feature/attendance-management</td><td></td><td>02/12/2025 08:15</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>89a9ab1</td><td>Merge branch 'develop' into feature/attendance-management</td><td></td><td>02/12/2025 08:15</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>c9cc1e9</td><td>feat(attendance): update home page</td><td></td><td>02/12/2025 01:09</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>9156acd</td><td>feat(attendance): update widgets</td><td></td><td>02/12/2025 01:08</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>f39a1b6</td><td>feat(attendance): update attendance routes</td><td></td><td>02/12/2025 01:08</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>d179258</td><td>feat(attendance): update bloc</td><td></td><td>02/12/2025 01:07</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>3922272</td><td>feat(attendance): update use cases</td><td></td><td>02/12/2025 01:06</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>92733d0</td><td>feat(attendance): update attendance repository</td><td></td><td>02/12/2025 01:06</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>1e404d3</td><td>feat(attendance): update student entity</td><td></td><td>02/12/2025 01:06</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>0be07ad</td><td>feat(attendance): add attendance dtos</td><td></td><td>02/12/2025 01:05</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>4141f05</td><td>feat(attendance): update attendance module and remote data source</td><td></td><td>02/12/2025 01:04</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>ce6c2c9</td><td>feat(attendance): add localization</td><td></td><td>02/12/2025 01:03</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>12ba7da</td><td>feat(attendance): update app router</td><td></td><td>02/12/2025 01:02</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>33368a8</td><td>Merge pull request #13 from nistrahq/feature/app-settings</td><td></td><td>01/12/2025 17:31</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>707fccc</td><td>feat: add terms and privacy acceptance text to sign-in form with localization support</td><td></td><td>01/12/2025 17:29</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>45f9b8b</td><td>Merge pull request #12 from nistrahq/feature/teacher-profile</td><td></td><td>01/12/2025 17:22</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>43dd531</td><td>feat(auth): implement forgot password functionality with localization support</td><td></td><td>01/12/2025 17:21</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>9d4a9b2</td><td>Merge pull request #11 from nistrahq/feature/app-settings</td><td></td><td>01/12/2025 16:32</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>2fe865f</td><td>refactor: remove unused imports from app_router.dart</td><td></td><td>01/12/2025 16:30</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>253c237</td><td>feat: add settings pages</td><td></td><td>01/12/2025 16:30</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>1da138b</td><td>feat: add settings pages</td><td></td><td>01/12/2025 16:10</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>cf46e69</td><td>feat: add es and en x2</td><td></td><td>01/12/2025 16:05</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>8782ea8</td><td>feat: add es and en</td><td></td><td>01/12/2025 16:03</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>b601c27</td><td>Merge pull request #10 from nistrahq/feature/teacher-profile</td><td></td><td>01/12/2025 15:03</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>b48e430</td><td>chore(ios): add Podfile and update xcconfig includes for debug and release configurations</td><td></td><td>01/12/2025 15:00</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>f4b27f8</td><td>feat(auth): add reset password functionality with UI and localization support</td><td></td><td>01/12/2025 15:00</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>eb3e68b</td><td>feat(auth): implement reset password flow with request, verification, and reset functionalities</td><td></td><td>01/12/2025 15:00</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>0af565d</td><td>feat(auth): add password reset functionality with request, verification, and reset operations</td><td></td><td>01/12/2025 14:59</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>3221834</td><td>Merge pull request #9 from nistrahq/feature/attendance-management</td><td></td><td>28/11/2025 16:27</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>2016d58</td><td>Merge pull request #8 from nistrahq/feature/schedules-management</td><td></td><td>28/11/2025 16:26</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>e04e97c</td><td>feat(schedule): update teaching reschedule page to save changes</td><td></td><td>27/11/2025 10:30</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>f9c837d</td><td>feat(attendance): update home page</td><td></td><td>27/11/2025 00:17</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>69892ee</td><td>feat(attendance): update remote data source implementation</td><td></td><td>27/11/2025 00:17</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>fe566cd</td><td>feat(attendance): add widgets and page</td><td></td><td>27/11/2025 00:17</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>7a44e12</td><td>feat(attendance): add use cases</td><td></td><td>27/11/2025 00:14</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>f51f221</td><td>feat(attendance): add blocs</td><td></td><td>27/11/2025 00:14</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>a878d7e</td><td>feat(attendance): add repository</td><td></td><td>27/11/2025 00:13</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>5bba492</td><td>feat(attedance): add domain model student</td><td></td><td>27/11/2025 00:13</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>fd168ac</td><td>feat(attendance): add endpoints</td><td></td><td>27/11/2025 00:12</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>d87f982</td><td>feat(attendance): add student response dto</td><td></td><td>27/11/2025 00:12</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>03e58a1</td><td>feat(attendance): add dto</td><td></td><td>27/11/2025 00:11</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>b60faaf</td><td>feat(attendance): delete old files</td><td></td><td>27/11/2025 00:10</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>e6c740c</td><td>feat(attendance): add module</td><td></td><td>27/11/2025 00:09</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>93add3e</td><td>feat(attendance): add remote data source</td><td></td><td>27/11/2025 00:09</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>d2a109e</td><td>feat(attendance): add local data source</td><td></td><td>27/11/2025 00:09</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>a81fa22</td><td>feat(attendance): update injectable config</td><td></td><td>27/11/2025 00:06</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>c827b36</td><td>feat(attendance): update app router</td><td></td><td>27/11/2025 00:05</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>3605b70</td><td>Merge branch 'develop' into feature/attendance-management</td><td></td><td>26/11/2025 20:42</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>ef9e5c8</td><td>feat: add dependency injection for rescheduling class sessions and related bloc</td><td></td><td>26/11/2025 15:50</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>d5c5c09</td><td>feat: add navigation to reschedule session with item ID in ScheduleCard</td><td></td><td>26/11/2025 15:46</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>96e3df0</td><td>feat: implement TeachingReschedulePage for managing class session rescheduling</td><td></td><td>26/11/2025 15:46</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>b1defbb</td><td>feat: add route for rescheduling class sessions</td><td></td><td>26/11/2025 15:46</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>5d2d56f</td><td>feat: add RescheduleState classes for managing reschedule states</td><td></td><td>26/11/2025 15:46</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>a41a9e1</td><td>feat: add SubmitReschedule event class for rescheduling sessions</td><td></td><td>26/11/2025 15:45</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>f1abd4d</td><td>feat: add RescheduleBloc for handling reschedule events and states</td><td></td><td>26/11/2025 15:45</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>e4444b2</td><td>feat: implement RescheduleClassSession use case with RescheduleParams</td><td></td><td>26/11/2025 15:45</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>a36873b</td><td>feat: add rescheduleClassSession method to ScheduleRepository</td><td></td><td>26/11/2025 15:44</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>933ea5a</td><td>feat: implement rescheduleClassSession method in ScheduleRepositoryImpl</td><td></td><td>26/11/2025 15:44</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>d44e7c2</td><td>feat: add rescheduleClassSession endpoint to ScheduleEndpoints</td><td></td><td>26/11/2025 15:44</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>e0b97db</td><td>feat: add RescheduleRequestDto for handling reschedule requests</td><td></td><td>26/11/2025 15:43</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>5ac8adb</td><td>feat: add RescheduleClassSession use case and RescheduleBloc to ScheduleModule</td><td></td><td>26/11/2025 15:43</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>8f8ac4c</td><td>feat: add rescheduleClassSession method to ScheduleRemoteDataSource</td><td></td><td>26/11/2025 15:43</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>b259eb8</td><td>feat: add rescheduleClassSession method to ScheduleRemoteDataSourceImpl</td><td></td><td>26/11/2025 15:43</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>b622f67</td><td>refactor: rename variable for readability in HomePage</td><td></td><td>25/11/2025 19:30</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>193e460</td><td>refactor(router): remove unused ProfileBloc imports</td><td></td><td>25/11/2025 19:30</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>e176287</td><td>refactor(router): remove global ProfileBloc injection from StatefulShellRoute</td><td></td><td>25/11/2025 19:29</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>c2abb17</td><td>feat: integrate ProfileBloc globally with MultiBlocProvider</td><td></td><td>25/11/2025 19:28</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>1ce1274</td><td>Merge pull request #7 from nistrahq/release/v1.0.0</td><td></td><td>13/11/2025 05:25</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>262f785</td><td>Merge pull request #6 from nistrahq/feature/schedules-management</td><td></td><td>13/11/2025 05:23</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>f97d72b</td><td>feat(schedules): Improves empty state message and adjusts list padding</td><td></td><td>13/11/2025 02:01</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>852ec84</td><td>feat(schedules): Redesigns schedule card layout for improved clarity</td><td></td><td>13/11/2025 02:01</td></tr>
+    </tbody>
+</table>
+
 
 
 #### 4.2.3.4. Testing Suite Evidence for Sprint Review
