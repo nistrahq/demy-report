@@ -15295,7 +15295,25 @@ Se recomienda mantener un versionado claro (por ejemplo, 1.0.0+1), añadir notas
 
 #### 4.2.3.8. Team Collaboration Insights during Sprint
 
+| Alumno                           | Actividad    |
+|----------------------------------|--------------|
+| Crispin Ramos, Daniel Franco     | Flutter      |
+| Aponte Cruzado, Andrea Marielena | Flutter, iOS |
+| Ramírez Mestanza, Salim Ignacio  | Flutter, iOS |
+| Sulca Gonzales, Paúl Fernando    | Flutter      |
+| Vilca Saboya, Diego Alejandro    | Flutter      |
 
+**Flutter Application**
+
+![img_1.png](assets/ux-ui/evidences/mobile/img_1.png)
+![img_3.png](assets/ux-ui/evidences/mobile/img_3.png)
+![img_5.png](assets/ux-ui/evidences/mobile/img_5.png)
+
+**iOS Application**
+
+![img.png](assets/ux-ui/evidences/mobile/img.png)
+![img_2.png](assets/ux-ui/evidences/mobile/img_2.png)
+![img_4.png](assets/ux-ui/evidences/mobile/img_4.png)
 
 <hr class="page-break">
 
