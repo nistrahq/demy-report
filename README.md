@@ -14988,6 +14988,36 @@ En la sección de verificadores se observa el estado de cada invitado, pudiéndo
 #### 4.2.3.4. Testing Suite Evidence for Sprint Review
 
 
+**Unit Test – BillingAccountTest**
+
+Las pruebas unitarias del agregado **BillingAccount** se diseñaron siguiendo el patrón **Arrange–Act–Assert (AAA)** para validar el comportamiento principal del aggregate en torno a la creación y gestión de cuentas de facturación. En primer lugar, se verificó la correcta construcción del agregado a partir del comando `CreateBillingAccountCommand`, comprobando que los Value Objects embebidos (`StudentId`, `DniNumber`, `AcademyId`) se inicializan de forma consistente y que la colección interna de facturas comienza vacía y no nula.
+
+Posteriormente, se probó el flujo de asignación de facturas mediante el comando `AssignInvoiceToBillingAccountCommand`, asegurando que se cree una instancia de `Invoice` con el `InvoiceType`, `Money`, fechas y descripción correctos, y que esta quede asociada al mismo `BillingAccount`. Finalmente, se validó que la colección de facturas expuesta por el aggregate sea **inmodificable desde el exterior**, lanzando una `UnsupportedOperationException` al intentar alterarla, lo que refuerza el encapsulamiento de invariantes del dominio.
+
+![BillingAccount Unit Test – Creation From Command](assets/tests/billing-account-create-from-command-test.png)
+![BillingAccount Unit Test – Assign Invoice To Account](assets/tests/billing-account-assign-invoice-test.png)
+![BillingAccount Unit Test – Unmodifiable Invoices List](assets/tests/billing-account-unmodifiable-invoices-list-test.png)
+
+**Integration Test – BillingAccountRepositoryTest**
+
+Las pruebas de integración del repositorio **BillingAccountRepository** se implementaron usando **Spring Boot Data JPA**, `@DataJpaTest` y un contexto de base de datos aislado para pruebas (perfil `test`). Estas pruebas evalúan la interacción real entre el agregado `BillingAccount` y la infraestructura de persistencia, verificando que las consultas derivadas por nombre funcionen correctamente con Value Objects embebidos.
+
+En particular, se validó que:
+
+* La cuenta de facturación se persista y recupere correctamente, respetando los campos `StudentId`, `DniNumber` y `AcademyId`.
+* El método `findByStudentId(StudentId studentId)` retorne la cuenta correspondiente cuando el estudiante existe y un `Optional` vacío cuando no existe.
+* El método `findAllByAcademyId(AcademyId academyId)` devuelva todas las cuentas asociadas a una academia específica y una lista vacía para academias sin registros.
+* Se mantenga la integridad de datos al trabajar con múltiples cuentas distribuidas en distintas academias, comprobando el tamaño y composición de los resultados para cada consulta.
+
+Estas pruebas confirman que la capa de infraestructura respeta el modelo de dominio y que las consultas por `StudentId` y `AcademyId` se comportan según lo esperado en escenarios reales.
+
+![BillingAccountRepository Test – Persist and Retrieve](assets/tests/billing-accountrepository-persist-and-retrieve-test.png)
+![BillingAccountRepository Test – Query By AcademyId](assets/tests/billing-accountrepository-find-by-academyid-test.png)
+
+| Repository              | Branch              | Commit Id                                  | Commit Message                                                                               | Committed on |
+| ----------------------- | ------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------- | ------------ |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `800b671a3f7b73e4d5ff4ca416a0c14798f70c8b` | test(unit): add unit tests for BillingAccount aggregate with command scenarios               | 2025-12-04   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `2a14937b048052e39095d8b61ac2061222d9c73c` | test(integration): add integration tests for BillingAccountRepository with various scenarios | 2025-12-04   |
 
 #### 4.2.3.5. Execution Evidence for Sprint Review
 
