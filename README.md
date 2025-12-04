@@ -15115,7 +15115,7 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 
 | Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Nombre**              | Luciano                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Nombre**              | Luciano Achin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | **Edad**                | 29 años                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | **Distrito**            | Surquillo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -15126,7 +15126,9 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 | **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-administrativo-3.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | **Resumen**             | Luciano considera que la landing de Demy presenta buena estructura, pero advierte que el precio podría ser difícil de justificar para academias grandes. Además, comentó que los términos y condiciones no son fáciles de leer, lo que reduce confianza. En la versión web, señaló que las secciones deberían redirigir directamente al módulo correspondiente, ya que actualmente requieren pasos adicionales. También indicó que algunos módulos como registro de periodos y cursos deberían unificarse, y que la plataforma necesita mejoras de accesibilidad para facilitar su uso en contextos operativos reales. |
 
+#### Segmento: Profesor - Entrevistado 1
 
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Nombre**              | Martín Salcedo                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | **Edad**                | 28 años                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -15171,21 +15173,18 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 
 
 #### Segmento: Alumno - Entrevistado 1
-
-| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                               |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nombre**              | Luciano                                                                                                                                                                                                                                                                                                                                                                                               |
-| **Edad**                | 29 años                                                                                                                                                                                                                                                                                                                                                                                               |
-| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                             |
-| **Distrito**            | Surquillo                                                                                                                                                                                                                                                                                                                                                                                             |
-| **Ocupación**           | Administrador de una academia                                                                                                                                                                                                                                                                                                                  |
-| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                                              |
-| **Timing**              | 00:00 – 14:58                                                                                                                                                                                                                                                                                                                                                                                         |
-| **Video**               | [Ver en Microsoft Stream]()                                                                                                                                                                                                                                                                                                                                                                           |
-| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-alumno-1.png)                                                                                                                                                                                                                                                                                                      |
-| **Resumen**             | Luciano, de 29 años, probó la aplicación desde la perspectiva de alumno. Consideró que la app es clara, ordenada y fácil de navegar. Destacó que las secciones principales están bien organizadas y que encontrar horarios y cursos fue sencillo. Mencionó como sugerencia que sería útil reforzar algunos indicadores visuales para hacer más evidente el progreso del alumno en sus cursos y pagos. |
-
-
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**              | Alexander Rioja                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Edad**                | 17 años                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Distrito**            | San Juan de Miraflores                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Ocupación**           | Estudiante de academia                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Timing**              | 00:00 – 14:58                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Video**               | [Ver en Microsoft Stream]()                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-alumno-1.png)                                                                                                                                                                                                                                                                                                                             |
+| **Resumen**             | Alexander, estudiante de 17 años del COAR Lima, consideró que la aplicación para alumnos está muy bien hecha, clara y sencilla de usar. Mencionó que la recomendaría a otros estudiantes por su facilidad para encontrar clases, horarios y notificaciones. Como sugerencia, le gustaría que la app incluya un chatbot con IA dentro de la vista de alumnos, para resolver dudas rápidas sin necesidad de contactar a la academia. |
 
 ### 4.3.3. Evaluaciones según heurísticas
 
@@ -15281,7 +15280,7 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 | - | --------------------------------------------------------------------------------------------------------- | ------------------- | ---------------------------------------------------- |
 | 1 | La landing no incluye un chat/chatbot de soporte ni indica claramente los horarios de atención del mismo. | 1                   | Help and documentation                               |
 | 2 | La landing no explica con suficiente claridad qué herramientas ofrece cada sección.                       | 2                   | Match between system and the real world              |
-| 3 | Los términos y condiciones no se leen con claridad y afectan la confianza del usuario.                    | 2                   | Help and documentation / Visibility of system status |
+| 3 | Los términos y condiciones no se leen con claridad y afectan la confianza del usuario.                    | 2                   | Visibility of system status |
 | 4 | El precio podría no estar alineado a la percepción de valor para academias grandes.                       | 2                   | Match between system and the real world              |
 
 
@@ -15290,7 +15289,7 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 **PROBLEMA #1:** Falta de chat o chatbot de soporte con horarios visibles
 
 **Severidad: 1**  
-**Heurística violada:** Usability – Help and documentation
+**Heurística violada:** Help and documentation
 
 **Problema:**
 En la landing page de Demy no se visualiza ningún chat o chatbot de soporte que permita a los usuarios resolver dudas rápidas sobre el producto. Además, tampoco se indican horarios de atención ni disponibilidad del equipo de soporte. Esto genera incertidumbre en potenciales clientes (como administradores de academias) que podrían necesitar aclarar preguntas antes de tomar una decisión, y los obliga a buscar otros medios de contacto menos inmediatos.
@@ -15316,7 +15315,7 @@ Ampliar y reorganizar las secciones de la landing para describir explícitamente
 **PROBLEMA #3:** Los términos y condiciones no son claros ni fácilmente visibles
 
 **Severidad:** 2
-**Heurística violada:** Help and documentation / Visibility of system status
+**Heurística violada:** Visibility of system status
 
 **Problema:**
 En las entrevistas se mencionó que los términos y condiciones de la landing no se leen bien, ya sea por tamaño, ubicación o claridad del texto. Esto afecta la percepción de transparencia y puede generar desconfianza en usuarios que buscan información legal o de uso antes de registrarse o contratar el servicio. La falta de una sección clara y fácil de localizar obstaculiza la comprensión del alcance del producto y de las condiciones del servicio.
@@ -15346,7 +15345,7 @@ Agregar una sección de precios más segmentada (pequeñas, medianas y grandes a
 
 | # | Problema                                                                                                                   | Escala de severidad | Heurística/ Principio Violado                                |
 | - | -------------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------ |
-| 1 | La aplicación no permite ajustar fuentes, colores o contrastes, reduciendo la accesibilidad y personalización.             | 2                   | Accessibility                                                |
+| 1 | La aplicación no permite ajustar fuentes, colores o contrastes, reduciendo la accesibilidad y personalización.             | 2                   | User Control and Freedom                                               |
 | 2 | La app no incluye una sección para ver las notas de los alumnos, generando ausencia de información relevante.              | 3                   | Match between system and the real world                      |
 | 3 | La vista de horarios no ofrece un modo de visualización semanal, lo que afecta la alineación con el flujo natural docente.         | 2                   | Match between system and the real world                                  |
 
@@ -15355,7 +15354,7 @@ Agregar una sección de precios más segmentada (pequeñas, medianas y grandes a
 **PROBLEMA #1:** Falta de opciones para ajustar fuentes, colores y contraste
 
 **Severidad:** 2
-**Heurística violada:** Accessibility
+**Heurística violada:** User Control and Freedom
 
 **Problema:**
 La aplicación móvil para profesores no cuenta con opciones de personalización visual como ajustar tamaño de fuente, nivel de contraste o paleta de colores. Para profesores como Martín, estas opciones mejoran significativamente la comodidad visual durante sesiones largas de registro de asistencia, revisión de pagos o consulta de clases.
@@ -15398,11 +15397,11 @@ Agregar un “Weekly View” con estructura de calendario docente, permitiendo a
 
 **Cross-Platform Mobile Application**
 
-| # | Problema                                                                                                                                        | Escala de severidad | Heurística/ Principio Violado       |
-| - | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------------------------------- |
-| 1 | No existe una opción de dictado por voz para registrar o gestionar grandes cantidades de alumnos, lo que dificulta el registro masivo de datos. | 1                   | Flexibilidad y eficiencia en el uso |
-| 2 | Algunas tarjetas o secciones del dashboard no redirigen correctamente, lo que genera confusión en la navegación.                                | 2                   | Consistency and standards           |
-| 3 | ...                                                                                                                                             |                     |                                     |
+| # | Problema                                                                                                                         | Escala de severidad | Heurística/ Principio Violado           |
+| - | -------------------------------------------------------------------------------------------------------------------------------- | ------------------- | --------------------------------------- |
+| 1 | No existe una opción de dictado por voz para registrar o gestionar grandes cantidades de alumnos.                                | 1                   | Flexibility and efficiency of use     |
+| 2 | Algunas tarjetas o secciones del dashboard no redirigen correctamente, lo que genera confusión en la navegación.                 | 2                   | Consistency and standards               |
+| 3 | Las secciones relacionadas (registro de periodos y cursos) están separadas, lo que no coincide con el flujo natural del usuario. | 2                   | Match between system and the real world |
 
 
 **DESCRIPCIÓN DE PROBLEMAS:**
@@ -15410,7 +15409,7 @@ Agregar un “Weekly View” con estructura de calendario docente, permitiendo a
 **PROBLEMA #1:** Ausencia de dictado por voz para registrar alumnos en flujos masivos
 
 **Severidad: 1**  
-**Heurística violada:** Usability – Flexibilidad y eficiencia en el uso
+**Heurística violada:** Flexibility and efficiency of use
 
 **Problema:**
 En la aplicación móvil cross-platform (vista administrativa), el registro y la gestión de alumnos en secciones como Attendance, Enrollments o Students se realiza únicamente mediante interacción táctil y escritura manual. Para perfiles como Nataly, que gestionan grupos grandes de alumnos, esto implica muchas pulsaciones y tiempo invertido al registrar asistencias o realizar operaciones repetitivas. La falta de una opción de dictado por voz limita el aprovechamiento de atajos para usuarios frecuentes y reduce la eficiencia del flujo, especialmente en contextos de alta carga operativa.
@@ -15433,34 +15432,46 @@ Este tipo de inconsistencia genera confusión, ya que el usuario asume —por su
 
 **Recomendación:**
 Asegurar que todas las tarjetas del dashboard tengan un comportamiento consistente: si un componente luce como un acceso directo, debe redirigir al módulo correspondiente. También se recomienda aplicar retroalimentación visual (como animación de “tap”, cambio de opacidad o ripple effect) para reforzar la sensación de acción. En caso de que una tarjeta aún no tenga funcionalidad implementada, es preferible ocultarla temporalmente o mostrar un estado “Próximamente” para evitar confusiones.
+
+**PROBLEMA #3:** Las secciones de registro de periodos y cursos deberían estar unificadas
+
+**Severidad:** 2
+**Heurística violada:** Match between system and the real world
+
+**Problema:**
+Para Luciano, registrar periodos y cursos es parte de un mismo flujo operativo. La separación de estas secciones obliga a entrar a diferentes pantallas para completar una tarea cohesiva, lo que no coincide con el modelo mental del usuario ni con las prácticas reales de gestión académica.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-3-cross-platform.jpeg)
+
+**Recomendación:**
+Integrar ambos registros en un flujo único o permitir crearlos desde una misma pantalla con pasos consecutivos.
+
 <hr class="page-break">
 
 **Native iOS Mobile Application**
 
-| # | Problema | Escala de severidad | Heurística/ Principio Violado |
-|---|----------|---------------------|-------------------------------|
-| 1 | ...      |                     |                               |
-| 2 | ...      |                     |                               |
-| 3 | ...      |                     |                               |
+| # | Problema                                                                                                 | Escala de severidad | Heurística/ Principio Violado |
+| - | -------------------------------------------------------------------------------------------------------- | ------------------- | ----------------------------- |
+| 1 | La aplicación no incluye un chatbot o asistente virtual para resolver dudas del alumno dentro de la app. | 2                   | Help and documentation        |
 
 **DESCRIPCIÓN DE PROBLEMAS:**
 
-**PROBLEMA #1:** ...
+**PROBLEMA #1:** Ausencia de un chatbot o asistente virtual para resolver dudas del alumno
 
-**Severidad: ...**  
-**Heurística violada:** ...
+**Severidad:** 2
+**Heurística violada:** Help and documentation
 
 **Problema:**
-...
+Alexander comentó que, aunque la aplicación para alumnos es clara y fácil de usar, sería muy útil contar con un chatbot con IA dentro de la app para resolver dudas rápidas, como horarios, fechas de evaluaciones, recordatorios o detalles de cursos.
+Actualmente, la app no ofrece ningún canal de asistencia contextual, lo que obliga al alumno a buscar ayuda mediante otros medios (contactar a la academia, WhatsApp, correo), interrumpiendo su flujo de uso y reduciendo la inmediatez en la resolución de preguntas sencillas.
 
-![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-ios.png)
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-ios.jpeg)
 
 **Recomendación:**
-...
-
-**PROBLEMA #2:** ...
+Integrar un chatbot de soporte dentro de la app nativa de iOS, accesible desde el menú principal o desde la vista de cursos. Este asistente debería resolver preguntas frecuentes, ofrecer enlaces rápidos y permitir enviar consultas cuando el alumno necesite apoyo inmediato.
 
 <hr class="page-break">
+
 
 # Conclusiones
 
