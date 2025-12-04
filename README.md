@@ -15102,7 +15102,7 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 | **Nombre**              | Germán Rivera                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | **Edad**                | 35 años                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| **Distrito**            | Lima                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Distrito**            | Jesus Maria                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | **Ocupación**           | Especialista en marketing académico                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Fecha de entrevista** | 30/11/25                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | **Timing**              | 16:46 – 14:32                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -15125,6 +15125,67 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 | **Video**               | [Ver en Microsoft Stream]()                                                                             |
 | **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-administrator-3.png) |
 | **Resumen**             | ...                                                                                                     |
+
+#### Segmento: Profesor - Entrevistado 1
+
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**              | Martín Salcedo                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Edad**                | 28 años                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Distrito**            | San Juan de Lurigancho                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Ocupación**           | Profesor de academia                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Timing**              | 00:00 – 15:12                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQCaITrguqS0TqjmeFV7CYsiAR49maoMCayFXMj9WVLqczw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=R51Vxz)                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-profesor-1.png)                                                                                                                                                                                                                                                                                                                                                 |
+| **Resumen**             | Martín es un profesor de 28 años que trabaja en academias en Lima. Considera que la aplicación es completa y cumple bien con lo necesario para gestionar clases y manejar finanzas relacionadas a pagos y asistencia. Sin embargo, sugiere mejorar la personalización visual del aplicativo, ya que le gustaría poder cambiar fuentes, colores y niveles de contraste para tener una experiencia más cómoda según su preferencia personal. |
+
+#### Segmento: Profesor - Entrevistado 2
+
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**              | José Zapata                                                                                                                                                                                                                                                                                                                                                                           |
+| **Edad**                | 25 años                                                                                                                                                                                                                                                                                                                                                                               |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                             |
+| **Distrito**            | Santa Anita                                                                                                                                                                                                                                                                                                                         |
+| **Ocupación**           | Profesor de academia                                                                                                                                                                                                                                                                                                                                                                  |
+| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                              |
+| **Timing**              | 00:00 – 12:47                                                                                                                                                                                                                                                                                                                                                                         |
+| **Video**               | [Ver en Microsoft Stream]()                                                                                                                                                                                                                                                                                                                                                           |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-profesor-2.png)*                                                                                                                                                                                                                     |
+| **Resumen**             | José es un profesor de 25 años que percibe la aplicación como exelente y bien lograda, destacando especialmente la claridad de las secciones principales. Como sugerencia, indicó que sería muy útil incorporar una sección dedicada a visualizar las notas de los alumnos, permitiendo a los profesores consultar rendimiento y calificaciones de manera rápida desde la app. |
+
+#### Segmento: Profesor - Entrevistado 3
+
+| Atributo                | Detalle                                                                                                 |
+|-------------------------|---------------------------------------------------------------------------------------------------------|
+| **Nombre**              | ...                                                                                                     |
+| **Edad**                | ...                                                                                                     |
+| **Sexo**                | ...                                                                                                     |
+| **Distrito**            | ...                                                                                                     |
+| **Ocupación**           | ...                                                                                                     |
+| **Fecha de entrevista** | ...                                                                                                     |
+| **Timing**              | ...                                                                                                     |
+| **Video**               | [Ver en Microsoft Stream]()                                                                             |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-profesor-3.png) |
+| **Resumen**             | ...                                                                                                     |
+
+#### Segmento: Alumno - Entrevistado 1
+
+| Atributo                | Detalle                                                                                                 |
+|-------------------------|---------------------------------------------------------------------------------------------------------|
+| **Nombre**              | ...                                                                                                     |
+| **Edad**                | ...                                                                                                     |
+| **Sexo**                | ...                                                                                                     |
+| **Distrito**            | ...                                                                                                     |
+| **Ocupación**           | ...                                                                                                     |
+| **Fecha de entrevista** | ...                                                                                                     |
+| **Timing**              | ...                                                                                                     |
+| **Video**               | [Ver en Microsoft Stream]()                                                                             |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-alumno-1.png) |
+| **Resumen**             | ...                                                                                                     |
+
 
 ### 4.3.3. Evaluaciones según heurísticas
 
@@ -15254,26 +15315,42 @@ Ampliar y reorganizar las secciones de la landing para describir explícitamente
 
 **Native Android Mobile Application**
 
-| # | Problema | Escala de severidad | Heurística/ Principio Violado |
-|---|----------|---------------------|-------------------------------|
-| 1 | ...      |                     |                               |
-| 2 | ...      |                     |                               |
-| 3 | ...      |                     |                               |
+| # | Problema                                                                                                       | Escala de severidad | Heurística/ Principio Violado                                         |
+| - | -------------------------------------------------------------------------------------------------------------- | ------------------- | --------------------------------------------------------------------- |
+| 1 | La aplicación no permite ajustar fuentes, colores o contrastes, reduciendo la accesibilidad y personalización. | 2                   | Accessibility                      |
+| 2 | La app no incluye una sección para ver las notas de los alumnos, generando ausencia de información relevante.  | 3                   | Match between system and the real world|
+| 3 | ...                                                                                                            |                     |                                                                       |
 
 **DESCRIPCIÓN DE PROBLEMAS:**
 
-**PROBLEMA #1:** ...
+**PROBLEMA #1:** Falta de opciones para ajustar fuentes, colores y contraste
 
-**Severidad: ...**  
-**Heurística violada:** ...
+**Severidad:** 2
+**Heurística violada:** Accessibility
 
 **Problema:**
-...
+La aplicación móvil para profesores no cuenta con opciones de personalización visual como ajustar tamaño de fuente, nivel de contraste o paleta de colores. Para profesores como Martín, estas opciones mejoran significativamente la comodidad visual durante sesiones largas de registro de asistencia, revisión de pagos o consulta de clases.
+La ausencia de estas configuraciones reduce la accesibilidad general de la aplicación y puede generar fatiga visual, especialmente en contextos de baja luz o uso frecuente.
 
 ![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-mobile.png)
 
+
 **Recomendación:**
-...
+Agregar un módulo de “Accesibilidad” dentro de la configuración que permita modificar tamaño de texto, modo de alto contraste y estilo de color. Esto mejora la experiencia de usuarios con diferentes preferencias visuales y aligera la carga cognitiva durante el uso prolongado.
+
+**PROBLEMA #2:** Falta una sección para visualizar las notas de los alumnos
+
+**Severidad:** 3
+**Heurística violada:** Match between system and the real world
+
+**Problema:**
+Profesores como José esperan que una aplicación académica incluya acceso rápido y directo a las calificaciones de los estudiantes. Sin embargo, la app actual no cuenta con una sección dedicada a consultar notas, lo que genera incompletitud en la experiencia y obliga al docente a acudir a otros sistemas o métodos informales (mensajes, cuadernos, Excel).
+Esta ausencia no coincide con el modelo mental del profesor sobre qué debe ofrecer una app de gestión académica, afectando la percepción de utilidad general.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-2-mobile.png)
+
+**Recomendación:**
+Implementar una vista o módulo de “Notas de alumnos” accesible desde el dashboard principal o desde cada curso. Esta debe mostrar calificaciones, promedios y progreso del alumno. Así se complementa la experiencia docente y se alinea la app con las expectativas reales del usuario.
 
 <hr class="page-break">
 
