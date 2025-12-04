@@ -15163,77 +15163,157 @@ En la sección de verificadores se observa el estado de cada invitado, pudiéndo
 Evidencia de la funcionalidad clave y la interfaz de usuario del aplicativo móvil diseñado para que los profesores visualicen sus horarios por dia de la semana, reprogramen clases y registren asistencia de los estudiantes.
 
 **Splash Screen — Visualización de Marca**
+
 Muestra el logo y el nombre de la aplicación durante el inicio, permitiendo que los recursos se carguen en segundo plano.
+
 ![Splash Screen](./assets/ux-ui/evidences/mobile/teacher-mobile-splash-screen.jpg)
 
 **Sign In — Inicio de Sesión del Profesor**
+
 Interfaz de inicio de sesión donde el profesor ingresa su correo electrónico y contraseña registradas por el administrador para acceder a las funcionalidades de la aplicación móvil. Incluye la opción para recuperar la contraseña y enlaces a los términos y condiciones.
+
 ![Sign In](./assets/ux-ui/evidences/mobile/teacher-mobile-sign-in.jpg)
 
 **Terms and Conditions — Detalles Legales y de Uso**
+
 Pantalla que detalla los términos de uso y las políticas de la plataforma, incluyendo la aceptación de los mismos, la descripción del servicio, las responsabilidades del usuario y las condiciones de uso aceptable.
+
 ![Terms and Conditions](./assets/ux-ui/evidences/mobile/teacher-mobile-terms-and-conditions.jpg)
 
 **Privacy Policy — Recolección y Uso de Datos**
+
 Detalle de la información que la aplicación recopila de los usuarios y las entidades, y el uso que se le da a esta información.
+
 ![Privacy Policy](./assets/ux-ui/evidences/mobile/teacher-mobile-privacy-policy.jpg)
 
 **Forgot Password — Verificación de Correo Electrónico**
+
 Pantalla que permite a los profesores recuperar su acceso en caso de olvidar su contraseña. Se solicita el correo electrónico asociado a la cuenta para enviar un código de verificación y proceder con el restablecimiento seguro de la clave.
+
 ![Forgot Password](./assets/ux-ui/evidences/mobile/teacher-mobile-forgot-password.jpg)
 
 **Home — Vista Principal y Horario del Profesor**
+
 Pantalla de inicio que ofrece acceso rápido a módulos clave como Registro de Asistencia, Horario de Clases y Notificaciones. Muestra inmediatamente el horario del día con la hora y ubicación, cumpliendo el objetivo principal de la aplicación.
+
 ![Home](./assets/ux-ui/evidences/mobile/teacher-mobile-home.jpg)
 
 **Profile — Gestión de Cuenta y Detalles Personales**
+
 Muestra los datos básicos del profesor logueado: nombre completo, correo electrónico y número de teléfono. Esta sección permite al usuario ver su información de contacto y proporciona acceso directo a la función de Reset Password para mantener la seguridad de la cuenta.
+
 ![Profile](./assets/ux-ui/evidences/mobile/teacher-mobile-profile.jpg)
 
 **Settings — Opciones de Configuración y Cierre de Sesión**
+
 Pantalla que consolida opciones esenciales para el usuario. Ofrece acceso rápido a los documentos legales (Terms and Conditions y Privacy Policy) y la funcionalidad clave de Cerrar Sesión para finalizar la sesión del profesor de forma segura.
+
 ![Settings](./assets/ux-ui/evidences/mobile/teacher-mobile-settings.jpg)
 
 **Take Attendance Pop-up — Ventana de registro de Asistencia**
+
 Ventana emergente que aparece al hacer clic sobre una clase específica en el Home. Ofrece al profesor la acción directa de Tomar Asistencia, siendo el punto de entrada al registro de la asistencia de los estudiantes para esa sesión.
+
 ![Take Attendance](./assets/ux-ui/evidences/mobile/teacher-mobile-take-attendance.jpg)
 
 **Take Attendance — Registro de Asistencia**
+
 Pantalla final que muestra el listado de estudiantes inscritos en la sesión seleccionada y permite al profesor marcar el estado de asistencia de cada uno con las etiquetas: P (Presente), E (Excusado) o A (Ausente). Una vez completado el registro, el botón Save Attendance guarda la información en el sistema.
+
 ![Take Attendance](./assets/ux-ui/evidences/mobile/teacher-mobile-take-attendance-list.jpg)
 
 **Attendance Report — Reporte de Asistencia**
+
 Módulo que permite al profesor consultar las métricas de asistencia de los estudiantes por rango de fechas y curso. Muestra el porcentaje consolidado de estudiantes, desglosado por Presentes (P), Excusados (E) y Ausentes (A).
+
 ![Attendance Report](./assets/ux-ui/evidences/mobile/teacher-mobile-attendance-report.jpg)
 
 **Date Picker — Selector de Fechas del Calendario de Reporte de Asistencia**
+
 Componente de interfaz de usuario que se despliega al seleccionar la fecha de inicio o fin dentro del Reporte de Asistencia. Permite al profesor elegir de manera intuitiva el rango de fechas que desea consultar, mostrando el mes y el día específico seleccionado.
+
 ![Date Picker](./assets/ux-ui/evidences/mobile/teacher-mobile-date-picker.jpg)
 
 **Notifications — Historial de Alertas y Novedades**
+
 Pantalla dedicada a mostrar todas las notificaciones del sistema, alertas sobre reprogramación de clases y alertas generales del sistema. En este caso, muestra un mensaje de bienvenida confirmando que el profesor puede comenzar a gestionar sus horarios y asistencia.
+
 ![Notifications](./assets/ux-ui/evidences/mobile/teacher-mobile-notifications.jpg)
 
 **Teaching Schedule — Horario Semanal**
+
 Pantalla central que permite al profesor visualizar su horario clase por clase, organizado por día de la semana. Muestra los detalles de cada clase programada y ofrece la opción de reprogramación de clases mediante el ícono de calendario rojo.
+
 ![Teaching Schedule](./assets/ux-ui/evidences/mobile/teacher-mobile-teaching-schedule.jpg)
 
 **Teaching Reschedule — Reprogramación de Clase**
+
 Pantalla que se activa al seleccionar el ícono de calendario en el horario. Permite al profesor modificar los parámetros de la clase seleccionada. El profesor puede ajustar el Día de la Semana, la Hora de Inicio y la Hora de Fin, mientras que la información del curso y la ubicación permanecen inalterables.
+
 ![Teaching Reschedule](./assets/ux-ui/evidences/mobile/teacher-mobile-teaching-reschedule.jpg)
 
 **Select Day — Componente de Selección de Día para Reprogramación de Clase**
+
 Ventana de diálogo que se despliega al seleccionar el campo Day of Week. Permite al profesor elegir de una lista el día de la semana al cual moverá la clase reprogramada, incluyendo todos los días, lo cual es crucial para la funcionalidad de gestión de horario.
+
 ![Select Day](./assets/ux-ui/evidences/mobile/teacher-mobile-select-day.jpg)
 
 **Time Picker — Selector de Hora para Reprogramación de Clase**
+
 Ventana de diálogo que se despliega al seleccionar los campos Start Time o End Time dentro del formulario de Reprogramación de Clase. Este componente de reloj analógico permite al profesor ajustar la hora de inicio o fin de la clase reprogramada de forma precisa, eligiendo entre las opciones AM y PM
+
 ![Time Picker](./assets/ux-ui/evidences/mobile/teacher-mobile-time-picker.jpg)
 
 **Link de video de presentación sobre la aplicación de Administradores**
 
 [Video Presentación]()
 **Timestamp: 00:00 - 7:47**
+
+
+**Student Mobile Application**
+Evidencia de la funcionalidad clave y la interfaz de usuario del aplicativo móvil diseñado para que los estudiantes visualicen sus horarios y accedan a información institucional relevante.
+
+**Sign In — Inicio de Sesión del Estudiante**
+
+Interfaz de inicio de sesión de la aplicación móvil para estudiantes. Permite al usuario ingresar su Correo Electrónico y Contraseña para acceder a su información académica.
+
+![Sign In](./assets/ux-ui/evidences/mobile/student-mobile-sign-in.jpg)
+
+**Home — Horario y Novedades del Estudiante**
+
+Pantalla principal que saluda al estudiante y muestra de forma inmediata su Horario de hoy. Destaca la clase actual y permite navegar por el horario diario. También incluye una sección de Últimas actualizaciones para noticias y reportes.
+
+![Home](./assets/ux-ui/evidences/mobile/student-mobile-home.jpg)
+
+**Student Schedule — Horario Semanal Detallado**
+
+Pantalla que se accede al hacer clic en Ver más en el Home Screen. Muestra el horario completo del estudiante organizado por día y hora. Detalla las clases de cada día, incluyendo el nombre del profesor y la ubicación del campus, lo que permite al estudiante tener una vista completa de su semana académica.
+
+![Student Schedule](./assets/ux-ui/evidences/mobile/student-mobile-schedule.jpg)
+
+**Configuration — Configuración**
+
+Pantalla de configuración que permite al estudiante revisar la Política de Privacidad, Términos y Condicione y la opcion de cerrar sesion.
+
+![Configuration](./assets/ux-ui/evidences/mobile/student-mobile-configuration.jpg)
+
+**Profile — Datos Personales**
+
+Pantalla de perfil que muestra la información esencial de su cuenta, incluyendo fecha de nacimiento, una opción directa para Restablecer Contraseña y la configuración de Idioma (Español), permitiendo la gestión básica de su cuenta.
+
+![Profile](./assets/ux-ui/evidences/mobile/student-mobile-profile.jpg)
+
+**Privacy Policy — Recolección y Uso de Datos**
+
+Página que explica cómo la aplicación recopila y utiliza los datos del estudiante, incluyendo la Información Recopilada y las Medidas de Protección de Datos Académicos.
+
+![Profile](./assets/ux-ui/evidences/mobile/student-mobile-privacy-policy.jpg)
+
+**Terms and Conditions — Detalles Legales y de Uso**
+
+Documento que el estudiante debe aceptar al usar la plataforma, detallando la Aceptación de Términos, la Descripción del Servicio y el uso aceptable de la aplicación, fundamental para la protección legal.
+
+![Terms and Conditions](./assets/ux-ui/evidences/mobile/student-mobile-terms-conditions.jpg)
 
 
 #### 4.2.3.6. Services Documentation Evidence for Sprint Review
