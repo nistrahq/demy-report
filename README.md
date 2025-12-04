@@ -251,6 +251,66 @@ Análisis de cantidad de commits realizados por semana.
 
 <hr class="page-break">
 
+## TF1
+
+**Tareas**
+
+Para el desarrollo del TP1, cada participante del equipo realizó las siguientes tareas:
+
+| Integrantes                      | Tarea asignada                                                                    |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| Aponte Cruzado, Andrea Marielena | - Execution Evidence <br> - Development evidence                                  |
+| Crispin Ramos, Daniel Franco     | - Development evidence                                                            |
+| Ramirez Mestanza, Salim Ignacio  | - Sprint Planning <br> - Team Collaboration Insights                              |
+| Sulca Gonzales, Paúl Fernando    | - Services Documentation <br> - Testing Suite Evidence <br> - Deployment Evidence |
+| Vilca Saboya, Diego Alejandro    | - Sprint Backlog 3                                                                |
+
+**GitHub Collaboration Insights**
+
+Se puede observar la colaboración del equipo en el desarrollo del proyecto a través de la plataforma GitHub. Esta sección destaca las contribuciones individuales y colectivas de los miembros del equipo, así como la gestión del código fuente mediante ramas y merges.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Gráfico de Pulse Insights del repositorio de GitHub.
+
+![img_2.png](assets/images/screenshots/img_2.png)
+
+</div>
+
+En GitHub se presenta un timeline de las principales ramas creadas por cada integrante del equipo, así como los procesos de merge realizados.  
+Todas las ramas fueron gestionadas siguiendo el flujo de trabajo **GitFlow**, adaptado para una organización que utiliza un sistema de control de versiones.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Gráfico de red (*network graph*) de ramas en el repositorio de GitHub.
+
+![img_3.png](assets/images/screenshots/img_3.png)
+
+</div>
+
+A continuación, se presentan los gráficos que muestran el análisis de los commits en el repositorio correspondiente al informe.  
+Estos gráficos detallan la cantidad de líneas de código añadidas por cada miembro del equipo y la actividad de commits registrada.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Análisis de líneas de código añadidas por contribuyente.
+
+![img.png](assets/images/screenshots/img.png)
+
+</div>
+
+El siguiente gráfico muestra la cantidad de commits realizados en la semana con mayor actividad en el proyecto.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Análisis de cantidad de commits realizados por semana.
+
+![img_1.png](assets/images/screenshots/img_1.png)
+
+</div>
+
+<hr class="page-break">
+
 # Contenido
 
 - [Capítulo I: Presentación](#capítulo-i-presentación)
@@ -14972,10 +15032,24 @@ En la sección de verificadores se observa el estado de cada invitado, pudiéndo
 
 ### 4.2.3. Sprint 3
 
+Durante el tercer sprint, el equipo se enfocó en la finalizacion de la aplicacion Flutter y iOS. Se establecieron los objetivos del sprint, se planificaron las tareas y se asignaron responsabilidades a los miembros del equipo.
 
 #### 4.2.3.1. Sprint Planning 3
 
+A continuación se presentará el sprint planning para esta entrega, detallando los objetivos, las historias de usuario y la velocidad del sprint.
 
+| Sprint #                        | Sprint 3                                                                                                                                                                                                                                                                                                                                                                                      |
+|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background**  |                                                                                                                                                                                                                                                                                                                                                                                               |
+| Date                            | 2025-11-20                                                                                                                                                                                                                                                                                                                                                                                    |
+| Time                            | 03:00 PM                                                                                                                                                                                                                                                                                                                                                                                      |
+| Location                        | Llamada grupal en la plataforma Discord                                                                                                                                                                                                                                                                                                                                                       |
+| Prepared By                     | Salim Ramirez                                                                                                                                                                                                                                                                                                                                                                                 |
+| Attendees (to planning meeting) | Paúl Sulca, Daniel Crispin, Diego Vilca, Andrea Aponte                                                                                                                                                                                                                                                                                                                                        |
+| **Sprint Goal & User Stories**  |                                                                                                                                                                                                                                                                                                                                                                                               |
+| Sprint 3 Goal                   | Nos centramos en presentar las funcionalidades completas de la aplicación móvil flutter y IOS. Creemos que esto entregará una versión funcional y verificable de la plataforma a los usuarios. Esto se confirmará cuando todas las funcionalidades de la aplicación flutter y ios estén accesibles a través de la interfaz móvil, y con funcionalidades probadas mediante Swagger y emulador. |
+| Sprint 3 Velocity               | 36                                                                                                                                                                                                                                                                                                                                                                                            |
+| Sum of Story Points             | 36                                                                                                                                                                                                                                                                                                                                                                                            |
 
 #### 4.2.3.2. Sprint Backlog 3
 
@@ -15170,7 +15244,6 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
     </tbody>
   </table>
 </div>
-
 
 #### 4.2.3.3. Development Evidence for Sprint Review
 
@@ -15555,11 +15628,308 @@ Este endpoint retorna los datos del estudiante actualmente autenticado.
 
 #### 4.2.3.7. Software Deployment Evidence for Sprint Review
 
+**Flutter**
 
+**Paso 1 – Generación de la Keystore (firma de Android)**
+
+La keystore es el archivo que almacena la clave que identifica y firma la aplicación Android.
+Es obligatoria para generar builds de producción (APK o AAB), y también es aceptada por Firebase App Distribution.
+
+Android exige que cada aplicación tenga una firma criptográfica.
+Esa firma garantiza que todas las versiones pertenecen al mismo desarrollador.
+Sin ella no es posible crear builds de producción ni distribuir la app oficialmente.
+
+```
+keytool -genkey -v -keystore demy_teachers.keystore -alias release -keyalg RSA -keysize 2048 -validity 10000
+```
+
+Explicación de parámetros
+
+- -keystore demy_teachers.keystore: nombre del archivo keystore que se generará.
+- -alias release: alias del certificado dentro de la keystore.
+- -keyalg RSA: algoritmo criptográfico utilizado.
+- -keysize 2048: tamaño de la llave (recomendado).
+- -validity 10000: días de validez (10000 ≈ 27 años).
+
+![img.png](assets/ux-ui/evidences/deployments/sprint3/img.png)
+
+Rellenar los campos solicitados
+
+![img_1.png](assets/ux-ui/evidences/deployments/sprint3/img_1.png)
+
+Una vez generada, colocar la keystore dentro de la carpeta android/app del proyecto Flutter.
+
+android/app/demy_teachers.keystore
+
+![img_2.png](assets/ux-ui/evidences/deployments/sprint3/img_2.png)
+
+**Paso 2 – Configuración del archivo key.properties**
+
+Crear un archivo llamado key.properties dentro de la carpeta android del proyecto Flutter.
+
+El archivo key.properties permite almacenar de forma organizada y separada las credenciales de la keystore, evitando hardcodearlas en los archivos Gradle.
+Flutter/Android lo utilizará para firmar automáticamente el APK/AAB de release.
+
+```
+android/key.properties
+```
+
+Dentro del archivo key.properties, añadir las siguientes líneas:
+
+```
+storePassword=CONTRASEÑA_DE_LA_KEYSTORE
+keyPassword=CONTRASEÑA_DE_LA_KEY
+keyAlias=release
+storeFile=../app/demy_teachers.keystore
+```
+
+Explicación de cada campo
+
+- storePassword: contraseña del archivo keystore completo.
+- keyPassword: contraseña específica del alias (puede ser la misma).
+- keyAlias: alias definido al crear la keystore → release.
+- storeFile: ruta hacia la keystore dentro del proyecto.
+
+Por qué funciona la ruta ../app/demy_teachers.keystore
+
+- El archivo key.properties está dentro de /android/.
+- Se sube un nivel (..).
+- Se ingresa a /app/.
+- Se apunta al archivo de firma.
+
+![img_3.png](assets/ux-ui/evidences/deployments/sprint3/img_3.png)
+
+*Regla importante*
+
+No subir este archivo a GitHub si contiene contraseñas reales.
+Se puede agregar al .gitignore:
+
+key.properties
+android/app/*.keystore
+
+![img_7.png](assets/ux-ui/evidences/deployments/sprint3/img_7.png)
+
+**Paso 3 – Configurar build.gradle.kts para usar la keystore (Kotlin DSL)**
+
+Este paso conecta el archivo key.properties con el módulo Android, permitiendo que Flutter genere automáticamente un APK firmado en modo release.
+
+Abrir el archivo android/app/build.gradle y añadir el siguiente código al inicio, antes del bloque android { ... }:
+
+```
+import java.util.Properties
+import java.io.FileInputStream
+
+val keystoreProperties = Properties()
+val keystorePropertiesFile = rootProject.file("key.properties")
+
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(FileInputStream(keystorePropertiesFile))
+}
+```
+
+![img_4.png](assets/ux-ui/evidences/deployments/sprint3/img_4.png)
+
+Qué hace este código
+
+- Busca el archivo key.properties.
+- Carga contraseñas y rutas en variables que luego se utilizan para firmar el APK.
+
+Luego, dentro del bloque android { ... }, agregar o editar la sección signingConfigs { ... } para que quede así:
+
+```
+signingConfigs {
+    create("release") {
+        keyAlias = keystoreProperties["keyAlias"] as String?
+        keyPassword = keystoreProperties["keyPassword"] as String?
+        storeFile = file(keystoreProperties["storeFile"] as String?)
+        storePassword = keystoreProperties["storePassword"] as String?
+    }
+}
+```
+
+![img_5.png](assets/ux-ui/evidences/deployments/sprint3/img_5.png)
+
+Qué hace esta configuración
+
+- Indica el alias a utilizar (release).
+- Define las contraseñas correspondientes.
+- Especifica la ubicación de la keystore.
+
+Finalmente, verificar que la sección buildTypes { ... } dentro de android { ... } esté configurada para usar la firma release:
+
+```
+buildTypes {
+    release {
+        signingConfig = signingConfigs.getByName("release")
+        isMinifyEnabled = false
+        isShrinkResources = false
+    }
+}
+```
+
+![img_6.png](assets/ux-ui/evidences/deployments/sprint3/img_6.png)
+
+Por qué isMinifyEnabled y isShrinkResources en false
+
+- Para Firebase App Distribution, un APK simple es suficiente.
+- No se requiere optimización ni ofuscación (eso aplica para Play Store).
+- Reduce posibles fallas de configuración en esta fase.
+
+Guardar los cambios y sincronizar el proyecto con Gradle.
+
+Ejecutar flutter clean.
+
+Realizar un commit asegurándose de no incluir key.properties ni la keystore. Debe ser en release.
+
+![img_8.png](assets/ux-ui/evidences/deployments/sprint3/img_8.png)
+
+**Paso 4 – Generación del APK de release firmado**
+
+Dado que el entorno ya está configurado:
+
+![img_9.png](assets/ux-ui/evidences/deployments/sprint3/img_9.png)
+
+![img_10.png](assets/ux-ui/evidences/deployments/sprint3/img_10.png)
+
+![img_15.png](assets/ux-ui/evidences/deployments/sprint3/img_15.png)
+
+Ejecutar el siguiente comando en la terminal dentro de la carpeta raíz del proyecto Flutter:
+
+```
+flutter build apk --release --dart-define=ENV=prod
+```
+
+Qué hace este comando
+
+- Compila el código Dart sin depuración.
+- Minimiza y optimiza el código.
+- Firma el APK automáticamente usando la keystore configurada.
+- Genera un archivo listo para distribuir.
+
+![img_11.png](assets/ux-ui/evidences/deployments/sprint3/img_11.png)
+
+Tras la compilación, el APK firmado estará ubicado en:
+
+```
+build/app/outputs/flutter-apk/app-release.apk
+```
+
+![img_12.png](assets/ux-ui/evidences/deployments/sprint3/img_12.png)
+
+Ese archivo está:
+
+- Firmado
+- Preparado para distribución
+- Compatible con Firebase App Distribution
+
+**Paso 5 – Subida del APK a Firebase App Distribution**
+
+Una vez generado el archivo app-release.apk, se puede distribuir a testers usando Firebase App Distribution.
+Firebase permite enviar builds rápidamente sin necesidad de subir la app a Google Play.
+
+Ubicar el APK generado
+
+El archivo se encuentra en:
+
+build/app/outputs/flutter-apk/app-release.apk
+
+Ese es el archivo a subir a Firebase.
+
+Acceso a Firebase Console
+
+Ingresar a:
+
+https://console.firebase.google.com/
+
+Seleccionar el proyecto Nistra Demy
+
+![img_13.png](assets/ux-ui/evidences/deployments/sprint3/img_13.png)
+
+Agregar aplicación y plataforma Android
+
+![img_14.png](assets/ux-ui/evidences/deployments/sprint3/img_14.png)
+
+Registrar el paquete de Android y el nombre de la app
+
+![img_16.png](assets/ux-ui/evidences/deployments/sprint3/img_16.png)
+
+Omitir la configuración del SDK de Firebase
+
+![img_17.png](assets/ux-ui/evidences/deployments/sprint3/img_17.png)
+
+![img_18.png](assets/ux-ui/evidences/deployments/sprint3/img_18.png)
+
+Ir a la consola
+
+![img_19.png](assets/ux-ui/evidences/deployments/sprint3/img_19.png)
+
+Abrir App Distribution en el menú lateral izquierdo
+
+![img_20.png](assets/ux-ui/evidences/deployments/sprint3/img_20.png)
+
+Elegir Demy Teachers arriba
+
+![img_21.png](assets/ux-ui/evidences/deployments/sprint3/img_21.png)
+
+Comenzar
+
+![img_22.png](assets/ux-ui/evidences/deployments/sprint3/img_22.png)
+
+Subir el APK
+
+![img_23.png](assets/ux-ui/evidences/deployments/sprint3/img_23.png)
+
+![img_24.png](assets/ux-ui/evidences/deployments/sprint3/img_24.png)
+
+![img_25.png](assets/ux-ui/evidences/deployments/sprint3/img_25.png)
+
+Seleccionar testers
+
+![img_26.png](assets/ux-ui/evidences/deployments/sprint3/img_26.png)
+
+Añadir notas de la versión
+
+![img_27.png](assets/ux-ui/evidences/deployments/sprint3/img_27.png)
+
+Distribuir
+
+![img_28.png](assets/ux-ui/evidences/deployments/sprint3/img_28.png)
+
+Listo: el APK firmado se ha subido a Firebase App Distribution.
+
+![img_29.png](assets/ux-ui/evidences/deployments/sprint3/img_29.png)
+
+Verificar el estado de los verificadores
+
+![img_30.png](assets/ux-ui/evidences/deployments/sprint3/img_30.png)
+
+**Recomendaciones finales**
+
+Una vez subido el APK a Firebase App Distribution, los testers reciben una invitación por correo para instalarlo. Deben iniciar sesión con su cuenta de Google, aceptar la invitación y habilitar la instalación de apps de fuentes desconocidas. Firebase muestra el estado de cada tester (instalado, pendiente, actualizado), permitiendo dar seguimiento al proceso de pruebas.
+
+Se recomienda mantener un versionado claro (por ejemplo, 1.0.0+1), añadir notas de cada release y proteger la keystore evitando subirla al repositorio. Para producción real, usar AAB (flutter build appbundle --release). Siempre distribuir las builds mediante Firebase para mantener control de versiones y realizar pruebas en diferentes dispositivos para asegurar compatibilidad.
 
 #### 4.2.3.8. Team Collaboration Insights during Sprint
 
+| Alumno                           | Actividad    |
+|----------------------------------|--------------|
+| Crispin Ramos, Daniel Franco     | Flutter      |
+| Aponte Cruzado, Andrea Marielena | Flutter, iOS |
+| Ramírez Mestanza, Salim Ignacio  | Flutter, iOS |
+| Sulca Gonzales, Paúl Fernando    | Flutter      |
+| Vilca Saboya, Diego Alejandro    | Flutter      |
 
+**Flutter Application**
+
+![img_1.png](assets/ux-ui/evidences/mobile/img_1.png)
+![img_3.png](assets/ux-ui/evidences/mobile/img_3.png)
+![img_5.png](assets/ux-ui/evidences/mobile/img_5.png)
+
+**iOS Application**
+
+![img.png](assets/ux-ui/evidences/mobile/img.png)
+![img_2.png](assets/ux-ui/evidences/mobile/img_2.png)
+![img_4.png](assets/ux-ui/evidences/mobile/img_4.png)
 
 <hr class="page-break">
 
