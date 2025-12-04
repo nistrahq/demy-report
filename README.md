@@ -16446,7 +16446,7 @@ Enlace al video app validation: [Ver en Microsoft Stream](https://upcedupe-my.sh
 # Video About the product
 
 A continuación se presenta el video About the product, que empieza desde el aterrizaje del usuario en la landing page, hasta el uso y presentación de la aplicación.  
-![Video About the Product Sprint 2](./assets/images/screenshots/about-the-product-screenshot.png)  
+![Video About the Product](./assets/images/screenshots/about-the-product-screenshot.png)  
 
 Enlace al video about the product: [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQCaIYKx-d9rT7PsOq9eHuUJAYy2xZ1zk0qQUf9KyOKWRTM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pfNQMQ)
 
