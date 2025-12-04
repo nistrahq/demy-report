@@ -15152,24 +15152,25 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 | **Ocupación**           | Profesor de academia                                                                                                                                                                                                                                                                                                                                                                  |
 | **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                              |
 | **Timing**              | 00:00 – 12:47                                                                                                                                                                                                                                                                                                                                                                         |
-| **Video**               | [Ver en Microsoft Stream]()                                                                                                                                                                                                                                                                                                                                                           |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQCaITrguqS0TqjmeFV7CYsiAR49maoMCayFXMj9WVLqczw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=R51Vxz)    ()                                                                                                                                                                                                                                                                                                                                                           |
 | **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-profesor-2.png)*                                                                                                                                                                                                                     |
 | **Resumen**             | José es un profesor de 25 años que percibe la aplicación como exelente y bien lograda, destacando especialmente la claridad de las secciones principales. Como sugerencia, indicó que sería muy útil incorporar una sección dedicada a visualizar las notas de los alumnos, permitiendo a los profesores consultar rendimiento y calificaciones de manera rápida desde la app. |
 
 #### Segmento: Profesor - Entrevistado 3
 
-| Atributo                | Detalle                                                                                                 |
-|-------------------------|---------------------------------------------------------------------------------------------------------|
-| **Nombre**              | ...                                                                                                     |
-| **Edad**                | ...                                                                                                     |
-| **Sexo**                | ...                                                                                                     |
-| **Distrito**            | ...                                                                                                     |
-| **Ocupación**           | ...                                                                                                     |
-| **Fecha de entrevista** | ...                                                                                                     |
-| **Timing**              | ...                                                                                                     |
-| **Video**               | [Ver en Microsoft Stream]()                                                                             |
-| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-profesor-3.png) |
-| **Resumen**             | ...                                                                                                     |
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Nombre**              | Gonzalo Pachas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Edad**                | 22 años                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Distrito**            | San Juan de Miraflores                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Ocupación**           | Profesor de academia                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Timing**              | 00:00 – 16:03                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQCaITrguqS0TqjmeFV7CYsiAR49maoMCayFXMj9WVLqczw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=R51Vxz)    ()                                                                                                                                                                                                                                                                                                                              |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-profesor-3.png)                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Resumen**             | Gonzalo considera que la aplicación está **completa y bien estructurada**, destacando que muestra tiempos exactos** en sus registros y vistas. Resaltó que para él es muy importante contar con un porcentaje claro de asistencia por alumno, ya que le permite evaluar rápidamente el compromiso de cada estudiante. Además, mencionó que preferiría que la aplicación muestre sus horarios exclusivamente en un formato semanal, ya que así organiza mejor su planificación docente. |
+
 
 #### Segmento: Alumno - Entrevistado 1
 
@@ -15315,11 +15316,11 @@ Ampliar y reorganizar las secciones de la landing para describir explícitamente
 
 **Native Android Mobile Application**
 
-| # | Problema                                                                                                       | Escala de severidad | Heurística/ Principio Violado                                         |
-| - | -------------------------------------------------------------------------------------------------------------- | ------------------- | --------------------------------------------------------------------- |
-| 1 | La aplicación no permite ajustar fuentes, colores o contrastes, reduciendo la accesibilidad y personalización. | 2                   | Accessibility                      |
-| 2 | La app no incluye una sección para ver las notas de los alumnos, generando ausencia de información relevante.  | 3                   | Match between system and the real world|
-| 3 | ...                                                                                                            |                     |                                                                       |
+| # | Problema                                                                                                                   | Escala de severidad | Heurística/ Principio Violado                                |
+| - | -------------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------ |
+| 1 | La aplicación no permite ajustar fuentes, colores o contrastes, reduciendo la accesibilidad y personalización.             | 2                   | Accessibility                                                |
+| 2 | La app no incluye una sección para ver las notas de los alumnos, generando ausencia de información relevante.              | 3                   | Match between system and the real world                      |
+| 3 | La vista de horarios no ofrece un modo de visualización semanal, lo que afecta la alineación con el flujo natural docente.         | 2                   | Match between system and the real world                                  |
 
 **DESCRIPCIÓN DE PROBLEMAS:**
 
@@ -15351,6 +15352,19 @@ Esta ausencia no coincide con el modelo mental del profesor sobre qué debe ofre
 
 **Recomendación:**
 Implementar una vista o módulo de “Notas de alumnos” accesible desde el dashboard principal o desde cada curso. Esta debe mostrar calificaciones, promedios y progreso del alumno. Así se complementa la experiencia docente y se alinea la app con las expectativas reales del usuario.
+
+**PROBLEMA #3:** La vista de horarios no incluye un modo semanal
+
+**Severidad:** 2
+**Heurística violada:** Match between system and the real world
+
+**Problema:**
+El docente indicó que prefiere visualizar sus horarios únicamente en formato semanal, ya que así organiza mejor sus clases. La app no ofrece esta vista, lo que no se alinea con su modelo mental ni con prácticas comunes en calendarios académicos. Esto dificulta la planificación y puede generar confusión al navegar entre fechas.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-3-mobile.png)
+
+**Recomendación:**
+Agregar un “Weekly View” con estructura de calendario docente, permitiendo alternar entre vista diaria, semanal y mensual según preferencia.
 
 <hr class="page-break">
 
