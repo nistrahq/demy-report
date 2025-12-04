@@ -15174,7 +15174,174 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
 
 #### 4.2.3.3. Development Evidence for Sprint Review
 
+**Development Evidence - Teachers Mobile**
 
+<table>
+    <thead>
+        <tr>
+            <th>Repository</th>
+            <th>Branch</th>
+            <th>Commit ID</th>
+            <th>Commit Message</th>
+            <th>Commit Body</th>
+            <th>Committed On</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr><td>demy-teachers</td><td>develop</td><td>7a98bba</td><td>feat(localization): add teaching schedule and reschedule localization strings in English and Spanish</td><td></td><td>02/12/2025 08:44</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>f313bc6</td><td>feat(notifications): add notifications page and integrate with localization</td><td></td><td>02/12/2025 08:37</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>12970cd</td><td>feat(theme): update background color to primaryContainer in attendance and schedule pages</td><td></td><td>02/12/2025 08:28</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>4c45580</td><td>feat(attendance): refactor attendance bloc and update localization files</td><td></td><td>02/12/2025 08:22</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>2145686</td><td>Merge pull request #14 from nistrahq/feature/attendance-management</td><td></td><td>02/12/2025 08:15</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>89a9ab1</td><td>Merge branch 'develop' into feature/attendance-management</td><td></td><td>02/12/2025 08:15</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>c9cc1e9</td><td>feat(attendance): update home page</td><td></td><td>02/12/2025 01:09</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>9156acd</td><td>feat(attendance): update widgets</td><td></td><td>02/12/2025 01:08</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>f39a1b6</td><td>feat(attendance): update attendance routes</td><td></td><td>02/12/2025 01:08</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>d179258</td><td>feat(attendance): update bloc</td><td></td><td>02/12/2025 01:07</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>3922272</td><td>feat(attendance): update use cases</td><td></td><td>02/12/2025 01:06</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>92733d0</td><td>feat(attendance): update attendance repository</td><td></td><td>02/12/2025 01:06</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>1e404d3</td><td>feat(attendance): update student entity</td><td></td><td>02/12/2025 01:06</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>0be07ad</td><td>feat(attendance): add attendance dtos</td><td></td><td>02/12/2025 01:05</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>4141f05</td><td>feat(attendance): update attendance module and remote data source</td><td></td><td>02/12/2025 01:04</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>ce6c2c9</td><td>feat(attendance): add localization</td><td></td><td>02/12/2025 01:03</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>12ba7da</td><td>feat(attendance): update app router</td><td></td><td>02/12/2025 01:02</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>33368a8</td><td>Merge pull request #13 from nistrahq/feature/app-settings</td><td></td><td>01/12/2025 17:31</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>707fccc</td><td>feat: add terms and privacy acceptance text to sign-in form with localization support</td><td></td><td>01/12/2025 17:29</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>45f9b8b</td><td>Merge pull request #12 from nistrahq/feature/teacher-profile</td><td></td><td>01/12/2025 17:22</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>43dd531</td><td>feat(auth): implement forgot password functionality with localization support</td><td></td><td>01/12/2025 17:21</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>9d4a9b2</td><td>Merge pull request #11 from nistrahq/feature/app-settings</td><td></td><td>01/12/2025 16:32</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>2fe865f</td><td>refactor: remove unused imports from app_router.dart</td><td></td><td>01/12/2025 16:30</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>253c237</td><td>feat: add settings pages</td><td></td><td>01/12/2025 16:30</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>1da138b</td><td>feat: add settings pages</td><td></td><td>01/12/2025 16:10</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>cf46e69</td><td>feat: add es and en x2</td><td></td><td>01/12/2025 16:05</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>8782ea8</td><td>feat: add es and en</td><td></td><td>01/12/2025 16:03</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>b601c27</td><td>Merge pull request #10 from nistrahq/feature/teacher-profile</td><td></td><td>01/12/2025 15:03</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>b48e430</td><td>chore(ios): add Podfile and update xcconfig includes for debug and release configurations</td><td></td><td>01/12/2025 15:00</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>f4b27f8</td><td>feat(auth): add reset password functionality with UI and localization support</td><td></td><td>01/12/2025 15:00</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>eb3e68b</td><td>feat(auth): implement reset password flow with request, verification, and reset functionalities</td><td></td><td>01/12/2025 15:00</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>0af565d</td><td>feat(auth): add password reset functionality with request, verification, and reset operations</td><td></td><td>01/12/2025 14:59</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>3221834</td><td>Merge pull request #9 from nistrahq/feature/attendance-management</td><td></td><td>28/11/2025 16:27</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>2016d58</td><td>Merge pull request #8 from nistrahq/feature/schedules-management</td><td></td><td>28/11/2025 16:26</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>e04e97c</td><td>feat(schedule): update teaching reschedule page to save changes</td><td></td><td>27/11/2025 10:30</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>f9c837d</td><td>feat(attendance): update home page</td><td></td><td>27/11/2025 00:17</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>69892ee</td><td>feat(attendance): update remote data source implementation</td><td></td><td>27/11/2025 00:17</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>fe566cd</td><td>feat(attendance): add widgets and page</td><td></td><td>27/11/2025 00:17</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>7a44e12</td><td>feat(attendance): add use cases</td><td></td><td>27/11/2025 00:14</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>f51f221</td><td>feat(attendance): add blocs</td><td></td><td>27/11/2025 00:14</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>a878d7e</td><td>feat(attendance): add repository</td><td></td><td>27/11/2025 00:13</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>5bba492</td><td>feat(attedance): add domain model student</td><td></td><td>27/11/2025 00:13</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>fd168ac</td><td>feat(attendance): add endpoints</td><td></td><td>27/11/2025 00:12</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>d87f982</td><td>feat(attendance): add student response dto</td><td></td><td>27/11/2025 00:12</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>03e58a1</td><td>feat(attendance): add dto</td><td></td><td>27/11/2025 00:11</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>b60faaf</td><td>feat(attendance): delete old files</td><td></td><td>27/11/2025 00:10</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>e6c740c</td><td>feat(attendance): add module</td><td></td><td>27/11/2025 00:09</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>93add3e</td><td>feat(attendance): add remote data source</td><td></td><td>27/11/2025 00:09</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>d2a109e</td><td>feat(attendance): add local data source</td><td></td><td>27/11/2025 00:09</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>a81fa22</td><td>feat(attendance): update injectable config</td><td></td><td>27/11/2025 00:06</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>c827b36</td><td>feat(attendance): update app router</td><td></td><td>27/11/2025 00:05</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>3605b70</td><td>Merge branch 'develop' into feature/attendance-management</td><td></td><td>26/11/2025 20:42</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>ef9e5c8</td><td>feat: add dependency injection for rescheduling class sessions and related bloc</td><td></td><td>26/11/2025 15:50</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>d5c5c09</td><td>feat: add navigation to reschedule session with item ID in ScheduleCard</td><td></td><td>26/11/2025 15:46</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>96e3df0</td><td>feat: implement TeachingReschedulePage for managing class session rescheduling</td><td></td><td>26/11/2025 15:46</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>b1defbb</td><td>feat: add route for rescheduling class sessions</td><td></td><td>26/11/2025 15:46</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>5d2d56f</td><td>feat: add RescheduleState classes for managing reschedule states</td><td></td><td>26/11/2025 15:46</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>a41a9e1</td><td>feat: add SubmitReschedule event class for rescheduling sessions</td><td></td><td>26/11/2025 15:45</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>f1abd4d</td><td>feat: add RescheduleBloc for handling reschedule events and states</td><td></td><td>26/11/2025 15:45</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>e4444b2</td><td>feat: implement RescheduleClassSession use case with RescheduleParams</td><td></td><td>26/11/2025 15:45</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>a36873b</td><td>feat: add rescheduleClassSession method to ScheduleRepository</td><td></td><td>26/11/2025 15:44</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>933ea5a</td><td>feat: implement rescheduleClassSession method in ScheduleRepositoryImpl</td><td></td><td>26/11/2025 15:44</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>d44e7c2</td><td>feat: add rescheduleClassSession endpoint to ScheduleEndpoints</td><td></td><td>26/11/2025 15:44</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>e0b97db</td><td>feat: add RescheduleRequestDto for handling reschedule requests</td><td></td><td>26/11/2025 15:43</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>5ac8adb</td><td>feat: add RescheduleClassSession use case and RescheduleBloc to ScheduleModule</td><td></td><td>26/11/2025 15:43</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>8f8ac4c</td><td>feat: add rescheduleClassSession method to ScheduleRemoteDataSource</td><td></td><td>26/11/2025 15:43</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>b259eb8</td><td>feat: add rescheduleClassSession method to ScheduleRemoteDataSourceImpl</td><td></td><td>26/11/2025 15:43</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>b622f67</td><td>refactor: rename variable for readability in HomePage</td><td></td><td>25/11/2025 19:30</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>193e460</td><td>refactor(router): remove unused ProfileBloc imports</td><td></td><td>25/11/2025 19:30</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>e176287</td><td>refactor(router): remove global ProfileBloc injection from StatefulShellRoute</td><td></td><td>25/11/2025 19:29</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>c2abb17</td><td>feat: integrate ProfileBloc globally with MultiBlocProvider</td><td></td><td>25/11/2025 19:28</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>1ce1274</td><td>Merge pull request #7 from nistrahq/release/v1.0.0</td><td></td><td>13/11/2025 05:25</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>262f785</td><td>Merge pull request #6 from nistrahq/feature/schedules-management</td><td></td><td>13/11/2025 05:23</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>f97d72b</td><td>feat(schedules): Improves empty state message and adjusts list padding</td><td></td><td>13/11/2025 02:01</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>852ec84</td><td>feat(schedules): Redesigns schedule card layout for improved clarity</td><td></td><td>13/11/2025 02:01</td></tr>
+    </tbody>
+</table>
+
+
+**Development Evidence - Students Mobile**
+
+<table>
+    <thead>
+    <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit ID</th>
+    <th>Commit Message</th>
+    <th>Commit Body</th>
+    <th>Committed On</th>
+    </tr>
+    </thead>
+<tbody>
+<tr><td>demy-students</td><td>develop</td><td>b528e04</td><td>Merge pull request #5 from nistrahq/feature/settings</td><td></td><td>03/12/2025 14:50</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>5265518</td><td>Merge branch 'develop' into feature/settings</td><td></td><td>03/12/2025 14:50</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>7d55e13</td><td>Merge pull request #4 from nistrahq/feature/schedule</td><td></td><td>03/12/2025 14:47</td></tr>
+<tr><td>demy-students</td><td>feature/settings</td><td>f0fcf25</td><td>feat: add new settings features</td><td></td><td>03/12/2025 14:44</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>3734ebb</td><td>feat(profile): enhance student profile with birthdate handling and loading state</td><td></td><td>03/12/2025 14:22</td></tr>
+<tr><td>demy-students</td><td>feature/home</td><td>7976c14</td><td>feat(home): simplify layout in HomeView and UpdatesSection</td><td></td><td>03/12/2025 14:09</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>2532890</td><td>feat(schedule): normalize date handling in ScheduleViewModel and ScheduleView</td><td></td><td>03/12/2025 13:32</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>dc36ba3</td><td>feat(schedule): enhance schedule management with session updates and localization support</td><td></td><td>03/12/2025 13:23</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>b8c217f</td><td>feat(schedule): implement schedule feature with data sources, repositories, and view model</td><td></td><td>03/12/2025 13:03</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>4e88789</td><td>Merge pull request #3 from nistrahq/feature/schedule</td><td></td><td>03/12/2025 12:12</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>f96f3d5</td><td>feat(schedule): import Combine in ScheduleViewModel for reactive programming</td><td></td><td>03/12/2025 12:11</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>c47df05</td><td>feat(schedule): add ScheduleView and integrate navigation from HomeView</td><td></td><td>03/12/2025 11:12</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>1ffe530</td><td>feat: add new feature for schedule</td><td></td><td>03/12/2025 09:55</td></tr>
+<tr><td>demy-students</td><td>feature/home</td><td>38241eb</td><td>feat: Implement Home feature with student data retrieval</td><td></td><td>02/12/2025 15:59</td></tr>
+<tr><td>demy-students</td><td>feature/settings</td><td>d07b6c4</td><td>feat(i18n): add new localized strings for permissions and actions</td><td></td><td>01/12/2025 09:48</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>6e0fdce</td><td>Merge pull request #2 from nistrahq/feature/home</td><td></td><td>01/12/2025 09:41</td></tr>
+<tr><td>demy-students</td><td>feature/home</td><td>7f145c1</td><td>feat(i18n): enhance localization for Home, Profile, and Settings views</td><td></td><td>01/12/2025 08:24</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>931cbb8</td><td>fea(i18n)t: add localization support for Home, Profile, and Settings views</td><td></td><td>01/12/2025 08:07</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>20a68a0</td><td>feat: add home remote data source, update API endpoints, and enhance profile/settings views layout</td><td></td><td>01/12/2025 07:50</td></tr>
+<tr><td>demy-students</td><td>feature/home</td><td>a4baf90</td><td>feat(home): implement getCurrentStudent use case and update HomeViewModel to load student data</td><td></td><td>01/12/2025 07:49</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>00687d1</td><td>feat(auth): refactor signIn method to include field validation and loading state management</td><td></td><td>30/11/2025 10:35</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>0713014</td><td>fix: profile view AGAINn</td><td></td><td>28/11/2025 02:03</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>d20077d</td><td>fix: profile view AGAIN</td><td></td><td>28/11/2025 01:58</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>72cfd33</td><td>fix: profile view</td><td></td><td>28/11/2025 01:53</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>6d4745d</td><td>feat: add modals for profile</td><td></td><td>26/11/2025 01:42</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>0d2eac2</td><td>feat: add birthday and password modal and section in profile</td><td></td><td>26/11/2025 01:30</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>1fd40b3</td><td>feat: add navbar plus two views to try it</td><td></td><td>26/11/2025 00:26</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>67c9fb9</td><td>feat: add real views for home page</td><td></td><td>25/11/2025 22:09</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>ec30e3c</td><td>feat: add views for profile</td><td></td><td>25/11/2025 01:12</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>2006b8c</td><td>feat: add scenario 3 for cards</td><td></td><td>24/11/2025 20:39</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>744d779</td><td>feat: add scenarios 2 for cards</td><td></td><td>24/11/2025 20:21</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>8387728</td><td>feat: add scenarios for cards to try how do they look</td><td></td><td>24/11/2025 19:43</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>f0d127f</td><td>feat: add gradients for schedule cards</td><td></td><td>24/11/2025 18:58</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>4519fd8</td><td>feat: add view models for students home page</td><td></td><td>24/11/2025 18:06</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>5c281d5</td><td>feat: add topbar for app students</td><td></td><td>24/11/2025 17:59</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>c320d02</td><td>Merge pull request #1 from nistrahq/feature/authentication-management</td><td></td><td>24/11/2025 12:01</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>0adab5d</td><td>chore(auth): add temporary method to clear access token on app initialization</td><td></td><td>24/11/2025 11:59</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>4f067a3</td><td>styles(assets): add app icons and logo assets, update accent color definitions</td><td></td><td>24/11/2025 11:59</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>6a3acee</td><td>feat(auth): update authentication endpoints and improve error handling in sign-in process</td><td></td><td>23/11/2025 17:55</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>f08c7f6</td><td>feat(i18n): add localized strings for authentication and general UI elements</td><td></td><td>23/11/2025 17:54</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>e8efbcb</td><td>feat(auth): implement SignInView and SignInViewModel for user authentication</td><td></td><td>23/11/2025 15:04</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>89a0727</td><td></td><td></td><td>23/11/2025 15:03</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>4f6ef3e</td><td>styles(shared): add design system components including colors, typography, spacing, radii, and shadows</td><td></td><td>23/11/2025 13:05</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>73a4d4b</td><td>feat(auth): enhance DIContainer with auth repository and update app entry point to use AppRouter</td><td></td><td>22/11/2025 18:05</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>81a14d3</td><td>feat(auth): implement authentication data source and repository with sign-in functionality</td><td></td><td>22/11/2025 18:05</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>ad2422d</td><td>feat(auth): add user entity and authentication repository with sign-in use case</td><td></td><td>22/11/2025 18:04</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>2b820d1</td><td>feat: implement initial app structure with environment configuration, session management, and API endpoints</td><td></td><td>22/11/2025 17:37</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>e82760d</td><td>docs: add issue and pull request templates for better contribution guidelines</td><td></td><td>22/11/2025 17:34</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>9fae5a3</td><td>chore: add initial project documentation, including security policy, and contribution guidelines</td><td></td><td>22/11/2025 17:31</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>256d37d</td><td>chore: organize App folder structure for cowork with team members</td><td></td><td>18/11/2025 18:12</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>5554388</td><td>chore: new initial iOS project structure + gitignore + gitattributes</td><td></td><td>16/11/2025 14:16</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>1e16de3</td><td>chore: clean repository for new project</td><td></td><td>16/11/2025 13:34</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>3efb24a</td><td>chore(vscode): add workspace settings for consistent LF and formatting</td><td></td><td>30/10/2025 12:05</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>d1365cb</td><td>chore: enforce LF line endings via .gitattributes</td><td></td><td>30/10/2025 11:49</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>a5e2a97</td><td>chore(gitignore): add xcshareddata exclusion for Xcode user settings</td><td></td><td>18/10/2025 02:10</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>ab49ecd</td><td>chore: remove duplicate .gitignore</td><td></td><td>13/09/2025 12:39</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>4d6ef6b</td><td>fix: remove xcuserdata folders</td><td></td><td>13/09/2025 12:33</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>f42830f</td><td>chore: add .gitignore file</td><td></td><td>13/09/2025 12:31</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>b9a85a9</td><td>Initial Commit</td><td></td><td>13/09/2025 09:31</td></tr>
+</tbody>
+</table>
 
 #### 4.2.3.4. Testing Suite Evidence for Sprint Review
 
@@ -15182,10 +15349,178 @@ A continuación se presenta una captura de pantalla de nuestro tablero en Trello
 
 #### 4.2.3.5. Execution Evidence for Sprint Review
 
+**Teacher Mobile Application**
+
+Evidencia de la funcionalidad clave y la interfaz de usuario del aplicativo móvil diseñado para que los profesores visualicen sus horarios por dia de la semana, reprogramen clases y registren asistencia de los estudiantes.
+
+**Splash Screen — Visualización de Marca**
+
+Muestra el logo y el nombre de la aplicación durante el inicio, permitiendo que los recursos se carguen en segundo plano.
+
+![Splash Screen](./assets/ux-ui/evidences/mobile/teacher-mobile-splash-screen.jpg)
+
+**Sign In — Inicio de Sesión del Profesor**
+
+Interfaz de inicio de sesión donde el profesor ingresa su correo electrónico y contraseña registradas por el administrador para acceder a las funcionalidades de la aplicación móvil. Incluye la opción para recuperar la contraseña y enlaces a los términos y condiciones.
+
+![Sign In](./assets/ux-ui/evidences/mobile/teacher-mobile-sign-in.jpg)
+
+**Terms and Conditions — Detalles Legales y de Uso**
+
+Pantalla que detalla los términos de uso y las políticas de la plataforma, incluyendo la aceptación de los mismos, la descripción del servicio, las responsabilidades del usuario y las condiciones de uso aceptable.
+
+![Terms and Conditions](./assets/ux-ui/evidences/mobile/teacher-mobile-terms-and-conditions.jpg)
+
+**Privacy Policy — Recolección y Uso de Datos**
+
+Detalle de la información que la aplicación recopila de los usuarios y las entidades, y el uso que se le da a esta información.
+
+![Privacy Policy](./assets/ux-ui/evidences/mobile/teacher-mobile-privacy-policy.jpg)
+
+**Forgot Password — Verificación de Correo Electrónico**
+
+Pantalla que permite a los profesores recuperar su acceso en caso de olvidar su contraseña. Se solicita el correo electrónico asociado a la cuenta para enviar un código de verificación y proceder con el restablecimiento seguro de la clave.
+
+![Forgot Password](./assets/ux-ui/evidences/mobile/teacher-mobile-forgot-password.jpg)
+
+**Home — Vista Principal y Horario del Profesor**
+
+Pantalla de inicio que ofrece acceso rápido a módulos clave como Registro de Asistencia, Horario de Clases y Notificaciones. Muestra inmediatamente el horario del día con la hora y ubicación, cumpliendo el objetivo principal de la aplicación.
+
+![Home](./assets/ux-ui/evidences/mobile/teacher-mobile-home.jpg)
+
+**Profile — Gestión de Cuenta y Detalles Personales**
+
+Muestra los datos básicos del profesor logueado: nombre completo, correo electrónico y número de teléfono. Esta sección permite al usuario ver su información de contacto y proporciona acceso directo a la función de Reset Password para mantener la seguridad de la cuenta.
+
+![Profile](./assets/ux-ui/evidences/mobile/teacher-mobile-profile.jpg)
+
+**Settings — Opciones de Configuración y Cierre de Sesión**
+
+Pantalla que consolida opciones esenciales para el usuario. Ofrece acceso rápido a los documentos legales (Terms and Conditions y Privacy Policy) y la funcionalidad clave de Cerrar Sesión para finalizar la sesión del profesor de forma segura.
+
+![Settings](./assets/ux-ui/evidences/mobile/teacher-mobile-settings.jpg)
+
+**Take Attendance Pop-up — Ventana de registro de Asistencia**
+
+Ventana emergente que aparece al hacer clic sobre una clase específica en el Home. Ofrece al profesor la acción directa de Tomar Asistencia, siendo el punto de entrada al registro de la asistencia de los estudiantes para esa sesión.
+
+![Take Attendance](./assets/ux-ui/evidences/mobile/teacher-mobile-take-attendance.jpg)
+
+**Take Attendance — Registro de Asistencia**
+
+Pantalla final que muestra el listado de estudiantes inscritos en la sesión seleccionada y permite al profesor marcar el estado de asistencia de cada uno con las etiquetas: P (Presente), E (Excusado) o A (Ausente). Una vez completado el registro, el botón Save Attendance guarda la información en el sistema.
+
+![Take Attendance](./assets/ux-ui/evidences/mobile/teacher-mobile-take-attendance-list.jpg)
+
+**Attendance Report — Reporte de Asistencia**
+
+Módulo que permite al profesor consultar las métricas de asistencia de los estudiantes por rango de fechas y curso. Muestra el porcentaje consolidado de estudiantes, desglosado por Presentes (P), Excusados (E) y Ausentes (A).
+
+![Attendance Report](./assets/ux-ui/evidences/mobile/teacher-mobile-attendance-report.jpg)
+
+**Date Picker — Selector de Fechas del Calendario de Reporte de Asistencia**
+
+Componente de interfaz de usuario que se despliega al seleccionar la fecha de inicio o fin dentro del Reporte de Asistencia. Permite al profesor elegir de manera intuitiva el rango de fechas que desea consultar, mostrando el mes y el día específico seleccionado.
+
+![Date Picker](./assets/ux-ui/evidences/mobile/teacher-mobile-date-picker.jpg)
+
+**Notifications — Historial de Alertas y Novedades**
+
+Pantalla dedicada a mostrar todas las notificaciones del sistema, alertas sobre reprogramación de clases y alertas generales del sistema. En este caso, muestra un mensaje de bienvenida confirmando que el profesor puede comenzar a gestionar sus horarios y asistencia.
+
+![Notifications](./assets/ux-ui/evidences/mobile/teacher-mobile-notifications.jpg)
+
+**Teaching Schedule — Horario Semanal**
+
+Pantalla central que permite al profesor visualizar su horario clase por clase, organizado por día de la semana. Muestra los detalles de cada clase programada y ofrece la opción de reprogramación de clases mediante el ícono de calendario rojo.
+
+![Teaching Schedule](./assets/ux-ui/evidences/mobile/teacher-mobile-teaching-schedule.jpg)
+
+**Teaching Reschedule — Reprogramación de Clase**
+
+Pantalla que se activa al seleccionar el ícono de calendario en el horario. Permite al profesor modificar los parámetros de la clase seleccionada. El profesor puede ajustar el Día de la Semana, la Hora de Inicio y la Hora de Fin, mientras que la información del curso y la ubicación permanecen inalterables.
+
+![Teaching Reschedule](./assets/ux-ui/evidences/mobile/teacher-mobile-teaching-reschedule.jpg)
+
+**Select Day — Componente de Selección de Día para Reprogramación de Clase**
+
+Ventana de diálogo que se despliega al seleccionar el campo Day of Week. Permite al profesor elegir de una lista el día de la semana al cual moverá la clase reprogramada, incluyendo todos los días, lo cual es crucial para la funcionalidad de gestión de horario.
+
+![Select Day](./assets/ux-ui/evidences/mobile/teacher-mobile-select-day.jpg)
+
+**Time Picker — Selector de Hora para Reprogramación de Clase**
+
+Ventana de diálogo que se despliega al seleccionar los campos Start Time o End Time dentro del formulario de Reprogramación de Clase. Este componente de reloj analógico permite al profesor ajustar la hora de inicio o fin de la clase reprogramada de forma precisa, eligiendo entre las opciones AM y PM
+
+![Time Picker](./assets/ux-ui/evidences/mobile/teacher-mobile-time-picker.jpg)
+
+**Link de video de presentación sobre la aplicación de Administradores**
+
+[Video Presentación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g120_upc_edu_pe/IQBDpFRGjtaOSbBDEkfNEGV_AYJIvI2hIBRoIxSQVp2WNXU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=WA85Vt)
+**Timestamp: 00:00 - 7:47**
+
+
+**Student Mobile Application**
+Evidencia de la funcionalidad clave y la interfaz de usuario del aplicativo móvil diseñado para que los estudiantes visualicen sus horarios y accedan a información institucional relevante.
+
+**Sign In — Inicio de Sesión del Estudiante**
+
+Interfaz de inicio de sesión de la aplicación móvil para estudiantes. Permite al usuario ingresar su Correo Electrónico y Contraseña para acceder a su información académica.
+
+![Sign In](./assets/ux-ui/evidences/mobile/student-mobile-sign-in.jpg)
+
+**Home — Horario y Novedades del Estudiante**
+
+Pantalla principal que saluda al estudiante y muestra de forma inmediata su Horario de hoy. Destaca la clase actual y permite navegar por el horario diario. También incluye una sección de Últimas actualizaciones para noticias y reportes.
+
+![Home](./assets/ux-ui/evidences/mobile/student-mobile-home.jpg)
+
+**Student Schedule — Horario Semanal Detallado**
+
+Pantalla que se accede al hacer clic en Ver más en el Home Screen. Muestra el horario completo del estudiante organizado por día y hora. Detalla las clases de cada día, incluyendo el nombre del profesor y la ubicación del campus, lo que permite al estudiante tener una vista completa de su semana académica.
+
+![Student Schedule](./assets/ux-ui/evidences/mobile/student-mobile-schedule.jpg)
+
+**Configuration — Configuración**
+
+Pantalla de configuración que permite al estudiante revisar la Política de Privacidad, Términos y Condicione y la opcion de cerrar sesion.
+
+![Configuration](./assets/ux-ui/evidences/mobile/student-mobile-configuration.jpg)
+
+**Profile — Datos Personales**
+
+Pantalla de perfil que muestra la información esencial de su cuenta, incluyendo fecha de nacimiento, una opción directa para Restablecer Contraseña y la configuración de Idioma (Español), permitiendo la gestión básica de su cuenta.
+
+![Profile](./assets/ux-ui/evidences/mobile/student-mobile-profile.jpg)
+
+**Privacy Policy — Recolección y Uso de Datos**
+
+Página que explica cómo la aplicación recopila y utiliza los datos del estudiante, incluyendo la Información Recopilada y las Medidas de Protección de Datos Académicos.
+
+![Profile](./assets/ux-ui/evidences/mobile/student-mobile-privacy-policy.jpg)
+
+**Terms and Conditions — Detalles Legales y de Uso**
+
+Documento que el estudiante debe aceptar al usar la plataforma, detallando la Aceptación de Términos, la Descripción del Servicio y el uso aceptable de la aplicación, fundamental para la protección legal.
+
+![Terms and Conditions](./assets/ux-ui/evidences/mobile/student-mobile-terms-conditions.jpg)
 
 
 #### 4.2.3.6. Services Documentation Evidence for Sprint Review
 
+En esta sección se presentan las evidencias de funcionamiento de los nuevos endpoints del backend desplegado en Railway, verificando su correcto comportamiento mediante Swagger UI
+
+**getScheduleByStudent (GET /schedules/by-student/{userId})**
+Este endpoint permite obtener el horario de clases asociado a un estudiante específico, utilizando su userId como parámetro de ruta.
+
+![getScheduleByStudent](./assets/ux-ui/evidences/backend/backend-doc-get-schedule-by-id.png)
+
+
+**getCurrentStudent (GET /students/me)**
+Este endpoint retorna los datos del estudiante actualmente autenticado.
+
+![getCurrentStudent](./assets/ux-ui/evidences/backend/backend-doc-get-current-student.png)
 
 
 #### 4.2.3.7. Software Deployment Evidence for Sprint Review
