@@ -15598,22 +15598,149 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 3. Si tuvieras que reemplazar tu sistema actual por este, ¿qué necesitaría tener para convencerte?
 4. ¿Qué tan probable sería que recomendaras esta herramienta a otro administrativo?
 
+**Segmento 2:**  Profesores de academia
+
+**A. App Movil (Interfaz)**
+
+1. ¿Qué tan fácil te resultó ubicar tus cursos y sesiones programadas desde la pantalla principal?
+2. ¿Pudiste registrar asistencia sin dificultad? ¿Qué parte del flujo te pareció más clara y cuál más confusa?
+3. ¿Algún botón, icono o sección te resultó poco intuitiva o no entendiste para qué servía?
+4. ¿Te tomó más tiempo del esperado realizar alguna acción? ¿Cuál?
+5. ¿Hubo algo en la experiencia que te generó confianza (o desconfianza)?
+
+**B. App Movil (Propuesta de valor)**
+
+1. ¿Qué tan útil te parece esta herramienta para organizar tus clases y controlar asistencia?
+2. ¿Qué tarea docente sientes que esta app te ayudaría a automatizar o simplificar más?
+3. Comparado con la forma en que trabajas hoy, ¿qué ventaja le encuentras?
+4. Si tuvieras que usar Demy como herramienta principal, ¿qué funcionalidades adicionales necesitarías para comprometerte al 100%?
+5. ¿Qué tan probable sería que recomendaras esta app a otros profesores de tu academia?
+
+**Segmento 3:**  Estudiantes de academia
+
+**A. App Movil (Interfaz)**
+
+1. ¿Qué tan fácil fue entender la vista principal y encontrar tus clases o horarios?
+2. ¿Pudiste navegar sin perderte entre secciones como “Mis cursos”, “Horarios”?
+3. ¿Hubo algo en la interfaz que te resultara confuso, poco visible o innecesario?
+4. ¿Qué tan rápido entendiste cómo ver tus próximas clases?
+5. ¿Hubo algo en la experiencia que te transmitiera seguridad o inseguridad?
+
+**B. App Movil (Propuesta de valor)**
+
+1. ¿Qué tan útil crees que sería esta app para mantenerte organizado con tus clases y pagos?
+2. ¿Qué funcionalidad te ahorraría más estrés o tiempo en tu día a día?
+3. Si comparas esta app con tu forma actual de organizar tus clases, ¿qué mejora más te llamó la atención?
+4. Para que realmente prefieras esta app antes que otros medios, ¿qué cosa indispensable debería incluir?
+5. ¿Qué tan probable es que recomiendes esta aplicación a otros estudiantes de tu academia?
+
 ### 4.3.2. Registro de Entrevistas
+
 
 #### Segmento: Administrativo - Entrevistado 1
 
 | Atributo                | Detalle                                                                                                 |
 |-------------------------|---------------------------------------------------------------------------------------------------------|
-| **Nombre**              | ...                                                                                                     |
-| **Edad**                | ...                                                                                                     |
-| **Sexo**                | ...                                                                                                     |
-| **Distrito**            | ...                                                                                                     |
-| **Ocupación**           | ...                                                                                                     |
-| **Fecha de entrevista** | ...                                                                                                     |
-| **Timing**              | ...                                                                                                     |
-| **Video**               | [Ver en Microsoft Stream]()                                                                             |
-| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-administrator-1.png) |
-| **Resumen**             | ...                                                                                                     |
+| **Nombre**              | Nataly Rodríguez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Edad**                | 30 años                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Sexo**                | Femenino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Distrito**            | Jesús María                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Ocupación**           | Administradora                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Fecha de entrevista** | 26/11/24                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Timing**              | 00:00 - 16:45                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBs7QjLt83AS42ooOpldkO3Af0fVzoc3Mr4DPeAYJZl3FM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=W3xzZA)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-administrator-1.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Resumen**             | Nataly es una administradora de 30 años que trabaja en Lima gestionando academias en el rubro de salud. Considera que la aplicación mostrada cumple muy bien con lo que necesita y la describe como “perfecta”, pero sugiere incorporar una herramienta de dictado por voz para registrar asistencia de muchos alumnos de forma más rápida y práctica. Además, señala que la landing page debería incluir un chat de soporte visible y especificar claramente los horarios de atención para que los usuarios sepan cuándo pueden recibir ayuda. |                                                                                                                                                                                                                                                                        
+#### Segmento: Administrativo - Entrevistado 2
+
+| Atributo                | Detalle                                                                                                 |
+|-------------------------|---------------------------------------------------------------------------------------------------------|
+| **Nombre**              | Germán Rivera                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Edad**                | 35 años                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Distrito**            | Jesus Maria                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Ocupación**           | Especialista en marketing académico                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Fecha de entrevista** | 30/11/25                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Timing**              | 16:46 – 33:28                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Video**               |  [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBs7QjLt83AS42ooOpldkO3Af0fVzoc3Mr4DPeAYJZl3FM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=W3xzZA)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-administrator-2.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Resumen**             | Germán es un profesional de 35 años que gestiona el área de marketing en academias de Lima. Percibe la aplicación como profesionalmente impecable y destaca que su diseño y organización transmiten confianza desde el primer momento. Como sugerencia principal para la landing page, recomienda aclarar mejor qué herramientas y funcionalidades ofrece Demy en cada sección, evitando mensajes ambiguos. En cuanto a la versión web del dashboard, señala que los cuadros o tarjetas dentro del panel deberían redirigir directamente a cada sección correspondiente, lo cual haría la navegación más fluida y directa para los usuarios administradores. |
+
+
+#### Segmento: Administrativo - Entrevistado 3
+
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Nombre**              | Luciano Achin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Edad**                | 29 años                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Distrito**            | Surquillo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Ocupación**           | Administrador de una academia                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Timing**              | 33:29 – 52:08                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBs7QjLt83AS42ooOpldkO3Af0fVzoc3Mr4DPeAYJZl3FM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=W3xzZA)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-administrativo-3.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Resumen**             | Luciano considera que la landing de Demy presenta buena estructura, pero advierte que el precio podría ser difícil de justificar para academias grandes. Además, comentó que los términos y condiciones no son fáciles de leer, lo que reduce confianza. En la versión web, señaló que las secciones deberían redirigir directamente al módulo correspondiente, ya que actualmente requieren pasos adicionales. También indicó que algunos módulos como registro de periodos y cursos deberían unificarse, y que la plataforma necesita mejoras de accesibilidad para facilitar su uso en contextos operativos reales. |
+
+#### Segmento: Profesor - Entrevistado 1
+
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**              | Martín Salcedo                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Edad**                | 28 años                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Distrito**            | San Juan de Lurigancho                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Ocupación**           | Profesor de academia                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Timing**              | 52:09 – 57:06                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBs7QjLt83AS42ooOpldkO3Af0fVzoc3Mr4DPeAYJZl3FM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=W3xzZA)                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-profesor-1.png)                                                                                                                                                                                                                                                                                                                                                 |
+| **Resumen**             | Martín es un profesor de 28 años que trabaja en academias en Lima. Considera que la aplicación es completa y cumple bien con lo necesario para gestionar clases y manejar finanzas relacionadas a pagos y asistencia. Sin embargo, sugiere mejorar la personalización visual del aplicativo, ya que le gustaría poder cambiar fuentes, colores y niveles de contraste para tener una experiencia más cómoda según su preferencia personal. |
+
+#### Segmento: Profesor - Entrevistado 2
+
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**              | José Zapata                                                                                                                                                                                                                                                                                                                                                                           |
+| **Edad**                | 25 años                                                                                                                                                                                                                                                                                                                                                                               |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                             |
+| **Distrito**            | Santa Anita                                                                                                                                                                                                                                                                                                                         |
+| **Ocupación**           | Profesor de academia                                                                                                                                                                                                                                                                                                                                                                  |
+| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                              |
+| **Timing**              | 57:07 – 01:01:07                                                                                                                                                                                                                                                                                                                                                                         |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBs7QjLt83AS42ooOpldkO3Af0fVzoc3Mr4DPeAYJZl3FM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=W3xzZA)                                                                                                                                                                                                                                                                                                                                                           |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-profesor-2.png)*                                                                                                                                                                                                                     |
+| **Resumen**             | José es un profesor de 25 años que percibe la aplicación como exelente y bien lograda, destacando especialmente la claridad de las secciones principales. Como sugerencia, indicó que sería muy útil incorporar una sección dedicada a visualizar las notas de los alumnos, permitiendo a los profesores consultar rendimiento y calificaciones de manera rápida desde la app. |
+
+#### Segmento: Profesor - Entrevistado 3
+
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Nombre**              | Gonzalo Pachas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Edad**                | 22 años                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Distrito**            | San Juan de Miraflores                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Ocupación**           | Profesor de academia                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Timing**              | 01:01:08 – 01:05:54                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBs7QjLt83AS42ooOpldkO3Af0fVzoc3Mr4DPeAYJZl3FM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=W3xzZA)                                                                                                                                                                                                                                                                                                                              |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-profesor-3.png)                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Resumen**             | Gonzalo considera que la aplicación está **completa y bien estructurada**, destacando que muestra tiempos exactos** en sus registros y vistas. Resaltó que para él es muy importante contar con un porcentaje claro de asistencia por alumno, ya que le permite evaluar rápidamente el compromiso de cada estudiante. Además, mencionó que preferiría que la aplicación muestre sus horarios exclusivamente en un formato semanal, ya que así organiza mejor su planificación docente. |
+
+
+#### Segmento: Alumno - Entrevistado 1
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**              | Alexander Rioja                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Edad**                | 17 años                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Distrito**            | San Juan de Miraflores                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Ocupación**           | Estudiante de academia                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Timing**              | 01:05:55 – 01:09:34                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBs7QjLt83AS42ooOpldkO3Af0fVzoc3Mr4DPeAYJZl3FM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=W3xzZA)                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-alumno-1.png)                                                                                                                                                                                                                                                                                                                             |
+| **Resumen**             | Alexander, estudiante de 17 años del COAR Lima, consideró que la aplicación para alumnos está muy bien hecha, clara y sencilla de usar. Mencionó que la recomendaría a otros estudiantes por su facilidad para encontrar clases, horarios y notificaciones. Como sugerencia, le gustaría que la app incluya un chatbot con IA dentro de la vista de alumnos, para resolver dudas rápidas sin necesidad de contactar a la academia. |
 
 ### 4.3.3. Evaluaciones según heurísticas
 
@@ -15630,7 +15757,7 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 
 **AUDITOR** : Nistra
 
-**CLIENTES** : ---
+**CLIENTES** : Nataly Rodriguez, German Rivera
 
 #### SITE o APP A EVALUAR:
 
@@ -15641,23 +15768,42 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 El alcance de esta evaluación incluye la revisión de usabilidad de las siguientes tareas:
 
 **Landing Page**:
-1. ...
-2. ...
+1. Explorar la propuesta de valor principal de Demy (Seccion hero, mensaje clave).
+2. Feature Section.
+3. How it works Section.
+4. Testimonials Section.
+5. About Us Section.
+6. Pricing Section.
+7. FAQ Section.
+8. Contact Section.
 
 **Native Android Mobile Application**:
-1. ...
-2. ...
-3. ...
+1. Home Section
+2. Schedule Section
+3. Reschedule Section
+4. Attendance Section
+5. Profile Section
 
 **Cross-Platform Mobile Application**:
-1. ...
-2. ...
-3. ...
+1. Dashboard
+2. Teachers Section
+3. Students Section
+4. Periods Section
+5. Courses Section
+6. Classsrooms Section
+7. Schedules Section
+8. Enrollments Section
+9. Scheduling Section
+10. Billing Section
+11. Finance Section
+12. Accounting Section
+13. Profile Section
 
 **Native iOS Mobile Application**:
-1. ...
-2. ...
-3. ...
+1. Home Section
+2. Schedule Section
+3. Settings Section
+4. Profile Section
 
 #### FUERA DE ALCANCE:
 
@@ -15669,9 +15815,9 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 
 **Mobile Applications**
 1. Recuperación de contraseña
-2. Política de privacidad y condiciones de uso
-3. ...
-4. ...
+2. Política de privacidad y condiciones de uso 
+3. Reportes de bugs
+4. Configuraciones generales del sistema del dispositivo.
 
 #### ESCALA DE SEVERIDAD:
 
@@ -15686,54 +15832,202 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 
 **Landing Page**
 
-| # | Problema | Escala de severidad | Heurística/ Principio Violado |
-|---|----------|---------------------|-------------------------------|
-| 1 | ...      |                     |                               |
-| 2 | ...      |                     |                               |
-| 3 | ...      |                     |                               |
+| # | Problema                                                                                                  | Escala de severidad | Heurística/ Principio Violado                        |
+| - | --------------------------------------------------------------------------------------------------------- | ------------------- | ---------------------------------------------------- |
+| 1 | La landing no incluye un chat/chatbot de soporte ni indica claramente los horarios de atención del mismo. | 1                   | Help and documentation                               |
+| 2 | La landing no explica con suficiente claridad qué herramientas ofrece cada sección.                       | 2                   | Match between system and the real world              |
+| 3 | Los términos y condiciones no se leen con claridad y afectan la confianza del usuario.                    | 2                   | Visibility of system status |
+| 4 | El precio podría no estar alineado a la percepción de valor para academias grandes.                       | 2                   | Match between system and the real world              |
 
-**Native Android Mobile Application**
 
-| # | Problema | Escala de severidad | Heurística/ Principio Violado |
-|---|----------|---------------------|-------------------------------|
-| 1 | ...      |                     |                               |
-| 2 | ...      |                     |                               |
-| 3 | ...      |                     |                               |
+**DESCRIPCIÓN DE PROBLEMAS:**
 
-**Cross-Platform Mobile Application**
+**PROBLEMA #1:** Falta de chat o chatbot de soporte con horarios visibles
 
-| # | Problema | Escala de severidad | Heurística/ Principio Violado |
-|---|----------|---------------------|-------------------------------|
-| 1 | ...      |                     |                               |
-| 2 | ...      |                     |                               |
-| 3 | ...      |                     |                               |
-
-**Native iOS Mobile Application**
-
-| # | Problema | Escala de severidad | Heurística/ Principio Violado |
-|---|----------|---------------------|-------------------------------|
-| 1 | ...      |                     |                               |
-| 2 | ...      |                     |                               |
-| 3 | ...      |                     |                               |
-
-#### DESCRIPCIÓN DE PROBLEMAS:
-
-**PROBLEMA #1:** ...
-
-**Severidad: ...**  
-**Heurística violada:** ...
+**Severidad: 1**  
+**Heurística violada:** Help and documentation
 
 **Problema:**
-...
+En la landing page de Demy no se visualiza ningún chat o chatbot de soporte que permita a los usuarios resolver dudas rápidas sobre el producto. Además, tampoco se indican horarios de atención ni disponibilidad del equipo de soporte. Esto genera incertidumbre en potenciales clientes (como administradores de academias) que podrían necesitar aclarar preguntas antes de tomar una decisión, y los obliga a buscar otros medios de contacto menos inmediatos.
 
 ![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-landing.png)
 
 **Recomendación:**
-...
+Incorporar un chat o chatbot de soporte visible en la landing (por ejemplo, en la esquina inferior derecha), junto con un mensaje claro de disponibilidad, indicando los horarios de atención y el tiempo estimado de respuesta. En caso de estar fuera de horario, el chat podría cambiar a un modo “déjanos tu mensaje” para mantener expectativas realistas y mejorar la confianza en el servicio.
 
-**PROBLEMA #2:** ...
+**PROBLEMA #2:** Falta de claridad en la explicación de las herramientas y secciones de la landing
+**Severidad: 2**
+**Heurística violada:** Match between system and the real world
+
+**Problema:**
+La landing page de Demy no explica con suficiente claridad qué herramientas o funcionalidades incluye cada sección del sistema. El contenido presenta descripciones generales, pero no especifica de manera directa y concreta qué obtiene el usuario en cada módulo (por ejemplo: gestión de horarios, registros de asistencia, control de pagos, panel para profesores, vista de estudiantes, etc.).
+Esto provoca que los usuarios —especialmente perfiles administrativos como Germán— tengan dificultades para formarse un entendimiento claro de la propuesta de valor real del producto. La falta de precisión genera dudas, afecta la confianza y exige un esfuerzo cognitivo adicional para interpretar lo que Demy realmente ofrece.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-2-landing.png)
+
+**Recomendación:**
+Ampliar y reorganizar las secciones de la landing para describir explícitamente cada herramienta o funcionalidad, utilizando lenguaje claro, ejemplos y bullets concretos. Incluir pequeñas visualizaciones (íconos, screenshots o micro-demos) que ayuden a los usuarios a relacionar cada sección con su utilidad real dentro de una academia. Esto mejora la comprensión inmediata, reduce la ambigüedad y alinea el contenido con los modelos mentales del usuario.
+
+**PROBLEMA #3:** Los términos y condiciones no son claros ni fácilmente visibles
+
+**Severidad:** 2
+**Heurística violada:** Visibility of system status
+
+**Problema:**
+En las entrevistas se mencionó que los términos y condiciones de la landing no se leen bien, ya sea por tamaño, ubicación o claridad del texto. Esto afecta la percepción de transparencia y puede generar desconfianza en usuarios que buscan información legal o de uso antes de registrarse o contratar el servicio. La falta de una sección clara y fácil de localizar obstaculiza la comprensión del alcance del producto y de las condiciones del servicio.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-3-landing.png)
+
+
+**Recomendación:**
+Crear una sección dedicada y visible de “Términos y Condiciones” con tipografía adecuada, enlaces accesibles y estructura clara. Añadir además un resumen breve en lenguaje simple para reforzar transparencia.
+
+**PROBLEMA #4:** El precio puede resultar difícil de justificar para academias grandes
+
+***Severidad:** 2
+**Heurística violada:** Match between system and the real world
+
+**Problema:**
+Luciano indicó que, desde la perspectiva de academias grandes, el precio de Demy podría no encajar con sus estructuras de costo típicas. Esto sugiere que la landing no comunica adecuadamente la relación calidad–valor para academias de mayor escala, o no explica suficientemente los beneficios diferenciales que justifican la inversión.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-4-landing.png)
+
+**Recomendación:**
+Agregar una sección de precios más segmentada (pequeñas, medianas y grandes academias) y resaltar casos de uso que muestran ahorro, eficiencia o indicadores de impacto financiero.
 
 <hr class="page-break">
+
+**Native Android Mobile Application**
+
+| # | Problema                                                                                                                   | Escala de severidad | Heurística/ Principio Violado                                |
+| - | -------------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------ |
+| 1 | La aplicación no permite ajustar fuentes, colores o contrastes, reduciendo la accesibilidad y personalización.             | 2                   | User Control and Freedom                                               |
+| 2 | La app no incluye una sección para ver las notas de los alumnos, generando ausencia de información relevante.              | 3                   | Match between system and the real world                      |
+| 3 | La vista de horarios no ofrece un modo de visualización semanal, lo que afecta la alineación con el flujo natural docente.         | 2                   | Match between system and the real world                                  |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1:** Falta de opciones para ajustar fuentes, colores y contraste
+
+**Severidad:** 2
+**Heurística violada:** User Control and Freedom
+
+**Problema:**
+La aplicación móvil para profesores no cuenta con opciones de personalización visual como ajustar tamaño de fuente, nivel de contraste o paleta de colores. Para profesores como Martín, estas opciones mejoran significativamente la comodidad visual durante sesiones largas de registro de asistencia, revisión de pagos o consulta de clases.
+La ausencia de estas configuraciones reduce la accesibilidad general de la aplicación y puede generar fatiga visual, especialmente en contextos de baja luz o uso frecuente.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-mobile.jpeg)
+
+
+**Recomendación:**
+Agregar un módulo de “Accesibilidad” dentro de la configuración que permita modificar tamaño de texto, modo de alto contraste y estilo de color. Esto mejora la experiencia de usuarios con diferentes preferencias visuales y aligera la carga cognitiva durante el uso prolongado.
+
+**PROBLEMA #2:** Falta una sección para visualizar las notas de los alumnos
+
+**Severidad:** 3
+**Heurística violada:** Match between system and the real world
+
+**Problema:**
+Profesores como José esperan que una aplicación académica incluya acceso rápido y directo a las calificaciones de los estudiantes. Sin embargo, la app actual no cuenta con una sección dedicada a consultar notas, lo que genera incompletitud en la experiencia y obliga al docente a acudir a otros sistemas o métodos informales (mensajes, cuadernos, Excel).
+Esta ausencia no coincide con el modelo mental del profesor sobre qué debe ofrecer una app de gestión académica, afectando la percepción de utilidad general.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-2-mobile.jpeg)
+
+**Recomendación:**
+Implementar una vista o módulo de “Notas de alumnos” accesible desde el dashboard principal o desde cada curso. Esta debe mostrar calificaciones, promedios y progreso del alumno. Así se complementa la experiencia docente y se alinea la app con las expectativas reales del usuario.
+
+**PROBLEMA #3:** La vista de horarios no incluye un modo semanal
+
+**Severidad:** 2
+**Heurística violada:** Match between system and the real world
+
+**Problema:**
+El docente indicó que prefiere visualizar sus horarios únicamente en formato semanal, ya que así organiza mejor sus clases. La app no ofrece esta vista, lo que no se alinea con su modelo mental ni con prácticas comunes en calendarios académicos. Esto dificulta la planificación y puede generar confusión al navegar entre fechas.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-3-mobile.jpeg)
+
+**Recomendación:**
+Agregar un “Weekly View” con estructura de calendario docente, permitiendo alternar entre vista diaria, semanal y mensual según preferencia.
+
+<hr class="page-break">
+
+**Cross-Platform Mobile Application**
+
+| # | Problema                                                                                                                         | Escala de severidad | Heurística/ Principio Violado           |
+| - | -------------------------------------------------------------------------------------------------------------------------------- | ------------------- | --------------------------------------- |
+| 1 | No existe una opción de dictado por voz para registrar o gestionar grandes cantidades de alumnos.                                | 1                   | Flexibility and efficiency of use     |
+| 2 | Algunas tarjetas o secciones del dashboard no redirigen correctamente, lo que genera confusión en la navegación.                 | 2                   | Consistency and standards               |
+| 3 | Las secciones relacionadas (registro de periodos y cursos) están separadas, lo que no coincide con el flujo natural del usuario. | 2                   | Match between system and the real world |
+
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1:** Ausencia de dictado por voz para registrar alumnos en flujos masivos
+
+**Severidad: 1**  
+**Heurística violada:** Flexibility and efficiency of use
+
+**Problema:**
+En la aplicación móvil cross-platform (vista administrativa), el registro y la gestión de alumnos en secciones como Attendance, Enrollments o Students se realiza únicamente mediante interacción táctil y escritura manual. Para perfiles como Nataly, que gestionan grupos grandes de alumnos, esto implica muchas pulsaciones y tiempo invertido al registrar asistencias o realizar operaciones repetitivas. La falta de una opción de dictado por voz limita el aprovechamiento de atajos para usuarios frecuentes y reduce la eficiencia del flujo, especialmente en contextos de alta carga operativa.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-cross-platform.jpeg)
+
+**Recomendación:**
+Incorporar una opción de entrada por voz en los formularios o listas donde se realizan acciones repetitivas (por ejemplo, registrar asistencia o buscar alumnos), permitiendo que el usuario dicte nombres, estados o comandos básicos. Esto puede implementarse como un ícono de micrófono en los campos relevantes, aprovechando las APIs de reconocimiento de voz del sistema operativo. De esta forma, se mejora la eficiencia para usuarios expertos y se ofrece un modo de interacción alternativo más práctico en contextos con muchos alumnos.
+
+**PROBLEMA #2:** Tarjetas del dashboard que no redirigen correctamente
+
+**Severidad: 2**
+**Heurística violada:** Consistency and standards
+
+**Problema:**
+En la aplicación móvil, algunas tarjetas o secciones del dashboard visual parecen ser elementos pulsables que deberían llevar al usuario a un módulo específico (por ejemplo, asistencia, cursos, pagos o alumnos). Sin embargo, al presionarlas, no redirigen o no realizan ninguna acción, lo que rompe con el comportamiento estándar de interfaces móviles.
+Este tipo de inconsistencia genera confusión, ya que el usuario asume —por su forma, tamaño y estilo— que estos elementos deberían cumplir una función navegable. La falta de respuesta afecta la fluidez del uso y provoca una experiencia de exploración frustrante, especialmente para usuarios nuevos.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-2-cross-platform.jpeg)
+
+**Recomendación:**
+Asegurar que todas las tarjetas del dashboard tengan un comportamiento consistente: si un componente luce como un acceso directo, debe redirigir al módulo correspondiente. También se recomienda aplicar retroalimentación visual (como animación de “tap”, cambio de opacidad o ripple effect) para reforzar la sensación de acción. En caso de que una tarjeta aún no tenga funcionalidad implementada, es preferible ocultarla temporalmente o mostrar un estado “Próximamente” para evitar confusiones.
+
+**PROBLEMA #3:** Las secciones de registro de periodos y cursos deberían estar unificadas
+
+**Severidad:** 2
+**Heurística violada:** Match between system and the real world
+
+**Problema:**
+Para Luciano, registrar periodos y cursos es parte de un mismo flujo operativo. La separación de estas secciones obliga a entrar a diferentes pantallas para completar una tarea cohesiva, lo que no coincide con el modelo mental del usuario ni con las prácticas reales de gestión académica.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-3-cross-platform.jpeg)
+
+**Recomendación:**
+Integrar ambos registros en un flujo único o permitir crearlos desde una misma pantalla con pasos consecutivos.
+
+<hr class="page-break">
+
+**Native iOS Mobile Application**
+
+| # | Problema                                                                                                 | Escala de severidad | Heurística/ Principio Violado |
+| - | -------------------------------------------------------------------------------------------------------- | ------------------- | ----------------------------- |
+| 1 | La aplicación no incluye un chatbot o asistente virtual para resolver dudas del alumno dentro de la app. | 2                   | Help and documentation        |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1:** Ausencia de un chatbot o asistente virtual para resolver dudas del alumno
+
+**Severidad:** 2
+**Heurística violada:** Help and documentation
+
+**Problema:**
+Alexander comentó que, aunque la aplicación para alumnos es clara y fácil de usar, sería muy útil contar con un chatbot con IA dentro de la app para resolver dudas rápidas, como horarios, fechas de evaluaciones, recordatorios o detalles de cursos.
+Actualmente, la app no ofrece ningún canal de asistencia contextual, lo que obliga al alumno a buscar ayuda mediante otros medios (contactar a la academia, WhatsApp, correo), interrumpiendo su flujo de uso y reduciendo la inmediatez en la resolución de preguntas sencillas.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-ios.jpeg)
+
+**Recomendación:**
+Integrar un chatbot de soporte dentro de la app nativa de iOS, accesible desde el menú principal o desde la vista de cursos. Este asistente debería resolver preguntas frecuentes, ofrecer enlaces rápidos y permitir enviar consultas cuando el alumno necesite apoyo inmediato.
+
+<hr class="page-break">
+
 
 # Conclusiones
 
@@ -15775,7 +16069,7 @@ El video de App Validation muestra la evaluación de la aplicación a través de
 
 A continuación, se muestra el video que documenta este proceso de validación de la aplicación:
 
-Enlace al video app validation: [Ver en Microsoft Stream]()
+Enlace al video app validation: [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQBdM5snnCi0S47Z-P__eHcSAXF6oQjEAnbQvquqwZThklY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Rvil5x)
 
 <hr class="page-break">
 
