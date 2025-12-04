@@ -15113,22 +15113,20 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 
 #### Segmento: Administrativo - Entrevistado 3
 
-| Atributo                | Detalle                                                                                                 |
-|-------------------------|---------------------------------------------------------------------------------------------------------|
-| **Nombre**              | ...                                                                                                     |
-| **Edad**                | ...                                                                                                     |
-| **Sexo**                | ...                                                                                                     |
-| **Distrito**            | ...                                                                                                     |
-| **Ocupación**           | ...                                                                                                     |
-| **Fecha de entrevista** | ...                                                                                                     |
-| **Timing**              | ...                                                                                                     |
-| **Video**               | [Ver en Microsoft Stream]()                                                                             |
-| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-administrator-3.png) |
-| **Resumen**             | ...                                                                                                     |
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Nombre**              | Luciano                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Edad**                | 29 años                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Distrito**            | Surquillo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Ocupación**           | Administrador de una academia                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Timing**              | 00:00 – 14:58                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Video**               | [Ver en Microsoft Stream]()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-administrativo-3.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Resumen**             | Luciano considera que la landing de Demy presenta buena estructura, pero advierte que el precio podría ser difícil de justificar para academias grandes. Además, comentó que los términos y condiciones no son fáciles de leer, lo que reduce confianza. En la versión web, señaló que las secciones deberían redirigir directamente al módulo correspondiente, ya que actualmente requieren pasos adicionales. También indicó que algunos módulos como registro de periodos y cursos deberían unificarse, y que la plataforma necesita mejoras de accesibilidad para facilitar su uso en contextos operativos reales. |
 
-#### Segmento: Profesor - Entrevistado 1
 
-| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Nombre**              | Martín Salcedo                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | **Edad**                | 28 años                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -15174,18 +15172,19 @@ Para el diseño de las entrevistas de validación se elaboraron guías diferenci
 
 #### Segmento: Alumno - Entrevistado 1
 
-| Atributo                | Detalle                                                                                                 |
-|-------------------------|---------------------------------------------------------------------------------------------------------|
-| **Nombre**              | ...                                                                                                     |
-| **Edad**                | ...                                                                                                     |
-| **Sexo**                | ...                                                                                                     |
-| **Distrito**            | ...                                                                                                     |
-| **Ocupación**           | ...                                                                                                     |
-| **Fecha de entrevista** | ...                                                                                                     |
-| **Timing**              | ...                                                                                                     |
-| **Video**               | [Ver en Microsoft Stream]()                                                                             |
-| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-alumno-1.png) |
-| **Resumen**             | ...                                                                                                     |
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                               |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**              | Luciano                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Edad**                | 29 años                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Distrito**            | Surquillo                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Ocupación**           | Administrador de una academia                                                                                                                                                                                                                                                                                                                  |
+| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Timing**              | 00:00 – 14:58                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Video**               | [Ver en Microsoft Stream]()                                                                                                                                                                                                                                                                                                                                                                           |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-alumno-1.png)                                                                                                                                                                                                                                                                                                      |
+| **Resumen**             | Luciano, de 29 años, probó la aplicación desde la perspectiva de alumno. Consideró que la app es clara, ordenada y fácil de navegar. Destacó que las secciones principales están bien organizadas y que encontrar horarios y cursos fue sencillo. Mencionó como sugerencia que sería útil reforzar algunos indicadores visuales para hacer más evidente el progreso del alumno en sus cursos y pagos. |
+
 
 
 ### 4.3.3. Evaluaciones según heurísticas
@@ -15278,11 +15277,13 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 
 **Landing Page**
 
-| # | Problema                                                                                                  | Escala de severidad | Heurística/ Principio Violado     |
-| - | --------------------------------------------------------------------------------------------------------- | ------------------- | --------------------------------- |
-| 1 | La landing no incluye un chat/chatbot de soporte ni indica claramente los horarios de atención del mismo. | 1                   | Usability: Help and documentation |
-| 2 | La landing no explica con suficiente claridad qué herramientas ofrece cada sección. | 2                    | Match between system and the real world |
-| 3 | ...                                                                                                       |                     |                                   |
+| # | Problema                                                                                                  | Escala de severidad | Heurística/ Principio Violado                        |
+| - | --------------------------------------------------------------------------------------------------------- | ------------------- | ---------------------------------------------------- |
+| 1 | La landing no incluye un chat/chatbot de soporte ni indica claramente los horarios de atención del mismo. | 1                   | Help and documentation                               |
+| 2 | La landing no explica con suficiente claridad qué herramientas ofrece cada sección.                       | 2                   | Match between system and the real world              |
+| 3 | Los términos y condiciones no se leen con claridad y afectan la confianza del usuario.                    | 2                   | Help and documentation / Visibility of system status |
+| 4 | El precio podría no estar alineado a la percepción de valor para academias grandes.                       | 2                   | Match between system and the real world              |
+
 
 **DESCRIPCIÓN DE PROBLEMAS:**
 
@@ -15309,8 +15310,35 @@ Esto provoca que los usuarios —especialmente perfiles administrativos como Ger
 
 ![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-2-landing.png)
 
-Recomendación:
+**Recomendación:**
 Ampliar y reorganizar las secciones de la landing para describir explícitamente cada herramienta o funcionalidad, utilizando lenguaje claro, ejemplos y bullets concretos. Incluir pequeñas visualizaciones (íconos, screenshots o micro-demos) que ayuden a los usuarios a relacionar cada sección con su utilidad real dentro de una academia. Esto mejora la comprensión inmediata, reduce la ambigüedad y alinea el contenido con los modelos mentales del usuario.
+
+**PROBLEMA #3:** Los términos y condiciones no son claros ni fácilmente visibles
+
+**Severidad:** 2
+**Heurística violada:** Help and documentation / Visibility of system status
+
+**Problema:**
+En las entrevistas se mencionó que los términos y condiciones de la landing no se leen bien, ya sea por tamaño, ubicación o claridad del texto. Esto afecta la percepción de transparencia y puede generar desconfianza en usuarios que buscan información legal o de uso antes de registrarse o contratar el servicio. La falta de una sección clara y fácil de localizar obstaculiza la comprensión del alcance del producto y de las condiciones del servicio.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-3-landing.png)
+
+
+**Recomendación:**
+Crear una sección dedicada y visible de “Términos y Condiciones” con tipografía adecuada, enlaces accesibles y estructura clara. Añadir además un resumen breve en lenguaje simple para reforzar transparencia.
+
+**PROBLEMA #4:** El precio puede resultar difícil de justificar para academias grandes
+
+***Severidad:** 2
+**Heurística violada:** Match between system and the real world
+
+**Problema:**
+Luciano indicó que, desde la perspectiva de academias grandes, el precio de Demy podría no encajar con sus estructuras de costo típicas. Esto sugiere que la landing no comunica adecuadamente la relación calidad–valor para academias de mayor escala, o no explica suficientemente los beneficios diferenciales que justifican la inversión.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-4-landing.png)
+
+**Recomendación:**
+Agregar una sección de precios más segmentada (pequeñas, medianas y grandes academias) y resaltar casos de uso que muestran ahorro, eficiencia o indicadores de impacto financiero.
 
 <hr class="page-break">
 
