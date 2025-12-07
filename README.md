@@ -1,73 +1,55 @@
-<h2 style="text-align: center;"> Universidad Peruana de Ciencias Aplicadas </h2>
-
 <div style="text-align: center;">
   <img src="./assets/logos/upc-logo.png" alt="UPC Logo" style="width: 250px; height: auto;">
 </div>
 
+<h2 style="text-align: center;"> Universidad Peruana de Ciencias Aplicadas </h2>
+
 <h4 style="text-align: center"> Ingeniería de Software </h4>
 
-<h4 style="text-align: center"> 1ACC0238 - Aplicaciones para Dispositivos Móviles </h4>
+<h4 style="text-align: center"> Periodo: 202520 </h4>
+
+<h4 style="text-align: center"> 1ACC0238 | Aplicaciones para Dispositivos Móviles </h4>
 
 <h4 style="text-align: center"> NRC: 1798  </h4>
 
 <h4 style="text-align: center"> Docente: Jorge Luis Mayta Guillermo </h4>
 
-<h4 style="text-align: center;"> Informe del Trabajo Final </h4>
+<br>
+
+<h3 style="text-align: center;"> Informe del Trabajo Final </h3>
 
 <h4 style="text-align: center"> Startup: Nistra </h4>
 
 <h4 style="text-align: center"> Producto: Demy </h4>
 
-<h4 style="text-align: center">Team members:</h4>
+<h4 style="text-align: center">Integrantes:</h4>
 
-<div style="text-align:center; margin: 20px 0; font-size: 90%;">
-  <table style="display:inline-table; border-collapse:collapse; text-align:center; width:550px;">
-    <thead>
-      <tr>
-        <th style="padding:6px 12px;">Código</th>
-        <th style="padding:6px 12px;">Nombre</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="padding:6px 12px;">U202224135</td>
-        <td style="padding:6px 12px;">Aponte Cruzado, Andrea Marielena</td>
-      </tr>
-      <tr>
-        <td style="padding:6px 12px;">U20221G120</td>
-        <td style="padding:6px 12px;">Crispin Ramos, Daniel Franco</td>
-      </tr>
-      <tr>
-        <td style="padding:6px 12px;">U20201E843</td>
-        <td style="padding:6px 12px;">Ramirez Mestanza, Salim Ignacio</td>
-      </tr>
-      <tr>
-        <td style="padding:6px 12px;">U20221C486</td>
-        <td style="padding:6px 12px;">Sulca Gonzales, Paúl Fernando</td>
-      </tr>
-      <tr>
-        <td style="padding:6px 12px;">U20231A778</td>
-        <td style="padding:6px 12px;">Vilca Saboya, Diego Alejandro</td>
-      </tr>
-    </tbody>
-  </table>
+<div style="text-align:center; margin-top: 10px; font-size: 90%; line-height: 1.6;">
+  <p>U202224135 — Aponte Cruzado, Andrea Marielena</p>
+  <p>U20221G120 — Crispin Ramos, Daniel Franco</p>
+  <p>U20201E843 — Ramirez Mestanza, Salim Ignacio</p>
+  <p>U20221C486 — Sulca Gonzales, Paúl Fernando</p>
+  <p>U20231A778 — Vilca Saboya, Diego Alejandro</p>
 </div>
 
-<h5 style="text-align: center"> Periodo 2025-20 </h5>
+<br>
+
+<h5 style="text-align: center; font-style: italic;"> Diciembre 2025 </h5>
 
 <hr class="page-break">
 
 # Registro de Versiones del Informe
 
-| Versión | Fecha       | Autor                                                                  | Descripción de modificación                                                       |
-|---------|-------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| 1.0     | 30/08/2025  | Salim Ramirez                                                          | Creación inicial de la estructura del informe                                     |
-| 2.0     | 06/09/2025  | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se completó el Capítulo I: Presentación                                           |
-| 3.0     | 17/09/2025  | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se completó el CapÍtulo II: Requirements Development and Software Solution Design |
-| 3.1     | 28/09/2025  | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se levantó las observaciones de la primera entrega                                |
-| 4.0     | 4/10/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se completó el CapÍtulo III:  Solution UI/UX Design                               |        
-| 5.0     | 7/10/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se completó el Capítulo IV: : Product Implementation & Validation                 |  
-| 6.0     | 13/11/2025  |  Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca | Se añadió toda la sección del Sprint 2                                            |
+| Versión | Fecha        | Autor                                                                  | Descripción de modificación                                                       |
+|---------|--------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1.0     | 30/08/2025   | Salim Ramirez                                                          | Creación inicial de la estructura del informe                                     |
+| 2.0     | 06/09/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se completó el Capítulo I: Presentación                                           |
+| 3.0     | 17/09/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se completó el CapÍtulo II: Requirements Development and Software Solution Design |
+| 3.1     | 28/09/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se levantó las observaciones de la primera entrega                                |
+| 4.0     | 4/10/2025    | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se completó el CapÍtulo III:  Solution UI/UX Design                               |        
+| 5.0     | 7/10/2025    | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se completó el Capítulo IV: : Product Implementation & Validation                 |  
+| 6.0     | 13/11/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se añadió toda la sección del Sprint 2                                            |
+| 7.0     | 03/12/2025   | Andrea Aponte, Daniel Crispin, Salim Ramirez, Paúl Sulca, Diego Vilca  | Se añadió toda la sección del Sprint 3 y las entrevistas de validación            |
 
 <hr class="page-break">
 
@@ -269,6 +251,66 @@ Análisis de cantidad de commits realizados por semana.
 
 <hr class="page-break">
 
+## TF1
+
+**Tareas**
+
+Para el desarrollo del TP1, cada participante del equipo realizó las siguientes tareas:
+
+| Integrantes                      | Tarea asignada                                                                    |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| Aponte Cruzado, Andrea Marielena | - Execution Evidence <br> - Development evidence                                  |
+| Crispin Ramos, Daniel Franco     | - Development evidence                                                            |
+| Ramirez Mestanza, Salim Ignacio  | - Sprint Planning <br> - Team Collaboration Insights                              |
+| Sulca Gonzales, Paúl Fernando    | - Services Documentation <br> - Testing Suite Evidence <br> - Deployment Evidence |
+| Vilca Saboya, Diego Alejandro    | - Sprint Backlog 3                                                                |
+
+**GitHub Collaboration Insights**
+
+Se puede observar la colaboración del equipo en el desarrollo del proyecto a través de la plataforma GitHub. Esta sección destaca las contribuciones individuales y colectivas de los miembros del equipo, así como la gestión del código fuente mediante ramas y merges.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Gráfico de Pulse Insights del repositorio de GitHub.
+
+![img_2.png](assets/images/screenshots/img_2.png)
+
+</div>
+
+En GitHub se presenta un timeline de las principales ramas creadas por cada integrante del equipo, así como los procesos de merge realizados.  
+Todas las ramas fueron gestionadas siguiendo el flujo de trabajo **GitFlow**, adaptado para una organización que utiliza un sistema de control de versiones.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Gráfico de red (*network graph*) de ramas en el repositorio de GitHub.
+
+![img_3.png](assets/images/screenshots/img_3.png)
+
+</div>
+
+A continuación, se presentan los gráficos que muestran el análisis de los commits en el repositorio correspondiente al informe.  
+Estos gráficos detallan la cantidad de líneas de código añadidas por cada miembro del equipo y la actividad de commits registrada.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Análisis de líneas de código añadidas por contribuyente.
+
+![img.png](assets/images/screenshots/img.png)
+
+</div>
+
+El siguiente gráfico muestra la cantidad de commits realizados en la semana con mayor actividad en el proyecto.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+Análisis de cantidad de commits realizados por semana.
+
+![img_1.png](assets/images/screenshots/img_1.png)
+
+</div>
+
+<hr class="page-break">
+
 # Contenido
 
 - [Capítulo I: Presentación](#capítulo-i-presentación)
@@ -422,9 +464,23 @@ Análisis de cantidad de commits realizados por semana.
             - [4.2.2.6. Services Documentation Evidence for Sprint Review](#4226-services-documentation-evidence-for-sprint-review)
             - [4.2.2.7. Software Deployment Evidence for Sprint Review](#4227-software-deployment-evidence-for-sprint-review)
             - [4.2.2.8. Team Collaboration Insights during Sprint](#4228-team-collaboration-insights-during-sprint)
+        - [4.2.3. Sprint 3](#423-sprint-3)
+            - [4.2.3.1. Sprint Planning 3](#4231-sprint-planning-3)
+            - [4.2.3.2. Sprint Backlog 3](#4232-sprint-backlog-3)
+            - [4.2.3.3. Development Evidence for Sprint Review](#4233-development-evidence-for-sprint-review)
+            - [4.2.3.4. Testing Suite Evidence for Sprint Review](#4234-testing-suite-evidence-for-sprint-review)
+            - [4.2.3.5. Execution Evidence for Sprint Review](#4235-execution-evidence-for-sprint-review)
+            - [4.2.3.6. Services Documentation Evidence for Sprint Review](#4236-services-documentation-evidence-for-sprint-review)
+            - [4.2.3.7. Software Deployment Evidence for Sprint Review](#4237-software-deployment-evidence-for-sprint-review)
+            - [4.2.3.8. Team Collaboration Insights during Sprint](#4238-team-collaboration-insights-during-sprint)
+        - [4.3. Validation Interviews](#43-validation-interviews)
+            - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
+            - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
+            - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 
 - [Conclusiones](#conclusiones)
     - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+    - [Video App Validation](#video-app-validation)
     - [Video About the product](#video-about-the-product)
     - [Video About the team](#video-about-the-team)
 - [Glosario](#glosario)
@@ -440,10 +496,10 @@ Análisis de cantidad de commits realizados por semana.
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7
 
-| Criterio específico                                                                                                                                             | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Actualiza conceptos y<br> conocimientos necesarios <br> para su desarrollo<br> profesional y en especial <br> para su proyecto en <br> soluciones de software.  | Aponte Cruzado, Andrea Marielena <br> *TB1*: Agregué artefactos UX <br> del nuevo segmento objetivo <br> *TP1*: Diseñé en Figma la vista de <br> la aplicación para el segmento de estudiantes <br> *TB2*: Actualicé conceptos de UX/UI aplicados al rediseño para estudiantes <br>  Crispin Ramos, Daniel Franco <br> *TB1*: Investigué los nuevos posibles competidores <br> de la aplicación en un ecosistema móvil <br> *TP1*: Diseñé en Figma la aplicación para <br> el segmento de profesores <br> *TB2*: Reforcé criterios de diseño móvil revisando referentes educativos actuales <br>  Ramirez Mestanza, Salim Ignacio <br> *TB1*: Actualicé user stories <br> *TP1*: Diseñé en Figma la aplicación <br> para el segmento de Admins <br> *TB2*: Actualicé conocimientos sobre buenas prácticas de gestión y redacción de historias de usuario <br> Sulca Gonzales, Paúl Fernando <br> *TB1*: Actualicé la arquitectura del software <br> en base al nuevo entorno móvil <br> *TP1*: Diseñé en Figma la aplicación para <br> el segmento de Profesores <br> *TB2*: Reforcé conceptos de arquitectura para adecuar la solución al contexto móvil <br>  Vilca Saboya, Diego Alejandro <br> *TB1*: Actualicé mis conocimientos sobre la <br> parte táctica de DDD <br> *TP1*: Diseñé en Figma la aplicación <br> para el segmento de Admins <br> *TB2*: Profundicé en principios tácticos y patrones aplicados al modelado de dominios móviles                                                                                                                                                                                                                                                                                          | *TB1*:Creemos que hemos logrado un buen desempeño en este aspecto, <br> ya que tuvimos que actualizar en algunos aspectos una <br> idea que utilizamos en un curso previo de desarrollo web. <br> *TP1*: Consideramos que sí logramos cumplir esta competencia ya que <br> tuvimos que actualizar conceptos de diseño que vimos <br> en un curso anterior para el prototipado de nuestras soluciones móviles. <br> *TB2*: Consideramos que cumplimos adecuadamente este criterio, ya que durante el sprint reforzamos y actualizamos los conocimientos necesarios para el desarrollo de nuestras soluciones móviles. Cada integrante profundizó en conceptos clave —ya sea de UX/UI, arquitectura, tácticas de DDD o gestión de requisitos— aplicándolos directamente en la mejora de prototipos, modelados y definiciones del proyecto. Esto nos permitió elevar la calidad del trabajo, adaptar nuestras ideas al nuevo contexto móvil y sostener un proceso de aprendizaje continuo orientado al desarrollo profesional. |
-| Reconoce la necesidad del <br> aprendizaje permamente <br> para el desempeño <br> profesional y el desarrollo de <br> proyectos en soluciones de <br> software. | Aponte Cruzado, Andrea Marielena <br> *TB1*: Agregué artefactos UX <br> del nuevo segmento objetivo <br> *TP1*: Diseñé en Figma la vista de <br> la aplicación para el segmento de estudiantes <br> *TB2*: Reconocí la necesidad de seguir aprendiendo sobre patrones de UX y enfoques de diseño para mejorar continuamente las vistas dirigidas a estudiantes <br>  Crispin Ramos, Daniel Franco <br> *TB1*: Investigué los nuevos posibles competidores <br> de la aplicación en un ecosistema móvil <br> *TP1*: Diseñé en Figma la aplicación para <br> el segmento de profesores <br> *TB2*: Identifiqué la importancia de actualizarme en tendencias móviles y referentes educativos para mantener un diseño competitivo y actual <br> Ramirez Mestanza, Salim Ignacio <br> *TB1*: Actualicé user stories <br> *TP1*: Diseñé en Figma la aplicación <br> para el segmento de Admins <br> *TB2*: Reconocí la necesidad de revisar y mejorar continuamente mis conocimientos en gestión de requisitos y diseño centrado en el usuario <br> Sulca Gonzales, Paúl Fernando <br> *TB1*: Actualicé la arquitectura del software <br> en base al nuevo entorno móvil <br> *TP1*: Diseñé en Figma la aplicación para <br> el segmento de Profesores <br> *TB2*: Comprendí la importancia de actualizarme en arquitectura móvil para sostener soluciones escalables y alineadas con entornos cambiantes <br>  Vilca Saboya, Diego Alejandro <br> *TB1*: Actualicé mis conocimientos sobre la <br> parte táctica de DDD <br> *TP1*: Diseñé en Figma la aplicación <br> para el segmento de Admins <br> *TB2*: Reconocí la necesidad de seguir fortaleciendo conceptos tácticos y patrones para mejorar el modelado del dominio en contextos móviles | *TB1*:Consideramos que logramos cumplir este aspecto, ya que reconocemos la <br> necesidad de tener un aprendizaje permanente sobre nuevos entornos,<br> en este caso móvil, para reestructurar o actualizar <br> ideas de soluciones de software.  <br> *TP1*: Consideramos que sí cumplimos esta competencia ya que <br> reconocimos la necesidad de actualizar nuestros conocimientos en UX/UI para ofrecer <br> una buena experiencia a nuestros usuarios <br> *TB2*: De manera grupal, reforzamos nuestra conciencia sobre la importancia del aprendizaje permanente, ya que cada integrante identificó áreas que necesitaban actualización —como diseño, arquitectura, dominio o análisis de requisitos— y aplicó nuevos conocimientos para mejorar las soluciones móviles desarrolladas en este sprint. Esto nos permitió avanzar con mayor solidez profesional y adaptarnos mejor a los cambios del proyecto.                                                                                                       |
+| Criterio específico                                                                                                                                                                 | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Actualiza conceptos y**<br> **conocimientos necesarios**<br> **para su desarrollo**<br> **profesional y en especial**<br> **para su proyecto en**<br> **soluciones de software.** | **Aponte Cruzado, Andrea Marielena**<br> *TB1*: Agregué artefactos UX del nuevo segmento objetivo.<br> *TP1*: Diseñé en Figma la vista de la aplicación para el segmento de estudiantes.<br> *TB2*: Actualicé conceptos de UX/UI aplicados al rediseño para estudiantes.<br> *TF1*: Apoyé en el desarrollo de la aplicación en Swift, para lo cual tuve que actualizar conceptos que ya había visto anteriormente en Android y Flutter.<br><br> **Crispin Ramos, Daniel Franco**<br> *TB1*: Investigué los nuevos posibles competidores de la aplicación en un ecosistema móvil.<br> *TP1*: Diseñé en Figma la aplicación para el segmento de profesores.<br> *TB2*: Reforcé criterios de diseño móvil revisando referentes educativos actuales.<br> *TF1*: Apoyé en los últimos detalles de la versión final de nuestra aplicación en Flutter.<br><br> **Ramirez Mestanza, Salim Ignacio**<br> *TB1*: Actualicé user stories.<br> *TP1*: Diseñé en Figma la aplicación para el segmento de Admins.<br> *TB2*: Actualicé conocimientos sobre buenas prácticas de gestión y redacción de historias de usuario.<br> *TF1*: Apoyé en los últimos detalles de la versión final de nuestra aplicación en Flutter y la de Swift.<br><br> **Sulca Gonzales, Paúl Fernando**<br> *TB1*: Actualicé la arquitectura del software en base al nuevo entorno móvil.<br> *TP1*: Diseñé en Figma la aplicación para el segmento de Profesores.<br> *TB2*: Reforcé conceptos de arquitectura para adecuar la solución al contexto móvil.<br> *TF1*: Apoyé en los últimos detalles de la versión final de nuestra aplicación en Flutter.<br><br> **Vilca Saboya, Diego Alejandro**<br> *TB1*: Actualicé mis conocimientos sobre la parte táctica de DDD.<br> *TP1*: Diseñé en Figma la aplicación para el segmento de Admins.<br> *TB2*: Profundicé en principios tácticos y patrones aplicados al modelado de dominios móviles.<br> *TF1*: Apoyé en los últimos detalles de la versión final de nuestra aplicación en Flutter.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | *TB1*: Creemos que hemos logrado un buen desempeño en este aspecto, ya que tuvimos que actualizar en algunos aspectos una idea que utilizamos en un curso previo de desarrollo web.<br><br> *TP1*: Consideramos que sí logramos cumplir esta competencia ya que tuvimos que actualizar conceptos de diseño que vimos en un curso anterior para el prototipado de nuestras soluciones móviles.<br><br> *TB2*: Consideramos que cumplimos adecuadamente este criterio, ya que durante el sprint reforzamos y actualizamos los conocimientos necesarios para el desarrollo de nuestras soluciones móviles. Cada integrante profundizó en conceptos clave —ya sea de UX/UI, arquitectura, tácticas de DDD o gestión de requisitos— aplicándolos directamente en la mejora de prototipos, modelados y definiciones del proyecto.<br><br> *TF1*: Logramos cumplir este criterio ya que para cada versión de nuestra aplicación, ya sea en Flutter, Android o Swift, tuvimos que actualizar conceptos que ya habíamos visto previamente. La mayoría eran similares, pero con algunos pequeños cambios, ya sea en sintaxis o estructura, debido al lenguaje de programación empleado. |
+| **Reconoce la necesidad del**<br> **aprendizaje permanente**<br> **para el desempeño**<br> **profesional y el desarrollo de**<br> **proyectos en soluciones de**<br> **software.**  | **Aponte Cruzado, Andrea Marielena**<br> *TB1*: Agregué artefactos UX del nuevo segmento objetivo.<br> *TP1*: Diseñé en Figma la vista de la aplicación para el segmento de estudiantes.<br> *TB2*: Reconocí la necesidad de seguir aprendiendo sobre patrones de UX y enfoques de diseño para mejorar continuamente las vistas dirigidas a estudiantes.<br> *TF1*: Apoyé en el desarrollo de la aplicación en Swift, reconociendo la necesidad de adaptar mis conocimientos previos de Android y Flutter a un nuevo entorno.<br><br> **Crispin Ramos, Daniel Franco**<br> *TB1*: Investigué los nuevos posibles competidores de la aplicación en un ecosistema móvil.<br> *TP1*: Diseñé en Figma la aplicación para el segmento de profesores.<br> *TB2*: Identifiqué la importancia de actualizarme en tendencias móviles y referentes educativos para mantener un diseño competitivo y actual.<br> *TF1*: Apoyé en los últimos detalles de la versión final de nuestra aplicación en Flutter, reforzando la importancia de la mejora continua.<br><br> **Ramirez Mestanza, Salim Ignacio**<br> *TB1*: Actualicé user stories.<br> *TP1*: Diseñé en Figma la aplicación para el segmento de Admins.<br> *TB2*: Reconocí la necesidad de revisar y mejorar continuamente mis conocimientos en gestión de requisitos y diseño centrado en el usuario.<br> *TF1*: Apoyé en los últimos detalles de la versión final de nuestra aplicación en Flutter y Swift, adaptándome a las exigencias de múltiples plataformas.<br><br> **Sulca Gonzales, Paúl Fernando**<br> *TB1*: Actualicé la arquitectura del software en base al nuevo entorno móvil.<br> *TP1*: Diseñé en Figma la aplicación para el segmento de Profesores.<br> *TB2*: Comprendí la importancia de actualizarme en arquitectura móvil para sostener soluciones escalables y alineadas con entornos cambiantes.<br> *TF1*: Apoyé en los últimos detalles de la versión final de nuestra aplicación en Flutter, asegurando la estabilidad del producto final.<br><br> **Vilca Saboya, Diego Alejandro**<br> *TB1*: Actualicé mis conocimientos sobre la parte táctica de DDD.<br> *TP1*: Diseñé en Figma la aplicación para el segmento de Admins.<br> *TB2*: Reconocí la necesidad de seguir fortaleciendo conceptos tácticos y patrones para mejorar el modelado del dominio en contextos móviles.<br> *TF1*: Apoyé en los últimos detalles de la versión final de nuestra aplicación en Flutter, aplicando lo aprendido para el cierre del proyecto. | *TB1*: Consideramos que logramos cumplir este aspecto, ya que reconocemos la necesidad de tener un aprendizaje permanente sobre nuevos entornos, en este caso móvil, para reestructurar o actualizar ideas de soluciones de software.<br><br> *TP1*: Consideramos que sí cumplimos esta competencia ya que reconocimos la necesidad de actualizar nuestros conocimientos en UX/UI para ofrecer una buena experiencia a nuestros usuarios.<br><br> *TB2*: De manera grupal, reforzamos nuestra conciencia sobre la importancia del aprendizaje permanente, ya que cada integrante identificó áreas que necesitaban actualización y aplicó nuevos conocimientos para mejorar las soluciones móviles desarrolladas en este sprint. Esto nos permitió avanzar con mayor solidez profesional y adaptarnos mejor a los cambios del proyecto.<br><br> *TF1*: En nuestra startup, consideramos que cumplimos este criterio ya que siempre habrá algo nuevo que aprender debido a que los frameworks se actualizan constantemente. Como futuros profesionales, reconocemos que el aprendizaje continuo es fundamental para mantener la competitividad y calidad de nuestro software.   |
 
 <hr class="page-break">
 
@@ -14974,6 +15030,1375 @@ En la sección de verificadores se observa el estado de cada invitado, pudiéndo
 
 <hr class="page-break">
 
+### 4.2.3. Sprint 3
+
+Durante el tercer sprint, el equipo se enfocó en la finalizacion de la aplicacion Flutter y iOS. Se establecieron los objetivos del sprint, se planificaron las tareas y se asignaron responsabilidades a los miembros del equipo.
+
+#### 4.2.3.1. Sprint Planning 3
+
+A continuación se presentará el sprint planning para esta entrega, detallando los objetivos, las historias de usuario y la velocidad del sprint.
+
+| Sprint #                        | Sprint 3                                                                                                                                                                                                                                                                                                                                                                                      |
+|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background**  |                                                                                                                                                                                                                                                                                                                                                                                               |
+| Date                            | 2025-11-20                                                                                                                                                                                                                                                                                                                                                                                    |
+| Time                            | 03:00 PM                                                                                                                                                                                                                                                                                                                                                                                      |
+| Location                        | Llamada grupal en la plataforma Discord                                                                                                                                                                                                                                                                                                                                                       |
+| Prepared By                     | Salim Ramirez                                                                                                                                                                                                                                                                                                                                                                                 |
+| Attendees (to planning meeting) | Paúl Sulca, Daniel Crispin, Diego Vilca, Andrea Aponte                                                                                                                                                                                                                                                                                                                                        |
+| **Sprint Goal & User Stories**  |                                                                                                                                                                                                                                                                                                                                                                                               |
+| Sprint 3 Goal                   | Nos centramos en presentar las funcionalidades completas de la aplicación móvil flutter y IOS. Creemos que esto entregará una versión funcional y verificable de la plataforma a los usuarios. Esto se confirmará cuando todas las funcionalidades de la aplicación flutter y ios estén accesibles a través de la interfaz móvil, y con funcionalidades probadas mediante Swagger y emulador. |
+| Sprint 3 Velocity               | 36                                                                                                                                                                                                                                                                                                                                                                                            |
+| Sum of Story Points             | 36                                                                                                                                                                                                                                                                                                                                                                                            |
+
+#### 4.2.3.2. Sprint Backlog 3
+
+El objetivo de este Sprint es presentar la versión final de nuestra aplicación para profesores, desarrollada en flutter y la versión para estudiantes, desarrollada en swift.  
+A continuación se presenta una captura de pantalla de nuestro tablero en Trello:  
+![Captura  Sprint 3 de Trello](./assets/images/screenshots/trello-sprint-3.png)  
+[Enlace del Trello](https://trello.com/b/bJNC9cpu/sprint-3-nistra-demy)
+
+<div style="font-size:80%; overflow-x:auto;">
+  <table border="1" cellspacing="0" cellpadding="5">
+    <thead>
+      <tr>
+        <th colspan="2">Sprint #</th>
+        <th colspan="6">Sprint 3</th>
+      </tr>
+      <tr>
+        <th colspan="2">User Story</th>
+        <th colspan="6">Work-Item / Task</th>
+      </tr>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Estimation (Hours)</th>
+        <th>Assigned To</th>
+        <th>Status (To-do / In-Process / To-Review / Done)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>US033</td>
+        <td>Visualizar detalles de los Profesores</td>
+        <td>US033a</td>
+        <td>Pantalla de detalle de profesor (Swift)</td>
+        <td>Implementar TeacherDetailPage en Swift con foto, nombre completo, experiencia, especialidades y lista de cursos usando widgets como Card y ListView.</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US033</td>
+        <td>Visualizar detalles de los Profesores</td>
+        <td>US033b</td>
+        <td>Consumo de API de profesor</td>
+        <td>Conectar TeacherDetailPage al endpoint correspondiente, mapear el JSON al modelo Teacher y manejar estados de carga, error y reintento.</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US010</td>
+        <td>Registro de asistencia</td>
+        <td>US010a</td>
+        <td>UI de toma de asistencia en Flutter</td>
+        <td>Diseñar AttendancePage con ListView.builder de alumnos, controles P/A/T (por ejemplo ToggleButtons o ChoiceChips) y cabecera con datos de la clase.</td>
+        <td>4</td>
+        <td>Diego</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US010</td>
+        <td>Registro de asistencia</td>
+        <td>US010b</td>
+        <td>Integración API registro asistencia</td>
+        <td>Enviar la lista de asistencias al endpoint correspondiente desde Flutter, construyendo el payload con classSessionId y marcas por alumno, mostrando estados de “guardando”, éxito y error.</td>
+        <td>3</td>
+        <td>Diego</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US012</td>
+        <td>Visualización de Reportes de Asistencia</td>
+        <td>US012a</td>
+        <td>Pantalla de reportes de asistencia</td>
+        <td>Crear AttendanceReportPage en Flutter con filtros por curso, alumno y rango de fechas (DropdownButton, DatePicker) y sección para listar o resumir porcentajes de asistencia.</td>
+        <td>4</td>
+        <td>Diego</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US012</td>
+        <td>Visualización de Reportes de Asistencia</td>
+        <td>US012b</td>
+        <td>Consumo API reportes de asistencia</td>
+        <td>Conectar los filtros al endpoint correspondiente, mapear la respuesta a modelos en Dart, manejar paginación (scroll) y estados de carga/error.</td>
+        <td>3</td>
+        <td>Diego</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US029</td>
+        <td>Generación de Reportes Financieros</td>
+        <td>US029a</td>
+        <td>UI de filtros y resultados financieros</td>
+        <td>Diseñar FinancialReportPage en Flutter con filtros por rango de fechas, tipo de registro y botones de acción (generar/exportar), mostrando cards/resumen con totales.</td>
+        <td>4</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US029</td>
+        <td>Generación de Reportes Financieros</td>
+        <td>US029b</td>
+        <td>Integración API reportes financieros</td>
+        <td>Consumir el endpoint correspondiente desde Flutter, mostrar los resultados en tabla o lista, y manejar la descarga de archivo (CSV/PDF) cuando el backend la exponga.</td>
+        <td>4</td>
+        <td>Salim</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US030</td>
+        <td>Visualización de Horario de Clases (profesor)</td>
+        <td>US030a</td>
+        <td>Pantalla horario del profesor</td>
+        <td>Implementar TeacherSchedulePage en Flutter con vista semanal o lista agrupada por día, mostrando bloques de clase con curso, aula y rango horario.</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US030</td>
+        <td>Visualización de Horario de Clases (profesor)</td>
+        <td>US030b</td>
+        <td>Consumo API horario profesor</td>
+        <td>Conectar TeacherSchedulePage al endpoint correspondiente con filtros por fecha, mapear JSON a modelos Schedule y manejar estados de carga/error.</td>
+        <td>2</td>
+        <td>Daniel</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US031</td>
+        <td>Reprogramación de Clase</td>
+        <td>US031a</td>
+        <td>UI para reprogramar clase</td>
+        <td>Crear pantalla o modal RescheduleClassPage en Flutter que permita seleccionar nueva fecha y hora con DatePicker/TimePicker, mostrando detalles de la clase original.</td>
+        <td>3</td>
+        <td>Paul</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US031</td>
+        <td>Reprogramación de Clase</td>
+        <td>US031b</td>
+        <td>Integración API reprogramación</td>
+        <td>Consumir el endpoint correspondiente desde Flutter, enviando la nueva fecha/hora, actualizando la UI del horario y mostrando mensajes de éxito o error.</td>
+        <td>3</td>
+        <td>Daniel</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US032</td>
+        <td>Visualización de Horario de Clases (alumno)</td>
+        <td>US032a</td>
+        <td>Calendario de clases del alumno</td>
+        <td>Crear StudentSchedulePage en Swift para mostrar el horario semanal del alumno con lista o calendario, incluyendo curso, aula y nombre del profesor.</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US032</td>
+        <td>Visualización de Horario de Clases (alumno)</td>
+        <td>US032b</td>
+        <td>Consumo API horario alumno</td>
+        <td>Conectar StudentSchedulePage al endpoint correspondiente, aplicar filtros por fecha y manejar estados de carga, error y vacío (sin clases).</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US034</td>
+        <td>Visualizar detalles de los Cursos</td>
+        <td>US034a</td>
+        <td>Pantalla detalle de curso</td>
+        <td>Implementar CourseDetailPage en Swift con título del curso, descripción, resumen del sílabo y créditos, usando secciones scrollables y diseño responsive.</td>
+        <td>3</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US034</td>
+        <td>Visualizar detalles de los Cursos</td>
+        <td>US034b</td>
+        <td>Consumo API detalle curso</td>
+        <td>Conectar CourseDetailPage al endpoint correspondiente, parsear el JSON al modelo Course y manejar estados de loading, error y reintento.</td>
+        <td>2</td>
+        <td>Andrea</td>
+        <td>Done</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+#### 4.2.3.3. Development Evidence for Sprint Review
+
+**Development Evidence - Teachers Mobile**
+
+<table>
+    <thead>
+        <tr>
+            <th>Repository</th>
+            <th>Branch</th>
+            <th>Commit ID</th>
+            <th>Commit Message</th>
+            <th>Commit Body</th>
+            <th>Committed On</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr><td>demy-teachers</td><td>develop</td><td>7a98bba</td><td>feat(localization): add teaching schedule and reschedule localization strings in English and Spanish</td><td></td><td>02/12/2025 08:44</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>f313bc6</td><td>feat(notifications): add notifications page and integrate with localization</td><td></td><td>02/12/2025 08:37</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>12970cd</td><td>feat(theme): update background color to primaryContainer in attendance and schedule pages</td><td></td><td>02/12/2025 08:28</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>4c45580</td><td>feat(attendance): refactor attendance bloc and update localization files</td><td></td><td>02/12/2025 08:22</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>2145686</td><td>Merge pull request #14 from nistrahq/feature/attendance-management</td><td></td><td>02/12/2025 08:15</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>89a9ab1</td><td>Merge branch 'develop' into feature/attendance-management</td><td></td><td>02/12/2025 08:15</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>c9cc1e9</td><td>feat(attendance): update home page</td><td></td><td>02/12/2025 01:09</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>9156acd</td><td>feat(attendance): update widgets</td><td></td><td>02/12/2025 01:08</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>f39a1b6</td><td>feat(attendance): update attendance routes</td><td></td><td>02/12/2025 01:08</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>d179258</td><td>feat(attendance): update bloc</td><td></td><td>02/12/2025 01:07</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>3922272</td><td>feat(attendance): update use cases</td><td></td><td>02/12/2025 01:06</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>92733d0</td><td>feat(attendance): update attendance repository</td><td></td><td>02/12/2025 01:06</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>1e404d3</td><td>feat(attendance): update student entity</td><td></td><td>02/12/2025 01:06</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>0be07ad</td><td>feat(attendance): add attendance dtos</td><td></td><td>02/12/2025 01:05</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>4141f05</td><td>feat(attendance): update attendance module and remote data source</td><td></td><td>02/12/2025 01:04</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>ce6c2c9</td><td>feat(attendance): add localization</td><td></td><td>02/12/2025 01:03</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>12ba7da</td><td>feat(attendance): update app router</td><td></td><td>02/12/2025 01:02</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>33368a8</td><td>Merge pull request #13 from nistrahq/feature/app-settings</td><td></td><td>01/12/2025 17:31</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>707fccc</td><td>feat: add terms and privacy acceptance text to sign-in form with localization support</td><td></td><td>01/12/2025 17:29</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>45f9b8b</td><td>Merge pull request #12 from nistrahq/feature/teacher-profile</td><td></td><td>01/12/2025 17:22</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>43dd531</td><td>feat(auth): implement forgot password functionality with localization support</td><td></td><td>01/12/2025 17:21</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>9d4a9b2</td><td>Merge pull request #11 from nistrahq/feature/app-settings</td><td></td><td>01/12/2025 16:32</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>2fe865f</td><td>refactor: remove unused imports from app_router.dart</td><td></td><td>01/12/2025 16:30</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>253c237</td><td>feat: add settings pages</td><td></td><td>01/12/2025 16:30</td></tr>
+<tr><td>demy-teachers</td><td>feature/app-settings</td><td>1da138b</td><td>feat: add settings pages</td><td></td><td>01/12/2025 16:10</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>cf46e69</td><td>feat: add es and en x2</td><td></td><td>01/12/2025 16:05</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>8782ea8</td><td>feat: add es and en</td><td></td><td>01/12/2025 16:03</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>b601c27</td><td>Merge pull request #10 from nistrahq/feature/teacher-profile</td><td></td><td>01/12/2025 15:03</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>b48e430</td><td>chore(ios): add Podfile and update xcconfig includes for debug and release configurations</td><td></td><td>01/12/2025 15:00</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>f4b27f8</td><td>feat(auth): add reset password functionality with UI and localization support</td><td></td><td>01/12/2025 15:00</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>eb3e68b</td><td>feat(auth): implement reset password flow with request, verification, and reset functionalities</td><td></td><td>01/12/2025 15:00</td></tr>
+<tr><td>demy-teachers</td><td>feature/authentication</td><td>0af565d</td><td>feat(auth): add password reset functionality with request, verification, and reset operations</td><td></td><td>01/12/2025 14:59</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>3221834</td><td>Merge pull request #9 from nistrahq/feature/attendance-management</td><td></td><td>28/11/2025 16:27</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>2016d58</td><td>Merge pull request #8 from nistrahq/feature/schedules-management</td><td></td><td>28/11/2025 16:26</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>e04e97c</td><td>feat(schedule): update teaching reschedule page to save changes</td><td></td><td>27/11/2025 10:30</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>f9c837d</td><td>feat(attendance): update home page</td><td></td><td>27/11/2025 00:17</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>69892ee</td><td>feat(attendance): update remote data source implementation</td><td></td><td>27/11/2025 00:17</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>fe566cd</td><td>feat(attendance): add widgets and page</td><td></td><td>27/11/2025 00:17</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>7a44e12</td><td>feat(attendance): add use cases</td><td></td><td>27/11/2025 00:14</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>f51f221</td><td>feat(attendance): add blocs</td><td></td><td>27/11/2025 00:14</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>a878d7e</td><td>feat(attendance): add repository</td><td></td><td>27/11/2025 00:13</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>5bba492</td><td>feat(attedance): add domain model student</td><td></td><td>27/11/2025 00:13</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>fd168ac</td><td>feat(attendance): add endpoints</td><td></td><td>27/11/2025 00:12</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>d87f982</td><td>feat(attendance): add student response dto</td><td></td><td>27/11/2025 00:12</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>03e58a1</td><td>feat(attendance): add dto</td><td></td><td>27/11/2025 00:11</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>b60faaf</td><td>feat(attendance): delete old files</td><td></td><td>27/11/2025 00:10</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>e6c740c</td><td>feat(attendance): add module</td><td></td><td>27/11/2025 00:09</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>93add3e</td><td>feat(attendance): add remote data source</td><td></td><td>27/11/2025 00:09</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>d2a109e</td><td>feat(attendance): add local data source</td><td></td><td>27/11/2025 00:09</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>a81fa22</td><td>feat(attendance): update injectable config</td><td></td><td>27/11/2025 00:06</td></tr>
+<tr><td>demy-teachers</td><td>feature/attendance-management</td><td>c827b36</td><td>feat(attendance): update app router</td><td></td><td>27/11/2025 00:05</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>3605b70</td><td>Merge branch 'develop' into feature/attendance-management</td><td></td><td>26/11/2025 20:42</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>ef9e5c8</td><td>feat: add dependency injection for rescheduling class sessions and related bloc</td><td></td><td>26/11/2025 15:50</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>d5c5c09</td><td>feat: add navigation to reschedule session with item ID in ScheduleCard</td><td></td><td>26/11/2025 15:46</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>96e3df0</td><td>feat: implement TeachingReschedulePage for managing class session rescheduling</td><td></td><td>26/11/2025 15:46</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>b1defbb</td><td>feat: add route for rescheduling class sessions</td><td></td><td>26/11/2025 15:46</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>5d2d56f</td><td>feat: add RescheduleState classes for managing reschedule states</td><td></td><td>26/11/2025 15:46</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>a41a9e1</td><td>feat: add SubmitReschedule event class for rescheduling sessions</td><td></td><td>26/11/2025 15:45</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>f1abd4d</td><td>feat: add RescheduleBloc for handling reschedule events and states</td><td></td><td>26/11/2025 15:45</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>e4444b2</td><td>feat: implement RescheduleClassSession use case with RescheduleParams</td><td></td><td>26/11/2025 15:45</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>a36873b</td><td>feat: add rescheduleClassSession method to ScheduleRepository</td><td></td><td>26/11/2025 15:44</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>933ea5a</td><td>feat: implement rescheduleClassSession method in ScheduleRepositoryImpl</td><td></td><td>26/11/2025 15:44</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>d44e7c2</td><td>feat: add rescheduleClassSession endpoint to ScheduleEndpoints</td><td></td><td>26/11/2025 15:44</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>e0b97db</td><td>feat: add RescheduleRequestDto for handling reschedule requests</td><td></td><td>26/11/2025 15:43</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>5ac8adb</td><td>feat: add RescheduleClassSession use case and RescheduleBloc to ScheduleModule</td><td></td><td>26/11/2025 15:43</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>8f8ac4c</td><td>feat: add rescheduleClassSession method to ScheduleRemoteDataSource</td><td></td><td>26/11/2025 15:43</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>b259eb8</td><td>feat: add rescheduleClassSession method to ScheduleRemoteDataSourceImpl</td><td></td><td>26/11/2025 15:43</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>b622f67</td><td>refactor: rename variable for readability in HomePage</td><td></td><td>25/11/2025 19:30</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>193e460</td><td>refactor(router): remove unused ProfileBloc imports</td><td></td><td>25/11/2025 19:30</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>e176287</td><td>refactor(router): remove global ProfileBloc injection from StatefulShellRoute</td><td></td><td>25/11/2025 19:29</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>c2abb17</td><td>feat: integrate ProfileBloc globally with MultiBlocProvider</td><td></td><td>25/11/2025 19:28</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>1ce1274</td><td>Merge pull request #7 from nistrahq/release/v1.0.0</td><td></td><td>13/11/2025 05:25</td></tr>
+<tr><td>demy-teachers</td><td>develop</td><td>262f785</td><td>Merge pull request #6 from nistrahq/feature/schedules-management</td><td></td><td>13/11/2025 05:23</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>f97d72b</td><td>feat(schedules): Improves empty state message and adjusts list padding</td><td></td><td>13/11/2025 02:01</td></tr>
+<tr><td>demy-teachers</td><td>feature/schedules-management</td><td>852ec84</td><td>feat(schedules): Redesigns schedule card layout for improved clarity</td><td></td><td>13/11/2025 02:01</td></tr>
+    </tbody>
+</table>
+
+
+**Development Evidence - Students Mobile**
+
+<table>
+    <thead>
+    <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit ID</th>
+    <th>Commit Message</th>
+    <th>Commit Body</th>
+    <th>Committed On</th>
+    </tr>
+    </thead>
+<tbody>
+<tr><td>demy-students</td><td>develop</td><td>b528e04</td><td>Merge pull request #5 from nistrahq/feature/settings</td><td></td><td>03/12/2025 14:50</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>5265518</td><td>Merge branch 'develop' into feature/settings</td><td></td><td>03/12/2025 14:50</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>7d55e13</td><td>Merge pull request #4 from nistrahq/feature/schedule</td><td></td><td>03/12/2025 14:47</td></tr>
+<tr><td>demy-students</td><td>feature/settings</td><td>f0fcf25</td><td>feat: add new settings features</td><td></td><td>03/12/2025 14:44</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>3734ebb</td><td>feat(profile): enhance student profile with birthdate handling and loading state</td><td></td><td>03/12/2025 14:22</td></tr>
+<tr><td>demy-students</td><td>feature/home</td><td>7976c14</td><td>feat(home): simplify layout in HomeView and UpdatesSection</td><td></td><td>03/12/2025 14:09</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>2532890</td><td>feat(schedule): normalize date handling in ScheduleViewModel and ScheduleView</td><td></td><td>03/12/2025 13:32</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>dc36ba3</td><td>feat(schedule): enhance schedule management with session updates and localization support</td><td></td><td>03/12/2025 13:23</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>b8c217f</td><td>feat(schedule): implement schedule feature with data sources, repositories, and view model</td><td></td><td>03/12/2025 13:03</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>4e88789</td><td>Merge pull request #3 from nistrahq/feature/schedule</td><td></td><td>03/12/2025 12:12</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>f96f3d5</td><td>feat(schedule): import Combine in ScheduleViewModel for reactive programming</td><td></td><td>03/12/2025 12:11</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>c47df05</td><td>feat(schedule): add ScheduleView and integrate navigation from HomeView</td><td></td><td>03/12/2025 11:12</td></tr>
+<tr><td>demy-students</td><td>feature/schedule</td><td>1ffe530</td><td>feat: add new feature for schedule</td><td></td><td>03/12/2025 09:55</td></tr>
+<tr><td>demy-students</td><td>feature/home</td><td>38241eb</td><td>feat: Implement Home feature with student data retrieval</td><td></td><td>02/12/2025 15:59</td></tr>
+<tr><td>demy-students</td><td>feature/settings</td><td>d07b6c4</td><td>feat(i18n): add new localized strings for permissions and actions</td><td></td><td>01/12/2025 09:48</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>6e0fdce</td><td>Merge pull request #2 from nistrahq/feature/home</td><td></td><td>01/12/2025 09:41</td></tr>
+<tr><td>demy-students</td><td>feature/home</td><td>7f145c1</td><td>feat(i18n): enhance localization for Home, Profile, and Settings views</td><td></td><td>01/12/2025 08:24</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>931cbb8</td><td>fea(i18n)t: add localization support for Home, Profile, and Settings views</td><td></td><td>01/12/2025 08:07</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>20a68a0</td><td>feat: add home remote data source, update API endpoints, and enhance profile/settings views layout</td><td></td><td>01/12/2025 07:50</td></tr>
+<tr><td>demy-students</td><td>feature/home</td><td>a4baf90</td><td>feat(home): implement getCurrentStudent use case and update HomeViewModel to load student data</td><td></td><td>01/12/2025 07:49</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>00687d1</td><td>feat(auth): refactor signIn method to include field validation and loading state management</td><td></td><td>30/11/2025 10:35</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>0713014</td><td>fix: profile view AGAINn</td><td></td><td>28/11/2025 02:03</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>d20077d</td><td>fix: profile view AGAIN</td><td></td><td>28/11/2025 01:58</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>72cfd33</td><td>fix: profile view</td><td></td><td>28/11/2025 01:53</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>6d4745d</td><td>feat: add modals for profile</td><td></td><td>26/11/2025 01:42</td></tr>
+<tr><td>demy-students</td><td>feature/profile</td><td>0d2eac2</td><td>feat: add birthday and password modal and section in profile</td><td></td><td>26/11/2025 01:30</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>1fd40b3</td><td>feat: add navbar plus two views to try it</td><td></td><td>26/11/2025 00:26</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>67c9fb9</td><td>feat: add real views for home page</td><td></td><td>25/11/2025 22:09</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>ec30e3c</td><td>feat: add views for profile</td><td></td><td>25/11/2025 01:12</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>2006b8c</td><td>feat: add scenario 3 for cards</td><td></td><td>24/11/2025 20:39</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>744d779</td><td>feat: add scenarios 2 for cards</td><td></td><td>24/11/2025 20:21</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>8387728</td><td>feat: add scenarios for cards to try how do they look</td><td></td><td>24/11/2025 19:43</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>f0d127f</td><td>feat: add gradients for schedule cards</td><td></td><td>24/11/2025 18:58</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>4519fd8</td><td>feat: add view models for students home page</td><td></td><td>24/11/2025 18:06</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>5c281d5</td><td>feat: add topbar for app students</td><td></td><td>24/11/2025 17:59</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>c320d02</td><td>Merge pull request #1 from nistrahq/feature/authentication-management</td><td></td><td>24/11/2025 12:01</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>0adab5d</td><td>chore(auth): add temporary method to clear access token on app initialization</td><td></td><td>24/11/2025 11:59</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>4f067a3</td><td>styles(assets): add app icons and logo assets, update accent color definitions</td><td></td><td>24/11/2025 11:59</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>6a3acee</td><td>feat(auth): update authentication endpoints and improve error handling in sign-in process</td><td></td><td>23/11/2025 17:55</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>f08c7f6</td><td>feat(i18n): add localized strings for authentication and general UI elements</td><td></td><td>23/11/2025 17:54</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>e8efbcb</td><td>feat(auth): implement SignInView and SignInViewModel for user authentication</td><td></td><td>23/11/2025 15:04</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>89a0727</td><td></td><td></td><td>23/11/2025 15:03</td></tr>
+<tr><td>demy-students</td><td>develop</td><td>4f6ef3e</td><td>styles(shared): add design system components including colors, typography, spacing, radii, and shadows</td><td></td><td>23/11/2025 13:05</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>73a4d4b</td><td>feat(auth): enhance DIContainer with auth repository and update app entry point to use AppRouter</td><td></td><td>22/11/2025 18:05</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>81a14d3</td><td>feat(auth): implement authentication data source and repository with sign-in functionality</td><td></td><td>22/11/2025 18:05</td></tr>
+<tr><td>demy-students</td><td>feature/authentication-management</td><td>ad2422d</td><td>feat(auth): add user entity and authentication repository with sign-in use case</td><td></td><td>22/11/2025 18:04</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>2b820d1</td><td>feat: implement initial app structure with environment configuration, session management, and API endpoints</td><td></td><td>22/11/2025 17:37</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>e82760d</td><td>docs: add issue and pull request templates for better contribution guidelines</td><td></td><td>22/11/2025 17:34</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>9fae5a3</td><td>chore: add initial project documentation, including security policy, and contribution guidelines</td><td></td><td>22/11/2025 17:31</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>256d37d</td><td>chore: organize App folder structure for cowork with team members</td><td></td><td>18/11/2025 18:12</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>5554388</td><td>chore: new initial iOS project structure + gitignore + gitattributes</td><td></td><td>16/11/2025 14:16</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>1e16de3</td><td>chore: clean repository for new project</td><td></td><td>16/11/2025 13:34</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>3efb24a</td><td>chore(vscode): add workspace settings for consistent LF and formatting</td><td></td><td>30/10/2025 12:05</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>d1365cb</td><td>chore: enforce LF line endings via .gitattributes</td><td></td><td>30/10/2025 11:49</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>a5e2a97</td><td>chore(gitignore): add xcshareddata exclusion for Xcode user settings</td><td></td><td>18/10/2025 02:10</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>ab49ecd</td><td>chore: remove duplicate .gitignore</td><td></td><td>13/09/2025 12:39</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>4d6ef6b</td><td>fix: remove xcuserdata folders</td><td></td><td>13/09/2025 12:33</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>f42830f</td><td>chore: add .gitignore file</td><td></td><td>13/09/2025 12:31</td></tr>
+<tr><td>demy-students</td><td>feature/initial-structure</td><td>b9a85a9</td><td>Initial Commit</td><td></td><td>13/09/2025 09:31</td></tr>
+</tbody>
+</table>
+
+#### 4.2.3.4. Testing Suite Evidence for Sprint Review
+
+
+**Unit Test – BillingAccountTest**
+
+Las pruebas unitarias del agregado **BillingAccount** se diseñaron siguiendo el patrón **Arrange–Act–Assert (AAA)** para validar el comportamiento principal del aggregate en torno a la creación y gestión de cuentas de facturación. En primer lugar, se verificó la correcta construcción del agregado a partir del comando `CreateBillingAccountCommand`, comprobando que los Value Objects embebidos (`StudentId`, `DniNumber`, `AcademyId`) se inicializan de forma consistente y que la colección interna de facturas comienza vacía y no nula.
+
+Posteriormente, se probó el flujo de asignación de facturas mediante el comando `AssignInvoiceToBillingAccountCommand`, asegurando que se cree una instancia de `Invoice` con el `InvoiceType`, `Money`, fechas y descripción correctos, y que esta quede asociada al mismo `BillingAccount`. Finalmente, se validó que la colección de facturas expuesta por el aggregate sea **inmodificable desde el exterior**, lanzando una `UnsupportedOperationException` al intentar alterarla, lo que refuerza el encapsulamiento de invariantes del dominio.
+
+![BillingAccount Unit Test – Creation From Command](assets/tests/billing-account-create-from-command-test.png)
+![BillingAccount Unit Test – Assign Invoice To Account](assets/tests/billing-account-assign-invoice-test.png)
+![BillingAccount Unit Test – Unmodifiable Invoices List](assets/tests/billing-account-unmodifiable-invoices-list-test.png)
+
+**Integration Test – BillingAccountRepositoryTest**
+
+Las pruebas de integración del repositorio **BillingAccountRepository** se implementaron usando **Spring Boot Data JPA**, `@DataJpaTest` y un contexto de base de datos aislado para pruebas (perfil `test`). Estas pruebas evalúan la interacción real entre el agregado `BillingAccount` y la infraestructura de persistencia, verificando que las consultas derivadas por nombre funcionen correctamente con Value Objects embebidos.
+
+En particular, se validó que:
+
+* La cuenta de facturación se persista y recupere correctamente, respetando los campos `StudentId`, `DniNumber` y `AcademyId`.
+* El método `findByStudentId(StudentId studentId)` retorne la cuenta correspondiente cuando el estudiante existe y un `Optional` vacío cuando no existe.
+* El método `findAllByAcademyId(AcademyId academyId)` devuelva todas las cuentas asociadas a una academia específica y una lista vacía para academias sin registros.
+* Se mantenga la integridad de datos al trabajar con múltiples cuentas distribuidas en distintas academias, comprobando el tamaño y composición de los resultados para cada consulta.
+
+Estas pruebas confirman que la capa de infraestructura respeta el modelo de dominio y que las consultas por `StudentId` y `AcademyId` se comportan según lo esperado en escenarios reales.
+
+![BillingAccountRepository Test – Persist and Retrieve](assets/tests/billing-accountrepository-persist-and-retrieve-test.png)
+![BillingAccountRepository Test – Query By AcademyId](assets/tests/billing-accountrepository-find-by-academyid-test.png)
+
+| Repository              | Branch              | Commit Id                                  | Commit Message                                                                               | Committed on |
+| ----------------------- | ------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------- | ------------ |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `800b671a3f7b73e4d5ff4ca416a0c14798f70c8b` | test(unit): add unit tests for BillingAccount aggregate with command scenarios               | 2025-12-04   |
+| `nistrahq/demy-backend` | `feature/bdd-tests` | `2a14937b048052e39095d8b61ac2061222d9c73c` | test(integration): add integration tests for BillingAccountRepository with various scenarios | 2025-12-04   |
+
+#### 4.2.3.5. Execution Evidence for Sprint Review
+
+**Teacher Mobile Application**
+
+Evidencia de la funcionalidad clave y la interfaz de usuario del aplicativo móvil diseñado para que los profesores visualicen sus horarios por dia de la semana, reprogramen clases y registren asistencia de los estudiantes.
+
+**Splash Screen — Visualización de Marca**
+
+Muestra el logo y el nombre de la aplicación durante el inicio, permitiendo que los recursos se carguen en segundo plano.
+
+![Splash Screen](./assets/ux-ui/evidences/mobile/teacher-mobile-splash-screen.jpg)
+
+**Sign In — Inicio de Sesión del Profesor**
+
+Interfaz de inicio de sesión donde el profesor ingresa su correo electrónico y contraseña registradas por el administrador para acceder a las funcionalidades de la aplicación móvil. Incluye la opción para recuperar la contraseña y enlaces a los términos y condiciones.
+
+![Sign In](./assets/ux-ui/evidences/mobile/teacher-mobile-sign-in.jpg)
+
+**Terms and Conditions — Detalles Legales y de Uso**
+
+Pantalla que detalla los términos de uso y las políticas de la plataforma, incluyendo la aceptación de los mismos, la descripción del servicio, las responsabilidades del usuario y las condiciones de uso aceptable.
+
+![Terms and Conditions](./assets/ux-ui/evidences/mobile/teacher-mobile-terms-and-conditions.jpg)
+
+**Privacy Policy — Recolección y Uso de Datos**
+
+Detalle de la información que la aplicación recopila de los usuarios y las entidades, y el uso que se le da a esta información.
+
+![Privacy Policy](./assets/ux-ui/evidences/mobile/teacher-mobile-privacy-policy.jpg)
+
+**Forgot Password — Verificación de Correo Electrónico**
+
+Pantalla que permite a los profesores recuperar su acceso en caso de olvidar su contraseña. Se solicita el correo electrónico asociado a la cuenta para enviar un código de verificación y proceder con el restablecimiento seguro de la clave.
+
+![Forgot Password](./assets/ux-ui/evidences/mobile/teacher-mobile-forgot-password.jpg)
+
+**Home — Vista Principal y Horario del Profesor**
+
+Pantalla de inicio que ofrece acceso rápido a módulos clave como Registro de Asistencia, Horario de Clases y Notificaciones. Muestra inmediatamente el horario del día con la hora y ubicación, cumpliendo el objetivo principal de la aplicación.
+
+![Home](./assets/ux-ui/evidences/mobile/teacher-mobile-home.jpg)
+
+**Profile — Gestión de Cuenta y Detalles Personales**
+
+Muestra los datos básicos del profesor logueado: nombre completo, correo electrónico y número de teléfono. Esta sección permite al usuario ver su información de contacto y proporciona acceso directo a la función de Reset Password para mantener la seguridad de la cuenta.
+
+![Profile](./assets/ux-ui/evidences/mobile/teacher-mobile-profile.jpg)
+
+**Settings — Opciones de Configuración y Cierre de Sesión**
+
+Pantalla que consolida opciones esenciales para el usuario. Ofrece acceso rápido a los documentos legales (Terms and Conditions y Privacy Policy) y la funcionalidad clave de Cerrar Sesión para finalizar la sesión del profesor de forma segura.
+
+![Settings](./assets/ux-ui/evidences/mobile/teacher-mobile-settings.jpg)
+
+**Take Attendance Pop-up — Ventana de registro de Asistencia**
+
+Ventana emergente que aparece al hacer clic sobre una clase específica en el Home. Ofrece al profesor la acción directa de Tomar Asistencia, siendo el punto de entrada al registro de la asistencia de los estudiantes para esa sesión.
+
+![Take Attendance](./assets/ux-ui/evidences/mobile/teacher-mobile-take-attendance.jpg)
+
+**Take Attendance — Registro de Asistencia**
+
+Pantalla final que muestra el listado de estudiantes inscritos en la sesión seleccionada y permite al profesor marcar el estado de asistencia de cada uno con las etiquetas: P (Presente), E (Excusado) o A (Ausente). Una vez completado el registro, el botón Save Attendance guarda la información en el sistema.
+
+![Take Attendance](./assets/ux-ui/evidences/mobile/teacher-mobile-take-attendance-list.jpg)
+
+**Attendance Report — Reporte de Asistencia**
+
+Módulo que permite al profesor consultar las métricas de asistencia de los estudiantes por rango de fechas y curso. Muestra el porcentaje consolidado de estudiantes, desglosado por Presentes (P), Excusados (E) y Ausentes (A).
+
+![Attendance Report](./assets/ux-ui/evidences/mobile/teacher-mobile-attendance-report.jpg)
+
+**Date Picker — Selector de Fechas del Calendario de Reporte de Asistencia**
+
+Componente de interfaz de usuario que se despliega al seleccionar la fecha de inicio o fin dentro del Reporte de Asistencia. Permite al profesor elegir de manera intuitiva el rango de fechas que desea consultar, mostrando el mes y el día específico seleccionado.
+
+![Date Picker](./assets/ux-ui/evidences/mobile/teacher-mobile-date-picker.jpg)
+
+**Notifications — Historial de Alertas y Novedades**
+
+Pantalla dedicada a mostrar todas las notificaciones del sistema, alertas sobre reprogramación de clases y alertas generales del sistema. En este caso, muestra un mensaje de bienvenida confirmando que el profesor puede comenzar a gestionar sus horarios y asistencia.
+
+![Notifications](./assets/ux-ui/evidences/mobile/teacher-mobile-notifications.jpg)
+
+**Teaching Schedule — Horario Semanal**
+
+Pantalla central que permite al profesor visualizar su horario clase por clase, organizado por día de la semana. Muestra los detalles de cada clase programada y ofrece la opción de reprogramación de clases mediante el ícono de calendario rojo.
+
+![Teaching Schedule](./assets/ux-ui/evidences/mobile/teacher-mobile-teaching-schedule.jpg)
+
+**Teaching Reschedule — Reprogramación de Clase**
+
+Pantalla que se activa al seleccionar el ícono de calendario en el horario. Permite al profesor modificar los parámetros de la clase seleccionada. El profesor puede ajustar el Día de la Semana, la Hora de Inicio y la Hora de Fin, mientras que la información del curso y la ubicación permanecen inalterables.
+
+![Teaching Reschedule](./assets/ux-ui/evidences/mobile/teacher-mobile-teaching-reschedule.jpg)
+
+**Select Day — Componente de Selección de Día para Reprogramación de Clase**
+
+Ventana de diálogo que se despliega al seleccionar el campo Day of Week. Permite al profesor elegir de una lista el día de la semana al cual moverá la clase reprogramada, incluyendo todos los días, lo cual es crucial para la funcionalidad de gestión de horario.
+
+![Select Day](./assets/ux-ui/evidences/mobile/teacher-mobile-select-day.jpg)
+
+**Time Picker — Selector de Hora para Reprogramación de Clase**
+
+Ventana de diálogo que se despliega al seleccionar los campos Start Time o End Time dentro del formulario de Reprogramación de Clase. Este componente de reloj analógico permite al profesor ajustar la hora de inicio o fin de la clase reprogramada de forma precisa, eligiendo entre las opciones AM y PM
+
+![Time Picker](./assets/ux-ui/evidences/mobile/teacher-mobile-time-picker.jpg)
+
+**Link de video de presentación sobre la aplicación de Administradores**
+
+[Video Presentación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221g120_upc_edu_pe/IQBDpFRGjtaOSbBDEkfNEGV_AYJIvI2hIBRoIxSQVp2WNXU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=WA85Vt)
+**Timestamp: 00:00 - 7:47**
+
+
+**Student Mobile Application**
+Evidencia de la funcionalidad clave y la interfaz de usuario del aplicativo móvil diseñado para que los estudiantes visualicen sus horarios y accedan a información institucional relevante.
+
+**Sign In — Inicio de Sesión del Estudiante**
+
+Interfaz de inicio de sesión de la aplicación móvil para estudiantes. Permite al usuario ingresar su Correo Electrónico y Contraseña para acceder a su información académica.
+
+![Sign In](./assets/ux-ui/evidences/mobile/student-mobile-sign-in.jpg)
+
+**Home — Horario y Novedades del Estudiante**
+
+Pantalla principal que saluda al estudiante y muestra de forma inmediata su Horario de hoy. Destaca la clase actual y permite navegar por el horario diario. También incluye una sección de Últimas actualizaciones para noticias y reportes.
+
+![Home](./assets/ux-ui/evidences/mobile/student-mobile-home.jpg)
+
+**Student Schedule — Horario Semanal Detallado**
+
+Pantalla que se accede al hacer clic en Ver más en el Home Screen. Muestra el horario completo del estudiante organizado por día y hora. Detalla las clases de cada día, incluyendo el nombre del profesor y la ubicación del campus, lo que permite al estudiante tener una vista completa de su semana académica.
+
+![Student Schedule](./assets/ux-ui/evidences/mobile/student-mobile-schedule.jpg)
+
+**Configuration — Configuración**
+
+Pantalla de configuración que permite al estudiante revisar la Política de Privacidad, Términos y Condicione y la opcion de cerrar sesion.
+
+![Configuration](./assets/ux-ui/evidences/mobile/student-mobile-configuration.jpg)
+
+**Profile — Datos Personales**
+
+Pantalla de perfil que muestra la información esencial de su cuenta, incluyendo fecha de nacimiento, una opción directa para Restablecer Contraseña y la configuración de Idioma (Español), permitiendo la gestión básica de su cuenta.
+
+![Profile](./assets/ux-ui/evidences/mobile/student-mobile-profile.jpg)
+
+**Privacy Policy — Recolección y Uso de Datos**
+
+Página que explica cómo la aplicación recopila y utiliza los datos del estudiante, incluyendo la Información Recopilada y las Medidas de Protección de Datos Académicos.
+
+![Profile](./assets/ux-ui/evidences/mobile/student-mobile-privacy-policy.jpg)
+
+**Terms and Conditions — Detalles Legales y de Uso**
+
+Documento que el estudiante debe aceptar al usar la plataforma, detallando la Aceptación de Términos, la Descripción del Servicio y el uso aceptable de la aplicación, fundamental para la protección legal.
+
+![Terms and Conditions](./assets/ux-ui/evidences/mobile/student-mobile-terms-conditions.jpg)
+
+
+#### 4.2.3.6. Services Documentation Evidence for Sprint Review
+
+En esta sección se presentan las evidencias de funcionamiento de los nuevos endpoints del backend desplegado en Railway, verificando su correcto comportamiento mediante Swagger UI
+
+**getScheduleByStudent (GET /schedules/by-student/{userId})**
+Este endpoint permite obtener el horario de clases asociado a un estudiante específico, utilizando su userId como parámetro de ruta.
+
+![getScheduleByStudent](./assets/ux-ui/evidences/backend/backend-doc-get-schedule-by-id.png)
+
+
+**getCurrentStudent (GET /students/me)**
+Este endpoint retorna los datos del estudiante actualmente autenticado.
+
+![getCurrentStudent](./assets/ux-ui/evidences/backend/backend-doc-get-current-student.png)
+
+
+#### 4.2.3.7. Software Deployment Evidence for Sprint Review
+
+**Flutter**
+
+**Paso 1 – Generación de la Keystore (firma de Android)**
+
+La keystore es el archivo que almacena la clave que identifica y firma la aplicación Android.
+Es obligatoria para generar builds de producción (APK o AAB), y también es aceptada por Firebase App Distribution.
+
+Android exige que cada aplicación tenga una firma criptográfica.
+Esa firma garantiza que todas las versiones pertenecen al mismo desarrollador.
+Sin ella no es posible crear builds de producción ni distribuir la app oficialmente.
+
+```
+keytool -genkey -v -keystore demy_teachers.keystore -alias release -keyalg RSA -keysize 2048 -validity 10000
+```
+
+Explicación de parámetros
+
+- -keystore demy_teachers.keystore: nombre del archivo keystore que se generará.
+- -alias release: alias del certificado dentro de la keystore.
+- -keyalg RSA: algoritmo criptográfico utilizado.
+- -keysize 2048: tamaño de la llave (recomendado).
+- -validity 10000: días de validez (10000 ≈ 27 años).
+
+![img.png](assets/ux-ui/evidences/deployments/sprint3/img.png)
+
+Rellenar los campos solicitados
+
+![img_1.png](assets/ux-ui/evidences/deployments/sprint3/img_1.png)
+
+Una vez generada, colocar la keystore dentro de la carpeta android/app del proyecto Flutter.
+
+android/app/demy_teachers.keystore
+
+![img_2.png](assets/ux-ui/evidences/deployments/sprint3/img_2.png)
+
+**Paso 2 – Configuración del archivo key.properties**
+
+Crear un archivo llamado key.properties dentro de la carpeta android del proyecto Flutter.
+
+El archivo key.properties permite almacenar de forma organizada y separada las credenciales de la keystore, evitando hardcodearlas en los archivos Gradle.
+Flutter/Android lo utilizará para firmar automáticamente el APK/AAB de release.
+
+```
+android/key.properties
+```
+
+Dentro del archivo key.properties, añadir las siguientes líneas:
+
+```
+storePassword=CONTRASEÑA_DE_LA_KEYSTORE
+keyPassword=CONTRASEÑA_DE_LA_KEY
+keyAlias=release
+storeFile=../app/demy_teachers.keystore
+```
+
+Explicación de cada campo
+
+- storePassword: contraseña del archivo keystore completo.
+- keyPassword: contraseña específica del alias (puede ser la misma).
+- keyAlias: alias definido al crear la keystore → release.
+- storeFile: ruta hacia la keystore dentro del proyecto.
+
+Por qué funciona la ruta ../app/demy_teachers.keystore
+
+- El archivo key.properties está dentro de /android/.
+- Se sube un nivel (..).
+- Se ingresa a /app/.
+- Se apunta al archivo de firma.
+
+![img_3.png](assets/ux-ui/evidences/deployments/sprint3/img_3.png)
+
+*Regla importante*
+
+No subir este archivo a GitHub si contiene contraseñas reales.
+Se puede agregar al .gitignore:
+
+key.properties
+android/app/*.keystore
+
+![img_7.png](assets/ux-ui/evidences/deployments/sprint3/img_7.png)
+
+**Paso 3 – Configurar build.gradle.kts para usar la keystore (Kotlin DSL)**
+
+Este paso conecta el archivo key.properties con el módulo Android, permitiendo que Flutter genere automáticamente un APK firmado en modo release.
+
+Abrir el archivo android/app/build.gradle y añadir el siguiente código al inicio, antes del bloque android { ... }:
+
+```
+import java.util.Properties
+import java.io.FileInputStream
+
+val keystoreProperties = Properties()
+val keystorePropertiesFile = rootProject.file("key.properties")
+
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(FileInputStream(keystorePropertiesFile))
+}
+```
+
+![img_4.png](assets/ux-ui/evidences/deployments/sprint3/img_4.png)
+
+Qué hace este código
+
+- Busca el archivo key.properties.
+- Carga contraseñas y rutas en variables que luego se utilizan para firmar el APK.
+
+Luego, dentro del bloque android { ... }, agregar o editar la sección signingConfigs { ... } para que quede así:
+
+```
+signingConfigs {
+    create("release") {
+        keyAlias = keystoreProperties["keyAlias"] as String?
+        keyPassword = keystoreProperties["keyPassword"] as String?
+        storeFile = file(keystoreProperties["storeFile"] as String?)
+        storePassword = keystoreProperties["storePassword"] as String?
+    }
+}
+```
+
+![img_5.png](assets/ux-ui/evidences/deployments/sprint3/img_5.png)
+
+Qué hace esta configuración
+
+- Indica el alias a utilizar (release).
+- Define las contraseñas correspondientes.
+- Especifica la ubicación de la keystore.
+
+Finalmente, verificar que la sección buildTypes { ... } dentro de android { ... } esté configurada para usar la firma release:
+
+```
+buildTypes {
+    release {
+        signingConfig = signingConfigs.getByName("release")
+        isMinifyEnabled = false
+        isShrinkResources = false
+    }
+}
+```
+
+![img_6.png](assets/ux-ui/evidences/deployments/sprint3/img_6.png)
+
+Por qué isMinifyEnabled y isShrinkResources en false
+
+- Para Firebase App Distribution, un APK simple es suficiente.
+- No se requiere optimización ni ofuscación (eso aplica para Play Store).
+- Reduce posibles fallas de configuración en esta fase.
+
+Guardar los cambios y sincronizar el proyecto con Gradle.
+
+Ejecutar flutter clean.
+
+Realizar un commit asegurándose de no incluir key.properties ni la keystore. Debe ser en release.
+
+![img_8.png](assets/ux-ui/evidences/deployments/sprint3/img_8.png)
+
+**Paso 4 – Generación del APK de release firmado**
+
+Dado que el entorno ya está configurado:
+
+![img_9.png](assets/ux-ui/evidences/deployments/sprint3/img_9.png)
+
+![img_10.png](assets/ux-ui/evidences/deployments/sprint3/img_10.png)
+
+![img_15.png](assets/ux-ui/evidences/deployments/sprint3/img_15.png)
+
+Ejecutar el siguiente comando en la terminal dentro de la carpeta raíz del proyecto Flutter:
+
+```
+flutter build apk --release --dart-define=ENV=prod
+```
+
+Qué hace este comando
+
+- Compila el código Dart sin depuración.
+- Minimiza y optimiza el código.
+- Firma el APK automáticamente usando la keystore configurada.
+- Genera un archivo listo para distribuir.
+
+![img_11.png](assets/ux-ui/evidences/deployments/sprint3/img_11.png)
+
+Tras la compilación, el APK firmado estará ubicado en:
+
+```
+build/app/outputs/flutter-apk/app-release.apk
+```
+
+![img_12.png](assets/ux-ui/evidences/deployments/sprint3/img_12.png)
+
+Ese archivo está:
+
+- Firmado
+- Preparado para distribución
+- Compatible con Firebase App Distribution
+
+**Paso 5 – Subida del APK a Firebase App Distribution**
+
+Una vez generado el archivo app-release.apk, se puede distribuir a testers usando Firebase App Distribution.
+Firebase permite enviar builds rápidamente sin necesidad de subir la app a Google Play.
+
+Ubicar el APK generado
+
+El archivo se encuentra en:
+
+build/app/outputs/flutter-apk/app-release.apk
+
+Ese es el archivo a subir a Firebase.
+
+Acceso a Firebase Console
+
+Ingresar a:
+
+https://console.firebase.google.com/
+
+Seleccionar el proyecto Nistra Demy
+
+![img_13.png](assets/ux-ui/evidences/deployments/sprint3/img_13.png)
+
+Agregar aplicación y plataforma Android
+
+![img_14.png](assets/ux-ui/evidences/deployments/sprint3/img_14.png)
+
+Registrar el paquete de Android y el nombre de la app
+
+![img_16.png](assets/ux-ui/evidences/deployments/sprint3/img_16.png)
+
+Omitir la configuración del SDK de Firebase
+
+![img_17.png](assets/ux-ui/evidences/deployments/sprint3/img_17.png)
+
+![img_18.png](assets/ux-ui/evidences/deployments/sprint3/img_18.png)
+
+Ir a la consola
+
+![img_19.png](assets/ux-ui/evidences/deployments/sprint3/img_19.png)
+
+Abrir App Distribution en el menú lateral izquierdo
+
+![img_20.png](assets/ux-ui/evidences/deployments/sprint3/img_20.png)
+
+Elegir Demy Teachers arriba
+
+![img_21.png](assets/ux-ui/evidences/deployments/sprint3/img_21.png)
+
+Comenzar
+
+![img_22.png](assets/ux-ui/evidences/deployments/sprint3/img_22.png)
+
+Subir el APK
+
+![img_23.png](assets/ux-ui/evidences/deployments/sprint3/img_23.png)
+
+![img_24.png](assets/ux-ui/evidences/deployments/sprint3/img_24.png)
+
+![img_25.png](assets/ux-ui/evidences/deployments/sprint3/img_25.png)
+
+Seleccionar testers
+
+![img_26.png](assets/ux-ui/evidences/deployments/sprint3/img_26.png)
+
+Añadir notas de la versión
+
+![img_27.png](assets/ux-ui/evidences/deployments/sprint3/img_27.png)
+
+Distribuir
+
+![img_28.png](assets/ux-ui/evidences/deployments/sprint3/img_28.png)
+
+Listo: el APK firmado se ha subido a Firebase App Distribution.
+
+![img_29.png](assets/ux-ui/evidences/deployments/sprint3/img_29.png)
+
+Verificar el estado de los verificadores
+
+![img_30.png](assets/ux-ui/evidences/deployments/sprint3/img_30.png)
+
+**Recomendaciones finales**
+
+Una vez subido el APK a Firebase App Distribution, los testers reciben una invitación por correo para instalarlo. Deben iniciar sesión con su cuenta de Google, aceptar la invitación y habilitar la instalación de apps de fuentes desconocidas. Firebase muestra el estado de cada tester (instalado, pendiente, actualizado), permitiendo dar seguimiento al proceso de pruebas.
+
+Se recomienda mantener un versionado claro (por ejemplo, 1.0.0+1), añadir notas de cada release y proteger la keystore evitando subirla al repositorio. Para producción real, usar AAB (flutter build appbundle --release). Siempre distribuir las builds mediante Firebase para mantener control de versiones y realizar pruebas en diferentes dispositivos para asegurar compatibilidad.
+
+#### 4.2.3.8. Team Collaboration Insights during Sprint
+
+| Alumno                           | Actividad    |
+|----------------------------------|--------------|
+| Crispin Ramos, Daniel Franco     | Flutter      |
+| Aponte Cruzado, Andrea Marielena | Flutter, iOS |
+| Ramírez Mestanza, Salim Ignacio  | Flutter, iOS |
+| Sulca Gonzales, Paúl Fernando    | Flutter      |
+| Vilca Saboya, Diego Alejandro    | Flutter      |
+
+**Flutter Application**
+
+![img_1.png](assets/ux-ui/evidences/mobile/img_1.png)
+![img_3.png](assets/ux-ui/evidences/mobile/img_3.png)
+![img_5.png](assets/ux-ui/evidences/mobile/img_5.png)
+
+**iOS Application**
+
+![img.png](assets/ux-ui/evidences/mobile/img.png)
+![img_2.png](assets/ux-ui/evidences/mobile/img_2.png)
+![img_4.png](assets/ux-ui/evidences/mobile/img_4.png)
+
+<hr class="page-break">
+
+## 4.3. Validation Interviews
+
+En esta sección se presentan las entrevistas de validación realizadas con los representantes de los segmentos objetivo del proyecto: administrativos, docentes y alumnos de academias educativas. El propósito de esta fase fue evaluar la claridad de la propuesta de valor, la usabilidad del prototipo y la aceptación de las funcionalidades planteadas, contrastando las hipótesis iniciales con la percepción real de los usuarios.
+
+### 4.3.1. Diseño de Entrevistas
+
+Para el diseño de las entrevistas de validación se elaboraron guías diferenciadas por segmento. Las preguntas se centraron en dos dimensiones principales: propuesta de valor y usabilidad.
+
+**Segmento 1:** Administrativos de academias
+
+**A. Landing Page (Propuesta de valor)**
+
+1. ¿Qué fue lo primero que entendiste al ver la página?
+2. ¿Te queda claro qué problema buscamos resolver o ayudar?
+3. ¿El mensaje principal te parece relevante para tu trabajo diario?
+4. ¿Te quedan claras las secciones de la página? ¿Agregarías alguna?
+5. ¿Qué parte del contenido te pareció más útil o atractiva?
+6. ¿Te parece que el precio y la propuesta de valor son los adecuados?
+7. ¿Qué mejorarías para que la información sea más clara o persuasiva?
+
+**B. App Movil (Interfaz)**
+
+1. ¿Qué tan fácil fue navegar por la aplicación o entender las secciones?
+2. ¿Lograste identificar rápidamente dónde registrar matrículas o pagos?
+3. ¿Te pareció intuitiva la interfaz o tuviste que pensar demasiado para realizar una acción?
+4. ¿Hay alguna función que esperabas encontrar y no viste
+5. ¿Qué te generó confianza o desconfianza mientras probabas la herramienta?
+
+**C. App Movil (Propuesta de valor)**
+
+1. ¿Qué tan útil consideras esta herramienta para mejorar tu organización diaria?
+2. ¿Qué tarea específica crees que te ahorraría más tiempo o esfuerzo?
+3. Si tuvieras que reemplazar tu sistema actual por este, ¿qué necesitaría tener para convencerte?
+4. ¿Qué tan probable sería que recomendaras esta herramienta a otro administrativo?
+
+**Segmento 2:**  Profesores de academia
+
+**A. App Movil (Interfaz)**
+
+1. ¿Qué tan fácil te resultó ubicar tus cursos y sesiones programadas desde la pantalla principal?
+2. ¿Pudiste registrar asistencia sin dificultad? ¿Qué parte del flujo te pareció más clara y cuál más confusa?
+3. ¿Algún botón, icono o sección te resultó poco intuitiva o no entendiste para qué servía?
+4. ¿Te tomó más tiempo del esperado realizar alguna acción? ¿Cuál?
+5. ¿Hubo algo en la experiencia que te generó confianza (o desconfianza)?
+
+**B. App Movil (Propuesta de valor)**
+
+1. ¿Qué tan útil te parece esta herramienta para organizar tus clases y controlar asistencia?
+2. ¿Qué tarea docente sientes que esta app te ayudaría a automatizar o simplificar más?
+3. Comparado con la forma en que trabajas hoy, ¿qué ventaja le encuentras?
+4. Si tuvieras que usar Demy como herramienta principal, ¿qué funcionalidades adicionales necesitarías para comprometerte al 100%?
+5. ¿Qué tan probable sería que recomendaras esta app a otros profesores de tu academia?
+
+**Segmento 3:**  Estudiantes de academia
+
+**A. App Movil (Interfaz)**
+
+1. ¿Qué tan fácil fue entender la vista principal y encontrar tus clases o horarios?
+2. ¿Pudiste navegar sin perderte entre secciones como “Mis cursos”, “Horarios”?
+3. ¿Hubo algo en la interfaz que te resultara confuso, poco visible o innecesario?
+4. ¿Qué tan rápido entendiste cómo ver tus próximas clases?
+5. ¿Hubo algo en la experiencia que te transmitiera seguridad o inseguridad?
+
+**B. App Movil (Propuesta de valor)**
+
+1. ¿Qué tan útil crees que sería esta app para mantenerte organizado con tus clases y pagos?
+2. ¿Qué funcionalidad te ahorraría más estrés o tiempo en tu día a día?
+3. Si comparas esta app con tu forma actual de organizar tus clases, ¿qué mejora más te llamó la atención?
+4. Para que realmente prefieras esta app antes que otros medios, ¿qué cosa indispensable debería incluir?
+5. ¿Qué tan probable es que recomiendes esta aplicación a otros estudiantes de tu academia?
+
+### 4.3.2. Registro de Entrevistas
+
+
+#### Segmento: Administrativo - Entrevistado 1
+
+| Atributo                | Detalle                                                                                                 |
+|-------------------------|---------------------------------------------------------------------------------------------------------|
+| **Nombre**              | Nataly Rodríguez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Edad**                | 30 años                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Sexo**                | Femenino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Distrito**            | Jesús María                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Ocupación**           | Administradora                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Fecha de entrevista** | 26/11/24                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Timing**              | 00:00 - 16:45                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBs7QjLt83AS42ooOpldkO3Af0fVzoc3Mr4DPeAYJZl3FM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=W3xzZA)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-administrator-1.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Resumen**             | Nataly es una administradora de 30 años que trabaja en Lima gestionando academias en el rubro de salud. Considera que la aplicación mostrada cumple muy bien con lo que necesita y la describe como “perfecta”, pero sugiere incorporar una herramienta de dictado por voz para registrar asistencia de muchos alumnos de forma más rápida y práctica. Además, señala que la landing page debería incluir un chat de soporte visible y especificar claramente los horarios de atención para que los usuarios sepan cuándo pueden recibir ayuda. |                                                                                                                                                                                                                                                                        
+#### Segmento: Administrativo - Entrevistado 2
+
+| Atributo                | Detalle                                                                                                 |
+|-------------------------|---------------------------------------------------------------------------------------------------------|
+| **Nombre**              | Germán Rivera                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Edad**                | 35 años                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Distrito**            | Jesus Maria                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Ocupación**           | Especialista en marketing académico                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Fecha de entrevista** | 30/11/25                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Timing**              | 16:46 – 33:28                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Video**               |  [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBs7QjLt83AS42ooOpldkO3Af0fVzoc3Mr4DPeAYJZl3FM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=W3xzZA)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-administrator-2.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Resumen**             | Germán es un profesional de 35 años que gestiona el área de marketing en academias de Lima. Percibe la aplicación como profesionalmente impecable y destaca que su diseño y organización transmiten confianza desde el primer momento. Como sugerencia principal para la landing page, recomienda aclarar mejor qué herramientas y funcionalidades ofrece Demy en cada sección, evitando mensajes ambiguos. En cuanto a la versión web del dashboard, señala que los cuadros o tarjetas dentro del panel deberían redirigir directamente a cada sección correspondiente, lo cual haría la navegación más fluida y directa para los usuarios administradores. |
+
+
+#### Segmento: Administrativo - Entrevistado 3
+
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Nombre**              | Luciano Achin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Edad**                | 29 años                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Distrito**            | Surquillo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Ocupación**           | Administrador de una academia                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Timing**              | 33:29 – 52:08                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBs7QjLt83AS42ooOpldkO3Af0fVzoc3Mr4DPeAYJZl3FM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=W3xzZA)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-administrativo-3.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Resumen**             | Luciano considera que la landing de Demy presenta buena estructura, pero advierte que el precio podría ser difícil de justificar para academias grandes. Además, comentó que los términos y condiciones no son fáciles de leer, lo que reduce confianza. En la versión web, señaló que las secciones deberían redirigir directamente al módulo correspondiente, ya que actualmente requieren pasos adicionales. También indicó que algunos módulos como registro de periodos y cursos deberían unificarse, y que la plataforma necesita mejoras de accesibilidad para facilitar su uso en contextos operativos reales. |
+
+#### Segmento: Profesor - Entrevistado 1
+
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**              | Martín Salcedo                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Edad**                | 28 años                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Distrito**            | San Juan de Lurigancho                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Ocupación**           | Profesor de academia                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Timing**              | 52:09 – 57:06                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBs7QjLt83AS42ooOpldkO3Af0fVzoc3Mr4DPeAYJZl3FM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=W3xzZA)                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-profesor-1.png)                                                                                                                                                                                                                                                                                                                                                 |
+| **Resumen**             | Martín es un profesor de 28 años que trabaja en academias en Lima. Considera que la aplicación es completa y cumple bien con lo necesario para gestionar clases y manejar finanzas relacionadas a pagos y asistencia. Sin embargo, sugiere mejorar la personalización visual del aplicativo, ya que le gustaría poder cambiar fuentes, colores y niveles de contraste para tener una experiencia más cómoda según su preferencia personal. |
+
+#### Segmento: Profesor - Entrevistado 2
+
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**              | José Zapata                                                                                                                                                                                                                                                                                                                                                                           |
+| **Edad**                | 25 años                                                                                                                                                                                                                                                                                                                                                                               |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                             |
+| **Distrito**            | Santa Anita                                                                                                                                                                                                                                                                                                                         |
+| **Ocupación**           | Profesor de academia                                                                                                                                                                                                                                                                                                                                                                  |
+| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                              |
+| **Timing**              | 57:07 – 01:01:07                                                                                                                                                                                                                                                                                                                                                                         |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBs7QjLt83AS42ooOpldkO3Af0fVzoc3Mr4DPeAYJZl3FM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=W3xzZA)                                                                                                                                                                                                                                                                                                                                                           |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-profesor-2.png)*                                                                                                                                                                                                                     |
+| **Resumen**             | José es un profesor de 25 años que percibe la aplicación como exelente y bien lograda, destacando especialmente la claridad de las secciones principales. Como sugerencia, indicó que sería muy útil incorporar una sección dedicada a visualizar las notas de los alumnos, permitiendo a los profesores consultar rendimiento y calificaciones de manera rápida desde la app. |
+
+#### Segmento: Profesor - Entrevistado 3
+
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Nombre**              | Gonzalo Pachas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Edad**                | 22 años                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Distrito**            | San Juan de Miraflores                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Ocupación**           | Profesor de academia                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Timing**              | 01:01:08 – 01:05:54                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBs7QjLt83AS42ooOpldkO3Af0fVzoc3Mr4DPeAYJZl3FM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=W3xzZA)                                                                                                                                                                                                                                                                                                                              |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-profesor-3.png)                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Resumen**             | Gonzalo considera que la aplicación está **completa y bien estructurada**, destacando que muestra tiempos exactos** en sus registros y vistas. Resaltó que para él es muy importante contar con un porcentaje claro de asistencia por alumno, ya que le permite evaluar rápidamente el compromiso de cada estudiante. Además, mencionó que preferiría que la aplicación muestre sus horarios exclusivamente en un formato semanal, ya que así organiza mejor su planificación docente. |
+
+
+#### Segmento: Alumno - Entrevistado 1
+| Atributo                | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**              | Alexander Rioja                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Edad**                | 17 años                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Sexo**                | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Distrito**            | San Juan de Miraflores                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Ocupación**           | Estudiante de academia                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Fecha de entrevista** | 28/10/25                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Timing**              | 01:05:55 – 01:09:34                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Video**               | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBs7QjLt83AS42ooOpldkO3Af0fVzoc3Mr4DPeAYJZl3FM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=W3xzZA)                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Captura**             | ![Captura](./assets/images/screenshots/validation-interviews/screenshot-validation-alumno-1.png)                                                                                                                                                                                                                                                                                                                             |
+| **Resumen**             | Alexander, estudiante de 17 años del COAR Lima, consideró que la aplicación para alumnos está muy bien hecha, clara y sencilla de usar. Mencionó que la recomendaría a otros estudiantes por su facilidad para encontrar clases, horarios y notificaciones. Como sugerencia, le gustaría que la app incluya un chatbot con IA dentro de la vista de alumnos, para resolver dudas rápidas sin necesidad de contactar a la academia. |
+
+### 4.3.3. Evaluaciones según heurísticas
+
+#### UX Heuristics & Principles Evaluation
+#### Usability – Inclusive Design – Information Architecture
+
+**CARRERA** : Ingeniería de Software
+
+**CURSO** : 1ACC0238 - Aplicaciones para Dispositivos Móviles
+
+**NRC** : 1798
+
+**PROFESOR** : Jorge Luis Mayta Guillermo
+
+**AUDITOR** : Nistra
+
+**CLIENTES** : Nataly Rodriguez, German Rivera
+
+#### SITE o APP A EVALUAR:
+
+**Demy**
+
+#### TAREAS A EVALUAR:
+
+El alcance de esta evaluación incluye la revisión de usabilidad de las siguientes tareas:
+
+**Landing Page**:
+1. Explorar la propuesta de valor principal de Demy (Seccion hero, mensaje clave).
+2. Feature Section.
+3. How it works Section.
+4. Testimonials Section.
+5. About Us Section.
+6. Pricing Section.
+7. FAQ Section.
+8. Contact Section.
+
+**Native Android Mobile Application**:
+1. Home Section
+2. Schedule Section
+3. Reschedule Section
+4. Attendance Section
+5. Profile Section
+
+**Cross-Platform Mobile Application**:
+1. Dashboard
+2. Teachers Section
+3. Students Section
+4. Periods Section
+5. Courses Section
+6. Classsrooms Section
+7. Schedules Section
+8. Enrollments Section
+9. Scheduling Section
+10. Billing Section
+11. Finance Section
+12. Accounting Section
+13. Profile Section
+
+**Native iOS Mobile Application**:
+1. Home Section
+2. Schedule Section
+3. Settings Section
+4. Profile Section
+
+#### FUERA DE ALCANCE:
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+**Landing Page**
+1. Redes sociales asociadas a la startup
+2. Política de privacidad y condiciones de uso
+
+**Mobile Applications**
+1. Recuperación de contraseña
+2. Política de privacidad y condiciones de uso 
+3. Reportes de bugs
+4. Configuraciones generales del sistema del dispositivo.
+
+#### ESCALA DE SEVERIDAD:
+
+| Nivel   | Descripción                                                                                                                                                                                         |
+|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1       | **Problema superficial**: puede ser fácilmente superador por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.                   |
+| 2       | **Problema menor**: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase. |
+| 3       | **Problema mayor**: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.                                 |
+| 4       | **Problema muy grave**: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.                               |
+
+#### TABLA RESUMEN:
+
+**Landing Page**
+
+| # | Problema                                                                                                  | Escala de severidad | Heurística/ Principio Violado                        |
+| - | --------------------------------------------------------------------------------------------------------- | ------------------- | ---------------------------------------------------- |
+| 1 | La landing no incluye un chat/chatbot de soporte ni indica claramente los horarios de atención del mismo. | 1                   | Help and documentation                               |
+| 2 | La landing no explica con suficiente claridad qué herramientas ofrece cada sección.                       | 2                   | Match between system and the real world              |
+| 3 | Los términos y condiciones no se leen con claridad y afectan la confianza del usuario.                    | 2                   | Visibility of system status |
+| 4 | El precio podría no estar alineado a la percepción de valor para academias grandes.                       | 2                   | Match between system and the real world              |
+
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1:** Falta de chat o chatbot de soporte con horarios visibles
+
+**Severidad: 1**  
+**Heurística violada:** Help and documentation
+
+**Problema:**
+En la landing page de Demy no se visualiza ningún chat o chatbot de soporte que permita a los usuarios resolver dudas rápidas sobre el producto. Además, tampoco se indican horarios de atención ni disponibilidad del equipo de soporte. Esto genera incertidumbre en potenciales clientes (como administradores de academias) que podrían necesitar aclarar preguntas antes de tomar una decisión, y los obliga a buscar otros medios de contacto menos inmediatos.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-landing.png)
+
+**Recomendación:**
+Incorporar un chat o chatbot de soporte visible en la landing (por ejemplo, en la esquina inferior derecha), junto con un mensaje claro de disponibilidad, indicando los horarios de atención y el tiempo estimado de respuesta. En caso de estar fuera de horario, el chat podría cambiar a un modo “déjanos tu mensaje” para mantener expectativas realistas y mejorar la confianza en el servicio.
+
+**PROBLEMA #2:** Falta de claridad en la explicación de las herramientas y secciones de la landing
+**Severidad: 2**
+**Heurística violada:** Match between system and the real world
+
+**Problema:**
+La landing page de Demy no explica con suficiente claridad qué herramientas o funcionalidades incluye cada sección del sistema. El contenido presenta descripciones generales, pero no especifica de manera directa y concreta qué obtiene el usuario en cada módulo (por ejemplo: gestión de horarios, registros de asistencia, control de pagos, panel para profesores, vista de estudiantes, etc.).
+Esto provoca que los usuarios —especialmente perfiles administrativos como Germán— tengan dificultades para formarse un entendimiento claro de la propuesta de valor real del producto. La falta de precisión genera dudas, afecta la confianza y exige un esfuerzo cognitivo adicional para interpretar lo que Demy realmente ofrece.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-2-landing.png)
+
+**Recomendación:**
+Ampliar y reorganizar las secciones de la landing para describir explícitamente cada herramienta o funcionalidad, utilizando lenguaje claro, ejemplos y bullets concretos. Incluir pequeñas visualizaciones (íconos, screenshots o micro-demos) que ayuden a los usuarios a relacionar cada sección con su utilidad real dentro de una academia. Esto mejora la comprensión inmediata, reduce la ambigüedad y alinea el contenido con los modelos mentales del usuario.
+
+**PROBLEMA #3:** Los términos y condiciones no son claros ni fácilmente visibles
+
+**Severidad:** 2
+**Heurística violada:** Visibility of system status
+
+**Problema:**
+En las entrevistas se mencionó que los términos y condiciones de la landing no se leen bien, ya sea por tamaño, ubicación o claridad del texto. Esto afecta la percepción de transparencia y puede generar desconfianza en usuarios que buscan información legal o de uso antes de registrarse o contratar el servicio. La falta de una sección clara y fácil de localizar obstaculiza la comprensión del alcance del producto y de las condiciones del servicio.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-3-landing.png)
+
+
+**Recomendación:**
+Crear una sección dedicada y visible de “Términos y Condiciones” con tipografía adecuada, enlaces accesibles y estructura clara. Añadir además un resumen breve en lenguaje simple para reforzar transparencia.
+
+**PROBLEMA #4:** El precio puede resultar difícil de justificar para academias grandes
+
+***Severidad:** 2
+**Heurística violada:** Match between system and the real world
+
+**Problema:**
+Luciano indicó que, desde la perspectiva de academias grandes, el precio de Demy podría no encajar con sus estructuras de costo típicas. Esto sugiere que la landing no comunica adecuadamente la relación calidad–valor para academias de mayor escala, o no explica suficientemente los beneficios diferenciales que justifican la inversión.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-4-landing.png)
+
+**Recomendación:**
+Agregar una sección de precios más segmentada (pequeñas, medianas y grandes academias) y resaltar casos de uso que muestran ahorro, eficiencia o indicadores de impacto financiero.
+
+<hr class="page-break">
+
+**Native Android Mobile Application**
+
+| # | Problema                                                                                                                   | Escala de severidad | Heurística/ Principio Violado                                |
+| - | -------------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------ |
+| 1 | La aplicación no permite ajustar fuentes, colores o contrastes, reduciendo la accesibilidad y personalización.             | 2                   | User Control and Freedom                                               |
+| 2 | La app no incluye una sección para ver las notas de los alumnos, generando ausencia de información relevante.              | 3                   | Match between system and the real world                      |
+| 3 | La vista de horarios no ofrece un modo de visualización semanal, lo que afecta la alineación con el flujo natural docente.         | 2                   | Match between system and the real world                                  |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1:** Falta de opciones para ajustar fuentes, colores y contraste
+
+**Severidad:** 2
+**Heurística violada:** User Control and Freedom
+
+**Problema:**
+La aplicación móvil para profesores no cuenta con opciones de personalización visual como ajustar tamaño de fuente, nivel de contraste o paleta de colores. Para profesores como Martín, estas opciones mejoran significativamente la comodidad visual durante sesiones largas de registro de asistencia, revisión de pagos o consulta de clases.
+La ausencia de estas configuraciones reduce la accesibilidad general de la aplicación y puede generar fatiga visual, especialmente en contextos de baja luz o uso frecuente.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-mobile.jpeg)
+
+
+**Recomendación:**
+Agregar un módulo de “Accesibilidad” dentro de la configuración que permita modificar tamaño de texto, modo de alto contraste y estilo de color. Esto mejora la experiencia de usuarios con diferentes preferencias visuales y aligera la carga cognitiva durante el uso prolongado.
+
+**PROBLEMA #2:** Falta una sección para visualizar las notas de los alumnos
+
+**Severidad:** 3
+**Heurística violada:** Match between system and the real world
+
+**Problema:**
+Profesores como José esperan que una aplicación académica incluya acceso rápido y directo a las calificaciones de los estudiantes. Sin embargo, la app actual no cuenta con una sección dedicada a consultar notas, lo que genera incompletitud en la experiencia y obliga al docente a acudir a otros sistemas o métodos informales (mensajes, cuadernos, Excel).
+Esta ausencia no coincide con el modelo mental del profesor sobre qué debe ofrecer una app de gestión académica, afectando la percepción de utilidad general.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-2-mobile.jpeg)
+
+**Recomendación:**
+Implementar una vista o módulo de “Notas de alumnos” accesible desde el dashboard principal o desde cada curso. Esta debe mostrar calificaciones, promedios y progreso del alumno. Así se complementa la experiencia docente y se alinea la app con las expectativas reales del usuario.
+
+**PROBLEMA #3:** La vista de horarios no incluye un modo semanal
+
+**Severidad:** 2
+**Heurística violada:** Match between system and the real world
+
+**Problema:**
+El docente indicó que prefiere visualizar sus horarios únicamente en formato semanal, ya que así organiza mejor sus clases. La app no ofrece esta vista, lo que no se alinea con su modelo mental ni con prácticas comunes en calendarios académicos. Esto dificulta la planificación y puede generar confusión al navegar entre fechas.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-3-mobile.jpeg)
+
+**Recomendación:**
+Agregar un “Weekly View” con estructura de calendario docente, permitiendo alternar entre vista diaria, semanal y mensual según preferencia.
+
+<hr class="page-break">
+
+**Cross-Platform Mobile Application**
+
+| # | Problema                                                                                                                         | Escala de severidad | Heurística/ Principio Violado           |
+| - | -------------------------------------------------------------------------------------------------------------------------------- | ------------------- | --------------------------------------- |
+| 1 | No existe una opción de dictado por voz para registrar o gestionar grandes cantidades de alumnos.                                | 1                   | Flexibility and efficiency of use     |
+| 2 | Algunas tarjetas o secciones del dashboard no redirigen correctamente, lo que genera confusión en la navegación.                 | 2                   | Consistency and standards               |
+| 3 | Las secciones relacionadas (registro de periodos y cursos) están separadas, lo que no coincide con el flujo natural del usuario. | 2                   | Match between system and the real world |
+
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1:** Ausencia de dictado por voz para registrar alumnos en flujos masivos
+
+**Severidad: 1**  
+**Heurística violada:** Flexibility and efficiency of use
+
+**Problema:**
+En la aplicación móvil cross-platform (vista administrativa), el registro y la gestión de alumnos en secciones como Attendance, Enrollments o Students se realiza únicamente mediante interacción táctil y escritura manual. Para perfiles como Nataly, que gestionan grupos grandes de alumnos, esto implica muchas pulsaciones y tiempo invertido al registrar asistencias o realizar operaciones repetitivas. La falta de una opción de dictado por voz limita el aprovechamiento de atajos para usuarios frecuentes y reduce la eficiencia del flujo, especialmente en contextos de alta carga operativa.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-cross-platform.jpeg)
+
+**Recomendación:**
+Incorporar una opción de entrada por voz en los formularios o listas donde se realizan acciones repetitivas (por ejemplo, registrar asistencia o buscar alumnos), permitiendo que el usuario dicte nombres, estados o comandos básicos. Esto puede implementarse como un ícono de micrófono en los campos relevantes, aprovechando las APIs de reconocimiento de voz del sistema operativo. De esta forma, se mejora la eficiencia para usuarios expertos y se ofrece un modo de interacción alternativo más práctico en contextos con muchos alumnos.
+
+**PROBLEMA #2:** Tarjetas del dashboard que no redirigen correctamente
+
+**Severidad: 2**
+**Heurística violada:** Consistency and standards
+
+**Problema:**
+En la aplicación móvil, algunas tarjetas o secciones del dashboard visual parecen ser elementos pulsables que deberían llevar al usuario a un módulo específico (por ejemplo, asistencia, cursos, pagos o alumnos). Sin embargo, al presionarlas, no redirigen o no realizan ninguna acción, lo que rompe con el comportamiento estándar de interfaces móviles.
+Este tipo de inconsistencia genera confusión, ya que el usuario asume —por su forma, tamaño y estilo— que estos elementos deberían cumplir una función navegable. La falta de respuesta afecta la fluidez del uso y provoca una experiencia de exploración frustrante, especialmente para usuarios nuevos.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-2-cross-platform.jpeg)
+
+**Recomendación:**
+Asegurar que todas las tarjetas del dashboard tengan un comportamiento consistente: si un componente luce como un acceso directo, debe redirigir al módulo correspondiente. También se recomienda aplicar retroalimentación visual (como animación de “tap”, cambio de opacidad o ripple effect) para reforzar la sensación de acción. En caso de que una tarjeta aún no tenga funcionalidad implementada, es preferible ocultarla temporalmente o mostrar un estado “Próximamente” para evitar confusiones.
+
+**PROBLEMA #3:** Las secciones de registro de periodos y cursos deberían estar unificadas
+
+**Severidad:** 2
+**Heurística violada:** Match between system and the real world
+
+**Problema:**
+Para Luciano, registrar periodos y cursos es parte de un mismo flujo operativo. La separación de estas secciones obliga a entrar a diferentes pantallas para completar una tarea cohesiva, lo que no coincide con el modelo mental del usuario ni con las prácticas reales de gestión académica.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-3-cross-platform.jpeg)
+
+**Recomendación:**
+Integrar ambos registros en un flujo único o permitir crearlos desde una misma pantalla con pasos consecutivos.
+
+<hr class="page-break">
+
+**Native iOS Mobile Application**
+
+| # | Problema                                                                                                 | Escala de severidad | Heurística/ Principio Violado |
+| - | -------------------------------------------------------------------------------------------------------- | ------------------- | ----------------------------- |
+| 1 | La aplicación no incluye un chatbot o asistente virtual para resolver dudas del alumno dentro de la app. | 2                   | Help and documentation        |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1:** Ausencia de un chatbot o asistente virtual para resolver dudas del alumno
+
+**Severidad:** 2
+**Heurística violada:** Help and documentation
+
+**Problema:**
+Alexander comentó que, aunque la aplicación para alumnos es clara y fácil de usar, sería muy útil contar con un chatbot con IA dentro de la app para resolver dudas rápidas, como horarios, fechas de evaluaciones, recordatorios o detalles de cursos.
+Actualmente, la app no ofrece ningún canal de asistencia contextual, lo que obliga al alumno a buscar ayuda mediante otros medios (contactar a la academia, WhatsApp, correo), interrumpiendo su flujo de uso y reduciendo la inmediatez en la resolución de preguntas sencillas.
+
+![Captura](assets/images/screenshots/heuristic-evaluation/heuristic-problem-1-ios.jpeg)
+
+**Recomendación:**
+Integrar un chatbot de soporte dentro de la app nativa de iOS, accesible desde el menú principal o desde la vista de cursos. Este asistente debería resolver preguntas frecuentes, ofrecer enlaces rápidos y permitir enviar consultas cuando el alumno necesite apoyo inmediato.
+
+<hr class="page-break">
+
+
 # Conclusiones
 
 En esta sección se presentan las conclusiones y recomendaciones derivadas del desarrollo del proyecto. Se analizan los resultados obtenidos, los desafíos enfrentados y las lecciones aprendidas durante el proceso. Además, se proponen acciones futuras para mejorar y optimizar la plataforma Demy.
@@ -15008,10 +16433,20 @@ Esto contribuirá a posicionar a Demy como una plataforma integral y líder en e
 
 <hr class="page-break">
 
+# Video App Validation
+
+El video de App Validation muestra la evaluación de la aplicación a través de la prueba de usuarios reales. Para lograrlo, el equipo usó Firebase App Distribution con el fin de distribuir versiones preliminares de la aplicación a un grupo selecto de probadores. Estos probadores proporcionaron comentarios valiosos sobre la funcionalidad, la usabilidad y el rendimiento de la aplicación.
+
+A continuación, se muestra el video que documenta este proceso de validación de la aplicación:
+
+Enlace al video app validation: [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQBdM5snnCi0S47Z-P__eHcSAXF6oQjEAnbQvquqwZThklY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Rvil5x)
+
+<hr class="page-break">
+
 # Video About the product
 
 A continuación se presenta el video About the product, que empieza desde el aterrizaje del usuario en la landing page, hasta el uso y presentación de la aplicación.  
-![Video About the Product Sprint 2](./assets/images/screenshots/about-the-product-screenshot.png)  
+![Video About the Product](./assets/images/screenshots/about-the-product-screenshot.png)  
 
 Enlace al video about the product: [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e843_upc_edu_pe/IQCaIYKx-d9rT7PsOq9eHuUJAYy2xZ1zk0qQUf9KyOKWRTM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pfNQMQ)
 
